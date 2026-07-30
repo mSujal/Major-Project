@@ -1,0 +1,27 @@
+# Directories
+__pycache__/
+**/__pycache__/
+.*/
+**/.*/
+test/
+**/test/
+
+# temporary test files
+test.*
+**/test.*
+.todo
+
+# env file 
+.venv
+
+# dotfile
+.*
+
+# Exclude
+!.git/
+!.gitignore
+!.gitattributes
+
+# ChromaDB
+chroma_db/
+
