@@ -80,7 +80,6 @@ shtab==1.8.1
 six==1.17.0
 smbus==1.1
 soupsieve==2.8.4
-TBB @ file:///build/onetbb/src/build/python/python_build
 termcolor==3.3.0
 tinycss2==1.5.1
 tldextract==5.3.1
