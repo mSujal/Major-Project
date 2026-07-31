@@ -9,8 +9,8 @@ DEVICE = "cpu"
 
 PERSIST_DIR = './storage/chroma_db/'
 
-LLM_MODEL = None 
-LOCAL_MODEL = None 
+LLM_MODEL = "openai/gpt-oss-120b"   # Groq: llama-3.3-70b-versatile / 
+LOCAL_MODEL = None           # ollama fallback ko lagi —  machine ma jun ollama model pulled xa tyo
 
 #########################################
 #           STATE MANAGEMENT            #
