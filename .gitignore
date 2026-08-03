@@ -25,3 +25,6 @@ test.*
 # ChromaDB
 chroma_db/
 
+venv/
+mcq_output/
+*.pdf
