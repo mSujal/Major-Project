@@ -28,8 +28,7 @@ class Extraction:
         images = convert_from_path(self.pdf_path, first_page=page_num, last_page=page_num, dpi=300)
         if not images:
             return "" # Nothing can be done for the page
-        return pytesseract.image_to_string(images[0]).strip # Text return extracted from the OCRed page
-
+        return pytesseract.image_to_string(images[0]).strip()   # <-- added parentheses
 
     def extract_text(self):
         """

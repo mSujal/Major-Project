@@ -31,10 +31,10 @@ class RAGPipeline():
                 )
             except Exception:
                 print("[RAG] Groq API key invalid, falling back to local model")
-                self.use_local = True
+                self.use_local = False
         else:
             print("[RAG] No API key provided, falling back to local model")
-            self.use_local = True
+            self.use_local = False
     
     @staticmethod
     def _is_noise_chunk(chunk):
@@ -59,7 +59,7 @@ class RAGPipeline():
         # mostly cross reference 
         noise_patterns = [
             r'\bpage\s+\d+\b',  # 'what page discusses...'
-            r'bsection\s+\d+\.\d+\b', # 'which section...' 
+            r'\bsection\s+\d+\.\d+\b', # 'which section...'   <-- fixed added backslash
             r'\bchapter\s+\d+\b', # 'see chapter...'
             r'table of contents',
             r'discusses.{0,30}topic',
@@ -113,28 +113,28 @@ class RAGPipeline():
             )
         return outputs.last_hidden_state[0].mean(dim=0)
 
-    def _retrieve(self, query):
+    def _retrieve(self, query, pdf_path):
         query_embedding = self._embed_query(query).cpu().float().tolist()
-        return self.vector_store.query(self.pdf_path, query_embedding, self.top_k) 
+        return self.vector_store.query(pdf_path, query_embedding, self.top_k) 
     
     
     def _query_llm(self, prompt):
-        if self.use_local:
-            import ollama
-            response = ollama.chat(
-                model=config.LOCAL_MODEL,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            return response["message"]["content"]
-        else:
-            response = self.client.chat.completions.create(
-                model=config.LLM_MODEL,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            return response.choices[0].message.content
+        # if self.use_local:
+        #     import ollama
+        #     response = ollama.chat(
+        #         model=config.LOCAL_MODEL,
+        #         messages=[{"role": "user", "content": prompt}]
+        #     )
+        #     return response["message"]["content"]
+        # else:
+        response = self.client.chat.completions.create(
+            model=config.LLM_MODEL,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return response.choices[0].message.content
 
-    def query_qna(self, question):
-        retrieved_chunks = self._retrieve(question)
+    def query_qna(self, question, pdf_path):
+        retrieved_chunks = self._retrieve(question, pdf_path)   # <-- added pdf_path
         context = '\n\n'.join(
             f"[{self.lc.format_page_citation(page)}] {chunk}" 
             for chunk, page in retrieved_chunks
@@ -153,8 +153,8 @@ class RAGPipeline():
 
                 
                 
-    def query_mcq(self, question, num_questions=5, save_json=False, output_dir="mcq_output"):
-        retrieved_chunks = self._retrieve(question)
+    def query_mcq(self, question, pdf_path ,num_questions=5, save_json=False, output_dir="mcq_output"):
+        retrieved_chunks = self._retrieve(question, pdf_path)   # <-- added pdf_path
         context = '\n\n'.join(
             f"[{self.lc.format_page_citation(page)}] {chunk}" 
             for chunk, page in retrieved_chunks
@@ -182,12 +182,12 @@ class RAGPipeline():
         raw_response =  self._query_llm(prompt)
 
         if save_json:
-            parsed   = self._parse_mcq_response(raw_response, question)
-            unique_qs = self._deduplicate_mcqs(parsed["questions"])
+            parsed   = self._parse_mcq_response(raw_response, question, pdf_path)   # added pdf_path
+            unique_qs = self._deduplicate_mcqs(parsed["questions"], pdf_path)       # added pdf_path
 
             unique_qs = [q for q in unique_qs if not self._is_noise_question(q)]
             if self.mcq_store and unique_qs:
-                self.mcq_store.store(self.pdf_path, unique_qs)
+                self.mcq_store.store(pdf_path, unique_qs)   # use passed pdf_path
 
             # strip embeddings before writing to JSON
             for q in unique_qs:
@@ -198,7 +198,7 @@ class RAGPipeline():
             
         return raw_response
 
-    def _parse_mcq_response(self, response_text, topic):
+    def _parse_mcq_response(self, response_text, topic, pdf_path):
         """
         Parse the LLM's MCQ text output into a list of structured dicts.
 
@@ -262,11 +262,11 @@ class RAGPipeline():
         return {
             "topic"       : topic,
             "generated_at": datetime.now().isoformat(timespec="seconds"),
-            "pdf_path"    : getattr(self, "pdf_path", ""),
+            "pdf_path"    : pdf_path,   # <-- use passed pdf_path
             "questions"   : questions,
         }
 
-    def _deduplicate_mcqs(self, questions, similarity_threshold=0.92):
+    def _deduplicate_mcqs(self, questions, pdf_path, similarity_threshold=0.92):
         """
         Filters out questions that are duplicates of already-stored ones.
         Two-stage check:
@@ -280,7 +280,7 @@ class RAGPipeline():
         if not self.mcq_store:
             return questions
 
-        stored_embeddings, stored_fingerprints = self.mcq_store.get_stored_embeddings(self.pdf_path)
+        stored_embeddings, stored_fingerprints = self.mcq_store.get_stored_embeddings(pdf_path)   # <-- use passed pdf_path
 
         # convert stored embeddingsd to tensors once
         stored_tensors = [
