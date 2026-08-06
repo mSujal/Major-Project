@@ -1,0 +1,97 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-06T10:59:01",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/DBMS_chapter17.pdf",
+  "questions": [
+    {
+      "question": "What is a defining characteristic of centralized database systems according to the summary?",
+      "options": {
+        "A": "They run on multiple distributed servers.",
+        "B": "They run entirely on a single computer.",
+        "C": "They rely on cloud infrastructure.",
+        "D": "They use peer‑to‑peer networking."
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The summary states that centralized database systems run entirely on a single computer. (Source Page: [23])  \n\n---",
+      "source_pages": [
+        "23"
+      ]
+    },
+    {
+      "question": "Which development helped the growth of client–server database systems?",
+      "options": {
+        "A": "Increased use of mainframes.",
+        "B": "Client–server interface protocols.",
+        "C": "Adoption of blockchain technology.",
+        "D": "Decline of personal computers."
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The text attributes the growth of client–server DB systems to client–server interface protocols. (Source Page: [23])  \n\n---",
+      "source_pages": [
+        "23"
+      ]
+    },
+    {
+      "question": "In a client–server database architecture, which component typically provides the back‑end functionality?",
+      "options": {
+        "A": "The client workstation.",
+        "B": "The server system.",
+        "C": "The network router.",
+        "D": "The operating system kernel."
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The summary notes that server systems provide the back‑end functionality in client–server architectures. (Source Page: [23])  \n\n---",
+      "source_pages": [
+        "23"
+      ]
+    },
+    {
+      "question": "Database systems designed for multiuser environments support which of the following?",
+      "options": {
+        "A": "Only read‑only operations.",
+        "B": "Full transactional features.",
+        "C": "Single‑user mode only.",
+        "D": "No concurrency control."
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The passage on centralized and client–server architectures mentions that multiuser systems support the full transactional features studied earlier. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "According to the summary, the database front‑end functionality has increasingly moved to which part of the system?",
+      "options": {
+        "A": "The server’s back‑end.",
+        "B": "External cloud services.",
+        "C": "Client machines.",
+        "D": "Dedicated hardware appliances."
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The summary explains that with the growth of PCs and LANs, the database front‑end functionality has moved increasingly to clients. (Source Page: [23])  \n\n---",
+      "source_pages": [
+        "23"
+      ]
+    },
+    {
+      "question": "Persistent messaging is presented as an alternative approach for what type of tasks?",
+      "options": {
+        "A": "Real‑time video streaming.",
+        "B": "Communication tasks.",
+        "C": "Data warehousing.",
+        "D": "Machine learning inference."
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The excerpt notes that alternative approaches based on persistent messaging are generally used for communication tasks. (Source Page: [19])",
+      "source_pages": [
+        "19"
+      ]
+    }
+  ]
+}

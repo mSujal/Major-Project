@@ -1,0 +1,157 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-06T10:54:20",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CA_chapter5.pdf",
+  "questions": [
+    {
+      "question": "What is the typical percentage of memory references that are writes in general workloads?",
+      "options": {
+        "A": "5%",
+        "B": "15%",
+        "C": "30%",
+        "D": "50%"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "Experience shows that about 15% of memory references are writes in typical applications. (Source Page: [24])  \n\n---",
+      "source_pages": [
+        "24"
+      ]
+    },
+    {
+      "question": "For high‑performance computing applications such as vector‑vector multiplication, the write percentage can approach which value?",
+      "options": {
+        "A": "20%",
+        "B": "33%",
+        "C": "45%",
+        "D": "60%"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "HPC workloads like vector‑vector multiplication may have write references around 33%. (Source Page: [24])  \n\n---",
+      "source_pages": [
+        "24"
+      ]
+    },
+    {
+      "question": "In the cache associativity diagram, which term describes a cache with four possible locations for a block within a set?",
+      "options": {
+        "A": "Direct-mapped",
+        "B": "Two-way set associative",
+        "C": "Four-way set associative",
+        "D": "Eight-way set associative"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The diagram lists “Four-way” as one of the associativity options. (Source Page: [23])  \n\n---",
+      "source_pages": [
+        "23"
+      ]
+    },
+    {
+      "question": "In a write‑back cache, when is a replaced block written back to main memory?",
+      "options": {
+        "A": "Every time a block is replaced",
+        "B": "Only if the block is clean",
+        "C": "Only if the dirty bit is set",
+        "D": "Never; write‑back never writes to memory on replacement"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "A block is written back only when its dirty bit indicates it has been modified. (Source Page: [24])  \n\n---",
+      "source_pages": [
+        "24"
+      ]
+    },
+    {
+      "question": "What is a major drawback of write‑back caches concerning I/O module accesses?",
+      "options": {
+        "A": "They increase cache hit rate for I/O accesses.",
+        "B": "Portions of main memory become invalid, forcing I/O to go through the cache and creating potential bottlenecks.",
+        "C": "They eliminate the need for a dirty bit.",
+        "D": "They automatically synchronize with I/O devices."
+      },
+      "correct_answer": "B",
+      "difficulty": "Hard",
+      "explanation": "Because written‑back data may not be in main memory, I/O modules must access memory via the cache, adding complexity and possible bottlenecks. (Source Page: [24])  \n\n---",
+      "source_pages": [
+        "24"
+      ]
+    },
+    {
+      "question": "Which write policy is most commonly used together with write‑back caching?",
+      "options": {
+        "A": "Write through, no write allocate",
+        "B": "Write through, write allocate",
+        "C": "Write back, no write allocate",
+        "D": "Write back, write allocate"
+      },
+      "correct_answer": "D",
+      "difficulty": "Medium",
+      "explanation": "Write back is typically paired with write allocate to keep subsequent writes hitting the cache. (Source Page: [25])  \n\n---",
+      "source_pages": [
+        "25"
+      ]
+    },
+    {
+      "question": "Which processor family is cited as supporting “no write allocate” as an option?",
+      "options": {
+        "A": "Intel Core",
+        "B": "AMD Ryzen",
+        "C": "ARM Cortex",
+        "D": "MIPS R4000"
+      },
+      "correct_answer": "C",
+      "difficulty": "Hard",
+      "explanation": "The ARM Cortex architecture allows a no‑write‑allocate policy. (Source Page: [25])  \n\n---",
+      "source_pages": [
+        "25"
+      ]
+    },
+    {
+      "question": "According to the simplified Pentium 4 diagram, how many major components make up the processor core?",
+      "options": {
+        "A": "Two",
+        "B": "Three",
+        "C": "Four",
+        "D": "Five"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The text states the core consists of four major components. (Source Page: [31])  \n\n---",
+      "source_pages": [
+        "31"
+      ]
+    },
+    {
+      "question": "The Pentium 4 cache architecture discussed is similar to that of modern x86 systems. How many distinct cache levels are highlighted in the diagram?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The figure emphasizes the placement of three caches (L1, L2, L3). (Source Page: [31])  \n\n---",
+      "source_pages": [
+        "31"
+      ]
+    },
+    {
+      "question": "What advantage does write allocate provide after a cache miss on a write?",
+      "options": {
+        "A": "It forces the write to bypass the cache, reducing traffic.",
+        "B": "It stores the written data only in main memory.",
+        "C": "Subsequent writes to the same block will hit in the cache and set the dirty bit.",
+        "D": "It converts the cache to a write‑through policy automatically."
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "Write allocate brings the block into the cache, so later writes hit and the block becomes dirty. (Source Page: [25])",
+      "source_pages": [
+        "25"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-06T10:57:29",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/C_chapter5.pdf",
+  "questions": [
+    {
+      "question": "What is the primary goal of Exercise 5-18?",
+      "options": {
+        "A": "Make dcl recover from input errors",
+        "B": "Add redundant parentheses to declarations",
+        "C": "Implement a new sorting algorithm",
+        "D": "Convert undcl to handle function pointers"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "Exercise 5-18 explicitly asks to make the dcl program recover from input errors. (Source Page: [31])",
+      "source_pages": [
+        "31"
+      ]
+    },
+    {
+      "question": "Which exercise instructs you to modify undcl so that it does not add redundant parentheses to declarations?",
+      "options": {
+        "A": "Exercise 5-18",
+        "B": "Exercise 5-19",
+        "C": "Exercise 5-20",
+        "D": "Exercise 5-14"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The text for Exercise 5-19 states the need to modify undcl to avoid redundant parentheses. (Source Page: [31])",
+      "source_pages": [
+        "31"
+      ]
+    },
+    {
+      "question": "According to Exercise 5-20, dcl should be expanded to handle which of the following features?",
+      "options": {
+        "A": "Declarations with function argument types and qualifiers like const",
+        "B": "Sorting in reverse order with a -r flag",
+        "C": "Multi-dimensional array allocation",
+        "D": "Memory management using a stack allocator"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "Exercise 5-20 specifically mentions extending dcl to handle function argument types and qualifiers such as const. (Source Page: [31])",
+      "source_pages": [
+        "31"
+      ]
+    },
+    {
+      "question": "How is the storage managed by the functions alloc and afree described?",
+      "options": {
+        "A": "As a stack, last‑in‑first‑out",
+        "B": "As a heap with arbitrary allocation order",
+        "C": "As a queue, first‑in‑first‑out",
+        "D": "As a linked list of free blocks"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that the storage managed by alloc and afree behaves like a stack (LIFO). (Source Page: [8])",
+      "source_pages": [
+        "8"
+      ]
+    },
+    {
+      "question": "On which page does the code for the swap function appear?",
+      "options": {
+        "A": "Page 8",
+        "B": "Page 17",
+        "C": "Page 26",
+        "D": "Page 30"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The swap function code is listed under the heading “[Page: 26]”. (Source Page: [26])",
+      "source_pages": [
+        "26"
+      ]
+    },
+    {
+      "question": "What functionality does the -r flag provide in the sort program according to Exercise 5-14?",
+      "options": {
+        "A": "Sorts in reverse (decreasing) order",
+        "B": "Sorts randomly",
+        "C": "Recursively sorts sub‑arrays",
+        "D": "Reads input from a file"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "Exercise 5-14 describes adding a -r flag that indicates sorting in reverse order. (Source Page: [26])",
+      "source_pages": [
+        "26"
+      ]
+    },
+    {
+      "question": "Exercise 5-7 suggests rewriting readlines to store lines where?",
+      "options": {
+        "A": "In an array supplied by main",
+        "B": "In dynamically allocated memory via malloc",
+        "C": "In a linked list of buffers",
+        "D": "In a file on disk"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The exercise explicitly asks to store lines in an array supplied by main instead of using alloc. (Source Page: [17])",
+      "source_pages": [
+        "17"
+      ]
+    },
+    {
+      "question": "In the swap function example, what is the declared type of the first parameter?",
+      "options": {
+        "A": "void *v[]",
+        "B": "int v[]",
+        "C": "char *v",
+        "D": "double v[]"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The function header is “void swap(void *v[], int i, int j)”. (Source Page: [26])",
+      "source_pages": [
+        "26"
+      ]
+    }
+  ]
+}
