@@ -1,0 +1,157 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T03:30:45",
+  "pdf_path": "/home/sujan/MP_testdocs/cn_5.pdf",
+  "questions": [
+    {
+      "question": "Which protocol is described as having the characteristics of all previous transport protocols plus additional features?",
+      "options": {
+        "A": "Stop‑and‑Wait",
+        "B": "Go‑Back‑N",
+        "C": "Selective Repeat",
+        "D": "TCP"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The Selective Repeat protocol combines the characteristics of earlier protocols and adds more functionality. (Source Page: [1])  \n\n---",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "How many bytes long is the fixed‑size header of a UDP packet?",
+      "options": {
+        "A": "4 bytes",
+        "B": "8 bytes",
+        "C": "12 bytes",
+        "D": "16 bytes"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "UDP packets have a fixed‑size header of 8 bytes, composed of four 2‑byte fields. (Source Page: [47])  \n\n---",
+      "source_pages": [
+        "47"
+      ]
+    },
+    {
+      "question": "In the hexadecimal representation “001C” for a UDP packet length field, what decimal length does this correspond to?",
+      "options": {
+        "A": "12 bytes",
+        "B": "28 bytes",
+        "C": "30 bytes",
+        "D": "44 bytes"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The hex value 001C equals 28 in decimal, indicating the total length of the UDP packet. (Source Page: [48])  \n\n---",
+      "source_pages": [
+        "48"
+      ]
+    },
+    {
+      "question": "Given a UDP packet total length of 28 bytes, what is the length of the data payload?",
+      "options": {
+        "A": "8 bytes",
+        "B": "12 bytes",
+        "C": "20 bytes",
+        "D": "28 bytes"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "Data length = total length – header length = 28 − 8 = 20 bytes. (Source Page: [48])  \n\n---",
+      "source_pages": [
+        "48"
+      ]
+    },
+    {
+      "question": "If a UDP packet’s destination port number is 13, what can be inferred about the packet’s direction?",
+      "options": {
+        "A": "It is from server to client.",
+        "B": "It is from client to server.",
+        "C": "It is a broadcast packet.",
+        "D": "It is an error packet."
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "Port 13 is a well‑known server port; thus the packet is sent from the client to the server. (Source Page: [48])  \n\n---",
+      "source_pages": [
+        "48"
+      ]
+    },
+    {
+      "question": "Which application process is identified by the client in the example where the destination port is 13?",
+      "options": {
+        "A": "FTP",
+        "B": "HTTP",
+        "C": "Daytime",
+        "D": "DNS"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The client process using port 13 is the Daytime service. (Source Page: [48])  \n\n---",
+      "source_pages": [
+        "48"
+      ]
+    },
+    {
+      "question": "What is the purpose of using a “bent‑up” representation of the sliding‑window diagram?",
+      "options": {
+        "A": "To increase the window size.",
+        "B": "To reduce the amount of space needed on paper.",
+        "C": "To change the protocol from Go‑Back‑N to Selective Repeat.",
+        "D": "To eliminate the need for acknowledgments."
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "Bending the diagram up allows the same information to be shown using less space. (Source Page: [12])  \n\n---",
+      "source_pages": [
+        "12"
+      ]
+    },
+    {
+      "question": "If the sequence number field is m bits long, how many distinct sequence numbers are available?",
+      "options": {
+        "A": "m",
+        "B": "2m",
+        "C": "2^m",
+        "D": "m²"
+      },
+      "correct_answer": "C",
+      "difficulty": "Hard",
+      "explanation": "Sequence numbers range from 0 to 2^m − 1, i.e., there are 2^m distinct values; they wrap around modulo 2^m. (Source Page: [11])  \n\n---",
+      "source_pages": [
+        "11"
+      ]
+    },
+    {
+      "question": "For a 4‑bit sequence number field (m = 4), what is the highest valid sequence number before wrap‑around occurs?",
+      "options": {
+        "A": "7",
+        "B": "14",
+        "C": "15",
+        "D": "16"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "With m = 4, the range is 0–15; thus 15 is the maximum before wrapping to 0. (Source Page: [11])  \n\n---",
+      "source_pages": [
+        "11"
+      ]
+    },
+    {
+      "question": "How many bits are allocated for each port number field in a UDP header?",
+      "options": {
+        "A": "8 bits",
+        "B": "12 bits",
+        "C": "16 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "Each of the first two fields in the UDP header is 2 bytes = 16 bits, representing source and destination ports. (Source Page: [47])",
+      "source_pages": [
+        "47"
+      ]
+    }
+  ]
+}

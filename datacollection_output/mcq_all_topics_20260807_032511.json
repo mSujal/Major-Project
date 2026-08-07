@@ -1,0 +1,157 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T03:25:11",
+  "pdf_path": "/home/sujan/MP_testdocs/IOE Unit 9 Microcontroller.pdf",
+  "questions": [
+    {
+      "question": "Which of the following pins on the 8051 microcontroller is used for transmitting serial data (TXD)?",
+      "options": {
+        "A": "P3.0",
+        "B": "P3.1",
+        "C": "P3.2",
+        "D": "P3.3"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The pin labeled TXD corresponds to P3.1 in the pin‑function table. (Source Page: [15])  \n\n---",
+      "source_pages": [
+        "15"
+      ]
+    },
+    {
+      "question": "How many bytes of on‑chip RAM are available in a standard 8051 microcontroller?",
+      "options": {
+        "A": "64 bytes",
+        "B": "128 bytes",
+        "C": "256 bytes",
+        "D": "512 bytes"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The summary states that the 8051 has 128 bytes of on‑chip data memory. (Source Page: [12])  \n\n---",
+      "source_pages": [
+        "12"
+      ]
+    },
+    {
+      "question": "What is the size of the address bus in the 8051 microcontroller?",
+      "options": {
+        "A": "8‑bit",
+        "B": "12‑bit",
+        "C": "16‑bit",
+        "D": "24‑bit"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The 8051 features a 16‑bit address bus, allowing access to 64 KB of memory. (Source Page: [12])  \n\n---",
+      "source_pages": [
+        "12"
+      ]
+    },
+    {
+      "question": "In the given delay routine, how many times is the DJNZ instruction executed?",
+      "options": {
+        "A": "100 times",
+        "B": "200 times",
+        "C": "400 times",
+        "D": "800 times"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The register R3 is loaded with #200, so DJNZ loops 200 iterations. (Source Page: [45])  \n\n---",
+      "source_pages": [
+        "45"
+      ]
+    },
+    {
+      "question": "What is the total calculated delay of the program shown, assuming a crystal frequency of 11.0592 MHz?",
+      "options": {
+        "A": "2.172 µs",
+        "B": "434.4 µs",
+        "C": "437.658 µs",
+        "D": "1.086 µs"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "Adding the three timing components gives a total delay of 437.658 µs. (Source Page: [45])  \n\n---",
+      "source_pages": [
+        "45"
+      ]
+    },
+    {
+      "question": "Which pin function listed below is associated with the external interrupt INT0?",
+      "options": {
+        "A": "P3.0",
+        "B": "P3.2",
+        "C": "P3.4",
+        "D": "P3.5"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The table shows “(-INT0)” next to P3.2, indicating INT0 is on that pin. (Source Page: [15])  \n\n---",
+      "source_pages": [
+        "15"
+      ]
+    },
+    {
+      "question": "The 8051’s data bus width determines how many bits can be transferred in one operation. What is that width?",
+      "options": {
+        "A": "4‑bit",
+        "B": "8‑bit",
+        "C": "16‑bit",
+        "D": "32‑bit"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The summary explicitly mentions an 8‑bit data bus. (Source Page: [12])  \n\n---",
+      "source_pages": [
+        "12"
+      ]
+    },
+    {
+      "question": "Which of the following pins is designated for the external memory read (RD) signal?",
+      "options": {
+        "A": "P3.5",
+        "B": "P3.6",
+        "C": "P3.7",
+        "D": "P3.4"
+      },
+      "correct_answer": "C",
+      "difficulty": "Hard",
+      "explanation": "The pin table lists “(-RD)” next to P3.7, indicating the RD signal. (Source Page: [15])  \n\n---",
+      "source_pages": [
+        "15"
+      ]
+    },
+    {
+      "question": "If the 8051’s on‑chip RAM is exhausted, which type of memory can be accessed next for data storage?",
+      "options": {
+        "A": "External ROM only",
+        "B": "External RAM only",
+        "C": "Both external RAM and ROM",
+        "D": "No additional memory can be accessed"
+      },
+      "correct_answer": "C",
+      "difficulty": "Hard",
+      "explanation": "With a 16‑bit address bus the 8051 can address up to 64 KB of external RAM and ROM. (Source Page: [12])  \n\n---",
+      "source_pages": [
+        "12"
+      ]
+    },
+    {
+      "question": "In the delay sub‑routine, what is the purpose of the RET instruction?",
+      "options": {
+        "A": "To reset register R3",
+        "B": "To return control to the calling routine",
+        "C": "To increment the delay counter",
+        "D": "To halt the processor"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "RET ends the sub‑routine and returns to the instruction after the ACALL. (Source Page: [45])",
+      "source_pages": [
+        "45"
+      ]
+    }
+  ]
+}

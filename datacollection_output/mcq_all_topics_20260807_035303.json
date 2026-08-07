@@ -1,0 +1,112 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T03:53:03",
+  "pdf_path": "/home/sujan/MP_testdocs/oop_2_3.pdf",
+  "questions": [
+    {
+      "question": "What is the primary purpose of a function parameter?",
+      "options": {
+        "A": "To store the function’s return value",
+        "B": "To define a variable that receives data when the function is called",
+        "C": "To specify the function’s access level",
+        "D": "To indicate the function’s execution speed"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "A function parameter defines a variable that will receive data (an argument) when the function is invoked. (Source Page: [62])  \n\n---",
+      "source_pages": [
+        "62"
+      ]
+    },
+    {
+      "question": "How does a parameter differ from an argument?",
+      "options": {
+        "A": "A parameter is the actual value passed; an argument is the variable in the function definition.",
+        "B": "A parameter is a variable in the function definition; an argument is the actual value passed at call time.",
+        "C": "Parameters are only used in class constructors; arguments are used in all functions.",
+        "D": "There is no difference; the terms are interchangeable."
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "Parameters appear in the function’s definition, while arguments are the concrete values supplied during a call. (Source Page: [62])  \n\n---",
+      "source_pages": [
+        "62"
+      ]
+    },
+    {
+      "question": "In a UML class diagram, what information is shown in the top compartment?",
+      "options": {
+        "A": "The class’s data members",
+        "B": "The class’s methods",
+        "C": "The class’s name, centered and in boldface",
+        "D": "The class’s access specifiers"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The top compartment contains the class’s name, centered horizontally and in boldface type. (Source Page: [32])  \n\n---",
+      "source_pages": [
+        "32"
+      ]
+    },
+    {
+      "question": "Which compartment of a class diagram lists the class’s attributes (data members) in C++?",
+      "options": {
+        "A": "Top compartment",
+        "B": "Middle compartment",
+        "C": "Bottom compartment",
+        "D": "No compartment lists attributes"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The middle compartment contains the class’s attributes, which correspond to data members in C++. (Source Page: [32])  \n\n---",
+      "source_pages": [
+        "32"
+      ]
+    },
+    {
+      "question": "In the GradeBook example, what is the argument passed to the constructor on line 46?",
+      "options": {
+        "A": "The object’s memory address",
+        "B": "The integer 46",
+        "C": "The string \"CS101 Introduction to C++ Programming\"",
+        "D": "No argument is passed; the constructor is default."
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The argument \"CS101 Introduction to C++ Programming\" is passed to the GradeBook object’s constructor to initialize courseName. (Source Page: [42])  \n\n---",
+      "source_pages": [
+        "42"
+      ]
+    },
+    {
+      "question": "If two GradeBook objects are created, how many copies of the data member `courseName` exist?",
+      "options": {
+        "A": "One shared copy for both objects",
+        "B": "Two separate copies, one per object",
+        "C": "No copies; `courseName` is static.",
+        "D": "Three copies – one for each object and one global copy."
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "Every instance of a class contains its own copy of each data member; thus two objects have two copies of `courseName`. (Source Page: [37])  \n\n---",
+      "source_pages": [
+        "37"
+      ]
+    },
+    {
+      "question": "Why is the function `displayMessage` called with empty parentheses in the example?",
+      "options": {
+        "A": "Because it returns a value that must be ignored",
+        "B": "Because it requires no additional data to perform its task",
+        "C": "Because it is a constructor, not a regular function",
+        "D": "Because the compiler automatically fills in default arguments"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "`displayMessage` does not require additional data, so it is called with empty parentheses. (Source Page: [32])  \n\n---",
+      "source_pages": [
+        "32"
+      ]
+    }
+  ]
+}
