@@ -1,0 +1,157 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T04:29:23",
+  "pdf_path": "Datasets/PDFs/electronics-14-03314-v3.pdf",
+  "questions": [
+    {
+      "question": "Under which license is the article distributed?",
+      "options": {
+        "A": "Creative Commons Attribution (CC BY) license",
+        "B": "GNU General Public License (GPL)",
+        "C": "MIT License",
+        "D": "Apache License 2.0"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The article is distributed under the Creative Commons Attribution (CC BY) license as stated in the copyright notice. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "Which organization is listed as the licensee of the article?",
+      "options": {
+        "A": "MDPI",
+        "B": "IEEE",
+        "C": "ACM",
+        "D": "Springer"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The licensee is identified as MDPI, Basel, Switzerland. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "In which year was this article published?",
+      "options": {
+        "A": "2023",
+        "B": "2024",
+        "C": "2025",
+        "D": "2026"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The publication date is given as 20 August 2025. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "How many high‑quality question–answer samples were obtained for the dataset?",
+      "options": {
+        "A": "4,688",
+        "B": "5,000",
+        "C": "3,200",
+        "D": "2,150"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The text reports that 4,688 high‑quality samples were collected. (Source Page: [5])",
+      "source_pages": [
+        "5"
+      ]
+    },
+    {
+      "question": "Which three types of questions are included in the dataset?",
+      "options": {
+        "A": "Multiple‑choice, fill‑in‑the‑blank, and true/false",
+        "B": "Essay, short answer, and matching",
+        "C": "Multiple‑choice, essay, and discussion",
+        "D": "Fill‑in‑the‑blank, essay, and coding"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The dataset covers multiple‑choice, fill‑in‑the‑blank, and true/false questions. (Source Page: [5])",
+      "source_pages": [
+        "5"
+      ]
+    },
+    {
+      "question": "What does Figure 1 illustrate in the article?",
+      "options": {
+        "A": "Framework for constructing the question–answer dataset",
+        "B": "Results of the experimental evaluation",
+        "C": "Comparison of model performances",
+        "D": "User interface of the retrieval system"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "Figure 1 is described as the framework for constructing the dataset. (Source Page: [5])",
+      "source_pages": [
+        "5"
+      ]
+    },
+    {
+      "question": "Which stage is described as “Initial Question Generation”?",
+      "options": {
+        "A": "Stage One",
+        "B": "Stage Two",
+        "C": "Stage Three",
+        "D": "Stage Four"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The heading “Stage One: Initial Question Generation” indicates this is the first stage. (Source Page: [5])",
+      "source_pages": [
+        "5"
+      ]
+    },
+    {
+      "question": "At which conference was the SQuAD paper (referenced in the article) presented?",
+      "options": {
+        "A": "EMNLP 2016",
+        "B": "ACL 2015",
+        "C": "NAACL 2017",
+        "D": "COLING 2018"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "The citation notes the SQuAD paper appeared in the Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing (EMNLP 2016). (Source Page: [17])",
+      "source_pages": [
+        "17"
+      ]
+    },
+    {
+      "question": "Who served as the academic editor for this article?",
+      "options": {
+        "A": "Ajay Bandi",
+        "B": "John Doe",
+        "C": "Maria Smith",
+        "D": "Li Wei"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "The academic editor is listed as Ajay Bandi. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "What is the DOI suffix (the part after “10.3390/”) for this article?",
+      "options": {
+        "A": "electronics14163314",
+        "B": "10.1016/j.artint.2025.01.001",
+        "C": "10.1109/TASLP.2025.123456",
+        "D": "10.1007/s00138-025-0145-6"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "The citation provides the DOI https://doi.org/10.3390/electronics14163314, whose suffix is “electronics14163314”. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    }
+  ]
+}
