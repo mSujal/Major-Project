@@ -162,6 +162,11 @@ class RAGPipeline():
 
         prompt = f"""
         You are a helpful assistant. Based only on the context provided below, generate {num_questions} multiple choice questions, each with EXACTLY 4 options labeled A), B), C), D) — no more, no less. Never use any other format and never should options be more than 4 and in explanation also mention difficulty.
+
+        Each question stem must be well-developed and specific — at least 20-30 words long. Prefer scenario-based or applied questions over simple one-line fact recall (describe a situation, example, or detail drawn from the context, then ask what follows from it). Avoid vague or overly short questions.
+
+        Each answer option should be a complete, meaningful phrase (not just a single word) where the content allows it.
+
         Each context chunk is prefixed with its page number like [N] where N is the page number.
         At the end of each explanation cite the page like: 
         (Source Page: [5]) and in case of multi page (Source Page: [4][5]  ...)
@@ -177,7 +182,7 @@ class RAGPipeline():
         C) <option>           
         D) <option>
         Correct Answer: <letter>
-        Explanation: [Easy/Medium/Hard] <brief explanation based on context>
+        Explanation: [Easy/Medium/Hard] <detailed explanation, at least 2 sentences, based on context>
         """
         raw_response =  self._query_llm(prompt)
 
