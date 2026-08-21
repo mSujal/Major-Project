@@ -1,0 +1,384 @@
+{
+  "subject": "Computer Network",
+  "topics": {
+    "network_uses_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define network/protocol",
+        "Explain 5 instances of how networks are part of life"
+      ]
+    },
+    "networking_models": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Explain client/server and P2P with advantages/disadvantages",
+        "Differentiate client-server vs P2P"
+      ]
+    },
+    "protocols_standards": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define protocol with examples"
+      ]
+    },
+    "osi_tcpip_models": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "List function of each layer",
+        "Compare/Differentiate OSI vs TCP/IP model"
+      ]
+    },
+    "example_networks": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "What is X.25? Explain packet format",
+        "Define Frame Relay"
+      ]
+    },
+    "layered_architecture_rationale": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Why do we need layered architecture? What factors considered when designing layers?"
+      ]
+    },
+    "network_monitoring": {
+      "levels": ["Apply", "Remember"],
+      "patterns": [
+        "Define throughput. Calculate throughput for given file/bandwidth"
+      ]
+    },
+    "transmission_media": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "List common guided/unguided media",
+        "Explain LOS propagation modes",
+        "Explain any one guided media with example"
+      ]
+    },
+    "multiplexing": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What is multiplexing? Explain different types"
+      ]
+    },
+    "switching_types": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate/Compare circuit switching and packet switching"
+      ]
+    },
+    "telephone_network": {
+      "levels": ["Understand"],
+      "patterns": [
+        "With diagram of telephone network explain how system works"
+      ]
+    },
+    "isdn": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What is ISDN? Explain architecture/interface/functional group"
+      ]
+    },
+    "snr_channel_capacity": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate SNR and maximum channel capacity"
+      ]
+    },
+    "datalink_functions": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What are functions of data link layer?"
+      ]
+    },
+    "framing_bit_stuffing": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "A bit string ... needs to be transmitted. What is the string after bit stuffing?"
+      ]
+    },
+    "error_detection_crc_hamming": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate CRC for given bit sequence and generator polynomial"
+      ]
+    },
+    "flow_control_sliding_window": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is piggybacking? How applied in flow control?",
+        "Explain sliding window protocols"
+      ]
+    },
+    "mac_channel_allocation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Why channel access mechanism important?"
+      ]
+    },
+    "multiple_access_protocols": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Explain pure/slotted ALOHA operation",
+        "Compare pure Aloha and slotted Aloha",
+        "How does CSMA/CD work?"
+      ]
+    },
+    "ethernet_ieee_standards": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Describe 802.3 Ethernet standard and compare with 802.4 token bus"
+      ]
+    },
+    "fddi_vlan": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List features of FDDI",
+        "Short notes"
+      ]
+    },
+    "internetworking_devices": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "How does a bridge work? How does it increase throughput vs repeater?"
+      ]
+    },
+    "addressing_classful_classless": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is classful and classless address?"
+      ]
+    },
+    "subnetting_cidr_vlsm": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Given IP block, subnet for departments with X hosts — find network address, broadcast, usable range, wasted IPs"
+      ]
+    },
+    "routing_techniques": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "What is adaptive/non-adaptive routing?"
+      ]
+    },
+    "routing_protocols_rip_ospf_bgp": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain OSPF process in link state routing",
+        "Explain RIP operation with timer details"
+      ]
+    },
+    "distance_vector_vs_link_state": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate/Compare distance vector routing and link state routing"
+      ]
+    },
+    "dr_bdr_election": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How is Designated Router elected in OSPF?"
+      ]
+    },
+    "arp_rarp_icmp": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "What is ARP? How does it work?",
+        "Explain importance of ICMP in TCP/IP suite"
+      ]
+    },
+    "transport_services": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What are services provided by transport layer?"
+      ]
+    },
+    "tcp_vs_udp": {
+      "levels": ["Analyze", "Understand"],
+      "patterns": [
+        "Differentiate TCP and UDP",
+        "Why is UDP unreliable yet used in Internet?"
+      ]
+    },
+    "port_socket": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is port number? Why standardize port numbers?"
+      ]
+    },
+    "tcp_connection_handshake": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain TCP 3-way handshake for connection establishment and release"
+      ]
+    },
+    "flow_control_buffering": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How does transport layer ensure ordered delivery?"
+      ]
+    },
+    "congestion_control_token_leaky": {
+      "levels": ["Analyze", "Understand"],
+      "patterns": [
+        "Compare Token Bucket and Leaky Bucket algorithm"
+      ]
+    },
+    "udp_tcp_headers": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Write UDP header fields and functions",
+        "Explain TCP datagram format in detail"
+      ]
+    },
+    "http_https": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What is a proxy server? Discuss HTTP and HTTPS services"
+      ]
+    },
+    "ftp": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "How does FTP client connect to FTP server? Explain with port connection"
+      ]
+    },
+    "email_smtp_pop3_imap": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "List working principle of SMTP",
+        "Compare POP3 and IMAP"
+      ]
+    },
+    "dns": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "How does DNS recursive/iterative query work?",
+        "Compare recursive vs iterative query"
+      ]
+    },
+    "p2p_applications": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Rare standalone (mostly covered in Ch.1)"
+      ]
+    },
+    "socket_programming": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Define socket programming. How is web/file server communication possible?"
+      ]
+    },
+    "application_server_concepts": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What is a proxy server? Why used?"
+      ]
+    },
+    "traffic_analyzers": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Rare, short-note level only"
+      ]
+    },
+    "ipv6_advantages": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List advantages of IPv6 over IPv4"
+      ]
+    },
+    "ipv6_packet_format": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Show IPv6 datagram format",
+        "Explain IPv6 header with figure"
+      ]
+    },
+    "ipv6_extension_headers": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List IPv6 extension headers in order"
+      ]
+    },
+    "ipv6_transition_mechanisms": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain dual stack strategy",
+        "Explain ISATAP and 6to4 tunneling with address format"
+      ]
+    },
+    "ipv6_multicasting_addresses": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "Explain three address types in IPv6 with notation"
+      ]
+    },
+    "ipv4_vs_ipv6": {
+      "levels": ["Analyze", "Evaluate"],
+      "patterns": [
+        "Critically compare IPv4 and IPv6 in terms of routing and header manipulation"
+      ]
+    },
+    "secure_comm_properties": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What are properties of secure communication?"
+      ]
+    },
+    "cryptography_symmetric_asymmetric": {
+      "levels": ["Analyze", "Understand"],
+      "patterns": [
+        "Compare symmetric key encryption with asymmetric key encryption"
+      ]
+    },
+    "rsa_algorithm": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Encrypt and decrypt the word 'X' using RSA algorithm"
+      ]
+    },
+    "digital_signatures": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "How does digital signature work? Encrypt word using RSA"
+      ]
+    },
+    "pgp_email_security": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is PGP? How can it secure email communication?"
+      ]
+    },
+    "ssl_tcp_security": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Mostly short notes"
+      ]
+    },
+    "ipsec_vpn": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is VPN? (short notes / brief define-explain)"
+      ]
+    },
+    "wep_wireless_security": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short notes only"
+      ]
+    },
+    "firewalls_acl": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is firewall? Explain different types",
+        "How do you apply ACL to block IP network X.X.X.X/24?"
+      ]
+    },
+    "aes_des": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is fundamental difference between AES and DES? Encrypt word using AES"
+      ]
+    }
+  }
+}

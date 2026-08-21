@@ -1,0 +1,460 @@
+{
+  "subject": "Project Management",
+  "topics": {
+    "project_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is a project? List out its characteristics",
+        "Define project and project management"
+      ]
+    },
+    "project_objectives_classification": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List out the type of project on different bases of project classification"
+      ]
+    },
+    "triple_constraint": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "What is the triple constraint? How does change to one constraint affect the others?"
+      ]
+    },
+    "project_life_cycle": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "What are the phases in project life cycle? How does project life cycle differ from product life cycle?"
+      ]
+    },
+    "project_vs_operational_work": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "How is project different from operational work?",
+        "Key differences between project and process"
+      ]
+    },
+    "feasibility_study_pm": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Explain the role of effective feasibility study for successful completion of a project"
+      ]
+    },
+    "project_environment": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "What are the external environmental factors affecting the project?"
+      ]
+    },
+    "project_manager_traits": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Briefly explain the traits of being an effective and ineffective project manager"
+      ]
+    },
+    "interpersonal_managerial_skills": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Discuss the essential interpersonal and managerial skills required for a project manager. Illustrate how each skill contributes to project outcomes with examples"
+      ]
+    },
+    "role_of_project_manager": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "What is the role of project manager? What are suggested skills for IT project managers?"
+      ]
+    },
+    "problem_trees": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Explain problem tree approach for solving project management issues"
+      ]
+    },
+    "portfolio_pmo": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Compare project management with project portfolio management"
+      ]
+    },
+    "drivers_of_success": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What are the key drivers of project success according to PMI framework? Provide examples"
+      ]
+    },
+    "inhibitors_of_success": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Explain with example the concept of drivers of project success and inhibitors of project success"
+      ]
+    },
+    "pmbok_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is PMBOK? What are the knowledge contents that fall under PMBOK?"
+      ]
+    },
+    "advantages_of_pm": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Short opener/define-list style"
+      ]
+    },
+    "pm_context_pmi": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain project management context as per PMI"
+      ]
+    },
+    "project_life_cycle_characteristics": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Explain the concept of the project life cycle... compare product life cycle with project life cycle"
+      ]
+    },
+    "sdlc_methodologies": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "What are existing system development methodologies? Compare three different methodologies"
+      ]
+    },
+    "key_project_members_roles": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain the role and responsibility of key project member"
+      ]
+    },
+    "system_view_three_sphere": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What is system view of project management? Explain about three sphere model"
+      ]
+    },
+    "functional_organization": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Evaluate the advantages and disadvantages of a functional organizational structure"
+      ]
+    },
+    "matrix_organization": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain a Matrix Organization Structure with its advantages and disadvantages",
+        "Show different types of matrix organizational structure"
+      ]
+    },
+    "org_structure_influence": {
+      "levels": ["Analyze", "Evaluate"],
+      "patterns": [
+        "Describe functional and matrix organizations. Discuss how each type influences project management practices"
+      ]
+    },
+    "process_groups": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Discuss about project process groups",
+        "Explain briefly about 5 process groups relating any project concerning your discipline"
+      ]
+    },
+    "overlaps_process_groups": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Justify the overlaps of different life cycle stages and process groups"
+      ]
+    },
+    "mapping_process_groups": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "How is it related to project management knowledge area? Give example of two processes with inputs, tools/techniques, outputs"
+      ]
+    },
+    "project_charter": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is a project charter? How do you develop a project charter? Explain the inputs and tools and techniques to develop it"
+      ]
+    },
+    "integration_management_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define Project Integration Management and what are the essential information required to create Project Charter?"
+      ]
+    },
+    "develop_pm_plan": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Short explain-style sub-questions"
+      ]
+    },
+    "integrated_change_control": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain about the integrated change control process in depth",
+        "What are key features in change control on IT projects? Explain input, tools & techniques and output"
+      ]
+    },
+    "wbs_scope_verification": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Describe the need of WBS. Prepare WBS for library management system development project"
+      ]
+    },
+    "scope_vs_product_scope": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate project scope and product scope"
+      ]
+    },
+    "network_diagram_aon": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Construct the CPM network for a project with following activities"
+      ]
+    },
+    "critical_path_calculation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Draw the network diagram, trace critical path, find EST/EFT/LST/LFT"
+      ]
+    },
+    "float_calculation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate the total float, free float, independent float and interfering float for each activity"
+      ]
+    },
+    "pert_estimation": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "If activity duration estimates have variance of X, find probability of project completion within Y weeks"
+      ]
+    },
+    "crashing_activities": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "How would you crash some activities if necessary to make it in time? Illustrate and calculate"
+      ]
+    },
+    "gantt_chart_milestones": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Short notes / brief explain"
+      ]
+    },
+    "cost_estimating": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "Describe the cost estimating in project management and explain tools/techniques used"
+      ]
+    },
+    "cost_budgeting": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Prepare a statement of work with cost budgeting"
+      ]
+    },
+    "earned_value_management": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate CV, SV, CPI, SPI and EAC assuming project continues at current performance rate. Interpret results"
+      ]
+    },
+    "variance_analysis_evm": {
+      "levels": ["Analyze", "Evaluate"],
+      "patterns": [
+        "Deduce whether the project is behind or ahead of schedule",
+        "Should top-level managers intervene?"
+      ]
+    },
+    "quality_planning": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What are project quality requirements? How does it help in project quality management?"
+      ]
+    },
+    "qa_vs_qc": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "How quality assurance and quality control are implemented in order to deliver a successful project?"
+      ]
+    },
+    "quality_audit": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Short explain sub-question"
+      ]
+    },
+    "control_chart_pareto": {
+      "levels": ["Remember", "Analyze"],
+      "patterns": [
+        "Compare Bar chart vs. process control chart as quality control tools",
+        "short notes on Pareto chart"
+      ]
+    },
+    "tqm": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is TQM? Are there quality standards for software industry and services?"
+      ]
+    },
+    "it_system_testing": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Occasionally embedded in quality process questions"
+      ]
+    },
+    "importance_communication": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Why is communication management important in ICT project?"
+      ]
+    },
+    "communication_planning": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain about the importance of effective communication in project management and describe its role for successful completion"
+      ]
+    },
+    "effective_meetings": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "How to run the effective meeting in the project?"
+      ]
+    },
+    "information_distribution": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain various tools and techniques for performance reporting",
+        "Explain the necessity of information distribution and its tools and techniques"
+      ]
+    },
+    "formal_informal_communication": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare formal versus informal communication",
+        "Horizontal versus vertical communication"
+      ]
+    },
+    "hazards_communication_error": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Explain the hazards of communication error in a project"
+      ]
+    },
+    "project_risk_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define project risk. Discuss sources of risk in IT projects"
+      ]
+    },
+    "risk_identification": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "Describe the risk identification techniques in ICT project"
+      ]
+    },
+    "qualitative_quantitative_risk": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate qualitative and quantitative risk analysis process"
+      ]
+    },
+    "risk_response_planning": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain how a project manager can develop a risk response plan? What strategies are used to mitigate threats and enhance opportunities?"
+      ]
+    },
+    "decision_tree_tornado": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Short notes / Compare Decision Tree vs. Tornado Analysis for risk management"
+      ]
+    },
+    "risk_register": {
+      "levels": ["Apply", "Remember"],
+      "patterns": [
+        "Prepare a risk register for an IS project"
+      ]
+    },
+    "procurement_process": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "What do you mean by Project Procurement Management? Discuss different processes adopted for procurement in ICT project"
+      ]
+    },
+    "plan_purchases": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Embedded in the general procurement-process question"
+      ]
+    },
+    "seller_selection": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Compare Seller (contractor) selection processes vs. contract closure processes"
+      ]
+    },
+    "tender_vs_quotation": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare Tender vs. quotation process",
+        "Write step by step procedure for procurement of goods and services in government/public office"
+      ]
+    },
+    "contract_administration": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "How to manage contract closure processes smoothly? How is it different from project closing?"
+      ]
+    },
+    "custom_pm_methodology": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Why custom processes needed for IT projects?"
+      ]
+    },
+    "pm_maturity": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is project management maturity?",
+        "short notes on Project Management Maturity Model"
+      ]
+    },
+    "project_excellence": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What are the roles of award and assessment in achieving Excellency in project completion?"
+      ]
+    },
+    "code_of_ethics": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Explain ICT code of Ethics"
+      ]
+    },
+    "future_trends_pm": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Short notes: Future Trends in Project Management"
+      ]
+    },
+    "balanced_scorecard": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is Balanced Scorecard? Why do it?"
+      ]
+    },
+    "balanced_scorecard_role": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain role of balanced scorecard in project quality management"
+      ]
+    },
+    "balanced_scorecard_ict": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Why it is important in large organization?"
+      ]
+    }
+  }
+}
