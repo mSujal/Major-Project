@@ -1,0 +1,137 @@
+{
+  "topic": "srs_document",
+  "generated_at": "2026-08-21T13:19:59",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "In the Mentcare use case diagram, which role is associated with the “Edit record” action?",
+      "options": {
+        "A": "Nurse",
+        "B": "Doctor",
+        "C": "Medical receptionist",
+        "D": "Patient"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The diagram shows “Edit record” listed under the Doctor actor, indicating that doctors perform this action [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which notation is NOT listed as a possible way to write system requirements?",
+      "options": {
+        "A": "Forms",
+        "B": "Graphical",
+        "C": "Mathematical",
+        "D": "Audio"
+      },
+      "correct_answer": "D",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The text mentions forms, graphical, and mathematical notations for system requirements, but does not mention audio as a notation option [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main reason for supplementing natural‑language user requirements with diagrams and tables?",
+      "options": {
+        "A": "To reduce ambiguity and variability in the specification",
+        "B": "To increase the overall length of the document",
+        "C": "To replace natural language entirely",
+        "D": "To satisfy external standards automatically"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The passage states that user requirements are written in natural language “supplemented by appropriate diagrams and tables,” which helps reduce variability and improve clarity [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which organizations are mentioned as having defined standards for requirements documents?",
+      "options": {
+        "A": "U.S. Department of Defense and IEEE",
+        "B": "ISO and W3C",
+        "C": "FDA and EPA",
+        "D": "NATO and WHO"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The text specifically cites the U.S. Department of Defense and the IEEE as bodies that have defined standards for requirements documents [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the passage, using structured specifications primarily helps to:",
+      "options": {
+        "A": "Increase variability in the specification",
+        "B": "Remove problems associated with natural‑language specifications",
+        "C": "Make the requirements longer and more detailed",
+        "D": "Eliminate the need for any diagrams or tables"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Structured specifications are said to “remove some of the problems of natural language specification” by reducing variability and organizing requirements [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Figure 4.11 summarizes possible notations for writing system requirements. Which of the following would be included?",
+      "options": {
+        "A": "Natural language",
+        "B": "Formal mathematical models",
+        "C": "Musical scores",
+        "D": "Video recordings"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The passage notes that system requirements may be expressed using “graphical, or mathematical system models,” indicating that formal mathematical models are a listed notation [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the Mentcare system, which actor is most likely responsible for generating reports?",
+      "options": {
+        "A": "Nurse",
+        "B": "Doctor",
+        "C": "Medical receptionist",
+        "D": "Patient"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The use‑case list includes “Generate report” under the “Medical receptionist personal info” section, showing that the medical receptionist generates reports [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Point 7 in the requirements specification addresses what aspect of an operation?",
+      "options": {
+        "A": "Performance metrics",
+        "B": "Side effects",
+        "C": "User‑interface layout",
+        "D": "Security protocols"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The excerpt lists “7. A description of the side effects (if any) of the operation,” making side effects the focus of point 7 [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the text differentiate between user requirements and system requirements?",
+      "options": {
+        "A": "User requirements are always graphical, while system requirements are always textual.",
+        "B": "User requirements are natural language with diagrams; system requirements may also use forms, graphical, or mathematical notations.",
+        "C": "Both are written exclusively in natural language.",
+        "D": "System requirements are a subset of user requirements."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The passage explains that “User requirements are almost always written in natural language supplemented by appropriate diagrams and tables,” whereas “System requirements may also be written in natural language, but other notations … can also be used” [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The standards from organizations such as IEEE are described as:",
+      "options": {
+        "A": "Highly detailed and rigid",
+        "B": "Generic but useful as a basis for developing detailed organizational standards",
+        "C": "Irrelevant to most software projects",
+        "D": "Mandatory for every software development effort"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The text states that standards from bodies like the DoD and IEEE “are usually very generic but are nevertheless useful as a basis for developing more detailed organizational standards” [Page 29].",
+      "source_pages": []
+    }
+  ]
+}

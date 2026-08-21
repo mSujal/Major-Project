@@ -1,0 +1,137 @@
+{
+  "topic": "data_object_models",
+  "generated_at": "2026-08-21T13:21:03",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Why might a requirements author add tables or graphical models to natural language requirements?",
+      "options": {
+        "A": "To replace all textual descriptions with visuals",
+        "B": "To show how computations proceed, system state changes, and user interactions",
+        "C": "To increase the length of the documentation without adding value",
+        "D": "To comply with a mandatory industry standard unrelated to clarity"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Adding tables or graphical models helps illustrate computations, state changes, and user interactions, as described on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following can serve as the additional graphical information for a use case besides a textual description?",
+      "options": {
+        "A": "UML class diagram only",
+        "B": "UML deployment diagram only",
+        "C": "UML sequence diagram or state chart (or both)",
+        "D": "Data flow diagram only"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The text states that additional information may be a textual description or one or more graphical models such as the UML sequence or state charts [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a high‑level use case diagram, how is an actor visually represented?",
+      "options": {
+        "A": "Stick figure",
+        "B": "Rectangle",
+        "C": "Ellipse",
+        "D": "Diamond"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Actors are depicted as stick figures in use case diagrams [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a use case diagram, what does a named ellipse denote?",
+      "options": {
+        "A": "The system boundary",
+        "B": "An external system",
+        "C": "A class of interaction (the use case)",
+        "D": "A data store"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Each class of interaction is represented as a named ellipse, i.e., a use case [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the description, what constitutes the simplest form of a use case?",
+      "options": {
+        "A": "Identification of the actors involved and the name of the interaction",
+        "B": "Actors, interaction name, and a full textual scenario description",
+        "C": "Actors, interaction name, and a UML sequence diagram",
+        "D": "Actors, interaction name, and implementation code snippets"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The simplest form identifies actors and names the interaction, with additional details added later [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The tabular specification shown for an insulin pump primarily illustrates which aspect of the system?",
+      "options": {
+        "A": "User interface layout",
+        "B": "Computation steps of the pump’s operation",
+        "C": "Network communication protocols",
+        "D": "Database schema design"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The table is used to specify the computation performed by the insulin pump, as indicated on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why did use cases become a fundamental feature of the Unified Modeling Language (UML)?",
+      "options": {
+        "A": "Because they were first introduced in the Objectory method",
+        "B": "Because they describe interactions between users and a system",
+        "C": "Because they eliminate the need for any textual requirements",
+        "D": "Because they are only useful for low‑level coding details"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Use cases describe user‑system interactions, which is why they are central to UML [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best reflects the purpose of incorporating tables or graphical models into requirements documentation?",
+      "options": {
+        "A": "They make textual requirements obsolete.",
+        "B": "They illustrate how computations proceed and how the system state changes.",
+        "C": "They are solely for documenting hardware specifications.",
+        "D": "They are optional and rarely improve stakeholder understanding."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Tables and graphical models help show computation flow, state changes, and interaction sequences [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How are actors connected to use cases in a use case diagram?",
+      "options": {
+        "A": "With dotted lines",
+        "B": "With solid straight lines",
+        "C": "With arrows pointing from actor to use case",
+        "D": "With inheritance arrows"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Lines (solid) link actors with the interactions they participate in [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT listed as a possible form of additional information for a use case?",
+      "options": {
+        "A": "Textual description",
+        "B": "UML sequence diagram",
+        "C": "State chart",
+        "D": "Source code implementation"
+      },
+      "correct_answer": "D",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The context mentions textual description, UML sequence, and state charts, but not source code, as additional information for a use case [Page 25].",
+      "source_pages": []
+    }
+  ]
+}

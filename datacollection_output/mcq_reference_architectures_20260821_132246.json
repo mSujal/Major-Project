@@ -1,0 +1,137 @@
+{
+  "topic": "reference_architectures",
+  "generated_at": "2026-08-21T13:22:46",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the primary benefit of reusing architectural components as presented in the system architecture overview?",
+      "options": {
+        "A": "Increases hardware requirements",
+        "B": "Reduces development time and effort",
+        "C": "Guarantees unique designs for each project",
+        "D": "Eliminates the need for testing"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Reusing components allows the project to build faster by leveraging existing, proven parts, as noted in the high‑level overview of system architecture. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In Figure 4.2, which group is mainly responsible for reviewing requirements from a managerial standpoint?",
+      "options": {
+        "A": "System architects",
+        "B": "Client managers",
+        "C": "Software developers",
+        "D": "System end‑users"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram lists “Client managers” among the readers of requirements specifications, indicating their managerial role. [Page 3]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the inspection and testing flow in Figure 8.2, which artifact is examined directly before the testing phase begins?",
+      "options": {
+        "A": "Database schemas",
+        "B": "UML design models",
+        "C": "Program prototype",
+        "D": "Requirements specification"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The flow shows inspections of various artifacts leading to a prototype, which is then followed by testing. [Page 38]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which stakeholder of the Mentcare system is most likely to be primarily concerned with the privacy of personal health information?",
+      "options": {
+        "A": "Patients whose data is recorded",
+        "B": "Relatives of patients",
+        "C": "System architects",
+        "D": "Contractor managers"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Patients are the owners of the personal information and therefore have the greatest interest in its privacy. [Page 4]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a system module is intended for reuse across multiple projects, which architectural characteristic should it most prominently exhibit?",
+      "options": {
+        "A": "High coupling with other modules",
+        "B": "Low cohesion within the module",
+        "C": "Well‑defined, stable interfaces",
+        "D": "Platform‑specific implementation code"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Reusable modules need clear interfaces to be integrated easily in different contexts. This is highlighted in the discussion of reusable architectural components. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Dijkstra’s 1972 article “The Humble Programmer” (cited on page 36) aligns with which principle that supports the reuse of architectural components?",
+      "options": {
+        "A": "Emphasizing simplicity in design",
+        "B": "Formal verification of code",
+        "C": "Incremental development cycles",
+        "D": "Minimizing code duplication through reuse"
+      },
+      "correct_answer": "D",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Dijkstra advocates for modest, maintainable code; reusing components reduces duplication, reflecting that principle. [Page 36]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following sequences correctly reflects the order of activities shown in Figure 8.2, from earliest to latest?",
+      "options": {
+        "A": "Testing → Inspections → Prototype",
+        "B": "Inspections → Prototype → Testing",
+        "C": "Prototype → Inspections → Testing",
+        "D": "Inspections → Testing → Prototype"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram depicts inspections first, then creation of a prototype, and finally testing. [Page 38]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The system architecture overview emphasizes a distribution of functions across modules. Which statement best captures this design approach?",
+      "options": {
+        "A": "All functions are placed in a single monolithic module.",
+        "B": "Functions are grouped by related responsibilities.",
+        "C": "Functions are duplicated in every module for redundancy.",
+        "D": "Functions are assigned to modules randomly."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The overview describes a high‑level view where functions are allocated to distinct modules based on their responsibilities. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the feasibility‑study guidance (page 4), which outcome would most likely cause a project to be halted?",
+      "options": {
+        "A": "Positive cost‑benefit analysis",
+        "B": "Negative stakeholder approval",
+        "C": "Satisfactory technical assessment",
+        "D": "Positive risk evaluation"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The text states that if any feasibility question is answered “no,” the project should not proceed, implying that lack of stakeholder approval stops the project. [Page 4]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Figure 4.2 shows various readers of requirements specifications. Which role acts as an intermediary between client managers and system architects?",
+      "options": {
+        "A": "System end‑users",
+        "B": "Client engineers",
+        "C": "Contractor managers",
+        "D": "Software developers"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram positions “Client engineers” between client managers and system architects, indicating an intermediary role. [Page 3]",
+      "source_pages": []
+    }
+  ]
+}

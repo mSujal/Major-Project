@@ -1,0 +1,124 @@
+{
+  "topic": "process_models",
+  "generated_at": "2026-08-21T13:18:54",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes why extra information (such as tables or graphical models) is added to natural‑language requirements?",
+      "options": {
+        "A": "To replace the need for any textual description altogether.",
+        "B": "To illustrate how computations, system‑state changes, and user interactions proceed.",
+        "C": "To ensure that the requirements are written in a programming language.",
+        "D": "To reduce the amount of documentation that must be reviewed."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Adding tables or graphics helps show computation flow, state changes, user interaction, and action sequences, as explained on page 24.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of describing an insulin pump, what does the tabular specification primarily capture?",
+      "options": {
+        "A": "The hardware components of the pump.",
+        "B": "The sequence of computational steps and resulting system states.",
+        "C": "The user’s emotional response to insulin dosage.",
+        "D": "The marketing strategy for the device."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The tabular specification is used to detail the computation in the insulin pump (page 24).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How do use cases contribute to the Unified Modeling Language (UML)?",
+      "options": {
+        "A": "They provide a method for writing low‑level code directly in UML diagrams.",
+        "B": "They serve as a graphical and textual way to describe user‑system interactions, a core UML feature.",
+        "C": "They replace all other types of UML diagrams.",
+        "D": "They focus exclusively on database schema design."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Use cases describe interactions using graphics and structured text and are now a fundamental UML feature (page 25).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly reflects the historical origin of use cases?",
+      "options": {
+        "A": "They were first introduced in the Waterfall model.",
+        "B": "They originated in the Objectory method before becoming part of UML.",
+        "C": "They were created by the Agile Manifesto authors.",
+        "D": "They were derived from formal mathematical specifications."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Use cases were introduced in the Objectory method (Jacobsen et al., 1993) and later incorporated into UML (page 25).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "At what point in the software development lifecycle do verification and validation (V&V) activities begin according to the text?",
+      "options": {
+        "A": "After the code has been fully implemented.",
+        "B": "Only during the final acceptance testing phase.",
+        "C": "As soon as requirements become available and continue throughout development.",
+        "D": "When the maintenance team takes over the product."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] V&V start when requirements are available and persist through all stages (page 37).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In Figure 8.2, what is the purpose of the arrows that connect software inspections and testing to various stages of the process?",
+      "options": {
+        "A": "To indicate that inspections replace testing at every stage.",
+        "B": "To show the specific stages where each technique can be applied for V&V support.",
+        "C": "To illustrate the flow of money between departments.",
+        "D": "To map the timeline for releasing the software to the market."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The arrows indicate the stages where inspections and testing may be used to support V&V (page 38).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which benefit is most directly associated with using a tabular specification for an insulin pump’s computation?",
+      "options": {
+        "A": "It automatically generates the pump’s firmware.",
+        "B": "It clarifies the step‑by‑step logic and state transitions for stakeholders.",
+        "C": "It eliminates the need for any user documentation.",
+        "D": "It provides a visual animation of insulin delivery."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Tabular specs make computation steps and state changes explicit, aiding understanding (page 24).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When describing a scenario, the “normal flow of events” refers to:",
+      "options": {
+        "A": "The sequence of actions that occurs under typical, expected conditions.",
+        "B": "The list of error messages the system might produce.",
+        "C": "The alternative pathways that are never used.",
+        "D": "The hardware initialization sequence."
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The normal flow details the usual sequence of events in a scenario (page 19).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does combining a graphical model with structured text in a use case improve requirements communication?",
+      "options": {
+        "A": "It reduces the need for stakeholder meetings.",
+        "B": "It allows both visual and detailed textual representation of interactions, catering to different stakeholder preferences.",
+        "C": "It enforces a strict programming syntax.",
+        "D": "It eliminates the need for any further validation activities."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Use cases use graphics plus structured text to describe interactions, enhancing clarity for varied audiences (page 25).",
+      "source_pages": []
+    }
+  ]
+}

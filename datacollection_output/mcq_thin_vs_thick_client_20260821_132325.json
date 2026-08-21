@@ -1,0 +1,137 @@
+{
+  "topic": "thin_vs_thick_client",
+  "generated_at": "2026-08-21T13:23:25",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "According to the text, why should user requirements be written in natural language rather than using formal notations?",
+      "options": {
+        "A": "To ensure they are concise and technical.",
+        "B": "To make them clear, unambiguous, and easy to understand for non‑technical stakeholders.",
+        "C": "To comply with industry standards that mandate natural language only.",
+        "D": "To reduce the length of the requirements document."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The text states that user requirements should avoid software jargon, structured notations, or formal notations and be written in natural language with simple tables, forms, and intuitive diagrams to be clear and easy to understand [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the Mentcare system use‑case diagram (Figure 4.15), which actor is directly associated with the “Edit record” use case?",
+      "options": {
+        "A": "Medical receptionist",
+        "B": "Nurse",
+        "C": "Doctor",
+        "D": "View Manager"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram lists “Doctor” as the actor that can perform the “Edit record” function [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures the primary role of the teacher in the KidsTakePics scenario described on page 19?",
+      "options": {
+        "A": "Uploading photos to the system.",
+        "B": "Moderating uploaded photos to determine suitability for sharing.",
+        "C": "Managing user accounts for students.",
+        "D": "Designing the system’s user interface."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The scenario explains that after a student uploads photos, a teacher moderates them to check that they are suitable for sharing [Page 19].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a requirements document contains ambiguous statements, which quality listed in the text is most directly compromised?",
+      "options": {
+        "A": "Completeness",
+        "B": "Consistency",
+        "C": "Unambiguity",
+        "D": "Traceability"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The text lists “clear, unambiguous” as essential qualities of good requirements; ambiguity directly violates the unambiguous criterion [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following actions would most likely be performed by the “Medical receptionist” actor in the Mentcare use‑case diagram?",
+      "options": {
+        "A": "Generate patient statistics reports.",
+        "B": "Register personal information of patients.",
+        "C": "Edit a doctor’s consultation notes.",
+        "D": "View managerial dashboards."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram shows the “Medical receptionist” associated with “Register” and “personal info.” tasks [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The text mentions that achieving perfectly clear and complete requirements is “almost impossible.” What is the most plausible implication of this statement for software projects?",
+      "options": {
+        "A": "Projects should skip the requirements phase to save time.",
+        "B": "Teams must accept some level of imperfection and continuously refine requirements.",
+        "C": "Requirements should be written in formal notation to avoid ambiguity.",
+        "D": "Only user requirements matter; system requirements can be omitted."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Acknowledging the difficulty of perfect requirements suggests an iterative, refinement‑oriented approach rather than abandoning the activity [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the description of use‑case documentation, which element best illustrates a “system requirement” rather than a “user requirement”?",
+      "options": {
+        "A": "“The receptionist shall be able to register a new patient using a web form.”",
+        "B": "“The system shall store all patient records encrypted at rest.”",
+        "C": "“Doctors can view patient histories on their dashboard.”",
+        "D": "“Nurses must approve medication orders before dispensing.”"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The statement describes a technical behavior of the system (encryption), fitting the definition of a system requirement, whereas the others are user‑oriented actions [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the Mentcare diagram, the “Generate report” use case is most closely related to which of the following functional goals?",
+      "options": {
+        "A": "Data entry and validation.",
+        "B": "Providing managerial insight through aggregated data.",
+        "C": "Real‑time communication between staff.",
+        "D": "Scheduling patient appointments."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] “Generate report” implies producing aggregated information, such as patient statistics, for managerial review [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why the text advises against using software jargon in user requirements?",
+      "options": {
+        "A": "Jargon can make requirements shorter, risking loss of detail.",
+        "B": "Non‑technical stakeholders may misinterpret jargon, leading to confusion.",
+        "C": "Jargon is prohibited by most software‑engineering standards.",
+        "D": "Using jargon increases the cost of document translation."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The guidance stresses that user requirements should be understandable to all stakeholders, and jargon hinders that clarity [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the use‑case example on page 19, what is the primary benefit of having a teacher moderate student‑uploaded photos before sharing?",
+      "options": {
+        "A": "It reduces the storage space required on the server.",
+        "B": "It ensures that only appropriate content is disseminated, aligning with policy compliance.",
+        "C": "It speeds up the upload process for students.",
+        "D": "It automates the categorization of photos by subject matter."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The moderation step’s purpose is to check suitability, thereby preventing inappropriate sharing and maintaining compliance [Page 19].",
+      "source_pages": []
+    }
+  ]
+}

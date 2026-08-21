@@ -1,0 +1,124 @@
+{
+  "topic": "context_models_dfd",
+  "generated_at": "2026-08-21T13:20:21",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following is NOT shown as an actor in the Mentcare system use‑case diagram?",
+      "options": {
+        "A": "Nurse",
+        "B": "Doctor",
+        "C": "Medical receptionist",
+        "D": "Administrator"
+      },
+      "correct_answer": "D",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram (Figure 4.15, p. 25) lists Nurse, Doctor and Medical receptionist as actors; an Administrator does not appear.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why does the text suggest adding extra information (tables or graphical models) to natural‑language requirements?",
+      "options": {
+        "A": "To replace natural language entirely",
+        "B": "To illustrate how computations proceed, state changes, and user interactions",
+        "C": "To eliminate the need for testing",
+        "D": "To reduce the amount of documentation required"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Page 24 explains that extra information can show computation flow, system‑state changes, and interaction sequences.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the KidsTakePics scenario (p. 19), which role is responsible for checking uploaded photos before they are shared?",
+      "options": {
+        "A": "Student",
+        "B": "Teacher",
+        "C": "System administrator",
+        "D": "Parent"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The text states that a teacher moderates the uploaded photos.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How are use cases related to the Unified Modeling Language (UML) according to the passage?",
+      "options": {
+        "A": "They are unrelated to UML.",
+        "B": "They are a fundamental feature of UML.",
+        "C": "They replace class diagrams in UML.",
+        "D": "They are only used in data‑flow diagrams."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Page 25 says use cases “have now become a fundamental feature of the Unified Modeling Language (UML).”\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What specific benefit does the tabular specification of computation (Figure 4.14, p. 24) provide over plain text?",
+      "options": {
+        "A": "It defines the system’s color palette.",
+        "B": "It gives a precise sequencing of computational steps.",
+        "C": "It lists hardware component part numbers.",
+        "D": "It sketches the user‑interface layout."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The text notes that tables can “show how computations proceed,” implying precise sequencing.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the Mentcare use‑case diagram, which activity is most likely performed by the Medical receptionist?",
+      "options": {
+        "A": "Edit a patient record",
+        "B": "Set up a consultation",
+        "C": "Generate a report",
+        "D": "Register a new patient"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] In the picture text (p. 25) “Generate report” appears alongside “Medical receptionist personal info,” indicating that generating reports is a receptionist task.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main purpose of using use cases to describe interactions between users and a system?",
+      "options": {
+        "A": "To provide low‑level source code",
+        "B": "To focus on data‑storage structures",
+        "C": "To capture functional requirements from the user’s viewpoint",
+        "D": "To define network communication protocols"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The passage (p. 25) describes use cases as “a way of describing interactions between users and a system,” i.e., capturing functional requirements.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Compared with plain‑text requirements, graphical models such as use‑case diagrams primarily improve what aspect of requirement communication?",
+      "options": {
+        "A": "Execution speed of the system",
+        "B": "Visual clarity of user‑system interactions",
+        "C": "Automatic generation of source code",
+        "D": "Reduction of document length"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Page 24 emphasizes that graphical models “show how users interact with the system,” enhancing visual communication.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The citation of Dijkstra’s 1972 article (p. 36) serves what purpose in the context of the discussion on requirements?",
+      "options": {
+        "A": "It introduces the concept of use cases.",
+        "B": "It critiques programming style unrelated to requirements.",
+        "C": "It provides historical background on thoughtful software engineering, supporting the need for clear specifications.",
+        "D": "It describes the syntax of UML use‑case diagrams."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Although the passage does not detail the article, its inclusion alongside requirement‑specification material suggests it offers a historical perspective on disciplined software development, reinforcing the argument for precise requirements.",
+      "source_pages": []
+    }
+  ]
+}

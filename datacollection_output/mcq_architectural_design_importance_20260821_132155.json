@@ -1,0 +1,137 @@
+{
+  "topic": "architectural_design_importance",
+  "generated_at": "2026-08-21T13:21:55",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the purpose of the high‑level overview shown in the system architecture chapter?",
+      "options": {
+        "A": "It lists every line of code that will be written.",
+        "B": "It details the distribution of functions across system modules.",
+        "C": "It provides a cost breakdown for each hardware component.",
+        "D": "It defines the user interface color scheme."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The chapter states that the high‑level overview “shows the distribution of functions across system modules” (Page 28).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the text, architectural components that are reused should be:",
+      "options": {
+        "A": "Designed only for a single specific project.",
+        "B": "Kept hidden from other modules to avoid dependencies.",
+        "C": "Shared across multiple system modules to promote efficiency.",
+        "D": "Modified for each new requirement without documentation."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The passage notes that “architectural components that are reused should …” implying they are shared across modules (Page 28).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the “Readers of different types of requirements specification” diagram, which stakeholder group is shown as a direct reader of system end‑users?",
+      "options": {
+        "A": "Client managers",
+        "B": "System architects",
+        "C": "Contractor managers",
+        "D": "System end‑users themselves"
+      },
+      "correct_answer": "D",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The figure lists “System end‑users” as a separate reader category, indicating they read the requirements intended for them (Page 3).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The feasibility‑study guidance states that if the answer to any key question is “no,” the project should:",
+      "options": {
+        "A": "Continue with reduced scope.",
+        "B": "Be postponed until funding improves.",
+        "C": "Not be pursued further.",
+        "D": "Shift to a different development methodology."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The text explicitly says, “If the answer to any of these questions is no, you should probably not go ahead with the project” (Page 4).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is identified as a system stakeholder for the Mentcare system?",
+      "options": {
+        "A": "Software developers",
+        "B": "Patients whose information is recorded in the system",
+        "C": "Hardware vendors",
+        "D": "Marketing analysts"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The stakeholder list includes “Patients whose information is recorded in the system” (Page 4).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the inspection and testing workflow diagram, which artifact is produced **immediately before** testing begins?",
+      "options": {
+        "A": "Database schemas",
+        "B": "System prototype",
+        "C": "UML design",
+        "D": "Program specification"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The flow shows “System prototype” leading into “Testing” (Page 38).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the testing figure, inspections are applied to which of the following artifacts?",
+      "options": {
+        "A": "Requirements, software, UML design, database schemas, program specification, architecture models",
+        "B": "Only the final compiled program",
+        "C": "Marketing plans and budget documents",
+        "D": "User manuals after deployment"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The diagram lists inspections covering “Requirements, Software, UML design, Database … architecture models” (Page 38).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When preparing a requirements document for an in‑house software product, which detail is most likely to be omitted?",
+      "options": {
+        "A": "High‑level, nonfunctional system requirements",
+        "B": "Detailed chapters on implementation techniques",
+        "C": "User requirements",
+        "D": "Overall system objectives"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The text notes that an in‑house document “will leave out many of detailed chapters suggested above” and focus on user and high‑level nonfunctional requirements (Page 28).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The purpose of showing the “distribution of functions across system modules” in the architecture overview is to:",
+      "options": {
+        "A": "Assign each developer a fixed salary.",
+        "B": "Visualize how responsibilities are allocated among modules.",
+        "C": "Determine the exact launch date of the product.",
+        "D": "List all third‑party licenses required."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The overview is described as displaying the “distribution of functions across system modules” (Page 28).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Reusing architectural components, as suggested in the text, primarily helps to:",
+      "options": {
+        "A": "Increase the number of unique bugs in each module.",
+        "B": "Reduce development time and promote consistency.",
+        "C": "Ensure each module is written in a different programming language.",
+        "D": "Hide critical functionality from system architects."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The passage implies reuse of components is advantageous for efficiency, which aligns with reducing development time and maintaining consistency (Page 28).",
+      "source_pages": []
+    }
+  ]
+}
