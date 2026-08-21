@@ -1,0 +1,142 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T03:05:40",
+  "pdf_path": "/home/sujan/MP_testdocs/DSA.pdf",
+  "questions": [
+    {
+      "question": "What does the `pop` method of `LinkedStack` return?",
+      "options": {
+        "A": "The node object at the top of the stack",
+        "B": "The element stored in the top node",
+        "C": "The index of the top element",
+        "D": "Nothing (None)"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The `pop` method retrieves `self.head.element` and returns it as the stack’s top element. (Source Page: [8])  \n\n---",
+      "source_pages": [
+        "8"
+      ]
+    },
+    {
+      "question": "Under which condition does the `pop` method raise an `Empty` exception?",
+      "options": {
+        "A": "When `self.size` is greater than zero",
+        "B": "When `self.head` is not `None`",
+        "C": "When `self.is_empty()` returns True",
+        "D": "When the stack contains exactly one element"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The code checks `if self.is_empty(): raise Empty(...)`, so an exception is raised if the stack is empty. (Source Page: [8])  \n\n---",
+      "source_pages": [
+        "8"
+      ]
+    },
+    {
+      "question": "How many instance variables does a `Node` object contain?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The context states a node has only two instance variables: `element` and `next`. (Source Page: [6])  \n\n---",
+      "source_pages": [
+        "6"
+      ]
+    },
+    {
+      "question": "What is the worst‑case time complexity of all `LinkedStack` operations?",
+      "options": {
+        "A": "O(n)",
+        "B": "O(log n)",
+        "C": "O(1)",
+        "D": "Amortized O(1)"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "Table 7.1 shows that every method of `LinkedStack` completes in worst‑case constant time. (Source Page: [8])  \n\n---",
+      "source_pages": [
+        "8"
+      ]
+    },
+    {
+      "question": "Why are `__slots__` used in the `Node` class definition?",
+      "options": {
+        "A": "To enforce type checking on attributes",
+        "B": "To reduce memory usage when many nodes are created",
+        "C": "To allow dynamic addition of new attributes",
+        "D": "To enable multiple inheritance"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The text explains that slots are defined to streamline memory usage because many node instances may exist. (Source Page: [6])  \n\n---",
+      "source_pages": [
+        "6"
+      ]
+    },
+    {
+      "question": "In Python’s array‑based list, what is the time complexity of `insert` or `pop` at index k?",
+      "options": {
+        "A": "O(k)",
+        "B": "O(1)",
+        "C": "O(n − k + 1)",
+        "D": "O(n²)"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The context notes that inserting or popping at index k costs O(n − k + 1) time due to element shifting. (Source Page: [38])  \n\n---",
+      "source_pages": [
+        "38"
+      ]
+    },
+    {
+      "question": "How many variables does each `LinkedStack` instance maintain?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The implementation keeps two variables: a reference to the head node and (implicitly) the size. (Source Page: [6])  \n\n---",
+      "source_pages": [
+        "6"
+      ]
+    },
+    {
+      "question": "Which line of code updates the head pointer after a `pop` operation?",
+      "options": {
+        "A": "`self.head = None`",
+        "B": "`self.head = self.head.next`",
+        "C": "`self.head = self.tail`",
+        "D": "`self.head = element`"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The line `self.head = self.head.next` bypasses the former top node. (Source Page: [8])  \n\n---",
+      "source_pages": [
+        "8"
+      ]
+    },
+    {
+      "question": "Which table provides the analysis of `LinkedStack` operations?",
+      "options": {
+        "A": "Table 5.1",
+        "B": "Table 6.2",
+        "C": "Table 7.1",
+        "D": "Table 8.3"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The analysis is given in Table 7.1. (Source Page: [8])  \n\n---",
+      "source_pages": [
+        "8"
+      ]
+    }
+  ]
+}

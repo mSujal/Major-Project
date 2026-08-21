@@ -1,0 +1,157 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T03:16:26",
+  "pdf_path": "/home/sujan/MP_testdocs/Data communication ch5.pdf",
+  "questions": [
+    {
+      "question": "What characteristic distinguishes the output of a source that generates information?",
+      "options": {
+        "A": "It is always deterministic",
+        "B": "It is described in probabilistic terms",
+        "C": "It never varies over time",
+        "D": "It is purely analog"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The output of an information source is described in probabilistic terms, meaning it is not deterministic. (Source Page: [2])  \n\n---",
+      "source_pages": [
+        "2"
+      ]
+    },
+    {
+      "question": "Which voltage levels are used in bipolar encoding?",
+      "options": {
+        "A": "Positive and negative only",
+        "B": "Zero and positive only",
+        "C": "Positive, negative, and zero",
+        "D": "Positive, negative, and ground"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "Bipolar encoding uses three voltage levels: positive, negative, and zero. (Source Page: [42])  \n\n---",
+      "source_pages": [
+        "42"
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a type of bipolar encoding popular in the data communications industry?",
+      "options": {
+        "A": "AMI",
+        "B": "B8ZS",
+        "C": "HDB3",
+        "D": "NRZ‑L"
+      },
+      "correct_answer": "D",
+      "difficulty": "Medium",
+      "explanation": "The three popular bipolar encoding schemes are AMI, B8ZS, and HDB3; NRZ‑L is a different (unipolar/NRZ) scheme. (Source Page: [42])  \n\n---",
+      "source_pages": [
+        "42"
+      ]
+    },
+    {
+      "question": "In unipolar encoding, how is a binary “1” represented?",
+      "options": {
+        "A": "Positive voltage",
+        "B": "Negative voltage",
+        "C": "Zero voltage (idle)",
+        "D": "Alternating positive and negative voltages"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "Unipolar encoding maps “1” to a positive voltage while “0” is idle (zero). (Source Page: [39])  \n\n---",
+      "source_pages": [
+        "39"
+      ]
+    },
+    {
+      "question": "What major problem makes unipolar encoding largely unusable?",
+      "options": {
+        "A": "Presence of a DC component",
+        "B": "Excessive bandwidth usage",
+        "C": "Requirement for complex hardware",
+        "D": "Inability to transmit over long distances"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "Unipolar encoding creates a non‑zero average amplitude, resulting in a DC component that is undesirable. (Source Page: [39])  \n\n---",
+      "source_pages": [
+        "39"
+      ]
+    },
+    {
+      "question": "What is the primary function of a receiver in a communication system?",
+      "options": {
+        "A": "To generate the carrier signal",
+        "B": "To amplify the transmitted signal",
+        "C": "To recover the message signal from the received signal",
+        "D": "To encode data into electrical signals"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "A receiver’s main tasks are demodulation, filtering, and decoding to recover the original message. (Source Page: [2])  \n\n---",
+      "source_pages": [
+        "2"
+      ]
+    },
+    {
+      "question": "How is analog data best described?",
+      "options": {
+        "A": "Continuous values over an interval",
+        "B": "Discrete binary values",
+        "C": "Quantized voltage levels",
+        "D": "Fixed‑length packets"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "Analog data takes on continuous values on some interval, such as audio signals. (Source Page: [2])  \n\n---",
+      "source_pages": [
+        "2"
+      ]
+    },
+    {
+      "question": "In the context of data transmission, what are signals?",
+      "options": {
+        "A": "Electrical encoding (representation) of data",
+        "B": "The raw data before encoding",
+        "C": "The physical medium (cable, fiber)",
+        "D": "The error‑correction codes applied to data"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "Signals are the electrical representations of data used for transmission. (Source Page: [2])  \n\n---",
+      "source_pages": [
+        "2"
+      ]
+    },
+    {
+      "question": "Which encoding scheme utilizes three voltage levels?",
+      "options": {
+        "A": "NRZ",
+        "B": "Bipolar encoding",
+        "C": "Manchester encoding",
+        "D": "Unipolar encoding"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "Bipolar encoding specifically employs three voltage levels (positive, negative, zero). (Source Page: [42])  \n\n---",
+      "source_pages": [
+        "42"
+      ]
+    },
+    {
+      "question": "A DC component in a transmitted signal indicates which condition?",
+      "options": {
+        "A": "Non‑zero average amplitude",
+        "B": "Zero average amplitude",
+        "C": "High‑frequency content only",
+        "D": "Phase inversion of the signal"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "A DC component arises when the average amplitude of the signal is non‑zero. (Source Page: [39])",
+      "source_pages": [
+        "39"
+      ]
+    }
+  ]
+}

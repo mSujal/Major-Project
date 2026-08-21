@@ -1,0 +1,157 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T04:27:04",
+  "pdf_path": "Datasets/PDFs/IJRTI2304061.pdf",
+  "questions": [
+    {
+      "question": "Which of the following social media platforms was mentioned as having billions of user profiles that AI can help manage?",
+      "options": {
+        "A": "Instagram",
+        "B": "Facebook",
+        "C": "LinkedIn",
+        "D": "TikTok"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "AI can organize and manage massive amounts of data on platforms like Facebook, Twitter, and Snapchat. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "What is the primary function of Virtual Customer Assistance (VCA) in call centers?",
+      "options": {
+        "A": "To replace all human agents permanently",
+        "B": "To predict and respond to inquiries before human interaction is needed",
+        "C": "To handle only technical support tickets",
+        "D": "To generate marketing newsletters"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "VCA uses voice recognition and simulated dialogue to predict and respond to customer inquiries, escalating complex issues to humans. (Source Page: [4])  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Which humanoid robots were highlighted as examples of AI in robotics?",
+      "options": {
+        "A": "Atlas and Spot",
+        "B": "Pepper and NAO",
+        "C": "Erica and Sophia",
+        "D": "ASIMO and Roomba"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The intelligent humanoid robots Erica and Sophia can talk and behave like humans. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "How can AI improve data security for companies according to the text?",
+      "options": {
+        "A": "By encrypting all data automatically without user input",
+        "B": "By determining software bugs and cyber‑attacks more effectively",
+        "C": "By deleting old files to reduce risk",
+        "D": "By limiting employee internet access"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "AI tools such as AEG bot and AI2 Platform help identify software bugs and cyber‑attacks, enhancing data safety. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "In the context of AI in education, what is one benefit of automating grading?",
+      "options": {
+        "A": "Students receive grades instantly via text message",
+        "B": "Tutors have more time to focus on teaching",
+        "C": "Grades become more subjective",
+        "D": "Schools can eliminate teachers"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "Automating grading frees tutors to devote more time to instruction. (Source Page: [4])  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Which AI application is described as being able to act as a personal virtual tutor accessible anytime, anywhere?",
+      "options": {
+        "A": "AI‑driven MOOCs",
+        "B": "Virtual reality classrooms",
+        "C": "AI personal virtual tutor",
+        "D": "Automated attendance system"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "AI can function as a personal virtual tutor that students can access at any time and place. (Source Page: [4])  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Which of the following is NOT listed as a use of AI in social media?",
+      "options": {
+        "A": "Identifying latest trends and hashtags",
+        "B": "Managing billions of user profiles efficiently",
+        "C": "Generating original video content automatically",
+        "D": "Analyzing user requirements"
+      },
+      "correct_answer": "C",
+      "difficulty": "Hard",
+      "explanation": "The text mentions AI organizing data, analyzing trends, hashtags, and user requirements, but does not mention automatic video generation. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "According to the passage, what is a key characteristic of humanoid robots like Erica and Sophia?",
+      "options": {
+        "A": "They can talk and behave like humans",
+        "B": "They can fly short distances",
+        "C": "They are designed for underwater exploration",
+        "D": "They function only as static displays"
+      },
+      "correct_answer": "A",
+      "difficulty": "Easy",
+      "explanation": "Erica and Sophia are highlighted for their ability to converse and exhibit human‑like behavior. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "What role does AI play in travel and transport as mentioned in the text?",
+      "options": {
+        "A": "Optimizing fuel consumption in aircraft",
+        "B": "Developing autonomous navigation for ships",
+        "C": "Providing humanoid robots that can interact with passengers",
+        "D": "Managing traffic signal timing in cities"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The passage cites humanoid robots like Erica and Sophia as examples of AI in robotics, relevant to travel and transport. (Source Page: [3])  \n\n---",
+      "source_pages": [
+        "3"
+      ]
+    },
+    {
+      "question": "Which AI‑based platform is cited as helping detect software bugs and cyber‑attacks?",
+      "options": {
+        "A": "TensorFlow",
+        "B": "AEG bot",
+        "C": "Watson Assistant",
+        "D": "PyTorch"
+      },
+      "correct_answer": "B",
+      "difficulty": "Hard",
+      "explanation": "The AEG bot, along with AI2 Platform, is mentioned as a tool for identifying software bugs and cyber‑attacks. (Source Page: [3])",
+      "source_pages": [
+        "3"
+      ]
+    }
+  ]
+}

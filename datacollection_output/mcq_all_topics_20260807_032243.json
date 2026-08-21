@@ -1,0 +1,22 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T03:22:43",
+  "pdf_path": "/home/sujan/MP_testdocs/DistributedSystem_2.pdf",
+  "questions": [
+    {
+      "question": "Which component in the DNS hierarchy directly follows the root server and precedes the generic top‑level domain (gTLD) servers?",
+      "options": {
+        "A": "m‑root‑servers.org",
+        "B": "c‑root‑servers.or9",
+        "C": "q‑root‑servers.org",
+        "D": "b‑root‑servers.or9"
+      },
+      "correct_answer": "D",
+      "difficulty": "Easy",
+      "explanation": "The text lists “b‑root‑servers.or9” as a root server that connects to the generic TLD layer. (Source Page: [62])",
+      "source_pages": [
+        "62"
+      ]
+    }
+  ]
+}
