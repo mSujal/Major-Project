@@ -1,0 +1,147 @@
+{
+  "topic": "tcp vs udp",
+  "generated_at": "2026-08-26T23:09:05",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Based on the context, which of the following best explains why UDP was introduced as a separate protocol from TCP?",
+      "options": {
+        "A": "To provide a transport service that includes built‑in flow control for large file transfers.",
+        "B": "To offer an unreliable, non‑flow‑controlled transport suitable for applications like packetized voice.",
+        "C": "To replace TCP’s retransmission mechanism with a more efficient error‑correction algorithm.",
+        "D": "To integrate routing functions directly into the transport layer."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "UDP was created to provide an unreliable, non‑flow‑controlled end‑to‑end transport service for applications such as packetized voice, as noted on page 61.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the text, how did early versions of TCP differ from the modern TCP described today?",
+      "options": {
+        "A": "Early TCP combined reliable delivery with forwarding functions that are now handled by IP.",
+        "B": "Early TCP lacked any retransmission mechanism for lost packets.",
+        "C": "Early TCP operated only at the physical layer, not the transport layer.",
+        "D": "Early TCP used UDP as its underlying protocol for packet routing."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The early versions of TCP combined reliable in‑sequence delivery with forwarding functions, which are now performed by IP, as mentioned on page 61.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly differentiates the way TCP and UDP handle data transmission, based on the provided material?",
+      "options": {
+        "A": "TCP guarantees delivery by retransmitting lost segments, while UDP sends datagrams without such guarantees.",
+        "B": "UDP guarantees in‑order delivery, whereas TCP may deliver packets out of order.",
+        "C": "Both TCP and UDP use the same flow‑control mechanisms, but TCP adds encryption.",
+        "D": "UDP implements end‑system retransmission, while TCP relies on network‑layer routing."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "TCP provides reliable in‑sequence delivery via end‑system retransmission, whereas UDP is described as an unreliable, non‑flow‑controlled service (pages 61, 5).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the historical development described, why might an application that streams live audio prefer UDP over TCP?",
+      "options": {
+        "A": "Because UDP ensures that every packet arrives, preserving audio quality.",
+        "B": "Because UDP’s lack of flow control reduces latency, which is critical for real‑time audio.",
+        "C": "Because UDP automatically corrects errors, eliminating the need for error handling.",
+        "D": "Because UDP encrypts audio data, providing better security than TCP."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "UDP was introduced for applications like packetized voice, where low latency is more important than guaranteed delivery, as indicated on page 61.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the role of RFCs, as mentioned in the context, support the existence of both TCP and UDP?",
+      "options": {
+        "A": "RFCs mandate that all transport protocols must be reliable, thus justifying TCP only.",
+        "B": "RFCs provide detailed specifications for each protocol, allowing distinct services like reliable TCP and unreliable UDP.",
+        "C": "RFCs prohibit the use of UDP in any Internet application.",
+        "D": "RFCs define only IP, leaving TCP and UDP undefined."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "RFCs define protocols such as TCP and UDP in detail, enabling them to offer different services (page 5).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the information on page 61, which of the following best characterizes the relationship between IP, TCP, and UDP?",
+      "options": {
+        "A": "IP handles routing, while TCP and UDP provide different transport‑layer services on top of IP.",
+        "B": "TCP includes IP functions, making UDP unnecessary.",
+        "C": "UDP replaces IP for packet switching in modern networks.",
+        "D": "IP provides reliability, whereas TCP and UDP are both unreliable."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text explains that IP is the network‑layer protocol, while TCP and UDP are transport‑layer protocols that operate above IP (pages 5, 61).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An engineer argues that because TCP was originally combined with forwarding functions, UDP is redundant. Based on the context, which rebuttal is most accurate?",
+      "options": {
+        "A": "UDP is redundant because all its features are now part of TCP.",
+        "B": "UDP remains necessary because it offers a lightweight, connectionless service without the overhead of TCP’s reliability mechanisms.",
+        "C": "UDP is only used for file transfers, which TCP cannot handle.",
+        "D": "UDP provides flow control that TCP lacks."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "UDP was created to provide a simpler, unreliable service for applications where TCP’s reliability is unnecessary, as described on page 61.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "From the passage, what can be inferred about the significance of the year “the end of the 1970s” for transport protocols?",
+      "options": {
+        "A": "It marks the point when TCP was first introduced, eliminating the need for UDP.",
+        "B": "It indicates that TCP, UDP, and IP were conceptually established by that time, forming the core of Internet transport.",
+        "C": "It denotes the year when RFCs were discontinued.",
+        "D": "It signifies the abandonment of IP in favor of a new routing protocol."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that TCP, UDP, and IP were conceptually in place by the end of the 1970s (page 61).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the description of the transport layer on page 51 help clarify why both TCP and UDP are needed?",
+      "options": {
+        "A": "It shows that the transport layer only forwards packets without any segmentation.",
+        "B": "It indicates that the transport layer passes either a TCP segment or a UDP datagram to the network layer, implying distinct services.",
+        "C": "It suggests that only TCP can interact with the network layer, while UDP cannot.",
+        "D": "It reveals that the transport layer encrypts all data before sending."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that a transport‑layer segment (TCP) or datagram (UDP) is passed to the network layer, highlighting their distinct roles (page 51).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the historical context, why is it important for modern networks to retain both TCP and UDP rather than consolidating into a single transport protocol?",
+      "options": {
+        "A": "Because TCP cannot operate without UDP’s error‑checking features.",
+        "B": "Because some applications require reliable, ordered delivery (TCP) while others prioritize low latency and can tolerate loss (UDP).",
+        "C": "Because UDP provides built‑in encryption required for secure communications.",
+        "D": "Because TCP is only compatible with IPv6, while UDP works only with IPv4."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The text explains that TCP offers reliable delivery, whereas UDP provides an unreliable, non‑flow‑controlled service for latency‑sensitive applications, justifying the need for both (pages 5, 61).",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "cots reuse",
+  "generated_at": "2026-08-26T22:39:48",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "What does COTS integration/reuse refer to in the context of system development?",
+      "options": {
+        "A": "Creating custom components from scratch for each project",
+        "B": "Incorporating off‑the‑shelf (commercial) components together with newly developed ones",
+        "C": "Outsourcing all development tasks to external vendors",
+        "D": "Removing all reusable components from the system architecture"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "COTS integration/reuse means that off‑the‑shelf (commercial) components are combined with newly developed components, as described on [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the architecture overview, why should architectural components that are reused be highlighted?",
+      "options": {
+        "A": "To hide them from the testing team",
+        "B": "To ensure they are removed during final deployment",
+        "C": "To make their presence and impact on the system clear to stakeholders",
+        "D": "To indicate they must be rewritten later"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states that reused architectural components should be highlighted so their role in the system is evident, as noted on [Page 28].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During system testing, what is the primary activity involving reusable components and off‑the‑shelf systems?",
+      "options": {
+        "A": "Isolating them to avoid any interaction with new code",
+        "B": "Integrating them with newly developed components before testing the complete system",
+        "C": "Deleting them after each test run",
+        "D": "Replacing them with mock objects for verification"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 49 explains that reusable components and off‑the‑shelf systems are integrated with newly developed components before the whole system is tested.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which type of interface is described as one where a component encapsulates procedures that other components can call, and is used by objects and reusable components?",
+      "options": {
+        "A": "Data‑centric interfaces",
+        "B": "Event‑driven interfaces",
+        "C": "Procedural interfaces",
+        "D": "Graphical user interfaces"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 47 defines procedural interfaces as the form used by objects and reusable components.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How can partition testing support the verification of COTS reusable components?",
+      "options": {
+        "A": "By testing only the custom code and ignoring COTS parts",
+        "B": "By designing test cases that cover both whole systems and individual components, including COTS parts",
+        "C": "By replacing COTS components with stubs before testing",
+        "D": "By limiting tests to performance metrics only"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 44 states that partition testing can be used to design test cases for both systems and components, which includes COTS reusable parts.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the system requirements specification, where is it appropriate to define interfaces to other (including COTS) systems?",
+      "options": {
+        "A": "Only in the user requirements section",
+        "B": "In the non‑functional requirements portion of the specification",
+        "C": "In the architectural component list, without any textual description",
+        "D": "In the implementation code comments only"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context on Page 28 notes that interfaces to other systems, such as COTS, may be defined in the non‑functional requirements.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is a key advantage of using procedural interfaces for reusable components?",
+      "options": {
+        "A": "They eliminate the need for any documentation",
+        "B": "They allow other components to invoke well‑defined operations without needing to know internal details",
+        "C": "They guarantee that the component will never change",
+        "D": "They automatically generate user interface screens"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Procedural interfaces encapsulate procedures that can be called by other components, providing abstraction, as described on Page 47.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When planning the high‑level system architecture, what should be done with components that are identified for reuse?",
+      "options": {
+        "A": "They should be marked for future removal",
+        "B": "They should be highlighted to indicate their reuse status",
+        "C": "They should be merged with custom code to hide their origin",
+        "D": "They should be ignored during risk analysis"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The architecture overview on Page 28 advises that reused components be highlighted.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best reflects the relationship between system testing and COTS reuse?",
+      "options": {
+        "A": "COTS components are tested only once, before integration",
+        "B": "System testing validates the interaction between COTS components and newly developed parts together",
+        "C": "COTS components are exempt from any testing because they are commercial products",
+        "D": "System testing focuses solely on performance, not on integration of COTS parts"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 49 explains that during system testing, both reusable (including COTS) and newly developed components are integrated and tested as a complete system.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is it recommended to use natural language, simple tables, and intuitive diagrams when documenting requirements that may involve COTS components?",
+      "options": {
+        "A": "Because COTS vendors only accept formal mathematical specifications",
+        "B": "To ensure that all stakeholders, including those unfamiliar with software jargon, can understand the requirements and interfaces",
+        "C": "To comply with a mandatory industry standard that forbids technical language",
+        "D": "To make the document longer and more detailed"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 20 advises using natural language and simple notations so that non‑technical stakeholders can comprehend requirements, which is important when describing interfaces to COTS components.",
+      "source_pages": []
+    }
+  ]
+}

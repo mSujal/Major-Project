@@ -1,0 +1,147 @@
+{
+  "topic": "system component unit integration testing",
+  "generated_at": "2026-08-26T22:42:41",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best differentiates system testing from component testing in terms of their primary testing focus?",
+      "options": {
+        "A": "System testing concentrates on component interfaces, while component testing concentrates on component interactions.",
+        "B": "System testing concentrates on component interactions, while component testing concentrates on component interfaces.",
+        "C": "Both focus equally on interfaces and interactions, but system testing does it later in the life‑cycle.",
+        "D": "Component testing validates whole‑system behavior, whereas system testing validates only individual units."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "System testing is described as focusing on testing component interactions, whereas component testing focuses on testing the component interfaces that provide access to component functions. [Page 41][Page 49]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does system testing differ from unit testing regarding the level of integration of code elements?",
+      "options": {
+        "A": "System testing exercises isolated methods, while unit testing exercises integrated components.",
+        "B": "System testing exercises integrated components, while unit testing exercises isolated methods or classes.",
+        "C": "Both test isolated units; the difference lies only in the test data used.",
+        "D": "Unit testing integrates reusable off‑the‑shelf components, while system testing does not."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Unit testing targets individual program units such as methods or object classes (Page 41). System testing integrates components to create a version of the system and then tests the integrated system (Page 49).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, what is the chief purpose of interaction testing performed during system testing?",
+      "options": {
+        "A": "To verify that each unit meets its functional specification in isolation.",
+        "B": "To discover component bugs that appear only when components are used together.",
+        "C": "To measure performance of individual methods under load.",
+        "D": "To ensure that test cases follow the design patterns described in Section 8.1.2."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Interaction testing “should discover those component bugs that are only revealed when a component is used by other components in the system.” (Page 49)\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "At which testing stage is the compatibility of reusable off‑the‑shelf components with newly developed components primarily examined?",
+      "options": {
+        "A": "Unit testing",
+        "B": "Component testing",
+        "C": "System testing",
+        "D": "Validation testing"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "System testing integrates reusable components that have been separately developed with newly developed components and then tests the complete system. (Page 49)\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does component testing differ from unit testing in terms of the code elements that are exercised?",
+      "options": {
+        "A": "Component testing validates individual methods; unit testing validates composite components.",
+        "B": "Component testing integrates several units to form composite components and tests their interfaces; unit testing tests isolated methods or classes.",
+        "C": "Both test the same elements; the difference is only in the test team composition.",
+        "D": "Unit testing focuses on data‑flow across components, while component testing focuses on performance."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Component testing “integrates several individual units to create composite components” and focuses on component interfaces (Page 41). Unit testing “tests program components such as methods or object classes” (Page 41).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly captures the difference between system testing and component testing regarding verification of data flow?",
+      "options": {
+        "A": "System testing verifies that data is transferred correctly across component interfaces at the system level; component testing verifies that interfaces provide access to component functions.",
+        "B": "Component testing verifies system‑wide data flow; system testing verifies only local data flow inside a component.",
+        "C": "Both testing levels verify data flow in identical ways; the distinction is only in the documentation used.",
+        "D": "System testing does not consider data flow, whereas component testing does."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "System testing checks that components “transfer the right data at the right time across their interfaces” (Page 49). Component testing focuses on “testing the component interfaces that provide access to the component functions” (Page 41).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which testing activity is most likely to involve a separate testing team with no involvement from designers and programmers?",
+      "options": {
+        "A": "Unit testing",
+        "B": "Component testing",
+        "C": "System testing",
+        "D": "Validation testing"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The context notes that “system testing is a collective rather than an individual process. In some companies, system testing may involve a separate testing team with no involvement from designers and programmers.” (Page 49)\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When multiple sub‑teams develop components that must work together, which testing phase is intended to uncover misunderstandings between those components?",
+      "options": {
+        "A": "Unit testing",
+        "B": "Component testing",
+        "C": "System testing (interaction testing)",
+        "D": "Regression testing"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Interaction testing during system testing “helps find misunderstandings, made by component developers, about other components in the system.” (Page 49)\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which testing level explicitly focuses on testing the functionality of objects or methods rather than their interactions?",
+      "options": {
+        "A": "System testing",
+        "B": "Component testing",
+        "C": "Integration testing",
+        "D": "Unit testing"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "Unit testing “should focus on testing the functionality of objects or methods.” (Page 41)\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which pair correctly matches the testing level with its primary focus as described in the context?",
+      "options": {
+        "A": "Unit testing – testing component interactions across the whole system.",
+        "B": "Component testing – testing the functionality of individual methods in isolation.",
+        "C": "System testing – testing component interactions and data transfer across interfaces.",
+        "D": "Integration testing – testing reusable off‑the‑shelf components only."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "System testing “should focus on testing the interactions between the components and objects that make up a system” and checks data transfer across interfaces (Page 49). The other options misstate the focus of their respective levels.",
+      "source_pages": []
+    }
+  ]
+}

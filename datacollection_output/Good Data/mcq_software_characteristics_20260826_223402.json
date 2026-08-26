@@ -1,0 +1,147 @@
+{
+  "topic": "software characteristics",
+  "generated_at": "2026-08-26T22:34:02",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following is a characteristic that indicates a software system’s ability to perform its intended functions without failure, especially in safety‑critical environments?",
+      "options": {
+        "A": "Maintainability",
+        "B": "Reliability",
+        "C": "Portability",
+        "D": "Usability"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Reliability is highlighted as a key characteristic for critical software where a higher level of confidence is required [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, what does the “completeness check” ensure in a requirements document?",
+      "options": {
+        "A": "That all design diagrams are included",
+        "B": "That there are no contradictory constraints",
+        "C": "That every function and constraint intended by the user is defined",
+        "D": "That the document follows a standard template"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Completeness checks verify that the requirements document includes all functions and constraints intended by the system user [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best explains the difference between verification and validation as described in the text?",
+      "options": {
+        "A": "Verification checks that the software meets user expectations, while validation checks code syntax.",
+        "B": "Verification ensures the software meets its specification; validation ensures it meets the customer’s expectations.",
+        "C": "Verification is performed only after testing, whereas validation occurs before coding.",
+        "D": "Verification focuses on performance, while validation focuses on security."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Verification checks conformity to specifications; validation ensures the software meets customer expectations [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of custom software, what testing practice is recommended to demonstrate that the software meets its requirements?",
+      "options": {
+        "A": "Conduct a single integration test covering all modules.",
+        "B": "Perform at least one test for every requirement in the requirements document.",
+        "C": "Use only automated tests without manual review.",
+        "D": "Test only the most critical features identified by the developer."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "For custom software, there should be at least one test for each requirement to show the software meets its requirements [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes a “consistency check” in a requirements document?",
+      "options": {
+        "A": "Verifying that the document uses consistent terminology throughout.",
+        "B": "Ensuring that no two requirements conflict or describe the same function differently.",
+        "C": "Checking that all stakeholder signatures are present.",
+        "D": "Confirming that the document is formatted according to the company style guide."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Consistency checks ensure requirements do not conflict or give contradictory descriptions of the same function [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might users have low expectations of software quality according to the provided material?",
+      "options": {
+        "A": "Because modern software is always free and therefore less reliable.",
+        "B": "Because of previous experiences with buggy, unreliable software.",
+        "C": "Because developers rarely perform validation activities.",
+        "D": "Because testing is limited to unit tests only."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Users’ low expectations stem from past experiences with buggy, unreliable software [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which characteristic is most directly linked to the statement “The more critical the software, the more important it is that it is reliable”?",
+      "options": {
+        "A": "Modifiability",
+        "B": "Reliability",
+        "C": "Scalability",
+        "D": "Interoperability"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage ties criticality of software to the need for higher reliability [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following actions is part of the validation process as described?",
+      "options": {
+        "A": "Checking that source code follows naming conventions.",
+        "B": "Demonstrating to the developer and the customer that the software meets its requirements.",
+        "C": "Performing static analysis to detect syntax errors.",
+        "D": "Ensuring that every class has at least one unit test."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Validation includes demonstrating to stakeholders that the software meets its requirements [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When preparing a requirements document for an in‑house software product, the focus is primarily on:",
+      "options": {
+        "A": "Detailed architectural diagrams and low‑level design.",
+        "B": "Defining user requirements and high‑level, non‑functional system requirements.",
+        "C": "Listing every possible test case for each module.",
+        "D": "Including exhaustive legal and regulatory compliance sections."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "In‑house documents concentrate on user requirements and high‑level non‑functional requirements [Page 28].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which set of characteristics together best represent “good software” according to the themes in the context?",
+      "options": {
+        "A": "Portability, Internationalization, Documentation, Licensing",
+        "B": "Reliability, Consistency, Completeness, Validation",
+        "C": "Speed, Memory Usage, Encryption, Licensing",
+        "D": "Color Scheme, Font Choice, Layout, Branding"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text emphasizes reliability, consistency checks, completeness checks, and validation as key desirable qualities of software [Pages 29, 37].",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "topic": "functional nonfunctional requirements",
+  "generated_at": "2026-08-26T22:34:08",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "A new hospital information system must keep patient records confidential, limit system downtime to no more than 4 hours per month, and allow nurses to retrieve a patient’s medication history with a single click. Which of the following statements correctly identifies the type of requirement for each of the three needs?",
+      "options": {
+        "A": "Confidentiality – functional, Downtime limit – functional, Single‑click retrieval – non‑functional",
+        "B": "Confidentiality – non‑functional, Downtime limit – non‑functional, Single‑click retrieval – functional",
+        "C": "Confidentiality – functional, Downtime limit – non‑functional, Single‑click retrieval – functional",
+        "D": "Confidentiality – non‑functional, Downtime limit – functional, Single‑click retrieval – non‑functional"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Confidentiality is a security constraint (non‑functional) [Page 8]; the downtime limit is a quantitative reliability constraint (non‑functional) [Page 10]; the single‑click retrieval is a system service (functional) [Page 5].\n\n---",
+      "source_pages": []
+    }
+  ]
+}

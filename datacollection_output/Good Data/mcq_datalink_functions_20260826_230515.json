@@ -1,0 +1,147 @@
+{
+  "topic": "datalink functions",
+  "generated_at": "2026-08-26T23:05:15",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the primary action of the link layer when a datagram moves from one node to the next along its route?",
+      "options": {
+        "A": "It routes the datagram through multiple possible paths.",
+        "B": "It adds a network‑layer header and forwards the datagram.",
+        "C": "It delivers the datagram over a single link and then passes it up to the network layer.",
+        "D": "It encrypts the datagram before transmission."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The link layer “delivers the datagram to the next node along the route… and then … passes the datagram up to the network layer” (see [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, how can a single datagram be processed by different link‑layer protocols during its journey?",
+      "options": {
+        "A": "It must use the same protocol on every link.",
+        "B": "It can be handled by Ethernet on one link and by PPP on another link.",
+        "C": "It switches protocols only when the destination changes.",
+        "D": "It uses multiple protocols simultaneously on a single link."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that “a datagram may be handled by Ethernet on one link and by PPP on” another link (see [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which service is explicitly mentioned as being possibly provided by a link‑layer protocol?",
+      "options": {
+        "A": "End‑to‑end flow control.",
+        "B": "Reliable delivery over a single link.",
+        "C": "Dynamic routing of packets.",
+        "D": "Application‑layer authentication."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states that “some link‑layer protocols provide reliable delivery, from transmitting node, over one link, to receiving node” (see [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a network‑layer datagram reaches the link layer, what additional information does the link layer add before transmission?",
+      "options": {
+        "A": "A transport‑layer segment header.",
+        "B": "A network‑layer routing table entry.",
+        "C": "A link‑layer header, forming a frame.",
+        "D": "An application‑layer payload."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context explains that the link layer “will add its own link‑layer header information and create a link‑layer frame” (see [Page 53]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What determines the specific services (e.g., reliability, framing) offered by the link layer on a given link?",
+      "options": {
+        "A": "The physical medium’s length.",
+        "B": "The transmission rate of the link.",
+        "C": "The particular link‑layer protocol employed on that link.",
+        "D": "The number of routers between source and destination."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text says “The services provided by the link layer depend on the specific link‑layer protocol that is employed over the link” (see [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which layer is responsible for routing a datagram through a series of routers, relying on the link layer for moving the packet from one node to the next?",
+      "options": {
+        "A": "Physical layer.",
+        "B": "Data link layer.",
+        "C": "Network layer.",
+        "D": "Transport layer."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage notes “The Internet’s network layer routes a datagram… To move a packet… the network layer relies on the services of the link layer” (see [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How do the network and link layers interact when a host has data to send to another host?",
+      "options": {
+        "A": "The link layer passes the data directly to the transport layer.",
+        "B": "The network layer passes the datagram down to the link layer, which then delivers it over the next link.",
+        "C": "The transport layer bypasses the link layer and sends frames directly.",
+        "D": "The application layer adds a link‑layer header before the network layer processes the data."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "According to the text, “the network layer passes the datagram down to the link layer, which delivers the datagram to the next node… the link layer passes the datagram up to the network layer” (see [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of differing transmission rates on various links, what role does the link layer play when a host segments data for transmission?",
+      "options": {
+        "A": "It selects the fastest possible path regardless of link‑layer protocols.",
+        "B": "It adds a link‑layer header to each segment before placing it on the specific link, accommodating that link’s rate.",
+        "C": "It changes the data’s content to match the link’s bandwidth.",
+        "D": "It merges multiple segments into a single large frame to increase efficiency."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The description of segmenting data and “adding header bytes to each segment” is part of the process that the link layer then frames for transmission on a link with its own rate (see [Page 4] and [Page 51]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "After the transport layer passes a segment to the network layer, which sequence of actions correctly follows according to the layered model described?",
+      "options": {
+        "A": "Network layer adds its header, then the link layer adds its header, forming a frame.",
+        "B": "Link layer adds its header first, then the network layer adds its header.",
+        "C": "Transport layer adds a link‑layer header directly after segmentation.",
+        "D": "Application layer adds both network‑ and link‑layer headers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states that the transport layer passes the segment to the network layer, which adds a network‑layer header, creating a datagram, and then “the link layer… will add its own link‑layer header information and create a link‑layer frame” (see [Page 53]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might a datagram encounter multiple different link‑layer protocols during a single end‑to‑end transmission?",
+      "options": {
+        "A": "Because each router dynamically changes the protocol for security.",
+        "B": "Because different physical links in the path may use different link‑layer technologies.",
+        "C": "Because the transport layer requests protocol changes at each hop.",
+        "D": "Because the destination host dictates the protocol for the entire route."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that “a datagram may be handled by different link‑layer protocols at different links along its route” (see [Page 51]), implying that the variation is due to differing link technologies.",
+      "source_pages": []
+    }
+  ]
+}

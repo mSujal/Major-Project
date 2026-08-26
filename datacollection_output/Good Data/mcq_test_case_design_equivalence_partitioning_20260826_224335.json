@@ -1,0 +1,147 @@
+{
+  "topic": "test case design equivalence partitioning",
+  "generated_at": "2026-08-26T22:43:35",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements best explains the concept of equivalence partitioning as described in the provided material?",
+      "options": {
+        "A": "It divides all possible test inputs into groups where each group is expected to produce identical results, so testing one member of a group is sufficient.",
+        "B": "It requires testing every possible input value individually to guarantee complete coverage.",
+        "C": "It focuses only on invalid inputs and ignores valid input ranges.",
+        "D": "It is used solely for performance testing, not functional testing."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Equivalence partitioning groups inputs that are expected to behave the same way, allowing a single test case per group; this is stated on [Page 44] where input partitions are defined and processed identically.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, why might a tester create a separate input equivalence partition that only shares the characteristic of producing outputs in the same output partition?",
+      "options": {
+        "A": "To reduce the number of test cases by merging valid and invalid inputs.",
+        "B": "Because some inputs, although different, lead to the same type of output and can be tested together.",
+        "C": "To ensure that every possible output is tested with every possible input.",
+        "D": "To comply with validation testing guidelines that require unique inputs for each output."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that a separate input partition may be defined when the only common characteristic is that they generate outputs within the same output partition [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In validation testing, test cases are selected to reflect the system’s expected use. How does equivalence partitioning support this type of testing?",
+      "options": {
+        "A": "By deliberately selecting obscure inputs that are unlikely to be used in practice.",
+        "B": "By dividing the expected input domain into representative groups and choosing typical values from each.",
+        "C": "By focusing exclusively on boundary values without considering middle values.",
+        "D": "By ignoring invalid inputs entirely."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Validation testing uses realistic inputs; equivalence partitioning helps by identifying input partitions that reflect normal usage and selecting representative cases from each [Page 36] and [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A function under test accepts a numeric code that can be 0, 1, or any integer greater than 1. Which set of equivalence partitions correctly captures the valid and invalid input domains?",
+      "options": {
+        "A": "Valid: {0,1}, Invalid: {>1}",
+        "B": "Valid: {0,1,>1}, Invalid: {}",
+        "C": "Valid: {0,1}, Valid: {>1}, Invalid: {}",
+        "D": "Valid: {0,1,>1}, Invalid: {non‑numeric values}"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "The context describes partitioning inputs into valid groups (e.g., specific values and a range) and a separate invalid group (e.g., non‑numeric). This matches the example of distinct valid partitions plus an invalid partition [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the relationship that can exist between input and output equivalence partitions?",
+      "options": {
+        "A": "Each input partition must map to multiple unrelated output partitions.",
+        "B": "There is always a one‑to‑one mapping between every input and output partition.",
+        "C": "Sometimes a single input partition corresponds to a single output partition, but not always.",
+        "D": "Input partitions and output partitions are unrelated concepts."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The material notes that sometimes there is a 1:1 mapping between input and output partitions, but this is not guaranteed [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When performing defect testing, how might a tester use equivalence partitioning differently from validation testing?",
+      "options": {
+        "A": "By selecting only the most common inputs from each valid partition.",
+        "B": "By creating partitions that include obscure or unlikely inputs to expose hidden defects.",
+        "C": "By avoiding any invalid input partitions.",
+        "D": "By testing every single value in each partition."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Defect testing aims to expose defects and may use obscure inputs; equivalence partitioning can still be applied by defining partitions that contain such atypical values [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is an example of an invalid input equivalence partition as described in the context?",
+      "options": {
+        "A": "All ages between 0 and 120.",
+        "B": "All strings that are longer than 255 characters.",
+        "C": "All negative numbers when only non‑negative numbers are allowed.",
+        "D": "All dates in the future for a system that only processes past dates."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text mentions that the shaded area representing invalid inputs forms an equivalence partition; negative numbers in a non‑negative domain are a typical invalid partition [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does equivalence partitioning help reduce the number of test cases needed for a component?",
+      "options": {
+        "A": "By requiring that every possible input be tested at least once.",
+        "B": "By allowing the tester to select one representative value from each partition, assuming all members behave the same.",
+        "C": "By focusing only on boundary values and ignoring interior values.",
+        "D": "By eliminating the need for any test cases that target invalid inputs."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The core idea is that members of a partition are expected to be processed identically, so one test per partition suffices [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A software component processes a string input that must be exactly 5 characters long, consisting only of uppercase letters. Which equivalence partitions should a tester define?",
+      "options": {
+        "A": "Valid: {5‑character uppercase strings}; Invalid: {all other strings}.",
+        "B": "Valid: {any string}; Invalid: {}.",
+        "C": "Valid: {uppercase strings of any length}; Invalid: {non‑uppercase strings}.",
+        "D": "Valid: {5‑character strings}; Invalid: {strings of other lengths}."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "The description fits an input partition where the valid class is the exact requirement, and everything else forms a single invalid partition, matching the notion of partitions in the text [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of equivalence partitioning, what is meant by the statement “a program being tested should process all of the members of an input equivalence partition in the same way”?",
+      "options": {
+        "A": "The program must produce identical output values for every member of the partition.",
+        "B": "The program must execute the same code path for every member of the partition, leading to equivalent behavior.",
+        "C": "The program must reject all members of the partition as invalid.",
+        "D": "The program must treat the partition as a single input value."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text explains that members of a partition are expected to be handled similarly, implying the same processing logic or code path [Page 44].",
+      "source_pages": []
+    }
+  ]
+}

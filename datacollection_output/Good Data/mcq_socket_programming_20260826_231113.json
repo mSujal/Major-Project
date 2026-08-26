@@ -1,0 +1,147 @@
+{
+  "topic": "socket programming",
+  "generated_at": "2026-08-26T23:11:13",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Define socket programming. How does a program running on one end system instruct the Internet to deliver data to a program on another end system?",
+      "options": {
+        "A": "By sending an email to the destination host’s address.",
+        "B": "By using the socket interface that specifies destination address and port.",
+        "C": "By directly accessing the routing tables of intermediate routers.",
+        "D": "By embedding the data in DNS queries."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context explains that the socket interface “specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination program” [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Apply the socket interface concept: If Alice wants to send a letter to Bob using the Internet analogy, which of the following best represents the “postal service interface” in socket programming?",
+      "options": {
+        "A": "The TCP checksum algorithm.",
+        "B": "The socket API that the program must follow.",
+        "C": "The physical Ethernet cable.",
+        "D": "The DNS server that resolves host names."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The text likens the Internet’s “socket interface” to a postal service interface that programs must follow to have data delivered, indicating the socket API is the analogous component [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Define the role of end systems in socket programming. Which statement best captures their function according to the context?",
+      "options": {
+        "A": "End systems process packets in the network core.",
+        "B": "End systems provide the socket interface that programs use to send and receive data.",
+        "C": "End systems generate routing protocols for the Internet.",
+        "D": "End systems act as firewalls for all incoming traffic."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states that “End systems attached to the Internet provide a socket interface” for programs to request data delivery [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Apply the analogy given: If the postal service delivers a letter based on an address and a recipient’s name, what two pieces of information does a socket program typically specify to deliver data?",
+      "options": {
+        "A": "MAC address and VLAN ID.",
+        "B": "IP address and port number.",
+        "C": "URL and HTTP method.",
+        "D": "File name and directory path."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The socket interface requires specifying a destination program, which in network terms translates to an IP address and a port number, as implied by the postal analogy [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Define why packet switches are not concerned with the application source or sink in socket programming.",
+      "options": {
+        "A": "Because they encrypt all application data.",
+        "B": "Because they only forward packets based on network-layer addresses, not application-layer identifiers.",
+        "C": "Because they store the entire application code for execution.",
+        "D": "Because they assign dynamic ports to each application."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context notes that “packet switches facilitate the exchange of data among end systems, they are not concerned with the application that is the source or sink of data” [Page 5].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Apply the concept of distributed applications: Which scenario best illustrates a distributed application using sockets as described?",
+      "options": {
+        "A": "A single desktop program that processes local files only.",
+        "B": "Two programs running on the same computer communicating via shared memory.",
+        "C": "Programs on separate end systems exchanging data over the Internet using sockets.",
+        "D": "A router updating its routing table via OSPF."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The passage describes “distributed applications” as those where “programs running on the different end systems will need to send data to each other” using the socket interface [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Define the relationship between RFCs and socket programming. Which statement correctly reflects this relationship?",
+      "options": {
+        "A": "RFCs prescribe the exact socket API functions developers must use.",
+        "B": "RFCs define the underlying protocols (e.g., TCP, IP) that socket programming relies on.",
+        "C": "RFCs are only about hardware specifications, not software interfaces.",
+        "D": "RFCs replace the need for a socket interface."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that RFCs “define protocols such as TCP, IP, HTTP…”, which are the protocols that socket programming interfaces with [Page 5].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Apply the socket programming process: To create a simple web server, which sequence of socket operations is most appropriate?",
+      "options": {
+        "A": "Open socket → bind to port → listen → accept connections → send/receive data.",
+        "B": "Open socket → send data → close socket → listen.",
+        "C": "Resolve DNS → open socket → broadcast packet → wait.",
+        "D": "Create thread → open socket → encrypt data → forward to router."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "While not listed verbatim, the logical steps follow from the description of how programs use the socket interface to deliver data, implying the standard server sequence (open, bind, listen, accept, communicate) [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Define how a programmer can transform the postal‑service analogy into an actual Internet application. Which action aligns with the context’s guidance?",
+      "options": {
+        "A": "Write the program in any language (e.g., Java, C, Python) and use the socket API to communicate.",
+        "B": "Modify the Internet backbone routers to recognize custom addresses.",
+        "C": "Use only high‑level web browsers to send data.",
+        "D": "Embed the entire application code into DNS records."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage suggests that to turn the idea into an application, “you are going to need to write programs… in Java, C, or Python” that use the socket interface [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Apply the concept of “socket interface” to explain why a program cannot directly instruct the network core to deliver data. Which answer best reflects this limitation?",
+      "options": {
+        "A": "Because only the operating system’s kernel can access the network core.",
+        "B": "Because the socket interface abstracts delivery, leaving routing to the Internet infrastructure.",
+        "C": "Because the program must first become a router.",
+        "D": "Because the Internet core blocks all program‑level traffic."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context states that the socket interface “specifies how the sending program must follow so that the Internet can deliver the data,” implying the program relies on the network’s routing mechanisms rather than direct control [Page 6].\n\n---",
+      "source_pages": []
+    }
+  ]
+}

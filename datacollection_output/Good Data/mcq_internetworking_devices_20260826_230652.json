@@ -1,0 +1,147 @@
+{
+  "topic": "internetworking devices",
+  "generated_at": "2026-08-26T23:06:52",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "How does a link‑layer switch differ from an Internet router in the way they handle network addresses?",
+      "options": {
+        "A": "A switch forwards frames using IP addresses, while a router uses Ethernet (MAC) addresses.",
+        "B": "A switch recognizes only layer 2 (Ethernet) addresses, whereas a router can process layer 3 (IP) addresses.",
+        "C": "Both devices use only layer 2 addresses, but the router adds encryption.",
+        "D": "Both devices use only layer 3 addresses, but the switch adds error‑checking."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that “Internet routers are capable of implementing the IP protocol (a layer 3 protocol), while link‑layer switches are not… link‑layer switches do not recognize IP addresses, they are capable of recognizing layer 2 addresses, such as Ethernet addresses” [Page 53].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the described home network, what primary function does the home router serve relative to the wireless access point?",
+      "options": {
+        "A": "It provides Wi‑Fi signal amplification for the access point.",
+        "B": "It connects the access point and other wired devices to the Internet.",
+        "C": "It assigns MAC addresses to all wireless devices.",
+        "D": "It converts Ethernet frames into Bluetooth packets."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage describes a “home router that connects the wireless access point, and any other wired home devices, to the Internet” [Page 17].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why can a wireless access point be considered an internetworking device according to the context?",
+      "options": {
+        "A": "Because it only forwards packets within the same LAN segment.",
+        "B": "Because it bridges wireless and wired network segments, enabling communication between them.",
+        "C": "Because it assigns IP addresses to all devices on the network.",
+        "D": "Because it replaces the need for a router in a home network."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that “wireless users transmit/receive packets to/from an access point that is connected into the enterprise’s network (most likely using wired Ethernet)” indicating the AP links wireless and wired domains [Page 17].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given that link‑layer switches recognize only layer 2 addresses, what is a direct consequence for forwarding IP packets?",
+      "options": {
+        "A": "The switch can route the packet to the correct destination network without consulting a routing table.",
+        "B": "The switch must rely on a router to handle the IP‑level forwarding decision.",
+        "C": "The switch will automatically convert the IP packet to a TCP segment.",
+        "D": "The switch can encrypt the IP payload before forwarding."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Since switches do not recognize IP addresses (layer 3), they cannot make routing decisions for IP traffic; they must forward frames based on MAC addresses and leave IP‑level forwarding to a router [Page 53].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the IEEE 802 LAN Standards Committee contribute to the operation of internetworking devices?",
+      "options": {
+        "A": "By defining the TCP and IP protocols used by routers.",
+        "B": "By specifying Ethernet and Wi‑Fi standards that link‑layer devices implement.",
+        "C": "By publishing RFCs that detail application‑layer messaging formats.",
+        "D": "By designing proprietary hardware for home routers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage states that “the IEEE 802 LAN Standards Committee … specifies the Ethernet and wireless WiFi standards” which are implemented by link‑layer devices such as switches and access points [Page 5].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a wireless LAN user sends a packet to a remote Internet server, which sequence of devices does the packet traverse according to the context?",
+      "options": {
+        "A": "Laptop → Router → Access point → Internet",
+        "B": "Laptop → Access point → Wired Ethernet switch → Router → Internet",
+        "C": "Laptop → Access point → Router → Internet",
+        "D": "Laptop → Router → Access point → Internet"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The text explains that wireless users send/receive packets to/from an access point that is “connected into the enterprise’s network (most likely using wired Ethernet), which in turn is connected to the wired Internet” – implying the path Laptop → AP → Router (or the wired network) → Internet [Page 17].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What effect does implementing the IP protocol have on a device’s ability to forward traffic?",
+      "options": {
+        "A": "It enables the device to forward packets based on MAC addresses only.",
+        "B": "It allows the device to make routing decisions across different networks.",
+        "C": "It restricts the device to operate solely within a single broadcast domain.",
+        "D": "It forces the device to ignore Ethernet framing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Routers “are capable of implementing the IP protocol (a layer 3 protocol)”, which is the basis for routing packets between distinct networks [Page 53].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Compared to a link‑layer switch, how does a router typically affect throughput when forwarding traffic within a LAN?",
+      "options": {
+        "A": "A router generally provides higher throughput because it processes fewer header fields.",
+        "B": "A switch generally provides higher throughput because it forwards frames using only MAC addresses, avoiding IP processing overhead.",
+        "C": "Both devices provide identical throughput because they use identical hardware.",
+        "D": "Throughput is unrelated to the device type; it depends solely on cable length."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Since switches operate only at layer 2 using MAC addresses, they avoid the extra processing required for layer 3 routing, which can reduce throughput relative to a router that must inspect IP headers [Page 53].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What role do RFCs play in ensuring that internetworking devices interoperate correctly?",
+      "options": {
+        "A": "They mandate the physical size of routers and switches.",
+        "B": "They define the technical specifications of protocols (e.g., TCP, IP) that devices must implement.",
+        "C": "They allocate IP address ranges to individual devices.",
+        "D": "They certify devices for wireless frequency compliance."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that “RFCs … define protocols such as TCP, IP, HTTP …” and that agreement on protocol behavior is essential for interoperability [Page 5].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a newly introduced network device supports only Ethernet (layer 2) but not IP (layer 3), which network function would it be unable to perform?",
+      "options": {
+        "A": "Forwarding frames based on MAC addresses within the same LAN.",
+        "B": "Switching traffic between ports on a LAN.",
+        "C": "Routing packets between different IP subnets.",
+        "D": "Learning MAC addresses for its forwarding table."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context clarifies that devices lacking IP implementation “are not capable of implementing the IP protocol (a layer 3 protocol)”, thus they cannot route between subnets [Page 53].",
+      "source_pages": []
+    }
+  ]
+}

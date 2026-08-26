@@ -1,0 +1,147 @@
+{
+  "topic": "behavioural models",
+  "generated_at": "2026-08-26T22:35:33",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the primary purpose of a use case in software engineering?",
+      "options": {
+        "A": "To depict the internal structure of classes and their relationships.",
+        "B": "To describe interactions between users and the system using a graphical model and structured text.",
+        "C": "To list all possible error messages the system might generate.",
+        "D": "To define the hardware requirements for the system."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Use cases are described as a way of describing interactions between users and a system using a graphical model and structured text [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When developing a scenario, which element is essential to include according to the elicitation process?",
+      "options": {
+        "A": "A detailed code listing of the system functions.",
+        "B": "A description of the normal flow of events in the scenario.",
+        "C": "A complete market analysis for the product.",
+        "D": "The exact physical layout of the user’s workspace."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A scenario’s description should contain the normal flow of events as part of its general components [Page 19].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly applies the concept of a scenario’s “system state when the scenario ends”?",
+      "options": {
+        "A": "It specifies the hardware configuration needed after the scenario.",
+        "B": "It describes the final condition of the system after all interactions in the scenario have completed.",
+        "C": "It outlines the marketing strategy for the finished product.",
+        "D": "It lists all possible future scenarios that could follow."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "One of the listed elements of a scenario is a description of the system state when the scenario ends [Page 19].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does adding tables or graphical models to natural‑language requirements help address the problem of unclear specifications?",
+      "options": {
+        "A": "They replace the need for any textual description.",
+        "B": "They provide visual and structured ways to show computation flow, state changes, and user interactions.",
+        "C": "They ensure that the system will be bug‑free without testing.",
+        "D": "They automatically generate code from the requirements."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context states that extra information such as tables or graphical models can show how computations proceed, how state changes, and how users interact [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best distinguishes software verification from validation?",
+      "options": {
+        "A": "Verification checks that the software meets customer expectations; validation checks that it meets its specifications.",
+        "B": "Verification ensures the software meets its stated functional and non‑functional requirements; validation ensures it meets the customer’s expectations.",
+        "C": "Verification is performed only after the software is deployed; validation occurs during coding.",
+        "D": "Verification and validation are identical processes with different names."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Verification is defined as checking that the software meets its stated functional and non‑functional requirements, while validation ensures it meets the customer’s expectations [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of testing, what does the statement “Testing can only show the presence of errors, not their absence” imply for the verification process?",
+      "options": {
+        "A": "Testing guarantees that the software is completely error‑free.",
+        "B": "Testing can prove that no defects exist in any part of the system.",
+        "C": "Testing can demonstrate that at least one defect exists, but cannot prove the software is defect‑free.",
+        "D": "Testing replaces the need for any other verification activities."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The quoted statement highlights that testing can reveal errors but cannot confirm their total absence, affecting how verification is interpreted [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component of a scenario explicitly deals with handling unexpected situations?",
+      "options": {
+        "A": "The description of the system state at the start.",
+        "B": "The description of what can go wrong and how resulting problems can be handled.",
+        "C": "The description of the normal flow of events.",
+        "D": "The information about other concurrent activities."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "One of the listed elements of a scenario is a description of what can go wrong and how resulting problems can be handled [Page 19].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a developer wants to illustrate how a user’s interaction leads to a change in system state, which modelling approach from the context would be most appropriate?",
+      "options": {
+        "A": "Creating a hardware wiring diagram.",
+        "B": "Using a tabular specification of computation.",
+        "C": "Writing a marketing brochure.",
+        "D": "Developing a financial cost‑benefit analysis."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Tabular specifications can show how computations proceed and how the system state changes, making them suitable for illustrating interaction‑driven state changes [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a scenario includes “information about other activities that might be going on at the same time,” what type of system behavior is it addressing?",
+      "options": {
+        "A": "Sequential processing only.",
+        "B": "Concurrency or parallel activities within the system.",
+        "C": "Static data storage without interaction.",
+        "D": "Physical layout of the user interface."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The scenario element mentioning other activities addresses concurrent or parallel activities that may occur alongside the primary interaction [Page 19].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which of the following is a correct application of the term “behavior model” in the software engineering process?",
+      "options": {
+        "A": "A model that solely defines the hardware components of a system.",
+        "B": "A model that captures user‑system interactions, such as use cases and scenarios, to describe system behavior.",
+        "C": "A model that lists all possible programming languages to be used.",
+        "D": "A model that details the financial budget for the project."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Behavioural models are described through use cases, scenarios, and other representations that capture how the system behaves in interaction with users [Pages 25, 19].",
+      "source_pages": []
+    }
+  ]
+}

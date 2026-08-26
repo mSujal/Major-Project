@@ -40,7 +40,7 @@ class VectorStore:
         name = self._pdf_id(pdf_path)
         return self.client.get_or_create_collection(
                 name = name,
-                metadata = {"source_path": pdf_path},
+                metadata = {"source_path": pdf_path, "hnsw:space": "cosine"},
                 embedding_function = None 
         )
 
@@ -115,14 +115,15 @@ class VectorStore:
         results = col.query(
                 query_embeddings = [query_embedding],
                 n_results = top_k,
-                include=["documents", "metadatas"] 
+                include=["documents", "metadatas", "distances"]
         )
         chunks = results["documents"][0]
+        distances = results["distances"][0]
         pages = [
                 {"page_start": m["page_start"], "page_end" : m["page_end"]}
                 for m in results["metadatas"][0]
         ]
-        return list(zip(chunks, pages))
+        return list(zip(chunks, pages, distances))
 
     def delete(self, pdf_path):
         """Remove all stored data for pdf for re-indexing"""
@@ -131,6 +132,4 @@ class VectorStore:
             self.client.delete_collection(name)
             print(f"[VectorStore] Deleted collection for '{pdf_path}'")
         except Exception:
-            pass 
-
-
+            pass

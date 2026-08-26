@@ -1,0 +1,147 @@
+{
+  "topic": "srs document",
+  "generated_at": "2026-08-26T22:35:03",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "According to the context, what is the primary purpose of a software requirements document (SRS)?",
+      "options": {
+        "A": "To provide a marketing overview of the product",
+        "B": "To serve as an official statement of what system developers should implement",
+        "C": "To list the hardware specifications of the deployment environment",
+        "D": "To detail the testing procedures for the finished system"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The SRS is described as “an official statement of what the system developers should implement” [Page 26].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which two types of requirements may be included in an SRS according to the given text?",
+      "options": {
+        "A": "Financial and legal requirements",
+        "B": "User requirements and detailed system requirements",
+        "C": "Marketing requirements and branding guidelines",
+        "D": "Hardware and network topology requirements"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that an SRS “may include both the user requirements for a system and a detailed specification of the system requirements” [Page 26].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might large organizations such as the U.S. Department of Defense be interested in a formal SRS?",
+      "options": {
+        "A": "To reduce the cost of software licenses",
+        "B": "To ensure a common, well‑defined set of requirements for long‑lived, multi‑organization systems",
+        "C": "To promote rapid prototyping without documentation",
+        "D": "To avoid any involvement of external standards bodies"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that large organizations define standards for requirements documents, which are “useful as a basis for developing more detailed organizational standards” and are appropriate for “systems such as military command and control systems that have a long lifetime and are usually developed by a group of organizations” [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which standards body is highlighted as a major provider of a structure for requirements documents?",
+      "options": {
+        "A": "ISO",
+        "B": "IEEE",
+        "C": "ANSI",
+        "D": "W3C"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage explicitly mentions “The U.S. Institute of Electrical and Electronic Engineers (IEEE) is one of the best‑known standards providers” and that it “has developed a standard for the structure of requirements documents” [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the context describe the relationship between user requirements and system requirements within an SRS?",
+      "options": {
+        "A": "They are always written in separate documents.",
+        "B": "They are sometimes integrated into a single description.",
+        "C": "User requirements are optional and rarely included.",
+        "D": "System requirements replace user requirements entirely."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text says “Sometimes the user and system requirements are integrated into a single description” [Page 26].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In what type of projects does the IEEE requirements‑document standard appear most appropriate, according to the passage?",
+      "options": {
+        "A": "Small mobile apps developed by a single startup",
+        "B": "Military command and control systems with long lifetimes and multiple organizations involved",
+        "C": "Academic research prototypes with no formal deployment",
+        "D": "Consumer electronics with rapid release cycles"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The IEEE standard “is most appropriate for systems such as military command and control systems that have a long lifetime and are usually developed by a group of organizations” [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best reflects why an SRS might be integrated with user requirements, based on the provided information?",
+      "options": {
+        "A": "To reduce the number of pages in the final document",
+        "B": "To provide a single, cohesive description that developers can follow",
+        "C": "To comply with marketing regulations",
+        "D": "To eliminate the need for testing plans"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage suggests integration “to provide an official statement of what the system developers should implement,” implying a cohesive description for developers [Page 26].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is a key benefit of having standards for requirements documents, as implied by the text?",
+      "options": {
+        "A": "They guarantee that the software will be bug‑free.",
+        "B": "They offer a generic foundation that can be adapted into detailed organizational standards.",
+        "C": "They eliminate the need for stakeholder communication.",
+        "D": "They ensure that all code is written in the same programming language."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that standards “are usually very generic but are nevertheless useful as a basis for developing more detailed organizational standards” [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the excerpt, which statement best captures the role of the SRS in the software development lifecycle?",
+      "options": {
+        "A": "It replaces the need for any subsequent design documents.",
+        "B": "It serves as the definitive source of what must be built before design and implementation begin.",
+        "C": "It is only used after the system has been fully implemented.",
+        "D": "It is optional for all types of software projects."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The SRS is described as “an official statement of what the system developers should implement,” indicating it guides design and implementation phases [Page 26].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The passage mentions that certain standards are “very generic.” What implication does this have for an organization adopting those standards?",
+      "options": {
+        "A": "The organization can use them without any customization.",
+        "B": "The organization must develop detailed internal guidelines on top of the generic standard.",
+        "C": "The standards are insufficient for any real‑world project.",
+        "D": "The standards are only applicable to hardware design."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text says generic standards “are useful as a basis for developing more detailed organizational standards,” implying organizations need to add specifics [Page 29].",
+      "source_pages": []
+    }
+  ]
+}

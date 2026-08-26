@@ -1,0 +1,119 @@
+{
+  "topic": "use case diagrams",
+  "generated_at": "2026-08-26T22:36:06",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "When preparing a use case diagram for a healthcare management system similar to the one described, which of the following groups should be identified as primary actors based on the context text?",
+      "options": {
+        "A": "Software developers, testers, and project managers",
+        "B": "Nurse, Doctor, and Medical receptionist",
+        "C": "Database administrator, network engineer, and security analyst",
+        "D": "End‑user customers, shareholders, and regulators"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context lists “Nurse”, “Doctor”, and “Medical receptionist” among the items associated with the use cases, indicating they are primary actors interacting with the system [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In constructing a use case diagram, which element must be linked to a textual description according to the provided material?",
+      "options": {
+        "A": "Each actor’s name only",
+        "B": "Every use case name",
+        "C": "Only the system boundary box",
+        "D": "The diagram’s title block"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The text states that each use case should be documented with a textual description and can be linked to other UML models [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements best reflects the guideline for writing user requirements that will later be represented in a use case diagram?",
+      "options": {
+        "A": "Use formal UML notation directly in the requirement text.",
+        "B": "Include software jargon to ensure precision.",
+        "C": "Write in natural language supplemented by simple tables and intuitive diagrams.",
+        "D": "Rely solely on mathematical models for clarity."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context advises that user requirements should be written in natural language with simple tables, forms, and intuitive diagrams, not software jargon or formal notations [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When linking a use case diagram to other UML models, which of the following is a correct practice based on the text?",
+      "options": {
+        "A": "Attach the diagram directly to source code files.",
+        "B": "Connect each use case to its corresponding sequence diagram that models implementation.",
+        "C": "Replace the textual description with the diagram entirely.",
+        "D": "Omit any relationship to class diagrams to keep the use case diagram independent."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context notes that if a sequence diagram has been developed to model use‑case implementation, the objects/components involved can be linked, suggesting that a use case should be connected to its sequence diagram [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which testing approach is directly supported by a well‑constructed use case diagram, as described in the context?",
+      "options": {
+        "A": "Unit testing of individual methods",
+        "B": "Use case‑based system testing that forces component interactions",
+        "C": "Performance testing of database queries",
+        "D": "Static code analysis for style violations"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The text states that because of its focus on interactions, use case‑based testing is an effective system‑testing approach that forces the involved components to interact [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "To comply with the guideline that user requirements avoid formal notations, which element should you exclude from the initial use case diagram draft?",
+      "options": {
+        "A": "Actors representing real users",
+        "B": "Natural‑language labels on use cases",
+        "C": "UML stereotypes such as «extend» or «include»",
+        "D": "System boundary box"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The guideline stresses natural language and intuitive diagrams, discouraging formal UML extensions in the early requirement stage; thus UML stereotypes like «extend» or «include» should be omitted initially [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing a use case diagram for a system that includes “Generate report” and “Edit record” functionalities, which relationship best captures the dependency between these two use cases according to standard UML practice implied in the context?",
+      "options": {
+        "A": "«include» from “Generate report” to “Edit record”",
+        "B": "«extend» from “Edit record” to “Generate report”",
+        "C": "Association line without any stereotype",
+        "D": "Generalization between the two use cases"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Create",
+      "difficulty": "Hard",
+      "explanation": "Although the context does not detail stereotypes, it mentions linking use cases to other models and the interaction focus of use‑case testing. “Edit record” can optionally extend “Generate report” when a user decides to modify data before report generation, matching the typical «extend» pattern. This requires synthesis of the provided concepts. [Page 25, Page 49]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which of the following steps should be performed after drafting the use case diagram but before writing detailed test cases?",
+      "options": {
+        "A": "Conduct partition testing on each use case input domain.",
+        "B": "Develop a sequence diagram to model the implementation of each use case.",
+        "C": "Replace natural‑language requirements with formal specifications.",
+        "D": "Perform unit testing on every method referenced in the diagram."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The text suggests that after a use case diagram, a sequence diagram can be created to model implementation, which then informs testing; therefore, developing the sequence diagram is the appropriate next step [Page 49].",
+      "source_pages": []
+    }
+  ]
+}

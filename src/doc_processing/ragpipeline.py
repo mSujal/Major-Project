@@ -127,10 +127,15 @@ class RAGPipeline:
             )
         return outputs.last_hidden_state[0].mean(dim=0)
 
-    def _retrieve(self, query, pdf_path):
-        """Retrieve top‑k context chunks for a query."""
+    def _retrieve(self, query, pdf_path, top_k=None):
+        """Retrieve top‑k context chunks for a query.
+
+        Returns a list of (chunk_text, page_info, distance) tuples. Lower
+        distance = more relevant (Chroma default is cosine/L2 distance,
+        not similarity).
+        """
         query_embedding = self._embed_query(query).cpu().float().tolist()
-        return self.vector_store.query(pdf_path, query_embedding, self.top_k)
+        return self.vector_store.query(pdf_path, query_embedding, top_k or self.top_k)
 
     def _query_llm(self, prompt):
         """Call the LLM (Groq or local) with the given prompt."""
@@ -152,7 +157,7 @@ class RAGPipeline:
         retrieved_chunks = self._retrieve(question, pdf_path)
         context = "\n\n".join(
             f"[{self.lc.format_page_citation(page)}] {chunk}"
-            for chunk, page in retrieved_chunks
+            for chunk, page, _distance in retrieved_chunks
         )
 
         prompt = f"""
@@ -171,7 +176,7 @@ class RAGPipeline:
         Find the best matching topic key from the taxonomy based on the query.
         Uses simple substring matching.
         """
-        query_lower = query.lower()
+        query_lower = query.lower().replace("_", " ")
 
         for key in self.taxonomy["topics"].keys():
             key_words = key.replace("_", " ")
@@ -201,6 +206,10 @@ class RAGPipeline:
             r"list of (?:all|the) methods",
             r"recalling the list",
             r"^what is the primary purpose of$",   # too generic
+            r"\bin the (?:diagram|figure|chart|graph|table)\b",
+            r"\baccording to figure\b",
+            r"\bfigure\s+\d+(\.\d+)?\b",
+            r"\bshown in the diagram\b",
         ]
 
         filtered = []
@@ -220,9 +229,8 @@ class RAGPipeline:
 
             # 3. Check Bloom's level if allowed_levels is provided
             if allowed_levels:
-                bloom_match = re.search(r'Bloom:\s*(\w+)', q.get("explanation", ""))
-                if bloom_match:
-                    bloom_level = bloom_match.group(1).capitalize()
+                bloom_level = q.get("bloom_level", "")
+                if bloom_level:
                     if bloom_level not in allowed_levels:
                         print(f"[Filter] Rejected (wrong Bloom level: {bloom_level}): {q['question'][:50]}...")
                         continue
@@ -259,10 +267,29 @@ class RAGPipeline:
             print(f"[RAG] Mapped query to topic: '{topic_key}'")
 
         # 2. Retrieve context from vector store using the mapped topic for better results
-        retrieved_chunks = self._retrieve(retrieval_query, pdf_path)
+        mcq_top_k = getattr(config, "MCQ_TOP_K", self.top_k * 2)
+        retrieved_chunks = self._retrieve(retrieval_query, pdf_path, top_k=mcq_top_k)
+
+        # 2b. Relevance gate: if nothing retrieved is actually close to the
+        # topic, this PDF likely doesn't cover it — skip before spending an
+        # LLM call on weak/irrelevant context (see handoff doc, item #7).
+        relevance_threshold = getattr(config, "MCQ_RELEVANCE_THRESHOLD", None)
+        if relevance_threshold is not None and retrieved_chunks:
+            all_distances = [distance for _chunk, _page, distance in retrieved_chunks]
+            best_distance = min(all_distances)
+            if best_distance >= relevance_threshold:
+                print(
+                    f"[RAG] Skipping topic '{retrieval_query}' — no relevant chunks "
+                    f"found (distances range {best_distance:.3f}-{max(all_distances):.3f}, "
+                    f"threshold {relevance_threshold}); PDF likely doesn't cover this topic. "
+                    f"If this fires for a topic you know IS covered, MCQ_RELEVANCE_THRESHOLD "
+                    f"needs recalibrating for your embedding/collection space."
+                )
+                return None
+
         context = "\n\n".join(
             f"[{self.lc.format_page_citation(page)}] {chunk}"
-            for chunk, page in retrieved_chunks
+            for chunk, page, _distance in retrieved_chunks
         )
 
         # 3. Build prompt using the generic prompt builder
@@ -276,6 +303,14 @@ class RAGPipeline:
 
         # 4. Call LLM
         raw_response = self._query_llm(prompt)
+
+        # 4b. Second line of defense: the distance gate above is a proxy for
+        # relevance, but the LLM itself can also judge that the context
+        # doesn't sufficiently cover the topic (see prompts.py). Honor that
+        # signal too, in case a topic slips past the distance threshold.
+        if "NO_SUFFICIENT_CONTEXT" in raw_response:
+            print(f"[RAG] LLM reported insufficient context for topic '{retrieval_query}' — skipping.")
+            return None
 
         # 5. Parse, filter, deduplicate
         parsed = self._parse_mcq_response(raw_response, retrieval_query, pdf_path)
@@ -337,20 +372,32 @@ class RAGPipeline:
             ans_match = re.search(r"Correct Answer:\s*([A-D])", block)
             q["correct_answer"] = ans_match.group(1).strip() if ans_match else ""
 
-            # Explanation and difficulty
+            # Explanation, Bloom level, and difficulty
+            # Primary: matches the actual prompt format
+            # "Explanation: [Bloom: <level> | Difficulty: <Easy/Medium/Hard>] <text>"
+            # Bloom level is captured into its own field here (not re-derived
+            # from `explanation` later) since the bracket is stripped out below.
             exp_match = re.search(
-                r"Explanation:\s*\[(Easy|Medium|Hard)\]\s*(.+?)(?=\nQuestion:|\Z)",
+                r"Explanation:\s*\[Bloom:\s*(\w+)\s*\|\s*Difficulty:\s*(Easy|Medium|Hard)\]\s*(.+?)(?=\n(?:\d+\.\s*)?Question:|\Z)",
                 block,
-                re.DOTALL,
+                re.DOTALL | re.IGNORECASE,
             )
             if exp_match:
-                q["difficulty"] = exp_match.group(1).strip()
-                q["explanation"] = exp_match.group(2).strip()
+                q["bloom_level"] = exp_match.group(1).strip().capitalize()
+                q["difficulty"] = exp_match.group(2).strip().capitalize()
+                q["explanation"] = exp_match.group(3).strip()
             else:
-                # fallback: no bracket
-                exp_fallback = re.search(r"Explanation:\s*(.+?)(?=\nQuestion:|\Z)", block, re.DOTALL)
-                q["difficulty"] = ""
-                q["explanation"] = exp_fallback.group(1).strip() if exp_fallback else ""
+                # fallback: no bracket, or unexpected bracket format —
+                # still try to salvage bare Bloom:/Difficulty: tags from the text
+                exp_fallback = re.search(
+                    r"Explanation:\s*(.+?)(?=\n(?:\d+\.\s*)?Question:|\Z)", block, re.DOTALL
+                )
+                fallback_text = exp_fallback.group(1).strip() if exp_fallback else ""
+                diff_match = re.search(r"Difficulty:\s*(Easy|Medium|Hard)", fallback_text, re.IGNORECASE)
+                bloom_match = re.search(r"Bloom:\s*(\w+)", fallback_text, re.IGNORECASE)
+                q["difficulty"] = diff_match.group(1).capitalize() if diff_match else ""
+                q["bloom_level"] = bloom_match.group(1).capitalize() if bloom_match else ""
+                q["explanation"] = fallback_text
 
             # Source pages
             q["source_pages"] = re.findall(r"\[(\d+)\]", q["explanation"])

@@ -1,0 +1,147 @@
+{
+  "topic": "protocols standards",
+  "generated_at": "2026-08-26T23:02:44",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Which statement best defines a Request for Comments (RFC) and includes correct examples of protocols it defines?",
+      "options": {
+        "A": "An informal blog post about networking; examples: HTML, CSS",
+        "B": "A standard‑setting document published by the IETF that details technical specifications; examples: TCP, IP, HTTP, SMTP",
+        "C": "A hardware manual for routers; examples: Ethernet, WiFi",
+        "D": "A proprietary software license; examples: Windows, macOS"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "RFCs are technical standards documents from the IETF that define protocols such as TCP, IP, HTTP, and SMTP. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the Internet Engineering Task Force (IETF) contribute to protocol standards?",
+      "options": {
+        "A": "By manufacturing network cables for Ethernet",
+        "B": "By developing and publishing standards documents such as RFCs that describe how protocols should operate",
+        "C": "By certifying WiFi devices for consumer use",
+        "D": "By allocating IP address blocks to end users"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The IETF develops Internet standards through RFCs, ensuring agreement on protocol behavior. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly defines the IEEE 802 standards committee and provides examples of standards it specifies?",
+      "options": {
+        "A": "A group that writes software APIs; examples: Java, .NET",
+        "B": "An organization that defines link‑layer standards for LANs; examples: Ethernet and WiFi",
+        "C": "A consortium that creates encryption algorithms; examples: AES, RSA",
+        "D": "A standards body for satellite communications; examples: GPS, GLONASS"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "IEEE 802 is noted for specifying Ethernet and wireless WiFi standards. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the primary purpose of protocol layering in network design?",
+      "options": {
+        "A": "To increase the physical size of network devices",
+        "B": "To organize protocols into hierarchical layers so each layer provides services to the one above and uses services from the one below",
+        "C": "To merge all network functions into a single monolithic protocol",
+        "D": "To eliminate the need for standards bodies"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Layering structures protocols so that each belongs to a layer, providing and consuming services. [Page 49]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which description accurately defines the Internet Protocol (IP) as presented in the context?",
+      "options": {
+        "A": "A transport‑layer protocol that guarantees ordered delivery of data streams",
+        "B": "A link‑layer protocol that defines WiFi channel access methods",
+        "C": "A network‑layer protocol that specifies the format of packets exchanged among routers and end systems",
+        "D": "An application‑layer protocol used for sending email"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "IP is described as specifying packet format at the network layer. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the Transmission Control Protocol (TCP) differ from link‑layer reliable delivery services?",
+      "options": {
+        "A": "TCP provides end‑to‑end reliable delivery between two hosts, while link‑layer reliability is limited to a single hop between directly connected devices",
+        "B": "TCP encrypts all data, whereas link‑layer services do not",
+        "C": "TCP operates only on wireless networks, while link‑layer services work only on wired networks",
+        "D": "TCP is defined by IEEE 802, while link‑layer reliability is defined by the IETF"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "TCP offers reliable delivery from one end system to another, unlike link‑layer reliability which is hop‑by‑hop. [Page 51]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best defines a link‑layer protocol and gives correct examples?",
+      "options": {
+        "A": "A protocol that routes packets across the Internet; examples: BGP, OSPF",
+        "B": "A protocol that provides reliable end‑to‑end data streams; examples: TCP, SCTP",
+        "C": "A protocol that operates at the data link layer to control how bits are transmitted over a physical medium; examples: Ethernet, WiFi, DOCSIS",
+        "D": "A protocol for formatting web pages; examples: HTML, CSS"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Link‑layer protocols include Ethernet, WiFi, and DOCSIS as examples. [Page 51]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of the network layer, why is the IP protocol referred to as “the glue that binds the Internet together”?",
+      "options": {
+        "A": "Because it physically connects cables in a network hub",
+        "B": "Because it provides the common addressing and packet format that all higher‑layer protocols rely on for communication across diverse networks",
+        "C": "Because it encrypts all traffic on the Internet",
+        "D": "Because it supplies power to network devices"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "IP’s role as the fundamental protocol at the network layer makes it the “glue” for Internet connectivity. [Page 51]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement accurately defines “protocol standards” and explains why they are important for interoperability?",
+      "options": {
+        "A": "Protocol standards are optional guidelines that manufacturers may ignore; they have no impact on device compatibility.",
+        "B": "Protocol standards are detailed specifications that describe exactly how protocols should behave, enabling different systems and products to work together reliably.",
+        "C": "Protocol standards are marketing terms used to sell networking equipment at higher prices.",
+        "D": "Protocol standards are only relevant for wireless networks, not wired ones."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Standards ensure agreement on protocol behavior for interoperable systems. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which description correctly defines the TCP/IP suite and lists its primary constituent protocols?",
+      "options": {
+        "A": "A collection of application‑layer protocols only; examples: HTTP, SMTP, FTP",
+        "B": "A set of networking standards that includes the Transport Control Protocol and Internet Protocol as core components, along with related protocols such as TCP, IP, HTTP, and SMTP",
+        "C": "A hardware specification for network interface cards",
+        "D": "A wireless communication protocol used for satellite links"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The TCP/IP suite encompasses TCP, IP, HTTP, and SMTP among others. [Page 5]",
+      "source_pages": []
+    }
+  ]
+}

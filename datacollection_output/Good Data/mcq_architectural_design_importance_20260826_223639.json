@@ -1,0 +1,147 @@
+{
+  "topic": "architectural design importance",
+  "generated_at": "2026-08-26T22:36:39",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Why is architectural design important in software engineering for defining the distribution of functions across system modules?",
+      "options": {
+        "A": "It determines the programming language to be used.",
+        "B": "It outlines a high‑level overview that shows how functions are allocated, guiding implementation.",
+        "C": "It specifies the exact user interface layout.",
+        "D": "It lists individual code statements."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that a system architecture provides a high‑level overview of the distribution of functions across modules, which is essential for guiding implementation decisions. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering when reusing architectural components?",
+      "options": {
+        "A": "It guarantees that reused components will never need modification.",
+        "B": "It identifies components that can be reused, supporting consistency and reducing development effort.",
+        "C": "It replaces the need for testing.",
+        "D": "It eliminates the need for any documentation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that architectural components that are reused should be identified, indicating that architecture helps locate reusable elements and promotes consistency. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for addressing nonfunctional requirements?",
+      "options": {
+        "A": "It defines only functional features.",
+        "B": "It allows nonfunctional requirements to be linked to architectural decisions and component placement.",
+        "C": "It removes the need for performance testing.",
+        "D": "It focuses solely on database schema design."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context mentions that architectural design includes consideration of nonfunctional requirements, implying that architecture ties these requirements to system structure. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for anticipating system evolution?",
+      "options": {
+        "A": "It locks the system into a fixed design forever.",
+        "B": "It documents assumptions and expected changes, helping designers avoid restrictive decisions.",
+        "C": "It eliminates the need for future maintenance.",
+        "D": "It focuses only on the user interface."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage on system evolution describes how architecture captures fundamental assumptions and anticipated changes, aiding designers in avoiding restrictive choices. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for supporting future system features?",
+      "options": {
+        "A": "It provides detailed source code for every feature.",
+        "B": "It includes information that helps maintainers adapt the system to new requirements.",
+        "C": "It removes the need for any further design work.",
+        "D": "It specifies the exact hardware to be purchased."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context indicates that information about anticipated changes helps maintainers adapt the system to new requirements, highlighting architecture’s role in future feature support. [Page 27]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering when defining interfaces to other systems?",
+      "options": {
+        "A": "It dictates the color scheme of the user interface.",
+        "B": "It establishes clear points of interaction, ensuring integration with external systems.",
+        "C": "It replaces all business logic.",
+        "D": "It automatically generates user manuals."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that architectural design may define interfaces to other systems, which is crucial for integration. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for creating system models that show component relationships?",
+      "options": {
+        "A": "It produces a list of test cases.",
+        "B": "It generates graphical models that illustrate how components relate to each other and to the environment.",
+        "C": "It eliminates the need for any documentation.",
+        "D": "It defines the exact order of method calls."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage on system models states that architecture includes graphical models showing relationships among components and the environment. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for guiding the selection of data‑flow or semantic data models?",
+      "options": {
+        "A": "It decides the programming language syntax.",
+        "B": "It influences which data‑flow or semantic models are appropriate for the system’s structure.",
+        "C": "It removes the need for any database design.",
+        "D": "It defines the visual layout of the application."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context mentions that architecture may involve data‑flow models or semantic data models, implying that design guides their selection. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for aligning system requirements with high‑level design?",
+      "options": {
+        "A": "It writes the complete code for every requirement.",
+        "B": "It translates functional and nonfunctional requirements into a coherent high‑level structure.",
+        "C": "It eliminates the need for requirement validation.",
+        "D": "It focuses only on the testing phase."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The section on system requirements specification indicates that architecture links detailed requirements to a high‑level design. [Page 28]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is architectural design important in software engineering for aiding maintainers in understanding system assumptions?",
+      "options": {
+        "A": "It provides a step‑by‑step user guide.",
+        "B": "It documents the fundamental assumptions on which the system is based, helping maintainers comprehend the design rationale.",
+        "C": "It automatically updates the codebase.",
+        "D": "It removes the need for any future documentation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The description of system evolution highlights that architecture records fundamental assumptions, which assists maintainers. [Page 28]",
+      "source_pages": []
+    }
+  ]
+}
