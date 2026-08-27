@@ -1,0 +1,147 @@
+{
+  "topic": "accumulator vs register based",
+  "generated_at": "2026-08-27T16:42:00",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements best distinguishes accumulator‑based architecture from register‑based architecture in the 8085 microprocessor?",
+      "options": {
+        "A": "In accumulator‑based architecture only the accumulator can be an operand of arithmetic instructions, while register‑based architecture allows any register as an operand.",
+        "B": "In accumulator‑based architecture the ALU can receive data directly from any register, whereas register‑based architecture restricts ALU inputs to the accumulator only.",
+        "C": "Accumulator‑based architecture stores all I/O data in register B, while register‑based architecture stores I/O data in register A.",
+        "D": "Register‑based architecture does not use an accumulator at all, whereas accumulator‑based architecture has no general‑purpose registers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that accumulator‑based designs assume the accumulator as an implicit operand and place results there, while register‑based designs allow operands from any register (see pages 2, 93) [Page 2, Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In an accumulator‑based microprocessor, what must happen to data read from an input port before it can be used by the CPU?",
+      "options": {
+        "A": "It is stored directly into a general‑purpose register.",
+        "B": "It is first placed into the accumulator.",
+        "C": "It bypasses all registers and goes straight to the ALU.",
+        "D": "It is stored in memory and later loaded into the accumulator."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that when data is read from an input port it “first moved to accumulator” in an accumulator‑based design [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which advantage is specifically associated with register‑based architecture according to the provided material?",
+      "options": {
+        "A": "Simpler circuit implementation.",
+        "B": "Higher speed for I/O operations.",
+        "C": "Greater extendibility and programming flexibility.",
+        "D": "Automatic flag updates for every operation."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists “The advantage of register based architecture is that extendibility and flexibility in programming” [Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the description of the 8085 internal architecture, how do registers B, C, D, E, H, and L interact with the ALU?",
+      "options": {
+        "A": "They connect directly to the ALU without involving the accumulator.",
+        "B": "They are linked to the ALU through the accumulator and a temporary register.",
+        "C": "They can only hold data for I/O and never participate in arithmetic.",
+        "D": "They operate independently of the ALU and only serve as address registers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that these registers “are connected with the ALU through the accumulator and temporary register” [Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is a disadvantage of register‑based architecture as mentioned in the context?",
+      "options": {
+        "A": "Limited number of registers available to the programmer.",
+        "B": "Requirement of complex circuitry.",
+        "C": "Inability to perform arithmetic directly on registers.",
+        "D": "Lack of support for I/O operations."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that “The disadvantage is requirement of complex circuitry” for register‑based designs [Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the 8085 microprocessor, which instruction type modifies the flags but does **not** affect the accumulator’s contents?",
+      "options": {
+        "A": "ADD A, B",
+        "B": "INR B",
+        "C": "SUB A, C",
+        "D": "DCR A"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "INR and DCR can be performed on any register or memory and affect flags (except carry) without altering the accumulator, as described in the context [Page 14].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly describes data flow into the ALU in a register‑based architecture?",
+      "options": {
+        "A": "Data can enter only from the accumulator.",
+        "B": "Data must first pass through a temporary register before reaching the ALU.",
+        "C": "Data can enter from any general‑purpose register.",
+        "D": "Data is supplied exclusively by external I/O ports."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that “Data can enter into the ALU from any registers” in register‑based architecture [Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the result of an arithmetic operation differ between accumulator‑based and register‑based architectures?",
+      "options": {
+        "A": "In accumulator‑based designs the result is stored in a designated general‑purpose register, while in register‑based designs it is stored in memory.",
+        "B": "Accumulator‑based designs place the result in the accumulator; register‑based designs can place the result in any specified register.",
+        "C": "Both architectures always store the result in the accumulator.",
+        "D": "Register‑based designs automatically update all flag registers, whereas accumulator‑based designs do not."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that accumulator‑based instructions “place the result in the accumulator,” whereas register‑based architectures allow operands (and thus results) from any register [Page 14, Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement about I/O operations is true for an accumulator‑based microprocessor?",
+      "options": {
+        "A": "Both the source and destination registers for I/O can be any general‑purpose register.",
+        "B": "Only the accumulator can be used to hold data before it is sent to an output port.",
+        "C": "I/O data bypasses the accumulator and is written directly to memory.",
+        "D": "The accumulator is used only for arithmetic, not for I/O."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text specifies that “For I/O operation register A only can be used” in accumulator‑based architecture [Page 93].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the described architectures, which scenario would most likely benefit from a register‑based design?",
+      "options": {
+        "A": "A system requiring minimal hardware complexity.",
+        "B": "An application that performs many varied arithmetic operations using different registers without frequent accumulator use.",
+        "C": "A simple calculator that only adds numbers entered via a single input device.",
+        "D": "A microcontroller that only needs to store one byte of temporary data."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Register‑based architecture provides “extendibility and flexibility in programming” and allows operands from any registers, making it suitable for diverse arithmetic tasks [Page 93].",
+      "source_pages": []
+    }
+  ]
+}

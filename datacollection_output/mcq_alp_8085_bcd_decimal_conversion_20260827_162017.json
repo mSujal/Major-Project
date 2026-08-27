@@ -1,0 +1,147 @@
+{
+  "topic": "alp 8085 bcd decimal conversion",
+  "generated_at": "2026-08-27T16:20:17",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "A packed BCD byte 0x37 is to be converted to its 8‑bit binary equivalent. Which binary pattern is the correct result?",
+      "options": {
+        "A": "00110111",
+        "B": "00111101",
+        "C": "01001111",
+        "D": "01100111"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Convert each nibble: 3 → 0011, 7 → 0111; combine → 00110111. This follows the conversion steps described on page 29.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An 8‑bit packed BCD value 0x59 must be transformed into binary. What is the resulting binary byte?",
+      "options": {
+        "A": "01011001",
+        "B": "00110101",
+        "C": "01100101",
+        "D": "10010110"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Separate the nibbles: 5 → 0101, 9 → 1001; concatenate → 01011001 (page 29).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When adding the packed BCD numbers 0x45 and 0x38 on an 8085, which BCD result is obtained after applying the required adjustment?",
+      "options": {
+        "A": "0x7D",
+        "B": "0x83",
+        "C": "0x7C",
+        "D": "0x86"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Binary addition: 0x45 + 0x38 = 0x7D. The low nibble D (13) > 9, so add 0x06 → 0x83. This adjustment rule is given on page 17.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A packed BCD byte 0x99 is converted to binary. What decimal number does the resulting binary value represent?",
+      "options": {
+        "A": "99",
+        "B": "153",
+        "C": "89",
+        "D": "144"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Digits 9 and 9 give binary 10011001, which equals decimal 99 when interpreted as BCD (page 29).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An ALP encounters a packed BCD value 0x2A. According to the context, what must be done before attempting conversion to binary?",
+      "options": {
+        "A": "Add 0x06 to the low nibble.",
+        "B": "Replace the invalid digit with 0.",
+        "C": "Flag the value as invalid because ‘A’ exceeds 9.",
+        "D": "Swap the nibbles and retry."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Any digit larger than 9 (A–F) is invalid in BCD and must be detected before conversion (page 17).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Using positional weighting, what decimal value does the packed BCD byte 0x84 represent?",
+      "options": {
+        "A": "48",
+        "B": "84",
+        "C": "132",
+        "D": "24"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The high nibble 8 represents tens (8 × 10) and the low nibble 4 units: 80 + 4 = 84 (page 29).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A memory location 2000H holds the packed BCD byte 0x59. After an ALP converts it to binary and places the result in the accumulator, which decimal number will the accumulator contain?",
+      "options": {
+        "A": "59",
+        "B": "89",
+        "C": "95",
+        "D": "105"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "0x59 → binary 01011001, which is decimal 89. The conversion process is described on page 29.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Perform BCD addition of 0x27 and 0x48 on an 8085. What is the final packed BCD result after the required adjustment?",
+      "options": {
+        "A": "0x6F",
+        "B": "0x75",
+        "C": "0x7F",
+        "D": "0x86"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "0x27 + 0x48 = 0x6F. Low nibble F (15) > 9, add 0x06 → 0x75. Adjustment rule from page 17.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following 8085 instruction sequences correctly separates an 8‑bit packed BCD value in register A into its high and low 4‑bit binary digits, storing the high digit in register B and the low digit in register C?",
+      "options": {
+        "A": "MOV B,A ANI 0Fh MOV C,A RRC RRC RRC RRC ANI 0Fh",
+        "B": "MOV B,A ANI 0Fh MOV C,A SWAP ANI 0Fh MOV B,A MOV C,B",
+        "C": "MOV B,A ANI 0Fh MOV C,A RRC RRC RRC RRC MOV B,A MOV C,A",
+        "D": "MOV B,A ANI 0Fh MOV C,A SWAP ANI 0Fh MOV B,A MOV C,B"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "“ANI 0Fh” masks the low nibble for C, “SWAP” moves the high nibble to low position, then “ANI 0Fh” extracts it for B. This follows the unpacking steps outlined on page 29.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For a packed BCD byte XY (X = high nibble, Y = low nibble), which arithmetic expression yields its binary equivalent according to the positional‑weighting principle?",
+      "options": {
+        "A": "(X × 8) + Y",
+        "B": "(X × 16) + Y",
+        "C": "(X + Y) × 10",
+        "D": "(X × 2) + (Y × 4)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Each high‑digit position contributes a weight of 16 (2⁴) in binary; thus binary = (X × 16) + Y (page 29).",
+      "source_pages": []
+    }
+  ]
+}

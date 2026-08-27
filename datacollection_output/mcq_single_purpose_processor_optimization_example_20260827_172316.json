@@ -1,0 +1,147 @@
+{
+  "topic": "single purpose processor optimization example",
+  "generated_at": "2026-08-27T17:23:16",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "A designer converts an 8051‑based motor‑control firmware into a custom single‑purpose processor (SPP). Which hardware change best exemplifies the SPP optimization principle that “hardware is fixed and optimized for that specific operation”?",
+      "options": {
+        "A": "Retain the generic arithmetic‑logic unit (ALU) and use it for all calculations.",
+        "B": "Replace the generic ALU with a dedicated PWM generation block.",
+        "C": "Add an external RAM module to store program code.",
+        "D": "Keep the original 8051 interrupt controller unchanged."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Optimizing an SPP involves fixing hardware to the task, such as substituting a general‑purpose ALU with a task‑specific PWM generator for motor control. This follows the description of SPP design on [Page 44] and the conversion example implied on [Page 4].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "You are tasked with improving the power efficiency of a custom SPP that implements a JPEG codec (JPEC). Which optimization technique would most directly reduce dynamic power consumption?",
+      "options": {
+        "A": "Increase the clock frequency to finish processing faster.",
+        "B": "Implement clock gating for unused functional blocks during idle periods.",
+        "C": "Add more general‑purpose registers to reduce memory accesses.",
+        "D": "Use a larger instruction cache to improve hit rate."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Clock gating disables clock signals to idle hardware, directly lowering dynamic power—a technique suited for a fixed‑function SPP as described on [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A domain‑specific processor (DSP) and a single‑purpose processor (SPP) are both being considered for a real‑time audio filtering task. Which design decision would give the SPP a speed advantage over the DSP, according to the context?",
+      "options": {
+        "A": "Implement a wide, complex instruction set to handle many operations.",
+        "B": "Include a programmable control unit to allow post‑fabrication updates.",
+        "C": "Hard‑wire the filter coefficients into the datapath.",
+        "D": "Use an external memory interface for coefficient storage."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Hard‑wiring task‑specific data (e.g., filter coefficients) removes memory fetch overhead, exploiting the SPP’s “hardware is fixed and optimized” nature on [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing a custom SPP for an AES encryption engine, a designer chooses to eliminate the instruction decode stage entirely. What is the most likely effect of this choice on the processor’s performance?",
+      "options": {
+        "A": "Increased instruction latency but lower silicon area.",
+        "B": "Decreased instruction latency and higher throughput.",
+        "C": "No change in performance because decoding is optional.",
+        "D": "Reduced clock speed due to added complexity."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "Removing instruction decode shortens the datapath, reducing latency and raising throughput, which aligns with the optimization goal for a single‑purpose processor on [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a custom SPP designed for motor‑control, a designer must decide between two datapath architectures: (1) a generic RISC datapath, (2) a datapath that directly implements a three‑phase PWM generator. Which choice best demonstrates the “performance: very fast and power‑efficient for that single function” characteristic?",
+      "options": {
+        "A": "Choose the generic RISC datapath to keep the design flexible.",
+        "B": "Use the dedicated PWM datapath to execute PWM cycles in a single clock.",
+        "C": "Combine both datapaths and select at runtime.",
+        "D": "Add a microcode engine to program the PWM behavior."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "A dedicated hardware block (PWM generator) executes the specific task faster and with less power than a generic datapath, reflecting the SPP performance description on [Page 44].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A student is given a VHDL description of a custom SPP that performs image compression. To verify that the design is optimized, which test scenario should the student apply?",
+      "options": {
+        "A": "Run a benchmark that exercises a wide variety of unrelated algorithms.",
+        "B": "Measure execution time while compressing a standard image set repeatedly.",
+        "C": "Simulate the processor with random instruction streams.",
+        "D": "Evaluate the processor’s performance on sorting large integer arrays."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Testing with the target workload (image compression) checks that the SPP is optimized for its dedicated task, consistent with the “single dedicated task” concept on [Page 44] and the VHDL example reference on [Page 4].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When converting a generic microcontroller design into a single‑purpose processor for motor control, which of the following scheduling algorithm choices would most likely improve real‑time determinism?",
+      "options": {
+        "A": "Round‑robin scheduling with a large time slice.",
+        "B": "Earliest‑deadline‑first (EDF) with dynamic priority assignment.",
+        "C": "Fixed‑priority pre‑emptive scheduling aligned with the motor‑control loop period.",
+        "D": "Non‑pre‑emptive FIFO scheduling of all tasks."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Fixed‑priority scheduling synchronized to the control loop ensures predictable timing, which is essential for a dedicated motor‑control SPP as implied by the scheduling examples on [Page 4].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A custom SPP is being designed to replace an MCU in an IoT sensor node. Which optimization would most directly reduce the bill of materials (BOM) cost while preserving the node’s functionality?",
+      "options": {
+        "A": "Add an external flash memory for program storage.",
+        "B": "Integrate the sensor interface logic directly into the processor core.",
+        "C": "Use a higher‑speed external oscillator.",
+        "D": "Include a full‑featured DMA controller for data transfers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Integrating peripheral logic eliminates separate chips, lowering BOM cost—a common SPP optimization where “hardware is fixed and optimized” for the task ([Page 44]).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of single‑purpose processor (SPP) design, which of the following statements best reflects an appropriate application of VHDL during the optimization phase?",
+      "options": {
+        "A": "Write VHDL code to implement a generic instruction set for future extensions.",
+        "B": "Use VHDL to describe a custom datapath that implements only the needed arithmetic operations for the target algorithm.",
+        "C": "Model an entire operating system in VHDL to test software compatibility.",
+        "D": "Generate VHDL test benches that exercise every possible instruction combination."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Using VHDL to create a datapath limited to required operations aligns with “hardware is fixed and optimized for that specific operation” ([Page 44]) and the VHDL programming examples on [Page 4].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A designer compares two single‑purpose processors: one implemented with a fully pipelined architecture, the other with a single‑cycle combinational datapath. For a task that requires only one arithmetic operation per input sample, which architecture yields higher energy efficiency and why?",
+      "options": {
+        "A": "The pipelined processor, because pipelines always reduce power consumption.",
+        "B": "The single‑cycle combinational datapath, because it eliminates pipeline registers that consume static power.",
+        "C": "Both are equivalent, as energy depends only on clock frequency.",
+        "D": "The pipelined processor, because it can run at a lower clock frequency."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "A single‑cycle combinational design removes pipeline registers, reducing static and dynamic power for a simple, single‑operation workload, matching the SPP goal of “very fast and power‑efficient for that single function” on [Page 44].",
+      "source_pages": []
+    }
+  ]
+}

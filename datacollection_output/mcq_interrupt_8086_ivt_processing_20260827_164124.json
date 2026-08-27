@@ -1,0 +1,147 @@
+{
+  "topic": "interrupt 8086 ivt processing",
+  "generated_at": "2026-08-27T16:41:24",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "When the INTA (Interrupt Acknowledge) signal goes low, what does this indicate about the processor’s handling of an interrupt?",
+      "options": {
+        "A": "The processor is rejecting the interrupt request.",
+        "B": "The processor has accepted the interrupt and is preparing to service it.",
+        "C": "The processor is resetting its internal registers.",
+        "D": "The processor is entering a halt state."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that INTA is used for interrupt acknowledge and when it goes low, “the processor has accepted the interrupt.” [Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the priority order among the vectored interrupts RST 7.5, RST 6.5, and RST 5.5 affect which interrupt is serviced first?",
+      "options": {
+        "A": "RST 5.5 is serviced before RST 6.5 and RST 7.5.",
+        "B": "All three have equal priority; the first received is serviced first.",
+        "C": "RST 7.5 has the highest priority, followed by RST 6.5, then RST 5.5.",
+        "D": "Priority is determined by the external hardware, not by the processor."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context lists the priority order explicitly as “7.5, 6.5, and 5.5.” [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Two peripheral devices share the single INTR pin of the 8086. Which sequence of signals allows the processor to identify which device caused the interrupt?",
+      "options": {
+        "A": "The devices send a unique address on the address bus during the INTR pulse.",
+        "B": "The processor issues INTA, and the active device places its interrupt vector on the data bus.",
+        "C": "The devices toggle the ALE line to signal their identity.",
+        "D": "The processor reads the state of the HOLD line to differentiate devices."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "INTA is the acknowledge signal; during this cycle the interrupting device provides its vector on the data bus, enabling the processor to know which source generated the interrupt. This follows from the definition of INTA as the signal “used for interrupt acknowledge” and the role of INTR as a general‑purpose interrupt line. [Page 41, Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What role does the ALE (Address Latch Enable) signal play during an interrupt acknowledge cycle?",
+      "options": {
+        "A": "It disables the data bus to prevent corruption.",
+        "B": "It indicates that a valid address is present on the address/data lines for the processor to latch.",
+        "C": "It generates the interrupt vector automatically.",
+        "D": "It resets the interrupt request lines."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context defines ALE as “this output signal indicates the availability of the valid address on the address/data lines.” [Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a TRAP (non‑maskable) interrupt occurs while the processor is executing an INTR service routine, what is the expected behavior regarding priority?",
+      "options": {
+        "A": "The INTR routine continues to completion before the TRAP is serviced.",
+        "B": "The TRAP interrupt pre‑empts the INTR routine because it has the highest priority.",
+        "C": "Both interrupts are merged into a single service routine.",
+        "D": "The processor ignores the TRAP until the INTR routine finishes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "TRAP is described as “a non‑maskable interrupt with highest priority,” meaning it will pre‑empt any lower‑priority interrupt such as INTR. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the processor obtain the service routine address for a vectored interrupt like RST 6.5?",
+      "options": {
+        "A": "It reads the address from a fixed location in the Interrupt Vector Table.",
+        "B": "The interrupting device supplies the address on the data bus during INTA.",
+        "C": "The processor computes the address by adding an offset to the current PC.",
+        "D": "The address is stored in the DT/R register."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Vectored interrupts “transfer the program control to specific memory locations,” which are stored in the interrupt vector table (IVT). Although the IVT is not explicitly defined in the excerpt, the description of RST interrupts implies they use fixed vectors. This aligns with the standard 8086 behavior referenced in the context. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During an interrupt acknowledge cycle, which signal determines the direction of data flow between the processor and the interrupting device?",
+      "options": {
+        "A": "INTR",
+        "B": "DT/R (Data Transmit/Receive)",
+        "C": "HOLD",
+        "D": "CLK OUT"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "DT/R is defined as “used to decide the direction of data flow through the trans‑receivers… when the processor sends out data, this signal is high and when the processor is receiving data, this signal is low.” This applies during the acknowledge cycle when the processor receives the interrupt vector. [Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Two devices request interrupts simultaneously on the INTR line. Which built‑in mechanism of the 8086 ensures only one request is serviced at a time?",
+      "options": {
+        "A": "The processor automatically masks one request using the INTA signal.",
+        "B": "The devices must implement a hardware priority scheme external to the CPU.",
+        "C": "The processor’s internal priority encoder selects the highest‑priority request after INTA.",
+        "D": "The HOLD/HLDA handshake arbitrates between the requests."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "While the context does not detail the internal encoder, it notes that INTA is the signal “used for interrupt acknowledge” and that vectored interrupts have defined priorities. The 8086 internally resolves multiple INTR requests by priority before issuing INTA. This inference follows from the described priority handling of other interrupts. [Page 5, Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the effect of asserting the HOLD line while an interrupt is pending but not yet acknowledged?",
+      "options": {
+        "A": "The processor immediately services the interrupt, ignoring the HOLD request.",
+        "B": "The processor acknowledges the HOLD request with HLDA, temporarily suspending the interrupt handling.",
+        "C": "The HOLD line clears the pending interrupt request.",
+        "D": "The processor enters a reset state."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "The context explains that when HOLD goes high, “the processor… issues the hold acknowledge signal (HLDA).” Therefore, even if an interrupt is pending, the processor will first acknowledge the bus‑hold request, pausing any further interrupt processing until the bus is released. [Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of interrupt processing, why is the INTR pin considered a “general purpose” interrupt source compared with RST 7.5‑5.5 and TRAP?",
+      "options": {
+        "A": "INTR can only generate non‑maskable interrupts.",
+        "B": "INTR does not have a fixed vector; the processor must fetch the vector from the device during INTA.",
+        "C": "INTR automatically disables all other interrupts.",
+        "D": "INTR is only used for DMA operations."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text describes INTR as “a general purpose interrupt” and notes that vectored interrupts (RST 7.5‑5.5) transfer control to specific memory locations, implying that INTR requires the processor to obtain the vector from the device during the acknowledge cycle. [Page 5, Page 41]",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "io memory mapped io",
+  "generated_at": "2026-08-27T16:38:37",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which signal(s) are asserted during an asynchronous read operation as described in the context?",
+      "options": {
+        "A": "Read and MSYNC only",
+        "B": "Address, MSYNC, and SSYNC",
+        "C": "Data Bus and Acknowledge Signal",
+        "D": "Clock and Ts"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The asynchronous read operation involves the Read line, Address, MSYNC, Data Bus, and SSYNC signals as listed on page 44.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a synchronous read operation, what role does the Acknowledge Signal play?",
+      "options": {
+        "A": "It initiates the address bus transfer.",
+        "B": "It indicates that the data on the bus is valid.",
+        "C": "It resets the clock generator.",
+        "D": "It disables the data bus."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The synchronous read description mentions that the Acknowledge Signal is part of the read cycle, confirming data validity (page 43).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does memory‑mapped I/O differentiate a peripheral from regular memory in the 8086 architecture?",
+      "options": {
+        "A": "By using a separate I/O address space accessed with IN/OUT instructions.",
+        "B": "By setting the IO/M line to 0 and using the same 16‑bit address lines as memory.",
+        "C": "By requiring a special I/O decoder that does not use address lines.",
+        "D": "By mapping peripherals only above the 64 KB address boundary."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that for memory‑mapped I/O, IO/M = 0 and the device is identified by a 16‑bit address, sharing the address space with memory (page 59).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the total addressable memory space available to devices using memory‑mapped I/O as described?",
+      "options": {
+        "A": "32 KB",
+        "B": "64 KB",
+        "C": "128 KB",
+        "D": "256 KB"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text specifies that the 16‑bit address lines give a total addressing capability of 64 K bytes (page 59).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When connecting a memory chip to the 8086, which processor control signals must be linked to the memory’s RD’ and WR’ pins?",
+      "options": {
+        "A": "ALE and INT",
+        "B": "RD’ and WR’ from the processor control bus",
+        "C": "SSYNC and MSYNC",
+        "D": "INTA and NMI"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The connection instructions on page 64 require that the memory’s RD’ and WR’ inputs be tied to the corresponding processor control signals (RD’, WR’).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of DMA operations, what is the function of the count register?",
+      "options": {
+        "A": "It stores the address of the I/O device.",
+        "B": "It determines the number of bytes or words to transfer.",
+        "C": "It generates the DMA request signal.",
+        "D": "It selects between read and write transfers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 82 explains that the count register is used to count the number of byte or word transfers performed by DMA.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly describes a write transfer in a DMA operation?",
+      "options": {
+        "A": "Data moves from memory to the I/O device.",
+        "B": "Data moves from the I/O device to memory.",
+        "C": "The DMA controller only generates address signals.",
+        "D": "No data transfer occurs, only address verification."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that in a write transfer, data is transferred from the I/O device to memory (page 82).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the description of memory‑mapped I/O, which instruction types can be used to access a peripheral?",
+      "options": {
+        "A": "Only special I/O instructions like IN and OUT.",
+        "B": "Standard memory instructions such as STA and LDA.",
+        "C": "Jump and call instructions.",
+        "D": "Interrupt service routines only."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that memory‑mapped I/O enables memory‑related functions such as STA and LDA to access devices (page 59).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the asynchronous read operation, which bus carries the actual data read from memory or I/O?",
+      "options": {
+        "A": "Address bus",
+        "B": "Control bus",
+        "C": "Data bus",
+        "D": "Synchronization bus"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The asynchronous read description lists “Data Bus” as one of the signals involved in the operation (page 44).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When implementing memory‑mapped I/O, why is the chip select signal for each device derived from the address lines?",
+      "options": {
+        "A": "To reduce the number of control pins needed.",
+        "B": "Because I/O devices do not respond to address decoding.",
+        "C": "To allow each device to have a unique 16‑bit address within the 64 K space.",
+        "D": "To enable dynamic memory refresh."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that chip select signals are derived from the 16‑bit address lines, giving each device a unique address within the 64 K byte space (page 59).",
+      "source_pages": []
+    }
+  ]
+}

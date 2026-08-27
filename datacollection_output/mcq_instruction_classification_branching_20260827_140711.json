@@ -1,0 +1,119 @@
+{
+  "topic": "instruction classification branching",
+  "generated_at": "2026-08-27T14:07:11",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which instruction category does the CALL instruction belong to in the 8085 instruction set?",
+      "options": {
+        "A": "Jump instructions",
+        "B": "Call and return instructions",
+        "C": "Restart instructions",
+        "D": "Data‑transfer instructions"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context groups CALL with “Call and return instruction” as one of the three branching groups【Page 21】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the primary purpose of branching instructions in the 8085 microprocessor?",
+      "options": {
+        "A": "To perform arithmetic operations on registers",
+        "B": "To change the sequence of program execution",
+        "C": "To transfer data between memory and registers",
+        "D": "To control interrupt handling"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Branching instructions “allow the microprocessor to change the sequence of a program, either unconditionally or under certain test conditions”【Page 21】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the sample program shown, which instruction causes the Program Counter (PC) to become 3000H?",
+      "options": {
+        "A": "MVI B, 4AH",
+        "B": "CALL 3000H",
+        "C": "RET",
+        "D": "HLT"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The CALL instruction “CALL 3000H” transfers control to address 3000H, as indicated in the example program【Page 24】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How many bytes does a typical 8085 jump instruction that specifies a 16‑bit address occupy?",
+      "options": {
+        "A": "1 byte",
+        "B": "2 bytes",
+        "C": "3 bytes",
+        "D": "4 bytes"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Jump instructions “are 3 byte instructions, one byte for the opcode followed by a 16‑bit (2‑byte) memory address”【Page 21】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How many distinct restart (RST) instructions are defined in the 8085 instruction set?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "10"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that the 8085 includes “8 restart instructions”【Page 24】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which group of instructions is described as “the most powerful because they allow the microprocessor to change the sequence of a program”?",
+      "options": {
+        "A": "Data‑transfer group",
+        "B": "Branching group",
+        "C": "Miscellaneous group",
+        "D": "Arithmetic‑logic group"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage explicitly calls “The branching instructions … the most powerful instructions because they allow the microprocessor to change the sequence of a program”【Page 21】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly describes the effect of the CALL instruction?",
+      "options": {
+        "A": "It is a 1‑byte instruction that loads a constant into the accumulator.",
+        "B": "It transfers control to a sub‑routine and pushes the return address onto the stack.",
+        "C": "It performs an unconditional jump without affecting the stack.",
+        "D": "It executes only when the zero flag is set."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "CALL is a branching instruction that “transfers program execution to a sub‑routine and stores the return address on the stack” as implied by the example where CALL 3000H is later paired with RET【Page 24】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following instructions is an example of a restart (RST) instruction?",
+      "options": {
+        "A": "RST 4",
+        "B": "JMP 3000H",
+        "C": "CALL 2000H",
+        "D": "HLT"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "RST 4 belongs to the set of “restart instructions” mentioned on page 24, whereas the other options are jump, call, or machine‑control instructions.",
+      "source_pages": []
+    }
+  ]
+}

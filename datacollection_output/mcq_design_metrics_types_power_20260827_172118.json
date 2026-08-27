@@ -1,0 +1,147 @@
+{
+  "topic": "design metrics types power",
+  "generated_at": "2026-08-27T17:21:18",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which design metric is rated highest (5) for the smartwatch because it directly influences how long the device can operate between charges?",
+      "options": {
+        "A": "Unit Cost",
+        "B": "NRE Cost",
+        "C": "Power",
+        "D": "Flexibility"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Power is rated 5 and is highlighted as a major selling point for battery life in the smartwatch context. [Page 33, 34]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the smartwatch trade‑off analysis, choosing Option A (add low‑power processor mode) primarily improves which design metric while affecting another metric negatively?",
+      "options": {
+        "A": "Improves Unit Cost, reduces Size",
+        "B": "Improves Power, reduces Performance",
+        "C": "Improves Flexibility, reduces NRE Cost",
+        "D": "Improves Performance, reduces Power"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Option A adds a low‑power mode, increasing battery life (Power) but slightly decreasing screen refresh speed (Performance). [Page 35]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the design metric importance table, which two metrics share the same highest importance rating for the smartwatch?",
+      "options": {
+        "A": "Unit Cost and NRE Cost",
+        "B": "Size and Flexibility",
+        "C": "Performance and Power",
+        "D": "NRE Cost and Flexibility"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Both Performance and Power are given a rating of 5, indicating they are top priorities. [Page 34]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is power considered a critical design metric for wearable devices like the smartwatch?",
+      "options": {
+        "A": "Because it determines the unit manufacturing cost.",
+        "B": "Because it affects the device’s ability to run for several days on a small battery.",
+        "C": "Because it dictates the size of the PCB layout.",
+        "D": "Because it influences the flexibility to add new applications."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that battery life (1–7 days) is a major selling point, making power consumption crucial. [Page 33, 34]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a design team decides to prioritize reducing the smartwatch’s size (Option C), which other design metric is most likely to suffer as a result?",
+      "options": {
+        "A": "Unit Cost",
+        "B": "Power",
+        "C": "NRE Cost",
+        "D": "Flexibility"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Reducing battery and PCB size decreases battery life, directly impacting the Power metric. [Page 35]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best describes the relationship between Unit Cost and NRE Cost as presented in the smartwatch case study?",
+      "options": {
+        "A": "Both are rated equally important and have the same impact on market affordability.",
+        "B": "Unit Cost reflects per‑unit production expense, while NRE Cost reflects research and development effort.",
+        "C": "NRE Cost is a subset of Unit Cost and therefore always lower.",
+        "D": "Unit Cost includes NRE Cost and therefore they cannot be considered separately."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context defines Unit Cost as the cost of producing one watch and NRE Cost as research/design expenses. [Page 33]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which design metric most directly influences the smartwatch’s ability to support “new apps & updates” according to the provided context?",
+      "options": {
+        "A": "Power",
+        "B": "Flexibility",
+        "C": "Size",
+        "D": "Performance"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Flexibility is described as the ability to change functionality without heavy NRE cost, supporting new apps. [Page 30]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the “Starter Activity” constraint list, which metric is explicitly mentioned as a design constraint that must be considered alongside Power and Cost?",
+      "options": {
+        "A": "Reliability",
+        "B": "Flexibility",
+        "C": "NRE Cost",
+        "D": "Size"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The constraint list includes Power, Cost, Reliability, and Real‑time requirement. [Page 36]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does improving performance by adding a faster processor (Option B) affect the Power metric, based on the trade‑off analysis?",
+      "options": {
+        "A": "It decreases Power consumption because the processor is more efficient.",
+        "B": "It has no impact on Power consumption.",
+        "C": "It increases Power consumption, leading to higher battery drain.",
+        "D": "It converts Power consumption into heat, reducing battery usage."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Option B states that a faster processor increases unit cost and power consumption. [Page 35]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which design metric is most closely associated with the smartwatch’s “real‑time heart rate reading” requirement?",
+      "options": {
+        "A": "Flexibility",
+        "B": "Performance",
+        "C": "Size",
+        "D": "NRE Cost"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Real‑time heart rate reading requires timely processing, which is a function of Performance. [Page 33]",
+      "source_pages": []
+    }
+  ]
+}

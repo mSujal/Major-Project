@@ -1,0 +1,147 @@
+{
+  "topic": "design metric definition",
+  "generated_at": "2026-08-27T17:20:53",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which definition best describes the design metric “Unit Cost” as presented in the context?",
+      "options": {
+        "A": "The one‑time monetary expense for research and development of the system.",
+        "B": "The monetary cost of manufacturing each copy of the system, excluding NRE cost.",
+        "C": "The physical space required by the system.",
+        "D": "The amount of power the system consumes during operation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "“Unit cost: the monetary cost of manufacturing each copy of the system, excluding NRE cost” is stated on page 30 and reiterated on page 33.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided material, how is “NRE Cost” defined?",
+      "options": {
+        "A": "The cost of producing one unit of the product.",
+        "B": "The ongoing expense of power consumption over the device’s lifetime.",
+        "C": "The one‑time monetary cost of designing the system such as research, firmware, and UI development.",
+        "D": "The cost associated with the physical size of the device."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context defines NRE cost as “The one‑time monetary cost of designing the system such as Research cost” on page 30.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the smart watch case study, which statement accurately defines the design metric “Size”?",
+      "options": {
+        "A": "The amount of battery life the watch can provide.",
+        "B": "The physical space required by the system, needing to be compact and lightweight.",
+        "C": "The monetary cost of each watch unit.",
+        "D": "The speed at which the processor can execute instructions."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 33 lists “Size: Must be very compact and lightweight,” and page 30 describes size as “the physical space required by the system.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures the definition of the design metric “Performance” for the smart watch?",
+      "options": {
+        "A": "Real‑time heart‑rate reading, smooth UI, and fast Bluetooth connection.",
+        "B": "The total cost of research, engineering, and tooling.",
+        "C": "The number of days the battery can last on a single charge.",
+        "D": "The flexibility to add new applications after release."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 33 details performance as “Real‑time heart rate reading, smooth UI, fast BT connection.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the context define the design metric “Power” for the smart watch?",
+      "options": {
+        "A": "The monetary cost of producing each watch.",
+        "B": "The need for the device to operate for 1–7 days on a small battery.",
+        "C": "The ability to modify the system after release.",
+        "D": "The time required to build a working prototype."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 33 states “Power: Must run for 1–7 days on a small battery.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which description correctly defines “Flexibility” as a design metric in the smart watch evaluation?",
+      "options": {
+        "A": "The ability to support new apps and updates after the product is released.",
+        "B": "The monetary expense of the unit’s components.",
+        "C": "The physical dimensions of the device.",
+        "D": "The time needed to bring the product to market."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 34 notes that the watch “Should support new apps & updates,” reflecting flexibility.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided material, what is the definition of “Time‑to‑prototype”?",
+      "options": {
+        "A": "The duration needed to manufacture the final product at scale.",
+        "B": "The time needed to build a working version of the system.",
+        "C": "The period required to achieve full market release.",
+        "D": "The interval between successive firmware updates."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 31 defines “Time‑to‑prototype: the time needed to build a working version of the system.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best defines “Time‑to‑market” as described in the context?",
+      "options": {
+        "A": "The length of time required to develop a system to the point it can be released and sold to customers.",
+        "B": "The time it takes for a battery to deplete under normal use.",
+        "C": "The period needed to design the user interface only.",
+        "D": "The duration of the manufacturing process for each unit."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 31 explains “Time‑to‑market: the time required to develop a system … to be released and sold to customers.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How is “Maintainability” defined in the context of design metrics?",
+      "options": {
+        "A": "The ability of the system to operate without any power consumption.",
+        "B": "The capacity to modify the system after its initial release.",
+        "C": "The cost associated with non‑recurring engineering.",
+        "D": "The size of the device’s physical enclosure."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 31 lists “Maintainability: the ability to modify the system after its initial release.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which definition aligns with the design metric “Correctness” as mentioned in the provided excerpt?",
+      "options": {
+        "A": "The measure of how accurately the system performs its intended functions.",
+        "B": "The total monetary cost of producing each unit.",
+        "C": "The flexibility to add new features post‑deployment.",
+        "D": "The speed at which the processor executes instructions."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 31 includes “Correctness, safety, many more” among design metrics, implying correctness refers to the system performing its intended functions accurately.",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "embedded system classification generations",
+  "generated_at": "2026-08-27T17:19:48",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "A design uses a 32‑bit DSP processor and an ASIC for signal processing. According to the generation‑based classification, to which generation does this design belong?",
+      "options": {
+        "A": "First Generation",
+        "B": "Second Generation",
+        "C": "Third Generation",
+        "D": "Fourth Generation"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Third Generation embedded systems are characterized by the use of powerful 32‑bit processors, 16‑bit microcontrollers, DSPs, and ASICs. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An embedded product is built around a single System‑on‑Chip (SoC) that integrates CPU, memory, and peripherals. Which generation does this product represent?",
+      "options": {
+        "A": "First Generation",
+        "B": "Second Generation",
+        "C": "Third Generation",
+        "D": "Fourth Generation"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The advent of System‑on‑Chip (SoC) defines the Fourth Generation of embedded systems. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which processing core type is most closely associated with the Third Generation of embedded systems?",
+      "options": {
+        "A": "General‑Purpose Processor (GPP) only",
+        "B": "8‑bit microcontroller without DSP",
+        "C": "ASIC and DSP cores",
+        "D": "Pure hardware logic without programmable cores"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Third Generation designs commonly incorporate ASICs and DSPs as processing cores. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Compared to Third Generation embedded systems, Fourth Generation systems primarily differ in that they:",
+      "options": {
+        "A": "Use only 8‑bit microcontrollers.",
+        "B": "Replace separate processor and peripheral chips with an integrated SoC.",
+        "C": "Eliminate the need for any software.",
+        "D": "Rely exclusively on analog circuitry."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Fourth Generation introduces SoC integration, consolidating processing and peripherals that were separate in the Third Generation. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A designer selects a 16‑bit microcontroller together with a DSP for a new industrial controller. Which generation classification best fits this design?",
+      "options": {
+        "A": "First Generation",
+        "B": "Second Generation",
+        "C": "Third Generation",
+        "D": "Fourth Generation"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The combination of 16‑bit microcontrollers and DSPs is a hallmark of Third Generation embedded systems. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following devices is most likely an example of a Fourth Generation embedded system?",
+      "options": {
+        "A": "A thermostat using a simple 8‑bit microcontroller.",
+        "B": "A handheld calculator with discrete CPU and memory chips.",
+        "C": "A wearable fitness tracker built on a single SoC.",
+        "D": "A legacy vending machine using a fixed‑function ASIC."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Wearable devices built on a single SoC reflect the SoC‑centric Fourth Generation. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In generation‑based classification, which generation typically still employs separate processor and peripheral components rather than a unified SoC?",
+      "options": {
+        "A": "First Generation",
+        "B": "Second Generation",
+        "C": "Third Generation",
+        "D": "Fourth Generation"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Third Generation systems use powerful processors and separate peripheral chips; SoC integration arrives in the Fourth Generation. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The transition from Third to Fourth Generation embedded systems is primarily driven by:",
+      "options": {
+        "A": "The need for larger physical board size.",
+        "B": "The development of integrated System‑on‑Chip technology.",
+        "C": "A shift back to analog circuitry.",
+        "D": "The removal of any programmable cores."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The key driver for Fourth Generation is the advent of SoC technology that integrates multiple functions onto a single chip. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly reflects the evolution of processing cores across generations?",
+      "options": {
+        "A": "First Generation used SoC, Third Generation reverted to discrete chips.",
+        "B": "Second Generation introduced ASICs, Fourth Generation eliminated them.",
+        "C": "Third Generation emphasized powerful 32‑bit processors and DSPs; Fourth Generation moved to SoC integration.",
+        "D": "Fourth Generation abandoned microcontrollers entirely."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The progression described matches the context: Third Generation with 32‑bit/DSP/ASIC, Fourth Generation with SoC. [Page 22]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Arrange the following generations in chronological order from earliest to latest: (i) SoC‑based systems, (ii) Systems using 32‑bit processors and DSPs, (iii) Systems based on simple 8‑bit microcontrollers.",
+      "options": {
+        "A": "(iii) → (ii) → (i)",
+        "B": "(ii) → (iii) → (i)",
+        "C": "(i) → (ii) → (iii)",
+        "D": "(iii) → (i) → (ii)"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Early embedded systems started with simple 8‑bit microcontrollers, then progressed to 32‑bit/DSP/ASIC (Third Generation), and finally to SoC (Fourth Generation). [Page 22]",
+      "source_pages": []
+    }
+  ]
+}

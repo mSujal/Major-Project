@@ -1,0 +1,715 @@
+{
+  "subject": "Embedded System",
+  "topics": {
+    "embedded_system_definition_purpose": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define embedded system",
+        "Briefly explain purpose of embedded system"
+      ]
+    },
+    "embedded_system_classification_generations": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Classify embedded systems based on generations",
+        "List different types of embedded systems"
+      ]
+    },
+    "embedded_vs_general_purpose_system": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate embedded system from general-purpose computing system",
+        "Explain why it is hard to define embedded system"
+      ]
+    },
+    "embedded_system_characteristics_examples": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Describe essential/unique characteristics of embedded system",
+        "Clarify why digital camera is a good example of embedded system",
+        "Explain how common characteristics of embedded systems apply to a digital camera"
+      ]
+    },
+    "embedded_system_applications": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Describe various applications of embedded system"
+      ]
+    },
+    "design_metric_definition": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define design metric"
+      ]
+    },
+    "design_metrics_types_power": {
+      "levels": ["Understand"],
+      "patterns": [
+        "List and explain different design metrics used in embedded system design",
+        "Explain why power is an important design metric"
+      ]
+    },
+    "custom_processor_algorithm_fsmd": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Develop algorithm and draw state diagram/FSMD for a given computation (GCD, LCM, factorial, prime check, mean/max, Fibonacci, x^n, a^b)",
+        "Translate a function computing the desired result into a state diagram"
+      ]
+    },
+    "custom_processor_datapath_design": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design datapath for a custom single-purpose processor",
+        "Sketch a probable datapath for the algorithm"
+      ]
+    },
+    "custom_processor_controller_block": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Propose/draw block diagram of controller for a custom single-purpose processor",
+        "Design FSM and controller for a dual-purpose processor"
+      ]
+    },
+    "custom_processor_state_transition_table": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Translate algorithm into state diagram and state transition table for custom processor"
+      ]
+    },
+    "single_purpose_processor_optimization_concept": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Define optimization in context of single-purpose processors",
+        "What are the parameters considered for optimization"
+      ]
+    },
+    "single_purpose_processor_optimization_example": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Explain optimization of a custom single-purpose processor with suitable example",
+        "State optimization techniques applicable to a designed processor"
+      ]
+    },
+    "general_purpose_processor_basic_architecture": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Draw the basic architecture of general-purpose processor"
+      ]
+    },
+    "general_purpose_processor_control_unit_suboperations": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the sub-operations carried out by control unit with illustration"
+      ]
+    },
+    "general_purpose_processor_datapath_operation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe operation of general-purpose processor in terms of datapath and controller",
+        "Explain datapath operation and its instruction cycles"
+      ]
+    },
+    "architectural_considerations_gpp": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Mention architectural considerations of general-purpose processor's datapath"
+      ]
+    },
+    "programmers_view_software_development": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe programmer's view in context of software development for general-purpose processor",
+        "Explain the software development process with view of embedded systems"
+      ]
+    },
+    "debugger_simulator_emulator": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define debugger, simulator and emulator",
+        "Explain testing and debugging in embedded software development"
+      ]
+    },
+    "asip_definition_types": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain ASIP and its various types/forms"
+      ]
+    },
+    "asip_as_compromise": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "How ASIP serves as a compromise between general-purpose and single-purpose processors",
+        "Explain common features of ASIPs used for digital signal processors"
+      ]
+    },
+    "processor_selection_criteria": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain criteria/issues related to selecting a particular microprocessor"
+      ]
+    },
+    "pipelining_concept": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Define pipelining and explain with diagram",
+        "Describe the principle of pipeline"
+      ]
+    },
+    "pipelining_stages_performance": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Show N-stage pipeline concept (e.g. 5-stage, 6-stage)",
+        "Explain how pipeline can be implemented to improve processor performance"
+      ]
+    },
+    "dsp_features": {
+      "levels": ["Remember"],
+      "patterns": [
+        "List/explain features and characteristics of a DSP chip"
+      ]
+    },
+    "memory_write_ability_levels": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define write ability and its different levels"
+      ]
+    },
+    "memory_storage_permanence": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define storage permanence of memory"
+      ]
+    },
+    "rom_types_operation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the operation of storing/erasing data in One-Time Programmable ROM / EEPROM",
+        "Introduce types of ROM in detail",
+        "Explain why OTP ROM cannot be reprogrammed"
+      ]
+    },
+    "rom_design_from_truth_table": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design a ROM to store given information from a truth table (F1, F2, F3... outputs)"
+      ]
+    },
+    "memory_composition_scaling": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Compose larger ROM/memory (e.g. 4K x 16) using smaller memory modules (e.g. 1K x 4)",
+        "Construct 2^(k+1) x n memory using 2^k x n memory modules",
+        "Construct 2^(k+2) x n memory using 2^k x n memory"
+      ]
+    },
+    "cache_mapping_techniques": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain basic techniques for cache mapping (direct, associative, fully associative)",
+        "How direct mapping differs from fully associative mapping",
+        "Explain associative cache mapping with merits and demerits"
+      ]
+    },
+    "cache_performance_comparison": {
+      "levels": ["Apply", "Evaluate"],
+      "patterns": [
+        "Given cache size, miss rate, hit cost, miss cost — determine which cache is better",
+        "Explain the impact of cache size on performance of cache memory"
+      ]
+    },
+    "cache_replacement_write_policy": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe replacement algorithms used in cache memory",
+        "Describe write policy used in cache memory"
+      ]
+    },
+    "sram_dram_comparison": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Show the differences between SRAM and DRAM",
+        "What is enhanced DRAM built around the conventional DRAM core"
+      ]
+    },
+    "interfacing_definition_needs": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define interfacing and explain the needs of interfacing"
+      ]
+    },
+    "io_addressing_schemes": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Differentiate memory-mapped I/O vs isolated (standard) I/O",
+        "Differentiate port-based vs bus-based I/O"
+      ]
+    },
+    "interrupt_definition_types": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define interrupt and explain its various types"
+      ]
+    },
+    "interrupt_driven_io_operation": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain operation/summary of flow of actions of interrupt-driven I/O using fixed/vectored ISR location",
+        "Explain steps to be followed in interrupt processing by a processor"
+      ]
+    },
+    "dma_transfer_operation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe purpose of DMA controller and draw flow of actions between peripheral and memory using DMA",
+        "Explain peripheral-to-memory transfer with/without DMA"
+      ]
+    },
+    "arbitration_definition_types": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define arbitration and explain its types"
+      ]
+    },
+    "priority_arbitration": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain priority arbitration with the help of block diagram and steps"
+      ]
+    },
+    "daisy_chain_arbitration": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain structure, operation, advantages and disadvantages of daisy-chain arbitration",
+        "Describe Daisy-Chain arbitration with block diagram and steps"
+      ]
+    },
+    "arbitration_comparison": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare priority arbitration and daisy-chain arbitration",
+        "Differentiate between strobe and handshake protocol"
+      ]
+    },
+    "bus_architecture_levels": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe two-level/multilevel bus architecture in detail",
+        "Explain ISA bus protocols"
+      ]
+    },
+    "advanced_communication_i2c": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe advanced communication principles used in embedded systems",
+        "Describe significance of I2C serial communication protocol"
+      ]
+    },
+    "rtos_vs_gpos": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How is RTOS different from GPOS",
+        "How does general-purpose OS differ from real-time operating system"
+      ]
+    },
+    "kernel_definition_types": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define kernel and explain its types",
+        "Differentiate monolithic kernel and micro-kernel",
+        "Explain file system handling of kernel",
+        "Briefly describe kernel operating system services"
+      ]
+    },
+    "process_vs_thread": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Differentiate between process and thread (list N differences)"
+      ]
+    },
+    "task_process_thread_comparison": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Compare task, process and thread"
+      ]
+    },
+    "task_states": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the different states of a task with appropriate example"
+      ]
+    },
+    "user_vs_kernel_thread": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Differentiate between user-level thread and kernel-level thread"
+      ]
+    },
+    "multiprocessing_vs_multitasking": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Differentiate between multiprocessing and multitasking in RTOS"
+      ]
+    },
+    "multithreading_concept_advantage": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Define thread/multithreading and explain why it is necessary",
+        "Discuss advantages of multithreading",
+        "Write a simple multithreading program in C"
+      ]
+    },
+    "scheduling_round_robin_numeric": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Given processes with completion times, calculate WT and TAT using Round Robin with given time slice",
+        "Calculate average waiting time and average turnaround time using RR algorithm"
+      ]
+    },
+    "scheduling_priority_based_numeric": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Given processes with priorities and completion times entering at different instants, calculate WT/TAT/AWT/ATAT using preemptive or non-preemptive priority-based scheduling"
+      ]
+    },
+    "scheduling_sjf_srt_numeric": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Given processes with completion times, calculate WT/TAT/AWT/ATAT using SJF/SRT (preemptive or non-preemptive) scheduling"
+      ]
+    },
+    "scheduling_io_cpu_utilization": {
+      "levels": ["Apply", "Evaluate"],
+      "patterns": [
+        "Given processes with I/O and CPU burst percentages, calculate percentage of time CPU was free using Round Robin"
+      ]
+    },
+    "task_synchronization_mechanisms": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain task synchronization using busy/wait technique",
+        "Describe mutual exclusion through sleep and wake for task synchronization"
+      ]
+    },
+    "context_switching_process": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the different situations when context switching is necessary",
+        "Explain the details of steps involved in context switching"
+      ]
+    },
+    "deadlock_definition_coffman": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define deadlock and explain the Coffman conditions that favor deadlock"
+      ]
+    },
+    "deadlock_handling_techniques": {
+      "levels": ["Remember"],
+      "patterns": [
+        "List/explain the deadlock handling techniques",
+        "Explain the conditions favoring deadlock situation"
+      ]
+    },
+    "ipc_synchronization_issues": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Define IPC and explain synchronization issues"
+      ]
+    },
+    "device_driver_definition": {
+      "levels": ["Remember"],
+      "patterns": [
+        "What is a device driver"
+      ]
+    },
+    "open_loop_control_system": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Define open-loop control system",
+        "Design open-loop automobile cruise controller and derive condition for no oscillation and reduction of road disturbance"
+      ]
+    },
+    "closed_loop_control_system": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Define closed-loop control system and draw its block diagram",
+        "Design closed-loop control system for automobile speed control and derive condition for no oscillation and no unbound output"
+      ]
+    },
+    "open_vs_closed_loop_comparison": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate/compare open-loop and closed-loop control systems",
+        "Which system is better for control system and why"
+      ]
+    },
+    "control_system_design_steps": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain design steps of closed-loop control system with example",
+        "What are the challenges of modeling a real physical system and how to overcome them"
+      ]
+    },
+    "pid_controller_definition_block": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define PID controller, draw its typical block diagram"
+      ]
+    },
+    "p_pi_pd_pid_comparison": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Differentiate between P, PI, PD and PID controllers",
+        "Explain controller design using PD and PI controller"
+      ]
+    },
+    "pid_tuning": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How is PID tuning performed",
+        "Explain the purpose of PID tuning"
+      ]
+    },
+    "pid_algorithm_software": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write an algorithm/pseudo-code to implement the PID controller in software"
+      ]
+    },
+    "control_system_performance_metrics": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain metrics/performance parameters used to measure control objectives with response diagram"
+      ]
+    },
+    "control_system_basic_terms": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define controller, plant, actuator used in control system"
+      ]
+    },
+    "computer_based_control_benefits": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Discuss practical issues with computer-based control",
+        "List benefits of computer-based control implementation"
+      ]
+    },
+    "full_custom_ic_technology": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Discuss advantages and disadvantages of full-custom IC technology",
+        "Briefly explain full-custom VLSI technology"
+      ]
+    },
+    "semi_custom_ic_technology": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain gate-array and standard-cell semi-custom IC technology",
+        "Briefly explain semi-custom (ASIC) IC technology and its types"
+      ]
+    },
+    "pld_ic_scheme": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain PLD scheme used in IC technology with steps and comparison"
+      ]
+    },
+    "ic_technology_comparison": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare full-custom, semi-custom and PLD IC technologies",
+        "List the three major IC technologies with brief definitions"
+      ]
+    },
+    "photolithography_definition_types": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Define photolithography and explain its types"
+      ]
+    },
+    "photolithography_steps": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "List the ten basic steps of photolithography",
+        "Show various steps of photolithography process using appropriate diagrams",
+        "Describe alignment and exposure techniques in photolithographic process"
+      ]
+    },
+    "ic_manufacturing_steps": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What are the steps involved in manufacturing of an IC",
+        "Explain IC manufacturing steps with a neat block diagram"
+      ]
+    },
+    "top_down_view_logic_function": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Draw top-down view/schematic for a given logic function (e.g. F = xz + yz')",
+        "Explain IC manufacturing steps for a given CMOS transistor-level circuit"
+      ]
+    },
+    "cmos_gate_design": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Draw MOS/CMOS circuit for NAND, NOR and NOT gates and derive truth table",
+        "Draw top-level diagram of a NAND gate using CMOS"
+      ]
+    },
+    "microcontroller_vs_microprocessor": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How are microcontrollers different from microprocessors"
+      ]
+    },
+    "8051_features": {
+      "levels": ["Remember"],
+      "patterns": [
+        "List important operational features of 8051 microcontroller"
+      ]
+    },
+    "8051_internal_structure": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Show the internal structure of 8051 microcontroller",
+        "Provide a comparison chart of 8051 family members"
+      ]
+    },
+    "8051_addressing_modes": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the addressing modes of 8051 microcontroller with examples"
+      ]
+    },
+    "8051_register_banks_memory_org": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the banks of register in 8051 microcontroller",
+        "Explain data memory organization in 8051 microcontroller"
+      ]
+    },
+    "8051_ports_purpose": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe the different purpose of Port 3 and Port 2 of 8051 microcontroller",
+        "Explain ports 1 and 2 of 8051 microcontroller",
+        "Explain minimum configuration circuit diagram for 8051 to operate"
+      ]
+    },
+    "alp_8051_led_blink_control": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write ALP to alternately blink 8 LEDs connected at a port",
+        "Control rate of LED blink using two switches (increase/decrease) via 8051 instructions"
+      ]
+    },
+    "alp_8051_switch_read_display": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write ALP to read data from switches connected at one port and send to another port for LED display"
+      ]
+    },
+    "alp_8051_bit_counting": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write ALP to count number of 0's/1's in an 8-bit data stored in ROM and store result in RAM"
+      ]
+    },
+    "alp_8051_bcd_arithmetic": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write ALP/C program to find sum of two 8-bit BCD data stored in RAM locations and store BCD sum"
+      ]
+    },
+    "alp_8051_temperature_conversion": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write program to read 8-bit temperature in Celsius from a port and output Fahrenheit equivalent to another port"
+      ]
+    },
+    "alp_8051_timer_square_wave_delay": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write program to generate square wave of given frequency/duty cycle using 8051 timer",
+        "Write short program to compute a precise delay using 8051 timer",
+        "Generate a pulse of given duty cycle at a pin when a switch is ON"
+      ]
+    },
+    "alp_8051_seven_segment_display": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write ALP/C to display digits (0-9, 9-0, 99-00) on seven-segment display and show interfacing diagram",
+        "Design circuit with 7-segment display used as 2-digit hexadecimal/BCD counter using timer"
+      ]
+    },
+    "seven_segment_display_config": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain seven-segment display with different modes of configuration (common anode/cathode)",
+        "Explain different configurations for seven-segment display"
+      ]
+    },
+    "vhdl_entity_architecture_declaration": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Explain how entity is declared in VHDL programming",
+        "Explain entity and architecture of VHDL declaration"
+      ]
+    },
+    "vhdl_modeling_styles": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define dataflow, behavioral and structural models in VHDL",
+        "How is behavioral modeling different from dataflow modeling",
+        "Define process/component with its declaration in VHDL"
+      ]
+    },
+    "vhdl_combinational_code": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write VHDL code for full adder using two half adders (structural model)",
+        "Write VHDL code for multiplexer/demultiplexer",
+        "Write VHDL code for a decoder",
+        "Write VHDL code for 4-bit binary parallel adder in structural model"
+      ]
+    },
+    "vhdl_sequential_flipflop_code": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Write VHDL code for D/JK/T flip-flop using PROCESS"
+      ]
+    },
+    "vhdl_counter_code": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design and write VHDL code for n-bit up counter using T flip-flops in structural modeling",
+        "Write VHDL code for BCD counter to display 0-9999 in seven segment"
+      ]
+    },
+    "vhdl_given_circuit_to_code": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "Convert a given structural circuit diagram (flip-flops, inverter, gates) into VHDL code"
+      ]
+    },
+    "vhdl_fsm_sequence_detector": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design FSM and write VHDL code for a sequence detector for a given bit pattern (e.g. 1011, 1101)"
+      ]
+    },
+    "vhdl_fsm_controller_applications": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design state diagram and VHDL code for a controller (traffic light, elevator control unit) using state machine with necessary assumptions"
+      ]
+    },
+    "fpga_vs_microcontroller": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How does an FPGA differ from a microcontroller"
+      ]
+    }
+  }
+}

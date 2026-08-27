@@ -1,0 +1,161 @@
+{
+  "topic": "custom processor datapath design",
+  "generated_at": "2026-08-27T17:21:50",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "To implement the four data‑transfer instructions described (e.g., MOV Rn, direct and MOV direct, Rn) in a custom single‑purpose processor, which combination of datapath components must be connected to the register file’s read ports?",
+      "options": {
+        "A": "Two read ports, an address adder, and a multiplexor that selects either a register output or a direct address",
+        "B": "One read port, a sign‑extension unit, and a multiplexor that selects either an immediate value or a PC offset",
+        "C": "Two read ports, a memory data bus, and a multiplexor that selects between memory data and the ALU result",
+        "D": "One read port, a shift‑left unit, and a multiplexor that selects between the shifted value and a constant"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context states that data‑transfer instructions use a direct address field (Page 107). Implementing them requires reading a register (Rn) and supplying a direct address to the memory interface, which is achieved with two read ports, an address adder for forming the effective address, and a multiplexor to choose between register data and the direct address.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing the datapath for the two arithmetic instructions of the example processor, which functional unit must be added to the basic load/store datapath shown for the data‑transfer instructions?",
+      "options": {
+        "A": "A barrel shifter",
+        "B": "An arithmetic‑logic unit (ALU) capable of addition and subtraction",
+        "C": "A floating‑point unit",
+        "D": "A cryptographic co‑processor"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The processor must support two arithmetic instructions (Page 106). Adding an ALU that can perform the required arithmetic operations is the direct way to extend the basic load/store datapath.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The example processor uses a 16‑bit Program Counter (PC) and a 64K × 16‑bit memory. Which datapath path must be provided to allow the PC to fetch the next instruction?",
+      "options": {
+        "A": "PC → address bus → instruction memory → Instruction Register (IR)",
+        "B": "PC → ALU → data bus → register file",
+        "C": "PC → multiplexor → immediate field → IR",
+        "D": "PC → shift register → opcode decoder → control unit"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context lists a 16‑bit PC and 64K × 16‑bit memory (Page 106). Fetching an instruction requires sending the PC value to the address bus, reading the instruction from memory, and loading it into the IR.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the FSMD‑based design flow, after defining the instruction set, the next step is to create a finite‑state machine with datapath (FSMD). Which design activity directly follows the FSMD creation according to the process described?",
+      "options": {
+        "A": "Writing high‑level language compilers",
+        "B": "Designing and connecting the datapath components to the control unit",
+        "C": "Fabricating the silicon layout",
+        "D": "Performing power‑consumption analysis"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The design process is outlined as: choose/define instruction set → create FSMD → design datapath components and connect them to the control unit (Page 105).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For the jump instruction in the example processor, which additional datapath element is required to compute the target address when the instruction provides a direct address operand?",
+      "options": {
+        "A": "A dedicated branch‑target buffer",
+        "B": "An address adder that adds the PC‑relative offset to the PC",
+        "C": "A multiplexor that selects between PC + 1 and the direct address",
+        "D": "A comparator that checks the zero flag before updating the PC"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The jump instruction uses a direct address field (implied from the instruction format on Page 107). To load the PC with either the sequential address (PC + 1) or the jump target, a multiplexor selects between these two sources.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When sketching a probable datapath for the algorithm “load‑accumulate‑store” using the given instruction set, which sequence of datapath operations correctly reflects the flow of data?",
+      "options": {
+        "A": "Register file → ALU → memory → PC → IR",
+        "B": "Memory → Register file → ALU → Register file → Memory",
+        "C": "PC → IR → immediate generator → ALU → memory address register",
+        "D": "Register file → shift unit → ALU → control unit → memory"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "“Load‑accumulate‑store” involves reading data from memory into a register, performing an arithmetic operation in the ALU, and writing the result back to memory. The datapath therefore moves data: Memory → Register file (load), Register file → ALU (accumulate), ALU → Register file (store result) → Memory (store). This follows the described instruction capabilities (Page 106‑107).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the 16‑bit Instruction Register (IR) and the two‑byte instruction format shown, which part of the datapath must decode the first 4‑bit opcode field to generate appropriate control signals?",
+      "options": {
+        "A": "The ALU control unit",
+        "B": "The opcode decoder attached to the IR output bus",
+        "C": "The register file write‑back logic",
+        "D": "The program counter incrementer"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The instruction format (Page 107) places the opcode in the first 4 bits of the first byte. The IR output is fed to an opcode decoder that produces control signals for the rest of the datapath.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If the custom processor is to be implemented as a single‑purpose unit that only executes the four data‑transfer and two arithmetic instructions, which control‑unit design is most appropriate?",
+      "options": {
+        "A": "A microprogrammed control unit with a large ROM",
+        "B": "A hard‑wired finite‑state machine with a small number of states",
+        "C": "A hybrid control unit combining microcode and hard‑wired logic",
+        "D": "A programmable logic array (PLA) that can be re‑configured at run‑time"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The limited instruction set (Page 106‑107) means a compact hard‑wired FSM can efficiently generate the required control signals without the overhead of microprogramming.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "To support the “MOV @Rn, Rm” instruction, which datapath path must be enabled in addition to the normal register‑to‑memory path?",
+      "options": {
+        "A": "Register file read port → address generation unit → memory write data bus",
+        "B": "Immediate generator → ALU → memory address bus",
+        "C": "PC → instruction fetch unit → IR → control unit",
+        "D": "Shift unit → ALU → register file write port"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "“MOV @Rn, Rm” stores the contents of Rm at the memory address contained in Rn (Page 107). The datapath must read Rn to generate the memory address, and read Rm to provide the data to be written, thus requiring the described path.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When extending the basic datapath to include a jump instruction that uses a direct address, which control signal must be added to allow the PC to be loaded with the jump target?",
+      "options": {
+        "A": "PC_increment",
+        "B": "PC_load",
+        "C": "IR_write",
+        "D": "MEM_read"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Implementing a jump requires a signal that loads the PC with a new value (the direct address). This is the PC_load control signal, distinct from the regular PC_increment used for sequential execution (Page 107).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the design flow described, which stage would most likely involve determining the width of the datapath buses and registers for the custom processor?",
+      "options": {
+        "A": "Choosing/defining the instruction set",
+        "B": "Creating the FSMD",
+        "C": "Designing the datapath components and connecting them to the control unit",
+        "D": "Developing the controller/FSM"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "After the instruction set and FSMD are defined, the next step is to design the datapath components (including bus widths, register widths) and connect them to the control unit (Page 105).",
+      "source_pages": []
+    }
+  ]
+}

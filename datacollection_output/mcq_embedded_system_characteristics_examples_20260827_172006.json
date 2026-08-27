@@ -1,0 +1,147 @@
+{
+  "topic": "embedded system characteristics examples",
+  "generated_at": "2026-08-27T17:20:06",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which statement best captures an essential characteristic of an embedded system as emphasized in the design challenge and processor constraints?",
+      "options": {
+        "A": "It must be capable of running multiple unrelated applications simultaneously.",
+        "B": "It is typically designed to perform a dedicated, single‑purpose function.",
+        "C": "It always uses a general‑purpose processor without any custom hardware.",
+        "D": "It relies exclusively on external memory for program storage."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The starter activity (page 36) asks groups to design a “basic embedded system” and the constraints (page 4) highlight “Design of Custom Single Purpose Processor,” indicating that embedded systems are usually built for a specific, dedicated task.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the definition of a microcontroller (MCU) on page 43 differentiate it from a microprocessor (MPU)?",
+      "options": {
+        "A": "An MCU combines CPU, memory, and I/O on a single chip, whereas an MPU provides only the CPU.",
+        "B": "An MPU integrates CPU, memory, and I/O on one chip, while an MCU requires external peripherals.",
+        "C": "Both MCU and MPU are identical; the terms are interchangeable.",
+        "D": "An MCU can only execute firmware, whereas an MPU can run full operating systems."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 43 lists the feature that an MCU “CPU + memory + I/O on one chip,” while an MPU is “CPU only; needs external memory.”\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which processing‑core category described on page 40 is explicitly optimized for a particular application domain?",
+      "options": {
+        "A": "General‑Purpose Processors (GPP)",
+        "B": "Domain‑Specific Processors such as DSPs, ASIPs, and SSPs",
+        "C": "Multi‑core CPUs used in desktop computers",
+        "D": "Standard microcontrollers like Atmega328P"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 40 states that “Domain‑Specific Processors (DSPs / ASIP / SSP) – Optimized for a particular application or domain.”\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the starter activity (page 36), which combination correctly represents the three functional blocks of a basic embedded system?",
+      "options": {
+        "A": "Power supply, wireless module, cloud server",
+        "B": "Inputs (sensors), Processing Unit (microcontroller), Outputs (actuators)",
+        "C": "User interface, database, networking stack",
+        "D": "Operating system, compiler, debugger"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The activity instructs groups to identify “Inputs (Sensors) … Processing Unit … Outputs (Actuators)” as the core components of an embedded system.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why can Commercial‑Off‑The‑Shelf (COTS) platforms such as Arduino or Raspberry Pi still satisfy embedded‑system design constraints, based on the context (pages 39‑40)?",
+      "options": {
+        "A": "They are always cheaper than custom ASICs, regardless of performance.",
+        "B": "They provide ready‑made hardware and software ecosystems that can be tailored to single‑purpose tasks.",
+        "C": "They are required to use only general‑purpose processors, which eliminates real‑time capability.",
+        "D": "They cannot be used in embedded applications because they lack any processing core."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Pages 39‑40 list Arduino, Raspberry Pi, ESP32 as COTS options, implying that such platforms can be repurposed for specific embedded functions while leveraging existing resources.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the “single‑purpose design” characteristic influence the choice of processor for an embedded system, as discussed on page 4?",
+      "options": {
+        "A": "Designers prefer high‑end CPUs to allow future feature expansion.",
+        "B": "A custom single‑purpose processor or a domain‑specific core is selected to meet the dedicated task efficiently.",
+        "C": "The system must use a general‑purpose microprocessor to ensure flexibility.",
+        "D": "The processor choice is irrelevant because software can compensate for any hardware."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 4 lists “Design of Custom Single Purpose Processor” among the constraints, indicating that a dedicated processor is chosen to match the single‑purpose nature of the system.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a temperature‑monitoring embedded system that uses a temperature sensor, an Arduino MCU, and an LED indicator, how is the characteristic of “real‑time operation” reflected?",
+      "options": {
+        "A": "The system stores all temperature readings for later batch processing.",
+        "B": "The LED updates immediately after each sensor reading, providing instant feedback.",
+        "C": "The Arduino sends data to a remote server for delayed analysis.",
+        "D": "The system requires user interaction before displaying any temperature value."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Real‑time operation means the system responds promptly to inputs; the context’s emphasis on inputs, processing, and outputs (page 36) supports immediate LED response as an example.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which option best illustrates the “resource‑constrained” nature of embedded systems as described across the provided material?",
+      "options": {
+        "A": "Unlimited RAM and storage are assumed for all designs.",
+        "B": "The system must operate with limited memory, power, and processing capability.",
+        "C": "Designers can freely add any number of peripherals without cost concerns.",
+        "D": "Embedded systems always run on desktop‑class CPUs."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Throughout the context (e.g., pages 36, 40, 43) embedded systems are portrayed as having tight constraints on memory, power, and processing resources.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the classification information (page 20) and core types (page 40), an embedded system that employs a TI C6000 DSP for audio signal processing would be classified primarily as which type?",
+      "options": {
+        "A": "General‑Purpose Processor‑based system",
+        "B": "Domain‑Specific Processor system",
+        "C": "Multi‑core server‑grade system",
+        "D": "Purely mechanical control system"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 20 discusses classification, while page 40 identifies DSPs as “Domain‑Specific Processors,” making the audio‑DSP system fall into that category.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which scenario best demonstrates the embedded‑system principle of tight integration between hardware and software, using the elements listed on page 38?",
+      "options": {
+        "A": "A desktop PC running a word processor while using a separate external hard drive.",
+        "B": "A microcontroller that directly reads sensor data, processes it with firmware, and drives an actuator without an operating system.",
+        "C": "A smartphone that downloads apps from an app store and runs them in a multitasking OS.",
+        "D": "A cloud server that processes data sent from numerous remote devices."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 38 outlines elements such as sensors, processing unit, and actuators, emphasizing that an embedded system tightly couples hardware (sensor/actuator) with firmware on the processing unit.",
+      "source_pages": []
+    }
+  ]
+}

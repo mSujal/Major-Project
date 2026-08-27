@@ -1,0 +1,147 @@
+{
+  "topic": "embedded system definition purpose",
+  "generated_at": "2026-08-27T17:19:40",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best defines an embedded system as described in the provided context?",
+      "options": {
+        "A": "A computer that can run any software like a desktop PC.",
+        "B": "A dedicated computing system designed to perform a specific function within a larger device, using limited resources.",
+        "C": "A general‑purpose processor used for high‑performance scientific computing.",
+        "D": "A network router that manages internet traffic."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The comparison on [Page 13] highlights that an embedded system is purpose‑specific, resource‑constrained, and integrated into a larger product, distinguishing it from general‑purpose computers.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, what is the primary purpose of an embedded system?",
+      "options": {
+        "A": "To provide versatile computing for many unrelated tasks.",
+        "B": "To execute a specific, dedicated function efficiently within a larger device.",
+        "C": "To serve as a general‑purpose workstation for end users.",
+        "D": "To replace all general‑purpose computers in a network."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The purpose of an embedded system is to carry out a dedicated task, as inferred from the definition and the “Elements of an Embedded Systems” discussion on [Page 13] and [Page 38].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the Starter Activity (Page 36), which component is identified as the processing unit of a basic embedded system?",
+      "options": {
+        "A": "Ultrasonic sensor",
+        "B": "Microcontroller (e.g., Arduino)",
+        "C": "LED",
+        "D": "Relay"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The activity explicitly asks groups to select a processing unit such as a microcontroller (8051, Arduino, etc.) as the core of the system [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT typically considered an input in the Elements of an Embedded System (Page 38)?",
+      "options": {
+        "A": "Temperature sensor",
+        "B": "Motor",
+        "C": "IR sensor",
+        "D": "Ultrasonic sensor"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Inputs are sensors that gather data (temperature, IR, ultrasonic). A motor is an actuator, i.e., an output device, not an input [Page 38].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the classification by generation and the hardware categories listed (Pages 20 & 39), which statement best reflects a characteristic of newer‑generation embedded systems?",
+      "options": {
+        "A": "They use only 8‑bit microcontrollers.",
+        "B": "They increasingly integrate application‑specific processors (e.g., ASIC, ASIP) for higher efficiency.",
+        "C": "They avoid using any ASIC technology.",
+        "D": "They rely exclusively on general‑purpose CPUs."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "Later generations incorporate application‑specific hardware such as ASIP and ASIC to improve performance, as shown in the classification (Page 20) and hardware table (Page 39).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the feature comparison on Page 13, which attribute most clearly distinguishes embedded systems from general‑purpose computing systems?",
+      "options": {
+        "A": "Unlimited memory capacity",
+        "B": "Real‑time constraints and limited resources",
+        "C": "Ability to run any operating system",
+        "D": "High power consumption"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The table emphasizes that embedded systems operate under real‑time constraints with restricted resources, unlike general‑purpose systems.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is given as an example of an embedded‑system processor in the context?",
+      "options": {
+        "A": "Intel Atom",
+        "B": "ARM Cortex‑A",
+        "C": "Atmega328P",
+        "D": "All of the above"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The examples list Atmega328P, STM32, PIC18F as representative embedded processors (Page 43).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main objective of the “Basic Embedded System Design Challenge” described on Page 36?",
+      "options": {
+        "A": "To demonstrate networking protocols.",
+        "B": "To have students design an embedded system by selecting sensors, a microcontroller, and actuators.",
+        "C": "To teach high‑level programming languages.",
+        "D": "To compare desktop operating systems."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The starter activity directs each group to identify inputs, a processing unit, and outputs for a basic embedded system (Page 36).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which application area is explicitly listed as an example of embedded‑system usage in the context?",
+      "options": {
+        "A": "Personal computers",
+        "B": "Smartphones",
+        "C": "Appliances",
+        "D": "Supercomputers"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The table of applications (Page 43) places appliances, IoT, automotive, and robots under the embedded‑system column.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the design activity (Page 36), what role does an actuator play in an embedded system?",
+      "options": {
+        "A": "To sense environmental data.",
+        "B": "To process data and make decisions.",
+        "C": "To convert processed signals into physical actions such as motion or sound.",
+        "D": "To store program code."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Actuators are listed as outputs (e.g., motor, LED, buzzer, relay) that perform physical actions based on the system’s processing (Page 36).",
+      "source_pages": []
+    }
+  ]
+}

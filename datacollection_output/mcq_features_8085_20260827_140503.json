@@ -1,0 +1,133 @@
+{
+  "topic": "features 8085",
+  "generated_at": "2026-08-27T14:05:03",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements correctly describes the temporary registers W and Z in the 8085 microprocessor?",
+      "options": {
+        "A": "They are 8‑bit registers directly accessible by the programmer.",
+        "B": "They are 8‑bit registers used by the 8085A internally for brief data storage.",
+        "C": "They are 16‑bit registers used for address generation.",
+        "D": "They are status flags that indicate arithmetic overflow."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that W and Z are “8 bit registers not accessible to the programmer… 8085A places the data into it for a brief period.” [Page 2]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How many signal lines form the address bus of the 8085, and how are they divided?",
+      "options": {
+        "A": "8 lines, all bidirectional.",
+        "B": "16 lines, split into A15‑A8 (high‑order, unidirectional) and AD7‑AD0.",
+        "C": "20 lines, all used for low‑order addressing.",
+        "D": "12 lines, split equally between high and low order."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The address bus has 16 signal lines divided into two segments: A15‑A8 (high‑order, unidirectional) and AD7‑AD0. [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT a feature of the 8085A microprocessor as described in the context?",
+      "options": {
+        "A": "8‑bit general‑purpose processor.",
+        "B": "Ability to address 64 K bytes of memory.",
+        "C": "40‑pin package.",
+        "D": "16‑bit data bus width."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The 8085 is an 8‑bit processor with an 8‑bit data bus, not 16‑bit. [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What supply voltage does the 8085 microprocessor require for operation?",
+      "options": {
+        "A": "+5 V single supply.",
+        "B": "+12 V dual supply.",
+        "C": "±5 V dual supply.",
+        "D": "+3.3 V single supply."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The device “require[s] a +5V single power supply.” [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "At what clock frequency can the 8085 operate according to the provided description?",
+      "options": {
+        "A": "1 MHz single‑phase.",
+        "B": "3 MHz single‑phase.",
+        "C": "5 MHz dual‑phase.",
+        "D": "10 MHz single‑phase."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The 8085 “can operate with a 3‑MHz, single phase clock.” [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How are the high‑order address lines (A15‑A8) of the 8085 characterized?",
+      "options": {
+        "A": "Bidirectional and used for both address and data.",
+        "B": "Unidirectional and used only for high‑order address bits.",
+        "C": "Open‑collector outputs requiring external pull‑up resistors.",
+        "D": "Tri‑state outputs that can be disabled during I/O cycles."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The high‑order lines A15‑A8 “are unidirectional and used as high order bus.” [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the width of the data bus used by the 8085 microprocessor?",
+      "options": {
+        "A": "4 bits.",
+        "B": "8 bits.",
+        "C": "16 bits.",
+        "D": "32 bits."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The data bus is described as having “8” bits, i.e., an 8‑bit data bus. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the classification of 8085 signals, which group does the address bus belong to?",
+      "options": {
+        "A": "Control‑signal group.",
+        "B": "Power‑supply group.",
+        "C": "Address‑bus group.",
+        "D": "Data‑bus group."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists “Address bus” as one of the six signal groups of the 8085. [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement about the temporary registers W and Z in the 8085 is true?",
+      "options": {
+        "A": "They can be directly read or written by assembly instructions.",
+        "B": "They hold data temporarily during execution and are hidden from the programmer.",
+        "C": "They are used to store the program counter after a reset.",
+        "D": "They are 16‑bit registers used for arithmetic operations."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The description notes that W and Z “are 8‑bit registers not accessible to the programmer… used for a brief period.” [Page 2]",
+      "source_pages": []
+    }
+  ]
+}

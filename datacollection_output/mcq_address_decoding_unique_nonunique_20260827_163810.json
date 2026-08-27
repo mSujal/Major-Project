@@ -1,0 +1,147 @@
+{
+  "topic": "address decoding unique nonunique",
+  "generated_at": "2026-08-27T16:38:10",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Why is absolute (unique) decoding preferred when designing a continuous address map for a microprocessor system?",
+      "options": {
+        "A": "It allows the same physical address to refer to multiple devices, simplifying hardware.",
+        "B": "It eliminates windows and feedback spaces, ensuring each memory location has a single address.",
+        "C": "It reduces the number of address lines needed for a given memory size.",
+        "D": "It permits the use of multiplexed address/data lines without additional control signals."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that a memory location should have a single address and that “absolute decoding should be preferred” to avoid windows and feedback space, which directly supports option B. [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the described system, two 8 KB RAM chips are used for even and odd addresses. How does using the A0 line to select between them help achieve unique address decoding?",
+      "options": {
+        "A": "A0 combines the two chips into a single 16 KB block, removing the need for chip‑select signals.",
+        "B": "A0 determines whether the BHE signal is active, thereby selecting the correct byte lane.",
+        "C": "A0 acts as a high‑order address line, expanding the address range of each chip.",
+        "D": "A0 distinguishes even from odd addresses, ensuring each byte maps to exactly one RAM chip."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that “depending upon the bit on A0, either the even or odd bank will be selected” so each address is uniquely mapped to one chip. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a system employed non‑unique (partial) decoding for the two 8 KB RAM banks, which of the following problems is most likely to occur?",
+      "options": {
+        "A": "The processor would be unable to access any RAM because both chips would be permanently disabled.",
+        "B": "Both RAM chips could be selected simultaneously for some addresses, causing data contention.",
+        "C": "The address lines would be insufficient to address the full 16 KB of memory.",
+        "D": "The BHE signal would become irrelevant for byte accesses."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Non‑unique decoding allows overlapping address ranges, leading to simultaneous selection and possible contention, as opposed to the unique mapping described. [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which characteristic best defines a “continuous” address map?",
+      "options": {
+        "A": "The address space contains unused gaps (windows) to simplify decoding.",
+        "B": "Every address location is mapped to a device without any feedback space.",
+        "C": "Devices share address lines to reduce hardware complexity.",
+        "D": "The map repeats after a fixed number of addresses."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that a continuous address map “should be continuous as far as possible i.e. these should be no windows and no feedback space should be allowed.” [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The LED interfacing example assigns the device a unique address of 01H. What does this illustrate about unique address decoding?",
+      "options": {
+        "A": "The device can be accessed only when all higher address lines are high.",
+        "B": "Only one specific combination of address lines will enable the device, preventing accidental activation.",
+        "C": "The device will respond to any address where A0 is high.",
+        "D": "The device requires a PROM decoder to generate its chip‑select signal."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that “the device has unique address of 01H,” meaning only that exact address enables the LED, which is the essence of unique decoding. [Page 60]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing address decoding, why must the reset vector address (FFFF0H) reside in EPROM?",
+      "options": {
+        "A": "EPROM can be programmed to change the reset address during operation.",
+        "B": "The reset address must be uniquely mapped and permanently available after power‑on.",
+        "C": "EPROM requires fewer address lines than RAM for the same address range.",
+        "D": "The processor’s CS line is only asserted for EPROM devices at reset."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that after reset the IP and CS are initialized to FFFF0H, and therefore “this address must lie in the EPROM,” implying a need for a fixed, uniquely decodable location. [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How many address lines are required to uniquely address a 16 KB memory region, and why does this ensure unique decoding?",
+      "options": {
+        "A": "12 lines, because 2¹² = 4 KB and four such blocks make 16 KB.",
+        "B": "14 lines, because 2¹⁴ = 16 KB, giving a distinct binary address for each byte.",
+        "C": "16 lines, to match the 8086’s full 20‑bit address bus.",
+        "D": "8 lines, because each line can address 2 KB and eight lines give 16 KB."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly states “To address 16 KB, we require 14 address lines,” meaning each byte gets a unique 14‑bit address. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the role of the BHE (Bus High Enable) signal in the even/odd RAM bank arrangement?",
+      "options": {
+        "A": "BHE is asserted low for even addresses and high for odd addresses, selecting the proper bank.",
+        "B": "BHE is always high for word accesses and low for byte accesses, independent of bank selection.",
+        "C": "BHE is low whenever a byte or word is accessed at an odd address, complementing A0 selection.",
+        "D": "BHE directly generates the chip‑select signals for both RAM chips."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage says “Now the BHE’ signal will be 0 whenever a byte or a word is being accessed at odd address,” indicating its role alongside A0. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a designer chooses a non‑unique decoding scheme for I/O ports, what is a likely consequence according to the principles discussed?",
+      "options": {
+        "A": "All I/O devices will be automatically disabled after reset.",
+        "B": "The address map will become continuous without any windows.",
+        "C": "Multiple I/O devices might respond to the same address, causing ambiguous operation.",
+        "D": "The processor will require additional address lines to differentiate devices."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Non‑unique decoding allows overlapping address ranges, leading to more than one device responding to a single address, which contradicts the goal of a unique address per device. [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of the given system, which decoding approach ensures that “a memory location should have a single address corresponding to it”?",
+      "options": {
+        "A": "Non‑unique (partial) decoding using only high‑order address lines.",
+        "B": "Absolute (unique) decoding where all required address lines are compared.",
+        "C": "Decoding based solely on the BHE signal without address line comparison.",
+        "D": "Dynamic decoding that changes chip‑select signals during runtime."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly recommends “absolute decoding should be preferred” to guarantee each location has a single address. [Page 65]",
+      "source_pages": []
+    }
+  ]
+}
