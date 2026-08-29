@@ -2,6 +2,9 @@
 #           PARAMETERS                  #
 #########################################
 TOP_K = 5 
+MCQ_TOP_K = 10  # as test if more context helps...
+
+MCQ_RELEVANCE_THRESHOLD = 0.8
 MODEL = "nomic-ai/nomic-embed-text-v1.5"
 TOKENIZER = "nomic-ai/nomic-embed-text-v1.5"
 

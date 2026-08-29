@@ -1,0 +1,147 @@
+{
+  "topic": "critical system v and v",
+  "generated_at": "2026-08-26T22:42:17",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "During a requirements inspection for a safety‑critical system, the team discovers ambiguous wording that could lead to misinterpretation of user needs. Which V&V activity described in the context best addresses this problem?",
+      "options": {
+        "A": "System testing of integrated components",
+        "B": "Dynamic execution of validation test cases",
+        "C": "Static inspection and review of the requirements document",
+        "D": "Performance benchmarking of the final product"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Ambiguous requirements are best clarified through static V&V techniques such as inspections and reviews, which analyze requirements without executing the software [Page 38].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A software project manager explains that “fit for purpose” means the system must be good enough for its intended use. Which factor does NOT directly influence the level of confidence required, according to the text?",
+      "options": {
+        "A": "The software’s intended purpose",
+        "B": "The expectations of system users",
+        "C": "The current marketing environment",
+        "D": "The programming language used to implement the system"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Confidence level depends on purpose, user expectations, and marketing environment, but not on the implementation language [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of V&V, validation is said to go beyond checking conformance with the specification. What is the primary focus of validation as described?",
+      "options": {
+        "A": "Ensuring all code modules compile without errors",
+        "B": "Demonstrating that the software meets the real wishes of customers and users",
+        "C": "Measuring the execution speed of critical functions",
+        "D": "Verifying that design diagrams match the code structure"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Validation demonstrates that the software does what the customer expects, beyond mere specification conformance [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When conducting a system test, the team should primarily concentrate on which of the following, according to the provided material?",
+      "options": {
+        "A": "Isolating and testing each component individually",
+        "B": "Testing interactions among integrated components",
+        "C": "Reviewing source code for style compliance",
+        "D": "Verifying that requirements are unambiguous"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "System testing focuses on testing component interactions within the integrated system [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best captures the distinction between verification and validation as outlined by Boehm and the surrounding text?",
+      "options": {
+        "A": "Verification checks that the software runs faster than a baseline; validation checks memory usage.",
+        "B": "Verification ensures the product is built correctly; validation ensures the right product is built.",
+        "C": "Verification and validation are interchangeable terms for any testing activity.",
+        "D": "Verification is only performed after the software is released; validation occurs before coding starts."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Verification confirms conformance to specifications (built correctly), while validation confirms that the software meets user needs (right product) [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A development team claims that “testing can only show the presence of errors, not their absence.” What implication does this have for achieving confidence in a critical system?",
+      "options": {
+        "A": "Testing alone is sufficient to guarantee reliability.",
+        "B": "Additional V&V activities such as inspections are needed to increase confidence.",
+        "C": "Errors can be completely eliminated through exhaustive testing.",
+        "D": "Confidence levels are irrelevant for non‑critical systems."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Because testing cannot prove the absence of errors, other V&V techniques like inspections complement testing to raise confidence [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a scenario where a requirements document is being used to develop validation tests, which purpose does the document serve according to the context?",
+      "options": {
+        "A": "It defines the low‑level coding standards for developers.",
+        "B": "It provides a basis for creating tests that confirm the system meets user expectations.",
+        "C": "It specifies the hardware configuration for system deployment.",
+        "D": "It replaces the need for any subsequent inspections."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Requirements are used to develop validation tests that check if the system satisfies user expectations [Page 27].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the difficulty of producing a perfectly clear and unambiguous requirements specification, what practical implication does this have for V&V activities?",
+      "options": {
+        "A": "No V&V activities are necessary if the requirements are “almost” complete.",
+        "B": "Static inspections become crucial to identify and mitigate ambiguities early.",
+        "C": "System testing can replace the need for any requirements review.",
+        "D": "Ambiguities are irrelevant as long as the code compiles."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Since achieving perfect clarity is nearly impossible, inspections help detect ambiguities in requirements [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why a higher level of confidence is required for software that controls a safety‑critical system compared to a prototype demonstrator?",
+      "options": {
+        "A": "Safety‑critical software must be faster than prototype software.",
+        "B": "Users of safety‑critical systems have lower expectations.",
+        "C": "The consequences of failure are more severe in safety‑critical contexts.",
+        "D": "Prototypes are typically written in higher‑level languages."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Critical software demands greater reliability because failures can have serious safety consequences [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During a static V&V inspection, the team reviews design models, source code, and proposed system tests. What is the primary advantage of this “static” approach as described?",
+      "options": {
+        "A": "It guarantees that all runtime errors are eliminated.",
+        "B": "It allows detection of issues without needing to execute the software.",
+        "C": "It replaces the need for any dynamic testing later in the project.",
+        "D": "It ensures the final product will meet all performance benchmarks."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Static V&V techniques analyze artifacts without execution, enabling early detection of defects [Page 38].",
+      "source_pages": []
+    }
+  ]
+}

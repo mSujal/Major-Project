@@ -1,0 +1,404 @@
+{
+  "subject": "Microprocessor",
+  "topics": {
+    "intro_microprocessor_history": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define microprocessor, brief history"
+      ]
+    },
+    "digital_computer_block_diagram": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Draw/explain block diagram of computer"
+      ]
+    },
+    "microcomputer_vs_microcontroller": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate microprocessor vs microcontroller"
+      ]
+    },
+    "bus_organization": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Define bus, explain bus organization",
+        "Calculate memory capacity from address/data bus lines"
+      ]
+    },
+    "stored_program_concept_von_neumann": {
+      "levels": ["Remember", "Evaluate"],
+      "patterns": [
+        "Define stored program concept",
+        "Justify Von-Neumann as pioneer of digital computer"
+      ]
+    },
+    "instruction_processing_cycle": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain fetch-execute cycle with RTL",
+        "Define instruction cycle and machine cycle"
+      ]
+    },
+    "features_8085": {
+      "levels": ["Remember"],
+      "patterns": [
+        "List characteristics/features of 8085"
+      ]
+    },
+    "internal_architecture_8085": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Draw and explain internal architecture of 8085"
+      ]
+    },
+    "pin_configuration_8085": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain input/output pin signals of 8085",
+        "Write use of specific pins (ALE, IO/M, READY, RD)"
+      ]
+    },
+    "instruction_data_format_8085": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain instruction and data format of 8085"
+      ]
+    },
+    "addressing_modes_8085": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain addressing modes of 8085 with example"
+      ]
+    },
+    "programmer_model_registers_8085": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Draw/explain programming model of 8085",
+        "Explain use of PC and SP in CALL/RET/PUSH/POP"
+      ]
+    },
+    "instruction_classification_branching": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Classify 8085 instructions with examples",
+        "Explain purpose of branching instructions",
+        "Explain RST instructions"
+      ]
+    },
+    "call_ret_push_pop": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Compare CALL/RET with PUSH/POP"
+      ]
+    },
+    "flags_8085": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Define flag, discuss 8085 flags",
+        "Show flag effects with arithmetic/logic instructions"
+      ]
+    },
+    "rtl_register_transfer_language": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Write RTL for a given instruction (e.g. LXI, MOV)"
+      ]
+    },
+    "alp_8085_data_transfer_table": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: transfer/copy bytes between tables",
+        "ALP: transfer with bit set/reset condition"
+      ]
+    },
+    "alp_8085_arithmetic_logical": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: add nibbles/tables with carry",
+        "ALP: divide byte, store remainder/quotient"
+      ]
+    },
+    "alp_8085_conditions_loops": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: compare tables, generate result table",
+        "ALP: conditional copy based on range"
+      ]
+    },
+    "alp_8085_array_table_processing": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: count bits/ones in table",
+        "ALP: find square of numbers in table"
+      ]
+    },
+    "alp_8085_bcd_decimal_conversion": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: convert BCD numbers to binary"
+      ]
+    },
+    "alp_8085_multiplication_division": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: generate multiplication table"
+      ]
+    },
+    "instruction_machine_tstate_cycle": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "Define machine cycle and T-states",
+        "Calculate execution time from clock frequency"
+      ]
+    },
+    "timing_diagram_bus_operations": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Draw/explain timing diagram for given instruction",
+        "Define synchronous/asynchronous bus"
+      ]
+    },
+    "features_8086": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain why 8086 is faster than 8-bit processors"
+      ]
+    },
+    "internal_architecture_8086_biu_eu": {
+      "levels": ["Remember", "Analyze"],
+      "patterns": [
+        "Draw/explain internal architecture of 8086",
+        "Differentiate BIU and EU"
+      ]
+    },
+    "segment_offset_address": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain segment and offset addressing"
+      ]
+    },
+    "addressing_modes_8086": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain addressing modes of 8086 with example"
+      ]
+    },
+    "assembly_syntax_statements_directives_operators": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define statement, explain assembly directives",
+        "List operators in 8086 ALP"
+      ]
+    },
+    "exe_com_programs": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Differentiate EXE and COM programs"
+      ]
+    },
+    "assembling_linking_execution_pass_assemblers": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Short note: one pass / two pass assembler"
+      ]
+    },
+    "alp_8086_string_case_conversion": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: display alphabets in alternate case",
+        "ALP: convert string to uppercase"
+      ]
+    },
+    "alp_8086_string_vowel_consonant_count": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: read string, display/count vowels-consonants"
+      ]
+    },
+    "alp_8086_array_max_min": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: find largest/smallest in array"
+      ]
+    },
+    "alp_8086_arithmetic_display": {
+      "levels": ["Apply"],
+      "patterns": [
+        "ALP: sum of numbers, display in decimal",
+        "ALP: display multiplication table"
+      ]
+    },
+    "flags_8086": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: Flags in 8086"
+      ]
+    },
+    "memory_classification_hierarchy": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Determine device capacity from memory range"
+      ]
+    },
+    "address_decoding_design": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design address decoding interface for port/LED",
+        "Design interfacing circuit using 3:8 decoder",
+        "Design interfacing circuit for ROM/RAM chips"
+      ]
+    },
+    "address_decoding_unique_nonunique": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain unique vs non-unique address decoding",
+        "Explain PROM decoder in address decoding"
+      ]
+    },
+    "io_memory_mapped_io": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Short note: I/O mapped vs memory mapped I/O"
+      ]
+    },
+    "io_port_interfacing_design": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Design input/output port interface at given address"
+      ]
+    },
+    "parallel_interface_handshaking_ppi": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain single/double handshaking",
+        "Explain modes of 8255 / PPI"
+      ]
+    },
+    "ppi_8255_short_notes": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: PPI"
+      ]
+    },
+    "serial_interface_sync_async": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Differentiate synchronous vs asynchronous serial",
+        "Explain RS232 signals/handshaking"
+      ]
+    },
+    "rs232_usart_short_notes": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: RS232",
+        "Short note: USART"
+      ]
+    },
+    "interrupt_importance_polling_vs_interrupt": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define interrupt, its importance",
+        "Differentiate polling vs interrupt"
+      ]
+    },
+    "interrupts_8085_types_instructions": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List software interrupts of 8085",
+        "Explain EI/DI/SIM/RIM instructions",
+        "Differentiate maskable vs non-maskable interrupts"
+      ]
+    },
+    "interrupt_service_routine_ivt": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define ISR and IVT",
+        "Explain how ISR starting address is obtained"
+      ]
+    },
+    "pic_programmable_interrupt_controller": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: PIC"
+      ]
+    },
+    "interrupt_8086_ivt_processing": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain interrupt processing in 8086",
+        "Define IVT, explain type 0-4 interrupts",
+        "Explain how multiple interrupts share single INTR pin"
+      ]
+    },
+    "harvard_vs_vonneumann": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare Harvard vs Von Neumann architecture"
+      ]
+    },
+    "accumulator_vs_register_based": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define accumulator based vs register based architecture"
+      ]
+    },
+    "hardwired_vs_microprogrammed_cu": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare hardwired vs microprogrammed CU"
+      ]
+    },
+    "risc_cisc": {
+      "levels": ["Remember", "Analyze"],
+      "patterns": [
+        "List characteristics of RISC",
+        "Compare RISC vs CISC"
+      ]
+    },
+    "pipeline_technique": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain pipeline technique with example"
+      ]
+    },
+    "multiprocessing_multitasking_parallelism_flynn": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Define parallelism, real vs pseudo",
+        "Explain Flynn's classification",
+        "Explain instruction/thread/process level parallelism"
+      ]
+    },
+    "dsp_digital_signal_processor": {
+      "levels": ["Remember"],
+      "patterns": [
+        "List features of DSP chip"
+      ]
+    },
+    "os_features_short_notes": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain features of a typical OS"
+      ]
+    },
+    "deadlock_ipc": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Define IPC, deadlock, causes and solutions"
+      ]
+    },
+    "dma_controller_short_notes": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: DMA Controller"
+      ]
+    },
+    "instruction_machine_cycle_short_notes": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: Instruction and machine cycles"
+      ]
+    }
+  }
+}

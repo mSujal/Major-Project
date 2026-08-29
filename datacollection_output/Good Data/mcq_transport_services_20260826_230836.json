@@ -1,0 +1,147 @@
+{
+  "topic": "transport services",
+  "generated_at": "2026-08-26T23:08:36",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes a service that the transport layer provides directly to applications?",
+      "options": {
+        "A": "Routing datagrams through multiple routers",
+        "B": "Adding a transport‑layer header to form a segment",
+        "C": "Converting electrical signals into bits",
+        "D": "Managing physical cable connections"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The transport layer creates a segment by appending transport‑layer header information to the application‑layer message, as described on page 53.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the transport layer make use of the network layer when delivering a segment to the destination host?",
+      "options": {
+        "A": "It asks the network layer to establish a physical circuit between the hosts.",
+        "B": "It relies on the network layer to route the segment’s datagram through routers.",
+        "C": "It transfers the segment directly over the link layer, bypassing the network layer.",
+        "D": "It encrypts the segment and hands it to the network layer for de‑encryption at the receiver."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The transport layer hands the segment to the network layer, which then routes the datagram through a series of routers, as noted on page 51.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the service‑model description, what two actions does a layer perform to provide its service to the layer above?",
+      "options": {
+        "A": "Storing data permanently and providing user authentication",
+        "B": "Performing specific actions within the layer and using services of the layer below it",
+        "C": "Generating random numbers and encrypting traffic",
+        "D": "Monitoring hardware temperature and adjusting clock speed"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A layer offers its service by (1) performing certain actions within that layer and (2) using the services of the layer directly below, as stated on page 49.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a transport‑layer segment is created, what does the added header information primarily enable at the receiver side?",
+      "options": {
+        "A": "Physical connection establishment between hosts",
+        "B": "Identification and correct processing of the received data by the transport layer",
+        "C": "Direct access to the network’s routing tables",
+        "D": "Automatic translation of IP addresses to MAC addresses"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The transport‑layer header is used by the receiver‑side transport layer to process the incoming segment, as explained on page 53.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the reliable delivery service offered by the transport layer differ from the reliable delivery service of the link layer?",
+      "options": {
+        "A": "Transport‑layer reliability covers delivery from one end system to another, while link‑layer reliability is confined to a single hop.",
+        "B": "Transport‑layer reliability guarantees delivery without any acknowledgments, unlike the link layer.",
+        "C": "Transport‑layer reliability is provided only by UDP, whereas the link layer uses TCP.",
+        "D": "There is no difference; both layers provide identical reliability mechanisms."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that transport‑layer reliability (e.g., TCP) spans end‑to‑end delivery, whereas link‑layer reliability operates only on a single link, as mentioned on page 51.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which characteristic uniquely identifies TCP among the transport protocols described in the context?",
+      "options": {
+        "A": "It provides a connection‑oriented service with guaranteed delivery.",
+        "B": "It broadcasts messages to all hosts on the network.",
+        "C": "It operates without any header information.",
+        "D": "It routes packets directly through physical cables."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "TCP is described as providing a connection‑oriented service that includes guaranteed delivery of application‑layer messages, as stated on page 50.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In moving a packet from one node to the next on its route, which layer’s service does the network layer depend upon?",
+      "options": {
+        "A": "Application layer",
+        "B": "Transport layer",
+        "C": "Link layer",
+        "D": "Physical layer"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "To move a packet to the next node, the network layer relies on the services of the link layer, as indicated on page 51.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the analogy of “packets as trucks and highways as links” help explain the transport layer’s role?",
+      "options": {
+        "A": "It shows that the transport layer builds physical roads for data.",
+        "B": "It illustrates that the transport layer packages application data (the “cargo”) for transport across the network.",
+        "C": "It indicates that the transport layer controls traffic lights at intersections.",
+        "D": "It suggests that the transport layer manufactures the trucks themselves."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The analogy equates packets to trucks carrying cargo (application data) that travel on highways (links), highlighting the transport layer’s function of encapsulating data for transmission, as described on page 4.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What relationship exists between an application‑layer message and a transport‑layer segment?",
+      "options": {
+        "A": "The segment is a subset of the application‑layer message.",
+        "B": "The segment consists of the application‑layer message plus a transport‑layer header.",
+        "C": "The segment replaces the application‑layer message entirely.",
+        "D": "The segment is unrelated to the application‑layer message."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The transport layer appends header information to the application‑layer message, forming a transport‑layer segment, as detailed on page 53.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which service does the transport layer obtain from the link layer to accomplish its end‑to‑end delivery function?",
+      "options": {
+        "A": "Routing of datagrams across multiple networks",
+        "B": "Reliable delivery of frames over a single physical link",
+        "C": "Allocation of IP addresses to hosts",
+        "D": "Encryption of application data"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The link layer provides reliable delivery of frames on a single hop, which the transport layer builds upon for end‑to‑end service, as mentioned on page 51.",
+      "source_pages": []
+    }
+  ]
+}

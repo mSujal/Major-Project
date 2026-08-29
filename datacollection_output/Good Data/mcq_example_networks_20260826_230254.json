@@ -1,0 +1,147 @@
+{
+  "topic": "example networks",
+  "generated_at": "2026-08-26T23:02:54",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "What is the main reason Ethernet requires different physical‑layer protocols for twisted‑pair copper, coaxial cable, and fiber optics?",
+      "options": {
+        "A": "To support multiple IP addressing schemes on each medium",
+        "B": "Because each medium has distinct signaling and transmission characteristics requiring tailored physical‑layer specifications",
+        "C": "To enable Ethernet to operate at both layer 2 and layer 3 simultaneously",
+        "D": "To provide encryption uniquely suited to each cable type"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that Ethernet has many physical‑layer protocols, each designed for a specific transmission medium such as twisted‑pair copper, coaxial cable, or fiber, because the media differ in signaling requirements. [Page 52]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the key distinction between a link‑layer switch and an Internet router regarding protocol implementation?",
+      "options": {
+        "A": "A switch implements TCP, while a router implements UDP",
+        "B": "A switch operates only on wireless links, whereas a router works only on wired links",
+        "C": "A link‑layer switch works with layer‑2 (Ethernet) addresses, while a router implements the layer‑3 IP protocol",
+        "D": "A switch provides end‑to‑end routing, whereas a router only forwards frames within a LAN"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text explains that Internet routers are capable of implementing the IP protocol (layer 3), while link‑layer switches recognize layer 2 addresses such as Ethernet addresses. [Page 53]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the difference between reliable delivery offered by certain link‑layer protocols and the reliability provided by TCP?",
+      "options": {
+        "A": "Link‑layer reliability ensures delivery over a single hop only, whereas TCP guarantees delivery across the entire path",
+        "B": "TCP provides reliability only for wired links, while link‑layer reliability works only for wireless links",
+        "C": "Link‑layer protocols guarantee packet ordering, while TCP does not",
+        "D": "TCP’s reliability is optional, whereas link‑layer reliability is mandatory on all networks"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that some link‑layer protocols provide reliable delivery from transmitting node to receiving node over one link, and that this service differs from TCP’s end‑to‑end reliable delivery. [Page 51]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is an example of a link‑layer protocol that has been standardized by the IEEE 802 LAN Standards Committee?",
+      "options": {
+        "A": "HTTP",
+        "B": "IPsec",
+        "C": "MPLS",
+        "D": "Ethernet"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The IEEE 802 LAN Standards Committee specifies Ethernet and WiFi standards, both of which are link‑layer protocols. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the role of layer‑2 (Ethernet) addresses in link‑layer switches?",
+      "options": {
+        "A": "They enable switches to assign IP addresses to hosts",
+        "B": "They allow switches to make forwarding decisions within a local network segment",
+        "C": "They provide end‑to‑end encryption keys for data packets",
+        "D": "They determine the routing path across multiple autonomous systems"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Link‑layer switches recognize layer 2 addresses, such as Ethernet addresses, to forward frames appropriately. [Page 53]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the implication of a datagram being handled by different link‑layer protocols (e.g., Ethernet on one link, PPP on another) as it traverses the network?",
+      "options": {
+        "A": "The datagram must be converted to a universal format before reaching the destination",
+        "B": "The datagram’s IP header is replaced by a new header at each hop",
+        "C": "The datagram is encapsulated with the appropriate link‑layer header for each individual link, such as Ethernet or PPP",
+        "D": "The datagram loses its original source address when crossing a different link‑layer protocol"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage explains that a datagram may be handled by different link‑layer protocols on different links, meaning it is re‑encapsulated with the appropriate link‑layer header at each hop. [Page 51]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the analogy used to describe packet‑switched networks, and what aspect does it illustrate?",
+      "options": {
+        "A": "It compares data packets to vehicles moving cargo on highways, illustrating routing and forwarding across a network",
+        "B": "It likens packets to water flowing through pipes, emphasizing bandwidth limitations",
+        "C": "It equates packets to letters in a postal system, focusing on address formatting",
+        "D": "It treats packets as musical notes in a symphony, highlighting timing synchronization"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text uses the analogy of a factory moving cargo to a distant warehouse via highways to explain packet‑switched networks. [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the primary service that some link‑layer protocols provide, which is not guaranteed by all link‑layer protocols?",
+      "options": {
+        "A": "End‑to‑end encryption across the Internet",
+        "B": "Automatic IP address allocation to hosts",
+        "C": "Multicast routing across multiple networks",
+        "D": "Reliable delivery of frames over a single link"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that certain link‑layer protocols provide reliable delivery from the transmitting node to the receiving node over one link, a service not offered by all link‑layer protocols. [Page 51]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What does the mention of nearly 9000 RFCs imply about network standards?",
+      "options": {
+        "A": "There are exactly 9000 protocols used in modern networks",
+        "B": "It indicates a large and continuously evolving body of documented protocols and standards",
+        "C": "All RFCs are mandatory for every network device to implement",
+        "D": "The number of RFCs limits the number of possible network topologies"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states there are currently nearly 9000 RFCs, highlighting the extensive and evolving set of network standards. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the effect of using different link‑layer protocols on end‑to‑end throughput and delay models discussed in the context?",
+      "options": {
+        "A": "Different protocols eliminate the need to consider propagation delay",
+        "B": "All link‑layer protocols produce identical throughput, so models remain unchanged",
+        "C": "Varying transmission rates and overhead of each protocol influence overall end‑to‑end delay and throughput calculations",
+        "D": "Link‑layer protocols only affect security, not performance metrics"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text mentions quantitative models for end‑to‑end throughput and delay that must account for transmission, propagation, and queuing delays, which can vary with the characteristics of each link‑layer protocol. [Page 2]",
+      "source_pages": []
+    }
+  ]
+}

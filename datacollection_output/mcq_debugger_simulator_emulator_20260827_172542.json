@@ -1,0 +1,147 @@
+{
+  "topic": "debugger simulator emulator",
+  "generated_at": "2026-08-27T17:25:42",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "In the verification phase of embedded software development, which tool is specifically described as providing step‑by‑step code testing?",
+      "options": {
+        "A": "Profiler",
+        "B": "Linker",
+        "C": "Debugger",
+        "D": "Emulator"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that a debugger is used for step‑by‑step code testing (Keil µVision, MPLAB) during the verification phase. [Page 84]",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the primary function of an emulator in embedded system development?",
+      "options": {
+        "A": "Combines object files into a single executable file.",
+        "B": "Measures execution time and CPU load.",
+        "C": "Simulates the target hardware in software.",
+        "D": "Loads the compiled .hex file onto the microcontroller."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "An emulator is defined as software that simulates target hardware (e.g., Proteus, QEMU). [Page 84]",
+      "source_pages": []
+    },
+    {
+      "question": "When converting source code into a runnable program, which sequence of tools is applied according to the development process described?",
+      "options": {
+        "A": "Profiler → Debugger → Linker → Compiler",
+        "B": "Compiler → Assembler → Linker → Debugger",
+        "C": "Assembler → Compiler → Profiler → Emulator",
+        "D": "Compiler → Linker → Profiler → Device Programmer"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The process converts C/assembly source code into an executable using assembler, linker, compiler, then verifies with debugger and profiler. [Page 82]",
+      "source_pages": []
+    },
+    {
+      "question": "Which pair of tools would you most likely use together to both verify functional correctness and assess performance of an embedded program?",
+      "options": {
+        "A": "Debugger and Profiler",
+        "B": "Linker and Device Programmer",
+        "C": "Emulator and Assembler",
+        "D": "Compiler and Profiler"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The debugger tests and steps through code (functional correctness) while the profiler measures execution time, memory usage, and CPU load (performance). Both are mentioned in the verification phase. [Pages 84, 84]",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which phase directly follows the creation of the executable program?",
+      "options": {
+        "A": "Implementation Phase",
+        "B": "Verification Phase",
+        "C": "Optimization Phase",
+        "D": "Deployment Phase"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "After creating the executable program (Implementation Phase), the next step is the Verification Phase, which involves testing, debugging, and measuring performance. [Page 82]",
+      "source_pages": []
+    },
+    {
+      "question": "If a developer needs to load a compiled .hex file onto an STM32 microcontroller, which device programmer is indicated in the material?",
+      "options": {
+        "A": "AVR ISP",
+        "B": "ST‑Link",
+        "C": "JTAGProbe",
+        "D": "USB‑ASP"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The ST‑Link is listed as the device programmer for STM32. [Page 84]",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly contrasts a debugger and an emulator?",
+      "options": {
+        "A": "A debugger runs on the target hardware, while an emulator runs on a host PC.",
+        "B": "A debugger measures execution time, whereas an emulator combines object files.",
+        "C": "A debugger provides interactive code stepping; an emulator provides a virtual hardware environment.",
+        "D": "A debugger loads the .hex file, while an emulator compiles source code."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The debugger enables interactive step‑by‑step testing, and the emulator simulates the target hardware in software. Both functions are described in the context. [Pages 84, 84]",
+      "source_pages": []
+    },
+    {
+      "question": "During which phase is the linker primarily used, based on the provided description?",
+      "options": {
+        "A": "Verification Phase",
+        "B": "Implementation Phase",
+        "C": "Optimization Phase",
+        "D": "Deployment Phase"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The linker combines object files into one executable during the implementation phase. [Page 84]",
+      "source_pages": []
+    },
+    {
+      "question": "Which tool listed in the context is explicitly associated with measuring CPU load and memory usage?",
+      "options": {
+        "A": "Debugger",
+        "B": "Profiler",
+        "C": "Emulator",
+        "D": "Linker"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The profiler measures execution time, memory usage, and CPU load. [Page 84]",
+      "source_pages": []
+    },
+    {
+      "question": "A student argues that an emulator can replace a physical microcontroller for all testing activities. Based on the text, which response is most accurate?",
+      "options": {
+        "A": "Correct, because an emulator provides both functional testing and performance measurement.",
+        "B": "Incorrect, because an emulator only simulates hardware and cannot perform step‑by‑step code debugging.",
+        "C": "Correct, as the emulator also includes a built‑in debugger.",
+        "D": "Incorrect, because the emulator does not combine object files into an executable."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The emulator simulates target hardware but the step‑by‑step testing is performed by a debugger; thus an emulator alone cannot replace debugging activities. [Pages 84, 84]",
+      "source_pages": []
+    }
+  ]
+}

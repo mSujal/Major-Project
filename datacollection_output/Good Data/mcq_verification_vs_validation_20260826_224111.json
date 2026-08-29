@@ -1,0 +1,147 @@
+{
+  "topic": "verification vs validation",
+  "generated_at": "2026-08-26T22:41:11",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which statement best captures the analytical distinction between verification and validation as described in the context?",
+      "options": {
+        "A": "Verification ensures the software meets user expectations, while validation checks conformance to the specification.",
+        "B": "Verification checks conformance to the specification; validation ensures the software meets the customer's real needs.",
+        "C": "Verification and validation are interchangeable terms that both focus on testing the final product.",
+        "D": "Verification is performed only after validation is completed."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Verification is defined as checking that the software meets its stated functional and non‑functional requirements (specification) whereas validation aims to ensure the software meets the customer’s expectations and real needs [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context, which scenario most clearly illustrates a validation activity rather than a verification activity?",
+      "options": {
+        "A": "Conducting a code walkthrough to ensure adherence to coding standards.",
+        "B": "Performing static analysis on the design model to detect inconsistencies.",
+        "C": "Executing a user‑acceptance test to see if the system solves the actual business problem.",
+        "D": "Running unit tests to confirm each module returns expected outputs."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Validation goes beyond checking conformance and demonstrates that the software does what the customer expects, exemplified by user‑acceptance testing [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided material, why is validation considered essential beyond verification?",
+      "options": {
+        "A": "Because verification cannot be performed without a complete source code.",
+        "B": "Because requirements documents always perfectly reflect user needs.",
+        "C": "Because statements of requirements may not capture the real wishes or needs of customers.",
+        "D": "Because validation eliminates all errors in the software."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Validation is essential because requirements may not reflect the true customer wishes, as noted on page 37.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best analyzes the relationship between “testing” and the broader V&V process?",
+      "options": {
+        "A": "Testing alone can demonstrate the absence of errors in a system.",
+        "B": "Testing is the only activity needed for both verification and validation.",
+        "C": "Testing can only show the presence of errors; it is one component of verification and validation.",
+        "D": "Testing replaces the need for inspections and reviews in static V&V techniques."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The context states that testing can only show the presence of errors, not their absence, and is part of a broader V&V process [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a software team discovers that a requirement no longer matches the user's current needs, which V&V activity should they prioritize?",
+      "options": {
+        "A": "Verification of the design against the outdated requirement.",
+        "B": "Validation of the requirement against real user needs.",
+        "C": "Static code analysis to find implementation defects.",
+        "D": "Performance testing to measure response times."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Requirements validation checks that requirements reflect real user needs, especially when circumstances change [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the “static” V&V technique differ analytically from testing according to the text?",
+      "options": {
+        "A": "Static techniques require executing the software, while testing does not.",
+        "B": "Static techniques analyze artifacts without execution; testing involves running the software.",
+        "C": "Static techniques are only used after all testing is completed.",
+        "D": "Static techniques focus solely on performance metrics."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "Inspections and reviews are described as “static” V&V techniques that do not need software execution, unlike testing [Page 38].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which pair of questions best reflects the core purpose of validation and verification respectively?",
+      "options": {
+        "A": "“Are we building the product right?” and “Are we building the right product?”",
+        "B": "“Are we building the right product?” and “Are we building the product right?”",
+        "C": "“Is the code bug‑free?” and “Does the user like the interface?”",
+        "D": "“Can the system scale?” and “Is the documentation complete?”"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly frames validation as “Are we building the right product?” and verification as “Are we building the product right?” [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the goal of establishing confidence that a system is “fit for purpose,” which activity contributes most directly to verification?",
+      "options": {
+        "A": "Conducting a market analysis to gauge user demand.",
+        "B": "Reviewing the software design to ensure it meets specified functional requirements.",
+        "C": "Holding a focus group with end‑users to assess satisfaction.",
+        "D": "Performing a risk assessment of potential future changes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Verification checks that software meets its stated functional and non‑functional requirements, aligning with the “fit for purpose” confidence goal [Page 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An organization claims that its software testing phase alone guarantees the system is “fit for purpose.” Based on the context, what analytical flaw exists in this claim?",
+      "options": {
+        "A": "Testing can demonstrate both the presence and absence of errors.",
+        "B": "Testing alone cannot address whether the system meets real user needs.",
+        "C": "Testing automatically includes static inspections and reviews.",
+        "D": "Testing ensures all non‑functional requirements are satisfied."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "Testing only shows the presence of errors and does not verify that the system meets customer expectations, a key aspect of validation [Page 36, 37].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a software project initiates V&V activities as soon as requirements become available, which analytical advantage does this early start provide?",
+      "options": {
+        "A": "It eliminates the need for any later testing phases.",
+        "B": "It ensures that both verification and validation can influence design decisions throughout development.",
+        "C": "It guarantees that all requirements are immutable after the first review.",
+        "D": "It focuses solely on performance testing from the outset."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context notes that verification and validation processes start as soon as requirements are available and continue through all stages, allowing them to shape the design continuously [Page 37].",
+      "source_pages": []
+    }
+  ]
+}

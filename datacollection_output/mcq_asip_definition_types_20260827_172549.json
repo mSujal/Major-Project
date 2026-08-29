@@ -1,0 +1,147 @@
+{
+  "topic": "asip definition types",
+  "generated_at": "2026-08-27T17:25:49",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the primary purpose of an ASIP as presented in the context?",
+      "options": {
+        "A": "To provide a general‑purpose CPU that requires external memory.",
+        "B": "To integrate CPU, memory, and I/O on a single chip for low‑cost applications.",
+        "C": "To be optimized for a particular application or domain, such as networking.",
+        "D": "To serve as a digital signal processor for audio and video processing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that ASIPs are “Optimized for a particular application or domain” and gives network processors as an example [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the material, which two application areas are explicitly identified as examples of ASIP types?",
+      "options": {
+        "A": "Smart‑watch power management and motor control.",
+        "B": "Network processors and baseband processing.",
+        "C": "General‑purpose microprocessors and microcontrollers.",
+        "D": "AES encryption engines and ultrasonic sensors."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context lists “ASIP – Network processors, baseband” as examples of ASIP forms [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does an ASIP differ from a traditional MPU (Microprocessor) based on the definitions given?",
+      "options": {
+        "A": "An ASIP includes built‑in memory and I/O, while an MPU does not.",
+        "B": "An ASIP is a domain‑specific processor, whereas an MPU is a CPU‑only component that needs external memory.",
+        "C": "An ASIP is always cheaper than an MPU.",
+        "D": "An ASIP operates at lower clock speeds than an MPU."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The MPU is defined as “CPU only; needs external memory” while ASIPs are described as “Optimized for a particular application or domain” indicating a functional distinction [Page 40] and [Page 43].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly explains why an ASIP might be chosen over a general‑purpose MCU for a specific embedded system?",
+      "options": {
+        "A": "Because ASIPs always consume less power than MCUs.",
+        "B": "Because ASIPs are pre‑programmed for any possible application.",
+        "C": "Because ASIPs provide hardware that is tailored to the target domain, improving efficiency.",
+        "D": "Because ASIPs eliminate the need for any software development."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that ASIPs are “Optimized for a particular application or domain,” implying that they deliver domain‑specific efficiency not available in generic MCUs [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the given context, which of the following is NOT listed as an example of a domain‑specific processor type?",
+      "options": {
+        "A": "DSP (Digital Signal Processor)",
+        "B": "ASIP (Application‑Specific Instruction‑set Processor)",
+        "C": "MPU (Microprocessor)",
+        "D": "SSP/SPP (Signal‑Processing Processor)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage groups DSP, ASIP, and SSP/SPP as “Domain‑Specific Processors,” while MPU is described separately as a general‑purpose processor [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the provided information, which of the following best illustrates the concept of an ASIP’s “form” or “type”?",
+      "options": {
+        "A": "The inclusion of on‑chip memory and I/O.",
+        "B": "The processor being used in a smart‑watch for heart‑rate monitoring.",
+        "C": "The processor being a network processor or a baseband processor.",
+        "D": "The processor being manufactured by Intel or ARM."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly enumerates ASIP forms as “Network processors, baseband,” indicating these are the types/forms of ASIP [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements accurately reflects the relationship between ASIPs and SSP/SPP processors as described?",
+      "options": {
+        "A": "ASIPs and SSP/SPP processors are both listed under “Application‑Specific Hardware.”",
+        "B": "ASIPs are a subset of SSP/SPP processors used only for encryption.",
+        "C": "SSP/SPP processors are a type of ASIP specialized for motor control.",
+        "D": "The context treats ASIPs and SSP/SPP as distinct categories of domain‑specific processors."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage lists “DSPs / ASIP / SSP” as separate items under “Domain‑Specific Processors,” indicating they are distinct categories [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a designer needs a processor specifically for high‑speed network packet handling, which processor type from the context would be most appropriate?",
+      "options": {
+        "A": "General‑purpose MPU such as Intel Atom.",
+        "B": "Microcontroller (MCU) like STM32.",
+        "C": "ASIP configured as a network processor.",
+        "D": "DSP such as TI C6000."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context cites “ASIP – Network processors” as an example of an ASIP tailored for networking tasks [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the passage, why might an embedded system designer consider using an ASIP rather than a generic DSP for a baseband application?",
+      "options": {
+        "A": "Because ASIPs are always lower‑cost than DSPs.",
+        "B": "Because ASIPs can be customized at the instruction‑set level for the baseband domain, offering better alignment with the application.",
+        "C": "Because DSPs cannot handle baseband signals.",
+        "D": "Because ASIPs have built‑in memory while DSPs do not."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text groups ASIP under “Domain‑Specific Processors” and gives “baseband” as an example, implying that the instruction set can be tailored for that domain, unlike a generic DSP [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "From the context, which of the following best captures the defining characteristic that distinguishes an ASIP from a COTS (Commercial‑off‑the‑Shelf) MCU?",
+      "options": {
+        "A": "ASIPs are always fabricated using ASIC technology.",
+        "B": "ASIPs are designed to be domain‑specific, whereas COTS MCUs are general‑purpose and ready‑made.",
+        "C": "ASIPs require external memory, while COTS MCUs have all resources on‑chip.",
+        "D": "ASIPs are only used in smartphones and Bitcoin miners."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage contrasts “Domain‑Specific Processors” (including ASIPs) with generic hardware, and lists COTS examples separately, indicating that ASIPs are specialized while COTS MCUs are general‑purpose [Page 39] and [Page 40].",
+      "source_pages": []
+    }
+  ]
+}

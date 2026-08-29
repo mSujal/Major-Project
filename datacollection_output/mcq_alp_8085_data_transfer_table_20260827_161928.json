@@ -1,0 +1,133 @@
+{
+  "topic": "alp 8085 data transfer table",
+  "generated_at": "2026-08-27T16:19:28",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "A 16‑bit word is to be transferred from memory address 0x2000 to address 0xA004. Using the decoder input definitions (A2 = A13, A1 = A0, BHE’) from the selection table, which combination of decoder inputs will activate the appropriate chip for the destination address?",
+      "options": {
+        "A": "A2=0, A1=0, BHE’=0",
+        "B": "A2=1, A1=0, BHE’=0",
+        "C": "A2=0, A1=1, BHE’=1",
+        "D": "A2=1, A1=1, BHE’=1"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The destination address 0xA004 has binary A13 = 1 (since 0xA000 = 1010 0000 0000 0000) and A0 = 0. Therefore A2 = A13 = 1 and A1 = A0 = 0; BHE’ is low (0) for a word transfer. This matches option B. [Page 66]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During a 16‑bit word transfer, the lower address line A0 is 1 (odd address). According to the selection table, how does the processor treat the even and odd byte portions of the word?",
+      "options": {
+        "A": "Both bytes are transferred together as a word.",
+        "B": "Only the even byte is transferred; the odd byte is ignored.",
+        "C": "The transfer is split into two 8‑bit cycles, one for the even byte then one for the odd byte.",
+        "D": "The transfer is blocked because odd addresses are not allowed for word transfers."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The table notes “Word transfer on 0 0 0 – Even and Odd”, meaning a word transfer involves handling both the even and odd bytes separately when A0 = 1. Hence the operation is performed in two 8‑bit cycles. [Page 66]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If the data bus width is 8 bits, how many bus cycles are required to complete a 16‑bit transfer as described on page 42?",
+      "options": {
+        "A": "1 bus cycle",
+        "B": "2 bus cycles",
+        "C": "4 bus cycles",
+        "D": "8 bus cycles"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "An 8‑bit data bus can carry only one byte per cycle; a 16‑bit word therefore needs two cycles. This follows directly from the discussion of bus width. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An instruction copies a byte from the input port to memory location 0x3000 using the accumulator as an intermediate register. Which temporary register (W or Z) briefly holds the data during this transfer according to the description of temporary registers?",
+      "options": {
+        "A": "W only",
+        "B": "Z only",
+        "C": "Both W and Z simultaneously",
+        "D": "Neither; the data goes directly from the port to the accumulator"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context states that the accumulator receives data from an input port before it is stored, and temporary registers W & Z are not accessible to the programmer; they are used internally by the 8085A for brief periods, not for this explicit copy operation. Hence the data moves directly port → accumulator → memory. [Page 2]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For a word transfer where the decoder inputs are A2=0, A1=0, BHE’=0, which address range (even or odd) is being accessed?",
+      "options": {
+        "A": "Even address only",
+        "B": "Odd address only",
+        "C": "Both even and odd addresses simultaneously",
+        "D": "Neither; the transfer is invalid"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The table entry “Word transfer on 0 0 0 – Even and Odd” indicates that when all three inputs are 0, the processor performs a word (16‑bit) transfer that includes both the even and odd byte portions. [Page 66]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A programmer wants to transfer a 16‑bit word from address 0x0FFF (odd) to address 0x1000 (even). Which of the following statements correctly describes the required sequence of bus operations?",
+      "options": {
+        "A": "One bus cycle for the whole word because the source address is odd.",
+        "B": "Two bus cycles: first the low‑order byte from 0x0FFF, then the high‑order byte from 0x1000.",
+        "C": "Two bus cycles: first the low‑order byte from 0x0FFF, then the high‑order byte from 0x0FFE.",
+        "D": "Four bus cycles because both source and destination are misaligned."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "An odd source address means the low byte resides at 0x0FFF; the high byte is at the next even address 0x1000. The destination starts at an even address, so the processor transfers the low byte first, then the high byte, requiring two 8‑bit cycles. [Pages 65, 66]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the address bits A19‑A0, which of the following destination addresses will cause the decoder inputs A2, A1, BHE’ to all be 0, thus selecting the “Even and Odd” word transfer mode?",
+      "options": {
+        "A": "0x0000",
+        "B": "0x2001",
+        "C": "0x8002",
+        "D": "0xFFFF"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "For A2 = A13 = 0, A1 = A0 = 0, and BHE’ = 0, the address must have both A13 and A0 equal to 0. 0x0000 satisfies this condition, while the other options have either A13 or A0 set to 1. [Page 66]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A programmer needs to copy a block of 4 consecutive bytes from source table addresses 0x4000‑0x4003 to destination table addresses 0x8000‑0x8003. Assuming the data bus is 8 bits, how many total bus cycles are required for this copy operation?",
+      "options": {
+        "A": "2 cycles",
+        "B": "4 cycles",
+        "C": "8 cycles",
+        "D": "16 cycles"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Each byte requires one 8‑bit bus cycle. Copying 4 bytes from source to destination involves reading 4 bytes (4 cycles) and writing 4 bytes (4 cycles), totaling 8 cycles. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During a 16‑bit transfer, the decoder receives inputs A2=1, A1=1, BHE’=0. According to the selection table, what does this pattern indicate about the chip selection?",
+      "options": {
+        "A": "Chip for even addresses only is selected.",
+        "B": "Chip for odd addresses only is selected.",
+        "C": "Chip for a word (both even and odd) is selected.",
+        "D": "No chip is selected; the pattern is undefined."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "The provided table only defines the “Word transfer on 0 0 0 – Even and Odd” condition. Any other combination (such as 1 1 0) is not described, implying that the pattern does not correspond to a defined chip selection in the given context. [Page 66]",
+      "source_pages": []
+    }
+  ]
+}

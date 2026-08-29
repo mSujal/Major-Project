@@ -1,0 +1,147 @@
+{
+  "topic": "dsp digital signal processor",
+  "generated_at": "2026-08-27T16:43:26",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which processor architecture is described as using separate buses for instructions and data to achieve fast processing in DSP processors?",
+      "options": {
+        "A": "von Neumann Architecture",
+        "B": "Harvard Architecture",
+        "C": "RISC Architecture",
+        "D": "CISC Architecture"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that DSP processors should have a fast processing architecture and therefore use the Harvard Architecture with separate instruction and data buses. [Page 95]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the passage, what most clearly differentiates DSP chips from general‑purpose microprocessors?",
+      "options": {
+        "A": "They are built with vacuum‑tube technology.",
+        "B": "They are specially designed for particular signal‑processing applications.",
+        "C": "They use a single unified bus for all transfers.",
+        "D": "They operate at higher clock frequencies than any microprocessor."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context notes that DSP chips are specially designed for particular applications and are not used for the general type of processing that microprocessors perform. [Page 95]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which set of hardware components is mentioned as being part of the overall function carried out by a DSP processor?",
+      "options": {
+        "A": "Microphone, transducer, A/D converter, D/A converter, speaker",
+        "B": "Keyboard, monitor, hard disk, printer",
+        "C": "Antenna, RF mixer, demodulator, antenna tuner",
+        "D": "Thermistor, voltage regulator, LCD, buzzer"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage lists microphone, transducer, A/D converter, D/A converter, and speaker as the hardware used with DSP processors. [Page 95]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which software tools are identified in the text as being used to carry out the Fast Fourier Transform (FFT) on a DSP processor?",
+      "options": {
+        "A": "C programming language only",
+        "B": "MATLAB only",
+        "C": "Both C and MATLAB",
+        "D": "Python and Java"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that software like C or MATLAB is used to carry out FFT on DSP processors. [Page 95]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What benefit of converting analog signals into digital signals is highlighted in the passage?",
+      "options": {
+        "A": "It increases signal redundancy.",
+        "B": "It makes the signal more immune to noise.",
+        "C": "It eliminates the need for an ADC.",
+        "D": "It requires a Harvard‑architecture processor."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text explains that converting analog signals into digital signals reduces redundancy and makes the signal more immune to noise. [Page 94]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which DSP chip series from Texas Instruments is described as “worldwide popular”?",
+      "options": {
+        "A": "MSP430 series",
+        "B": "TMS320C series",
+        "C": "C5500 series",
+        "D": "TMS9900 series"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that Texas Instruments’ TMS320C series is worldwide popular for signal‑processing applications. [Page 95]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the DT/R (Data Transmit/Receive) signal description, what does a high level on this line indicate?",
+      "options": {
+        "A": "The processor is receiving data.",
+        "B": "The processor is sending out data.",
+        "C": "No data transfer is occurring.",
+        "D": "The processor is in reset state."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that when the processor sends out data, the DT/R signal is high; when receiving, it is low. [Page 41]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which conversion component is required to change the microphone’s analog output into a digital form suitable for the DSP processor?",
+      "options": {
+        "A": "Digital‑to‑Analog (D/A) converter",
+        "B": "Analog‑to‑Digital (A/D) converter",
+        "C": "Power supply regulator",
+        "D": "Clock generator"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage explains that the microphone’s analog signal is sampled by an A/D converter and then converted into digital form for the DSP. [Page 94]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the description of a bus in a microcomputer, which statement is true?",
+      "options": {
+        "A": "A bus consists of multiple communication lines capable of transmitting binary 0s and 1s.",
+        "B": "A bus is a single wire that carries only analog signals.",
+        "C": "A bus is used solely for delivering power to components.",
+        "D": "A bus can transmit only one bit at a time."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text defines a bus as a communication pathway composed of multiple lines, each capable of transmitting binary signals. [Page 42]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What limitation of DSP processors is mentioned in the material?",
+      "options": {
+        "A": "They have low processing speed because very short signals need to be operated.",
+        "B": "They can only execute programs written in assembly language.",
+        "C": "They are incapable of handling any real‑time data.",
+        "D": "They require more than three separate power supplies."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that DSP processors have low processing speed due to the need to operate very curtail (short) signals. [Page 95]",
+      "source_pages": []
+    }
+  ]
+}

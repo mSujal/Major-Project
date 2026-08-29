@@ -1,0 +1,147 @@
+{
+  "topic": "component composition",
+  "generated_at": "2026-08-26T22:40:48",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which statement best explains why interaction testing is essential when components are composed into a system?",
+      "options": {
+        "A": "It verifies that each component’s internal algorithms are optimal.",
+        "B": "It discovers bugs that appear only when components exchange data through their interfaces.",
+        "C": "It ensures that the source code of each component follows coding standards.",
+        "D": "It measures the performance of individual components in isolation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Interaction testing aims to find component bugs revealed only when components are used together, focusing on interface interactions [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When performing component testing after integrating several units, what primary aspect should be examined?",
+      "options": {
+        "A": "The graphical user interface layout of the component.",
+        "B": "The internal data structures used by each unit.",
+        "C": "The component interfaces that provide access to its functions.",
+        "D": "The licensing terms of third‑party libraries."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Component testing focuses on testing the interfaces that expose component functions after integration [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In system testing, why is it important to test reusable off‑the‑shelf components together with newly developed ones?",
+      "options": {
+        "A": "To confirm that the reusable component’s documentation is up to date.",
+        "B": "To ensure that the combined system behaves correctly and the components interact properly.",
+        "C": "To evaluate the cost savings achieved by reusing the component.",
+        "D": "To measure the memory consumption of the reusable component alone."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "System testing checks that reusable and new components are compatible and interact correctly when integrated [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main purpose of component testing that creates “composite components” from individual units?",
+      "options": {
+        "A": "To assess the overall system performance under load.",
+        "B": "To validate that the composite’s external interfaces function as specified.",
+        "C": "To refactor the source code of each unit for readability.",
+        "D": "To generate user manuals for the composite component."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Component testing of composite components targets the interfaces that provide access to the component’s functions [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does emergent behavior relate to component composition during system testing?",
+      "options": {
+        "A": "Emergent behavior is a design flaw that should be eliminated before integration.",
+        "B": "It refers to functionality that becomes apparent only after components are combined, requiring specific tests.",
+        "C": "Emergent behavior is the same as unit‑level bugs found in individual components.",
+        "D": "It describes the static code analysis results of each component."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Emergent behavior appears when components are assembled, and such behavior must be tested after integration [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the difference between system testing and component testing in the context of component composition?",
+      "options": {
+        "A": "System testing only uses black‑box techniques, while component testing uses white‑box techniques.",
+        "B": "System testing evaluates the interaction and data transfer across component interfaces, whereas component testing focuses on individual component interfaces.",
+        "C": "System testing is performed before any components are built, while component testing occurs after deployment.",
+        "D": "System testing measures execution time, while component testing measures code complexity."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "System testing checks that components interact correctly and transfer data properly, whereas component testing concentrates on each component’s interfaces [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of component composition, what role does a sequence diagram play during testing?",
+      "options": {
+        "A": "It defines the database schema for each component.",
+        "B": "It identifies the objects or components involved in an interaction that should be tested.",
+        "C": "It generates automated test scripts for unit testing.",
+        "D": "It outlines the licensing requirements for third‑party components."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A sequence diagram can show which objects or components participate in an interaction, guiding integration tests [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is it important to test the “right data at the right time” across component interfaces during system testing?",
+      "options": {
+        "A": "To guarantee that each component’s internal algorithms are optimized.",
+        "B": "To verify that component interactions satisfy functional requirements and prevent data mismatches.",
+        "C": "To ensure that the source code adheres to naming conventions.",
+        "D": "To calculate the total cost of ownership of the system."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "System testing checks that components exchange the correct data at appropriate times across their interfaces [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does component testing differ from unit testing according to the provided context?",
+      "options": {
+        "A": "Component testing integrates several units to form a composite, while unit testing examines single methods or classes in isolation.",
+        "B": "Component testing is performed after the system is deployed, whereas unit testing occurs during requirements gathering.",
+        "C": "Component testing uses only manual test cases, while unit testing relies exclusively on automated tools.",
+        "D": "Component testing focuses on performance metrics, while unit testing focuses on UI aesthetics."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Unit testing targets individual functions or methods, whereas component testing integrates units to create composite components and tests their interfaces [Page 41, Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which testing activity would best identify misunderstandings between component developers about each other’s components?",
+      "options": {
+        "A": "Code review of individual modules.",
+        "B": "Interaction testing during system integration.",
+        "C": "Load testing of the final deployed system.",
+        "D": "Static analysis of source code comments."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Interaction testing helps uncover misunderstandings between component developers by revealing integration issues [Page 49].",
+      "source_pages": []
+    }
+  ]
+}

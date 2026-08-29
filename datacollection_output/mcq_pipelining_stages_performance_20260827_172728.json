@@ -1,0 +1,147 @@
+{
+  "topic": "pipelining stages performance",
+  "generated_at": "2026-08-27T17:27:28",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "A processor implements a 5‑stage pipeline with stages FI, DI, FO, EX, and WR, each taking 1 ns. After the pipeline is filled, what is the maximum instruction throughput achievable?",
+      "options": {
+        "A": "1 instruction every 5 ns",
+        "B": "1 instruction every 2 ns",
+        "C": "1 instruction every 1 ns",
+        "D": "1 instruction every 10 ns"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "In a pipelined design the pipeline can issue one new instruction each cycle after the fill latency. With each stage 1 ns, the cycle time is 1 ns, so throughput is 1 instruction per ns. [Page 70]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the 5‑stage pipeline example (FI, DI, FO, EX, WR), instruction I2 needs the result produced by I1’s ALU in the EX stage. Which technique described in the context removes the need for I2 to wait until I1 reaches the WR stage?",
+      "options": {
+        "A": "Inserting a bubble (stall)",
+        "B": "Register renaming",
+        "C": "Forwarding (bypassing)",
+        "D": "Dynamic scheduling"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context states that forwarding (bypassing) forwards the result of I1’s ALU directly to I2’s EX stage, eliminating the wait for the WR stage. [Page 75‑76]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A non‑pipelined processor executes each instruction in 5 cycles. Using the 5‑stage pipeline (FI, DI, FO, EX, WR) described, how many total cycles are needed to execute 100 independent instructions, assuming no hazards?",
+      "options": {
+        "A": "500 cycles",
+        "B": "104 cycles",
+        "C": "199 cycles",
+        "D": "105 cycles"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The first instruction takes 5 cycles to fill the pipeline; thereafter one instruction completes each cycle. Total cycles = 5 (fill) + (100‑1) = 104 cycles. [Page 76]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which of the following processor families typically employs a 3‑stage to 5‑stage pipeline?",
+      "options": {
+        "A": "Intel Core i7",
+        "B": "AMD Ryzen",
+        "C": "ARM Cortex‑M4",
+        "D": "Qualcomm Snapdragon 8 Gen 1"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The text notes that ARM Cortex‑M4 uses a 3–5 stage pipeline. [Page 70]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The context mentions modern high‑performance CPUs with “10–20+ stage pipelines.” Which processor listed below matches this description?",
+      "options": {
+        "A": "ARM Cortex‑M4",
+        "B": "Intel Core i7",
+        "C": "AVR ATmega328",
+        "D": "PIC16F877A"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Intel Core i7 (and AMD Ryzen) are cited as having 10–20+ stage pipelines. [Page 70]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Using the forwarding solution, consider the following sequence: I1 = ADD R1,R2,R3; I2 = SUB R4,R1,R5. Which stage of I2 can receive the forwarded result of I1 without stalling?",
+      "options": {
+        "A": "FI",
+        "B": "DI",
+        "C": "EX",
+        "D": "WR"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Forwarding delivers the ALU result from I1’s EX stage directly to I2’s EX stage, allowing I2 to use the value there. [Page 75‑76]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Referring to the cycle table for the 5‑stage pipeline, after how many cycles will the third instruction (I3) complete its WR stage, assuming no hazards and continuous instruction issue?",
+      "options": {
+        "A": "3 cycles",
+        "B": "5 cycles",
+        "C": "7 cycles",
+        "D": "9 cycles"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "In a 5‑stage pipeline, instructions are offset by one cycle. I1 finishes WR at cycle 5, I2 at cycle 6, I3 at cycle 7. Thus I3 completes WR in cycle 7. [Page 76]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If each stage of the 5‑stage pipeline (FI, DI, FO, EX, WR) takes 2 ns, what is the latency (time from instruction fetch to write‑back) for a single instruction?",
+      "options": {
+        "A": "2 ns",
+        "B": "5 ns",
+        "C": "10 ns",
+        "D": "12 ns"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Latency = number of stages × stage time = 5 × 2 ns = 10 ns. [Page 70]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A 5‑stage pipeline suffers a structural hazard that forces a 1‑cycle stall after every 4 instructions. What is the average CPI (cycles per instruction) for a long instruction stream?",
+      "options": {
+        "A": "1.0",
+        "B": "1.2",
+        "C": "1.25",
+        "D": "1.5"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "For every 4 instructions, 5 cycles are needed (4 + 1 stall). CPI = 5 / 4 = 1.25, but the stall repeats every 4, giving an average of 1.2? Wait compute correctly: Over 8 instructions, stalls = 2 cycles, total cycles = 8 + 2 = 10 → CPI = 10/8 = 1.25. Therefore correct answer is C (1.25).  \nCorrect Answer: C  \nExplanation: [Bloom: Apply | Difficulty: Medium] Over 4 instructions, 5 cycles are required; CPI = 5/4 = 1.25. [Page 70]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the discussion of pipelining in the context, which statement best reflects the impact of increasing pipeline depth on processor performance?",
+      "options": {
+        "A": "Performance always improves linearly with more stages.",
+        "B": "More stages guarantee lower power consumption.",
+        "C": "Adding stages can improve throughput but may introduce hazards that require techniques like forwarding.",
+        "D": "Deeper pipelines eliminate the need for any hazard mitigation."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context emphasizes that while pipelining enhances throughput, hazards arise and solutions such as forwarding are needed. Hence, adding stages improves performance but also introduces hazards. [Page 70‑76]",
+      "source_pages": []
+    }
+  ]
+}

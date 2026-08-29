@@ -1,0 +1,161 @@
+{
+  "topic": "blackbox vs whitebox testing",
+  "generated_at": "2026-08-26T22:43:08",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "In a project where the test team has only the system’s specification and no access to source code, which testing approach is most appropriate for identifying equivalence partitions, and why?",
+      "options": {
+        "A": "White‑box testing, because it uses code structure to define partitions.",
+        "B": "Black‑box testing, because it relies on the specification to derive partitions.",
+        "C": "Regression testing, because it reuses previous test cases.",
+        "D": "Stress testing, because it evaluates performance under load."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context states that using the specification to identify equivalence partitions is called black‑box testing and does not require knowledge of how the system works [Page 45].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A tester decides to supplement the black‑box test cases derived from the specification with additional tests that examine the program’s internal loops and conditionals. Which testing characteristic does this supplemental activity illustrate?",
+      "options": {
+        "A": "Validation testing, focusing on correct inputs.",
+        "B": "Defect testing, using obscure inputs.",
+        "C": "White‑box testing, targeting internal code structures.",
+        "D": "Release testing, performed after deployment."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context describes supplementing black‑box tests with “white‑box testing, where you look at the code of the program to find other possible tests” [Page 45].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a testing team is concerned that the system may produce erroneous outputs for certain inputs, which set from the input‑output model should they target, and which testing style aligns with this focus?",
+      "options": {
+        "A": "Set I (all inputs) with black‑box testing.",
+        "B": "Set O (all outputs) with release testing.",
+        "C": "Set Ie (inputs causing anomalous behavior) with defect testing.",
+        "D": "Set Oe (erroneous outputs) with validation testing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The input‑output model defines Ie as inputs that cause anomalous behavior, and defect testing prioritizes finding those inputs to reveal problems [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Consider two test suites for the same module: Suite A derives tests solely from the requirements document, while Suite B adds tests that explore each branch of the source code. Which statement best captures the relationship between these suites?",
+      "options": {
+        "A": "Suite A is white‑box, Suite B is black‑box.",
+        "B": "Both suites are forms of validation testing.",
+        "C": "Suite A exemplifies black‑box/validation testing; Suite B adds white‑box/defect testing.",
+        "D": "Suite B replaces the need for Suite A because code coverage ensures correctness."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The context links black‑box testing (derived from specifications) to validation testing, and white‑box testing (examining code) to defect testing that seeks inputs exposing faults [Pages 45, 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A release testing phase is planned just before shipping the product. Which of the following best describes why release testing is classified as black‑box testing in the given context?",
+      "options": {
+        "A": "It uses automated scripts that inspect internal variables.",
+        "B": "It derives test cases from the system specification without inspecting code.",
+        "C": "It focuses on performance metrics like response time.",
+        "D": "It targets only the user interface components."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "Release testing is described as a black‑box process where tests are derived from the system specification, treating the system as a black box whose behavior is studied through inputs and outputs [Page 54].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a test case is designed to deliberately use obscure inputs that are unlikely to occur in normal operation, which testing purpose does it serve according to the context, and what testing style does it align with?",
+      "options": {
+        "A": "Validation testing; black‑box testing.",
+        "B": "Defect testing; white‑box testing.",
+        "C": "Defect testing; black‑box testing.",
+        "D": "Validation testing; white‑box testing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Defect testing employs inputs that may be obscure and need not reflect normal use; this can be performed as black‑box testing when the focus is on exposing faults rather than verifying correct behavior [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a team uses requirements‑based testing to demonstrate that the system meets its specifications, which testing classification from the context does this activity fall under, and why?",
+      "options": {
+        "A": "Defect testing, because it seeks hidden errors.",
+        "B": "Validation testing, because it verifies correct implementation of requirements.",
+        "C": "Release testing, because it occurs after integration.",
+        "D": "Unit testing, because it targets individual methods."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "Requirements‑based testing is described as a systematic approach that is validation rather than defect testing, aiming to show the system properly implements its requirements [Page 54].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A tester argues that “there is no definite boundary between black‑box and white‑box testing.” Based on the provided material, which reasoning best supports this claim?",
+      "options": {
+        "A": "Both approaches always require source code access.",
+        "B": "Validation testing and defect testing can overlap, blending black‑box and white‑box techniques.",
+        "C": "Black‑box testing is only used after white‑box testing is complete.",
+        "D": "White‑box testing does not consider input equivalence partitions."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context notes that there is no sharp boundary; validation (often black‑box) and defect testing (often white‑box) can intermix, and both may be applied in the same testing effort [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the input‑output model, which set represents the correct outputs expected from valid inputs, and which testing type primarily targets this set?",
+      "options": {
+        "A": "Oe; defect testing.",
+        "B": "O; validation testing.",
+        "C": "Ie; defect testing.",
+        "D": "I; release testing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The model’s output set O contains all outputs; validation testing uses correct inputs (outside Ie) to stimulate expected correct outputs, i.e., the intended portion of O [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During unit testing, a developer writes test cases that call a method with varied parameters based on the approaches discussed in Section 8.1.2. Which testing perspective does this most closely align with in the context?",
+      "options": {
+        "A": "Black‑box testing, because the method’s internal logic is ignored.",
+        "B": "White‑box testing, because the method’s code is examined for branch coverage.",
+        "C": "Validation testing, because the method is tested against specification‑derived inputs.",
+        "D": "Defect testing, because the inputs are chosen to expose hidden faults."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Unit testing can employ black‑box techniques when test cases are derived from input parameters without needing to examine the method’s internal code, matching the description of using input‑output based test design [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A software project’s testing plan includes both equivalence partitioning (based on specifications) and branch‑coverage analysis (based on source code). Which combination of testing types does this plan embody, and what is the primary benefit according to the context?",
+      "options": {
+        "A": "Validation testing only; ensures all requirements are met.",
+        "B": "Defect testing only; finds obscure bugs.",
+        "C": "Both validation (black‑box) and defect (white‑box) testing; provides complementary coverage of functional behavior and internal logic.",
+        "D": "Release testing and unit testing; accelerates deployment."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "Equivalence partitioning from specifications is black‑box/validation testing; branch‑coverage from code is white‑box/defect testing. Combining them offers complementary insight into both external behavior and internal structure [Pages 45, 36].",
+      "source_pages": []
+    }
+  ]
+}

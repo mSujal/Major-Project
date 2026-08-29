@@ -1,0 +1,147 @@
+{
+  "topic": "interrupts 8085 types instructions",
+  "generated_at": "2026-08-27T16:40:30",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which interrupt among the following is non‑maskable and has the highest priority in the 8085 microprocessor?",
+      "options": {
+        "A": "INTR",
+        "B": "RST 7.5",
+        "C": "TRAP",
+        "D": "RST 5.5"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that TRAP is a non‑maskable interrupt with the highest priority. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided material, what is the correct priority order (from highest to lowest) for the vectored interrupts RST 7.5, RST 6.5, and RST 5.5?",
+      "options": {
+        "A": "RST 5.5 > RST 6.5 > RST 7.5",
+        "B": "RST 6.5 > RST 7.5 > RST 5.5",
+        "C": "RST 7.5 > RST 6.5 > RST 5.5",
+        "D": "All have equal priority"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text lists the priority order as 7.5, 6.5, then 5.5. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which pair of statements correctly describes the effect of the EI and DI instructions on the 8085 interrupt system?",
+      "options": {
+        "A": "EI enables interrupts; DI disables interrupts.",
+        "B": "DI enables interrupts; EI disables interrupts.",
+        "C": "EI masks all interrupts; DI unmasks all interrupts.",
+        "D": "Both EI and DI reset the program counter."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "EI is defined as “Enable interrupt” and DI as “Disable interrupt.” [Page 12]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The INTA signal mentioned in the context is used for which purpose?",
+      "options": {
+        "A": "Providing a system clock to peripheral devices.",
+        "B": "Acknowledging an interrupt request.",
+        "C": "Enabling external devices to read data.",
+        "D": "Resetting the microprocessor."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "INTA is described as the interrupt‑acknowledge signal. [Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly differentiates maskable from non‑maskable interrupts as described in the text?",
+      "options": {
+        "A": "Non‑maskable interrupts can be disabled by the DI instruction, while maskable cannot.",
+        "B": "Maskable interrupts can be disabled by the DI instruction, whereas non‑maskable cannot.",
+        "C": "Both maskable and non‑maskable interrupts are unaffected by DI.",
+        "D": "Only non‑maskable interrupts generate an INTA signal."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The TRAP interrupt is non‑maskable (cannot be disabled), while other interrupts such as INTR and RSTs are maskable and can be disabled with DI. [Page 5, Page 12]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The inputs RST 7.5, RST 6.5, and RST 5.5 are classified in the context as which type of interrupts?",
+      "options": {
+        "A": "Software interrupts.",
+        "B": "Vectored maskable interrupts.",
+        "C": "Non‑maskable external interrupts.",
+        "D": "General‑purpose interrupts."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "These three are described as “vectored interrupts” that have higher priority than INTR and are maskable. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which interrupt is identified in the material as a “general purpose interrupt”?",
+      "options": {
+        "A": "TRAP",
+        "B": "INTR",
+        "C": "RST 6.5",
+        "D": "RST 5.5"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "INTR is explicitly called a general‑purpose interrupt. [Page 5]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Executing the EI instruction has which immediate effect on the processor’s interrupt handling capability?",
+      "options": {
+        "A": "It clears the interrupt‑enable flip‑flop, disabling all interrupts.",
+        "B": "It sets the interrupt‑enable flip‑flop, allowing the processor to respond to interrupts.",
+        "C": "It resets the program counter to address 0000H.",
+        "D": "It loads the restart address for the next interrupt."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "EI enables interrupts by setting the interrupt‑enable flag. [Page 12]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the description of restart instructions, which of the following statements about RST instructions is true?",
+      "options": {
+        "A": "They are hardware interrupts generated by external pins.",
+        "B": "They are software interrupts that occupy a single byte.",
+        "C": "They are non‑maskable and cannot be disabled.",
+        "D": "They require a two‑byte opcode similar to CALL."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Restart instructions are 1‑byte instructions that transfer execution to a fixed location, functioning as software interrupts. [Page 24]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the primary role of the INTR signal as given in the context?",
+      "options": {
+        "A": "To provide a clock output for other devices.",
+        "B": "To request an interrupt from the processor.",
+        "C": "To acknowledge that the processor has accepted an interrupt.",
+        "D": "To reset the processor’s internal registers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "INTR is defined as “interrupt request, used as a general purpose interrupt.” [Page 5]",
+      "source_pages": []
+    }
+  ]
+}

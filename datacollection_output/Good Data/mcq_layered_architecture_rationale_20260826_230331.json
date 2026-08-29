@@ -1,0 +1,147 @@
+{
+  "topic": "layered architecture rationale",
+  "generated_at": "2026-08-26T23:03:31",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Why is a layered architecture considered necessary for organizing network design despite the enormous complexity of modern networks?",
+      "options": {
+        "A": "It eliminates the need for any protocol standards.",
+        "B": "It provides a structured way to discuss and manage system components.",
+        "C": "It forces all devices to implement every layer equally.",
+        "D": "It guarantees zero duplicate functionality across layers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Layered architecture offers a structured way to discuss system components, helping to manage complexity (Page 47)【Page 47】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following factors is most directly considered when designing the boundaries between network layers?",
+      "options": {
+        "A": "The physical distance between network devices.",
+        "B": "The desire to achieve modularity and separation of concerns.",
+        "C": "The brand of hardware used in routers.",
+        "D": "The color of network cables."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Designers consider modularity and separation of concerns to allow easier updates and clearer responsibilities (Page 49)【Page 49】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does modularity, as provided by layering, specifically aid in updating system components?",
+      "options": {
+        "A": "By requiring all layers to be rewritten simultaneously.",
+        "B": "By allowing changes in one layer without affecting others.",
+        "C": "By making the physical hardware interchangeable.",
+        "D": "By eliminating the need for encapsulation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Modularity means a change in one layer can be made independently of others, simplifying updates (Page 49)【Page 49】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which potential drawback of layering reflects a violation of the goal of separating layers?",
+      "options": {
+        "A": "Providing error recovery at both link and end‑to‑end levels.",
+        "B": "Implementing routing functions in switches.",
+        "C": "A layer needing information (e.g., a timestamp) that exists only in another layer.",
+        "D": "Using encapsulation to add headers at each layer."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "When a layer requires data from another layer, it breaches the separation principle (Page 49)【Page 49】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might duplicate functionality across layers, such as error recovery at both link and end‑to‑end levels, be considered a drawback?",
+      "options": {
+        "A": "It guarantees faster data transmission.",
+        "B": "It reduces overall system reliability.",
+        "C": "It can lead to unnecessary overhead and inefficiency.",
+        "D": "It prevents routers from implementing higher layers."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "Duplicate error recovery can cause extra overhead, reducing efficiency (Page 49)【Page 49】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Hosts implement all five layers of the protocol stack, while routers typically implement only the bottom layers. What rationale best explains this difference?",
+      "options": {
+        "A": "Hosts need full functionality for end‑to‑end communication, whereas routers primarily forward packets.",
+        "B": "Routers are prohibited by standards from using transport‑layer protocols.",
+        "C": "Hosts lack the hardware to skip any layers.",
+        "D": "Implementing all layers on routers would violate the Internet’s edge‑centric design."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Hosts require complete end‑to‑end services, while routers focus on forwarding, thus implementing only layers 1‑3 (Page 53)【Page 53】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the encapsulation process, what situation can cause a large message to be divided into multiple transport‑layer segments and subsequently multiple network‑layer datagrams?",
+      "options": {
+        "A": "When the message size exceeds the maximum transmission unit (MTU) of the underlying link.",
+        "B": "When the sender wants to increase security by fragmenting data.",
+        "C": "When the receiver requests a specific number of segments.",
+        "D": "When the application layer decides the segment size arbitrarily."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "A large message may be split into segments and datagrams if it exceeds the link’s MTU, leading to multiple encapsulation steps (Page 54)【Page 54】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Evaluate the statement: “Layering provides a structured way to discuss system components, which is an advantage for network designers.” Which of the following best supports this evaluation?",
+      "options": {
+        "A": "It forces every device to adopt the same hardware specifications.",
+        "B": "It allows designers to reason about each layer’s responsibilities independently.",
+        "C": "It eliminates the need for protocol standards across the Internet.",
+        "D": "It ensures that no layer ever needs to interact with another."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Easy",
+      "explanation": "Structured discussion enables designers to focus on individual layer responsibilities (Page 49)【Page 49】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the potential drawback of duplicate error recovery, how should a network designer evaluate the trade‑off between link‑layer and end‑to‑end error handling?",
+      "options": {
+        "A": "Always disable link‑layer error recovery to rely solely on end‑to‑end mechanisms.",
+        "B": "Prefer link‑layer recovery for local errors and end‑to‑end recovery for end‑to‑end reliability.",
+        "C": "Implement both mechanisms identically to maximize redundancy.",
+        "D": "Remove all error recovery to simplify the protocol stack."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Hard",
+      "explanation": "A balanced approach uses link‑layer recovery for local issues and end‑to‑end recovery for overall reliability, mitigating duplication concerns (Page 49)【Page 49】.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When might a designer deliberately allow a layer to access information from another layer, despite the principle of separation?",
+      "options": {
+        "A": "When the lower layer’s timestamp is required for accurate end‑to‑end latency measurement.",
+        "B": "When the upper layer wishes to modify physical cable lengths.",
+        "C": "When the design aims to eliminate all encapsulation.",
+        "D": "When the network has exactly five layers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "Accessing a lower‑layer timestamp can be justified for precise latency calculations, even though it breaches strict separation (Page 49)【Page 49】.",
+      "source_pages": []
+    }
+  ]
+}

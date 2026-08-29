@@ -1,0 +1,147 @@
+{
+  "topic": "embedded system applications",
+  "generated_at": "2026-08-27T17:20:37",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following groups of devices are listed as examples of embedded systems used in complex applications such as PCs and smartphones?",
+      "options": {
+        "A": "Atmega328P, STM32, PIC18F",
+        "B": "Intel Atom, ARM Cortex‑A",
+        "C": "TI C6000, ADI SHARC",
+        "D": "Arduino, Raspberry Pi, ESP32"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists Intel Atom and ARM Cortex‑A as examples of embedded system applications for PCs and smartphones [Page 43].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which classification of embedded systems is based on the generation of the processing core?",
+      "options": {
+        "A": "Application‑specific classification",
+        "B": "Generation‑based classification",
+        "C": "Power‑consumption classification",
+        "D": "Market‑segment classification"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The classification mentioned is “Classification of Embedded Systems: Generation Based” [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT mentioned as an example of a domain‑specific processor optimized for a particular application?",
+      "options": {
+        "A": "DSP – TI C6000",
+        "B": "ASIP – Network processors",
+        "C": "General‑Purpose Processor – Intel Atom",
+        "D": "SSP – AES encryption engine"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "General‑Purpose Processors like Intel Atom are listed under a different category, not as domain‑specific processors [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the starter activity description, which component is identified as a possible output actuator?",
+      "options": {
+        "A": "Ultrasonic sensor",
+        "B": "Temperature sensor",
+        "C": "Motor",
+        "D": "Microcontroller"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The activity lists “Motor” as an example of an output actuator [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which set of examples correctly pairs microcontrollers with their corresponding category?",
+      "options": {
+        "A": "Intel Atom – Microcontroller (MCU)",
+        "B": "Atmega328P – General‑Purpose Processor (GPP)",
+        "C": "STM32 – Microcontroller (MCU)",
+        "D": "TI C6000 – Microcontroller (MCU)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "STM32 is listed as an example of a microcontroller (MCU) [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following application areas is associated with the “complex” column in the applications table?",
+      "options": {
+        "A": "Home automation",
+        "B": "Industrial control",
+        "C": "Robots",
+        "D": "Automotive"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context pairs “Robots” with the complex applications side of the table [Page 43].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of these platforms is identified as a Commercial‑Off‑the‑Shelf (COTS) solution for embedded development?",
+      "options": {
+        "A": "PIC18F",
+        "B": "ESP32",
+        "C": "Atmega328P",
+        "D": "ARM Cortex‑A"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "ESP32 appears under the COTS category in the context [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which type of processing core is described as “flexible, programmable cores used for multiple applications”?",
+      "options": {
+        "A": "Domain‑Specific Processors (DSP/ASIP/SSP)",
+        "B": "General‑Purpose Processors (GPP)",
+        "C": "Application‑Specific Integrated Circuits (ASIC)",
+        "D": "Real‑Time Operating Systems (RTOS) cores"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "General‑Purpose Processors are defined with that description [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which application area is explicitly linked with Arduino projects in the context?",
+      "options": {
+        "A": "Industrial control",
+        "B": "Robotics",
+        "C": "Battery‑powered automotive systems",
+        "D": "Edge computing"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Arduino projects are listed alongside robotics as an application area [Page 212].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following sensor types is mentioned as an example of an input for a basic embedded system design challenge?",
+      "options": {
+        "A": "Relay",
+        "B": "IR sensor",
+        "C": "Buzzer",
+        "D": "Motor"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The starter activity lists IR sensor among possible inputs [Page 36].",
+      "source_pages": []
+    }
+  ]
+}

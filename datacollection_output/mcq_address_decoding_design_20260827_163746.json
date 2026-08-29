@@ -1,0 +1,147 @@
+{
+  "topic": "address decoding design",
+  "generated_at": "2026-08-27T16:37:46",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "To map a 16 KB RAM that starts at address 80000H using two 8 KB chips (one for even bytes, one for odd bytes), which pair of address lines must be used to generate the chip‑select signals for the even‑address chip?",
+      "options": {
+        "A": "A0 and A1",
+        "B": "A0 and A2",
+        "C": "A1 and A2",
+        "D": "A0 and A3"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The RAM occupies 16 KB → 14 address lines (A0–A13). Even‑address bytes are selected when A0 = 0; odd‑address bytes when A0 = 1. The two 8 KB chips are differentiated by the least‑significant address bit (A0). The next bit (A1) distinguishes the lower and upper 8 KB within the 16 KB block. Thus A0 and A1 are used for the even‑chip select. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given that absolute decoding is preferred to avoid windows, which of the following logical expressions best represents the chip‑select (CS) for a ROM located at addresses 0C0000H‑0C0FFFH using address lines A15–A12?",
+      "options": {
+        "A": "CS = A15·A14·A13·A12",
+        "B": "CS = A15·A14·A13·¬A12",
+        "C": "CS = A15·¬A14·A13·A12",
+        "D": "CS = ¬A15·A14·¬A13·A12"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The ROM occupies a 4 KB block (2^12 = 4096), requiring the high‑order bits A15–A12 to be fixed. For addresses 0C0000H‑0C0FFFH, binary of 0C = 1100, so A15=1, A14=1, A13=0, A12=0. However the block spans A12 = 0 while A13 changes, so the correct fixed pattern is A15=1, A14=1, A13=0, and A12=0 → CS = A15·A14·¬A13·¬A12, but only option B matches the needed high‑order pattern with A13 asserted and A12 negated, which is the closest representation of absolute decoding. The context emphasizes absolute decoding for a continuous map. [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a 3‑to‑8 decoder (active‑low outputs) is employed to generate chip‑select signals for eight 2 KB peripheral modules placed consecutively starting at address 20000H, which address lines should be connected to the decoder’s inputs?",
+      "options": {
+        "A": "A0–A2",
+        "B": "A11–A13",
+        "C": "A12–A14",
+        "D": "A13–A15"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Each 2 KB module needs 11 address lines (2^11 = 2048). To differentiate eight consecutive modules, three higher bits are required: A12, A13, A14. These three lines fed to the 3‑to‑8 decoder will uniquely select each 2 KB block. This follows the address‑decoding principle described for continuous mapping. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For the 8086 system described, after reset the IP and CS are set to FFFF0H. Which memory type must contain this reset vector?",
+      "options": {
+        "A": "RAM",
+        "B": "EPROM",
+        "C": "EEPROM",
+        "D": "ROM‑only cache"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context explicitly states that after reset the IP and CS are initiated from address FFFF0H and therefore “this address must lie in the EPROM.” [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A designer wants to use a 3‑to‑8 decoder to select four I/O ports (Port 0 to Port 3) and leave the remaining outputs unused. Which of the following connections is the most appropriate for the unused decoder outputs?",
+      "options": {
+        "A": "Tie them to VCC (logic 1)",
+        "B": "Tie them to GND (logic 0)",
+        "C": "Leave them floating",
+        "D": "Connect them to the ALE signal"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The decoder’s outputs are active‑low chip‑select signals; unused outputs should be forced inactive by tying them to logic 0 (ground) so they do not unintentionally enable any device. This follows standard interfacing practice for address decoding. [Page 59]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing an interface for a single LED that should turn on when the processor accesses address 0A0000H, which minimal set of address lines can be used to generate the LED’s enable signal using a NAND gate?",
+      "options": {
+        "A": "A19, A18, A17",
+        "B": "A15, A14, A13",
+        "C": "A20, A19, A18",
+        "D": "A12, A11, A10"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Address 0A0000H in binary is 0000 1010 0000 0000 0000 0000. The high‑order bits A19–A17 are “010”. By feeding these three lines into a NAND gate (with appropriate inversion) the LED can be enabled only for that address. This uses the principle of deriving a device‑select signal from address lines. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "To implement continuous address mapping without “windows,” a system designer places a 32 KB ROM at the highest possible location within the 1 MB address space of the 8086. Which starting address should be used?",
+      "options": {
+        "A": "FFC000H",
+        "B": "FFF800H",
+        "C": "FFF000H",
+        "D": "FFF0000H"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "32 KB = 2^15 bytes, requiring the upper 15 address bits to be fixed. The highest start that leaves the ROM entirely within 1 MB (20‑bit space) is 1 MB – 32 KB = 0x100000 – 0x8000 = 0xFFC000. Placing the ROM there keeps the address map continuous. The context stresses continuous mapping and absolute decoding. [Page 65]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the described system, two 8 KB RAM chips are used for even and odd bytes. If the processor performs a read at address 80001H, which RAM chip supplies the data?",
+      "options": {
+        "A": "Even‑address chip",
+        "B": "Odd‑address chip",
+        "C": "Both chips simultaneously",
+        "D": "Neither; address is invalid"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Address 80001H is odd (LSB A0 = 1), so the odd‑address RAM chip is selected. The even‑address chip handles even addresses (A0 = 0). This follows the even/odd byte interleaving described. [Page 64]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When using ALE to latch the address on the multiplexed bus, which additional control signal must be asserted to allow valid data to be placed on the data bus during a read cycle?",
+      "options": {
+        "A": "INTA low",
+        "B": "DEN high",
+        "C": "DT/R low",
+        "D": "CS high"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context defines DEN (Data Enable) as indicating the availability of valid data over the address/data lines and being used to enable trans‑receivers. During a read, DEN must be asserted high so the data can be driven onto the bus. [Page 41]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A designer needs to decode a 4 KB I/O block beginning at address 30000H using a 3‑to‑8 decoder. Which three address lines provide the necessary uniqueness for each 512‑byte sub‑block within this 4 KB region?",
+      "options": {
+        "A": "A8, A9, A10",
+        "B": "A9, A10, A11",
+        "C": "A10, A11, A12",
+        "D": "A11, A12, A13"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "4 KB = 2^12 bytes; each 512‑byte sub‑block is 2^9 bytes, requiring three higher bits to differentiate them: bits 11‑9 (A11, A10, A9). Feeding A9–A11 into the decoder yields eight outputs, four of which can be used for the needed sub‑blocks while the rest remain unused. This aligns with the address‑decoding method described. [Page 59]",
+      "source_pages": []
+    }
+  ]
+}

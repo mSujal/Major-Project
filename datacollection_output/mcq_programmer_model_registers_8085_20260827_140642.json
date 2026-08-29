@@ -1,0 +1,147 @@
+{
+  "topic": "programmer model registers 8085",
+  "generated_at": "2026-08-27T14:06:42",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements correctly describes the accessibility of the temporary registers W and Z in the 8085 programming model?",
+      "options": {
+        "A": "Both W and Z can be directly accessed by assembly language instructions.",
+        "B": "Only W is accessible, while Z is hidden from the programmer.",
+        "C": "Neither W nor Z can be accessed by the programmer; they are used internally by the CPU.",
+        "D": "W can be accessed for input operations, but Z cannot be used for output."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that W and Z are 8‑bit registers “not accessible to the programmer” and are used by the 8085A internally for brief periods [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the 8085 register array, which pair of registers can be used together as a 16‑bit register for direct addition operations?",
+      "options": {
+        "A": "A and F",
+        "B": "H and L",
+        "C": "B and C",
+        "D": "M and A"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The register array includes B, C, D, E as 8‑bit registers that can be combined into 16‑bit pairs; specifically BC is a valid 16‑bit pair used for operations like addition [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a program needs to store two separate 8‑bit values simultaneously, which set of registers from the 8085 programmer model would be appropriate?",
+      "options": {
+        "A": "W and Z",
+        "B": "BC (as a single 16‑bit register)",
+        "C": "B and D",
+        "D": "PC and SP"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "B and D are individual 8‑bit scratch‑pad registers that are directly accessible to the programmer, allowing independent storage of two 8‑bit values. W and Z are not accessible, BC is a combined 16‑bit register, and PC/SP are not part of the scratch‑pad register array [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why the temporary registers W and Z cannot be used for user‑defined data storage?",
+      "options": {
+        "A": "They are reserved for DMA operations only.",
+        "B": "They are 16‑bit registers, incompatible with 8‑bit data.",
+        "C": "The 8085 places data in them only briefly during internal processing, making them inaccessible to the programmer.",
+        "D": "Their contents are automatically cleared after each instruction cycle."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context indicates that W and Z are used by the 8085A “for a brief period” during execution and are not programmer‑accessible, which prevents their use for user‑defined storage [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A programmer wants to perform a 16‑bit addition of two memory addresses. Which register pair from the 8085 programmer model is suitable for this operation, and why?",
+      "options": {
+        "A": "H and L, because they form the address register pair.",
+        "B": "B and C, because BC can be used as a 16‑bit register and is directly accessible.",
+        "C": "W and Z, because temporary registers hold intermediate results.",
+        "D": "D and E, because DE is the only pair that supports addition."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "BC is a 16‑bit register pair formed from the accessible scratch‑pad registers B and C, and the context notes that register pairs like BC can be used for direct 16‑bit operations [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the 8085 executes an instruction that requires a temporary storage of intermediate results, which registers are automatically used by the CPU?",
+      "options": {
+        "A": "B and C",
+        "B": "D and E",
+        "C": "W and Z",
+        "D": "H and L"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The temporary registers W and Z are described as the locations where the 8085 places data “for a brief period” during execution, indicating they serve as internal temporary storage [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements accurately reflects the flexibility of the 8085 register array for programmer‑defined operations?",
+      "options": {
+        "A": "The registers B, C, D, E can each only be used individually, never as pairs.",
+        "B": "Only the pair HL can be used as a 16‑bit register; BC and DE are not allowed.",
+        "C": "Registers B and C, as well as D and E, can each be combined to form 16‑bit registers, allowing direct 16‑bit data transfer.",
+        "D": "All four registers must always be used together as a single 32‑bit register."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context specifies that the scratch‑pad registers B, C, D, E “can be used individually as 8‑bit registers or in pair BC, DE as 16‑bit registers” for direct addition or transfer [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a programmer writes an instruction that moves data from register B to register D, which of the following statements is true regarding the underlying hardware registers?",
+      "options": {
+        "A": "The data is first copied into temporary register W before reaching D.",
+        "B": "The operation uses the internal temporary registers W and Z as intermediate buffers.",
+        "C": "The transfer occurs directly between the accessible register array entries for B and D.",
+        "D": "The processor must use the stack pointer to mediate the transfer."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "B and D are part of the accessible register array, and the context notes that data can be “directly added or transferred from one to another” within this array [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes why the 8085 programming model includes both temporary registers (W, Z) and a register array (B, C, D, E)?",
+      "options": {
+        "A": "Temporary registers provide user‑level storage, while the register array handles I/O buffering.",
+        "B": "Temporary registers are used for internal processing steps, whereas the register array offers programmer‑accessible storage for data manipulation.",
+        "C": "Both sets are identical in function; they simply have different names for legacy compatibility.",
+        "D": "The register array is only for address calculations, while temporary registers store instruction opcodes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context separates the roles: W and Z are internal, not programmer‑accessible, while B, C, D, E are “accessible to the programmers” for data storage and manipulation [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A program needs to store a 16‑bit constant value for later use. Which register pair should the programmer choose to hold this constant, and what is a key advantage of that choice?",
+      "options": {
+        "A": "Use W and Z; they are hidden, so the constant cannot be overwritten accidentally.",
+        "B": "Use BC; it is an accessible 16‑bit pair that allows direct loading of the constant with a single instruction.",
+        "C": "Use H and L; they are dedicated to address handling only.",
+        "D": "Use the stack pointer (SP); it automatically reserves space for constants."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "BC is an accessible 16‑bit register pair formed from the programmer‑visible registers B and C, allowing the constant to be loaded directly and used in subsequent operations [Page 2].",
+      "source_pages": []
+    }
+  ]
+}

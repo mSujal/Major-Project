@@ -1,0 +1,147 @@
+{
+  "topic": "requirements elicitation",
+  "generated_at": "2026-08-26T22:34:41",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which activity is explicitly described as part of the requirements elicitation process?",
+      "options": {
+        "A": "Conducting a feasibility study",
+        "B": "Prioritizing requirements after they are documented",
+        "C": "Discovering and understanding stakeholder needs such as application domain and performance expectations",
+        "D": "Performing requirements validation after documentation"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that during requirements elicitation software engineers work with stakeholders to learn about the application domain, work activities, services, performance, and hardware constraints [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main purpose of requirements validation as outlined in the context?",
+      "options": {
+        "A": "To assess the technical feasibility of the system",
+        "B": "To ensure that the documented requirements truly reflect the real needs of system users",
+        "C": "To create detailed design specifications",
+        "D": "To negotiate the order of implementation for each requirement"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Requirements validation is defined as the process of checking that requirements define the system the customer really wants, focusing on whether they reflect real user needs [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which piece of stakeholder information is NOT mentioned as something engineers should discover during elicitation?",
+      "options": {
+        "A": "The required performance of the system",
+        "B": "The hardware constraints affecting the system",
+        "C": "The marketing budget for the product",
+        "D": "The work activities performed by users"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text lists application domain, work activities, services, performance, and hardware constraints, but does not mention marketing budget as part of elicitation [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the described elicitation and analysis process, what follows the “Requirements discovery and understanding” step?",
+      "options": {
+        "A": "Requirements validation through user reviews",
+        "B": "Requirements documentation, classification, and organization",
+        "C": "System design and architectural modeling",
+        "D": "Implementation of a prototype"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The process flow shows “Requirements discovery and understanding” followed by “Requirements documentation, classification and organization” [Page 13].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is a guideline for conducting effective requirements elicitation?",
+      "options": {
+        "A": "Concentrate only on functional requirements and ignore non‑functional concerns",
+        "B": "Assume stakeholder needs remain unchanged throughout the project",
+        "C": "Actively engage stakeholders to understand their work activities and domain context",
+        "D": "Defer stakeholder involvement until after a complete design is drafted"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context emphasizes working with stakeholders to learn about the application domain, work activities, and other needs during elicitation [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the spiral view of the requirements engineering process, which activity directly follows requirements elicitation?",
+      "options": {
+        "A": "Coding the system modules",
+        "B": "Conducting system testing",
+        "C": "Performing user validation of the requirements",
+        "D": "Deploying the finished system"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The spiral view lists “User validation” as a phase that occurs after requirements elicitation and prototyping steps [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which characteristic is highlighted as essential for a good requirements specification?",
+      "options": {
+        "A": "Ambiguity, to allow flexibility in design",
+        "B": "Incompleteness, to be refined later",
+        "C": "Consistency, ensuring no conflicting statements exist",
+        "D": "Difficulty of understanding, to protect intellectual property"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A good requirements specification should be clear, unambiguous, complete, and consistent; consistency is specifically mentioned as a desired trait [Page 20].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which activity overlaps with requirements elicitation according to the context?",
+      "options": {
+        "A": "Conducting a feasibility study",
+        "B": "Performing requirements validation checks",
+        "C": "Designing the system architecture",
+        "D": "Reviewing source code for defects"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that requirements validation overlaps with elicitation and analysis because it looks for problems in the requirements [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During validity checks in the validation phase, what specific aspect of a requirement is examined?",
+      "options": {
+        "A": "Whether the requirement aligns with the project budget",
+        "B": "Whether the requirement reflects the real needs of system users",
+        "C": "Whether the requirement follows coding standards",
+        "D": "Whether the requirement specifies performance metrics"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Validity checks are described as ensuring that requirements reflect the real needs of users, especially when circumstances may have changed [Page 29].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What best summarizes the overall goal of requirements elicitation as presented in the material?",
+      "options": {
+        "A": "To produce a working prototype as quickly as possible",
+        "B": "To identify and thoroughly understand stakeholder needs and system constraints",
+        "C": "To test the final system against performance criteria",
+        "D": "To manage the project schedule and allocate resources"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The purpose of elicitation is to work with stakeholders to uncover domain knowledge, work activities, desired services, performance, and constraints, i.e., to understand stakeholder needs [Page 12].",
+      "source_pages": []
+    }
+  ]
+}

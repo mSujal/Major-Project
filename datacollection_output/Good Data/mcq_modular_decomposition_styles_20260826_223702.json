@@ -1,0 +1,147 @@
+{
+  "topic": "modular decomposition styles",
+  "generated_at": "2026-08-26T22:37:02",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which three modular decomposition styles are mentioned as ways to structure system specifications?",
+      "options": {
+        "A": "Objects, Functions, Events",
+        "B": "Classes, Modules, Packages",
+        "C": "Processes, Data, Interfaces",
+        "D": "Layers, Components, Services"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that a specification may be structured around the objects manipulated by the system, the functions performed by the system, or the events processed by the system [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why does making document sections modular improve changeability, according to the text?",
+      "options": {
+        "A": "It eliminates the need for any external references.",
+        "B": "It allows individual sections to be changed or replaced without affecting other parts.",
+        "C": "It guarantees that all sections use the same font and shading.",
+        "D": "It forces all requirements to be written in natural language."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage explains that changeability is achieved by minimizing external references and making document sections as modular as possible, so individual sections can be changed without impacting others [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a structured approach to specifying requirements, what is the primary role of standard templates?",
+      "options": {
+        "A": "To enforce uniformity across the specification.",
+        "B": "To replace natural‑language descriptions entirely.",
+        "C": "To define the programming language syntax used.",
+        "D": "To automatically generate source code."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes that defining standard templates for requirements imposes some uniformity on the specification [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which modular decomposition style focuses on “what the system does”?",
+      "options": {
+        "A": "Objects",
+        "B": "Functions",
+        "C": "Events",
+        "D": "Documents"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context lists “functions performed by the system” as one of the ways a specification can be structured, indicating a focus on the system’s actions [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which modular decomposition style groups requirements based on the entities the system manipulates?",
+      "options": {
+        "A": "Functions",
+        "B": "Events",
+        "C": "Objects",
+        "D": "Layers"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage mentions structuring the specification around “the objects manipulated by the system,” which groups requirements by entities [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which modular decomposition style is concerned with “the occurrences the system responds to”?",
+      "options": {
+        "A": "Objects",
+        "B": "Functions",
+        "C": "Events",
+        "D": "Components"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text includes “events processed by the system” as a possible structuring focus, indicating a style based on occurrences [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does structuring a specification around objects affect its organization?",
+      "options": {
+        "A": "It groups requirements by the functions they perform.",
+        "B": "It groups requirements by the events they trigger.",
+        "C": "It groups requirements by the objects they involve.",
+        "D": "It eliminates the need for any templates."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "By structuring around objects, the specification organizes requirements according to the objects they involve, as described in the passage [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is a direct benefit of using modular document sections, as described in the context?",
+      "options": {
+        "A": "Reducing the total number of pages in the document.",
+        "B": "Allowing sections to be edited independently without side effects on other sections.",
+        "C": "Ensuring all sections use identical wording.",
+        "D": "Making the document readable only by experts."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage states that modular sections enable individual sections to be changed and replaced without affecting other parts [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best reflects the relationship between modular decomposition and changeability?",
+      "options": {
+        "A": "More modular decomposition always increases the number of external references.",
+        "B": "Modular decomposition reduces changeability because sections become interdependent.",
+        "C": "Modular decomposition enhances changeability by minimizing external references and isolating sections.",
+        "D": "Changeability is unrelated to how a specification is modularized."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text links modular decomposition with changeability, noting that minimizing external references and modular sections improve the ability to change parts independently [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT listed as a modular decomposition style in the provided context?",
+      "options": {
+        "A": "Objects",
+        "B": "Functions",
+        "C": "Events",
+        "D": "Layers"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context only mentions objects, functions, and events as decomposition styles; “layers” are not cited [Page 23].",
+      "source_pages": []
+    }
+  ]
+}

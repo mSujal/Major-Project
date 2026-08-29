@@ -1,0 +1,147 @@
+{
+  "topic": "routing techniques",
+  "generated_at": "2026-08-26T23:07:37",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements best explains why routers must implement layer‑3 functionality in order to forward IP datagrams?",
+      "options": {
+        "A": "Because layer‑3 provides the physical medium for transmitting bits.",
+        "B": "Because layer‑3 defines Ethernet (MAC) addresses used by routers.",
+        "C": "Because layer‑3 contains the IP protocol that supplies source and destination network‑layer addresses required for routing decisions.",
+        "D": "Because layer‑3 supplies the transport‑layer ports that routers use to select paths."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Routers implement layers 1‑3, and the network layer (layer 3) carries the IP protocol with source/destination addresses that routing decisions rely on, as stated on pages 51 and 53.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given that link‑layer switches implement only layers 1 and 2, which of the following tasks can they perform that routers cannot?",
+      "options": {
+        "A": "Forward packets based on IP address prefixes.",
+        "B": "Recognize and forward frames using Ethernet (MAC) addresses.",
+        "C": "Execute distance‑vector routing updates.",
+        "D": "Perform fragmentation of IP datagrams."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context notes that link‑layer switches recognize layer‑2 addresses such as Ethernet addresses, while they do not implement layer 3 IP functions (pages 53).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a datagram moves from one node to the next in the Internet, what is the correct order of layer processing at the sending node?",
+      "options": {
+        "A": "Link layer adds its header, then network layer adds its header.",
+        "B": "Network layer adds its header, then link layer adds its header.",
+        "C": "Transport layer adds its header, then link layer adds its header, then network layer adds its header.",
+        "D": "Application layer adds its header, then transport layer adds its header."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The network layer passes the datagram down to the link layer, which then adds link‑layer header information before transmission (pages 51, 53).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the relationship between routing protocols and the network layer as presented in the context?",
+      "options": {
+        "A": "Routing protocols are part of the link layer and handle MAC address learning.",
+        "B": "Routing protocols reside in the transport layer to provide reliable delivery.",
+        "C": "Routing protocols are embedded in the network layer to determine paths for datagrams.",
+        "D": "Routing protocols are application‑layer services that map URLs to IP addresses."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The Internet’s network layer contains routing protocols that determine the routes that datagrams take (pages 51).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a network administrator can run any routing protocol within a network, what does this imply about the design of the Internet’s routing architecture?",
+      "options": {
+        "A": "All networks must use a single, standardized protocol.",
+        "B": "Routing protocols are optional and have no effect on packet delivery.",
+        "C": "The architecture is flexible, allowing different protocols to coexist in different autonomous systems.",
+        "D": "Only link‑layer switches can participate in routing decisions."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context states that within a network the administrator can run any routing protocol desired, indicating flexibility and heterogeneity across networks (page 51).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the analogy that “packets are analogous to trucks” and “packet switches are analogous to intersections,” which network element corresponds to the “intersection” that decides the next direction for a packet?",
+      "options": {
+        "A": "End system (building)",
+        "B": "Link‑layer switch or router (packet switch)",
+        "C": "Transport‑layer segment (truck driver)",
+        "D": "Application‑layer message (cargo)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The analogy maps packet switches (routers or link‑layer switches) to intersections that determine the packet’s path (page 4).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why does the network layer pass a datagram down to the link layer at each hop rather than sending it directly to the next router’s network layer?",
+      "options": {
+        "A": "Because the link layer is responsible for physical transmission over the local medium.",
+        "B": "Because the network layer cannot encapsulate data.",
+        "C": "Because the transport layer must verify checksums at each hop.",
+        "D": "Because application‑layer protocols manage hop‑by‑hop forwarding."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context explains that the network layer relies on the link layer’s services to move a packet to the next node (pages 51, 53).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly identifies a key difference between routers and link‑layer switches regarding the protocols they can recognize?",
+      "options": {
+        "A": "Routers can recognize Ethernet addresses; link‑layer switches can recognize IP addresses.",
+        "B": "Both can recognize IP addresses, but only routers can process TCP ports.",
+        "C": "Routers can recognize IP addresses (layer 3); link‑layer switches can only recognize Ethernet (layer 2) addresses.",
+        "D": "Neither can recognize any layer‑2 addresses; they both operate only at layer 3."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Routers implement the IP protocol (layer 3) while link‑layer switches recognize only layer‑2 addresses like Ethernet (page 53).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the encapsulation process described, which header is added last before the frame is transmitted onto the physical medium?",
+      "options": {
+        "A": "Application‑layer header",
+        "B": "Transport‑layer header",
+        "C": "Network‑layer header",
+        "D": "Link‑layer header"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The network layer adds its header, then the link layer adds its own header, creating the final frame for transmission (pages 51, 53).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the description of routing in the context, what is the primary purpose of routing protocols within the network layer?",
+      "options": {
+        "A": "To encrypt datagrams for secure transmission.",
+        "B": "To assign MAC addresses to hosts.",
+        "C": "To determine the sequence of routers (path) that a datagram follows from source to destination.",
+        "D": "To manage end‑to‑end flow control for TCP connections."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Routing protocols are defined as mechanisms that determine the routes datagrams take between sources and destinations (page 51).",
+      "source_pages": []
+    }
+  ]
+}

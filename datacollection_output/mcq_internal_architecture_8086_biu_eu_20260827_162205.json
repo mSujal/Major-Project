@@ -1,0 +1,147 @@
+{
+  "topic": "internal architecture 8086 biu eu",
+  "generated_at": "2026-08-27T16:22:05",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following signals is asserted by the Bus Interface Unit (BIU) during an asynchronous read operation to indicate that the address on the address bus is valid?",
+      "options": {
+        "A": "SSYNC",
+        "B": "MSYNC",
+        "C": "ALE",
+        "D": "ACK"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "In the description of the asynchronous read operation the signal “MSYNC” is listed together with “Address” and “Data Bus”, indicating it is used by the BIU to synchronize the address phase. [Page 44]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a synchronous read operation, which clock phase follows the “To” phase?",
+      "options": {
+        "A": "Ts",
+        "B": "Ty",
+        "C": "T",
+        "D": "T0"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The synchronous read timing diagram lists the sequence of clock phases as T, To, Ts, Ty, Ts, showing that “Ts” comes after “To”. [Page 43]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component of the 8086 internal architecture supplies the address and data lines to external memory?",
+      "options": {
+        "A": "Execution Unit (EU)",
+        "B": "Arithmetic Logic Unit (ALU)",
+        "C": "Bus Interface Unit (BIU)",
+        "D": "Instruction Decoder"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that the BIU is responsible for handling address and data bus signals during read operations, which is the role of providing address and data lines. [Page 44]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the Execution Unit (EU) differ from the Bus Interface Unit (BIU) in terms of functionality?",
+      "options": {
+        "A": "EU handles instruction fetching, BIU performs arithmetic operations.",
+        "B": "EU executes instructions, BIU manages bus cycles and address generation.",
+        "C": "EU generates clock signals, BIU decodes op‑codes.",
+        "D": "EU stores data in memory, BIU processes interrupts."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context contrasts BIU and EU by describing the BIU’s role in bus operations (address, data, sync signals) and the EU’s role in executing instructions using registers and the ALU. [Page 93]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the internal architecture of the 8086, which registers can directly feed operands to the ALU?",
+      "options": {
+        "A": "Segment registers only",
+        "B": "General‑purpose registers A, B, C, D",
+        "C": "Instruction pointer and flags register",
+        "D": "Stack pointer and base pointer only"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that “the registers A, B, C, D and others directly with the ALU” allowing data to enter the ALU from any of these registers. [Page 93]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why the asynchronous read operation does not require a dedicated clock phase for data transfer?",
+      "options": {
+        "A": "It uses the SSYNC signal to lock the data bus.",
+        "B": "The data is transferred immediately after the address is placed on the bus.",
+        "C": "The BIU generates a separate data‑ready pulse.",
+        "D": "The EU supplies a timing signal to the memory."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The asynchronous read description lists only address‑related signals (Address, MSYNC, Data Bus, SSYNC) and implies that once the address is valid, the memory returns data without an extra clocked phase. [Page 44]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which timing signal is used to acknowledge the completion of a data transfer in a synchronous read operation?",
+      "options": {
+        "A": "MSYNC",
+        "B": "SSYNC",
+        "C": "ACK (Acknowledge Signal)",
+        "D": "ALE"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The synchronous read operation listing includes “Acknowledge Signal” as part of the timing diagram, indicating its role in confirming data transfer. [Page 43]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the internal 8086 architecture, which unit would be primarily responsible for decoding the opcode of an instruction?",
+      "options": {
+        "A": "Bus Interface Unit (BIU)",
+        "B": "Execution Unit (EU)",
+        "C": "Memory Management Unit (MMU)",
+        "D": "Input/Output Controller"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The EU is described as the part that executes instructions, which includes decoding op‑codes and performing operations using registers and the ALU. [Page 93]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If an instruction requires both a memory read and an arithmetic operation, which two units of the 8086 must cooperate to complete the instruction?",
+      "options": {
+        "A": "BIU for the read, EU for the arithmetic",
+        "B": "EU for both read and arithmetic",
+        "C": "BIU for both read and arithmetic",
+        "D": "Neither; the instruction is handled by the control unit alone"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context separates the responsibilities: the BIU handles bus cycles (memory read) while the EU executes the operation (arithmetic) using the fetched data. [Pages 44, 93]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly characterizes the relationship between the CISC nature of the 8086 and the role of its BIU?",
+      "options": {
+        "A": "Because the 8086 is CISC, the BIU must perform complex instruction decoding.",
+        "B": "The CISC design relies on a powerful EU, while the BIU handles relatively simple address and data transfer tasks.",
+        "C": "In a CISC processor, the BIU is responsible for micro‑code generation.",
+        "D": "The BIU in a CISC processor replaces the need for an ALU."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context mentions that 8086 is a CISC processor and describes the BIU’s role in bus handling, implying that the complex instruction work is done by the EU/ALU. [Page 94]",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "bus organization",
+  "generated_at": "2026-08-27T14:04:30",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best defines a system bus in a microcomputer?",
+      "options": {
+        "A": "A single line that carries power to the CPU.",
+        "B": "A collection of separate lines that connect CPU, memory, and I/O modules.",
+        "C": "The memory chip that stores program instructions.",
+        "D": "An external peripheral used for data storage."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "A system bus is described as “the bus that connects major microcomputer components such as CPU, memory or I/O” and consists of multiple separate lines [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What does the width of a data bus (e.g., 8, 16, 32, 64) indicate?",
+      "options": {
+        "A": "The number of devices that can be attached to the bus.",
+        "B": "The voltage level used for signaling.",
+        "C": "The number of bits transferred simultaneously on the bus.",
+        "D": "The maximum clock frequency of the system."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The width “represents the number of bits they can carry because each carries 1 bit” [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the bus control signals, what condition does a low LOCK signal represent?",
+      "options": {
+        "A": "The bus is currently idle.",
+        "B": "Other bus masters are allowed to take control.",
+        "C": "Other bus masters are prevented from gaining the bus.",
+        "D": "The data bus is disabled."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The LOCK output “indicates that other system bus master will be prevented from gaining the system bus, while the LOCK signal is low” [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The pins RQ/GT0 and RQ/GT1 are used for which purpose?",
+      "options": {
+        "A": "To select the data bus width.",
+        "B": "To request and grant bus control between local bus masters.",
+        "C": "To reset the CPU after power‑up.",
+        "D": "To acknowledge successful data transfer."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "RQ/GT0, RQ/GT1 “are used by the other local bus master… to force the processor to release the local bus” [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which three groups of lines typically compose a system bus?",
+      "options": {
+        "A": "Power, Ground, Clock",
+        "B": "Address, Data, Control",
+        "C": "Input, Output, Bidirectional",
+        "D": "Memory, I/O, Processor"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that “in any system bus the lines can be classified into three group buses,” which are understood to be address, data, and control lines [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a data bus is 32 bits wide, how many bits can be transferred in a single bus cycle?",
+      "options": {
+        "A": "8 bits",
+        "B": "16 bits",
+        "C": "32 bits",
+        "D": "64 bits"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The bus width directly equals the number of bits transferred per cycle; a 32‑bit bus carries 32 bits [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A microcomputer uses an 8‑bit data bus. How many whole bytes can be moved across the bus in one cycle?",
+      "options": {
+        "A": "0.5 byte",
+        "B": "1 byte",
+        "C": "2 bytes",
+        "D": "4 bytes"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "8 bits equal 1 byte, so an 8‑bit bus transfers one byte per cycle [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Assuming the address bus has 16 lines and the data bus is 8 bits wide, what is the maximum addressable memory size?",
+      "options": {
+        "A": "16 KB",
+        "B": "32 KB",
+        "C": "64 KB",
+        "D": "128 KB"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "A 16‑line address bus can select 2¹⁶ = 65 536 locations; with an 8‑bit (1‑byte) data width, this yields 65 536 bytes = 64 KB [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During a synchronous read operation, which signal is used to confirm that the data on the data bus is valid?",
+      "options": {
+        "A": "READ",
+        "B": "ADDRESS",
+        "C": "ACKNOWLEDGE",
+        "D": "CLOCK"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The synchronous read description lists “Acknowledge Signal” as one of the lines involved in the operation [Page 43].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In an asynchronous read operation, which two synchronization signals are explicitly mentioned?",
+      "options": {
+        "A": "READ and WRITE",
+        "B": "MSYNC and SSYNC",
+        "C": "CLOCK and RESET",
+        "D": "ADDRESS and DATA"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The asynchronous read description includes “MSYNC” and “SSYNC” among the signals used [Page 44].",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "general purpose processor basic architecture",
+  "generated_at": "2026-08-27T17:23:41",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following components is explicitly mentioned in the context as part of a general‑purpose processor’s basic architecture?",
+      "options": {
+        "A": "Instruction Register (IR)",
+        "B": "Floating‑point Unit (FPU)",
+        "C": "Direct Memory Access controller (DMA)",
+        "D": "Cache memory"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context specifies an Instruction Register (IR) of 16‑bit width as a design element of the GPP [Page 106].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the design example, what is the width of the Program Counter (PC) in the described general‑purpose processor?",
+      "options": {
+        "A": "8 bits",
+        "B": "12 bits",
+        "C": "16 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The example lists a 16‑bit Program Counter (PC) as part of the processor design [Page 106].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which instruction format from the context uses the first byte “0000 Rn” to move data from memory to a register?",
+      "options": {
+        "A": "MOV Rn, direct",
+        "B": "MOV direct, Rn",
+        "C": "MOV @Rn, Rm",
+        "D": "ADD Rn, Rm"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The table shows “MOV Rn, direct” with first byte “0000 Rn” performing Rn = M[direct] [Page 107].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the instruction set described, which operation writes the contents of a register to a direct memory address?",
+      "options": {
+        "A": "MOV Rn, direct",
+        "B": "MOV direct, Rn",
+        "C": "MOV @Rn, Rm",
+        "D": "SUB Rn, direct"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "“MOV direct, Rn” has first byte “0001 Rn” and stores Rn into M[direct] [Page 107].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How many distinct instruction categories (data‑transfer, arithmetic, jump) are stated as being supported by the example general‑purpose processor design?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The design example calls for four data‑transfer, two arithmetic, and one jump instruction, totaling three categories [Page 106].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes a general‑purpose processor (GPP) as defined in the context?",
+      "options": {
+        "A": "A CPU integrated with fixed memory and I/O on a single chip",
+        "B": "A flexible, programmable core used for multiple applications",
+        "C": "A processor optimized for signal‑processing tasks only",
+        "D": "A specialized ASIC for a single function"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists GPPs as “Flexible, programmable cores used for multiple applications” [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the instruction size specified for the example GPP design?",
+      "options": {
+        "A": "8 bits",
+        "B": "12 bits",
+        "C": "16 bits",
+        "D": "24 bits"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The example explicitly states a 16‑bit instruction size [Page 106].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements about the relationship between a GPP and a single‑purpose processor is correct according to the text?",
+      "options": {
+        "A": "A GPP cannot be designed using the same steps as a single‑purpose processor.",
+        "B": "A GPP is essentially a programmable single‑purpose processor that executes stored instructions.",
+        "C": "A GPP always has a fixed instruction set, unlike single‑purpose processors.",
+        "D": "A GPP does not use program memory for instruction storage."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that a GPP “is essentially a programmable single‑purpose processor—it executes a sequence of instructions stored in program memory” [Page 105].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following pairs correctly matches a data‑transfer instruction with its described operation?",
+      "options": {
+        "A": "MOV Rn, direct – M[direct] = Rn",
+        "B": "MOV direct, Rn – Rn = M[direct]",
+        "C": "MOV @Rn, Rm – M[Rn] = Rm",
+        "D": "MOV @Rn, Rm – Rn = M[direct]"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The table lists “MOV @Rn, Rm” with operation M[Rn] = Rm [Page 107].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which category distinguishes a microprocessor (MPU) from a microcontroller (MCU)?",
+      "options": {
+        "A": "MPUs include integrated I/O peripherals, while MCUs do not.",
+        "B": "MPUs consist only of a CPU and require external memory, whereas MCUs combine CPU, memory, and I/O on one chip.",
+        "C": "MCUs are always 64‑bit, while MPUs are 32‑bit.",
+        "D": "MPUs are designed for embedded systems, MCUs are for desktop computers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The comparison table shows that an MPU is “CPU only; needs external memory” whereas an MCU is “CPU + memory + I/O on one chip” [Page 43].",
+      "source_pages": []
+    }
+  ]
+}

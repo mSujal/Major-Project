@@ -1,0 +1,147 @@
+{
+  "topic": "addressing modes 8086",
+  "generated_at": "2026-08-27T16:35:51",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements correctly describes the format of a direct‑addressing instruction in the 8086 as presented in the context?",
+      "options": {
+        "A": "The instruction consists of a 1‑byte opcode followed by a 1‑ or 2‑byte address field that specifies the effective address.",
+        "B": "The instruction consists of a 2‑byte opcode and the address is always implicit in the opcode.",
+        "C": "The instruction consists of a 1‑byte opcode followed by a register code that holds the address.",
+        "D": "The instruction consists of a 3‑byte opcode with the middle byte indicating the segment selector."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that a direct‑addressing instruction “specifies the effective address as part of instruction” and “the instruction size either 2‑bytes or 3‑bytes with first byte op‑code followed by 1 or 2 bytes of address of data” [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the example “LDA 9500H A [9500]” given on page 11, what does the value shown inside the brackets ( [9500] ) represent?",
+      "options": {
+        "A": "The segment register value used for the operation.",
+        "B": "The contents of memory location 9500H after the load.",
+        "C": "The effective (physical) address from which the data is fetched.",
+        "D": "The opcode of the LDA instruction."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The brackets enclose the effective address that the instruction refers to; the text explains that the address is part of the instruction in direct (absolute) addressing [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does register‑direct addressing differ from direct addressing according to the provided material?",
+      "options": {
+        "A": "Register‑direct uses a 2‑byte address field, while direct uses a 1‑byte field.",
+        "B": "Register‑direct specifies the operand location by a register name, whereas direct supplies a memory address in the instruction.",
+        "C": "Register‑direct always accesses the stack segment, while direct accesses data segment.",
+        "D": "Register‑direct requires an extra prefix byte that direct does not."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context lists “Register Direct addressing mode” separately from “Direct addressing mode”, implying that the former identifies the operand by a register, while the latter provides an explicit memory address [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The text calls direct addressing “absolute addressing”. Which reason best justifies this terminology?",
+      "options": {
+        "A": "Because the address is calculated relative to the current instruction pointer.",
+        "B": "Because the address value is fixed in the instruction and does not depend on any registers.",
+        "C": "Because it always uses the absolute value of the segment register.",
+        "D": "Because it requires an absolute‑value arithmetic operation before accessing memory."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Direct (absolute) addressing supplies the full effective address as part of the instruction, making the address independent of any register contents [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An 8086 instruction that uses direct addressing can be either 2 or 3 bytes long. Which situation would result in a 3‑byte instruction?",
+      "options": {
+        "A": "The opcode itself occupies two bytes.",
+        "B": "The effective address is specified with a 16‑bit (2‑byte) displacement.",
+        "C": "The instruction also includes a segment override prefix.",
+        "D": "The instruction accesses a register indirect address."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that the instruction size is “2‑bytes or 3‑bytes with first byte op‑code followed by 1 or 2 bytes of address of data”; a 2‑byte address yields a 3‑byte instruction [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Page 64 describes a memory map where even‑addressed bytes are stored in one 8 KB RAM chip and odd‑addressed bytes in another. Which addressing mode would most naturally be used to read a single byte located at address 80000H?",
+      "options": {
+        "A": "Direct (absolute) addressing.",
+        "B": "Register‑direct addressing.",
+        "C": "Immediate addressing.",
+        "D": "Relative addressing."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Accessing a specific memory location such as 80000H requires the effective address to be supplied in the instruction, which is the purpose of direct (absolute) addressing as described on page 11 and applied to the memory map on page 64.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "After reset the 8086 sets CS:IP to FFFF0H (page 65). Which addressing mode is used by the processor to fetch the first instruction at that address?",
+      "options": {
+        "A": "Direct (absolute) addressing.",
+        "B": "Register‑direct addressing.",
+        "C": "Implicit addressing (opcode contains the operand).",
+        "D": "Immediate addressing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The first instruction after reset is fetched from a fixed location given by the reset vector; the processor does not need an explicit address field in the instruction, which corresponds to implicit addressing rather than direct or register‑direct modes. The context mentions the reset vector but does not describe an addressing mode, so the best inference is that the operand location is implicit in the fetch operation.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When an instruction employs register‑direct addressing, where is the operand location indicated?",
+      "options": {
+        "A": "In the immediate data field following the opcode.",
+        "B": "In the Mod‑R/M byte that encodes a register number.",
+        "C": "In a 16‑bit address field placed after the opcode.",
+        "D": "In a segment‑override prefix preceding the opcode."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Register‑direct addressing means the operand is a register; the register is identified by bits in the Mod‑R/M byte (or equivalent) of the instruction, as implied by the definition of register‑direct mode on page 11.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The two examples “LDA 9500H A [9500]” and “IN 80H A [80]” illustrate direct (absolute) addressing. Which statement best explains the similarity between them?",
+      "options": {
+        "A": "Both use the same opcode byte.",
+        "B": "Both specify the effective address as part of the instruction.",
+        "C": "Both access the accumulator register directly.",
+        "D": "Both operate only on I/O ports."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Both examples show the address (9500H or 80H) embedded in the instruction, which is the defining characteristic of direct (absolute) addressing as described on page 11.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the description of direct addressing, which of the following statements is **incorrect**?",
+      "options": {
+        "A": "The effective address is encoded directly in the instruction.",
+        "B": "The instruction size can be 2 bytes when a 1‑byte address is used.",
+        "C": "Direct addressing requires the use of a segment register prefix.",
+        "D": "Direct addressing is also known as absolute addressing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Hard",
+      "explanation": "The context does not mention any need for a segment‑override prefix in direct addressing; it only states that the address is part of the instruction and can be 1 or 2 bytes long, making option C the incorrect statement [Page 11].",
+      "source_pages": []
+    }
+  ]
+}

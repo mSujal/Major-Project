@@ -1,0 +1,147 @@
+{
+  "topic": "software inspections",
+  "generated_at": "2026-08-26T22:41:41",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "What is a software inspection and how does it differ from testing in terms of execution requirements?",
+      "options": {
+        "A": "It is a dynamic technique that requires running the software to find defects.",
+        "B": "It is a static technique that does not require executing the software.",
+        "C": "It is a form of debugging performed after testing failures are identified.",
+        "D": "It is an automated tool that generates test cases from source code."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Software inspections are described as “static” V&V techniques where you don’t need to execute the software to verify it. [Page 38]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which artifacts can be examined during a software inspection?",
+      "options": {
+        "A": "Only the program source code.",
+        "B": "Requirements, design models, source code, and proposed system tests.",
+        "C": "Executable binaries and runtime logs.",
+        "D": "User manuals and marketing materials."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Inspections can analyze and check system requirements, design models, program source code, and even proposed system tests. [Page 38]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might an organization choose inspections over testing for detecting interface errors?",
+      "options": {
+        "A": "Inspections can automatically fix the detected errors.",
+        "B": "Inspections can concentrate on component interfaces without needing to run the software.",
+        "C": "Inspections are cheaper because they replace all testing activities.",
+        "D": "Inspections guarantee that no runtime errors will ever occur."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that inspections can be better for looking for interface errors because they can concentrate on component interfaces and assumed behavior during the inspection process. [Page 48]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What advantage of software inspections over testing is explicitly mentioned in the material?",
+      "options": {
+        "A": "Inspections guarantee 100 % defect removal.",
+        "B": "Inspections can be performed earlier in the development lifecycle.",
+        "C": "Inspections require less specialized knowledge than testing.",
+        "D": "Inspections eliminate the need for any subsequent testing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text lists three advantages of inspections over testing, one of which is that they can be applied at earlier stages of the process. [Page 38]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the Cleanroom process, what proportion of defects is claimed to be discoverable through program inspections?",
+      "options": {
+        "A": "About 50 %",
+        "B": "More than 70 %",
+        "C": "More than 90 %",
+        "D": "Nearly 100 %"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The Cleanroom process claims that more than 90 % of defects can be discovered in program inspections. [Page 39]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How do inspections contribute to verification according to the provided text?",
+      "options": {
+        "A": "By executing the software with a full set of test cases.",
+        "B": "By checking that the software meets its stated functional and non‑functional requirements without running it.",
+        "C": "By measuring performance metrics during runtime.",
+        "D": "By collecting user feedback after deployment."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Verification is defined as checking that software meets its requirements, and inspections are a static method to perform that checking without execution. [Page 37, Page 38]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best captures the role of knowledge about the application domain during an inspection?",
+      "options": {
+        "A": "It is unnecessary because inspections only focus on syntax errors.",
+        "B": "It helps the inspector discover errors in requirements, design, or code.",
+        "C": "It replaces the need for any formal inspection checklist.",
+        "D": "It is only relevant when inspecting user interface mock‑ups."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "When inspecting a system, you use knowledge of the system, its application domain, and the programming or modeling language to discover errors. [Page 38]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT a type of fault that testing aims to uncover, as described in the context?",
+      "options": {
+        "A": "System crashes.",
+        "B": "Unwanted interactions with other systems.",
+        "C": "Incorrect computations.",
+        "D": "Misaligned documentation formatting."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Testing seeks to find undesirable system behavior such as crashes, unwanted interactions, incorrect computations, and data corruption, but not documentation formatting issues. [Page 36]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the inspection process relate to the overall verification and validation (V&V) activities?",
+      "options": {
+        "A": "Inspections are the only V&V activity required before release.",
+        "B": "Inspections and testing support V&V at different stages of the software process.",
+        "C": "Inspections replace validation because they verify user expectations.",
+        "D": "Inspections are performed after all testing is completed."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that inspections and testing support V&V at different stages, indicating complementary roles. [Page 38]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why inspections are classified as “static” techniques?",
+      "options": {
+        "A": "They involve running the software with static input data.",
+        "B": "They analyze software artifacts without executing the program.",
+        "C": "They use static code analysis tools that automatically modify code.",
+        "D": "They focus only on static variables in the source code."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Inspections are described as static V&V techniques where you do not need to execute the software to verify it. [Page 38]",
+      "source_pages": []
+    }
+  ]
+}

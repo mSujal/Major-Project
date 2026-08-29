@@ -1,0 +1,147 @@
+{
+  "topic": "switching types",
+  "generated_at": "2026-08-26T23:04:13",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "questions": [
+    {
+      "question": "Considering a 1 Mbps link where each circuit‑switched channel requires 100 kbps, which analysis best explains why packet switching can support more than the 10 simultaneous users that circuit switching allows, given 35 users each active with probability 0.1?",
+      "options": {
+        "A": "Packet switching reserves a fixed 100 kbps per user, so the link can carry up to 35 × 0.1 = 3.5 Mbps.",
+        "B": "Packet switching dynamically shares the link; the chance that more than 10 users are active simultaneously is very low (≈0.0004), so the link can serve many users without reservation.",
+        "C": "Packet switching aggregates traffic into larger frames, effectively increasing the link bandwidth beyond 1 Mbps.",
+        "D": "Packet switching requires each user to be active 100 % of the time, which eliminates contention."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Packet switching does not allocate a fixed channel; it shares the link and the probability of >10 active users is ≈0.0004, allowing many users to share the same link (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly contrasts the resource allocation philosophy of circuit switching versus packet switching as described in the context?",
+      "options": {
+        "A": "Circuit switching assigns bandwidth on demand for each packet, while packet switching reserves a permanent path for the duration of a call.",
+        "B": "Circuit switching guarantees a dedicated 100 kbps channel per user, whereas packet switching treats bandwidth as a statistical resource shared among users.",
+        "C": "Both circuit and packet switching allocate fixed bandwidth per user, but packet switching uses larger packets.",
+        "D": "Packet switching provides a permanent virtual circuit, while circuit switching uses best‑effort delivery."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "Circuit switching reserves a fixed channel (10 users on a 1 Mbps link) whereas packet switching relies on statistical multiplexing (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the probability analysis provided, which scenario would most likely cause packet switching to perform worse than circuit switching on the same 1 Mbps link?",
+      "options": {
+        "A": "When the number of users increases to 100, each still active with probability 0.1.",
+        "B": "When each user’s activity probability rises to 0.9 while the number of users remains 35.",
+        "C": "When the link capacity is doubled to 2 Mbps but the number of users stays at 35.",
+        "D": "When the link is used exclusively for voice calls that require constant bitrate."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "A higher activity probability (0.9) raises the chance of many simultaneous users, increasing contention and making packet switching less reliable than a dedicated circuit (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which analysis best captures the trend described in the text regarding the adoption of switching technologies?",
+      "options": {
+        "A": "Circuit switching is expanding because it offers lower latency for all applications.",
+        "B": "Packet switching is being phased out in favor of circuit‑switched telephone networks.",
+        "C": "Both technologies are declining as new hybrid models replace them.",
+        "D": "The industry is moving toward packet switching, even for traditional telephone networks."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The text notes a clear migration toward packet switching, including in telephone networks (Page 31).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a network engineer must guarantee zero packet loss for a voice call, which switching method aligns best with that requirement according to the context, and why?",
+      "options": {
+        "A": "Packet switching, because it statistically multiplexes traffic and reduces collisions.",
+        "B": "Circuit switching, because it reserves a dedicated channel ensuring constant bandwidth.",
+        "C": "Packet switching, because it uses routers that can prioritize voice packets.",
+        "D": "Circuit switching, because it aggregates multiple voice streams into a single high‑capacity link."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Circuit switching provides a dedicated 100 kbps channel per user, guaranteeing the needed bandwidth (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the probability that a specific user is active (0.1) and 35 users share a packet‑switched link, which conclusion about link utilization is most accurate?",
+      "options": {
+        "A": "The link will be idle 90 % of the time because most users are inactive.",
+        "B": "The expected number of active users is 3.5, so the link is typically under‑utilized.",
+        "C": "The link will always be fully utilized because the sum of probabilities exceeds 1.",
+        "D": "The link’s utilization cannot be estimated without knowing packet sizes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "Expected active users = 35 × 0.1 = 3.5, indicating low average utilization (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly analyzes why a circuit‑switched link can only support 10 simultaneous users, while a packet‑switched link can statistically support more, based on the given bandwidth figures?",
+      "options": {
+        "A": "Circuit switching limits users to 10 because each needs 100 kbps, whereas packet switching compresses data to fit more users.",
+        "B": "Circuit switching assigns a fixed 100 kbps per user; packet switching allows users to share the 1 Mbps link dynamically, making the effective capacity higher under typical load.",
+        "C": "Packet switching increases the physical link speed beyond 1 Mbps through multiplexing, unlike circuit switching.",
+        "D": "Circuit switching uses larger frames that occupy more bandwidth, while packet switching uses smaller frames that reduce overhead."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Fixed allocation yields 10 users; dynamic sharing lets many more users share the link statistically (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a scenario where 35 users each generate bursts of traffic with probability 0.1, which analysis best explains the likelihood of encountering a congestion event on a packet‑switched link versus a circuit‑switched link?",
+      "options": {
+        "A": "Congestion is more likely on the circuit‑switched link because it cannot exceed 10 users.",
+        "B": "Congestion is less likely on the packet‑switched link because the probability of >10 concurrent bursts is only 0.0004.",
+        "C": "Both links have identical congestion probabilities because they share the same physical bandwidth.",
+        "D": "Congestion cannot be compared without knowing the exact packet size distribution."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The probability of 11+ active users is ≈0.0004, indicating low congestion risk for packet switching (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which analytical comparison accurately reflects the impact of switching type on the number of users that can be supported when the link bandwidth is fixed at 1 Mbps?",
+      "options": {
+        "A": "Circuit switching supports more users because it allocates bandwidth dynamically.",
+        "B": "Packet switching supports fewer users because it requires additional header overhead.",
+        "C": "Circuit switching caps users at the integer division of total bandwidth by per‑user bandwidth, while packet switching can exceed that cap through statistical multiplexing.",
+        "D": "Both switching types support the same number of users; the difference lies only in latency."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Circuit switching limits users to 10 (1 Mbps / 100 kbps); packet switching can exceed this via statistical multiplexing (Page 30).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the discussion of network core components, which analysis best distinguishes the functional role of a link‑layer switch from that of an IP router in the context of packet switching?",
+      "options": {
+        "A": "A link‑layer switch forwards packets based on IP addresses, while a router forwards based on Ethernet MAC addresses.",
+        "B": "Both devices perform identical functions; the distinction is purely hardware‑level.",
+        "C": "A link‑layer switch forwards frames using layer‑2 (MAC) addresses, whereas a router uses layer‑3 (IP) addresses, reflecting different layers in the network core.",
+        "D": "Routers are only used in circuit‑switched networks, while link‑layer switches are exclusive to packet‑switched networks."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The text notes routers implement IP (layer 3) and switches recognize layer 2 addresses (Page 52).",
+      "source_pages": []
+    }
+  ]
+}

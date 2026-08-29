@@ -1,0 +1,147 @@
+{
+  "topic": "general purpose processor control unit suboperations",
+  "generated_at": "2026-08-27T17:24:03",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which sub‑operation is performed first by the Control Unit when executing an instruction?",
+      "options": {
+        "A": "Operand fetch",
+        "B": "Instruction decode",
+        "C": "Instruction fetch",
+        "D": "Result store"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The first sub‑operation of the Control Unit is the instruction fetch, as stated in the MCQs on page 69.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During the instruction fetch sub‑operation, the Control Unit primarily interacts with which component of the processor?",
+      "options": {
+        "A": "Arithmetic Logic Unit (ALU)",
+        "B": "Main memory",
+        "C": "I/O devices",
+        "D": "Register file only"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context on page 69 notes that during instruction fetch the Control Unit mainly interacts with main memory.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which sub‑operation determines the specific operation the CPU should perform for a given instruction?",
+      "options": {
+        "A": "Operand fetch",
+        "B": "Instruction decode",
+        "C": "Execution",
+        "D": "Result store"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The decoding stage identifies the operation type; this is described on page 69 as the sub‑operation that “determines what operation the CPU should perform.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the Control Unit is in the operand‑fetch stage, which hardware element is most directly accessed to obtain the required data?",
+      "options": {
+        "A": "Register file",
+        "B": "ALU",
+        "C": "Main memory",
+        "D": "I/O devices"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Operand fetch retrieves operands that are typically stored in the register file; the context lists operand fetch as a distinct sub‑operation (page 69).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The result‑store sub‑operation most directly updates which part of the processor’s state?",
+      "options": {
+        "A": "ALU internal registers",
+        "B": "Main memory",
+        "C": "Register file",
+        "D": "Instruction cache"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Result store writes the computed result back to a destination, usually a register; this follows the description of result‑store on page 69.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Arrange the sub‑operations of the Control Unit in the correct chronological order for a typical instruction execution.",
+      "options": {
+        "A": "Instruction decode → Instruction fetch → Operand fetch → Execution → Result store",
+        "B": "Instruction fetch → Operand fetch → Instruction decode → Execution → Result store",
+        "C": "Instruction fetch → Instruction decode → Operand fetch → Execution → Result store",
+        "D": "Operand fetch → Instruction fetch → Instruction decode → Execution → Result store"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The standard sequence—fetch, decode, operand fetch, execution, store—is implied by the sub‑operations listed on page 69.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which sub‑operation is responsible for interpreting an immediate (constant) value that is embedded within the instruction itself?",
+      "options": {
+        "A": "Operand fetch",
+        "B": "Instruction decode",
+        "C": "Execution",
+        "D": "Result store"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Immediate constants are identified during decoding, which is the role of the instruction decode sub‑operation (page 69).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Before the CPU can read a data value from main memory, which preceding sub‑operation must already have been completed?",
+      "options": {
+        "A": "Instruction fetch",
+        "B": "Instruction decode",
+        "C": "Operand fetch",
+        "D": "Result store"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The fetch stage retrieves the instruction that specifies the memory access; therefore instruction fetch must precede any memory read (page 69).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The instruction decode sub‑operation primarily relies on which internal structure of the Control Unit?",
+      "options": {
+        "A": "Microcode ROM / control store",
+        "B": "Register file",
+        "C": "ALU",
+        "D": "Data bus"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Decoding is performed by the control logic, often implemented as a microcode ROM, as implied by the discussion of control‑unit operations (page 69).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the instruction‑fetch sub‑operation differ from the operand‑fetch sub‑operation in terms of its target memory?",
+      "options": {
+        "A": "Both access the same instruction memory block.",
+        "B": "Instruction fetch reads from main memory, while operand fetch reads from registers or data memory after decode.",
+        "C": "Instruction fetch writes to main memory, operand fetch reads from it.",
+        "D": "Both fetch data from I/O devices."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Instruction fetch obtains the instruction from main memory, whereas operand fetch retrieves the operands (often from registers) after decoding; this distinction is derived from the sub‑operation descriptions on page 69.",
+      "source_pages": []
+    }
+  ]
+}
