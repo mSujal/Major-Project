@@ -1,0 +1,147 @@
+{
+  "topic": "pipelining concept",
+  "generated_at": "2026-08-27T17:27:08",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which statement best captures the definition of pipelining as described in the provided material?",
+      "options": {
+        "A": "Executing a single instruction completely before starting the next one.",
+        "B": "Overlapping the execution of multiple instructions by dividing each into stages.",
+        "C": "Using multiple processors to run separate programs simultaneously.",
+        "D": "Storing instructions in a queue to be processed one after another."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Pipelining is defined as “a technique that allows overlapping of instruction execution by dividing it into stages” (Page 70).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, what is the primary principle behind using a pipeline in a processor?",
+      "options": {
+        "A": "To reduce the clock frequency of the processor.",
+        "B": "To increase the number of instructions executed per unit time (throughput).",
+        "C": "To simplify the control unit design by removing stages.",
+        "D": "To eliminate the need for a datapath."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The principle of pipelining is to enhance performance/throughput by overlapping instruction execution (Page 70).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following processor families is cited as having a 3–5 stage pipeline?",
+      "options": {
+        "A": "Intel Core i7",
+        "B": "AMD Ryzen",
+        "C": "ARM Cortex‑M4",
+        "D": "Motorola 68000"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The ARM Cortex‑M4 is mentioned as using a 3–5 stage pipeline (Page 70).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The text mentions that modern general‑purpose processors may have up to how many pipeline stages?",
+      "options": {
+        "A": "2–3 stages",
+        "B": "5–7 stages",
+        "C": "10–20+ stages",
+        "D": "More than 30 stages"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Intel Core i7 and AMD Ryzen are given as examples of processors with “10–20+ stage pipelines” (Page 70).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does pipelining improve the performance of a processor, as outlined on page 102?",
+      "options": {
+        "A": "By increasing the size of the instruction cache.",
+        "B": "By allowing multiple instruction stages to be processed simultaneously, thus raising throughput.",
+        "C": "By reducing the number of transistors required in the datapath.",
+        "D": "By executing each instruction in a single clock cycle."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Implementing a pipeline improves performance by overlapping instruction stages, which raises the overall throughput (Page 102).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What type of pipeline hazard is specifically addressed by the “forwarding” solution mentioned on page 76?",
+      "options": {
+        "A": "Structural hazard",
+        "B": "Control hazard",
+        "C": "Data hazard",
+        "D": "Power hazard"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Forwarding is a technique used to resolve data hazards that arise when an instruction depends on the result of a previous instruction still in the pipeline (Page 76).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of pipelining, what does the term “forwarding” accomplish?",
+      "options": {
+        "A": "It allows the processor to skip idle stages and save power.",
+        "B": "It sends the result of an instruction directly to a dependent instruction without waiting for it to write back to the register file.",
+        "C": "It rearranges the instruction order to avoid hazards.",
+        "D": "It increases the clock speed of the pipeline stages."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Forwarding “modifies” the normal data path so that a later instruction can receive the needed data directly from an earlier stage, eliminating the stall caused by a data hazard (Page 76).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which form of parallelism does pipelining represent according to the material?",
+      "options": {
+        "A": "Instruction‑level parallelism (ILP) only.",
+        "B": "Data parallelism across multiple cores.",
+        "C": "Temporal parallelism achieved by overlapping instruction stages.",
+        "D": "Spatial parallelism through duplicated hardware units."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Pipelining is listed under “Parallelism” as a technique that overlaps instruction execution, i.e., temporal parallelism (Page 70).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the description on page 70, which of the following outcomes is NOT a direct benefit of pipelining?",
+      "options": {
+        "A": "Higher instruction throughput.",
+        "B": "Reduced overall execution latency for a single instruction.",
+        "C": "Ability to use more stages to improve clock frequency.",
+        "D": "Overlapping of instruction execution phases."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "While pipelining raises throughput and overlaps stages, it does not necessarily reduce the latency of a single instruction; each instruction still passes through all stages (Page 70).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a processor implements a 5‑stage pipeline as described in the context, which of the following statements would correctly describe its operation?",
+      "options": {
+        "A": "All five stages must complete before the next instruction can enter the pipeline.",
+        "B": "Each instruction occupies a unique stage at any given clock cycle, allowing up to five instructions to be in different stages simultaneously.",
+        "C": "Only the fetch stage is overlapped; the remaining stages execute sequentially.",
+        "D": "The pipeline can only process five instructions in total before it must be flushed."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "In a multi‑stage pipeline, different instructions occupy different stages concurrently, so up to five instructions can be processed simultaneously in a 5‑stage pipeline (implicit from the definition of overlapping stages, Page 70).",
+      "source_pages": []
+    }
+  ]
+}

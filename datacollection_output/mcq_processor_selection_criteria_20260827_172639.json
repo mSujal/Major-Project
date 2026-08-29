@@ -1,0 +1,147 @@
+{
+  "topic": "processor selection criteria",
+  "generated_at": "2026-08-27T17:26:39",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "When deciding between using a microprocessor (MPU) and a microcontroller (MCU) for an embedded application, which consideration from the provided context most directly influences the need for external memory?",
+      "options": {
+        "A": "MPU provides only the CPU and therefore requires external memory, while MCU integrates CPU, memory, and I/O on one chip.",
+        "B": "MPU typically runs at a higher clock frequency than MCU.",
+        "C": "MCU supports a wider instruction set than MPU.",
+        "D": "MPU is always benchmarked by EEMBC while MCU is not."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The comparison table shows that an MPU is “CPU only; needs external memory” whereas an MCU includes memory on‑chip, making external memory a key selection factor. [Page 43]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following performance factors listed in the context must be considered when estimating the MIPS rating of a processor?",
+      "options": {
+        "A": "Clock frequency, CPI, instruction set, program behavior, and microarchitecture.",
+        "B": "Number of I/O pins, external memory size, and power supply voltage.",
+        "C": "Type of sensors used in the embedded system.",
+        "D": "Presence of a benchmark consortium such as EEMBC."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly states that “MIPS depends on clock frequency, CPI, instruction set, program behavior, and processor microarchitecture.” [Page 100]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the design flow for a general‑purpose processor, what is the first activity that must be performed according to the context?",
+      "options": {
+        "A": "Defining the instruction set.",
+        "B": "Selecting the physical package type.",
+        "C": "Choosing a development board.",
+        "D": "Writing device drivers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The design process “begins with choosing or defining the instruction set” before any other steps. [Page 105]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which reason, based on the context, would most justify selecting a domain‑specific processor such as a DSP or ASIP over a general‑purpose processor?",
+      "options": {
+        "A": "The application requires optimized performance for a particular computational domain.",
+        "B": "The design needs the smallest possible silicon area regardless of performance.",
+        "C": "The system must support the widest possible range of instruction formats.",
+        "D": "The processor must be compatible with any operating system."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Domain‑specific processors are described as “Optimized for a particular application or domain,” making them preferable when that optimization is needed. [Page 40]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the 16‑bit instruction size mentioned in the design considerations affect the overall processor design?",
+      "options": {
+        "A": "It determines the width of the instruction register and influences memory organization and register width.",
+        "B": "It forces the processor to operate at a fixed 16 MHz clock.",
+        "C": "It limits the number of I/O ports that can be used.",
+        "D": "It requires the use of a 16‑bit external bus only."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context links the 16‑bit instruction size to “memory organization and register width” and specifies a 16‑bit IR. [Page 106]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which benchmark consortium mentioned in the context is described as the “Gold Standard for specialized chips” and would be relevant when evaluating a processor for a specific application domain?",
+      "options": {
+        "A": "EEMBC.",
+        "B": "IEEE.",
+        "C": "ACM.",
+        "D": "ISO."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The table identifies EEMBC as “The Gold Standard for specialized chips (Car, Phone, IoT).” [Page 100]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For an IoT device that must minimize board space and power consumption, which selection criterion derived from the context is most pertinent?",
+      "options": {
+        "A": "Choosing a microcontroller (MCU) that integrates CPU, memory, and I/O on a single chip.",
+        "B": "Selecting a processor with the highest possible clock frequency.",
+        "C": "Using a general‑purpose processor with a 32‑bit instruction set.",
+        "D": "Prioritizing a processor that has been benchmarked by EEMBC for automotive use."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The MCU’s integration of CPU, memory, and I/O reduces external components, aiding space and power savings. [Page 43]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "After defining the instruction set for a general‑purpose processor, which design artifact is created next according to the context?",
+      "options": {
+        "A": "A Finite‑State Machine with Datapath (FSMD).",
+        "B": "A printed circuit board layout.",
+        "C": "An operating system kernel.",
+        "D": "A power‑management unit."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The process description states that after the instruction set, “creating an FSMD (Finite‑State Machine with Datapath)” follows. [Page 105]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements about the Instruction Register (IR) width is supported by the context?",
+      "options": {
+        "A": "A 16‑bit IR aligns with a 16‑bit instruction size, influencing datapath design.",
+        "B": "The IR width determines the maximum number of external interrupts.",
+        "C": "A wider IR always reduces the clock frequency.",
+        "D": "The IR width is unrelated to the instruction size."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The design considerations list a “16‑bit Instruction Register (IR)” alongside a 16‑bit instruction size, implying they are matched. [Page 106]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which factor would *not* directly affect the MIPS rating of a processor?",
+      "options": {
+        "A": "The type of external sensors connected to the system.",
+        "B": "Clock frequency.",
+        "C": "CPI (Cycles Per Instruction).",
+        "D": "Instruction set architecture."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "MIPS is said to depend on clock frequency, CPI, instruction set, program behavior, and microarchitecture, but not on external sensors. [Page 100]",
+      "source_pages": []
+    }
+  ]
+}

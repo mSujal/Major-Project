@@ -1,0 +1,147 @@
+{
+  "topic": "addressing modes 8085",
+  "generated_at": "2026-08-27T14:06:18",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the Direct addressing mode of the 8085 as presented in the text?",
+      "options": {
+        "A": "The opcode alone determines the operand’s location.",
+        "B": "The effective address is included as part of the instruction, following the opcode.",
+        "C": "The operand is taken from a register specified in the opcode.",
+        "D": "The operand value is encoded directly after the opcode without any address."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Direct addressing “specifies the effective address as part of instruction” and may be 2‑ or 3‑byte long with the address bytes following the opcode [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the 8085, which addressing mode results in a 2‑byte instruction when the operand is an 8‑bit constant?",
+      "options": {
+        "A": "Direct addressing mode",
+        "B": "Register Direct addressing mode",
+        "C": "Immediate addressing mode",
+        "D": "Implicit addressing mode"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Immediate mode “the operand position is the immediate data. For 8‑bit data, instruction size is 2 bytes” [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The instruction **MVI A, 32H** uses which addressing mode, and why?",
+      "options": {
+        "A": "Direct addressing, because it contains a memory address.",
+        "B": "Register Direct addressing, because it operates on register A.",
+        "C": "Immediate addressing, because the constant 32H is embedded in the instruction.",
+        "D": "Implicit addressing, because no operand is specified."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The example given for Immediate mode is “MVI A, 32H”, where the constant is part of the instruction itself [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following instructions exemplifies Register Direct addressing mode in the 8085?",
+      "options": {
+        "A": "LDA 9500H",
+        "B": "MVI B, 5AH",
+        "C": "EI",
+        "D": "STA 8000H"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text lists EI (Enable Interrupt) and DI (Disable Interrupt) under Register Direct addressing mode, where the operation is performed directly on a register or internal flag [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An instruction occupies three bytes and contains a 16‑bit address field. Which addressing mode is it most likely using?",
+      "options": {
+        "A": "Immediate addressing mode",
+        "B": "Register Direct addressing mode",
+        "C": "Direct (absolute) addressing mode",
+        "D": "Implicit addressing mode"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Direct addressing “may be 2‑ or 3‑byte” with a 16‑bit address following the opcode, as shown in the LDA example [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is Direct addressing also called **absolute addressing** in the 8085?",
+      "options": {
+        "A": "Because the address is computed at run‑time using registers.",
+        "B": "Because the address is fixed in the instruction itself.",
+        "C": "Because it always accesses the accumulator.",
+        "D": "Because it uses an implicit address supplied by the CPU."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states “This type of addressing is called absolute addressing” because the effective address is explicitly given in the instruction [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the instruction **LDA 9500H**, which component provides the effective memory address?",
+      "options": {
+        "A": "The opcode “LDA”",
+        "B": "The accumulator register",
+        "C": "The 16‑bit constant “9500H” that follows the opcode",
+        "D": "The status register"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The address part “9500H” is the operand that specifies the effective address in Direct (absolute) mode [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which addressing mode would be appropriate for an instruction that simply enables interrupts, such as **EI**?",
+      "options": {
+        "A": "Immediate addressing mode",
+        "B": "Register Direct addressing mode",
+        "C": "Direct addressing mode",
+        "D": "Register Indirect addressing mode"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "EI is listed under Register Direct addressing mode, where the operation directly affects a control flag/register [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For an 8‑bit constant operand, which addressing mode yields the smallest possible instruction size in the 8085?",
+      "options": {
+        "A": "Direct addressing mode",
+        "B": "Immediate addressing mode",
+        "C": "Register Direct addressing mode",
+        "D": "Implicit addressing mode"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Immediate mode encodes the constant within the instruction, producing a 2‑byte instruction for 8‑bit data, which is the smallest among the listed modes [Page 11].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which pairing correctly matches an addressing mode with an example given in the context?",
+      "options": {
+        "A": "Direct – **MVI A, 32H**",
+        "B": "Immediate – **LDA 9500H**",
+        "C": "Register Direct – **EI**",
+        "D": "Register Indirect – **DI**"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context pairs EI (Enable Interrupt) with Register Direct addressing mode, while the other pairings are mismatched [Page 12 for Register Direct; Page 11 for Direct and Immediate].",
+      "source_pages": []
+    }
+  ]
+}

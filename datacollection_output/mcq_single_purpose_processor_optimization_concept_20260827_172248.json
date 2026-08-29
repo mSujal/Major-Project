@@ -1,0 +1,147 @@
+{
+  "topic": "single purpose processor optimization concept",
+  "generated_at": "2026-08-27T17:22:48",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "How is “optimization” best defined for a single‑purpose processor according to the provided material?",
+      "options": {
+        "A": "Making the processor programmable after fabrication",
+        "B": "Tailoring the fixed hardware so that it executes one dedicated task very quickly and with low power use",
+        "C": "Adding a large instruction set to support many applications",
+        "D": "Integrating external memory to expand capability"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Optimization for a single‑purpose processor means the hardware is fixed and tuned for a specific operation, yielding very fast and power‑efficient performance (see Page 44).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which parameters are explicitly mentioned as being considered when optimizing a single‑purpose processor?",
+      "options": {
+        "A": "Flexibility, cost, and instruction‑set size",
+        "B": "Execution speed for the dedicated task, power consumption, and dedicated functionality",
+        "C": "Number of cores, cache size, and operating‑system support",
+        "D": "Wireless connectivity, display resolution, and battery life"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that a single‑purpose processor is “very fast and power‑efficient for that single function,” indicating speed and power as key optimization parameters (see Page 44).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Compared with a general‑purpose processor, the performance of a single‑purpose processor is described as:",
+      "options": {
+        "A": "Slower but more flexible",
+        "B": "Very fast and power‑efficient for its single function",
+        "C": "Moderately fast with average power use",
+        "D": "Always lower in power consumption but also lower in speed"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 44 notes the high speed and power efficiency of a single‑purpose processor, whereas Page 41 describes general‑purpose processors as having “moderate” performance.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best characterizes the design approach of a single‑purpose processor?",
+      "options": {
+        "A": "It uses programmable microcode to support many tasks.",
+        "B": "Its hardware is fixed and optimized for a specific operation.",
+        "C": "It relies on external memory for instruction storage.",
+        "D": "It employs a complex instruction set for versatility."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The design description for a single‑purpose processor emphasizes “hardware is fixed and optimized for that specific operation” (Page 44).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The motor‑controller unit cited as an example of a single‑purpose processor is efficient mainly because:",
+      "options": {
+        "A": "It can run multiple applications after fabrication.",
+        "B": "Its hardware is fixed and tailored specifically to motor‑control tasks.",
+        "C": "It includes a large on‑chip cache.",
+        "D": "Its clock frequency can vary widely during operation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The example (motor‑controller unit) is listed under single‑purpose processors, whose efficiency derives from dedicated, fixed hardware (Page 44).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why does the text describe a general‑purpose processor as a “programmable single‑purpose processor”?",
+      "options": {
+        "A": "Because it has a fixed instruction set.",
+        "B": "Because it executes a stored sequence of instructions, similar to a single‑purpose processor that runs a dedicated program.",
+        "C": "Because it cannot be reprogrammed after fabrication.",
+        "D": "Because it lacks external I/O."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 105 explains that a GPP “executes a sequence of instructions stored in program memory,” making it essentially a programmable single‑purpose processor.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "To improve power‑efficiency of a single‑purpose processor, which design change aligns with the optimization concept described?",
+      "options": {
+        "A": "Adding more programmable registers.",
+        "B": "Removing or simplifying logic that is not required for the dedicated task.",
+        "C": "Expanding the instruction set breadth.",
+        "D": "Incorporating a general‑purpose operating system."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Since optimization relies on fixed, task‑specific hardware (Page 44), eliminating unnecessary logic directly enhances power efficiency.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following examples from the context best illustrates a single‑purpose processor optimized for a specific function?",
+      "options": {
+        "A": "Intel Atom",
+        "B": "ARM Cortex‑A",
+        "C": "JPEC codec in a camera",
+        "D": "Atmega328P"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The JPEC codec is explicitly listed as an example of a single‑purpose processor (Page 44).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The statement “Not programmable after fabrication” for single‑purpose processors implies which effect on the optimization process?",
+      "options": {
+        "A": "Post‑fabrication software updates can improve performance.",
+        "B": "All optimization must be completed during hardware design, before fabrication.",
+        "C": "The processor can readily run multiple operating systems.",
+        "D": "Larger external memory is required to compensate for lack of flexibility."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 44 notes the lack of post‑fabrication programmability, meaning optimization decisions are fixed at design time.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which metric would be the least appropriate for evaluating the optimization of a single‑purpose processor, based on the context?",
+      "options": {
+        "A": "Execution speed for its dedicated task",
+        "B": "Power consumption during operation",
+        "C": "Ability to run arbitrary software applications",
+        "D": "Hardware area devoted to the specific function"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Single‑purpose processors are described as “Not programmable after fabrication” (Page 44), so their ability to run arbitrary applications is not a relevant optimization metric.",
+      "source_pages": []
+    }
+  ]
+}

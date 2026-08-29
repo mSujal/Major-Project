@@ -1,0 +1,147 @@
+{
+  "topic": "programmers view software development",
+  "generated_at": "2026-08-27T17:25:35",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the programmer’s view of a processor according to the provided material?",
+      "options": {
+        "A": "Detailed knowledge of the internal datapath and control signals is required.",
+        "B": "Understanding the exact timing of each clock cycle is essential.",
+        "C": "Knowing which instructions can be executed and the available registers is sufficient.",
+        "D": "Familiarity with the physical layout of the chip’s transistors is necessary."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that a programmer “doesn’t need detailed understanding of architecture” and “needs to know what instructions can be executed” along with registers and PC. [Page 88]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the programmer’s consideration section, which component acts as the interface between hardware and software?",
+      "options": {
+        "A": "Program Counter (PC)",
+        "B": "Status Flags",
+        "C": "Instruction Set Architecture (ISA)",
+        "D": "Memory Address Register"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "ISA is explicitly described as “Interface between hardware & software.” [Page 89]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a programmer writes code for an 8051 microcontroller using assembly language, which of the following elements directly reflects the “two levels of instructions” mentioned in the text?",
+      "options": {
+        "A": "Machine code and microcode",
+        "B": "Assembly level and structured languages such as C",
+        "C": "High‑level synthesis and RTL description",
+        "D": "Firmware and bootloader code"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text lists the two levels as “Assembly level” and “Structured languages (C, C++, Java, etc.).” [Page 88]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly explains the role of status flags from a programmer’s viewpoint?",
+      "options": {
+        "A": "They store the next instruction address.",
+        "B": "They indicate the result of the most recent arithmetic or logical operation.",
+        "C": "They hold temporary data for loop counters.",
+        "D": "They map directly to external I/O ports."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Status flags such as Zero, Carry, Overflow are described as indicating conditions resulting from operations. [Page 89]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the software development process described for embedded systems, what is the first major step after choosing or defining the instruction set?",
+      "options": {
+        "A": "Designing the control unit FSM",
+        "B": "Creating a Finite‑State Machine with Datapath (FSMD)",
+        "C": "Implementing the memory hierarchy",
+        "D": "Writing high‑level application code"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The process “begins with choosing or defining the instruction set, followed by creating an FSMD.” [Page 105]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of the design flow for a general‑purpose processor, which of the following best reflects the relationship between the datapath and the control unit?",
+      "options": {
+        "A": "The control unit is designed first, then the datapath is derived from it.",
+        "B": "The datapath components are designed and connected to the control unit before the controller/FSM is developed.",
+        "C": "The datapath and control unit are merged into a single monolithic block.",
+        "D": "The control unit operates independently of the datapath."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "After FSMD, “the datapath components are designed and connected to the control unit, and finally, the controller/FSM is developed.” [Page 105]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures why a programmer does not need to understand the detailed architecture of a processor?",
+      "options": {
+        "A": "Because modern compilers automatically optimize all code.",
+        "B": "Because the processor’s clock speed is irrelevant to software.",
+        "C": "Because the programmer only interacts through the ISA, registers, and PC.",
+        "D": "Because hardware bugs are fixed by the operating system."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that the programmer “doesn’t need detailed understanding of architecture” and interacts via “instructions, registers, and memory.” [Page 89]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When developing software for an embedded system, which of the following sequences aligns with the described development process?",
+      "options": {
+        "A": "Write high‑level code → Choose ISA → Simulate → Deploy",
+        "B": "Choose ISA → Create FSMD → Design datapath → Develop controller/FSM",
+        "C": "Define memory map → Write assembly → Test on emulator → Optimize",
+        "D": "Select microcontroller → Configure I/O pins → Write C code → Debug"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The process outlined is ISA selection, FSMD creation, datapath design, then controller/FSM development. [Page 105]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the programmer’s view, which of the following is NOT a primary element the programmer interacts with?",
+      "options": {
+        "A": "Instruction Set Architecture (ISA)",
+        "B": "Program Counter (PC)",
+        "C": "Physical transistor layout",
+        "D": "Status Flags"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context lists ISA, registers, PC, and status flags as interaction points, while transistor layout is not mentioned. [Page 89]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the embedded system design flow, which component is most directly responsible for executing the sequence of instructions defined by the programmer?",
+      "options": {
+        "A": "The FSMD’s datapath",
+        "B": "The emulator used for testing",
+        "C": "The high‑level language compiler",
+        "D": "The external I/O peripheral bus"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The datapath, once connected to the control unit, executes the instruction sequence defined by the ISA, reflecting the programmer’s view. [Page 105]",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "risc cisc",
+  "generated_at": "2026-08-27T16:42:37",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which of the following is NOT listed as a characteristic of RISC processors in the given material?",
+      "options": {
+        "A": "They use a small set of instructions to simplify hardware design.",
+        "B": "They are preferred for scientific and research‑oriented tasks where speed is critical.",
+        "C": "They require many clock cycles to execute a single instruction.",
+        "D": "They include examples such as the MIPS R4400SC and SuperSPARC."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that RISC focuses on a small instruction set, simplifies hardware, and is used where speed is an apex issue; it does not mention many cycles per instruction (that describes CISC) [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the text, which type of applications is a CISC processor most suitable for?",
+      "options": {
+        "A": "High‑performance scientific computing where execution speed is paramount.",
+        "B": "General‑purpose applications where processor speed is not the primary concern.",
+        "C": "Embedded digital signal processing requiring fixed‑length instructions.",
+        "D": "Real‑time systems that demand minimal hardware complexity."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that CISC machines are preferable where speed is not the prime issue and general applications are to be handled [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which processor mentioned in the context is an example of a RISC‑based system?",
+      "options": {
+        "A": "Intel 8086",
+        "B": "MIPS R4400SC",
+        "C": "IBM PC/AT (based on 80286)",
+        "D": "Motorola 68000"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text lists R4400SC from MIPS among RISC‑based systems [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a design goal is to minimize hardware complexity while achieving high instruction‑execution speed, which architecture aligns best with that goal according to the passage?",
+      "options": {
+        "A": "CISC, because its complex instructions reduce the number of required cycles.",
+        "B": "RISC, because its reduced instruction set simplifies hardware and improves performance.",
+        "C": "Both RISC and CISC equally satisfy this goal.",
+        "D": "Neither; the goal requires a hybrid architecture not described."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The RISC description emphasizes a small instruction set that simplifies hardware and improves processor performance, directly matching the goal [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly contrasts the instruction‑cycle characteristics of RISC and CISC as described in the material?",
+      "options": {
+        "A": "RISC instructions typically require many cycles, whereas CISC instructions complete in a single cycle.",
+        "B": "Both RISC and CISC instructions generally need the same number of cycles.",
+        "C": "RISC instructions usually need fewer cycles per instruction, while CISC instructions need more cycles.",
+        "D": "CISC instructions are always shorter than RISC instructions, leading to fewer cycles."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that CISC machines have complex instructions that need a large number of cycles, implying RISC uses fewer cycles per instruction [Pages 93‑94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a scenario where reducing the overall cost of hardware is a primary concern, which architecture does the passage indicate is being adopted to meet that need?",
+      "options": {
+        "A": "CISC, because its complex instructions lower manufacturing expenses.",
+        "B": "RISC, because it is replacing CISC due to reduced hardware price.",
+        "C": "Neither; cost is unrelated to instruction set design.",
+        "D": "Both, through a mixed‑instruction approach."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context states that RISC machines are replacing CISC now due to reduced hardware price [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following groups correctly lists two examples of RISC processors given in the text?",
+      "options": {
+        "A": "8085, 8086",
+        "B": "PA7100, PowerPC",
+        "C": "80286, 80386",
+        "D": "Intel 8051, Zilog Z80"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage lists PA7100 from HP and PowerPC from Apple, IBM, Motorola as RISC‑based systems [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For a personal computer intended for everyday office work, which architecture does the passage suggest is most commonly used?",
+      "options": {
+        "A": "RISC, because office applications demand the highest possible speed.",
+        "B": "CISC, because most personal computers today are based on CISC.",
+        "C": "RISC, due to its lower cost of implementation.",
+        "D": "Neither; modern PCs use a completely different architecture."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that most personal computers used today are based on CISC architecture [Page 94].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best reflects the trade‑off between RISC and CISC highlighted in the material?",
+      "options": {
+        "A": "RISC offers lower speed but higher hardware complexity; CISC offers higher speed with simpler hardware.",
+        "B": "RISC prioritizes speed and hardware simplicity at the expense of price; CISC accepts slower speed for broader application support.",
+        "C": "RISC reduces hardware price and is favored where speed is critical; CISC is chosen where speed is less important and general‑purpose use is needed.",
+        "D": "RISC and CISC have no distinguishable trade‑offs; they are interchangeable."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The passage describes RISC as being used where speed is apex and hardware price is reduced, while CISC is preferable where speed is not prime and general applications are handled [Pages 94‑95].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement accurately compares the typical instruction length implication for RISC versus CISC based on the context?",
+      "options": {
+        "A": "The text explicitly states that RISC instructions are always 1 byte long, whereas CISC instructions are variable‑length.",
+        "B": "The passage mentions 1‑byte instructions only in the context of digital signal processors, not directly linking them to RISC or CISC.",
+        "C": "RISC uses longer, complex instructions; CISC uses short, simple instructions.",
+        "D": "Both RISC and CISC use fixed‑length instructions of identical size."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The only reference to a 1‑byte instruction appears in a separate digital‑signal‑processor description; the text does not assign this to RISC or CISC, so the correct observation is that the mention is unrelated to the RISC/CISC comparison [Page 24].",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "timing diagram bus operations",
+  "generated_at": "2026-08-27T16:21:17",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "In the timing sequence described for a synchronous read operation, which of the following correctly lists the order of signal phases as presented in the text?",
+      "options": {
+        "A": "T → Ts → To → Ty → Ts",
+        "B": "T → To → Ts → Ty → Ts",
+        "C": "To → T → Ty → Ts → Ts",
+        "D": "T → Ty → To → Ts → Ts"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text lists the phases as “T, To, Ts, Ty, Ts” for a synchronous read operation, indicating that the order is T → To → Ts → Ty → Ts. [Page 43]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For an asynchronous read operation, which sequence of signals correctly reflects the order described in the context?",
+      "options": {
+        "A": "Read → Address → Data Bus → MSYNC → SSYNC",
+        "B": "Read → MSYNC → Address → Data Bus → SSYNC",
+        "C": "Read → Address → MSYNC → Data Bus → SSYNC",
+        "D": "Address → Read → MSYNC → SSYNC → Data Bus"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The asynchronous read description lists “Read, Address, MSYNC, Data Bus, SSYNC” as the order of events. [Page 44]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best defines a synchronous bus as contrasted with an asynchronous bus, based on the given material?",
+      "options": {
+        "A": "A synchronous bus relies on hand‑shaking signals such as MSYNC and SSYNC to coordinate data transfer.",
+        "B": "A synchronous bus uses a common clock signal to align all transfers, while an asynchronous bus uses separate control signals for coordination.",
+        "C": "A synchronous bus transmits data only after a LOCK signal is asserted low.",
+        "D": "A synchronous bus allows multiple masters to access the bus simultaneously without arbitration."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that a synchronous operation is tied to a clock (“Clock” appears in the synchronous timing description), whereas the asynchronous operation uses explicit control signals (MSYNC, SSYNC) for coordination. [Pages 43‑44]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If the LOCK output pin is observed to be low during a bus cycle, what does this indicate about bus‑master activity?",
+      "options": {
+        "A": "The current master must release the bus immediately.",
+        "B": "No other system bus master will be allowed to gain control of the bus.",
+        "C": "The bus is operating in asynchronous mode.",
+        "D": "The address bus is being held in a high‑impedance state."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The text states that the LOCK signal “indicates that other system bus master will be prevented from gaining the system bus, while the LOCK signal is low.” [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When a local bus master asserts the RQ/GT0 request line, what is the expected response from the processor in maximum mode?",
+      "options": {
+        "A": "The processor immediately grants bus control to the requesting master.",
+        "B": "The processor ignores the request until the next clock edge.",
+        "C": "The processor releases the local bus at the end of its current bus cycle.",
+        "D": "The processor raises the LOCK signal to block further requests."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context notes that RQ/GT0, RQ/GT1 “are used by the other local bus master … to force the processor to release the local bus at the end of the processor current bus cycle.” [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A microcomputer employs a 32‑line data bus. During a single bus cycle, how many bytes can be transferred simultaneously?",
+      "options": {
+        "A": "2 bytes",
+        "B": "4 bytes",
+        "C": "8 bytes",
+        "D": "16 bytes"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Each line carries one bit; 32 bits equal 4 bytes (32 ÷ 8 = 4). The text explains that the number of lines represents the number of bits transferred simultaneously. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component is explicitly mentioned as being capable of performing “cycle stealing” to take control of the bus for a bus cycle?",
+      "options": {
+        "A": "The LOCK pin",
+        "B": "The address decoder",
+        "C": "A DMA controller",
+        "D": "The system clock generator"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The passage on page 80 states that “the components capable of becoming masters are processors … and DMA controllers,” and that taking control of the bus is called cycle stealing. [Page 80]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the system bus structure, the Acknowledge signal belongs to which group of lines?",
+      "options": {
+        "A": "Data bus lines",
+        "B": "Address bus lines",
+        "C": "Control bus lines",
+        "D": "Power supply lines"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text groups bus lines into three categories, and signals such as “Acknowledge” are control signals, thus part of the control bus. [Page 43]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During a synchronous read operation, after the address has been placed on the address bus, which signal’s assertion indicates that the data placed on the data bus is now valid for the CPU to read?",
+      "options": {
+        "A": "The Clock signal",
+        "B": "The READ signal",
+        "C": "The Acknowledge signal",
+        "D": "The LOCK signal"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The synchronous timing description lists “Read … Address … Data Bus … Acknowledge Signal,” implying that the acknowledgment follows the data placement to signal valid data. [Page 43]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In an asynchronous read operation, what is the primary purpose of the SSYNC signal as described in the context?",
+      "options": {
+        "A": "To generate the system clock for the operation.",
+        "B": "To indicate that the address phase has completed and data may be transferred.",
+        "C": "To lock the bus so that no other master can intervene.",
+        "D": "To request bus access from other masters."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The asynchronous sequence includes “MSYNC” and “SSYNC”; by convention (and as implied by the order), SSYNC follows the data phase, signaling that the address phase is finished and the system can proceed with data transfer. The text lists SSYNC after the Data Bus, confirming its role in synchronization. [Page 44]",
+      "source_pages": []
+    }
+  ]
+}

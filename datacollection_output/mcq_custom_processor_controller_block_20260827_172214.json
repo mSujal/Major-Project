@@ -1,0 +1,147 @@
+{
+  "topic": "custom processor controller block",
+  "generated_at": "2026-08-27T17:22:14",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "You are tasked with creating a controller block for a custom single‑purpose processor that will replace an analog temperature‑compensation circuit. Which design benefit from the provided context should you primarily emphasize to justify using a software‑based controller?",
+      "options": {
+        "A": "Higher clock speed than MPUs",
+        "B": "Ability to upgrade control logic without hardware changes",
+        "C": "Lower power consumption than MCUs",
+        "D": "Compatibility with Ethernet networking"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context states that software control “can be upgraded or modified easily (change gains, modes, or algorithms without hardware changes)” and replaces expensive analog hardware [Page 178].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing the FSM for a dual‑purpose processor that handles both signal filtering and AES encryption, which design step should be performed immediately after defining the instruction set according to the design process described?",
+      "options": {
+        "A": "Selecting the external memory type",
+        "B": "Creating an FSMD (Finite‑State Machine with Datapath)",
+        "C": "Programming the operating system",
+        "D": "Choosing the packaging technology"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The design flow lists “choosing or defining the instruction set, followed by creating an FSMD” as the next step [Page 105].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the controller block of a custom processor intended for motor‑control (an SSP), which of the following components is most likely to be part of the datapath that the control unit will orchestrate?",
+      "options": {
+        "A": "General‑purpose registers only",
+        "B": "Dedicated PWM generator and ADC interface",
+        "C": "Ethernet MAC controller",
+        "D": "High‑level OS scheduler"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Domain‑specific processors such as motor‑control ICs include specialized functional blocks; the controller must manage these datapath elements, as implied by the description of SSP/SPP processors for motor control [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Suppose you need to adapt the controller of a custom processor to compensate for aging effects in a plant. Which characteristic from the context allows you to implement this adaptation without redesigning hardware?",
+      "options": {
+        "A": "Fixed instruction set architecture",
+        "B": "Programmability of control logic",
+        "C": "Use of external SRAM only",
+        "D": "Integration of a DSP core"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context highlights “Programmability – Control logic can be upgraded or modified easily… Adaptability can automatically adjust to changes in the plant” [Page 178].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "You are drawing a block diagram for a controller of a single‑purpose processor that implements an AES encryption engine. Which of the following connections is essential according to the controller‑datapath relationship described?",
+      "options": {
+        "A": "Direct link from controller to external flash memory only",
+        "B": "Control signals from the controller to the encryption datapath units (e.g., substitution boxes)",
+        "C": "Bidirectional bus between controller and Wi‑Fi module",
+        "D": "No connection; the controller operates independently of the datapath"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The controller/FSM “is developed” after datapath components are designed and connected to the control unit, implying control signals must drive the encryption datapath [Page 105].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When comparing an MPU (e.g., Intel Atom) with an MCU (e.g., STM32) for implementing a custom controller block, which statement correctly applies the distinction provided in the context?",
+      "options": {
+        "A": "An MPU includes on‑chip memory and I/O, making it ideal for single‑purpose control.",
+        "B": "An MCU requires external memory to implement the controller FSM.",
+        "C": "An MPU consists of CPU only and needs external memory, whereas an MCU integrates CPU, memory, and I/O on one chip, simplifying controller integration.",
+        "D": "Both MPU and MCU have identical architectures for controller design."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The table differentiates MPU as “CPU only; needs external memory” and MCU as “CPU + memory + I/O on one chip” [Page 43].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In designing a finite‑state machine for a dual‑purpose processor that must switch between DSP filtering and general‑purpose computation, which design principle from the context helps you decide the sequencing of states?",
+      "options": {
+        "A": "Prioritize high‑level OS tasks before low‑level DSP tasks.",
+        "B": "Use the FSMD approach to integrate datapath operations with control states.",
+        "C": "Implement a separate controller for each purpose without interaction.",
+        "D": "Rely on external peripherals to manage state transitions."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The context recommends creating an FSMD (Finite‑State Machine with Datapath) to coordinate control and datapath functions [Page 105].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A custom processor’s controller must be updated to change the gain of a motor‑control loop after deployment. Which of the following actions aligns with the “Adaptability” benefit described?",
+      "options": {
+        "A": "Replace the silicon chip with a new version.",
+        "B": "Re‑flash the controller firmware with new gain values.",
+        "C": "Add an external analog gain stage.",
+        "D": "Increase the clock frequency of the processor."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Adaptability allows the controller to “automatically adjust to changes… (e.g., due to aging, temperature, or wear)” via software updates [Page 178].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "While proposing a block diagram for a controller of a custom single‑purpose processor intended for an AES encryption engine, which of the following blocks must be included to satisfy the “control‑logic” role defined in the context?",
+      "options": {
+        "A": "Instruction decoder, control FSM, and datapath interconnect.",
+        "B": "Power‑management unit and external flash only.",
+        "C": "Ethernet MAC and Wi‑Fi transceiver.",
+        "D": "High‑level operating system scheduler."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The controller block comprises the control unit (FSM) that drives the datapath; the instruction decoder and interconnect are typical parts of a custom controller design as implied by the design flow [Page 105].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a designer chooses a domain‑specific processor (DSP) like the TI C6000 for a custom controller block, which characteristic from the context justifies this selection for a signal‑processing application?",
+      "options": {
+        "A": "General‑purpose flexibility for multiple applications.",
+        "B": "Optimization for a particular application or domain.",
+        "C": "Requirement of external memory for all operations.",
+        "D": "Lack of specialized instruction sets."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "DSPs and other domain‑specific processors are “Optimized for a particular application or domain” [Page 40].",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "topic": "embedded vs general purpose system",
+  "generated_at": "2026-08-27T17:19:56",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best captures the primary functional difference between an embedded system and a general‑purpose computing system as described in the context?",
+      "options": {
+        "A": "Embedded systems are designed for one or few dedicated tasks, while general‑purpose systems can run many unrelated applications.",
+        "B": "Embedded systems always require real‑time operation, whereas general‑purpose systems never do.",
+        "C": "Embedded systems use microcontrollers, while general‑purpose systems use microprocessors exclusively.",
+        "D": "Embedded systems are always portable, while general‑purpose systems are fixed installations."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that an embedded system has a dedicated/specific function designed for one or a few tasks, unlike general‑purpose computers which can run multiple unrelated applications [Page 10].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided material, which characteristic would NOT typically be used to define an embedded system?",
+      "options": {
+        "A": "Tight hardware‑software integration with firmware stored in ROM/flash.",
+        "B": "Being part of a larger device such as a car or appliance.",
+        "C": "Ability to execute a wide variety of user‑installed software packages.",
+        "D": "Performing a dedicated function rather than a general one."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context emphasizes that embedded systems are dedicated, part of larger devices, and have tightly integrated firmware, not the ability to run many user‑installed programs like a general‑purpose system [Page 10].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A thermostat controls heating based on temperature readings, stores its control algorithm in flash memory, and cannot run a word processor. Based on the criteria in the text, this device should be classified as:",
+      "options": {
+        "A": "General‑purpose computing system because it contains a microcontroller.",
+        "B": "Embedded system because it has a dedicated function and tight hardware‑software integration.",
+        "C": "General‑purpose system because it could be reprogrammed to run other tasks.",
+        "D": "Embedded system only if it operates in real‑time, which is not stated."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The device matches the embedded system traits: dedicated function, part of a larger system, and firmware stored in ROM/flash, as described on page 10.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is it hard to give a single precise definition of “embedded system” according to the context?",
+      "options": {
+        "A": "Because the term is used interchangeably with “microcontroller.”",
+        "B": "Because embedded systems can vary widely in function, integration level, and real‑time requirements.",
+        "C": "Because all embedded systems are also general‑purpose computers.",
+        "D": "Because the hardware of embedded systems is always identical."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that embedded systems differ in dedicated function, integration, and real‑time needs, making a single definition difficult [Page 10].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly differentiates an MPU (Microprocessor Unit) from an MCU (Microcontroller Unit) in the context of embedded versus general‑purpose systems?",
+      "options": {
+        "A": "An MPU includes CPU, memory, and I/O on one chip, making it ideal for embedded use.",
+        "B": "An MCU contains only a CPU and requires external memory, typical of general‑purpose designs.",
+        "C": "An MPU is a CPU only and needs external memory, often used in general‑purpose computers, while an MCU integrates CPU, memory, and I/O on one chip, common in embedded designs.",
+        "D": "An MCU is always faster than an MPU, regardless of application."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 43 defines MPU as CPU only needing external memory and MCU as CPU + memory + I/O on one chip, aligning MPU with general‑purpose and MCU with embedded systems.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the activity description (page 36), which design decision most strongly pushes a system toward being classified as “embedded”?",
+      "options": {
+        "A": "Selecting a high‑performance desktop CPU for processing.",
+        "B": "Using a microcontroller with integrated I/O for sensor data handling.",
+        "C": "Allowing the user to install arbitrary operating systems.",
+        "D": "Designing the system to support multitasking of unrelated applications."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The activity emphasizes identifying inputs, a processing unit (e.g., Arduino), and outputs—typical of an embedded design that uses a microcontroller with integrated I/O [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which benchmark or consortium mentioned is specifically associated with evaluating embedded system performance?",
+      "options": {
+        "A": "SPEC (Standard Performance Evaluation Corporation)",
+        "B": "EEMBC (Embedded Microprocessor Benchmark Consortium)",
+        "C": "EDN Embedded Benchmark",
+        "D": "Both A and C equally focus on embedded systems."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 100 lists EEMBC as “The Gold Standard for specialized chips (Car, Phone, IoT)”, indicating its focus on embedded systems, whereas SPEC targets desktops and servers.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The text (page 105) describes a general‑purpose processor (GPP) as a “programmable single‑purpose processor.” Which implication best explains this description?",
+      "options": {
+        "A": "A GPP can only execute one program ever written for it.",
+        "B": "A GPP’s hardware is fixed for one task, but its software can be changed to perform many tasks.",
+        "C": "A GPP is identical to an MCU in every way.",
+        "D": "A GPP cannot be reprogrammed after manufacturing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The passage states that a GPP is essentially a programmable single‑purpose processor—it executes a sequence of instructions stored in program memory, meaning the hardware is general but the software determines the task [Page 105].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When evaluating whether a system requires real‑time behavior, which factor from the context should be considered first?",
+      "options": {
+        "A": "Whether the system uses a microcontroller (MCU) or microprocessor (MPU).",
+        "B": "Whether the system performs a dedicated function within a larger device.",
+        "C": "Whether the system’s software is stored in ROM/flash.",
+        "D": "Whether the system must meet timing constraints for its primary function."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Real‑time requirement depends on the need to meet timing constraints for the system’s primary function, as implied by the discussion of dedicated functions and real‑time behavior in embedded contexts [Page 10].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the feature comparison table (page 13), which attribute most clearly separates an embedded system from a general‑purpose computing system?",
+      "options": {
+        "A": "The presence of a graphical user interface.",
+        "B": "Tight integration of hardware and software with firmware stored in non‑volatile memory.",
+        "C": "Ability to connect to the internet.",
+        "D": "Use of a high‑speed bus architecture."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The table highlights that embedded systems have tight hardware‑software integration and firmware in ROM/flash, distinguishing them from general‑purpose systems [Page 13].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A device can be reprogrammed by the end user to add new applications, but its hardware is optimized for a single control loop and is mounted inside a washing machine. According to the context, how should this device be classified?",
+      "options": {
+        "A": "Pure general‑purpose system because it is user‑programmable.",
+        "B": "Pure embedded system because its hardware is optimized for a dedicated function.",
+        "C": "A hybrid system that exhibits both embedded and general‑purpose characteristics.",
+        "D": "Neither, because it does not meet any definition provided."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The context notes that defining embedded systems is difficult due to overlapping traits; this device has dedicated hardware (embedded) but is user‑reprogrammable (general‑purpose), illustrating a hybrid classification [Page 10].",
+      "source_pages": []
+    }
+  ]
+}

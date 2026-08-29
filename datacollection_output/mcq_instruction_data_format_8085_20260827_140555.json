@@ -1,0 +1,147 @@
+{
+  "topic": "instruction data format 8085",
+  "generated_at": "2026-08-27T14:05:55",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "Which statement best explains the role of the Instruction Register (IR) during execution of an 8085 instruction?",
+      "options": {
+        "A": "It stores the operand data fetched from memory for the ALU.",
+        "B": "It holds the 8‑bit opcode that is decoded to determine the operation type.",
+        "C": "It temporarily saves the program counter value during a CALL instruction.",
+        "D": "It provides a 16‑bit address for branch instructions."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The IR is an 8‑bit register that receives operation codes from the internal data bus and passes them to the decoder, as described on [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the 8085 microprocessor use temporary registers W and Z when executing an instruction?",
+      "options": {
+        "A": "They permanently store user variables for later retrieval.",
+        "B": "They hold intermediate data briefly during instruction execution and are not programmer‑accessible.",
+        "C": "They act as the high‑order and low‑order bytes of the program counter.",
+        "D": "They provide additional address lines for 16‑bit memory addressing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "W and Z are 8‑bit registers used internally for a brief period and are not accessible to the programmer, per [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly describes the size and purpose of a Restart (RST) instruction in the 8085?",
+      "options": {
+        "A": "3‑byte instruction that pushes the program counter onto the stack and jumps to a vector.",
+        "B": "2‑byte instruction that loads a 16‑bit immediate address into the accumulator.",
+        "C": "1‑byte instruction that transfers execution to a fixed memory location without using the stack.",
+        "D": "1‑byte instruction that increments the stack pointer and returns from a sub‑routine."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Restart instructions are 1‑byte instructions that transfer program execution to a specific location, as stated on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the CALL instruction is executed, which of the following actions does the 8085 perform?",
+      "options": {
+        "A": "It stores the current PC on the stack, loads a 16‑bit address into PC, and occupies 3 bytes in memory.",
+        "B": "It directly jumps to the target address without saving the PC, using a 1‑byte opcode.",
+        "C": "It increments the accumulator by the immediate data and takes 2 bytes.",
+        "D": "It swaps the contents of registers B and C and occupies 2 bytes."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "CALL is a 3‑byte instruction that saves the PC on the stack and loads a 16‑bit address, as described on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the given ALP example, why does the program counter (PC) change from 2007 to 3000 after executing CALL 3000H?",
+      "options": {
+        "A": "Because CALL is a 1‑byte instruction that directly replaces PC with the operand.",
+        "B": "Because CALL pushes the current PC (2007) onto the stack and then loads PC with the 16‑bit address 3000H.",
+        "C": "Because the accumulator automatically increments PC after each instruction.",
+        "D": "Because the RET instruction at 3002 automatically changes PC back to 2007."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "CALL saves the current PC (2007) on the stack and then loads PC with the target address 3000H, as shown in the example on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which pair of registers can be combined to form a 16‑bit register for addressing purposes in the 8085?",
+      "options": {
+        "A": "A and B",
+        "B": "B and C",
+        "C": "W and Z",
+        "D": "H and L"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The scratch‑pad registers B and C can be used together as the 16‑bit register BC, as noted on [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the instruction formats described, which instruction would typically require the most memory bytes to encode?",
+      "options": {
+        "A": "A Restart (RST) instruction",
+        "B": "The RET instruction",
+        "C": "The CALL instruction with a 16‑bit address",
+        "D": "An MVI instruction with an 8‑bit immediate operand"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "CALL is a 3‑byte instruction (opcode + 16‑bit address), whereas RST and RET are 1‑byte and MVI is 2‑byte, per information on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why are the accumulator (A) and the instruction register (IR) both described as 8‑bit registers, yet they serve different functions in the 8085?",
+      "options": {
+        "A": "A stores opcode bits while IR stores data for arithmetic operations.",
+        "B": "Both are programmer‑accessible but used in different addressing modes.",
+        "C": "A holds data for ALU operations, whereas IR temporarily holds the opcode for decoding.",
+        "D": "Both are used only during sub‑routine calls and returns."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The accumulator is used for data and ALU operations, while the IR receives operation codes for decoding, as detailed on [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best illustrates the concept of “branching” in the 8085, as inferred from the context?",
+      "options": {
+        "A": "Using the CALL instruction to invoke a sub‑routine located elsewhere in memory.",
+        "B": "Loading immediate data into register B with MVI.",
+        "C": "Performing a logical AND between accumulator and register C.",
+        "D": "Incrementing the stack pointer after a RET instruction."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Branching involves changing the flow of execution, exemplified by CALL transferring control to a new address, as discussed on [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the 8085’s design of having non‑programmable temporary registers (W & Z) affect instruction execution?",
+      "options": {
+        "A": "It allows programmers to directly manipulate intermediate results for speed.",
+        "B": "It reduces instruction length because intermediate data need not be stored in memory.",
+        "C": "It forces all arithmetic results to be stored in the accumulator.",
+        "D": "It provides internal buffering of data during instruction decoding without programmer intervention."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "W and Z are internal 8‑bit registers used briefly during execution and are not accessible to the programmer, as mentioned on [Page 2].",
+      "source_pages": []
+    }
+  ]
+}

@@ -20,4 +20,4 @@ LOCAL_MODEL = None           # ollama fallback ko lagi —  machine ma jun ollam
 #########################################
 CURRENT_PDF = None  # holds currently loaded pdf 
 
-TAXONOMY_PATH = "/home/sujal/Programming/MajorProject/Datasets/Jsons/computer_network.json"
+TAXONOMY_PATH = "/home/sujan/Major-Project/Datasets/Jsons/embededsystem.json"

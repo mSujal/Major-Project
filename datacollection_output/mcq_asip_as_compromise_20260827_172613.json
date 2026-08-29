@@ -1,0 +1,147 @@
+{
+  "topic": "asip as compromise",
+  "generated_at": "2026-08-27T17:26:13",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "In the smart‑watch trade‑off scenario, which processor choice best illustrates the “compromise” role of an ASIP between a general‑purpose MPU and a single‑purpose MCU?",
+      "options": {
+        "A": "Selecting a high‑performance MPU to maximize screen refresh speed.",
+        "B": "Selecting a low‑power MCU to extend battery life at the cost of slower refresh.",
+        "C": "Selecting an ASIP that provides moderate performance with only a modest increase in power consumption.",
+        "D": "Selecting a dedicated SSP that can only perform a single function such as AES encryption."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context describes ASIPs as “optimized for a particular application or domain” and positioned between MPUs (high performance, high power) and MCUs (low power, limited performance) [Page 40]. This middle‑ground matches the compromise concept in the smart‑watch trade‑off discussion [Page 35].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does an ASIP serve as a compromise between the flexibility of a general‑purpose MPU and the efficiency of a single‑purpose SSP?",
+      "options": {
+        "A": "By providing a fully programmable instruction set with no domain‑specific extensions.",
+        "B": "By integrating CPU, memory, and I/O on one chip like an MCU.",
+        "C": "By incorporating domain‑specific instructions that accelerate certain tasks while retaining programmability for other functions.",
+        "D": "By limiting execution to only one fixed algorithm to minimize silicon area."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "ASIPs combine “domain‑specific” optimization (e.g., network processors) with a programmable core, thus lying between MPUs (fully programmable) and SSPs (single‑purpose) [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following features most clearly distinguishes an ASIP from a typical MCU, based on the provided material?",
+      "options": {
+        "A": "Inclusion of external memory only.",
+        "B": "Presence of domain‑specific instruction extensions.",
+        "C": "Integration of CPU, memory, and I/O on a single die.",
+        "D": "Use of a low‑power idle mode."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The table contrasts MPUs (CPU only) and MCUs (CPU + memory + I/O) [Page 43]. The ASIP is highlighted for its domain‑specific nature, implying specialized instructions not found in generic MCUs [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the listed examples, which processor type would be most appropriate for implementing an AES encryption engine in a compact embedded device?",
+      "options": {
+        "A": "General‑purpose MPU (e.g., Intel Atom)",
+        "B": "MCU (e.g., STM32)",
+        "C": "ASIP (e.g., network processor)",
+        "D": "SSP/SPP processor specifically designed for AES encryption"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The context places “AES encryption engine” under SSP/SPP processors, indicating they are the dedicated solution for such single‑purpose tasks [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a designer needs moderate flexibility to handle both network packet processing and occasional control‑loop tasks, which processor choice best aligns with the compromise nature of an ASIP?",
+      "options": {
+        "A": "MPU, because it can run any software without restriction.",
+        "B": "MCU, because it offers low power but limited processing capability.",
+        "C": "ASIP, because it provides domain‑specific acceleration for networking while remaining programmable for other tasks.",
+        "D": "SSP, because it is optimized for a single function only."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "ASIPs are described as “optimized for a particular application or domain” such as network processors, yet retain programmability, making them a compromise between MPUs and SSPs [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When replacing a general‑purpose MPU with an ASIP for a baseband signal‑processing application, which design metric is most likely to improve without a proportional increase in power consumption?",
+      "options": {
+        "A": "Battery life",
+        "B": "Unit cost",
+        "C": "Processing efficiency for the target domain",
+        "D": "Physical size of the PCB"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The ASIP’s domain‑specific optimizations (e.g., baseband processing) increase efficiency for that task, while the compromise nature avoids the high power draw typical of a full MPU [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best explains why an ASIP can be preferable to a pure DSP for a network‑processor design, according to the context?",
+      "options": {
+        "A": "ASIPs always consume less power than any DSP.",
+        "B": "ASIPs combine the programmable nature of MPUs with domain‑specific acceleration, whereas DSPs focus solely on signal‑processing workloads.",
+        "C": "DSPs integrate CPU, memory, and I/O on a single chip, which ASIPs do not.",
+        "D": "ASIPs are listed under “Microcontroller” in the context."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The context groups DSPs and ASIPs separately, noting that ASIPs are “network processors” while DSPs are “optimized for a particular application or domain” such as signal processing [Page 40]. This indicates ASIPs add programmable flexibility beyond pure DSP capabilities.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the trade‑off activity (Option A vs. Option B), which choice most closely mirrors the compromise strategy embodied by an ASIP?",
+      "options": {
+        "A": "Adding a low‑power mode to a MCU, sacrificing performance.",
+        "B": "Adding a faster MPU, increasing cost and power.",
+        "C": "Selecting an ASIP that provides a balanced increase in performance with only a modest power penalty.",
+        "D": "Reducing battery size to shrink the device, regardless of performance."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Option C reflects the ASIP’s role as a middle ground—enhancing performance without the full power/cost penalties of a high‑end MPU, aligning with the compromise idea discussed on pages 35 and 40.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best characterizes the “compromise” nature of ASIPs when viewed against the definitions of MPU and MCU provided?",
+      "options": {
+        "A": "ASIPs eliminate the need for external memory, like MCUs.",
+        "B": "ASIPs offer a full CPU core without any domain‑specific extensions.",
+        "C": "ASIPs provide a CPU core with selective domain‑specific extensions, delivering better performance than MCUs while using less power than MPUs.",
+        "D": "ASIPs are identical to MPUs but with a different branding."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The MPU definition (“CPU only; needs external memory”) [Page 43] and MCU definition (“CPU + memory + I/O on one chip”) [Page 43] contrast with ASIPs, which add domain‑specific instructions to achieve a performance‑power compromise [Page 40].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the listed processor families, which category would most likely be selected for a motor‑control IC that requires both real‑time response and modest flexibility?",
+      "options": {
+        "A": "General‑purpose MPU (e.g., Intel Atom)",
+        "B": "MCU (e.g., Atmega328P)",
+        "C": "ASIP (e.g., network processor)",
+        "D": "SSP/SPP processor (e.g., motor‑control IC)"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Analyze",
+      "difficulty": "Easy",
+      "explanation": "The context explicitly lists “motor control IC” under SSP/SPP processors, indicating these single‑purpose devices are tailored for that application [Page 40].\n\n---",
+      "source_pages": []
+    }
+  ]
+}

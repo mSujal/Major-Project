@@ -1,0 +1,133 @@
+{
+  "topic": "serial interface sync async",
+  "generated_at": "2026-08-27T16:39:38",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "In asynchronous mode the signal SYNDET/BRKDET indicates a break in the data stream, whereas in synchronous mode it indicates the reception of a synchronous character. Which of the following best explains why the same signal is used for two different purposes in the two modes?",
+      "options": {
+        "A": "The hardware treats a break and a synchronous character identically, so a single line suffices.",
+        "B": "In asynchronous mode a break is detected by a prolonged low level, while in synchronous mode a specific pattern defines a synchronous character, both are recognized by the same detector circuit.",
+        "C": "The signal is only relevant in asynchronous mode; in synchronous mode it is ignored.",
+        "D": "The signal is multiplexed with the clock line, so its meaning changes with the clock state."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that SYNDET/BRKDET “will indicate the break in the data transmission” in asynchronous mode and “will indicate the reception of synchronous character” in synchronous mode, implying the detector interprets different patterns on the same line depending on the mode. [Page 75]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the input register loads parallel data into the buffer register, the RxRDY line goes high. What does a high RxRDY signal tell the processor about the state of the receiver?",
+      "options": {
+        "A": "The transmitter is ready to accept new data.",
+        "B": "The buffer register is empty and can be written.",
+        "C": "New parallel data are available in the buffer register for the processor to read.",
+        "D": "The receiver has detected a framing error."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly links a high RxRDY to the event when the input register loads data into the buffer register, indicating that data are ready for the processor. [Page 75]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The clock frequency supplied to the USART can be 1, 16, or 64 times the baud rate. Which of the following statements correctly describes the effect of choosing a 64‑times clock multiplier?",
+      "options": {
+        "A": "It reduces the maximum achievable baud rate.",
+        "B": "It allows finer timing resolution, enabling higher baud rates for a given clock source.",
+        "C": "It disables the synchronous mode of operation.",
+        "D": "It makes the RxC and TxC signals share the same frequency."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes the clock can be 1, 16, or 64 times the baud rate; a higher multiplier provides finer granularity, allowing higher baud rates from a fixed base clock. [Page 75]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "RS‑232C defines several hand‑shaking lines between DTE and DCE. Which pair of signals is primarily used by the DTE to request the DCE to stop sending data?",
+      "options": {
+        "A": "DTR (Data Terminal Ready) and DSR (Data Set Ready)",
+        "B": "RTS (Request To Send) and CTS (Clear To Send)",
+        "C": "TXD (Transmit Data) and RXD (Receive Data)",
+        "D": "DCD (Data Carrier Detect) and RI (Ring Indicator)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "RS‑232 hand‑shaking uses RTS/CTS for flow control; RTS is asserted by the DTE to request permission, CTS is the DCE’s response. The context mentions hand‑shake signals for MODEM interface, which are based on RS‑232 standards. [Page 76]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The MODEM control unit in the 8251A handles hand‑shake signals for a modem. Which of the following best describes its function?",
+      "options": {
+        "A": "It generates the Baud‑rate clock for the USART.",
+        "B": "It converts parallel data to serial form for transmission.",
+        "C": "It monitors and asserts the appropriate RS‑232 control lines (e.g., RTS, CTS, DTR, DSR) to coordinate data flow with the modem.",
+        "D": "It provides error‑checking by inserting parity bits."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context says the MODEM control unit “takes care of hand shake signals for MODEM interface,” indicating it manages RS‑232 control lines. [Page 75]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In synchronous mode, the USART uses a separate clock line (TxC/RxC) to time bits. How does this affect the interpretation of the SYNDET/BRKDET signal compared with asynchronous mode?",
+      "options": {
+        "A": "The signal is sampled on each clock edge, so a specific clocked pattern denotes a synchronous character.",
+        "B": "The signal is ignored because the clock line provides all necessary timing.",
+        "C": "The signal is used to toggle the clock polarity.",
+        "D": "The signal becomes a data‑line (TxD/RxD) in synchronous mode."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "In synchronous mode, timing is defined by the clock, so SYNDET/BRKDET is interpreted based on a pattern synchronized with the clock, unlike the duration‑based break detection in asynchronous mode. [Page 75]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The 9‑pin RS‑232 connector does not provide all the signals available on the 25‑pin version. Which functional consequence follows from this reduced pin count?",
+      "options": {
+        "A": "It cannot support full‑duplex data transmission.",
+        "B": "It lacks dedicated lines for some hand‑shaking signals, so those functions must be omitted or multiplexed.",
+        "C": "It cannot operate at baud rates above 9600 bps.",
+        "D": "It requires a separate power supply for the modem."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context notes the 9‑pin standard “does not use all signals i.e., data, control, timing and ground,” implying some control lines are omitted. [Page 76]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The receiver section is described as double‑buffered. Which of the following best describes the advantage of this arrangement?",
+      "options": {
+        "A": "It allows the USART to transmit and receive simultaneously on the same line.",
+        "B": "It enables the processor to read one buffer while the other buffer continues to receive incoming bits, preventing data loss.",
+        "C": "It doubles the maximum achievable baud rate.",
+        "D": "It provides error correction by comparing the two buffers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Double buffering means one buffer holds newly received parallel data while the other can be read by the processor, ensuring continuous reception. [Page 75]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The RxC (low) and TxC (low) signals control the rate at which bits are received and transmitted, respectively. If a system designer wants to increase the data‑transfer speed without changing the external clock source, which action should they take?",
+      "options": {
+        "A": "Reduce the clock multiplier from 64× to 1×.",
+        "B": "Switch from asynchronous to synchronous mode.",
+        "C": "Increase the clock multiplier (e.g., from 16× to 64×) to obtain a higher internal baud‑rate.",
+        "D": "Disable the RxC line and rely solely on TxC."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The clock frequency can be 1, 16, or 64 times the baud rate; selecting a higher multiplier yields a higher internal baud rate, thus faster data transfer. [Page 75]",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "digital computer block diagram",
+  "generated_at": "2026-08-27T14:04:23",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "In a digital computer block diagram, which group of bus lines primarily carries the actual data being processed?",
+      "options": {
+        "A": "Address bus lines",
+        "B": "Control bus lines",
+        "C": "Data bus lines",
+        "D": "Power bus lines"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The data bus provides the path for transmitting binary data between system modules and is the set of lines that carry the actual data bits. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the role of the address bus within the computer’s block diagram?",
+      "options": {
+        "A": "It synchronizes read/write operations with the clock.",
+        "B": "It selects the specific memory location or I/O device for data transfer.",
+        "C": "It carries the instruction code to the CPU.",
+        "D": "It provides power to peripheral devices."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The address bus is used to transmit binary address information that identifies memory locations or I/O devices, as implied by the discussion of bus functions. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, a system bus is composed of several separate lines. Which three groups of lines are typically included in a system bus?",
+      "options": {
+        "A": "Data, Power, Ground",
+        "B": "Address, Data, Control",
+        "C": "Clock, Reset, Interrupt",
+        "D": "Instruction, Operand, Result"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that system bus lines can be classified into three groups, which are the address bus, data bus, and control bus. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the synchronous read operation described, which signal indicates that the CPU is ready to receive data from memory?",
+      "options": {
+        "A": "MSYNC",
+        "B": "SSYNC",
+        "C": "Acknowledge Signal",
+        "D": "Clock"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The synchronous read operation includes an “Acknowledge Signal” that confirms the CPU’s readiness to accept the data. [Page 43]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When comparing synchronous and asynchronous read operations, which of the following is a distinguishing feature of the asynchronous method?",
+      "options": {
+        "A": "It uses a separate “MSYNC” line to coordinate data transfer.",
+        "B": "It relies on a shared clock signal for timing.",
+        "C": "It does not require any synchronization signals.",
+        "D": "It uses only the data bus for communication."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The asynchronous read operation diagram mentions an “MSYNC” line, indicating a specific synchronization line used in that mode. [Page 44]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component in the digital computer block diagram is responsible for converting analog signals into digital form before processing?",
+      "options": {
+        "A": "CPU",
+        "B": "Memory",
+        "C": "I/O unit",
+        "D": "A/D converter (part of DSP)"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context describes that analog signals are converted to digital using an A/D converter as part of digital signal processing. [Page 94]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the block diagram of a microcomputer, the CPU, memory, and I/O units are said to communicate via which medium?",
+      "options": {
+        "A": "Serial cables",
+        "B": "System bus",
+        "C": "Wireless link",
+        "D": "External storage"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text explains that CPU, memory, and I/O units communicate through a bus, specifically the system bus. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a data bus has a width of 32 lines, how many bits can it transfer simultaneously?",
+      "options": {
+        "A": "8 bits",
+        "B": "16 bits",
+        "C": "32 bits",
+        "D": "64 bits"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The width of the data bus (e.g., 8, 16, 32, 64) directly indicates the number of bits it can carry simultaneously. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly reflects the relationship between the CPU and the control bus in the computer’s block diagram?",
+      "options": {
+        "A": "The control bus carries address information from the CPU to memory.",
+        "B": "The control bus provides timing and command signals that coordinate CPU actions.",
+        "C": "The control bus stores program instructions for the CPU.",
+        "D": "The control bus supplies the main power to the CPU."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The control bus consists of lines assigned particular functions such as timing and command signals that manage CPU operations. [Page 42]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The text mentions that modern micro‑processors are based on a non‑Von Neumann architecture. What implication does this have for the block diagram of such a computer?",
+      "options": {
+        "A": "The CPU, memory, and I/O are merged into a single unit.",
+        "B": "Instructions and data share the same physical storage space.",
+        "C": "Instructions define both operation and data, separating them logically.",
+        "D": "The system bus is eliminated in favor of point‑to‑point links."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that in non‑Von Neumann designs, the instruction defines both operation and data, indicating a logical separation in the block diagram. [Page 95]",
+      "source_pages": []
+    }
+  ]
+}

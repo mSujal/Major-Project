@@ -1,0 +1,147 @@
+{
+  "topic": "general purpose processor datapath operation",
+  "generated_at": "2026-08-27T17:24:29",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/embeded_1_3_5_7_9.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the sequence of actions performed by the datapath and controller when executing a MOV Rn, direct instruction?",
+      "options": {
+        "A": "The controller loads the direct address into the PC, the datapath fetches the operand from memory, and then writes it to Rn.",
+        "B": "The controller decodes the opcode, the datapath reads the direct address from the instruction register, accesses memory at that address, and routes the data to register Rn.",
+        "C": "The controller increments the PC, the datapath performs an ALU addition of Rn and the direct address, and stores the result back to memory.",
+        "D": "The controller generates a jump signal, the datapath clears Rn, and the PC is loaded with the direct address."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The MOV Rn, direct instruction copies memory content at a direct address into register Rn; the controller decodes the opcode and the datapath reads the address from the IR, accesses memory, and routes the data to the register file. This follows the operation described for MOV on page 107.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the design process of a general‑purpose processor, what is the role of the FSMD (Finite‑State Machine with Datapath) after the instruction set has been defined?",
+      "options": {
+        "A": "It implements the physical layout of the silicon wafer.",
+        "B": "It specifies the sequence of control signals that drive the datapath for each instruction cycle.",
+        "C": "It determines the power consumption of each functional unit.",
+        "D": "It generates the machine code for the assembler."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "After choosing the instruction set, the next step is to create an FSMD, which defines the control logic (state machine) that orchestrates the datapath during instruction execution. This is stated on page 105.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the example processor design (16‑bit instruction size, 16‑bit PC, 64K × 16‑bit memory), which component directly determines the range of addresses that can be accessed by the processor?",
+      "options": {
+        "A": "The width of the instruction register (IR).",
+        "B": "The number of registers in the register file.",
+        "C": "The width of the program counter (PC).",
+        "D": "The number of arithmetic instructions supported."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The PC is 16‑bit, allowing it to address up to 2¹⁶ locations, matching the 64K memory organization described on page 106.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly explains how the controller and datapath interact during the fetch phase of an instruction cycle?",
+      "options": {
+        "A": "The controller generates a memory‑write signal while the datapath increments the PC.",
+        "B": "The controller supplies the address from the PC to the memory unit; the datapath loads the fetched word into the instruction register.",
+        "C": "The datapath directly accesses the register file without controller involvement.",
+        "D": "The controller performs arithmetic on the fetched opcode to determine the next state."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "During fetch, the controller asserts the memory read using the PC address, and the datapath routes the returned word into the IR. This interaction aligns with the general description of datapath‑controller cooperation on page 105.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of the provided processor design, which of the following best characterizes the purpose of the instruction register (IR)?",
+      "options": {
+        "A": "It stores the next program counter value.",
+        "B": "It holds the currently executing instruction so that the controller can decode its opcode and operands.",
+        "C": "It contains the result of the most recent ALU operation.",
+        "D": "It buffers data being written to memory."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The IR is a 16‑bit register that holds the fetched instruction for decoding, as mentioned on page 106.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the processor executes a MOV @Rn, Rm instruction, which datapath path is primarily used to complete the operation?",
+      "options": {
+        "A": "From the register file to the ALU, then to the PC.",
+        "B": "From the register file (Rn) to the address generation unit, then to memory, and finally from memory to the register file (Rm).",
+        "C": "From the register file (Rm) to the address generation using the value in Rn, then writing that data to the memory location addressed by Rn.",
+        "D": "From the PC directly to the memory address specified in the instruction."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "MOV @Rn, Rm stores the contents of Rm into memory at the address contained in Rn, as defined on page 107. The datapath routes Rm to the memory write port, using Rn as the address.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why a general‑purpose processor can be regarded as a “programmable single‑purpose processor” according to the text?",
+      "options": {
+        "A": "Because it contains multiple specialized hardware accelerators.",
+        "B": "Because it executes a fixed sequence of operations stored in ROM.",
+        "C": "Because it fetches and executes a sequence of instructions from program memory, allowing its behavior to be changed by software.",
+        "D": "Because it lacks a separate control unit and relies solely on datapath wiring."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 105 states that a GPP is essentially a programmable single‑purpose processor that runs a sequence of instructions from program memory.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the described 5‑stage pipeline (though only briefly mentioned), which stage would most likely involve the datapath’s ALU?",
+      "options": {
+        "A": "Instruction Fetch (IF)",
+        "B": "Instruction Decode (ID)",
+        "C": "Execute (EX)",
+        "D": "Write‑Back (WB)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The Execute stage is where the ALU performs arithmetic or logical operations, a standard part of the 5‑stage pipeline referenced on page 102.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a new arithmetic instruction is added to the example processor, which part of the design must be updated to ensure correct operation?",
+      "options": {
+        "A": "Only the memory size must be increased.",
+        "B": "The register file must be expanded to accommodate extra operands.",
+        "C": "The controller’s FSM must include additional states to generate the required control signals for the datapath’s ALU.",
+        "D": "The PC width must be changed to 32‑bit."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Adding an instruction requires extending the controller’s finite‑state machine to produce the appropriate control signals for the datapath, as described in the design flow on page 105.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which description correctly captures the relationship between the datapath and the controller when implementing a jump instruction?",
+      "options": {
+        "A": "The datapath directly modifies the PC without any controller involvement.",
+        "B": "The controller evaluates the jump condition and, if true, supplies a new address to the PC; the datapath then uses this address in the next fetch.",
+        "C": "The datapath performs an ALU addition of the PC and the jump offset while the controller remains idle.",
+        "D": "The controller writes the jump target into a general‑purpose register, and the datapath later reads it during a memory write."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "For a jump, the controller decides whether to load a new address into the PC; the datapath then fetches from that address. This aligns with the controller‑datapath interaction described on page 105.",
+      "source_pages": []
+    }
+  ]
+}

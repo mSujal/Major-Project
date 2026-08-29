@@ -1,0 +1,147 @@
+{
+  "topic": "dma controller short notes",
+  "generated_at": "2026-08-27T16:44:12",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "After the DMA controller finishes a transfer, what does it do with the HOLD signal?",
+      "options": {
+        "A": "It asserts HOLD to keep the processor halted",
+        "B": "It toggles HOLD to request another transfer",
+        "C": "It turns off HOLD, allowing the processor to regain bus control",
+        "D": "It leaves HOLD unchanged until the processor resets"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that once the DMA controller is done, it turns off the HOLD signal and the microprocessor takes back control of the buses. [Page 80]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which buses does the DMA controller temporarily borrow from the microprocessor during a transfer?",
+      "options": {
+        "A": "Only the address bus",
+        "B": "Only the data bus",
+        "C": "Only the control bus",
+        "D": "The address bus, data bus, and control bus"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The DMA controller temporarily borrows the address bus, data bus, and control bus to move data directly between an I/O port and memory. [Page 80]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the purpose of the HOLD signal in a microprocessor‑based DMA system?",
+      "options": {
+        "A": "To acknowledge completion of a DMA transfer",
+        "B": "To request the processor to release the buses after the current bus cycle",
+        "C": "To reset the DMA controller after each transfer",
+        "D": "To indicate a data parity error on the bus"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "HOLD is described as a bus request signal that asks the microprocessor to release control of the buses after the current bus cycle. [Page 80]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a DMA read transfer, the direction of data flow is:",
+      "options": {
+        "A": "From I/O device to memory",
+        "B": "From memory to I/O device",
+        "C": "Between two I/O devices",
+        "D": "Between two memory locations without using the CPU"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context defines a read transfer as data moving from memory to an I/O device. [Page 82]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which DMA operation generates addresses without causing actual memory or I/O control signals?",
+      "options": {
+        "A": "Read transfer",
+        "B": "Write transfer",
+        "C": "Verify transfer",
+        "D": "Interrupt transfer"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "Verification operations generate the DMA addresses but do not generate DMA memory and I/O control signals. [Page 82]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the maximum amount of data a single DMA channel can be programmed to transfer?",
+      "options": {
+        "A": "4 KB",
+        "B": "16 KB",
+        "C": "64 KB",
+        "D": "256 KB"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Each channel can independently program to transfer up to 64 KB of data. [Page 82]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which functional block of the 8257 DMA controller is responsible for determining which channel gets the bus when more than one request is pending?",
+      "options": {
+        "A": "Data bus buffer",
+        "B": "Read/write logic",
+        "C": "Priority resolver",
+        "D": "Control logic"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The functional blocks listed include a priority resolver, which resolves competing channel requests. [Page 82]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements about DMA controller interfaces is correct?",
+      "options": {
+        "A": "A DMA controller can only be connected to a single I/O interface.",
+        "B": "DMA controllers are never designed to handle multiple interfaces.",
+        "C": "Some DMA controllers are associated with a single interface, but many are designed for multiple interfaces.",
+        "D": "All DMA controllers must have exactly two interfaces."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that sometimes a DMA controller is associated with a single interface, but they are often designed to accommodate more than one interface. [Page 80]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which register keeps track of how many bytes or words have been transferred during a DMA operation?",
+      "options": {
+        "A": "Address register",
+        "B": "Control register",
+        "C": "Status register",
+        "D": "Count register"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The count register is used to count the number of byte or word transferred by DMA. [Page 82]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the DMA controller is active, what happens to the microprocessor’s ability to execute instructions?",
+      "options": {
+        "A": "It continues executing instructions uninterrupted.",
+        "B": "It is temporarily disabled while the DMA borrows the buses.",
+        "C": "It enters a low‑power sleep mode but can still access registers.",
+        "D": "It can only execute branch instructions."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The DMA technique provides direct access to memory while the microprocessor is temporarily disabled, as the DMA borrows the buses. [Page 80]",
+      "source_pages": []
+    }
+  ]
+}

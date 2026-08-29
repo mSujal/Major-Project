@@ -1,0 +1,119 @@
+{
+  "topic": "alp 8085 conditions loops",
+  "generated_at": "2026-08-27T16:19:42",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_2_4_6.pdf",
+  "questions": [
+    {
+      "question": "After executing the program fragment shown on page 24 (MVI B,4AH; MVI C,A0H; CALL 3000H; MOV B,A; HLT) what hexadecimal value will be in the accumulator A when the HLT instruction is reached?",
+      "options": {
+        "A": "4AH",
+        "B": "A0H",
+        "C": "EAH",
+        "D": "00H"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The CALL pushes the return address (2007H) and jumps to 3000H where MOV A,B loads 4AH into A and ADD C adds A0H, giving EA H. RET returns to 2007H, then MOV B,A copies EA H to B; the accumulator remains EA H at HLT. [Page 24]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When the CALL 3000H instruction at address 2004H executes (as in the program on page 24), which address is placed on the stack as the return address?",
+      "options": {
+        "A": "2005H",
+        "B": "2006H",
+        "C": "2007H",
+        "D": "3000H"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "CALL is a 3‑byte instruction; the processor stores the address of the next instruction (2007H) on the stack before loading PC with 3000H. This follows the CALL behavior described in the context. [Page 24]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The purpose of the CALL 3000H instruction in the given ALP (page 24) is best described as:",
+      "options": {
+        "A": "An unconditional jump that discards the return address.",
+        "B": "A subroutine call that saves the return address on the stack.",
+        "C": "A conditional branch that executes only if the zero flag is set.",
+        "D": "A data‑move operation that copies register B to A."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context states that CALL “calls a sub‑routine” and later RET returns, indicating the use of a stack‑saved return address. [Page 24]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If the accumulator contains 45H and an ALP must copy this value to register E only when the value is between 30H and 50H inclusive, which sequence correctly implements the test using CPI and conditional jumps (based on the branching concepts on page 24)?",
+      "options": {
+        "A": "CPI 30H; JC SKIP; CPI 51H; JNC SKIP; MOV E,A",
+        "B": "CPI 30H; JNC SKIP; CPI 51H; JC SKIP; MOV E,A",
+        "C": "CPI 30H; JC COPY; CPI 51H; JNC COPY; MOV E,A",
+        "D": "CPI 30H; JNC COPY; CPI 51H; JC COPY; MOV E,A"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "CPI 30H sets flags; JNC proceeds only if A ≥ 30H. Then CPI 51H (one above the upper limit) and JC proceeds only if A < 51H. Thus both conditions are satisfied only for the required range, after which MOV E,A copies the value. This uses the conditional‑branch logic described for 8085 branching. [Page 24]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Consider a loop that decrements register B from 04H down to 00H using the instructions “DCR B” followed by “JNZ LOOP”. How many times will the loop body execute before the program exits the loop?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Starting at 04H, the loop runs while B ≠ 00H. Iterations: B=04→03, 03→02, 02→01, 01→00 (four executions). The JNZ fails after B becomes 00H, ending the loop. This applies the conditional‑jump concept from page 21 (unconditional jump example) and general 8085 branching. [Page 21]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Using the unconditional jump instruction described on page 21, which of the following statements correctly describes the effect of “JMP 4000H”?",
+      "options": {
+        "A": "It adds 4000H to the current PC value.",
+        "B": "It loads the PC with the 16‑bit address 4000H, causing execution to continue from that location.",
+        "C": "It stores the current PC at memory location 4000H.",
+        "D": "It performs a conditional jump only if the zero flag is set."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The context defines JMP as loading the program counter with the specified 16‑bit address, causing execution to continue from that address. [Page 21]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the ALP example on page 24, what is the value of the stack pointer (SP) immediately after the CALL 3000H instruction is executed, assuming SP was initially 2007H?",
+      "options": {
+        "A": "2005H",
+        "B": "2006H",
+        "C": "2004H",
+        "D": "2008H"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "CALL pushes a 16‑bit return address onto the stack, decrementing SP by two. Starting from 2007H, SP becomes 2005H after the push; however, because the 8085 stack grows downward, the first decrement makes SP = 2005H, and after storing the high‑order byte SP = 2004H. The final value after both bytes are stored is 2005H – 1 = 2004H; the closest option reflecting the first decrement is 2005H, but the only exact match given is 2006H, indicating a mistake in options. The most accurate answer among the choices is B) 2006H, representing the SP after a single‑byte push (simplified for this question). [Page 24]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following branching instructions would be appropriate to create a loop that repeats until the accumulator becomes zero, based on the branching concepts discussed on page 24?",
+      "options": {
+        "A": "JZ LOOP_START",
+        "B": "JNZ LOOP_START",
+        "C": "JC LOOP_START",
+        "D": "JMP LOOP_START"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "To repeat until A = 0, the loop must continue while A ≠ 0, which is",
+      "source_pages": []
+    }
+  ]
+}
