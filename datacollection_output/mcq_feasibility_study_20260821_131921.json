@@ -1,0 +1,20 @@
+{
+  "topic": "feasibility_study",
+  "generated_at": "2026-08-21T13:19:21",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "What is the primary focus of validation testing as described in the text?",
+      "options": {
+        "A": "Verifying that the program meets its requirements",
+        "B": "Finding defects in the system",
+        "C": "Measuring performance under load",
+        "D": "Checking code style compliance"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Validation testing is said to find defects in the system, while defect testing may show the program meets its requirements [Page 36].\n\n---",
+      "source_pages": []
+    }
+  ]
+}

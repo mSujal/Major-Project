@@ -1,0 +1,137 @@
+{
+  "topic": "structured_methods_dfd_balancing",
+  "generated_at": "2026-08-21T13:21:35",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Why is extra information such as tables or graphical models added to natural‑language requirements?",
+      "options": {
+        "A": "To reduce the number of requirements documents needed",
+        "B": "To illustrate how computations proceed, system state changes, user interactions, and action sequences",
+        "C": "To replace the need for any textual description",
+        "D": "To ensure the requirements are written in a programming language"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Adding tables or graphical models helps show the flow of computations, state changes, and user interactions, as described on page 24.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which advantage of structured specifications over pure natural language is highlighted in the text?",
+      "options": {
+        "A": "They eliminate the need for testing altogether",
+        "B": "They automatically generate source code",
+        "C": "They reduce variability in the specification and organise requirements more effectively",
+        "D": "They guarantee the system will have no bugs"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Structured specifications reduce variability and organise requirements, as noted on page 23.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Even with structured specifications, what difficulty remains when specifying complex computations such as insulin dose calculation?",
+      "options": {
+        "A": "Inability to represent any computation at all",
+        "B": "Difficulty writing the requirements in a clear and unambiguous way",
+        "C": "Lack of any graphical representation options",
+        "D": "The requirement text becomes excessively long"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The text states that it is still sometimes difficult to write clear, unambiguous requirements for complex computations (page 24).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The tabular specification of computation shown for an insulin pump (Fig. 4.14) is most likely used to represent which kind of information?",
+      "options": {
+        "A": "The physical layout of the pump hardware",
+        "B": "The step‑by‑step calculation of insulin dose",
+        "C": "The network protocol used by the pump",
+        "D": "The user manual text format"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The tabular specification details the computation process, i.e., insulin dose calculation (page 24).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the requirement description format, the “description of the side effects (if any) of the operation” serves to document what?",
+      "options": {
+        "A": "The primary functional behavior of the operation",
+        "B": "Non‑functional performance constraints",
+        "C": "Potential additional effects that occur when the operation is executed",
+        "D": "The hardware resources needed for the operation"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Page 23 lists a side‑effects description as a distinct element of a requirement.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How can structured language notations highlight key elements of a requirement?",
+      "options": {
+        "A": "By using only uppercase letters",
+        "B": "By applying shading or different fonts",
+        "C": "By writing the text in a different language",
+        "D": "By omitting any visual emphasis"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The text mentions that shading or different fonts can be used to highlight key elements (page 23).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The citation of Dijkstra’s “The Humble Programmer” (page 36) is most likely included to support which point in the discussion?",
+      "options": {
+        "A": "The historical development of programming languages",
+        "B": "The need for disciplined, structured approaches to specification",
+        "C": "The importance of humility in software project management",
+        "D": "The evolution of computer hardware design"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Dijkstra’s work is frequently invoked to argue for disciplined, structured methods, aligning with the text’s emphasis on structured specifications (page 36).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT mentioned in the passage as a way to add extra information to natural‑language requirements?",
+      "options": {
+        "A": "Tables",
+        "B": "Graphical models",
+        "C": "Flowcharts",
+        "D": "Programming‑language constructs"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The passage lists tables, graphical models, and programming‑language constructs, but does not mention flowcharts (pages 24 & 23).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The structured specification illustrated in Figure 4.13 primarily aims to improve which aspect of requirements?",
+      "options": {
+        "A": "Security enforcement",
+        "B": "Clarity and unambiguity of the specification",
+        "C": "Execution speed of the final system",
+        "D": "Compatibility with legacy code"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Figure 4.13 is presented as a means to make requirements clearer and more unambiguous (page 24).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In structured language notations, templates are primarily used to specify what?",
+      "options": {
+        "A": "System requirements in a uniform format",
+        "B": "Detailed hardware wiring diagrams",
+        "C": "End‑user documentation manuals",
+        "D": "Database schema definitions only"
+      },
+      "correct_answer": "A",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Templates provide a uniform way to specify system requirements, as described on page 23.",
+      "source_pages": []
+    }
+  ]
+}

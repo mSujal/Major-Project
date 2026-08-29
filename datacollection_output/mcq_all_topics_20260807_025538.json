@@ -1,0 +1,156 @@
+{
+  "topic": "all_topics",
+  "generated_at": "2026-08-07T02:55:38",
+  "pdf_path": "/home/sujan/MP_testdocs/Chapter-2-Programming-with-8085Microprocessor.pdf",
+  "questions": [
+    {
+      "question": "Which register is described as a 16‑bit pointer used for subroutine calls?",
+      "options": {
+        "A": "Accumulator",
+        "B": "Program Counter",
+        "C": "Stack Pointer",
+        "D": "Address Latch"
+      },
+      "correct_answer": "C",
+      "difficulty": "Easy",
+      "explanation": "The diagram labels a 16‑bit register as “stack pointer; pointer;; (16)” indicating its role as the stack pointer. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "What is the width of the internal data bus in the shown architecture?",
+      "options": {
+        "A": "4 bits",
+        "B": "8 bits",
+        "C": "16 bits",
+        "D": "32 bits"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly mentions an “8‑bit Internal Data Bus.” (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "Which component is responsible for selecting among multiple 8‑bit inputs?",
+      "options": {
+        "A": "Incrementer/Decrementer",
+        "B": "Multiplexer(8)(8)(8)",
+        "C": "Logic Decoder",
+        "D": "Address Latch"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "The diagram repeatedly shows a “Multiplexer(8)(8)(8)” which combines three 8‑bit sources. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "According to the logic‑instruction rules, which flag is NOT cleared by a complement instruction?",
+      "options": {
+        "A": "Carry flag",
+        "B": "Zero flag",
+        "C": "Parity flag",
+        "D": "Sign flag"
+      },
+      "correct_answer": "A",
+      "difficulty": "Medium",
+      "explanation": "Rule 2 states that all logic instructions clear the carry flag except complement, where the flag remains unchanged. (Source Page: [18])",
+      "source_pages": [
+        "18"
+      ]
+    },
+    {
+      "question": "In the described micro‑architecture, where is the result of a logic instruction placed?",
+      "options": {
+        "A": "Temporary Register",
+        "B": "Accumulator",
+        "C": "Register H",
+        "D": "Data/Address Buffer"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "Rule 4 of the logic‑instruction features says “Place the result in the accumulator.” (Source Page: [18])",
+      "source_pages": [
+        "18"
+      ]
+    },
+    {
+      "question": "Which of the following is NOT listed as a flag modified by logic instructions?",
+      "options": {
+        "A": "Z (Zero) flag",
+        "B": "C (Carry) flag",
+        "C": "P (Parity) flag",
+        "D": "S (Sign) flag"
+      },
+      "correct_answer": "B",
+      "difficulty": "Medium",
+      "explanation": "Rule 3 mentions that Z, P, and S flags are modified, while the carry flag is cleared (or left unchanged for complement). (Source Page: [18])",
+      "source_pages": [
+        "18"
+      ]
+    },
+    {
+      "question": "The “Program Counter” in the diagram has which of the following characteristics?",
+      "options": {
+        "A": "8‑bit width and used for arithmetic results",
+        "B": "16‑bit width and increments automatically",
+        "C": "8‑bit width and serves as a stack pointer",
+        "D": "16‑bit width and functions as a temporary register"
+      },
+      "correct_answer": "B",
+      "difficulty": "Easy",
+      "explanation": "The diagram labels “Program Counter (16)” together with an Incrementer/Decrementer, indicating a 16‑bit counter that advances automatically. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "Which control signal is associated with serial I/O according to the diagram?",
+      "options": {
+        "A": "RST6.5",
+        "B": "INTR",
+        "C": "Serial I/O Control",
+        "D": "TRAP"
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "The text lists “Interrupt Control Serial I/O Control” as separate items, indicating a dedicated serial I/O control signal. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "Which component directly follows the “Logic Decoder” in the data path?",
+      "options": {
+        "A": "Multiplexer",
+        "C": "Address Latch",
+        "D": "Stack Pointer"
+      },
+      "correct_answer": "B",
+      "difficulty": "Hard",
+      "explanation": "The diagram shows “Logic Decoder 3 D_ (8) E (8) > (ALU)Unit,” indicating the ALU receives the decoded signals. (Source Page: [1])",
+      "source_pages": [
+        "1"
+      ]
+    },
+    {
+      "question": "Which of the following statements about the accumulator in this architecture is true?",
+      "options": {
+        "A": "It is a 16‑bit register used for address calculations.",
+        "B": "It automatically clears the Zero flag after every operation.",
+        "C": "It is one of the implicit operands for all logic instructions.",
+        "D": "It functions as the stack pointer for subroutine calls."
+      },
+      "correct_answer": "C",
+      "difficulty": "Medium",
+      "explanation": "Rule 1 of the logic‑instruction features states that “The instructions implicitly assume that the accumulator is one of the operands.” (Source Page: [18])",
+      "source_pages": [
+        "18"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "topic": "multiprocessor_distributed_architecture",
+  "generated_at": "2026-08-21T13:23:41",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "According to the high‑level overview, why is it important to show the distribution of functions across system modules in the architecture diagram?",
+      "options": {
+        "A": "To illustrate the physical layout of hardware components.",
+        "B": "To identify which modules can be developed and tested independently.",
+        "C": "To list all programming languages used in the project.",
+        "D": "To specify the exact timing constraints for each function."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The architecture overview highlights how functions are allocated to modules, which helps teams work on parts independently and plan integration [Page 28].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Reusing architectural components, as mentioned in the context, primarily helps to:",
+      "options": {
+        "A": "Reduce the number of required programmers.",
+        "B": "Ensure that every module has a unique design.",
+        "C": "Decrease development time and improve reliability.",
+        "D": "Increase the total number of system documents."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] The text notes that reused components should be reused, implying benefits such as faster development and higher reliability through proven parts [Page 28].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the described testing process for critical systems, what is the main responsibility of the separate testing group?",
+      "options": {
+        "A": "Writing the system’s user manuals.",
+        "B": "Developing tests and maintaining detailed test result records.",
+        "C": "Designing the hardware architecture.",
+        "D": "Conducting marketing analysis for the product."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The separate testing group is tasked with creating tests and keeping detailed records of outcomes for critical systems [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the purpose of the integration stage mentioned on page 49?",
+      "options": {
+        "A": "To verify that each component works in isolation.",
+        "B": "To combine components from different team members into a cohesive system.",
+        "C": "To finalize the graphical user interface design.",
+        "D": "To archive older versions of the software."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Integration involves assembling components developed by various sub‑teams to form the complete system, as noted in the description of system testing [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Adding tables or graphical models to natural‑language requirements helps stakeholders to:",
+      "options": {
+        "A": "Reduce the overall size of the requirements document.",
+        "B": "Visualize computation flow, state changes, and interaction sequences.",
+        "C": "Eliminate the need for any verbal communication.",
+        "D": "Automatically generate source code."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The context explains that extra information like tables or graphics clarifies how computations proceed and how the system behaves [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The tabular specification shown for the insulin pump (Figure 4.14) primarily serves to:",
+      "options": {
+        "A": "List the brand names of all pump components.",
+        "B": "Detail the step‑by‑step computation of insulin dosage.",
+        "C": "Provide a marketing slogan for the device.",
+        "D": "Outline the manufacturing process of the pump."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The figure is described as a “tabular specification of computation” for the insulin pump, indicating it records dosage calculations [Page 24].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Dijkstra’s article “The Humble Programmer” is referenced to emphasize which principle relevant to system architecture?",
+      "options": {
+        "A": "The necessity of using low‑level programming languages.",
+        "B": "The importance of modesty and rigorous verification in software development.",
+        "C": "The requirement for every programmer to write documentation.",
+        "D": "The advantage of proprietary code over open source."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Dijkstra’s classic work stresses humility and careful proof, concepts that underpin disciplined architectural design [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The web link provided (http://software‑engineering‑book.com/web/debugging/) is most likely intended to:",
+      "options": {
+        "A": "Offer a downloadable compiler for the project.",
+        "B": "Provide resources and techniques for locating and fixing bugs.",
+        "C": "Host the source code repository for the system.",
+        "D": "Supply licensing information for third‑party libraries."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The URL is placed under a “debugging” heading, indicating it supplies debugging guidance [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "System testing is described as a collective process. Which statement best reflects this characterization?",
+      "options": {
+        "A": "Only the lead architect participates in system testing.",
+        "B": "Designers and programmers are excluded from system testing.",
+        "C": "Multiple stakeholders, possibly including a dedicated testing team, work together to evaluate the whole system.",
+        "D": "System testing is performed by a single automated script without human oversight."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The passage notes that system testing involves a collective effort and may include a separate testing team alongside designers and programmers [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following stages of development testing most directly involves the integration of components created by different sub‑teams?",
+      "options": {
+        "A": "Unit testing.",
+        "B": "Integration testing.",
+        "C": "System testing.",
+        "D": "Acceptance testing."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The integration stage is explicitly mentioned as the point where components from different team members are combined before system testing [Page 49].",
+      "source_pages": []
+    }
+  ]
+}

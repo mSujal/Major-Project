@@ -1,0 +1,397 @@
+{
+  "subject": "Engineering Physics",
+  "topics": {
+    "physical_pendulum": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "Derive an expression for the time period of a physical pendulum and establish the interchangeability of point of oscillation and suspension",
+        "Prove that there are four collinear points in bar pendulum"
+      ]
+    },
+    "torsional_pendulum": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Show that the motion of torsional pendulum is angular SHM and find time period",
+        "Find modulus of rigidity of the wire"
+      ]
+    },
+    "shm_general": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Prove that average KE and average PE of a particle executing SHM are equal",
+        "Numerical on displacement-energy fraction"
+      ]
+    },
+    "damped_oscillation": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Derive a differential equation for damped harmonic oscillation. Write its solution and discuss all three cases"
+      ]
+    },
+    "forced_oscillation_resonance": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Write the differential equation of forced oscillation. Determine amplitude and explain sharpness of resonance"
+      ]
+    },
+    "em_oscillation_lc_lcr": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "Derive differential equation for LC oscillation and find frequency",
+        "Compare damped and forced LCR oscillation",
+        "Prove LC circuit is analogous to mass-spring system"
+      ]
+    },
+    "oscillation_numericals": {
+      "levels": ["Apply"],
+      "patterns": [
+        "A spring is stretched by 5cm... find maximum velocity",
+        "After what time will amplitude drop to half its initial value?"
+      ]
+    },
+    "wave_particle_concept": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Conceptual sub-question, rarely standalone"
+      ]
+    },
+    "progressive_wave_equation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Develop a differential equation of the wave in a stretched string and find the velocity of transverse wave"
+      ]
+    },
+    "wave_energy_power": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive an expression of energy of a progressive wave",
+        "At what average rate does the wave transport energy?"
+      ]
+    },
+    "particle_vs_wave_velocity": {
+      "levels": ["Analyze", "Understand"],
+      "patterns": [
+        "What are particle velocity and wave velocity? Find the relation between them"
+      ]
+    },
+    "sabine_reverberation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive an expression for reverberation time (Sabine's formula)",
+        "Calculate reverberation time / number of persons present given reverberation time change"
+      ]
+    },
+    "acoustic_defects_remedies": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Give an account of bad acoustic properties of a hall and discuss the method to improve these defects"
+      ]
+    },
+    "mean_free_path_reflections": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Find the mean free path of sound wave and number of reflections made per second"
+      ]
+    },
+    "ultrasound": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Rare, short-note style"
+      ]
+    },
+    "interference_double_slit": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive resultant intensity of two coherent sources with phase difference"
+      ]
+    },
+    "thin_film_interference": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Why are Newton's fringes circular? Derive expression for fringe width",
+        "Find angle of wedge"
+      ]
+    },
+    "newtons_rings": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Explain formation of Newton's ring in reflected system. Prove diameters of dark rings ∝ √natural number"
+      ]
+    },
+    "hadinger_fringes": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Rare, conceptual short note"
+      ]
+    },
+    "fraunhofer_diffraction_single_slit": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Show that intensity of first/second order maxima is X% of central maxima"
+      ]
+    },
+    "diffraction_grating_resolving_power": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "Calculate the resolving power of grating for second order spectrum",
+        "Show resolving power ∝ number of order"
+      ]
+    },
+    "xray_diffraction": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Occasional short question on Bragg-type glancing angle numerical"
+      ]
+    },
+    "polarization_double_refraction": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is double refraction? Show plane & circular polarized light are special cases of elliptical polarization"
+      ]
+    },
+    "nicol_prism_wave_plates": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "How can linearly, circularly, elliptically polarized light be produced? Explain with mathematical expressions"
+      ]
+    },
+    "optical_activity_specific_rotation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate the specific rotation of sugar solution"
+      ]
+    },
+    "lens_combination_equivalent_focal": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive the expression for equivalent focal length of two thin lenses separated by a distance d"
+      ]
+    },
+    "cardinal_points": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Find the position of the cardinal/principal points"
+      ]
+    },
+    "chromatic_aberration_achromatism": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "Derive condition for achromatism of two thin lenses in contact",
+        "Find f1 and f2 satisfying achromatism"
+      ]
+    },
+    "lens_numericals": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Two thin converging lenses... find position and nature of the image"
+      ]
+    },
+    "laser_production_concepts": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the terms stimulated emission, population inversion, optical pumping, metastable state"
+      ]
+    },
+    "hene_laser": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Starting from energy level diagram, explain how lasers can be produced by Helium-Neon gas"
+      ]
+    },
+    "laser_uses": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short-note style"
+      ]
+    },
+    "fiber_self_focusing": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Trace the ray diagram showing propagation through step/graded index fiber. Write importance of self-focusing"
+      ]
+    },
+    "fiber_numerical_aperture": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Define acceptance angle. Derive expressions for acceptance angle and numerical aperture. Show NA = μ√(2Δ)"
+      ]
+    },
+    "fiber_applications": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Occasional short question"
+      ]
+    },
+    "electric_field_charge_distributions": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive an expression for electric field intensity due to a uniformly charged ring/disc at a point on its axis",
+        "Derive potential due to electric quadrupole"
+      ]
+    },
+    "gauss_law_applications": {
+      "levels": ["Apply"],
+      "patterns": [
+        "State and prove Gauss's law. Find electric field intensity inside/outside a uniformly charged sphere/cylinder"
+      ]
+    },
+    "electrostatic_potential_energy": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Numerical: potential/field at a point given V(x,y,z), find components and magnitude"
+      ]
+    },
+    "capacitors_dielectric": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive the capacitance of a cylindrical/spherical capacitor",
+        "Field strength, induced charge, polarization vector in a dielectric-filled capacitor"
+      ]
+    },
+    "charging_discharging_capacitor": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive the relation for rise and fall of current in charging/discharging of a capacitor through a resistor"
+      ]
+    },
+    "microscopic_ohms_law": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Discuss microscopic view of conduction. Show that resistivity is independent of applied field"
+      ]
+    },
+    "semiconductor_superconductor": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is superconductor? Explain critical magnetic field. Describe characteristics"
+      ]
+    },
+    "drift_velocity_numericals": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate the mean free time and mean free path for conduction electrons in copper"
+      ]
+    },
+    "magnetic_force_torque": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Numerical: maximum torque on current loop/dipole in magnetic field"
+      ]
+    },
+    "hall_effect": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "What is Hall effect? Derive expressions for Hall coefficient/Hall voltage"
+      ]
+    },
+    "cyclotron_synchrotron": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Describe working mechanism of cyclotron. Find expression for maximum energy"
+      ]
+    },
+    "biot_savart_ampere_law": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "Compare Biot-Savart law with Ampere's law. Calculate magnetic field inside/outside a long straight conductor"
+      ]
+    },
+    "faraday_induction": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Numerical: induced EMF/electric field from changing magnetic flux"
+      ]
+    },
+    "lr_circuit": {
+      "levels": ["Apply"],
+      "patterns": [
+        "A series circuit has resistance R and inductance L... find initial rate of increase of current / time to reach a value"
+      ]
+    },
+    "displacement_current": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is displacement current? Derive/explain its significance"
+      ]
+    },
+    "self_inductance": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive expression for inductance of a solenoid/toroid and show that inductance depends on geometry of the coil"
+      ]
+    },
+    "maxwell_equations": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Write Maxwell's equations in integral form. Convert them into differential form. Explain physical significance of each"
+      ]
+    },
+    "em_wave_equations": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Using Maxwell's equations, derive electromagnetic wave equation in dielectric medium"
+      ]
+    },
+    "em_field_numericals": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Maximum E and B fields from given intensity of sunlight/radio wave"
+      ]
+    },
+    "continuity_equation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive the continuity equation ∇·J = -∂ρ/∂t"
+      ]
+    },
+    "poynting_vector": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Define Poynting vector. Prove S = (E×B)/μ₀",
+        "Radiation pressure/power incident on a surface"
+      ]
+    },
+    "quantization_energy": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Rarely standalone; embedded in Schrödinger-equation questions"
+      ]
+    },
+    "de_broglie_wavelength": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Numerical: de Broglie wavelength ratio problems (occasional)"
+      ]
+    },
+    "schrodinger_equation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Derive the time-dependent/time-independent Schrödinger wave equation"
+      ]
+    },
+    "wave_function_probability": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What is the physical significance of the wave function?"
+      ]
+    },
+    "infinite_potential_well": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Show that energy levels are quantized for an electron confined in an infinite potential well. Derive the wave function"
+      ]
+    },
+    "uncertainty_principle": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Rare standalone; occasionally embedded conceptually"
+      ]
+    },
+    "barrier_tunneling": {
+      "levels": ["Apply"],
+      "patterns": [
+        "A beam of electrons of energy E is incident on a potential barrier of height V and width a. Calculate the percentage transmission"
+      ]
+    }
+  }
+}

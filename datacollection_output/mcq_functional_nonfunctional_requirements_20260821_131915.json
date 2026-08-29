@@ -1,0 +1,137 @@
+{
+  "topic": "functional_nonfunctional_requirements",
+  "generated_at": "2026-08-21T13:19:15",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the primary difference between functional and non‑functional requirements?",
+      "options": {
+        "A": "Functional requirements specify system qualities, while non‑functional requirements describe user interfaces.",
+        "B": "Functional requirements are optional, whereas non‑functional requirements are mandatory.",
+        "C": "Functional requirements define what the system shall do; non‑functional requirements define how the system shall be.",
+        "D": "Functional requirements are written after testing, while non‑functional requirements are written before coding."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Easy] Functional requirements state the services or functions the system must provide, whereas non‑functional requirements describe attributes such as performance, security, or usability. This distinction is outlined in the discussion of functional and non‑functional requirements on pages 5 and 7.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the given context, which statement exemplifies a non‑functional requirement?",
+      "options": {
+        "A": "“The system shall allow users to create a new account.”",
+        "B": "“The system shall generate a monthly sales report.”",
+        "C": "“All data transmitted over the network must be encrypted.”",
+        "D": "“The user shall be able to reset a forgotten password.”"
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Encryption concerns the security quality of the system, which is a classic non‑functional requirement as mentioned in the non‑functional requirements section (page 7).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How can an individual non‑functional requirement, such as security, lead to the creation of new functional requirements?",
+      "options": {
+        "A": "By eliminating the need for any additional system services.",
+        "B": "By requiring the definition of specific services like authentication and access control.",
+        "C": "By converting all functional requirements into non‑functional ones.",
+        "D": "By postponing all functional requirements until after deployment."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The text states that a non‑functional requirement like security may generate several related functional requirements that define new system services needed for its implementation (page 8).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which type of functional requirement is most likely to arise from a performance‑related non‑functional requirement?",
+      "options": {
+        "A": "A requirement to store user preferences.",
+        "B": "A requirement to provide multi‑language support.",
+        "C": "A requirement to implement load‑balancing mechanisms.",
+        "D": "A requirement to generate printable invoices."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Performance (a non‑functional attribute) often necessitates functional services such as load balancing to meet response‑time goals, as illustrated in the discussion of non‑functional requirements (page 8).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which agile practice aligns with “concurrently eliciting the requirements as the system is developed”?",
+      "options": {
+        "A": "Conducting a single, exhaustive requirements workshop before any coding.",
+        "B": "Incrementally gathering and refining requirements throughout development sprints.",
+        "C": "Defining all functional requirements only after the final prototype is built.",
+        "D": "Ignoring user feedback until the system is released."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The context mentions that an agile approach may be used to add detail and refine user requirements concurrently with development (page 5).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following pairs correctly matches a non‑functional requirement with a functional requirement that may be derived from it?",
+      "options": {
+        "A": "Usability → “The system shall encrypt all data.”",
+        "B": "Security → “The system shall authenticate users before granting access.”",
+        "C": "Reliability → “The system shall display a welcome screen.”",
+        "D": "Maintainability → “The system shall generate sales charts.”"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Security (non‑functional) typically leads to functional services such as user authentication, as described in the text (page 8).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The requirement “Response time shall be less than 2 seconds for any query” is classified as which kind of requirement?",
+      "options": {
+        "A": "Functional requirement dealing with data retrieval.",
+        "B": "Non‑functional requirement focusing on performance.",
+        "C": "Functional requirement specifying user interface layout.",
+        "D": "Non‑functional requirement concerning data storage format."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] A response‑time limit describes a performance quality, a classic example of a non‑functional requirement (page 7).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might non‑functional requirements be refined later in an agile development process?",
+      "options": {
+        "A": "Because they are always less important than functional requirements.",
+        "B": "Because quality attributes often become clearer as the system evolves.",
+        "C": "Because they are unrelated to system architecture.",
+        "D": "Because they are fixed and never change once written."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The text notes that an agile approach can be used to add detail and refine user requirements, implying that non‑functional attributes may be clarified and adjusted as the system is built (page 5).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Figure 4.3 in the source material is referenced to illustrate what?",
+      "options": {
+        "A": "The sequence of coding steps in an agile sprint.",
+        "B": "Types of non‑functional requirements.",
+        "C": "The hierarchy of functional modules.",
+        "D": "The layout of a user interface prototype."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] The context cites Figure 4.3 as showing “Types of non‑functional” requirements (page 8).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a system must operate on Windows, macOS, and Linux, which classification applies and what functional requirement might result?",
+      "options": {
+        "A": "Functional requirement; “The system shall store data in XML format.”",
+        "B": "Non‑functional requirement of portability; functional requirement to detect the OS and load appropriate drivers.",
+        "C": "Functional requirement; “The system shall provide a dark‑mode theme.”",
+        "D": "Non‑functional requirement of security; “The system shall encrypt files on disk.”"
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Portability across platforms is a non‑functional attribute; implementing it typically requires a functional service that detects the operating system and loads the correct components (pages 5‑7).",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "topic": "modular_decomposition_styles",
+  "generated_at": "2026-08-21T13:22:17",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/2chapter_software.pdf",
+  "questions": [
+    {
+      "question": "How does using structured specifications reduce problems associated with natural‑language specifications?",
+      "options": {
+        "A": "By eliminating the need for any documentation altogether.",
+        "B": "By increasing variability in the specification.",
+        "C": "By imposing uniformity and organizing requirements, thus reducing variability.",
+        "D": "By allowing unrestricted use of informal language."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Structured specifications impose uniformity and organize requirements, which reduces variability compared to natural language specifications [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best describes the role of use cases in software modeling?",
+      "options": {
+        "A": "They replace all class diagrams in UML.",
+        "B": "They provide a graphical and textual way to describe user‑system interactions.",
+        "C": "They are only used for low‑level code generation.",
+        "D": "They focus solely on database schema design."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Use cases describe interactions between users and a system using both a graphical model and structured text, and are a fundamental UML feature [Page 25].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the purpose of describing side effects of an operation in a specification?",
+      "options": {
+        "A": "To list the aesthetic design choices of the UI.",
+        "B": "To identify any changes the operation may cause beyond its primary function.",
+        "C": "To document the hardware requirements of the system.",
+        "D": "To provide a marketing tagline for the feature."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] A side‑effects description captures any additional changes an operation may cause, beyond its main purpose [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which element is NOT part of the citation for Dijkstra’s article as shown in the text?",
+      "options": {
+        "A": "Author’s full name and initials.",
+        "B": "Year of publication.",
+        "C": "URL of the online PDF.",
+        "D": "Journal name and volume/issue numbers."
+      },
+      "correct_answer": "C",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] The citation includes author, year, article title, journal, volume, issue, and DOI, but does not provide a URL for the PDF [Page 36].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best defines unit testing according to the provided material?",
+      "options": {
+        "A": "Testing the entire integrated system after deployment.",
+        "B": "Testing individual program components such as methods or classes.",
+        "C": "Testing only the user interface for visual consistency.",
+        "D": "Testing the performance of the network infrastructure."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Unit testing involves testing program components like methods or object classes individually [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When designing unit tests for a method, why is it recommended to call the routine with different input parameters?",
+      "options": {
+        "A": "To ensure the method fails every time.",
+        "B": "To verify that the method behaves correctly across a range of scenarios.",
+        "C": "To reduce the number of test cases needed.",
+        "D": "To avoid using any test‑case design approaches."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Varying input parameters helps confirm correct behavior under diverse conditions, as suggested for function or method tests [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How do programming‑language constructs such as alternatives and iteration improve structured specifications?",
+      "options": {
+        "A": "They make the specification harder to read for non‑programmers.",
+        "B": "They allow the specification to express conditional and repeated behavior directly.",
+        "C": "They eliminate the need for any documentation.",
+        "D": "They convert the specification into executable code automatically."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Using constructs like alternatives and iteration lets specifications explicitly represent conditional and repetitive logic [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What visual technique is mentioned for highlighting key elements in structured language notations?",
+      "options": {
+        "A": "Adding background music to the document.",
+        "B": "Using shading or different fonts.",
+        "C": "Printing the document on colored paper only.",
+        "D": "Embedding video clips within the text."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Remember | Difficulty: Easy] Structured language notations may highlight key elements using shading or different fonts [Page 23].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why did use cases become a fundamental feature of UML after being introduced in the Objectory method?",
+      "options": {
+        "A": "Because they replaced all other diagram types in UML.",
+        "B": "Because they offered a clear way to model user‑system interactions, fitting UML’s goal of standardization.",
+        "C": "Because they required no textual description, only graphics.",
+        "D": "Because they were the only method supported by early UML tools."
+      },
+      "correct_answer": "B",
+      "difficulty": "",
+      "explanation": "[Bloom: Understand | Difficulty: Medium] Use cases, first introduced in Objectory, provide a clear model of interactions and were adopted into UML as a core feature [Page 25].",
+      "source_pages": []
+    }
+  ]
+}

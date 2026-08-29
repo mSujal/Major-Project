@@ -1,0 +1,401 @@
+{
+  "subject": "Software Engineering",
+  "topics": {
+    "software_crisis": {
+      "levels": ["Understand", "Evaluate", "Remember"],
+      "patterns": [
+        "What is software crisis?",
+        "Justify: Software doesn't wear out",
+        "What factors contributed to crisis?"
+      ]
+    },
+    "software_characteristics": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List typical software characteristics",
+        "Explain characteristics of good software"
+      ]
+    },
+    "process_models": {
+      "levels": ["Understand", "Analyze", "Evaluate"],
+      "patterns": [
+        "Explain model + pros/cons",
+        "Differentiate models",
+        "Which model do you suggest — justify"
+      ]
+    },
+    "process_activities_case_tools": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What are benefits of CASE tools?"
+      ]
+    },
+    "functional_nonfunctional_requirements": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Prepare functional/non-functional requirements for given scenario"
+      ]
+    },
+    "feasibility_study": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Why feasibility study needed?",
+        "Prepare feasibility report for scenario"
+      ]
+    },
+    "requirements_elicitation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain guidelines for requirement elicitation process"
+      ]
+    },
+    "srs_document": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "Importance of SRS document",
+        "Explain requirement engineering process"
+      ]
+    },
+    "context_models_dfd": {
+      "levels": ["Apply", "Create", "Understand"],
+      "patterns": [
+        "Draw/Design Level-0 and Level-1 DFD for given case study"
+      ]
+    },
+    "behavioural_models": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is behavior model? Illustrate with sample diagram"
+      ]
+    },
+    "data_object_models": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain object aggregation model with example"
+      ]
+    },
+    "use_case_diagrams": {
+      "levels": ["Apply", "Create"],
+      "patterns": [
+        "Prepare/Draw use case diagram for given scenario"
+      ]
+    },
+    "structured_methods_dfd_balancing": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "What do you mean by DFD balancing in given case?"
+      ]
+    },
+    "architectural_design_importance": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Why is architectural design important in software engineering?"
+      ]
+    },
+    "modular_decomposition_styles": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "What are modular decomposition styles used during design?"
+      ]
+    },
+    "control_styles": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain call-return architecture with suitable example"
+      ]
+    },
+    "reference_architectures": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate repository model and layered model with advantages/disadvantages"
+      ]
+    },
+    "client_server_architecture": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain client-server architecture with suitable example"
+      ]
+    },
+    "thin_vs_thick_client": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate between thin client and thick client model"
+      ]
+    },
+    "multiprocessor_distributed_architecture": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Describe multiprocessor architecture",
+        "Compare client-server vs distributed object architecture"
+      ]
+    },
+    "real_time_system_definition": {
+      "levels": ["Remember"],
+      "patterns": [
+        "What is real-time system?"
+      ]
+    },
+    "hard_vs_soft_real_time": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate hard real time and soft real time system"
+      ]
+    },
+    "rtos": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "Explain role of RTOS",
+        "List characteristics of RTOS"
+      ]
+    },
+    "periodic_aperiodic_stimuli": {
+      "levels": ["Remember", "Analyze"],
+      "patterns": [
+        "Define periodic and aperiodic stimuli"
+      ]
+    },
+    "data_acquisition_systems": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain data acquisition system (with architecture)"
+      ]
+    },
+    "reuse_landscape_benefits_risks": {
+      "levels": ["Understand"],
+      "patterns": [
+        "What are benefits and risks of software reuse?"
+      ]
+    },
+    "reuse_planning_factors": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What factors must be considered during reuse planning?"
+      ]
+    },
+    "justify_reuse_advantages": {
+      "levels": ["Evaluate"],
+      "patterns": [
+        "Justify: Advantages of reuse are lower costs, faster development, lower risks"
+      ]
+    },
+    "design_patterns": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is a design pattern?"
+      ]
+    },
+    "generator_based_reuse": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How useful are application frameworks?"
+      ]
+    },
+    "cots_reuse": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is COTS integration/reuse?"
+      ]
+    },
+    "components_and_component_models": {
+      "levels": ["Remember", "Apply"],
+      "patterns": [
+        "What are software components? Explain with example/symbols"
+      ]
+    },
+    "cbse_process": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain the CBSE process in brief"
+      ]
+    },
+    "justify_cbse_reuse": {
+      "levels": ["Evaluate"],
+      "patterns": [
+        "Justify: CBSE is a reuse-based approach"
+      ]
+    },
+    "component_composition": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Briefly explain use of COCOMO/component composition"
+      ]
+    },
+    "provided_required_interfaces": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "What are provided/required interfaces? Explain with suitable example"
+      ]
+    },
+    "verification_vs_validation": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate between verification and validation"
+      ]
+    },
+    "v_and_v_planning": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Why is V&V planning necessary?"
+      ]
+    },
+    "software_inspections": {
+      "levels": ["Understand", "Remember"],
+      "patterns": [
+        "What is software inspection process? What faults can be uncovered?"
+      ]
+    },
+    "verification_formal_methods": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "What type of systems are validated using formal methods, and why?"
+      ]
+    },
+    "critical_system_v_and_v": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Rare standalone, mostly embedded in inspection questions"
+      ]
+    },
+    "system_component_unit_integration_testing": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate system testing and integration testing"
+      ]
+    },
+    "blackbox_vs_whitebox_testing": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Differentiate black-box and white-box testing"
+      ]
+    },
+    "alpha_vs_beta_testing": {
+      "levels": ["Analyze"],
+      "patterns": [
+        "Compare alpha and beta testing"
+      ]
+    },
+    "test_case_design_equivalence_partitioning": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Explain equivalence partitioning with example"
+      ]
+    },
+    "test_automation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Rarely asked standalone"
+      ]
+    },
+    "metrics_for_testing": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Compute cyclomatic complexity / Halstead metrics for given code"
+      ]
+    },
+    "software_productivity_estimation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain estimation techniques"
+      ]
+    },
+    "cocomo_cost_modeling": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate Effort, Development Time, Team Size using COCOMO"
+      ]
+    },
+    "function_point_analysis": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Compute FP for the system given weighting factors"
+      ]
+    },
+    "project_duration_staffing": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Embedded within COCOMO numericals"
+      ]
+    },
+    "quality_concepts_sqa": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define SQA",
+        "What are software quality measures?"
+      ]
+    },
+    "software_reviews_ftr": {
+      "levels": ["Understand"],
+      "patterns": [
+        "How is FTR conducted?",
+        "Explain FTR process"
+      ]
+    },
+    "statistical_sqa_vital_few": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "What is significance of 'vital few' in statistical SQA?"
+      ]
+    },
+    "software_reliability": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain software reliability and how it's measured"
+      ]
+    },
+    "software_metrics_fan_in_fan_out": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Why do we prefer lower Fan-In value? Explain"
+      ]
+    },
+    "iso_standards": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate CMM and ISO standards"
+      ]
+    },
+    "cmmi": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain different levels of CMMI"
+      ]
+    },
+    "sqa_plan_software_certification": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Rarely standalone"
+      ]
+    },
+    "configuration_management_planning": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe configuration management planning"
+      ]
+    },
+    "change_management": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Describe change management process"
+      ]
+    },
+    "version_release_management": {
+      "levels": ["Remember", "Analyze"],
+      "patterns": [
+        "Define Version, Variants, and Release",
+        "Differentiate version and variant"
+      ]
+    },
+    "system_building": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Rarely asked standalone"
+      ]
+    },
+    "case_tools_for_configuration_management": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Rarely standalone"
+      ]
+    }
+  }
+}

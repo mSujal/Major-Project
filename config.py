@@ -16,3 +16,5 @@ LOCAL_MODEL = None           # ollama fallback ko lagi —  machine ma jun ollam
 #           STATE MANAGEMENT            #
 #########################################
 CURRENT_PDF = None  # holds currently loaded pdf 
+
+TAXONOMY_PATH = "Datasets/Jsons/software_engineering.json"
