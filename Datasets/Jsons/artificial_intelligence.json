@@ -1,0 +1,315 @@
+{
+  "subject": "Artificial Intelligence",
+  "topics": {
+    "definition_of_ai": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define Artificial Intelligence (AI)",
+        "Can machine think? Explain your stance with appropriate reasons, relating it to the Turing Test",
+        "What is a rational agent? Justify that 'systems that think/act rationally' are part of AI"
+      ]
+    },
+    "importance_of_ai": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "What is the importance of the Turing Test in AI?",
+        "If the Turing Test is passed, does this show that computers exhibit intelligence? State your reasons"
+      ]
+    },
+    "ai_and_related_fields": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate between Natural (Human) Intelligence and Artificial Intelligence",
+        "Can AI replace humans? Justify"
+      ]
+    },
+    "history_of_ai": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Discuss the brief history of AI with chronological development",
+        "Describe four views of Artificial Intelligence in detail"
+      ]
+    },
+    "applications_of_ai": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Discuss any two fields of daily life where Artificial Intelligence has been applied",
+        "Explain AI applications in different areas as a problem-solving tool"
+      ]
+    },
+    "knowledge_and_learning_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Distinguish between knowledge and learning",
+        "What does acting humanly refer to? Explain"
+      ]
+    },
+    "state_space_search_formulation": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is problem space? Formulate the given puzzle as a search problem and solve it using any search method, drawing the search tree",
+        "What makes a problem 'well defined'? Explain with a sample state-space search framework"
+      ]
+    },
+    "problem_types_and_csp": {
+      "levels": ["Apply"],
+      "patterns": [
+        "What is a Constraint Satisfaction Problem? Solve the given crypto-arithmetic problem (e.g. SEND + MORE = MONEY), assigning digits to letters and explaining each step",
+        "List all constraints and solve the given crypto-arithmetic problem"
+      ]
+    },
+    "well_defined_problems": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What do you understand by well-defined problems? Explain problems that can be solved using production rules with an example",
+        "Solve the given problem using the production system"
+      ]
+    },
+    "game_playing_production_systems": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What do you understand by a production system problem? Solve the given example",
+        "Explain steps of problem solving with a suitable example"
+      ]
+    },
+    "uninformed_search_bfs_dfs": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Distinguish between Breadth First Search and Depth First Search with their performance criteria",
+        "Why is searching important in problem solving? Compare uninformed search strategies in terms of space and time complexity"
+      ]
+    },
+    "depth_limited_search": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "What is the advantage of depth-limit search? Compare it with other search strategies"
+      ]
+    },
+    "search_strategy_comparison": {
+      "levels": ["Analyze", "Evaluate"],
+      "patterns": [
+        "Discuss about the evaluation criteria for search algorithms",
+        "Explain any two types of blind search and compare them in terms of space and time complexity"
+      ]
+    },
+    "informed_search_hill_climbing_best_first": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Discuss the hill-climbing search algorithm along with problems associated with it and their solutions",
+        "What are the drawbacks of greedy best-first search, and how does A* search overcome them?"
+      ]
+    },
+    "greedy_and_a_star_search": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Explain the A* algorithm on the given figure/graph where the starting node and destination node are given, tracing the cost at each step",
+        "Devise/trace an example showing how A* uses path cost and heuristic cost to generate the best solution"
+      ]
+    },
+    "adversarial_search_minimax_alphabeta": {
+      "levels": ["Apply", "Analyze"],
+      "patterns": [
+        "What is minimax search? Apply minimax search along with alpha-beta pruning on the given game tree",
+        "List the disadvantages of the MIN-MAX algorithm and explain how alpha-beta pruning overcomes this limitation with an example"
+      ]
+    },
+    "formal_logic_basics": {
+      "levels": ["Remember", "Understand", "Apply"],
+      "patterns": [
+        "What is CNF? Explain the rule of inference along with an example",
+        "Why is CNF necessary? Represent the given statement in FOPL and explain all the steps involved to convert it into CNF"
+      ]
+    },
+    "propositional_and_predicate_logic": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Define horn clause with an example",
+        "Represent the given axioms in predicate calculus and convert each formula to CNF"
+      ]
+    },
+    "fopl_quantification_horn_clauses": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Convert the given sentences into FOPL and answer the given question using resolution refutation"
+      ]
+    },
+    "rules_of_inference_unification_resolution": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Given a set of premises, prove the given conclusion using the Resolution Refutation method / FOPL based resolution",
+        "List down the rules of inference. When can we use each rule? Explain"
+      ]
+    },
+    "rule_based_deduction_system": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is rule-based reasoning? Explain with an example",
+        "Differentiate between forward chaining and backward chaining, explaining one with a suitable example"
+      ]
+    },
+    "statistical_reasoning_bayes_theorem": {
+      "levels": ["Apply", "Understand"],
+      "patterns": [
+        "Explain how statistical reasoning aids inference in light of Bayes' theorem, and calculate the required probability for the given scenario",
+        "What is prior probability and posterior probability, and how are they used in Bayes' theorem? Is there a connection between belief networks and Bayes' theorem?"
+      ]
+    },
+    "representations_and_mappings": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain representations and mappings in knowledge representation"
+      ]
+    },
+    "approaches_to_knowledge_representation": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "Discuss the different approaches to knowledge representation. How do you make a choice among these approaches? Is it possible to evaluate knowledge representation?"
+      ]
+    },
+    "issues_in_knowledge_representation": {
+      "levels": ["Understand", "Evaluate"],
+      "patterns": [
+        "What are the issues in knowledge representation? List down any issues associated with it"
+      ]
+    },
+    "semantic_nets_and_frames": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Define the term semantic net. Represent the given set of sentences using semantic net representation",
+        "Define a semantic network and frames with an example. List their advantages and limitations"
+      ]
+    },
+    "conceptual_dependency_and_scripts": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What do you mean by Conceptual Dependency? Explain how knowledge is represented using scripts",
+        "Explain some common primitives used in conceptual dependency"
+      ]
+    },
+    "concepts_of_learning": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is machine learning?",
+        "Distinguish between knowledge and learning"
+      ]
+    },
+    "learning_by_analogy_inductive_ebl": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Give an example of learning by analogy",
+        "Define inductive learning. Explain the ID3 process with a suitable example",
+        "Use the ID3 method on the given labeled data to draw a decision tree diagram"
+      ]
+    },
+    "neural_networks_intro": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is a neural network? Show that a single neuron cannot implement the XOR gate",
+        "What is Artificial Neural Network (ANN)? Compare ANN with the human brain and its functioning principle"
+      ]
+    },
+    "genetic_algorithm": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is a genetic algorithm? Explain all the steps in the genetic algorithm with a block diagram and operators",
+        "Suppose chromosomes are of a given form; calculate the fitness of the given individuals and show the initial population"
+      ]
+    },
+    "fuzzy_learning": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "When shall we use Fuzzy Logic? Explain with an appropriate example and the major steps for developing a system based on fuzzy logic",
+        "What is Fuzzy Logic and why is it important? Explain the Mamdani Fuzzy Inference method with an example"
+      ]
+    },
+    "boltzmann_machines": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define Boltzmann Machine",
+        "Write short notes on Boltzmann Machine"
+      ]
+    },
+    "nn_network_structure": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is a neural network? Explain its basic structure",
+        "Show that a single neuron cannot implement a given logic gate"
+      ]
+    },
+    "adaline_network": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain the Adaline network with a diagram"
+      ]
+    },
+    "perceptron": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is a perceptron? When do we need the back-propagation algorithm? Explain with an example",
+        "Using the Hebbian learning algorithm, construct a neural network that behaves as a given logic gate. Is Hebbian learning a supervised method? Justify"
+      ]
+    },
+    "mlp_backpropagation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "What is the role of the activation function in ANN? Explain the McCulloch-Pitts model of a neuron with a diagram",
+        "Given a neural network with specified weights and inputs, perform forward propagation and update the weights for the given layer"
+      ]
+    },
+    "hopfield_network": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is a McCulloch/Pitts neuron? Can this neuron be trained to represent the EX-OR gate? Justify and propose a neural network model",
+        "Explain the Hopfield network with an example"
+      ]
+    },
+    "kohonen_network": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "What is Self-Organizing Map (SOM)? Explain all the steps involved in SOM with a suitable example",
+        "Compare the Hopfield network with the Kohonen network"
+      ]
+    },
+    "expert_system_architecture": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What are expert systems? Explain the architecture of an expert system with a suitable block diagram",
+        "Draw the block diagram of an expert system and briefly explain each component"
+      ]
+    },
+    "knowledge_acquisition_induction": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Define knowledge acquisition with an example",
+        "How is knowledge acquisition performed in an expert system? Explain one real expert system example with proper architecture"
+      ]
+    },
+    "expert_system_knowledge_representation": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate between declarative knowledge and procedural knowledge"
+      ]
+    },
+    "expert_system_development": {
+      "levels": ["Understand", "Apply", "Create"],
+      "patterns": [
+        "You are hired as a Knowledge Engineer to develop an expert system for a given domain (e.g. disease diagnosis). Draw a block diagram and highlight the major steps for development",
+        "List the importance/benefits of an expert system in real life"
+      ]
+    },
+    "nlp_levels_of_analysis": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What problems are associated with NLP? List the different steps involved in natural language processing with a suitable example",
+        "Compare the pragmatic and phonetic levels of analysis in NLP"
+      ]
+    },
+    "introduction_to_machine_vision": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Write short notes on Machine Vision",
+        "What is machine vision? Explain briefly"
+      ]
+    }
+  }
+}

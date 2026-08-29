@@ -43,7 +43,7 @@ class Headless:
         label = topic if topic != "all_topics" else "General topics from PDF"
         print(f"[Generating] {num_questions} MCQs on {label}")
         result = self.rag_pipeline.query_mcq(
-            question=topic,
+            query=topic,
             pdf_path=pdf_path,
             num_questions=num_questions,
             save_json=save_json,

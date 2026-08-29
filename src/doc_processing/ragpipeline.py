@@ -171,7 +171,7 @@ class RAGPipeline:
         Find the best matching topic key from the taxonomy based on the query.
         Uses simple substring matching.
         """
-        query_lower = query.lower()
+        query_lower = query.lower().replace("_", " ")
 
         for key in self.taxonomy["topics"].keys():
             key_words = key.replace("_", " ")
