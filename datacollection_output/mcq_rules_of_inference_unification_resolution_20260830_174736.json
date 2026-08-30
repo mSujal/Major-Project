@@ -1,0 +1,88 @@
+{
+  "topic": "rules of inference unification resolution",
+  "generated_at": "2026-08-30T17:47:36",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Given the knowledge base consisting of the two sentences (1) B₁,₁ ⇔ (P₁,₂ ∨ P₂,₁) and (2) ¬B₁,₁, after converting all sentences to CNF and applying a single resolution step, which of the following clauses is correctly derived?",
+      "options": {
+        "A": "¬P₁,₂ ∨ ¬P₂,₁",
+        "B": "P₁,₂ ∨ P₂,₁",
+        "C": "¬P₁,₂ ∧ ¬P₂,₁",
+        "D": "P₁,₂ ∧ P₂,₁"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Converting (1) to CNF yields (¬B₁,₁ ∨ P₁,₂ ∨ P₂,₁) ∧ (B₁,₁ ∨ ¬P₁,₂) ∧ (B₁,₁ ∨ ¬P₂,₁) (see conversion steps on [Page 4]). Clause (2) is ¬B₁,₁. Resolving ¬B₁,₁ with (¬B₁,₁ ∨ P₁,₂ ∨ P₂,₁) removes the complementary literals, leaving the resolvent P₁,₂ ∨ P₂,₁, which corresponds to option B.  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Which most general unifier (MGU) makes the literals parent(X, john) and parent(mary, Y) identical?",
+      "options": {
+        "A": "{X/mary, Y/john}",
+        "B": "{X/john, Y/mary}",
+        "C": "{X/mary}",
+        "D": "{Y/john}"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Unification requires substituting X with mary to match the first argument and Y with john to match the second argument, giving the MGU {X/mary, Y/john}. This follows the unification procedure described on [Page 4] (unification, 14:19).  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Using Generalized Modus Ponens, which conclusion can be derived from the Horn clause ¬hasKey(X) ∨ canOpen(Y, X) and the fact hasKey(k1)?",
+      "options": {
+        "A": "¬canOpen(Y, k1)",
+        "B": "canOpen(Y, k1)",
+        "C": "¬hasKey(k1)",
+        "D": "hasKey(Y)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The clause is equivalent to hasKey(X) ⇒ canOpen(Y, X). Instantiating X with k1 and using the fact hasKey(k1) allows us to infer canOpen(Y, k1) by Generalized Modus Ponens (see page 4, “Generalized Modus Ponens, 14:20”).  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "In a propositional knowledge base in CNF, which inference rule should be applied when a clause contains the literals L and ¬L (in any two different clauses)?",
+      "options": {
+        "A": "Modus Ponens",
+        "B": "Resolution",
+        "C": "Forward Chaining",
+        "D": "Backward Chaining"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The presence of complementary literals L and ¬L allows the Resolution rule to combine the two clauses, eliminating the pair and producing a resolvent. This is the core of the resolution algorithm described on [Page 180] and [Page 196].  \n\n---",
+      "source_pages": [
+        "180",
+        "196"
+      ]
+    },
+    {
+      "question": "A robot planning system maintains a set of Horn clauses representing its actions. Which reasoning strategy is most appropriate for deriving all possible new facts from the current knowledge base without a specific goal in mind?",
+      "options": {
+        "A": "Backward chaining",
+        "B": "Forward chaining",
+        "C": "Resolution refutation",
+        "D": "Generalized Modus Ponens only"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Forward chaining repeatedly applies inference rules (e.g., Modus Ponens) to a Horn KB to generate all derivable facts, which matches the description of forward chaining on [Page 4] (14:21). Backward chaining, by contrast, works from a goal backward.",
+      "source_pages": [
+        "4"
+      ]
+    }
+  ]
+}

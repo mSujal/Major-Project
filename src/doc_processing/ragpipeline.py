@@ -394,7 +394,22 @@ class RAGPipeline:
                 q["explanation"] = fallback_text
 
             # Source pages
-            q["source_pages"] = re.findall(r"\[(\d+)\]", q["explanation"])
+            # Match "page 180", "Page: 180", "[Page 180]", "pages 14-20",
+            # "page 14:20", "pages 14, 180, 196" (comma/and-separated lists), etc.
+            phrase_matches = re.findall(
+                r"[Pp]ages?:?\s*((?:\d+(?:[-:]\d+)?(?:\s*(?:,|and)\s*)?)+)",
+                q["explanation"],
+            )
+            source_pages = []
+            for phrase in phrase_matches:
+                source_pages.extend(re.findall(r"\d+(?:[-:]\d+)?", phrase))
+            seen = set()
+            q["source_pages"] = []
+            for p in source_pages:
+                p = p.replace(":", "-")
+                if p not in seen:
+                    seen.add(p)
+                    q["source_pages"].append(p)
 
             # Embedding for dedup
             if q["question"]:
