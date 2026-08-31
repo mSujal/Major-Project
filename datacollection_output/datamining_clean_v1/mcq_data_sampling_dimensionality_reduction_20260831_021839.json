@@ -1,0 +1,147 @@
+{
+  "topic": "data sampling dimensionality reduction",
+  "generated_at": "2026-08-31T02:18:39",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which statement best captures the combined role of data sampling and dimensionality reduction in data reduction strategies?",
+      "options": {
+        "A": "Both techniques create a completely new dataset that discards the original information.",
+        "B": "Both aim to produce a smaller representation of the data while preserving the analytical usefulness of the original set.",
+        "C": "Sampling reduces attributes, whereas dimensionality reduction reduces the number of tuples.",
+        "D": "Neither technique affects the size of the data; they only improve visualisation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Both sampling (a form of numerosity reduction) and dimensionality reduction are described as ways to obtain a reduced representation of the data that is much smaller in volume yet yields the same (or almost the same) analytical results. [Page 4, Page 26]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the primary goal of dimensionality reduction as defined in the text?",
+      "options": {
+        "A": "To increase the number of random variables for richer analysis.",
+        "B": "To replace data with alternative parametric models.",
+        "C": "To reduce the number of random variables or attributes under consideration.",
+        "D": "To compress data without any loss of information."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that dimensionality reduction “is the process of reducing the number of random variables or attributes under consideration.” [Page 17]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of numerosity reduction, which of the following methods is classified as non‑parametric?",
+      "options": {
+        "A": "Regression models",
+        "B": "Sampling",
+        "C": "Log‑linear models",
+        "D": "Neural networks"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Non‑parametric models listed for numerosity reduction include histograms, clusters, sampling, and data aggregation. Sampling is therefore a non‑parametric method. [Page 4]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Sampling allows a large dataset D containing N tuples to be represented by a much smaller random subset. Which implication follows from this description?",
+      "options": {
+        "A": "The subset will always contain exactly 10 % of the original tuples.",
+        "B": "Analysis can be performed with reduced computational cost while still reflecting properties of the whole dataset.",
+        "C": "The original dataset must be discarded after sampling.",
+        "D": "Sampling guarantees identical analytical results to those obtained from the full dataset."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text explains that sampling “allows a large data set to be represented by a much smaller random data sample (or subset),” implying reduced computational effort while preserving the dataset’s essential characteristics. [Page 26]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why does the text emphasize that data reduction should produce “the same (or almost the same) analytical results”?",
+      "options": {
+        "A": "To ensure that the reduced data can be used for unrelated business processes.",
+        "B": "To guarantee that the reduction process eliminates all noise from the data.",
+        "C": "To make certain that conclusions drawn from the reduced data remain trustworthy and comparable to those from the original data.",
+        "D": "To allow the reduced dataset to be stored in any file format."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Maintaining (almost) the same analytical results is essential so that the insights derived after reduction are still valid. [Page 4]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the text categorize dimensionality reduction and numerosity reduction with respect to data compression?",
+      "options": {
+        "A": "They are unrelated to data compression.",
+        "B": "They are considered forms of data compression.",
+        "C": "Only dimensionality reduction is a type of compression.",
+        "D": "Only numerosity reduction can be lossless."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that “Dimensionality reduction and numerosity reduction techniques can also be considered forms of data compression.” [Page 18]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the difference between parametric and non‑parametric models used in numerosity reduction?",
+      "options": {
+        "A": "Parametric models require no assumptions about data distribution, while non‑parametric models do.",
+        "B": "Parametric models assume a specific functional form (e.g., regression), whereas non‑parametric models do not (e.g., histograms, clustering).",
+        "C": "Non‑parametric models always produce lossless compression, while parametric models are lossy.",
+        "D": "Parametric models are only used for dimensionality reduction, not numerosity reduction."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text lists regression and log‑linear models as parametric, and histograms, clusters, sampling, and aggregation as non‑parametric, reflecting the presence or absence of an assumed functional form. [Page 4]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Reducing the number of random variables through dimensionality reduction most directly yields which benefit mentioned in the context?",
+      "options": {
+        "A": "Increased storage requirements.",
+        "B": "Simplified analysis and reduced computational complexity.",
+        "C": "Complete elimination of all noise from the data.",
+        "D": "Ability to apply any machine‑learning algorithm without modification."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "By lowering the number of attributes, dimensionality reduction “reduces the number of random variables,” which naturally leads to simpler analysis and lower computational load. [Page 17]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The overview lists wavelet as one of the methods under dimensionality reduction. Which of the following best characterises why such methods are included in this category?",
+      "options": {
+        "A": "They increase the dimensionality of the data to improve visualization.",
+        "B": "They transform data into a lower‑dimensional space while preserving important information.",
+        "C": "They replace numeric attributes with textual descriptions.",
+        "D": "They are used exclusively for lossless string compression."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Wavelet is cited as a dimensionality‑reduction method, implying it is used to transform data into fewer dimensions while retaining essential patterns. [Page 17]  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the data reduction strategies discussed, which combination would most effectively reduce data size while preserving analytical utility?",
+      "options": {
+        "A": "Applying only data compression algorithms without any sampling or dimensionality reduction.",
+        "B": "Using dimensionality reduction to cut attributes and sampling to cut instances.",
+        "C": "Performing numerosity reduction with only parametric models and no sampling.",
+        "D": "Storing the full dataset in a three‑tier data‑warehouse architecture."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text highlights both dimensionality reduction (reducing attributes) and sampling (a form of numerosity reduction) as techniques that together achieve a much smaller dataset while maintaining analytical results. [Page 17, Page 26]",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "olap vs oltp",
+  "generated_at": "2026-08-31T02:08:17",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which tier in the three‑tier architecture described is most directly associated with OLTP processing?",
+      "options": {
+        "A": "Top tier – front‑end reporting tools",
+        "B": "Middle tier – OLAP server",
+        "C": "Bottom tier – operational databases",
+        "D": "Bottom tier – data warehouse"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The bottom tier contains “Operational databases” that support day‑to‑day transaction processing, i.e., OLTP, whereas the middle tier hosts the OLAP server for analytical work. [Page 49]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of the described architecture, which component primarily enables the analytical capabilities of an OLAP system?",
+      "options": {
+        "A": "Extract, Transform, Load (ETL) processes",
+        "B": "Metadata repository server",
+        "C": "OLAP server in the middle tier",
+        "D": "Operational databases in the bottom tier"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The middle tier “is an OLAP server” that implements ROLAP or MOLAP models for multidimensional analysis. [Page 50]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the text, which of the following best explains why the separation between OLTP and OLAP systems might decrease in the future?",
+      "options": {
+        "A": "OLTP systems are adopting multidimensional indexing.",
+        "B": "Advances in hardware allow OLTP to store larger data volumes.",
+        "C": "Emerging architectures blend transactional and analytical processing.",
+        "D": "OLAP servers are being replaced by simple relational databases."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that “the separation between OLTP and OLAP systems is expected to decrease,” implying a convergence of transactional and analytical capabilities. [Page 48]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly differentiates a characteristic of OLAP from that of OLTP as implied by the comparison table mentioned?",
+      "options": {
+        "A": "OLAP emphasizes high‑frequency, short‑duration transactions.",
+        "B": "OLTP is optimized for ad‑hoc multidimensional queries.",
+        "C": "OLAP stores historical, aggregated data for analysis.",
+        "D": "OLTP maintains data in a multidimensional cube format."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The comparison of OLTP and OLAP (Table 4.1) traditionally highlights that OLAP works with historical, aggregated data, whereas OLTP handles current transaction processing. The context’s focus on data warehousing supports this distinction. [Page 48]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If an organization needs fast computation on a relatively small, pre‑aggregated dataset, which OLAP architecture would be most appropriate, and how does this choice contrast with typical OLTP design?",
+      "options": {
+        "A": "ROLAP – similar to OLTP’s relational tables.",
+        "B": "MOLAP – unlike OLTP, it stores data in multidimensional cubes.",
+        "C": "HOLAP – combines OLTP’s scalability with OLAP’s speed.",
+        "D": "No OLAP architecture is suitable; use OLTP."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "MOLAP “offers faster computation” by using multidimensional storage, contrasting with OLTP’s normalized relational design focused on transaction speed rather than analytical computation. [Page 82]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes a scalability advantage of ROLAP over MOLAP, and why this advantage is not a primary concern for OLTP systems?",
+      "options": {
+        "A": "ROLAP can handle larger data volumes because it leverages relational DBMS scalability; OLTP already deals with high‑volume transaction data.",
+        "B": "ROLAP stores data in memory for rapid access; OLTP cannot use memory storage.",
+        "C": "ROLAP provides built‑in data mining; OLTP does not need mining.",
+        "D": "ROLAP requires less hardware; OLTP always runs on minimal hardware."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The text states ROLAP “benefits from the greater scalability of ROLAP,” while OLTP’s focus is on transaction throughput, not on the multidimensional scalability concerns of OLAP. [Page 82]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the three‑tier model, which layer is most likely to be refreshed periodically through ETL processes, and how does this differ from the refresh behavior of OLTP systems?",
+      "options": {
+        "A": "Top tier – refreshed continuously like OLTP.",
+        "B": "Middle tier – refreshed only on demand, unlike OLTP’s real‑time updates.",
+        "C": "Bottom tier – operational databases are refreshed via ETL, similar to OLTP.",
+        "D": "Bottom tier – data warehouse is refreshed periodically, whereas OLTP updates are immediate."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "ETL “Extract, Clean, Transform, Load” feeds the data warehouse (bottom tier) which is refreshed on a schedule, while OLTP databases are updated in real time as transactions occur. [Page 49]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is a key reason why a HOLAP server might be selected over a pure MOLAP server, based on the described benefits?",
+      "options": {
+        "A": "To achieve lower latency for transaction processing.",
+        "B": "To combine ROLAP’s scalability with MOLAP’s fast computation.",
+        "C": "To eliminate the need for a metadata repository.",
+        "D": "To replace the need for any relational database."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "HOLAP “combines ROLAP and MOLAP technology, benefiting from the greater scalability of ROLAP and the faster computation of MOLAP.” This hybrid advantage is not a concern for pure OLTP systems. [Page 82]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly reflects a difference in the typical usage of ODBC/OLEDB connections as mentioned in the context?",
+      "options": {
+        "A": "ODBC/OLEDB are primarily used to connect OLTP transaction servers to end users.",
+        "B": "ODBC/OLEDB facilitate web access and reporting for OLAP analysis tools.",
+        "C": "ODBC/OLEDB are exclusive to data mining algorithms within OLTP.",
+        "D": "ODBC/OLEDB replace the need for ETL in OLAP environments."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage lists “ODBC/OLEDB connections, Web accessing and service facilities, and reporting and OLAP analysis tools,” indicating they serve OLAP‑related access. [Page 73]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the trend of decreasing separation between OLTP and OLAP systems, which of the following future system characteristics aligns with this trend?",
+      "options": {
+        "A": "Strict isolation of transaction logs from analytical indexes.",
+        "B": "Unified platforms that support both real‑time transaction processing and multidimensional analysis.",
+        "C": "Complete replacement of OLTP with MOLAP cubes.",
+        "D": "Elimination of ETL processes in data warehousing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The text predicts the “separation between OLTP and OLAP systems is expected to decrease,” implying convergence toward unified platforms handling both workloads. [Page 48]",
+      "source_pages": []
+    }
+  ]
+}

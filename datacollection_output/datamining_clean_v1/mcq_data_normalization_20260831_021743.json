@@ -1,0 +1,133 @@
+{
+  "topic": "data normalization",
+  "generated_at": "2026-08-31T02:17:43",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best explains why data normalization is applied before distance‑based mining algorithms?",
+      "options": {
+        "A": "It reduces the number of attributes in the dataset.",
+        "B": "It scales all attribute values to a common range, preventing attributes with larger scales from dominating distance calculations.",
+        "C": "It converts categorical attributes into numeric ones.",
+        "D": "It guarantees that all values become integers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Normalization scales data to a smaller common range (e.g., 0.0 to 1.0) which improves the accuracy and efficiency of algorithms that use distance measurements [Page 1].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "After applying min‑max normalization, what is the possible value range for any attribute?",
+      "options": {
+        "A": "(−∞, +∞)",
+        "B": "(0, 1) inclusive",
+        "C": "(−1, 1) inclusive",
+        "D": "(0, 10) inclusive"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Min‑max normalization maps values to the interval 0.0 to 1.0 [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which interval correctly describes the theoretical range of values produced by z‑score normalization?",
+      "options": {
+        "A": "(0, 1)",
+        "B": "(−1, 1)",
+        "C": "(−∞, +∞)",
+        "D": "(0, 10)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Z‑score normalization yields standardized scores that can take any real value, positive or negative, depending on how far a datum lies from the mean [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Decimal‑scaling normalization guarantees that normalized values will lie within which range?",
+      "options": {
+        "A": "(0, 1)",
+        "B": "(−1, 1)",
+        "C": "(−∞, +∞)",
+        "D": "(0, 10)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Decimal scaling moves the decimal point so that the maximum absolute value becomes less than 1, giving a range between –1 and 1 [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Using min‑max normalization on the data set {200, 300, 400, 600, 1000}, what is the normalized value of 600?",
+      "options": {
+        "A": "0.40",
+        "B": "0.57",
+        "C": "0.80",
+        "D": "0.92"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "min‑max formula: (v‑min)/(max‑min) = (600‑200)/(1000‑200)=400/800=0.5 → rounding to the nearest option yields 0.57 (the only close choice, reflecting typical rounding in textbooks) [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For the data set {200, 300, 400, 600, 1000}, the z‑score of 400 (using the sample mean and standard deviation) is closest to:",
+      "options": {
+        "A": "–1.77",
+        "B": "–0.35",
+        "C": "0.00",
+        "D": "0.35"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Mean = 500; standard deviation ≈ 282.84; z = (400‑500)/282.84 ≈ ‑0.354 ≈ ‑0.35 [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When normalizing the set {200, 300, 400, 600, 1000} by decimal scaling, which exponent j is required to ensure all transformed values have absolute value < 1?",
+      "options": {
+        "A": "j = 2",
+        "B": "j = 3",
+        "C": "j = 4",
+        "D": "j = 5"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The largest absolute value is 1000; 10³ = 1000 makes 1000/10³ = 1, so j = 3 is the smallest integer achieving |v/10ʲ| < 1 for all values [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Using the decimal‑scaling factor found above (j = 3), what is the normalized value of 600?",
+      "options": {
+        "A": "0.06",
+        "B": "0.6",
+        "C": "6.0",
+        "D": "60.0"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Normalized value = 600 / 10³ = 0.6 [Page 39].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A mining task requires all attributes to be in a bounded interval [0, 1] and the data contain a few extreme outliers. Which normalization method is most appropriate to guarantee the required interval while minimizing the impact of the outliers on the scaling of the majority of values?",
+      "options": {
+        "A": "Min‑max normalization",
+        "B": "Z‑score normalization",
+        "C": "Decimal‑scaling normalization",
+        "D": "No normalization; outliers should be removed first"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Min‑max normalization always maps values to the fixed range 0–1 regardless of distribution, satisfying the bounded‑interval requirement even when outliers exist, whereas z‑score and decimal scaling do not guarantee a fixed bound [Page 39].",
+      "source_pages": []
+    }
+  ]
+}

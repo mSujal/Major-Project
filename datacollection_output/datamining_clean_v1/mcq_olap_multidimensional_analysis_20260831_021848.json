@@ -1,0 +1,147 @@
+{
+  "topic": "olap multidimensional analysis",
+  "generated_at": "2026-08-31T02:18:48",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which statement best explains why materializing cuboids can improve the performance of OLAP queries?",
+      "options": {
+        "A": "It reduces the number of dimensions that must be stored in the warehouse.",
+        "B": "It pre‑computes and stores aggregate values, allowing queries to retrieve results without recomputing them.",
+        "C": "It eliminates the need for any indexing structures on the data cube.",
+        "D": "It converts a MOLAP model into a ROLAP model automatically."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Materializing cuboids means storing pre‑computed aggregates so that OLAP queries can be answered by simple lookups rather than recomputing aggregates each time, as described in the discussion of query processing and materialized views [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When deciding between a ROLAP and a MOLAP implementation for an OLAP server, which factor is most relevant according to the text?",
+      "options": {
+        "A": "Whether the underlying database uses bitmap indices.",
+        "B": "Whether the system must map multidimensional operations to relational operations.",
+        "C": "Whether the data warehouse follows a three‑tier architecture.",
+        "D": "Whether the data mining component is integrated with OLAP."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The distinction is that ROLAP maps multidimensional operations onto standard relational operations, while MOLAP implements multidimensional data directly, as explained on page 50.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a multidimensional data mining scenario, which of the following best describes the role of OLAP?",
+      "options": {
+        "A": "It replaces the need for any data mining algorithms.",
+        "B": "It provides the exploratory interface that enables mining of knowledge from multidimensional databases.",
+        "C": "It stores only transactional (OLTP) data for fast updates.",
+        "D": "It limits the analysis to two‑dimensional tabular views."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Multidimensional data mining (or OLAM) integrates OLAP with data mining to uncover knowledge in multidimensional databases, as highlighted on pages 73‑74.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Suppose a data warehouse stores sales amount as a numeric attribute and product category as a text attribute. According to the vocabulary used in OLAP, which of the following is a correct classification?",
+      "options": {
+        "A": "Sales amount – dimension; product category – measure.",
+        "B": "Sales amount – measure; product category – dimension.",
+        "C": "Both are measures because they can be aggregated.",
+        "D": "Both are dimensions because they describe the data."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Numeric attributes that can be aggregated (e.g., sum) are measures, while remaining attributes are dimensions; this is explained on page 90.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following indexing strategies combines the advantages of bitmap indexing and join indexing for faster OLAP query processing?",
+      "options": {
+        "A": "Materialized cuboid indexing.",
+        "B": "Bitmapped join indices.",
+        "C": "Relational OLAP (ROLAP) indexing.",
+        "D": "Multidimensional OLAP (MOLAP) indexing."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that bitmap indexing and join indexing can be integrated to form bitmapped join indices to speed up query processing [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A data analyst needs to compute aggregates across all possible combinations of three dimensions in a data cube. Which method discussed in the context would most directly support this requirement?",
+      "options": {
+        "A": "Using a three‑tier architecture to separate storage and processing.",
+        "B": "Computing data cubes efficiently as described in Section 4.4.1.",
+        "C": "Applying attribute‑oriented induction techniques.",
+        "D": "Converting the OLAP server from MOLAP to ROLAP."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Section 4.4.1 focuses on efficient computation of data cubes, which directly addresses the need to generate aggregates for all dimension combinations [Page 74].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the three‑tier data warehousing architecture, which tier is primarily responsible for executing OLAP operations such as roll‑up and drill‑down?",
+      "options": {
+        "A": "The presentation tier (client).",
+        "B": "The middle tier (OLAP server).",
+        "C": "The bottom tier (data storage).",
+        "D": "The integration tier (ETL processes)."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The middle tier is the OLAP server that implements multidimensional operations, as described on page 50.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a warehouse designer wants to minimize the storage cost while still supporting fast OLAP queries, which approach mentioned in the context is most appropriate?",
+      "options": {
+        "A": "Materialize every possible cuboid in the data cube.",
+        "B": "Use bitmap indexing exclusively for all dimensions.",
+        "C": "Create selective materialized views and complement them with appropriate OLAP index structures.",
+        "D": "Replace the OLAP server with a pure relational database without any indexing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The purpose of materializing selected cuboids and constructing OLAP index structures is to speed up query processing while controlling storage overhead, as discussed in Section 4.4.3 [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures the relationship between OLTP and OLAP systems as suggested by the text?",
+      "options": {
+        "A": "They are completely independent and will remain separate.",
+        "B": "OLTP systems are a subset of OLAP systems.",
+        "C": "The separation between them is expected to decrease over time.",
+        "D": "OLAP systems always replace OLTP systems in modern architectures."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes that “the separation between OLTP and OLAP systems is expected to decrease” [Page 48].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "During an online analytical mining (OLAM) task, a user wants to explore patterns across multiple dimensions without writing complex SQL queries. Which characteristic of multidimensional data mining makes this feasible?",
+      "options": {
+        "A": "Its reliance on bitmap join indices to simplify queries.",
+        "B": "Its integration of OLAP’s multidimensional view with data mining techniques.",
+        "C": "Its exclusive use of MOLAP servers for all computations.",
+        "D": "Its requirement that all data be stored in a flat relational table."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Multidimensional data mining (OLAM) integrates OLAP’s multidimensional analysis capabilities with data mining, enabling exploratory analysis without complex SQL, as described on pages 73‑74.",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "distance based anomaly detection",
+  "generated_at": "2026-08-31T02:24:45",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Why is normalizing data to a range such as [0.0, 1.0] important when applying a distance‑based anomaly detection algorithm?",
+      "options": {
+        "A": "It reduces the dimensionality of the data, making clustering faster.",
+        "B": "It ensures that all attributes contribute equally to distance calculations, improving accuracy.",
+        "C": "It removes outliers before the algorithm runs, guaranteeing no false alarms.",
+        "D": "It converts categorical attributes into numerical values suitable for distance metrics."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Normalization scales attributes so that no single attribute dominates the distance measure, which improves the accuracy and efficiency of distance‑based mining algorithms. [Page 1, Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a clustering‑based distance outlier detection method, what indicates that an object is likely an outlier?",
+      "options": {
+        "A": "The object lies exactly at the centroid of its nearest cluster.",
+        "B": "The distance between the object and the nearest cluster’s centroid is larger than a predefined threshold.",
+        "C": "The object belongs to multiple clusters simultaneously.",
+        "D": "The object has the smallest average distance to all other objects in the dataset."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "An object whose distance to the closest cluster is large is considered an outlier with respect to that cluster. [Page 124]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the k‑means clustering method facilitate distance‑based outlier detection according to the provided context?",
+      "options": {
+        "A": "By assigning each point a probability of being an outlier based on cluster density.",
+        "B": "By labeling points that are far from any cluster centroid as outliers after partitioning the data.",
+        "C": "By iteratively removing outliers until all clusters have equal size.",
+        "D": "By creating hierarchical clusters that automatically separate outliers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "After k‑means partitions data into clusters, points that are far from the nearest centroid can be identified as outliers. [Page 124]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the text, why might objects located between two clusters not be detected as outliers?",
+      "options": {
+        "A": "Because they are equally distant from both cluster centroids, making the distance ambiguous.",
+        "B": "Because they are close to the overall mean of the dataset, reducing their distance to any single cluster.",
+        "C": "Because the algorithm only evaluates distances to the nearest cluster, ignoring inter‑cluster gaps.",
+        "D": "Because the normalization step masks their true distance values."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Objects between clusters are close to the mean, so their distance to any single cluster is not large enough to label them as outliers. [Page 113]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the role of “distance to the closest cluster” in clustering‑based outlier detection?",
+      "options": {
+        "A": "It is used to compute the silhouette score for cluster validation.",
+        "B": "It serves as a direct measure to decide whether an object deviates significantly from typical cluster patterns.",
+        "C": "It determines the number of clusters to be formed in the dataset.",
+        "D": "It replaces the need for any data preprocessing such as normalization."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The distance to the nearest cluster provides a straightforward criterion for labeling an object as an outlier. [Page 124]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does applying a distance‑based mining algorithm differ from using a non‑distance‑based method for anomaly detection, based on the context?",
+      "options": {
+        "A": "Distance‑based methods require discretization of continuous attributes, while non‑distance methods do not.",
+        "B": "Distance‑based methods benefit from data normalization to ensure fair contribution of each attribute, whereas non‑distance methods are unaffected by scaling.",
+        "C": "Distance‑based methods can only detect global outliers, while non‑distance methods detect local outliers.",
+        "D": "Distance‑based methods automatically generate concept hierarchies, which non‑distance methods lack."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Normalization improves distance‑based algorithms by scaling attributes, a step that is not essential for many non‑distance approaches. [Page 1, Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of distance‑based anomaly detection, what is the primary reason for partitioning data into clusters before identifying outliers?",
+      "options": {
+        "A": "To reduce the computational cost of calculating distances between every pair of objects.",
+        "B": "To ensure each outlier belongs to a distinct cluster.",
+        "C": "To enable the use of bitmap indexing for faster outlier retrieval.",
+        "D": "To transform the data into a categorical format suitable for nearest‑neighbor classifiers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Clustering groups similar points, so only distances to the nearest cluster need to be examined, lowering computation compared to all‑pair distances. [Page 124]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly reflects the relationship between “numerosity reduction” and distance‑based anomaly detection as described in the context?",
+      "options": {
+        "A": "Numerosity reduction replaces original data with a smaller representation, which can be directly used for distance calculations without further preprocessing.",
+        "B": "Numerosity reduction techniques, such as clustering, can serve as a preprocessing step that facilitates distance‑based outlier detection.",
+        "C": "Numerosity reduction eliminates the need for any distance‑based analysis by summarizing the data.",
+        "D": "Numerosity reduction is unrelated to distance‑based methods because it only applies to categorical attributes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Clustering (a form of numerosity reduction) can be used to create a compact representation that supports distance‑based outlier detection. [Page 4]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When using a distance‑based method for anomaly detection, why might a “bitmap index” be less relevant compared to other indexing structures?",
+      "options": {
+        "A": "Bitmap indexes are optimized for low‑cardinality domains and do not accelerate distance computations.",
+        "B": "Bitmap indexes automatically normalize data, making distance measures redundant.",
+        "C": "Bitmap indexes store distance values directly, which increases storage overhead.",
+        "D": "Bitmap indexes are designed only for hierarchical clustering algorithms."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Hard",
+      "explanation": "Bitmap indexing excels for low‑cardinality domains but does not specifically speed up the computation of distances needed for anomaly detection. [Page 79]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Consider a dataset that has been normalized to the range [0.0, 1.0] and then processed with a k‑means clustering‑based outlier detection method. Which of the following outcomes best illustrates a correctly identified outlier?",
+      "options": {
+        "A": "A point that lies exactly at the centroid of the largest cluster.",
+        "B": "A point whose distance to the nearest cluster centroid is minimal among all points.",
+        "C": "A point that is far from every cluster centroid, exceeding the typical intra‑cluster distance range.",
+        "D": "A point that belongs to a cluster with the highest number of members."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "After normalization and clustering, an outlier is characterized by a large distance to the nearest centroid, beyond normal intra‑cluster distances. [Page 124, Page 1]",
+      "source_pages": []
+    }
+  ]
+}

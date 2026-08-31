@@ -1,0 +1,337 @@
+{
+  "subject": "Data Mining",
+  "topics": {
+    "data_mining_origin_definition": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define data mining, explain its steps/process",
+        "Justify 'data rich but information poor' / 'data into knowledge'"
+      ]
+    },
+    "data_mining_vs_data_warehousing": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate data mining vs data warehousing",
+        "Differentiate data warehouse vs RDBMS/database"
+      ]
+    },
+    "data_mining_applications_kdd": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain steps of KDD process",
+        "Explain applications of data mining"
+      ]
+    },
+    "data_warehouse_schema": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain schema used in data warehousing (star, snowflake, fact constellation)",
+        "Draw star/snowflake schema for given dimensions and measures"
+      ]
+    },
+    "data_warehouse_data_mart_features": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define data warehouse and data mart",
+        "Short note: Data warehouse and data mart",
+        "Write key features of data warehouse"
+      ]
+    },
+    "olap_operations_cuboid": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain OLAP operations (roll-up, drill-down, slice, dice, pivot)",
+        "Given base cuboid, determine OLAP operations to reach a target view",
+        "Short note: OLAP cubes/operations"
+      ]
+    },
+    "olap_vs_oltp": {
+      "levels": ["Understand", "Analyze"],
+      "patterns": [
+        "Differentiate OLAP vs OLTP"
+      ]
+    },
+    "data_types_attributes": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain different data types/attributes in a dataset",
+        "Explain nominal and ordinal attributes",
+        "Explain categorical data and issues in handling it"
+      ]
+    },
+    "data_preprocessing_overview": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "What is performed during data preprocessing? Discuss techniques",
+        "Explain steps/tasks in data pre-processing"
+      ]
+    },
+    "missing_noisy_data_handling": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Discuss techniques to handle missing values",
+        "Discuss impact of noisy data, data cleaning approaches"
+      ]
+    },
+    "data_normalization": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain significance of data normalization",
+        "Normalize given data using Min-Max normalization",
+        "Normalize given data using Z-score normalization",
+        "Normalize given data using decimal scaling"
+      ]
+    },
+    "data_sampling_dimensionality_reduction": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain data sampling and dimensionality reduction",
+        "Define curse of dimensionality, how to avoid it",
+        "Explain how PCA is used for dimensionality reduction"
+      ]
+    },
+    "similarity_dissimilarity_measures": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain why similarity measures are important, discuss types",
+        "Calculate Jaccard coefficient / SMC for given binary attributes",
+        "Calculate cosine similarity / Euclidean distance for given data objects",
+        "Explain symmetric vs asymmetric binary attributes"
+      ]
+    },
+    "olap_multidimensional_analysis": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain analysis of multidimensional data using OLAP concept"
+      ]
+    },
+    "classification_overview": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define classification, explain general block diagram/stages",
+        "Explain why classification is a supervised learning method"
+      ]
+    },
+    "decision_tree_construction_id3": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Construct decision tree using ID3 algorithm for given dataset",
+        "Identify root node using ID3/information gain for given dataset",
+        "Predict class label for a given test record using constructed tree"
+      ]
+    },
+    "decision_tree_concepts_gini_hunt": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain Hunt's algorithm for decision tree induction",
+        "Explain GINI index / impurity measures with example",
+        "Explain test conditions for different attribute types"
+      ]
+    },
+    "rule_based_classifier": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain how rule-based classifier works with example",
+        "Explain CN2 algorithm, Accuracy and Laplace measures for rule evaluation",
+        "Differentiate decision tree vs rule-based classifier"
+      ]
+    },
+    "nearest_neighbor_classifier": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain nearest neighbor classifier, when to use it",
+        "Classify given test instance using KNN with Euclidean distance"
+      ]
+    },
+    "naive_bayes_classifier": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain why Naive Bayesian classification is called 'naive'",
+        "Predict class label for given test instance using Naive Bayes classifier",
+        "Explain Bayes theorem and its use in classification"
+      ]
+    },
+    "bayesian_belief_network": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain limitation of Naive Bayes and how Bayesian Belief Network overcomes it",
+        "Predict outcome using given Bayesian belief network probabilities"
+      ]
+    },
+    "artificial_neural_network_classifier": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain ANN classifier and general considerations required",
+        "Explain how Neural Network classifier works with example",
+        "Short note: Neural Network Classifier"
+      ]
+    },
+    "classifier_performance_evaluation": {
+      "levels": ["Apply"],
+      "patterns": [
+        "Calculate Accuracy, Sensitivity, Specificity, Precision from confusion matrix",
+        "Calculate TPR, FPR, Precision, Recall from confusion matrix",
+        "Explain ROC curve and its use in evaluating classifiers"
+      ]
+    },
+    "overfitting_model_validation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain overfitting problem and how it can be solved",
+        "Explain holdout, random sampling, k-fold cross validation, bootstrap methods",
+        "Short note: Overfitting and ROC"
+      ]
+    },
+    "accuracy_limitations_base_rate_fallacy": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain cases where accuracy cannot be used as performance measure",
+        "Explain Base Rate Fallacy with example"
+      ]
+    },
+    "association_analysis_support_confidence": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain terms support and confidence in association analysis",
+        "Explain importance of association analysis / market basket analysis"
+      ]
+    },
+    "apriori_algorithm": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain Apriori algorithm/principle with example",
+        "Derive association rules from given transaction data using Apriori algorithm with given min support/confidence",
+        "Identify candidate and frequent itemsets using Apriori algorithm"
+      ]
+    },
+    "fp_growth_fp_tree": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain FP-Growth algorithm/FP-Tree with example",
+        "Construct FP-tree and find frequent itemsets/association rules for given transactions",
+        "Explain advantages of FP-Growth over Apriori algorithm"
+      ]
+    },
+    "categorical_attributes_association": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain how to handle categorical attributes in association/data mining, issues involved"
+      ]
+    },
+    "sequential_subgraph_pattern_mining": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain sequential pattern mining with example, generate subsequences",
+        "Explain subgraph pattern with example",
+        "Short note: Sequential pattern / AprioriAll algorithm"
+      ]
+    },
+    "pattern_evaluation_interestingness": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain importance of pattern evaluation, statistical measures for interestingness of rules"
+      ]
+    },
+    "clustering_overview_types": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Discuss clustering, its types and use cases",
+        "Define cluster analysis, list applications",
+        "Differentiate clustering from classification",
+        "Explain generic philosophy of evaluating clustering approaches"
+      ]
+    },
+    "kmeans_clustering": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Describe K-means clustering algorithm",
+        "Generate clusters from given dataset using K-means clustering (given K/initial centroids)",
+        "Explain limitations/demerits of K-means clustering"
+      ]
+    },
+    "hierarchical_clustering": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Explain hierarchical clustering, differentiate agglomerative vs divisive",
+        "Draw dendrogram for given data points using hierarchical/complete-linkage clustering"
+      ]
+    },
+    "dbscan_clustering": {
+      "levels": ["Understand", "Apply"],
+      "patterns": [
+        "Define core, border and noise points",
+        "Apply DBSCAN algorithm to find clusters for given points with given epsilon/minPts",
+        "Explain how DBSCAN quantifies neighborhood, finds clusters"
+      ]
+    },
+    "clustering_partition_based_types": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "List types of partition based clustering methods"
+      ]
+    },
+    "cluster_validity_evaluation": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain how to evaluate cluster generated",
+        "Explain different measures of cluster validity/comparing clusters",
+        "Explain issues regarding cluster validation"
+      ]
+    },
+    "anomaly_detection_overview": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Define anomaly detection, explain its importance/applications"
+      ]
+    },
+    "distance_based_anomaly_detection": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain distance-based method for anomaly detection"
+      ]
+    },
+    "other_anomaly_detection_approaches": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain likelihood/statistical/proximity/density based approaches for anomaly detection",
+        "Compare different methods of anomaly detection"
+      ]
+    },
+    "outlier_types_detection": {
+      "levels": ["Understand"],
+      "patterns": [
+        "Explain different types of outliers with examples",
+        "Explain how density based outlier detection works"
+      ]
+    },
+    "web_mining": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain web mining and its categories/structure/taxonomy",
+        "Short note: Web mining"
+      ]
+    },
+    "page_rank_algorithm": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain how page rank is found in text/web mining",
+        "Short note: Page Rank algorithm"
+      ]
+    },
+    "time_series_data_mining": {
+      "levels": ["Remember", "Understand"],
+      "patterns": [
+        "Explain time series data mining briefly",
+        "Explain seasonality in time series data",
+        "Short note: Time series data mining"
+      ]
+    },
+    "multimedia_object_mining": {
+      "levels": ["Remember"],
+      "patterns": [
+        "Short note: Multimedia mining",
+        "Explain mining of object/multimedia data"
+      ]
+    }
+  }
+}

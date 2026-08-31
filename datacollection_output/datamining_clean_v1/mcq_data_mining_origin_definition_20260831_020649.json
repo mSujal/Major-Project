@@ -1,0 +1,147 @@
+{
+  "topic": "data mining origin definition",
+  "generated_at": "2026-08-31T02:06:49",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which statement best defines data mining as described in the provided text?",
+      "options": {
+        "A": "A technique for storing large volumes of raw data in databases.",
+        "B": "A process that discovers hidden patterns, builds analytical models, and presents results through visualization tools.",
+        "C": "An approach that only aggregates data using simple sum and average functions.",
+        "D": "A method for converting relational tables into flat files."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining “supports knowledge discovery by finding hidden patterns and associations, constructing analytical models, performing classification and prediction, and presenting the mining results using visualization tools.” [Page 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, what is the primary purpose of the data focusing step that precedes attribute‑oriented induction?",
+      "options": {
+        "A": "To clean and transform data before loading it into the warehouse.",
+        "B": "To specify the task‑relevant data that will be analyzed.",
+        "C": "To visualize the final mining results for end users.",
+        "D": "To compute aggregates for OLAP queries."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that “data focusing should be performed before attribute‑oriented induction… corresponds to the specification of the task‑relevant data (i.e., data for analysis).” [Page 86]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following data types has the data mining field conducted substantial research on, as mentioned in the material?",
+      "options": {
+        "A": "Audio streaming data",
+        "B": "Relational, transaction, time‑series, spatial, text, and flat‑file data",
+        "C": "Real‑time sensor video feeds",
+        "D": "Blockchain ledger entries"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage lists “relational data, data from data warehouses, transaction data, time‑series data, spatial data, text data, and flat files.” [Page 73]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does multidimensional data mining differ from traditional OLAP querying according to the text?",
+      "options": {
+        "A": "It replaces OLAP completely and does not use data cubes.",
+        "B": "It integrates data mining functions with OLAP, allowing users to drill, pivot, filter, dice, and slice while mining.",
+        "C": "It only supports flat‑file data and ignores hierarchical dimensions.",
+        "D": "It limits analysis to a single level of abstraction without visualization."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Multidimensional data mining “provides facilities for mining on different subsets of data and at varying levels of abstraction—by drilling, pivoting, filtering, dicing, and slicing on a data cube… By integrating OLAP with various data mining functions.” [Page 73]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly explains why “information processing” is not considered data mining?",
+      "options": {
+        "A": "Information processing uses sophisticated pattern detection, whereas data mining does not.",
+        "B": "Information processing only retrieves directly stored or aggregate information, not hidden patterns.",
+        "C": "Information processing is limited to visualizing data cubes.",
+        "D": "Information processing requires attribute‑oriented induction before any analysis."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that “answers to such queries… do not reflect sophisticated patterns or regularities buried in the database” and therefore “information processing, based on queries, … is not data mining.” [Page 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of “data rich but information poor,” which observation from the passage best supports this notion?",
+      "options": {
+        "A": "Data mining can transform raw data into knowledge through hidden pattern discovery.",
+        "B": "OLAP servers automatically generate knowledge without any mining.",
+        "C": "Flat files contain all necessary knowledge without further processing.",
+        "D": "Data focusing eliminates the need for any further analysis."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage emphasizes that data mining “finds hidden patterns… and presents the mining results,” turning abundant raw data into useful knowledge, thereby addressing the “data rich but information poor” situation. [Page 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best justifies the transformation of raw data into knowledge through data mining, as implied by the material?",
+      "options": {
+        "A": "Data mining merely aggregates data without revealing new insights.",
+        "B": "By uncovering hidden patterns and building predictive models, data mining converts abundant data into actionable knowledge.",
+        "C": "Data mining only stores data for future use without analysis.",
+        "D": "Data mining replaces all OLAP functions, making them unnecessary."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text describes data mining’s role in “finding hidden patterns… constructing analytical models… and presenting the mining results,” which is precisely the conversion of raw data into knowledge. [Page 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following operations is NOT listed as a way multidimensional data mining can explore a data cube?",
+      "options": {
+        "A": "Drilling",
+        "B": "Pivoting",
+        "C": "Clustering",
+        "D": "Slicing"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage mentions “drilling, pivoting, filtering, dicing, and slicing” but does not list clustering as a cube‑operation. [Page 73]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main advantage of integrating OLAP with various data mining functions, as described in the source?",
+      "options": {
+        "A": "It eliminates the need for a data warehouse.",
+        "B": "It allows users to dynamically select and swap data mining tasks while exploring data at multiple abstraction levels.",
+        "C": "It restricts analysis to a single predefined mining algorithm.",
+        "D": "It guarantees that all mining results are visualized automatically."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states that “by integrating OLAP with various data mining functions… multidimensional data mining provides users with the flexibility to select desired data mining functions and swap data mining tasks dynamically.” [Page 73]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures the relationship between data mining and knowledge discovery according to the passage?",
+      "options": {
+        "A": "Data mining is a subset of knowledge discovery that focuses solely on data storage.",
+        "B": "Data mining is the primary activity that enables knowledge discovery by extracting hidden patterns and building models.",
+        "C": "Knowledge discovery precedes data mining and does not rely on it.",
+        "D": "Data mining and knowledge discovery are unrelated concepts."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage explicitly says “Data mining supports knowledge discovery by finding hidden patterns… constructing analytical models…” indicating that data mining is the enabling activity for knowledge discovery. [Page 72]",
+      "source_pages": []
+    }
+  ]
+}

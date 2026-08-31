@@ -1,0 +1,147 @@
+{
+  "topic": "olap operations cuboid",
+  "generated_at": "2026-08-31T02:15:53",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "According to the context, which statement best describes the OLAP operation “slice”?",
+      "options": {
+        "A": "It removes one dimension by fixing a constant value, equivalent to a selection on a cuboid.",
+        "B": "It creates a new cuboid by grouping lower‑level members into higher‑level hierarchies.",
+        "C": "It rotates the axes of the cube so that rows become columns, similar to a pivot.",
+        "D": "It extracts a sub‑cube by applying both selection and projection on multiple dimensions."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that “slicing and dicing a data cube may correspond to selection and/or projection operations on a materialized cuboid” (Page 81). “Slice” fixes a constant on one dimension, i.e., a selection.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the same context, which description correctly captures the “dice” operation?",
+      "options": {
+        "A": "Selecting a single value for one dimension while keeping all other dimensions unchanged.",
+        "B": "Applying selection on multiple dimensions simultaneously, possibly followed by projection.",
+        "C": "Aggregating data from a lower level to a higher level in a dimension hierarchy.",
+        "D": "Swapping the positions of two dimensions in the cube view."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage links “dice” with “selection and/or projection operations on a materialized cuboid” (Page 81), implying that dice involves restricting several dimensions at once.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A query requests sales for the year 2010, grouped by **brand** and **province/state**. Which materialized cuboid should be used to answer the query with the least processing cost?",
+      "options": {
+        "A": "Cuboid 1: {year, item name, city}",
+        "B": "Cuboid 2: {year, brand, country}",
+        "C": "Cuboid 3: {year, brand, province/state}",
+        "D": "No existing cuboid can answer the query; a new one must be built."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The example (Page 81) lists Cuboid 3 exactly containing {year, brand, province/state}, matching the query dimensions and selection constant, making it the cheapest choice.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "To obtain a view that shows **sales by province/state** for a **fixed year = 2010**, starting from Cuboid 2 ({year, brand, country}), which sequence of OLAP operations is required?",
+      "options": {
+        "A": "Drill‑down on country → slice on year → project out brand.",
+        "B": "Slice on year → roll‑up brand to province/state → project out country.",
+        "C": "Slice on year → roll‑up country to province/state → project out brand.",
+        "D": "Roll‑up brand to province/state → slice on year → project out country."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "First, “slice” fixes year = 2010. Then “roll‑up” aggregates the location hierarchy from country to province/state. Finally, “project out” removes the irrelevant brand dimension, yielding the desired view. The operations follow the definitions discussed on Page 81.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best illustrates a **drill‑down** operation in the dimension hierarchy described in the text?",
+      "options": {
+        "A": "Summarizing daily sales to obtain monthly sales.",
+        "B": "Expanding “year” to “quarter” → “month” → “day”.",
+        "C": "Replacing the dimension “item name” with its higher level “brand”.",
+        "D": "Filtering the cube to include only rows where “year = 2010”."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The hierarchy “day < month < quarter < year” (Page 81) shows that moving from a higher level (year) to a lower level (day) is a drill‑down.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the materialized‑cuboid selection process, the term “dominance” is used to prune candidates. Which statement correctly reflects this concept?",
+      "options": {
+        "A": "A cuboid dominates another if it contains a superset of the same dimensions, allowing it to answer any query the dominated cuboid can.",
+        "B": "Dominance means the cuboid has the smallest storage size among all candidates.",
+        "C": "A dominated cuboid is always selected because it requires the least computation.",
+        "D": "Dominance refers to the number of hierarchical levels a cuboid aggregates."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage mentions “pruning the set using knowledge of ‘dominance’ relationships among the cuboids” (Page 81). Dominance implies one cuboid can answer all queries the other can because it holds a superset of dimensions.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Suppose a query needs sales summed over **city** and **item name** for the year 2010. Which materialized cuboid should be chosen, and which OLAP operation must be applied to satisfy the selection condition?",
+      "options": {
+        "A": "Cuboid 1; slice on year = 2010.",
+        "B": "Cuboid 2; roll‑up from country to city.",
+        "C": "Cuboid 3; drill‑down from province/state to city.",
+        "D": "None; the query requires building a new cuboid."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Cuboid 1 contains {year, item name, city} (Page 81), exactly the needed dimensions. Applying a “slice” fixes the year to 2010 (Page 81).\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which OLAP operation would you use to transform the cube view from dimensions **{time, item, location}** to **{item, time, location}** without changing the data?",
+      "options": {
+        "A": "Slice",
+        "B": "Roll‑up",
+        "C": "Pivot",
+        "D": "Dice"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Changing the order of dimensions is called a “pivot” (listed among the operations in the required patterns). The context includes “pivot” as one of the standard OLAP operations.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When materializing cuboids to speed up query processing, which of the following is a primary consideration according to the text?",
+      "options": {
+        "A": "The visual layout of the cube on the user interface.",
+        "B": "The dominance relationships and estimated cost of using each cuboid.",
+        "C": "The number of users accessing the cube simultaneously.",
+        "D": "The alphabetical order of dimension names."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage outlines that after identifying potential cuboids, “pruning the set using knowledge of ‘dominance’ relationships… estimating the costs… selecting the cuboid with the least” (Page 81) guides materialization decisions.\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A data warehouse designer wants to update materialized cuboids efficiently during load and refresh. Which technique mentioned in the context should be explored?",
+      "options": {
+        "A": "Bitmap indexing only.",
+        "B": "Parallelism and incremental update techniques.",
+        "C": "Converting all cuboids to a single denormalized table.",
+        "D": "Storing each cuboid as a separate file system object."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly notes that “during load and refresh, the materialized cuboids should be updated efficiently. Parallelism and incremental update techniques for this operation should be explored” (Page 78).",
+      "source_pages": []
+    }
+  ]
+}

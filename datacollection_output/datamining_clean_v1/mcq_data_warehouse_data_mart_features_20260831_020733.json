@@ -1,0 +1,146 @@
+{
+  "topic": "data warehouse data mart features",
+  "generated_at": "2026-08-31T02:07:33",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements best defines a data warehouse?",
+      "options": {
+        "A": "A volatile collection of operational data used for day‑to‑day transactions.",
+        "B": "A subject‑oriented, integrated, time‑variant, and non‑volatile data collection supporting management decision making.",
+        "C": "A repository that stores only raw, unprocessed data from source systems.",
+        "D": "A tool that only provides front‑end query and reporting capabilities."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "A data warehouse is described as “subject‑oriented, integrated, time‑variant, and non‑volatile… in support of management decision making” [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided context, a data mart is best characterized as:",
+      "options": {
+        "A": "An enterprise‑wide data warehouse that stores all corporate data.",
+        "B": "A subset of corporate‑wide data tailored for a specific group of users, often summarized.",
+        "C": "A virtual layer that combines multiple data sources without storing data.",
+        "D": "A metadata repository that describes warehouse objects."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that a data mart “contains a subset of corporate‑wide data that is of value to a specific group of users… the data contained in data marts tend to be summarized” [Page 50].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT listed as a back‑end tool or utility used for populating and refreshing a data warehouse?",
+      "options": {
+        "A": "Data extraction",
+        "B": "Data cleaning",
+        "C": "Data transformation",
+        "D": "Data visualization"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists extraction, cleaning, transformation, loading, refreshing, and management, but not visualization as back‑end tools [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which feature distinguishes a data warehouse from operational databases, as mentioned in the text?",
+      "options": {
+        "A": "Real‑time transaction processing",
+        "B": "Time‑variant nature of the stored data",
+        "C": "Lack of integration across sources",
+        "D": "Frequent schema changes"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that data warehouses are “time‑variant” whereas operational databases are not, distinguishing them [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the three‑tier architecture of a data warehouse, the top tier primarily contains:",
+      "options": {
+        "A": "Extraction, cleaning, and loading tools",
+        "C": "Query, reporting, analysis, and data mining tools",
+        "D": "Source operational databases"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The top tier is described as the front‑end client layer containing query, reporting, analysis, and data mining tools [Page 50].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures the purpose of a metadata repository in a data warehouse environment?",
+      "options": {
+        "A": "To store the raw transactional data from source systems.",
+        "B": "To provide details about warehouse structure, data history, algorithms, mappings, performance, and business terms.",
+        "C": "To replace the need for a data mart.",
+        "D": "To execute ETL processes automatically."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The metadata repository “provides details regarding the warehouse structure, data history, the algorithms used for summarization, mappings… system performance, and business terms” [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly describes the relationship between an enterprise warehouse, a data mart, and a virtual warehouse?",
+      "options": {
+        "A": "All three are identical in scope and architecture.",
+        "B": "An enterprise warehouse is a superset, a data mart is a subset for specific users, and a virtual warehouse integrates data without physical storage.",
+        "C": "A data mart stores metadata, while the other two store only raw data.",
+        "D": "A virtual warehouse is a physical copy of an enterprise warehouse."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes three models: enterprise warehouse, data mart, and virtual warehouse, implying the hierarchical and integration distinctions described [Page 50].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is a key feature of a data mart according to the passage?",
+      "options": {
+        "A": "It contains all corporate‑wide data without summarization.",
+        "B": "Its scope is confined to specific selected subjects such as customer, item, and sales.",
+        "C": "It replaces the need for a metadata repository.",
+        "D": "It is always implemented as a virtual warehouse."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states that a data mart’s scope is “confined to specific selected subjects” like customer, item, and sales [Page 50].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component of the data warehouse architecture is responsible for storing information about the warehouse objects and their lineage?",
+      "options": {
+        "A": "Front‑end client layer",
+        "B": "ETL engine",
+        "C": "Metadata repository",
+        "D": "Data mining tools"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The metadata repository stores data defining the warehouse objects and their lineage [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the characteristics listed, which of the following would be an appropriate example of a “time‑variant” aspect of a data warehouse?",
+      "options": {
+        "A": "Storing only the most recent sales transaction.",
+        "B": "Keeping historical snapshots of monthly sales for several years.",
+        "C": "Continuously overwriting product price data with the latest value.",
+        "D": "Maintaining only real‑time sensor readings without archiving."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "“Time‑variant” means the warehouse retains historical data, such as monthly sales snapshots over time, as described in the definition of a data warehouse [Page 96].",
+      "source_pages": []
+    }
+  ]
+}

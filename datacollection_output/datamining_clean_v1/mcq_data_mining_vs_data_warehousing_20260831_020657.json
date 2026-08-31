@@ -1,0 +1,147 @@
+{
+  "topic": "data mining vs data warehousing",
+  "generated_at": "2026-08-31T02:06:57",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which statement best describes a key difference between data mining and data warehousing in terms of data granularity?",
+      "options": {
+        "A": "Data mining always works on highly summarized data, while data warehousing stores raw transaction details.",
+        "B": "Data mining may analyze data at more detailed granularities than the summarized data stored in a data warehouse.",
+        "C": "Data warehousing performs pattern discovery, whereas data mining only stores data.",
+        "D": "Data mining and data warehousing always use the same level of data detail."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining can work on finer‑grained data than the summarized forms typically kept in a warehouse, as noted on page 72.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT listed as a back‑end tool or utility for populating and refreshing a data warehouse?",
+      "options": {
+        "A": "Data extraction",
+        "B": "Data cleaning",
+        "C": "Data indexing",
+        "D": "Data transformation"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context (page 96) mentions extraction, cleaning, transformation, loading, refreshing, and management, but does not mention indexing.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which item would you expect to find in a data warehouse metadata repository?",
+      "options": {
+        "A": "Detailed transaction logs of the source systems",
+        "B": "Algorithms used for data summarization",
+        "C": "User passwords for warehouse access",
+        "D": "Real‑time sensor data streams"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 96 describes metadata as including details such as the algorithms used for summarization and mappings from source data to warehouse form.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A company plans to mine patterns from its spatial and textual data without first loading them into a data warehouse. Based on the context, why is this approach feasible?",
+      "options": {
+        "A": "Data mining is restricted to relational data only.",
+        "B": "Data mining can analyze transactional, spatial, textual, and multimedia data directly, not just data from warehouses.",
+        "C": "Data warehouses cannot store spatial data, so mining must bypass them.",
+        "D": "Data mining tools require only raw binary files as input."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Page 72 states that data mining may analyze transactional, spatial, textual, and multimedia data that are difficult to model in current multidimensional databases.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which characteristic distinguishes a data warehouse from an operational (RDBMS) database according to the provided material?",
+      "options": {
+        "A": "It is transaction‑oriented and volatile.",
+        "B": "It is subject‑oriented, integrated, time‑variant, and nonvolatile.",
+        "C": "It stores only current day’s data.",
+        "D": "It does not support data integration."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The definition on page 96 lists these four properties as differentiators of data warehouses from operational databases.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Before applying data mining techniques, which preprocessing steps are emphasized as necessary to ensure high‑quality input data?",
+      "options": {
+        "A": "Data cleaning only",
+        "B": "Data integration only",
+        "C": "Data transformation only",
+        "D": "Data cleaning, integration, and transformation together"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 73 highlights that most data mining tools need integrated, consistent, and cleaned data, requiring costly data cleaning, integration, and transformation.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a data warehouse stores only a summary of sales per item type per branch, how does this affect the type of data mining that can be performed?",
+      "options": {
+        "A": "Detailed transaction‑level pattern mining is still possible.",
+        "B": "Only aggregate‑level pattern mining can be performed on the stored data.",
+        "C": "The warehouse can be used for real‑time fraud detection.",
+        "D": "It enables mining of individual customer purchase histories."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Page 74 explains that summarizing transactions (e.g., per item type per branch) facilitates mining at that summarized level but not at the detailed transaction level.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How do OLAP functions relate to data mining according to the context?",
+      "options": {
+        "A": "OLAP functions automatically generate predictive models.",
+        "B": "OLAP provides user‑directed data summarization and comparison, while data mining focuses on automatic pattern discovery.",
+        "C": "OLAP and data mining are identical processes.",
+        "D": "OLAP replaces the need for any data mining activities."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 72 notes that OLAP systems present general descriptions of data through operations like drilling and slicing, whereas data mining covers both description and modeling.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best differentiates a data warehouse from a traditional relational database management system (RDBMS) in terms of intended use?",
+      "options": {
+        "A": "A data warehouse supports day‑to‑day transaction processing; an RDBMS supports strategic decision making.",
+        "B": "A data warehouse is optimized for management decision making; an RDBMS is optimized for operational processing.",
+        "C": "Both are primarily designed for real‑time analytics.",
+        "D": "An RDBMS stores only historical data, while a data warehouse stores only current data."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 96 states that a data warehouse is organized in support of management decision making, distinguishing it from operational databases (RDBMS).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the metadata repository of a data warehouse, which of the following statements accurately reflects its purpose?",
+      "options": {
+        "A": "It stores only the raw source data before transformation.",
+        "B": "It provides details about warehouse structure, data history, summarization algorithms, and source‑to‑warehouse mappings.",
+        "C": "It records user login attempts and security breaches.",
+        "D": "It contains the actual business transaction records."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 96 describes metadata as defining warehouse objects and providing details such as structure, history, algorithms, and mappings.",
+      "source_pages": []
+    }
+  ]
+}

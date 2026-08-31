@@ -1,0 +1,161 @@
+{
+  "topic": "olap vs oltp",
+  "generated_at": "2026-08-31T02:16:17",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which characteristic best distinguishes OLTP systems from OLAP systems in terms of the primary type of queries they execute?",
+      "options": {
+        "A": "OLTP systems mainly run ad‑hoc analytical queries.",
+        "B": "OLAP systems primarily handle high‑volume transactional inserts.",
+        "C": "OLTP systems are optimized for short, simple, read‑write transactions, whereas OLAP systems focus on complex, read‑only analytical queries.",
+        "D": "OLAP systems use only batch processing, while OLTP systems use real‑time streaming."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "OLTP is designed for transactional, short read‑write operations, while OLAP supports complex analytical queries on large datasets. This distinction is highlighted in the OLTP vs OLAP comparison (Table 4.1) on page 48.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "An organization wants to analyze sales trends over the past five years using multidimensional data cubes. Which system architecture described in the context is most appropriate for this need?",
+      "options": {
+        "A": "Pure ROLAP on a relational DBMS.",
+        "B": "Pure MOLAP on a special‑purpose multidimensional server.",
+        "C": "Hybrid OLAP (HOLAP) that combines ROLAP scalability with MOLAP speed.",
+        "D": "Traditional OLTP with row‑level locking."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "HOLAP merges the scalability of ROLAP with the faster computation of MOLAP, making it suitable for large‑volume analytical workloads such as multi‑year trend analysis (page 82).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Considering the data update frequency, which statement accurately reflects the difference between OLTP and OLAP environments?",
+      "options": {
+        "A": "OLTP databases are refreshed nightly, while OLAP warehouses are updated in real time.",
+        "B": "OLTP systems handle continuous, real‑time updates; OLAP systems are refreshed periodically (e.g., nightly or weekly).",
+        "C": "Both OLTP and OLAP systems update data continuously at the same rate.",
+        "D": "OLAP systems never receive new data after the initial load."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "OLTP supports ongoing transactional updates, whereas OLAP data warehouses are refreshed in batches, as implied by the ETL process described on page 49.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why OLAP systems typically require a different schema design (e.g., star or snowflake) compared to OLTP systems?",
+      "options": {
+        "A": "OLAP schemas minimize redundancy to speed up transaction processing.",
+        "B": "OLTP schemas are optimized for complex joins across many dimensions.",
+        "C": "OLAP schemas organize data around facts and dimensions to facilitate fast aggregation and slicing, unlike normalized OLTP schemas.",
+        "D": "Both OLTP and OLAP use identical normalized schemas, so there is no difference."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context notes that OLAP servers sit above a data warehouse that stores data in multidimensional structures, requiring star/snowflake schemas to enable efficient analytical operations (page 49).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A data analyst notes that query response times are slow when accessing detailed transaction records, but fast when summarizing sales by region. Which system behavior described in the context does this observation illustrate?",
+      "options": {
+        "A": "OLTP systems provide faster aggregations than OLAP.",
+        "B": "OLAP systems trade off detailed transaction speed for rapid aggregate computation.",
+        "C": "Both OLTP and OLAP have identical performance characteristics.",
+        "D": "OLTP systems are designed to pre‑compute aggregates."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "OLAP is optimized for fast aggregation over large datasets, while detailed transactional queries are better suited to OLTP. This contrast aligns with the OLTP vs OLAP comparison on page 48.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When integrating data mining techniques with analytical processing, which statement reflects the relationship between OLAP and data mining as discussed in the context?",
+      "options": {
+        "A": "OLAP systems inherently perform all data mining functions without additional tools.",
+        "B": "Data mining can be layered on top of OLAP, creating a multidimensional data mining style.",
+        "C": "OLTP systems are the primary platform for multidimensional data mining.",
+        "D": "OLAP and data mining are mutually exclusive and cannot be combined."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The text mentions that “multidimensional data mining” integrates data mining with OLAP technology (page 74), indicating that OLAP can serve as a foundation for mining.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best captures why the separation between OLTP and OLAP systems is expected to decrease, according to the context?",
+      "options": {
+        "A": "Advances in hardware make it impossible to run both on the same server.",
+        "B": "Emerging architectures allow hybrid processing that supports both transactional and analytical workloads.",
+        "C": "Regulatory requirements force strict separation of the two systems.",
+        "D": "OLTP systems are being replaced entirely by OLAP servers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Page 48 notes a trend toward decreasing separation, implying convergence of capabilities, such as hybrid architectures that support both workload types.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the three‑tier architecture described (bottom, middle, top), which tier is responsible for executing multidimensional queries and why?",
+      "options": {
+        "A": "Bottom tier, because it stores raw operational data.",
+        "B": "Middle tier, because it hosts the OLAP server that maps multidimensional operations to underlying storage.",
+        "C": "Top tier, because front‑end tools directly process raw data.",
+        "D": "None of the tiers handle query execution; an external engine does."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The middle tier contains the OLAP server that implements ROLAP or MOLAP models for multidimensional processing (page 49).  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a business requires real‑time inventory updates while also needing periodic sales trend analysis, which combination of system types from the context would best satisfy both needs?",
+      "options": {
+        "A": "A single OLTP system with built‑in OLAP cubes.",
+        "B": "Separate OLTP for inventory and a HOLAP server for trend analysis.",
+        "C": "Only a MOLAP server, handling both tasks.",
+        "D": "An ROLAP server that replaces the operational database."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "Real‑time updates are the domain of OLTP, while periodic trend analysis benefits from HOLAP’s scalability and speed (page 82). Using separate systems aligns with the described architecture.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the comparison table (page 48), which of the following is NOT a typical characteristic of OLAP systems?",
+      "options": {
+        "A": "Large data volumes stored in a data warehouse.",
+        "B": "Predominantly read‑only queries with complex aggregations.",
+        "C": "High concurrency for many short‑duration transactions.",
+        "D": "Use of multidimensional schemas (star, snowflake)."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "High concurrency for short transactions describes OLTP, not OLAP, as indicated in the OLTP vs OLAP comparison on page 48.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A developer must choose between implementing a ROLAP or a MOLAP solution for a new analytical platform. Which factor from the context would most directly influence the decision toward MOLAP?",
+      "options": {
+        "A": "Need for scalability to petabyte‑scale relational tables.",
+        "B": "Requirement for the fastest possible query response on pre‑aggregated cubes.",
+        "C": "Preference for using standard SQL without specialized servers.",
+        "D": "Desire to keep all data in normalized relational form."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "MOLAP provides faster computation on pre‑aggregated multidimensional cubes, whereas ROLAP emphasizes scalability (page 50 and 82). Selecting MOLAP is driven by speed of query response.",
+      "source_pages": []
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "topic": "accuracy limitations base rate fallacy",
+  "generated_at": "2026-08-31T02:21:01",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Why can overall accuracy be misleading as a performance measure for a classifier in the intrusion‑detection scenario described in the context?",
+      "options": {
+        "A": "Because a classifier that always predicts “normal” will still achieve high accuracy due to the large number of normal samples.",
+        "B": "Because the classifier’s speed is more important than its correctness.",
+        "C": "Because normalization of the data automatically corrects any misclassification.",
+        "D": "Because the intrusion‑detection system uses bitmap indexing, which inflates accuracy."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that normal samples far outnumber outlier samples, so a classifier that simply predicts “normal” can obtain a high accuracy despite being useless for detecting intrusions [Page 127].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which example from the context best illustrates the Base Rate Fallacy?",
+      "options": {
+        "A": "An intrusion‑detection system where most accesses are normal, causing a naïve classifier to appear accurate.",
+        "B": "A bitmap index that speeds up low‑cardinality queries.",
+        "C": "Normalizing attribute values to the range 0.0–1.0 before mining.",
+        "D": "Scanning a working relation only once to collect statistics."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The Base Rate Fallacy occurs when the low base rate of outliers makes accuracy misleading; the intrusion‑detection example in the text matches this description [Page 127].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which three elements are identified in the context as defining data quality?",
+      "options": {
+        "A": "Accuracy, completeness, and consistency.",
+        "B": "Accuracy, scalability, and redundancy.",
+        "C": "Completeness, normalization, and generalization.",
+        "D": "Consistency, correlation, and indexing."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage lists accuracy, completeness, and consistency as the three data‑quality elements [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does attribute‑oriented induction potentially limit the usefulness of accuracy as a performance metric?",
+      "options": {
+        "A": "It requires scanning the relation multiple times, increasing error.",
+        "B": "Automatic generalization may hide detailed patterns, reducing the classifier’s ability to capture subtle differences.",
+        "C": "It forces the use of chi‑square tests for nominal data.",
+        "D": "It guarantees perfect accuracy by removing noisy attributes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that attribute‑oriented induction “automatically generalizes data to a higher level” and cannot efficiently support deeper drill‑down, which can obscure details needed for accurate classification [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, what is a direct consequence of the imbalance between normal and outlier samples when building a classifier?",
+      "options": {
+        "A": "Insufficient outlier samples make it difficult to construct an accurate model.",
+        "B": "The classifier will automatically achieve 100 % precision.",
+        "C": "Normalization of attribute values eliminates the imbalance.",
+        "D": "Bitmap indexing resolves the imbalance issue."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage states that the scarcity of outlier samples “can prevent us from building an accurate classifier” [Page 127].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the intrusion‑detection example, why might a classifier with 95 % overall accuracy still be considered ineffective?",
+      "options": {
+        "A": "Because the high accuracy may be due to correctly labeling the abundant normal events while missing most intrusions.",
+        "B": "Because 95 % accuracy exceeds the theoretical maximum for any classifier.",
+        "C": "Because accuracy does not account for the speed of detection.",
+        "D": "Because the classifier uses chi‑square testing, which is unsuitable for nominal data."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "With a dominant normal class, a classifier can achieve high accuracy simply by labeling everything as normal, yet fail to detect intrusions—a classic illustration of the base‑rate problem [Page 127].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT mentioned in the context as a source of inaccurate data?",
+      "options": {
+        "A": "Incorrect attribute values entered during data collection.",
+        "B": "Missing or incomplete attribute values.",
+        "C": "Inconsistent data across records.",
+        "D": "Scaling data to the range 0.0–1.0 through normalization."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text lists reasons for inaccurate data such as incorrect values, incompleteness, and inconsistency, but describes normalization as a technique that can improve accuracy, not cause inaccuracy [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does a low base rate of outlier events affect the interpretation of classifier accuracy, as discussed in the context?",
+      "options": {
+        "A": "It allows a trivial “always‑normal” classifier to achieve high accuracy, masking poor detection performance.",
+        "B": "It forces the classifier to lower its overall accuracy.",
+        "C": "It makes accuracy an ideal sole metric for performance evaluation.",
+        "D": "It eliminates the need for any performance metric beyond accuracy."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage explains that because normal events dominate, a classifier that never predicts an outlier can still show high accuracy, illustrating the base‑rate fallacy [Page 127].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which processing step described in the context could be directly affected by inaccurate or incomplete data, potentially leading to misleading accuracy results?",
+      "options": {
+        "A": "Step 1 – collecting the task‑relevant data into the working relation.",
+        "B": "Step 2 – scanning the working relation to collect statistics on attribute values.",
+        "C": "Step 3 – generalizing attribute values based on desired levels.",
+        "D": "The final indexing of bitmap structures."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Step 2 relies on statistics gathered from the data; if the data contain inaccurate or missing values, the derived statistics—and consequently any accuracy assessment—will be unreliable [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might accuracy alone be insufficient when assessing the quality of a correlation discovered by a χ² test for nominal attributes, according to the context?",
+      "options": {
+        "A": "Because χ² measures statistical significance, not the proportion of correctly predicted instances.",
+        "B": "Because accuracy automatically improves after χ² testing.",
+        "C": "Because correlation analysis eliminates the need for any performance metric.",
+        "D": "Because χ² tests are only applicable to continuous attributes."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context notes that correlation analysis for nominal data uses the χ² test, which evaluates how strongly one attribute implies another; this statistical significance is distinct from accuracy, which measures correct predictions [Page 12].",
+      "source_pages": []
+    }
+  ]
+}

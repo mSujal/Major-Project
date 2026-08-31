@@ -20,4 +20,4 @@ LOCAL_MODEL = None           # ollama fallback ko lagi —  machine ma jun ollam
 #########################################
 CURRENT_PDF = None  # holds currently loaded pdf 
 
-TAXONOMY_PATH = "Datasets/Jsons/artificial_intelligence.json"
+TAXONOMY_PATH = "/home/sujan/Major-Project/Datasets/Jsons/datamining.json"

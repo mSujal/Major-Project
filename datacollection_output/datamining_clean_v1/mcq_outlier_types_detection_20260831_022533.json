@@ -1,0 +1,133 @@
+{
+  "topic": "outlier types detection",
+  "generated_at": "2026-08-31T02:25:33",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which of the following examples best illustrates a **global outlier** as described in the text?",
+      "options": {
+        "A": "A temperature reading of 30 °C recorded in a tropical region where most values are between 28 °C and 32 °C.",
+        "B": "A single transaction of $10,000 in a dataset where the typical transaction amounts are between $5 and $50.",
+        "C": "A day’s sales that are unusually low because the store was closed for a holiday.",
+        "D": "A group of sensor readings that together deviate from the usual pattern, though each individual reading is normal."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Global outliers are data objects that deviate significantly from the rest of the dataset and are often called point anomalies. The $10,000 transaction stands out sharply from the usual $5–$50 range, matching the definition on [Page 101].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which scenario most accurately represents a **contextual (conditional) outlier** according to the material?",
+      "options": {
+        "A": "A single heart‑rate measurement of 180 bpm in a dataset where most values are between 60–100 bpm.",
+        "B": "A high humidity reading recorded during a desert night, when the usual humidity at night is below 10 %.",
+        "C": "A sudden spike in network traffic that occurs during a scheduled software update.",
+        "D": "A group of credit‑card transactions that together form a fraud ring, though each transaction looks normal individually."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Contextual outliers are objects that are anomalous only with respect to a specific context. The humidity reading is abnormal **given the desert‑night context**, matching the description on [Page 101] and the discussion of contextual outlier detection on [Page 129].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does **density‑based outlier detection** differ from **distance‑based outlier detection**?",
+      "options": {
+        "A": "Density‑based methods examine the distance to the k‑nearest neighbor, while distance‑based methods count the number of points within a fixed radius.",
+        "B": "Density‑based methods assess how many neighbors fall within a given radius, whereas distance‑based methods compare a point’s distance to its farthest neighbor.",
+        "C": "Density‑based methods evaluate the local concentration of points, while distance‑based methods focus on absolute distances between points.",
+        "D": "Density‑based methods only work for categorical data, whereas distance‑based methods are limited to numeric data."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states that proximity‑based outlier detection includes distance‑based and density‑based approaches, with density‑based methods looking at the **local density** of points rather than just raw distances [Page 108].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement correctly pairs a proximity‑based outlier detection type with its primary characteristic?",
+      "options": {
+        "A": "Distance‑based detection – flags points that have fewer than *k* neighbors within a predefined radius.",
+        "B": "Density‑based detection – identifies points that lie in regions of lower point concentration compared to their surroundings.",
+        "C": "Distance‑based detection – measures the variance of a point’s attribute values against the global mean.",
+        "D": "Density‑based detection – requires a labeled training set to learn normal density patterns."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Density‑based outlier detection looks for points in low‑density regions relative to their neighborhood, as described on [Page 108].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the two‑step process for contextual outlier detection when contexts are clearly identified, which of the following correctly describes the steps?",
+      "options": {
+        "A": "First transform the contextual problem into a conventional outlier problem; then apply any standard global outlier detector.",
+        "B": "First cluster the data based on context; then label the smallest cluster as outliers.",
+        "C": "First compute the global density of all points; then remove points with density below a threshold.",
+        "D": "First train a classification model on labeled normal data; then classify remaining points as outliers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text explains that when contexts are identifiable, the problem is transformed into a typical outlier detection task, after which a conventional method is applied [Page 129].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which approach is most suitable for detecting outliers in **multivariate data** by converting the problem to a univariate one?",
+      "options": {
+        "A": "Applying a distance‑based proximity method directly to the multivariate space.",
+        "B": "Using a clustering‑based method to form clusters and flag points outside any cluster.",
+        "C": "Transforming the multivariate data into a single attribute (e.g., via a statistical summary) and then applying a univariate outlier detector.",
+        "D": "Training a classification model with outlier labels on the original multivariate attributes."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that many univariate methods can be extended to multivariate data by transforming the multivariate detection task into a univariate problem [Page 112].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, how does **clustering‑based outlier detection** identify anomalous objects?",
+      "options": {
+        "A": "By measuring the distance of each point to the overall dataset mean.",
+        "B": "By locating points that do not belong to any formed cluster or that fall far from cluster centroids.",
+        "C": "By computing the variance of each attribute and flagging points with high variance.",
+        "D": "By training a supervised classifier to separate normal points from outliers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes that clustering groups similar values; values that fall outside these groups are considered outliers [Page 8].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement best captures the similarity between **outlier detection** and **novelty detection** as mentioned in the material?",
+      "options": {
+        "A": "Both rely exclusively on supervised learning with labeled outlier examples.",
+        "B": "Both can be modeled using the same detection techniques because novel topics initially appear as outliers.",
+        "C": "Outlier detection focuses on static datasets, whereas novelty detection only works on streaming data.",
+        "D": "Novelty detection requires a predefined set of known anomalies, while outlier detection does not."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text highlights that novel topics may initially appear as outliers, indicating a modeling similarity between outlier detection and novelty detection [Page 101].  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a **classification‑based outlier detection** approach, what is the essential prerequisite according to the source?",
+      "options": {
+        "A": "A large amount of unlabeled data to estimate density.",
+        "B": "A predefined distance threshold for each attribute.",
+        "C": "A training dataset that includes class labels distinguishing normal data from outliers.",
+        "D": "A set of clustering centroids derived from the normal data."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text describes classification‑based outlier detection as requiring a training set with class labels to train a model that separates normal data from outliers [Page 127].",
+      "source_pages": []
+    }
+  ]
+}

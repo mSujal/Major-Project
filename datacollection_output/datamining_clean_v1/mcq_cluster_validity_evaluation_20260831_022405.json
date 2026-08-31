@@ -1,0 +1,147 @@
+{
+  "topic": "cluster validity evaluation",
+  "generated_at": "2026-08-31T02:24:05",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "According to Example 12.7, why are the two objects in region R considered outliers?",
+      "options": {
+        "A": "They are located far from the centroid of the larger cluster.",
+        "B": "They belong to a tiny cluster that is much smaller than the main cluster.",
+        "C": "They have higher variance than points in the larger cluster.",
+        "D": "They reside in a region with the highest density of points."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The example describes a tiny cluster C₂ containing only the two points in R, while cluster C₁ is large. The method flags the points in R as outliers because they form a very small cluster compared to the rest of the data. [Page 109]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What core assumption do clustering‑based outlier detection methods make about normal data versus outliers?",
+      "options": {
+        "A": "Normal data belong to large and dense clusters, while outliers belong to small or sparse clusters or to no cluster.",
+        "B": "Normal data are uniformly distributed, and outliers form a single dense cluster.",
+        "C": "Normal data have higher variance than outliers.",
+        "D": "Normal data are always located near the centroid of the dataset."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that clustering‑based methods assume normal objects are in large, dense clusters, whereas outliers are in small, sparse clusters or unclustered. [Page 108]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why is determining whether a new object is an outlier typically fast after clustering has been performed?",
+      "options": {
+        "A": "Because each object is compared only to the centroids of a few clusters rather than to all individual data points.",
+        "B": "Because outlier detection uses a pre‑computed lookup table of all possible outliers.",
+        "C": "Because the number of clusters is usually small compared to the total number of objects, reducing the number of comparisons needed.",
+        "D": "Because outlier detection algorithms run in constant time regardless of dataset size."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "After clustering, the number of clusters is much smaller than the total objects, so comparing an object to clusters is computationally inexpensive. [Page 126]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the density measure used for outlier detection differ from the density measure used in density‑based clustering?",
+      "options": {
+        "A": "The outlier detection density focuses on the overall size of a cluster, while density‑based clustering considers local point density in a region.",
+        "B": "The outlier detection density evaluates only the distance to the nearest centroid, whereas density‑based clustering uses pairwise distances.",
+        "C": "Both measures are identical; the text states there is no difference.",
+        "D": "The outlier detection density is calculated after clustering, while density‑based clustering never uses density."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes a critical difference: the density concept for outlier detection emphasizes cluster size, whereas density‑based clustering uses local density of points. [Page 122]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of clustering‑based outlier detection, what role does the size of a cluster play in evaluating the objects it contains?",
+      "options": {
+        "A": "Small clusters are interpreted as likely containing outliers, while large clusters are interpreted as representing normal data.",
+        "B": "Large clusters are always split into smaller sub‑clusters to improve accuracy.",
+        "C": "Cluster size is irrelevant; only the distance between points matters.",
+        "D": "Small clusters are merged automatically with larger ones to eliminate outliers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The method assumes normal data form large, dense clusters and outliers belong to small or sparse clusters. Hence, cluster size directly influences the outlier interpretation. [Page 108]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is a potential limitation of using only cluster size as a criterion for outlier detection?",
+      "options": {
+        "A": "It may incorrectly label rare but legitimate sub‑populations as outliers.",
+        "B": "It requires computing the exact distance between every pair of points.",
+        "C": "It cannot be applied to datasets with more than three dimensions.",
+        "D": "It always leads to higher computational complexity than other methods."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "While the text emphasizes small clusters as outliers, relying solely on size can misclassify genuine small clusters that represent rare but valid groups. This issue is implied by the discussion of assumptions about cluster size. [Page 108]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What does the term “cluster quality” refer to in the provided context?",
+      "options": {
+        "A": "The number of clusters generated by a algorithm.",
+        "B": "The set of measures used to define how well clusters represent the underlying data patterns.",
+        "C": "The speed at which clusters can be visualized.",
+        "D": "The amount of memory required to store cluster centroids."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage mentions that there are many measures for defining clusters and cluster quality, indicating that quality pertains to how well clusters capture data characteristics. [Page 26]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why does the small number of clusters relative to total objects contribute to efficiency in outlier detection?",
+      "options": {
+        "A": "Fewer clusters mean fewer distance calculations when assigning a new object to a cluster.",
+        "B": "A small number of clusters allows the use of hierarchical indexing structures.",
+        "C": "It enables parallel processing of each cluster on separate CPUs.",
+        "D": "It reduces the need for any similarity measures altogether."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "With fewer clusters, the system performs fewer comparisons, making the process fast. This is explicitly noted as an advantage of clustering‑based methods. [Page 126]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the clustering‑based approach, how are “large and dense” clusters used in evaluating normal data?",
+      "options": {
+        "A": "They serve as reference groups indicating typical behavior, against which potential outliers are compared.",
+        "B": "They are discarded because they contain too much information.",
+        "C": "They are split into multiple smaller clusters to improve detection accuracy.",
+        "D": "They are ignored in favor of analyzing only the smallest clusters."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The method assumes normal data belong to large and dense clusters, implying these clusters represent normal patterns for comparison. [Page 108]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What issue arises when cluster validation relies solely on the density measure discussed for outlier detection?",
+      "options": {
+        "A": "The measure may confuse genuinely sparse but valid clusters with outlier groups, leading to false positives.",
+        "B": "It forces all clusters to have the same number of points.",
+        "C": "It eliminates the need for any further statistical testing.",
+        "D": "It guarantees that all identified outliers are true anomalies."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text highlights a critical difference between the density measure for outlier detection and that for density‑based clustering, suggesting that using this density alone can misclassify sparse legitimate clusters as outliers. [Page 122]",
+      "source_pages": []
+    }
+  ]
+}

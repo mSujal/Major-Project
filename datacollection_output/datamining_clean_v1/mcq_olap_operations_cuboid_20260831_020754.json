@@ -1,0 +1,147 @@
+{
+  "topic": "olap operations cuboid",
+  "generated_at": "2026-08-31T02:07:54",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which OLAP operation aggregates data by moving from a lower‑level member to a higher‑level member in a dimension hierarchy (e.g., from city to province/state)?",
+      "options": {
+        "A": "Drill‑down",
+        "B": "Roll‑up",
+        "C": "Slice",
+        "D": "Pivot"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Roll‑up is defined as the aggregation (group‑by) from a detailed level to a higher level in a hierarchy, as described in the discussion of transforming roll‑up operations into SQL or OLAP actions [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A query requests sales for the year 2010 across the dimensions {brand, province/state}. Which OLAP operation(s) should be applied first to restrict the data to the year 2010?",
+      "options": {
+        "A": "Drill‑down on year, then slice on brand",
+        "B": "Slice on year, then projection on brand and province/state",
+        "C": "Roll‑up on year, then dice on brand and province/state",
+        "D": "Pivot on year, then roll‑up on brand"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Slicing corresponds to a selection constant such as “year = 2010,” and projection selects the required dimensions, matching the description that slicing and dicing map to selection and projection on a materialized cuboid [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the four materialized cuboids listed (cuboid 1: {year, item name, city}; cuboid 2: {year, brand, country}; cuboid 3: {year, brand, province/state}), which cuboid can answer the query on {brand, province/state} with the selection “year = 2010” with the least additional processing?",
+      "options": {
+        "A": "Cuboid 1",
+        "B": "Cuboid 2",
+        "C": "Cuboid 3",
+        "D": "None of the above – a new cuboid must be built"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Cuboid 3 already contains the exact dimensions needed (year, brand, province/state), so after applying a slice on year the query can be answered directly, as illustrated in the example of selecting the appropriate materialized cuboid [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "To obtain sales totals by province/state from a materialized cuboid that stores data at the city level ({year, item name, city}), which OLAP operation must be performed?",
+      "options": {
+        "A": "Slice on city",
+        "B": "Drill‑down from city to province/state",
+        "C": "Roll‑up from city to province/state",
+        "D": "Pivot on city dimension"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Moving from a more detailed level (city) to a higher level (province/state) requires a roll‑up operation, which corresponds to a group‑by aggregation in SQL [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, how do the OLAP operations “slice” and “dice” relate to relational algebra operations?",
+      "options": {
+        "A": "Both correspond to join operations",
+        "B": "Slice maps to selection, while dice maps to projection",
+        "C": "Slice maps to selection, while dice maps to selection and/or projection",
+        "D": "Both correspond to aggregation functions"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states that slicing and dicing a data cube may correspond to selection and/or projection operations on a materialized cuboid, linking them to relational‑algebra concepts [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "A query requires the dimensions {year, brand, province/state} with a filter “year = 2010”. If only cuboid 2 ({year, brand, country}) is chosen, which sequence of OLAP operations would be needed to obtain the required view?",
+      "options": {
+        "A": "Roll‑up on country to province/state, then slice on year",
+        "B": "Drill‑down on country to province/state, then slice on year",
+        "C": "Slice on year, then pivot on brand and country",
+        "D": "It is impossible; a different cuboid must be used"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "Hard",
+      "explanation": "Cuboid 2 lacks the province/state level; without that attribute, neither roll‑up nor drill‑down can create it. The correct approach is to select a cuboid that already contains province/state (e.g., cuboid 3) as explained in the materialized‑cuboid selection process [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which indexing technique can be combined with bitmap indexing to form a “bitmapped join index” as mentioned in the text?",
+      "options": {
+        "A": "B‑tree index",
+        "B": "Join index",
+        "C": "Hash index",
+        "D": "Clustered index"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that “join indexing and the bitmap indexing methods can be integrated to form bitmapped join indices” [Page 78].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the cost‑based selection of a materialized cuboid, what is the purpose of evaluating “dominance” relationships among cuboids?",
+      "options": {
+        "A": "To identify cuboids that contain duplicate data",
+        "B": "To prune cuboids that are strictly more expensive than others for the same query",
+        "C": "To rank cuboids based on their storage size only",
+        "D": "To determine the order of dimensions in a hierarchy"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Dominance relationships are used to prune the set of candidate cuboids by eliminating those that are less efficient, as part of the process of selecting the cuboid with the least cost [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Given the dimension hierarchy “day < month < quarter < year”, which OLAP operation would you apply to view data aggregated at the month level when starting from a day‑level base cuboid?",
+      "options": {
+        "A": "Drill‑down",
+        "B": "Roll‑up",
+        "C": "Slice",
+        "D": "Pivot"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Aggregating from a finer granularity (day) to a coarser one (month) is a roll‑up operation, consistent with the hierarchy description in the example cube [Page 81].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a query specifies only a particular year (e.g., “year = 2010”) and no other dimensional constraints, which OLAP operation is primarily responsible for reducing the cube to that single year?",
+      "options": {
+        "A": "Roll‑up",
+        "B": "Drill‑down",
+        "C": "Slice",
+        "D": "Dice"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Selecting a single value of a dimension, such as fixing the year, is performed by the slice operation, as indicated in the discussion of transforming selection constants into OLAP operations [Page 81].",
+      "source_pages": []
+    }
+  ]
+}

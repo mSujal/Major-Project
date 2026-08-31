@@ -1,0 +1,147 @@
+{
+  "topic": "data preprocessing overview",
+  "generated_at": "2026-08-31T02:17:08",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the primary reason for performing data preprocessing according to the overview?",
+      "options": {
+        "A": "To increase the volume of raw data stored in databases.",
+        "B": "To improve data quality by addressing issues such as noise, missing values, and inconsistencies.",
+        "C": "To replace the need for data mining algorithms.",
+        "D": "To automatically generate business reports."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The overview states that data quality issues motivate preprocessing, aiming to produce high‑quality, clean data for mining [Page: 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which set of tasks is explicitly listed as the major categories of data preprocessing in the provided text?",
+      "options": {
+        "A": "Data indexing, data compression, data encryption, data visualization.",
+        "B": "Data cleaning, data integration, data reduction, data transformation.",
+        "C": "Data acquisition, data mining, data modeling, data evaluation.",
+        "D": "Data warehousing, data mining, data reporting, data archiving."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text organizes preprocessing methods into four categories: cleaning, integration, reduction, and transformation [Page: 1].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of data transformation, which of the following techniques is mentioned as an example?",
+      "options": {
+        "A": "Data duplication.",
+        "B": "Discretization.",
+        "C": "Data replication.",
+        "D": "Data mining."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Discretization is cited as a form of data transformation alongside concept hierarchy generation [Page: 5].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the overview, what is the main purpose of data integration during preprocessing?",
+      "options": {
+        "A": "To merge similar data from different sources into a unified format.",
+        "B": "To increase the dimensionality of the dataset.",
+        "C": "To delete redundant records permanently.",
+        "D": "To encrypt sensitive information."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Data integration is described as merging similar data from heterogeneous sources into a unified format [Page: 1].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements correctly reflects the role of data reduction in preprocessing as described in the text?",
+      "options": {
+        "A": "It adds new attributes to enrich the dataset.",
+        "B": "It consolidates detailed raw data into aggregated summaries for analysis.",
+        "C": "It removes noise by correcting erroneous values.",
+        "D": "It converts continuous attributes into categorical ones."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Consolidation (aggregation and summarization) of data from heterogeneous sources is presented as a data reduction activity that yields high‑quality, clean data for decision support [Page: 48].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The algorithm’s first step involves a relational query to collect task‑relevant data into a working relation W. What preprocessing activity does this step most closely correspond to?",
+      "options": {
+        "A": "Data cleaning.",
+        "B": "Data integration.",
+        "C": "Data extraction.",
+        "D": "Data reduction."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The step described is about extracting relevant data, which aligns with the extraction function of preprocessing tools [Page: 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why “data cleaning” is considered a distinct phase in the preprocessing pipeline?",
+      "options": {
+        "A": "It focuses on merging data from multiple sources.",
+        "B": "It addresses noise, missing values, and inconsistencies to improve data quality.",
+        "C": "It reduces the number of records through sampling.",
+        "D": "It transforms numeric attributes into binary attributes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Data cleaning is identified as a separate category aimed at handling quality problems such as noise and missing values [Page: 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the overview, which preprocessing task is associated with “concept hierarchy generation”?",
+      "options": {
+        "A": "Data cleaning.",
+        "B": "Data integration.",
+        "C": "Data transformation.",
+        "D": "Data reduction."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Concept hierarchy generation is listed among data transformation techniques [Page: 5].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the text characterize the relationship between operational databases and the need for preprocessing?",
+      "options": {
+        "A": "Operational databases already contain aggregated data, so no preprocessing is needed.",
+        "B": "Operational databases store detailed raw data that must be consolidated before analysis.",
+        "C": "Operational databases are automatically cleaned by the DBMS.",
+        "D": "Operational databases are primarily used for reporting, not mining."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Operational databases hold detailed raw transactions that require consolidation (preprocessing) for decision support [Page: 48].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best summarizes the overall goal of data preprocessing as presented in the overview?",
+      "options": {
+        "A": "To replace all manual data handling with automated scripts.",
+        "B": "To ensure that the data used for mining is accurate, consistent, and suitably formatted.",
+        "C": "To increase the storage capacity of data warehouses.",
+        "D": "To generate visualizations directly from raw data."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The overview emphasizes that preprocessing aims to produce high‑quality, clean, integrated data that is ready for mining [Page: 2].",
+      "source_pages": []
+    }
+  ]
+}

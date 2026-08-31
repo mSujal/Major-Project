@@ -1,0 +1,147 @@
+{
+  "topic": "other anomaly detection approaches",
+  "generated_at": "2026-08-31T02:25:07",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "According to the text, what is the primary purpose of using a correlation‑based analysis method in the context of anomaly detection?",
+      "options": {
+        "A": "To directly identify outlier instances in the dataset",
+        "B": "To filter out statistically irrelevant or weakly relevant attributes before mining",
+        "C": "To generate classification rules for distinguishing normal and anomalous data",
+        "D": "To compute the likelihood of each data point being an outlier"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The correlation‑based analysis method is described as a way to perform attribute relevance analysis and filter out statistically irrelevant or weakly relevant attributes from the descriptive mining process [Page 86].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the text describe the relationship between outlier detection and novelty detection?",
+      "options": {
+        "A": "They are unrelated techniques used for different types of data",
+        "B": "Novelty detection is a subset of outlier detection that only works on labeled data",
+        "C": "They share similarity in modeling and detection methods because novel topics may first appear as outliers",
+        "D": "Outlier detection always requires supervised learning, whereas novelty detection is unsupervised"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that “novel topics may initially appear as outliers” and that outlier detection and novelty detection share some similarity in modeling and detection methods [Page 101].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why the choice of a deviation measurement is critical for detecting global outliers?",
+      "options": {
+        "A": "Because the measurement determines the dimensionality of the data representation",
+        "B": "Because it directly influences how far a point must be from the majority to be flagged as an outlier",
+        "C": "Because it sets the threshold for the number of clusters the algorithm will create",
+        "D": "Because it decides whether bitmap indexing can be applied efficiently"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Detecting global outliers requires an appropriate measurement of deviation; this measurement defines what constitutes sufficient deviation to label a point as an outlier [Page 101].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the classification‑based approach to anomaly detection, what prerequisite is explicitly required according to the text?",
+      "options": {
+        "A": "A high‑cardinality domain for bitmap indexing",
+        "B": "A set of pre‑computed correlation coefficients among attributes",
+        "C": "A training data set that includes class labels distinguishing normal and outlier instances",
+        "D": "An unsupervised clustering algorithm to generate pseudo‑labels"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The classification‑based method treats outlier detection as a classification problem and requires a training data set with class labels to distinguish normal data from outliers [Page 127].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the context, which statement correctly contrasts classification‑based and correlation‑based approaches for anomaly detection?",
+      "options": {
+        "A": "Classification‑based methods rely on attribute relevance analysis, while correlation‑based methods build predictive models.",
+        "B": "Classification‑based methods need labeled data; correlation‑based methods focus on filtering irrelevant attributes without requiring labels.",
+        "C": "Both methods require bitmap indexing to operate efficiently on low‑cardinality domains.",
+        "D": "Classification‑based methods are used only for novelty detection, whereas correlation‑based methods are exclusive to global outlier detection."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Classification‑based approaches need labeled training data, whereas correlation‑based analysis is employed to filter out statistically irrelevant attributes, a process that does not depend on class labels [Pages 127, 86].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might attribute‑oriented induction be considered less suitable for detailed anomaly analysis, according to the passage?",
+      "options": {
+        "A": "It cannot handle low‑cardinality domains efficiently",
+        "B": "It automatically generalizes data to a higher level, limiting deep drill‑down into finer details",
+        "C": "It requires explicit outlier labels for training a classifier",
+        "D": "It relies exclusively on bitmap indexing, which is unsuitable for anomaly detection"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Attribute‑oriented induction automatically generalizes data to a higher level, which hampers the ability to drill down to deeper, more detailed levels that may be needed for thorough anomaly analysis [Page 96].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best summarizes the main categorization criterion for outlier detection methods mentioned in the text?",
+      "options": {
+        "A": "The type of indexing structure (bitmap vs. hash) used for storage",
+        "B": "The underlying measurement of deviation applied to the data",
+        "C": "The presence or absence of a training phase using class labels",
+        "D": "The cardinality of the domain on which the method operates"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Outlier detection methods are partitioned into different categories based on the various measurements of deviation proposed for the application [Page 101].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the excerpt, what is a common initial characteristic of novel topics that makes them detectable by outlier detection techniques?",
+      "options": {
+        "A": "They always have high cardinality in the attribute space",
+        "B": "They appear as data points that deviate significantly from existing patterns",
+        "C": "They are pre‑labeled as anomalies in the training set",
+        "D": "They require bitmap indexing for efficient processing"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Novel topics may initially appear as outliers because they deviate from previously observed data patterns, allowing outlier detection methods to identify them [Page 101].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the text justify the need for “appropriate measurement of deviation” before applying outlier detection?",
+      "options": {
+        "A": "Because it determines whether bitmap indexing can be used",
+        "B": "Because different applications may define “outlier” differently, affecting detection performance",
+        "C": "Because it sets the number of clusters the algorithm must generate",
+        "D": "Because it is required for constructing a correlation matrix among attributes"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage highlights that finding an appropriate measurement of deviation is critical because it must align with the specific application’s definition of what constitutes an outlier [Page 101].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement accurately reflects the scope of outlier detection methods discussed in the chapter, as indicated by the text?",
+      "options": {
+        "A": "The chapter only covers statistical likelihood approaches for anomaly detection.",
+        "B": "It includes a discussion of multiple categories, such as global outlier detection, classification‑based methods, and correlation‑based attribute filtering.",
+        "C": "It focuses exclusively on bitmap indexing techniques for low‑cardinality domains.",
+        "D": "The chapter argues that outlier detection is unrelated to novelty detection."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text mentions various outlier detection categories, including measurement‑based methods, classification‑based approaches, and correlation‑based attribute relevance analysis, indicating a broad discussion of multiple methods [Pages 101, 105, 127, 86].",
+      "source_pages": []
+    }
+  ]
+}

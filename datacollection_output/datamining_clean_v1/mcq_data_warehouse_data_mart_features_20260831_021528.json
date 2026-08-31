@@ -1,0 +1,133 @@
+{
+  "topic": "data warehouse data mart features",
+  "generated_at": "2026-08-31T02:15:28",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements most accurately defines a data warehouse?",
+      "options": {
+        "A": "A real‑time transactional system that records only current operational data.",
+        "B": "A subject‑oriented, integrated, time‑variant, and nonvolatile collection of data supporting management decision making.",
+        "C": "A temporary cache that stores user session information for web applications.",
+        "D": "A set of loosely related files used for archival purposes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The definition matches the description on page 96 that a data warehouse is “subject‑oriented, integrated, time‑variant, and nonvolatile … organized in support of management decision making.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is **not** considered one of the four key characteristics of a data warehouse?",
+      "options": {
+        "A": "Subject‑oriented",
+        "B": "Integrated",
+        "C": "Time‑variant",
+        "D": "Volatile"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The four characteristics listed on page 96 are subject‑oriented, integrated, time‑variant, and nonvolatile; therefore “volatile” is not a characteristic.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the three‑tier architecture of a data warehouse, the top tier primarily provides which type of functionality?",
+      "options": {
+        "A": "Data extraction, cleaning, and loading processes.",
+        "B": "Storage of raw source data and staging area.",
+        "C": "Query, reporting, analysis, and data mining tools for users.",
+        "D": "Management of metadata and system performance metrics."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 50 describes the top tier as a “front‑end client layer … containing query and reporting tools, analysis tools, and/or data mining tools.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which set of tools and utilities is typically found in the back‑end of a data warehouse?",
+      "options": {
+        "A": "Business intelligence dashboards and visualization widgets.",
+        "B": "Data extraction, data cleaning, data transformation, loading, and refreshing utilities.",
+        "C": "Authentication, authorization, and audit logging services.",
+        "D": "Network routing, load balancing, and firewall configuration components."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 96 lists back‑end tools for “data extraction, data cleaning, data transformation, loading, refreshing, and warehouse management.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The metadata repository in a data warehouse stores information about all of the following **except**:",
+      "options": {
+        "A": "The warehouse’s structural layout and schema.",
+        "B": "The algorithms used for data summarization.",
+        "C": "Real‑time sales transaction details from the operational database.",
+        "D": "Mappings from source data to the warehouse format."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "According to page 96, the metadata repository includes “warehouse structure, data history, the algorithms used for summarization, mappings from the source data to the warehouse form…” but does not store the actual transactional data themselves.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following correctly pairs a data‑warehouse model with its primary focus?",
+      "options": {
+        "A": "Enterprise warehouse – a single department’s sales data only.",
+        "B": "Data mart – a corporate‑wide, detailed view of every operational system.",
+        "C": "Virtual warehouse – a logical view that integrates data without physically storing it.",
+        "D": "All three models store data in the same physical location and have identical scopes."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 50 mentions three models: enterprise warehouse, data mart, and virtual warehouse; the virtual warehouse is described as a logical integration without its own storage.  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the typical scope of a marketing‑focused data mart, as described in the provided material?",
+      "options": {
+        "A": "All company‑wide data, including finance, HR, and production.",
+        "B": "A subset limited to subjects such as customer, item, and sales.",
+        "C": "Only the raw log files from the website’s click‑stream.",
+        "D": "Real‑time sensor data from manufacturing equipment."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Page 50 gives the example that a marketing data mart may “confine its subjects to customer, item, and sales.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the text, which of the following best explains how a data warehouse differs from operational databases?",
+      "options": {
+        "A": "It is continuously updated in real time to reflect every transaction.",
+        "B": "It stores data in a normalized, transaction‑oriented format.",
+        "C": "It is subject‑oriented, integrated, time‑variant, and nonvolatile, supporting decision making.",
+        "D": "It contains only metadata without any actual data records."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The distinguishing factors are listed on page 96: “subject‑oriented, integrated, time‑variant, and nonvolatile … organized in support of management decision making.”  \n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component of the data‑warehouse architecture is responsible for linking applications and providing connectivity such as ODBC or JDBC?",
+      "options": {
+        "A": "The front‑end client layer.",
+        "B": "The middle tier that contains the database server and connectivity middleware.",
+        "C": "The back‑end staging area where raw data is stored.",
+        "D": "The metadata repository alone."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 50 notes that the middle tier “contains … database server, client‑server tools such as ODBC (Open Database Connectivity) … and a metadata repository.”",
+      "source_pages": []
+    }
+  ]
+}

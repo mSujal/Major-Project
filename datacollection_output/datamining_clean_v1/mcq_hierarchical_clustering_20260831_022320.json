@@ -1,0 +1,133 @@
+{
+  "topic": "hierarchical clustering",
+  "generated_at": "2026-08-31T02:23:20",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "What is the primary process of hierarchical clustering as described in the text?",
+      "options": {
+        "A": "Repeatedly grouping neighboring clusters to form higher‑level concepts",
+        "B": "Splitting large clusters into equal‑sized parts",
+        "C": "Assigning each data point to a predefined number of clusters",
+        "D": "Randomly merging unrelated data points"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage states that hierarchical clustering “forms clusters by repeatedly grouping neighboring clusters in order to form higher‑level concepts” [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When clustering is used to generate a concept hierarchy, each cluster becomes what element of the hierarchy?",
+      "options": {
+        "A": "A leaf node only",
+        "B": "A node of the concept hierarchy",
+        "C": "The root of the hierarchy exclusively",
+        "D": "An isolated sub‑hierarchy"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that “each cluster forms a node of the concept hierarchy” when clustering is used for hierarchy generation [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a data‑warehouse dimension such as location, how can hierarchical clustering be applied according to the context?",
+      "options": {
+        "A": "To normalize numeric attributes across the warehouse",
+        "B": "To map low‑level concepts (e.g., cities) to higher‑level concepts (e.g., countries) via a concept hierarchy",
+        "C": "To create a lattice structure for time attributes only",
+        "D": "To perform sampling of transaction records"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The text mentions that concept hierarchies map “a set of low‑level concepts (i.e., cities) to higher‑level, more general concepts (i.e., countries),” and clustering can be used to generate such hierarchies [Page 61].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If the goal is to decompose an initial cluster into several subclusters, which strategy should be chosen?",
+      "options": {
+        "A": "Bottom‑up merging strategy",
+        "B": "Top‑down splitting strategy",
+        "C": "K‑means partitioning",
+        "D": "Randomized clustering"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The passage explains that a “top‑down splitting strategy” further decomposes each initial cluster into several subclusters, forming lower levels of the hierarchy [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does hierarchical clustering enable data mining at multiple abstraction levels, as indicated in the material?",
+      "options": {
+        "A": "By generating a concept hierarchy where each level represents a different abstraction",
+        "B": "By normalizing all attributes to a common scale",
+        "C": "By constructing only a lattice structure without hierarchies",
+        "D": "By sampling a subset of the data for analysis"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that “discretization and concept hierarchy generation… allow data mining at multiple abstraction levels,” and hierarchical clustering is a means to create those concept hierarchies [Page 4].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which approach starts with each data point as its own cluster and iteratively merges them?",
+      "options": {
+        "A": "Top‑down splitting",
+        "B": "Bottom‑up merging",
+        "C": "K‑means clustering",
+        "D": "Divisive hierarchical clustering"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A bottom‑up (agglomerative) approach begins with individual items as separate clusters and repeatedly merges the nearest ones, as described in the passage [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the passage, what is a direct outcome of using a bottom‑up merging strategy in hierarchical clustering?",
+      "options": {
+        "A": "Immediate creation of the final single cluster without intermediate levels",
+        "B": "Formation of a multi‑level concept hierarchy where each merge creates a higher‑level node",
+        "C": "Generation of only flat, non‑nested clusters",
+        "D": "Elimination of the need for any abstraction of data"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that in a bottom‑up merging strategy “each cluster forms a node of the concept hierarchy,” producing higher‑level nodes as merges occur [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which characteristic distinguishes hierarchical clustering from flat clustering methods mentioned elsewhere in the book?",
+      "options": {
+        "A": "It produces a tree of nested clusters (a hierarchy)",
+        "B": "It requires the number of clusters to be fixed in advance",
+        "C": "It only works with categorical data",
+        "D": "It cannot be used to generate concept hierarchies"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Hierarchical clustering “repeatedly groups neighboring clusters” to form a hierarchy, unlike flat methods such as k‑means that produce a single partition without nested structure [Page 34].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "For creating a concept hierarchy for the price attribute, which clustering technique aligns with the process described in the material?",
+      "options": {
+        "A": "Hierarchical clustering to produce multiple abstraction levels",
+        "B": "Linear regression to predict price values",
+        "C": "Association‑rule mining to find frequent price itemsets",
+        "D": "Nearest‑neighbor classification of price categories"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The passage cites a “concept hierarchy for price” and earlier explains that hierarchical clustering can generate concept hierarchies, making it the appropriate technique [Page 62].",
+      "source_pages": []
+    }
+  ]
+}

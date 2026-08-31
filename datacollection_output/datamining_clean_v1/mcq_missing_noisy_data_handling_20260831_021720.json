@@ -1,0 +1,147 @@
+{
+  "topic": "missing noisy data handling",
+  "generated_at": "2026-08-31T02:17:20",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "When a dataset contains many tuples with missing class labels, which handling technique is generally considered least effective according to the text?",
+      "options": {
+        "A": "Ignoring the entire tuple",
+        "B": "Filling missing values manually",
+        "C": "Using statistical imputation methods",
+        "D": "Applying a machine‑learning model that can handle missing attributes"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Ignoring the tuple is described as “not very effective” especially when missing values vary considerably across attributes [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Suppose a data collection instrument frequently records the default date “January 1” for unknown birthdays. Which term from the context best describes this phenomenon?",
+      "options": {
+        "A": "Outlier detection",
+        "B": "Disguised missing data",
+        "C": "Data smoothing",
+        "D": "Attribute scaling"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly calls such default entries “disguised missing data” [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In a scenario where an attribute has a high percentage of missing values, which approach is most likely to be impractical according to the provided material?",
+      "options": {
+        "A": "Deleting all records with missing values for that attribute",
+        "B": "Manually filling each missing entry",
+        "C": "Using a model‑based imputation technique",
+        "D": "Applying a global constant to replace missing entries"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Manually filling missing values is noted as “time consuming and may not be feasible” for large datasets with many missing values [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements best captures the impact of noisy data on the data cleaning process as described in the context?",
+      "options": {
+        "A": "Noisy data are always removed before any analysis.",
+        "B": "Noisy data can be smoothed, but outliers must still be identified.",
+        "C": "Noisy data are irrelevant to data quality dimensions.",
+        "D": "Noisy data are automatically corrected by database systems."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text mentions that data cleaning “attempts to fill in missing values, smooth out noise while identifying outliers” [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a dataset includes several attributes with missing values that differ greatly in the percentage of missingness, which handling method is likely to introduce the most bias?",
+      "options": {
+        "A": "Ignoring tuples with any missing attribute",
+        "B": "Replacing missing values with the mean of each attribute",
+        "C": "Using a k‑nearest‑neighbour imputation per attribute",
+        "D": "Leaving the missing values as null and using algorithms that tolerate nulls"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Hard",
+      "explanation": "Ignoring tuples is especially poor when the percentage of missing values per attribute varies considerably, leading to biased samples [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which data quality element is directly threatened by “incorrect data resulting from inconsistencies in naming conventions or data codes”?",
+      "options": {
+        "A": "Timeliness",
+        "B": "Completeness",
+        "C": "Consistency",
+        "D": "Accessibility"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Inconsistent naming or coding affects the “consistency” element of data quality [Page 2].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When data are “contaminated, with some values out of range or of a different data type than expected,” which phase of the data preprocessing pipeline is most appropriate to address this issue?",
+      "options": {
+        "A": "Data integration",
+        "B": "Data cleaning",
+        "C": "Data transformation",
+        "D": "Data reduction"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage describes such cases as part of “dirty” input that must be handled during data cleaning [Page 41].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best explains why “ignoring the tuple” is a poor strategy when the missing values are limited to a few attributes rather than many?",
+      "options": {
+        "A": "It reduces the dataset size unnecessarily, losing valuable information.",
+        "B": "It violates the assumption of independence among attributes.",
+        "C": "It increases computational complexity of subsequent mining tasks.",
+        "D": "It introduces duplicate records into the dataset."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Ignoring tuples discards potentially useful data, especially when only a few attributes are missing, making the method ineffective [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context of data cleaning, what is the primary purpose of “smoothing out noise while identifying outliers”?",
+      "options": {
+        "A": "To increase the dimensionality of the dataset",
+        "B": "To improve the accuracy of subsequent mining models",
+        "C": "To ensure all attributes have the same scale",
+        "D": "To convert categorical data to numerical form"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Smoothing noise and detecting outliers are aimed at reducing inaccuracies, thereby improving model performance [Page 6].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If a data warehouse suffers from “inaccurate, incomplete, and inconsistent data,” which combination of data quality dimensions is being violated, as illustrated in the text?",
+      "options": {
+        "A": "Accuracy, completeness, consistency",
+        "B": "Timeliness, validity, uniqueness",
+        "C": "Redundancy, granularity, relevance",
+        "D": "Confidentiality, integrity, availability"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage explicitly lists accuracy, completeness, and consistency as the three elements defining data quality that are compromised [Page 2].",
+      "source_pages": []
+    }
+  ]
+}

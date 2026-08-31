@@ -1,0 +1,147 @@
+{
+  "topic": "categorical attributes association",
+  "generated_at": "2026-08-31T02:22:00",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Why is the information gain measure considered biased when evaluating categorical attributes with many distinct values?",
+      "options": {
+        "A": "It underestimates the predictive power of attributes with few values.",
+        "B": "It favors attributes that split the data into many small groups.",
+        "C": "It assigns equal importance to all attribute values regardless of frequency.",
+        "D": "It ignores the hierarchical relationships among attribute values."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Information gain tends to favor attributes that have many distinct values because they create many small partitions, leading to a bias toward such attributes. This issue is noted on [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What mechanism does the gain ratio use to mitigate the bias of information gain toward attributes with many values?",
+      "options": {
+        "A": "It normalizes information gain by the total number of records.",
+        "B": "It multiplies information gain by the number of distinct attribute values.",
+        "C": "It divides information gain by the intrinsic information of the attribute.",
+        "D": "It replaces information gain with the correlation coefficient."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Gain ratio addresses the bias by dividing the information gain by the intrinsic information (entropy) of the attribute, which reflects the distribution of its values. Discussed on [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In attribute‑oriented induction, how does a concept hierarchy help in handling categorical attributes during generalization?",
+      "options": {
+        "A": "It converts categorical values into numeric scores for clustering.",
+        "B": "It provides a predefined ladder of abstract levels to roll up specific categories.",
+        "C": "It merges all categories into a single “unknown” value to simplify analysis.",
+        "D": "It eliminates the need for any threshold settings on categorical attributes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "A concept hierarchy defines successive abstraction levels for a categorical attribute, allowing the algorithm to roll up detailed categories to more general ones. See [Page 91].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What primary benefit do join indices provide when identifying subcubes that involve categorical dimensions in a star schema?",
+      "options": {
+        "A": "They automatically compute aggregate measures for each dimension.",
+        "B": "They store pre‑aggregated numeric summaries to speed up queries.",
+        "C": "They maintain direct links between dimension attribute values and fact rows, enabling fast subcube retrieval.",
+        "D": "They eliminate the need for foreign key constraints between tables."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Join indices keep relationships between dimension attribute values (including categorical ones) and the corresponding fact rows, which helps locate subcubes of interest efficiently. Refer to [Page 80].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In OLAP terminology, why is the function count() treated as a measure while other attributes (often categorical) are treated as dimensions?",
+      "options": {
+        "A": "Because count() always returns a numeric value that can be aggregated across dimensions.",
+        "B": "Because count() modifies the underlying categorical attribute values.",
+        "C": "Because dimensions cannot be used in any aggregation functions.",
+        "D": "Because measures are required to be non‑numeric for categorical analysis."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Count() produces a numeric result that can be aggregated over dimensions, so it is classified as a measure, whereas other attributes, many of which are categorical, serve as dimensions. See [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does reducing an attribute’s threshold influence the generalization of a categorical attribute in attribute‑oriented induction?",
+      "options": {
+        "A": "It causes the algorithm to roll up the attribute to a higher (more abstract) level in its hierarchy.",
+        "B": "It forces the attribute to be treated as a numeric measure instead of a dimension.",
+        "C": "It eliminates the attribute from the working relation entirely.",
+        "D": "It increases the number of distinct values retained, preventing any generalization."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Lowering the threshold means the algorithm is allowed to generalize more, which corresponds to rolling up the categorical attribute along its concept hierarchy. Discussed on [Page 88].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why might different attribute relevance assessment methods yield varying rankings for categorical attributes?",
+      "options": {
+        "A": "Because each method uses a distinct bias, such as favoring many‑valued attributes or accounting for value probabilities.",
+        "B": "Because categorical attributes cannot be measured statistically.",
+        "C": "Because all methods treat categorical attributes identically, leading to identical rankings.",
+        "D": "Because relevance assessment only applies to numeric attributes."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Each relevance method (e.g., information gain, gain ratio) has its own bias; for instance, information gain is biased toward many‑valued attributes, while gain ratio adjusts for this, leading to different rankings. Refer to [Page 42].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "When scanning a relation to collect statistics for categorical attributes, which factor mainly determines the cost of computing mapping pairs (v, v′) for each attribute?",
+      "options": {
+        "A": "The total number of rows in the fact table.",
+        "B": "The number of distinct values the categorical attribute possesses.",
+        "C": "The depth of the attribute’s concept hierarchy.",
+        "D": "Whether the attribute is defined as a primary key."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The cost depends on how many distinct values the categorical attribute has, as each distinct value must be examined to create mapping pairs. Mentioned on [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does a foreign‑key relationship support the handling of categorical attributes in join indexing across multiple dimensions?",
+      "options": {
+        "A": "It ensures that every categorical value appears in all dimension tables.",
+        "B": "It provides the link between a fact table’s foreign key and a dimension table’s primary key, enabling efficient joins on categorical attributes.",
+        "C": "It automatically aggregates categorical attributes into numeric measures.",
+        "D": "It eliminates the need for concept hierarchies when generalizing categorical data."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A foreign key in the fact table points to the primary key of a dimension table, allowing join indices to quickly associate categorical attribute values with fact rows. See [Page 79].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In attribute‑oriented induction, what effect does setting a high attribute generalization threshold have on a categorical attribute?",
+      "options": {
+        "A": "It forces the attribute to be generalized to the most abstract level immediately.",
+        "B": "It restricts the amount of generalization, keeping the attribute at a more detailed level.",
+        "C": "It converts the categorical attribute into a numeric one.",
+        "D": "It removes the attribute from consideration in the mining process."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "A higher threshold limits how much the algorithm can generalize the attribute, preserving more detailed categorical values. Discussed on [Page 91].",
+      "source_pages": []
+    }
+  ]
+}

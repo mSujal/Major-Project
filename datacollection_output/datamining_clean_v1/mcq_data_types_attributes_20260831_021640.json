@@ -1,0 +1,147 @@
+{
+  "topic": "data types attributes",
+  "generated_at": "2026-08-31T02:16:40",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which pieces of information are explicitly listed as part of an attribute’s metadata in the context?",
+      "options": {
+        "A": "Only the attribute’s name and data type",
+        "B": "The attribute’s name, meaning, data type, range of values, and null‑handling rules",
+        "C": "The attribute’s storage size and index type",
+        "D": "The attribute’s data type and foreign‑key relationships"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that metadata for each attribute includes the name, meaning, data type, range of values permitted, and null rules for handling blank, zero, or null values [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the OLAP vocabulary described, which kind of attribute is defined as one to which aggregate functions such as sum() can be applied?",
+      "options": {
+        "A": "Dimension attribute",
+        "B": "Measure attribute",
+        "C": "Join attribute",
+        "D": "Null attribute"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Measure attributes are numeric attributes to which aggregate functions like sum() may be applied (e.g., salary, sales) [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the passage, attributes that are **not** measures are treated as what within a star schema?",
+      "options": {
+        "A": "Foreign‑key attributes",
+        "B": "Dimension attributes",
+        "C": "Index attributes",
+        "D": "Composite attributes"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that, besides measures, the remaining attributes are regarded as dimensions, i.e., dimension attributes [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "If an attribute’s domain contains n distinct values, how many bits are required for each entry in its bitmap index?",
+      "options": {
+        "A": "1 bit",
+        "B": "log₂ n bits",
+        "C": "n bits",
+        "D": "n² bits"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "For a bitmap index, n bits are needed for each entry when the domain has n values [Page 78].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Join indices in a data warehouse primarily maintain relationships between attribute values of a dimension and what?",
+      "options": {
+        "A": "The primary keys of other dimensions",
+        "B": "The corresponding rows in the fact table",
+        "C": "The metadata repository",
+        "D": "The OLAP aggregation hierarchy"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Join indexing maintains relationships between attribute values of a dimension and the corresponding rows in the fact table [Page 80].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the given context, what is one purpose of using join indices to identify “subcubes”?",
+      "options": {
+        "A": "To compress the fact table size",
+        "B": "To locate portions of the data cube that are of interest for analysis",
+        "C": "To enforce referential integrity across dimensions",
+        "D": "To convert nominal attributes to ordinal form"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Join indices can be used to identify subcubes that are of interest for analytical queries [Page 80].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The handling of blank, zero, or null values is specified as part of which attribute‑related concept?",
+      "options": {
+        "A": "The attribute’s domain size",
+        "B": "The attribute’s null‑rules metadata",
+        "C": "The attribute’s primary‑key status",
+        "D": "The attribute’s bitmap index length"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Null rules for handling blank, zero, or null values are listed among the metadata elements for each attribute [Page 12].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following examples from the passage would be classified as a **measure attribute**?",
+      "options": {
+        "A": "Location (a dimension)",
+        "B": "Item (a dimension)",
+        "C": "Salary (a numeric attribute)",
+        "D": "Time (a dimension)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Salary is given as an example of a numeric attribute to which sum() can be applied, thus a measure attribute [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The text differentiates attributes that can be aggregated from those that cannot. What term is used for the aggregatable attributes?",
+      "options": {
+        "A": "Dimension attributes",
+        "B": "Categorical attributes",
+        "C": "Measure attributes",
+        "D": "Join attributes"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Attributes that are subject to aggregation functions are called measure attributes [Page 90].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the context, which attribute type is most likely to be stored as a categorical (non‑numeric) value?",
+      "options": {
+        "A": "Dollars (a measure)",
+        "B": "Salary (a measure)",
+        "C": "Location (a dimension)",
+        "D": "Sales amount (a measure)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Dimensions are described as the remaining attributes besides measures, and they are typically categorical; “location” is given as a dimension attribute example [Page 90].",
+      "source_pages": []
+    }
+  ]
+}

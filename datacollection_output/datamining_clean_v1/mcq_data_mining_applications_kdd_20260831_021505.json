@@ -1,0 +1,147 @@
+{
+  "topic": "data mining applications kdd",
+  "generated_at": "2026-08-31T02:15:05",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which of the following correctly orders the primary steps of the KDD (Knowledge Discovery in Databases) process as described in the context?",
+      "options": {
+        "A": "Transform → Extract → Load → Clean → Refresh",
+        "B": "Extract → Clean → Transform → Load → Refresh",
+        "C": "Clean → Extract → Load → Transform → Refresh",
+        "D": "Load → Extract → Clean → Transform → Refresh"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists the steps as Extract, Clean, Transform, Load, and Refresh in that order [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the provided material, which type of data is specifically mentioned as being mined in the data mining field?",
+      "options": {
+        "A": "Audio signal data",
+        "B": "Transaction data",
+        "C": "Genetic sequence data",
+        "D": "Real‑time sensor streams"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text states that data mining research includes mining transaction data among other types [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the context, what is the primary purpose of the “clean” step within the KDD process?",
+      "options": {
+        "A": "To combine data from multiple sources into a unified format",
+        "B": "To remove noise and correct inconsistencies in the data",
+        "C": "To visualize the mining results for decision makers",
+        "D": "To execute classification and prediction models on the data"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The “clean” step is part of ETL, aimed at improving data quality by cleaning, as implied by the description of extraction, cleaning, and transformation functions [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which application of data mining is highlighted as enhancing flexibility by allowing analysts to drill, pivot, filter, dice, and slice on a data cube?",
+      "options": {
+        "A": "Text mining for sentiment analysis",
+        "B": "Multidimensional data mining",
+        "C": "Association rule mining in market baskets",
+        "D": "Clustering of spatial data"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context describes multidimensional data mining providing facilities for drilling, pivoting, filtering, dicing, and slicing on a data cube [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "The context mentions “hidden patterns and associations” as outcomes of data mining. Which of the following tasks directly aims to discover such patterns?",
+      "options": {
+        "A": "Data extraction via gateways",
+        "B": "Construction of analytical models for classification",
+        "C": "Performing OLAP operations like roll‑up and drill‑down",
+        "D": "Mining on relational and transaction data sources"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Discovering hidden patterns and associations is a core goal of mining relational, transaction, and other data types, as listed in the text [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following best describes the role of “visualization tools” in the KDD process according to the context?",
+      "options": {
+        "A": "They perform the initial data extraction from operational databases.",
+        "B": "They transform raw data into a unified format for loading.",
+        "C": "They present mining results to aid interpretation and decision making.",
+        "D": "They execute the refresh function to keep the data warehouse up‑to‑date."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage states that visualization tools are used to present mining results, enhancing interpretability [Page 72].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Based on the context, which of the following data types is NOT explicitly mentioned as a focus of data mining research?",
+      "options": {
+        "A": "Spatial data",
+        "B": "Time‑series data",
+        "C": "Audio waveform data",
+        "D": "Text data"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text lists relational, data‑warehouse, transaction, time‑series, spatial, text, and flat files, but does not mention audio waveform data [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the “refresh” function contribute to the KDD cycle in a data‑warehouse environment?",
+      "options": {
+        "A": "It aggregates data for multidimensional analysis.",
+        "B": "It updates the warehouse with new or changed data from operational sources.",
+        "C": "It merges similar data from heterogeneous sources into a unified format.",
+        "D": "It visualizes the results of classification models."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Refresh is described as a function that updates the data warehouse, keeping it current with operational databases [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following statements best captures the relationship between OLAP operations and data mining as indicated in the context?",
+      "options": {
+        "A": "OLAP operations replace the need for data mining by providing all necessary insights.",
+        "B": "Data mining can be performed on the results of OLAP operations such as drill‑down and roll‑up.",
+        "C": "OLAP servers are responsible for extracting and cleaning data before mining.",
+        "D": "Data mining results are stored exclusively in operational databases, not OLAP cubes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that multidimensional data mining works on subsets of data derived from OLAP operations like drilling and slicing [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, why is a data warehouse preferred over operational databases for decision‑support analytics?",
+      "options": {
+        "A": "It stores only the most recent raw transaction records.",
+        "B": "It maintains historic, consolidated, and high‑quality data suitable for analysis.",
+        "C": "It eliminates the need for any data cleaning or transformation steps.",
+        "D": "It provides real‑time updates without requiring ETL processes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text explains that decision support requires historic, clean, integrated data, which data warehouses provide, unlike operational databases that hold raw, non‑historical data [Page 48].",
+      "source_pages": []
+    }
+  ]
+}

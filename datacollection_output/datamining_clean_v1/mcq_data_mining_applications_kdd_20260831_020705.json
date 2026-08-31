@@ -1,0 +1,147 @@
+{
+  "topic": "data mining applications kdd",
+  "generated_at": "2026-08-31T02:07:05",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which ordered set of activities most accurately reflects the Knowledge Discovery in Databases (KDD) process as described in the context?",
+      "options": {
+        "A": "Data extraction → Data loading → Data cleaning → Data transformation → Data mining → Result visualization",
+        "B": "Data extraction → Data cleaning → Data transformation → Data loading → Data mining → Result visualization",
+        "C": "Data cleaning → Data extraction → Data loading → Data transformation → Result visualization → Data mining",
+        "D": "Data mining → Data extraction → Data cleaning → Data transformation → Data loading → Result visualization"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text outlines the steps of extracting data, cleaning it, transforming it to a unified format, loading it into the warehouse, applying data mining, and presenting results with visualization tools [Page 72, 73, 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following is NOT listed as an application of data mining in the provided material?",
+      "options": {
+        "A": "Constructing analytical models",
+        "B": "Performing classification and prediction",
+        "C": "Generating real‑time transaction processing",
+        "D": "Discovering hidden patterns and associations"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that data mining supports knowledge discovery by finding hidden patterns, constructing analytical models, and performing classification and prediction, but it does not mention real‑time transaction processing as a data‑mining application [Page 72].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Multidimensional data mining enhances flexibility by allowing analysts to manipulate data cubes. Which combination of operations is explicitly mentioned in the text?",
+      "options": {
+        "A": "Aggregation, normalization, clustering, and indexing",
+        "B": "Drilling, pivoting, filtering, dicing, and slicing",
+        "C": "Sampling, bootstrapping, cross‑validation, and pruning",
+        "D": "Encryption, compression, replication, and sharding"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage lists drilling, pivoting, filtering, dicing, and slicing as operations supported by multidimensional data mining on data cubes [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "According to the context, which of the following data types has received substantial research attention in the data‑mining field?",
+      "options": {
+        "A": "Relational, transaction, time‑series, spatial, text, and flat files",
+        "B": "Audio, video, sensor streams, blockchain ledgers, and DNA sequences",
+        "C": "Only relational databases and data warehouses",
+        "D": "Unstructured social media posts exclusively"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The material explicitly mentions research on relational data, data from data warehouses, transaction data, time‑series data, spatial data, text data, and flat files [Page 73].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What primary purpose does visualization serve in the KDD process as indicated in the text?",
+      "options": {
+        "A": "To replace the need for data cleaning",
+        "B": "To present mining results and aid interpretation",
+        "C": "To automatically generate analytical models without human input",
+        "D": "To store raw transaction logs for future use"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Visualization tools are used for presenting the mining results, thereby supporting interpretation of discovered knowledge [Page 72].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the context differentiate decision‑support data from data stored in operational databases?",
+      "options": {
+        "A": "Decision‑support data is raw, unclean, and lacks historic records.",
+        "B": "Decision‑support data is high‑quality, clean, integrated, and often historic, whereas operational databases contain detailed raw transactions.",
+        "C": "Operational databases contain aggregated summaries, while decision‑support data holds individual transaction logs.",
+        "D": "Both contain identical data; the difference lies only in the user interface."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Decision support requires consolidated, high‑quality, clean, integrated data, often historic, while operational databases hold detailed raw data that are not yet suitable for analysis [Page 48, 71].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In the three‑tier architecture described, which tier is associated with performing data mining activities?",
+      "options": {
+        "A": "Bottom tier – Data warehouse",
+        "B": "Middle tier – OLAP server",
+        "C": "Top tier – Front‑end tools",
+        "D": "All tiers equally share data mining responsibilities"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The textual description lists “Data mining” alongside “Query/report Analysis” under the top tier’s front‑end tools [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which OLAP operation mentioned in the context directly supports analyzing historic data at varying levels of detail?",
+      "options": {
+        "A": "Encryption",
+        "B": "Slice‑and‑dice",
+        "C": "Data replication",
+        "D": "Transaction logging"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states that analytical processing supports basic OLAP operations, including slice‑and‑dice, which works on historic data in summarized and detailed forms [Page 71].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "What is the main role of the ETL (Extract, Clean, Transform, Load) functions within the data‑mining workflow according to the provided material?",
+      "options": {
+        "A": "To generate predictive models without human supervision",
+        "B": "To prepare and consolidate data from heterogeneous sources into a high‑quality format suitable for mining",
+        "C": "To visualize the final mining results directly on operational databases",
+        "D": "To replace the need for a data warehouse altogether"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context describes ETL as tools that perform extraction, cleaning, transformation, and loading to create clean, integrated data for analysis [Page 49].\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How do data/knowledge visualization tools interact with multidimensional data mining to improve analytical outcomes?",
+      "options": {
+        "A": "They automatically correct errors in the raw data before mining.",
+        "B": "They provide facilities for drilling, pivoting, filtering, dicing, and slicing, thereby enhancing flexibility and power of mining results.",
+        "C": "They eliminate the need for any preprocessing steps.",
+        "D": "They store the mined models in a separate repository without user interaction."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text notes that multidimensional data mining combined with visualization tools greatly enhances the power and flexibility of data mining by allowing operations such as drilling, pivoting, filtering, dicing, and slicing [Page 73].",
+      "source_pages": []
+    }
+  ]
+}

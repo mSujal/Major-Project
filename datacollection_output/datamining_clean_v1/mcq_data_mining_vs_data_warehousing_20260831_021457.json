@@ -1,0 +1,147 @@
+{
+  "topic": "data mining vs data warehousing",
+  "generated_at": "2026-08-31T02:14:57",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Which statement correctly distinguishes the granularity of data that data mining can handle compared to that stored in a data warehouse?",
+      "options": {
+        "A": "Data mining only works with highly summarized data, while a data warehouse stores detailed transaction records.",
+        "B": "Data mining can analyze both detailed and summarized data, whereas a data warehouse typically stores summarized data for decision support.",
+        "C": "Data mining stores raw data, and a data warehouse performs the mining analysis.",
+        "D": "Both data mining and data warehouses always operate on the same level of data detail."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining may analyze data at more detailed granularities than the summarized data in a warehouse, which often stores aggregated information. [Page 72, 74]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why are data warehouses considered valuable sources for data‑mining tools?",
+      "options": {
+        "A": "They generate mining algorithms automatically.",
+        "B": "They provide integrated, consistent, and cleaned data after extensive preprocessing.",
+        "C": "They contain only raw transaction logs without any transformation.",
+        "D": "They restrict access to only summary statistics, preventing detailed analysis."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "High‑quality data in warehouses result from costly cleaning, integration, and transformation, making them suitable for mining. [Page 73, 96]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which characteristic differentiates a data warehouse from a traditional RDBMS/database?",
+      "options": {
+        "A": "Data warehouses are transaction‑oriented and frequently updated.",
+        "B": "Data warehouses are subject‑oriented, integrated, time‑variant, and non‑volatile.",
+        "C": "RDBMS stores only summarized data for decision making.",
+        "D": "Data warehouses do not support any form of querying."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A data warehouse is defined as subject‑oriented, integrated, time‑variant, and non‑volatile, unlike operational databases. [Page 96]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "How does the metadata repository of a data warehouse support data‑mining activities?",
+      "options": {
+        "A": "It stores the raw source files used for mining.",
+        "B": "It provides details about warehouse structure, data history, summarization algorithms, and source‑to‑warehouse mappings.",
+        "C": "It only tracks user login information.",
+        "D": "It replaces the need for any data preprocessing before mining."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Metadata includes warehouse objects, algorithms for summarization, and mappings, all of which help mining tools understand and use the data. [Page 96]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which of the following data types is explicitly mentioned as being outside the typical scope of a data warehouse but within the scope of data mining?",
+      "options": {
+        "A": "Summarized sales totals per country.",
+        "B": "Flat files containing unstructured text.",
+        "C": "Relational tables with foreign keys.",
+        "D": "Time‑variant summary tables."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Data mining research includes flat files, spatial, text, and multimedia data that are difficult to model in multidimensional warehouses. [Page 73, 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "In what way do ETL (Extraction, Transformation, Loading) processes influence the readiness of data for mining in a data warehouse?",
+      "options": {
+        "A": "ETL processes delay mining by storing only raw data.",
+        "B": "They clean, integrate, and transform data, producing high‑quality, consistent datasets suitable for mining.",
+        "C": "ETL automatically discovers hidden patterns without further analysis.",
+        "D": "They convert mined patterns back into operational databases."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "ETL tools handle data cleaning, integration, and transformation, which are essential preprocessing steps for effective data mining. [Page 96, 73]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which purpose best differentiates a data warehouse from an operational RDBMS in terms of user focus?",
+      "options": {
+        "A": "Data warehouses support day‑to‑day transaction processing.",
+        "B": "Data warehouses are designed for management decision‑making, while operational databases handle routine transaction processing.",
+        "C": "Operational databases store only historical, non‑volatile data.",
+        "D": "Both serve identical purposes for end‑users."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A data warehouse is organized to support management decision making, whereas operational databases focus on transaction processing. [Page 96]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Why are OLAP functions not classified as data‑mining techniques according to the provided context?",
+      "options": {
+        "A": "OLAP automatically discovers hidden patterns without user direction.",
+        "B": "OLAP provides user‑directed summarization and comparison, whereas data mining discovers previously unknown patterns.",
+        "C": "OLAP replaces the need for any data summarization.",
+        "D": "Data mining only works on OLAP-generated reports."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "OLAP offers descriptive operations (drill, slice, dice) for user‑directed analysis, while data mining goes beyond description to model and uncover hidden relationships. [Page 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which statement accurately reflects the difference in data granularity that data mining can handle versus that typically stored in a data warehouse?",
+      "options": {
+        "A": "Data mining is limited to the same aggregated level as the warehouse.",
+        "B": "Data mining can operate on more detailed granularities than the summarized data in a warehouse.",
+        "C": "Data warehouses store only raw, unaggregated transaction logs for mining.",
+        "D": "Both data mining and warehouses always use identical granularity levels."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining may analyze data at finer granularities than the summarized data provided by a warehouse. [Page 72]\n\n---",
+      "source_pages": []
+    },
+    {
+      "question": "Which component of a data warehouse directly facilitates the summarization of sales information that aids data‑mining tasks?",
+      "options": {
+        "A": "The raw transaction log table.",
+        "B": "The summary tables that store aggregated sales per item type per branch or country.",
+        "C": "The metadata repository that only tracks system performance.",
+        "D": "The ETL extraction module that leaves data unchanged."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Summarized data, such as sales totals per item type per branch/country, simplifies mining by providing aggregated views. [Page 74]",
+      "source_pages": []
+    }
+  ]
+}
