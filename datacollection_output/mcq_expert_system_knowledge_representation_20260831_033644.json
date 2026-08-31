@@ -1,0 +1,87 @@
+{
+  "topic": "expert system knowledge representation",
+  "generated_at": "2026-08-31T03:36:44",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Differentiate between first‑order (relational) representations and propositional representations in terms of their ability to generalize across object identities.",
+      "options": {
+        "A": "First‑order representations can refer to object properties and relations, allowing generalization; propositional representations cannot.",
+        "B": "Propositional representations can refer to object properties and relations, allowing generalization; first‑order representations cannot.",
+        "C": "Both representations generalize equally across object identities.",
+        "D": "Neither representation can express relations between objects."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "First‑order (relational) representations refer to object properties and relations and thus generalize across object identities, whereas propositional representations lack this capability. [Page 199]\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Differentiate between forward chaining and backward chaining inference methods regarding the direction in which they apply rules.",
+      "options": {
+        "A": "Forward chaining starts from goals and works backward; backward chaining starts from facts and works forward.",
+        "B": "Forward chaining starts from facts and applies rules forward; backward chaining starts from goals and works backward.",
+        "C": "Both methods start from facts and proceed forward.",
+        "D": "Both methods start from goals and proceed backward."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Forward chaining applies rules beginning with known facts, while backward chaining begins with a goal and seeks supporting facts. [Page 4]\n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Differentiate between logic reasoning and first‑order (relational) representations concerning their suitability for deterministic versus uncertain knowledge bases.",
+      "options": {
+        "A": "Logic reasoning is suited for uncertain knowledge bases; first‑order representations are limited to deterministic knowledge.",
+        "B": "Both logic reasoning and first‑order representations handle uncertain knowledge equally well.",
+        "C": "Logic reasoning applies mainly to discrete, deterministic knowledge bases, whereas first‑order relational representations can express uncertain knowledge.",
+        "D": "Neither approach can handle deterministic knowledge."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The context notes that logic reasoning is applicable to discrete & deterministic KBs, while first‑order relational representations are needed for uncertain, generalizing knowledge. [Page 199]\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Differentiate between STRIPS‑like rules and Markov Decision Process (MDP) transition representations in how they handle uncertainty.",
+      "options": {
+        "A": "STRIPS‑like rules inherently model probabilistic outcomes; MDP transitions are purely deterministic.",
+        "B": "Both STRIPS‑like rules and MDP transitions are deterministic and do not model uncertainty.",
+        "C": "STRIPS‑like rules are deterministic, while MDP transitions incorporate probabilistic (uncertain) effects.",
+        "D": "MDP transitions ignore actions, whereas STRIPS‑like rules focus on actions only."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "STRIPS‑like rules model deterministic state changes, whereas MDPs represent transitions probabilistically, allowing uncertainty. [Page 5]\n\n---",
+      "source_pages": [
+        "5"
+      ]
+    },
+    {
+      "question": "Differentiate between unification and resolution as inference mechanisms in first‑order logic concerning their primary function.",
+      "options": {
+        "A": "Unification combines multiple clauses into a single clause; resolution checks for syntactic equality of literals.",
+        "B": "Unification finds a substitution that makes literals identical; resolution derives a new clause by eliminating complementary literals.",
+        "C": "Both unification and resolution perform the same operation of clause elimination.",
+        "D": "Resolution generates substitutions; unification derives new clauses."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "Unification computes substitutions that make literals match, while resolution uses those substitutions to eliminate complementary literals and produce a new clause. [Page 4]",
+      "source_pages": [
+        "4"
+      ]
+    }
+  ]
+}

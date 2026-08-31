@@ -1,0 +1,89 @@
+{
+  "topic": "concepts of learning",
+  "generated_at": "2026-08-31T03:33:44",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "What is statistical relational learning (SRL) as described in the context?",
+      "options": {
+        "A": "A method that uses only propositional logic to represent deterministic knowledge.",
+        "B": "An approach that learns uncertain and generalizing knowledge about environments with objects, properties, and relations.",
+        "C": "A technique that ignores relational structure and treats all data as independent features.",
+        "D": "A reinforcement‑learning algorithm that optimizes a single scalar reward."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "SRL is presented as “the only way to express & learn uncertain & generalizing knowledge about environments with objects, properties & relations” (see [Page 222]).\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "How does reinforcement learning combine learning and decision making according to the text?",
+      "options": {
+        "A": "By first learning a deterministic model and then planning with it.",
+        "B": "By learning a policy that maximizes expected reward while simultaneously exploring an unknown environment.",
+        "C": "By separating the learning of state transitions from the selection of actions.",
+        "D": "By using supervised labels to train a classifier that predicts the best action."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that “Reinforcement Learning means to learn to perform well in an previously unknown environment. So it naturally combines the problems of learning about the environment and decision making to receive rewards” (see [Page 81]).\n\n---",
+      "source_pages": [
+        "81"
+      ]
+    },
+    {
+      "question": "What is identified as a major deficit of classical AI in the context of learning?",
+      "options": {
+        "A": "Its reliance on probabilistic graphical models.",
+        "B": "Its inability to represent first‑order logic.",
+        "C": "The inefficiency of constructing deterministic knowledge bases from data.",
+        "D": "The exclusive use of deep neural networks."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The material notes “One of the great deficits of classical AI is the inefficiency of learning (constructing deterministic knowledge bases from data)” (see [Page 222]).\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "Which statement best distinguishes inference from learning as presented in the lectures?",
+      "options": {
+        "A": "Inference derives posterior information from observed variables; learning builds the underlying knowledge base from data.",
+        "B": "Inference creates deterministic rules, while learning only handles probabilistic facts.",
+        "C": "Inference is a type of reinforcement learning, whereas learning is unrelated to probability.",
+        "D": "Inference requires a reward function, whereas learning does not."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context defines inference as “Given some pieces of information… what is the implication… on other things (the posterior)” and states that “Decision‑Making and Learning can be viewed as Inference” (see [Page 113]; also [Page 199]).\n\n---",
+      "source_pages": [
+        "113",
+        "199"
+      ]
+    },
+    {
+      "question": "Why are first‑order representations important for strong generalization in learning, according to the text?",
+      "options": {
+        "A": "They eliminate the need for any probabilistic reasoning.",
+        "B": "They allow formalization of objects, properties, and relations, enabling uncertain and generalizable knowledge.",
+        "C": "They restrict learning to a single fixed domain, preventing overfitting.",
+        "D": "They replace statistical methods with purely logical deduction."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The material explains that “The world is structured in terms of objects and their properties and relations – first‑order representations offer a formalization of this structure; we need such formalizations for strong generalization” (see [Page 222]) and that they are “the only way to express & learn uncertain & generalizing knowledge” (see [Page 222] and [Page 200]).",
+      "source_pages": [
+        "222",
+        "200"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "topic": "ai and related fields",
+  "generated_at": "2026-08-31T03:25:57",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Differentiate between natural (human) intelligence and artificial intelligence in handling uncertain knowledge about objects, properties, and relations.",
+      "options": {
+        "A": "Natural intelligence uses first‑order logic to represent uncertainty, while AI relies on deterministic rules.",
+        "B": "AI employs probabilistic relational models to learn and express uncertainty, whereas natural intelligence does not formalize uncertainty in that way.",
+        "C": "Both natural and artificial intelligence use identical probabilistic graphical models for uncertainty.",
+        "D": "Natural intelligence ignores uncertainty altogether, while AI cannot handle uncertain information."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context states that “the only way to express & learn uncertain & generalizing knowledge about environments with objects, properties & relations” is through probabilistic relational approaches (Statistical Relational Modeling) [Page 222]. This describes AI’s method, whereas natural intelligence is not described as using such formal probabilistic representations.\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "Differentiate between natural (human) intelligence and artificial intelligence concerning the role of optimization.",
+      "options": {
+        "A": "Artificial intelligence treats intelligence as the pursuit of optimal solutions; natural intelligence is described as non‑optimal and heuristic.",
+        "B": "Both AI and natural intelligence are fundamentally optimization processes.",
+        "C": "Natural intelligence optimizes more strictly than AI, which settles for satisficing solutions.",
+        "D": "AI avoids optimization, focusing instead on random search, while natural intelligence is inherently optimal."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes “Intelligence means to optimize… AI people always so obsessed with optimization? Humans are not optimal!” indicating AI’s optimization focus contrasted with human (natural) intelligence’s non‑optimal nature [Page 6].\n\n---",
+      "source_pages": [
+        "6"
+      ]
+    },
+    {
+      "question": "Differentiate between natural (human) intelligence and artificial intelligence in terms of knowledge representation for relational domains.",
+      "options": {
+        "A": "AI uses first‑order logic and probabilistic relational models to capture objects and their relations; natural intelligence relies on unstructured, non‑symbolic representations.",
+        "B": "Natural intelligence uses formal first‑order logic, while AI uses only propositional logic.",
+        "C": "Both AI and natural intelligence represent relational knowledge exclusively through neural networks.",
+        "D": "AI cannot represent relational information, whereas natural intelligence does so naturally."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context emphasizes that “first‑order representations offer a formalization of this structure” and that statistical relational approaches “generalize data… to another world” (pages 216, 222). This describes AI’s symbolic/relational representation, while natural intelligence is not depicted as using such formalism.\n\n---",
+      "source_pages": [
+        "216",
+        "222"
+      ]
+    },
+    {
+      "question": "Can AI replace humans in tasks that require generalizing learned knowledge from one world of objects to another? Justify.",
+      "options": {
+        "A": "No, because AI models are tied to specific object identities and cannot transfer to new worlds.",
+        "B": "Yes, statistical relational approaches make predictions based only on properties/relations, allowing generalization across worlds with different objects.",
+        "C": "No, AI can only generalize within the same set of objects; humans are needed for cross‑world transfer.",
+        "D": "Yes, but only if the new world contains exactly the same objects as the training world."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Probabilistic relational modelling “makes predictions based only on the properties/relations of objects, not their identity” and “generalize data seen in one world … to another world” (page 222). This supports the claim that AI can replace humans in such generalization tasks.\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "Can AI replace humans in inference tasks such as deriving posterior information from observed variables? Justify.",
+      "options": {
+        "A": "Yes, because AI can perform deterministic, probabilistic, and logical inference uniformly, whereas human inference is limited to deterministic reasoning.",
+        "B": "No, AI inference methods (CSPs, graphical models) are fundamentally slower than human intuition, making replacement impossible.",
+        "C": "Yes, AI's ability to perform both deterministic inference in CSPs and probabilistic inference in graphical models enables it to automate many inference tasks that humans perform, though learning may be hard.",
+        "D": "No, AI cannot perform inference without full data, while humans can infer from sparse cues."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The material outlines that inference includes “deterministic inference in CSPs,” “probabilistic inference in graphical models,” and “logic inference” (pages 113, 114). AI systems can execute these inference types algorithmically, supporting the possibility of replacing human inference in many contexts, while acknowledging learning challenges (page 226).",
+      "source_pages": [
+        "113",
+        "114",
+        "226"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "topic": "history of ai",
+  "generated_at": "2026-08-31T03:26:21",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following sequences correctly orders the early milestones in reinforcement learning (RL) as mentioned in the context?",
+      "options": {
+        "A": "Turing (1954) → Samuel (1959) → Minsky’s SNARC (1954) → Waltz & Fu (1965)",
+        "B": "Minsky’s SNARC (1954) → Turing (1954) → Samuel (1959) → Waltz & Fu (1965)",
+        "C": "Turing (1954) → Minsky’s SNARC (1954) → Samuel (1959) → Waltz & Fu (1965)",
+        "D": "Samuel (1959) → Turing (1954) → Waltz & Fu (1965) → Minsky’s SNARC (1954)"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The context lists the idea of programming a computer to learn by trial and error (Turing, 1954), followed by SNARC (Minsky, 1954), Samuel’s checkers program (1959), and later work in the 1960s such as Waltz & Fu (1965) [Page 82].\n\n---",
+      "source_pages": [
+        "82"
+      ]
+    },
+    {
+      "question": "According to the passage, which view of AI was heavily criticized during the AI winter, prompting a shift toward learning and probabilistic modeling?",
+      "options": {
+        "A": "The belief‑aggregation approach that combines past observations into a belief state.",
+        "B": "The view that “logic doesn’t work,” implying that AI itself does not work.",
+        "C": "The perspective that deep learning alone constitutes true AI.",
+        "D": "The stance that reinforcement learning is the only viable AI paradigm."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The text notes that in the AI winter many researchers claimed “logic doesn’t work,” leading to the conclusion that AI doesn’t work and suggesting a focus on learning and probabilistic modeling [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "What term does the context use to refer to the classical AI approach that builds deterministic knowledge bases from data?",
+      "options": {
+        "A": "Statistical relational AI",
+        "B": "Good Old‑Fashioned AI (GOFAI)",
+        "C": "Deep learning AI",
+        "D": "Probabilistic AI"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage states that first‑order logic (FOL) is exactly what is sometimes called “Good Old‑Fashioned AI” (GOFAI) [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Which development around 2011 is identified in the context as sparking a new wave of optimism known as the “spring of AI”?",
+      "options": {
+        "A": "The rise of deep learning in media coverage.",
+        "B": "Advances in reinforcement learning algorithms.",
+        "C": "Modern relational machine learning research.",
+        "D": "Introduction of stochastic neural‑analog reinforcement calculators."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The text mentions that around 2011, modern research on relational machine learning led to new optimism dubbed the “spring of AI” [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Which statement best captures the shift in policy representation described in the context, moving away from belief‑based aggregation?",
+      "options": {
+        "A": "Policies now incorporate belief states to better handle uncertainty.",
+        "B": "Policies directly map a fixed‑size history window to actions, discarding belief aggregation.",
+        "C": "Policies are replaced entirely by deterministic rule‑based systems.",
+        "D": "Policies rely on exhaustive enumeration of all possible world states."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Medium",
+      "explanation": "The passage advises to “discard the idea of using belief to ‘aggregate’ history” and instead map history directly to actions via policies [Page 110].",
+      "source_pages": [
+        "110"
+      ]
+    }
+  ]
+}

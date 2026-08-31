@@ -1,0 +1,88 @@
+{
+  "topic": "applications of ai",
+  "generated_at": "2026-08-31T03:26:43",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which AI technique mentioned in the context is used to group documents into thematic categories, illustrating AI as a problem‑solving tool for information organization?",
+      "options": {
+        "A": "Clustering text into topics",
+        "B": "Depth‑first enumeration of all models",
+        "C": "Defining a Feynman “unworldliness measure” objective function",
+        "D": "Logical entailment checking (TT‑ENTAILS?)"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that AI can “cluster text into topics” as an application (Page 126), showing its role in organizing information.\n\n---",
+      "source_pages": [
+        "126"
+      ]
+    },
+    {
+      "question": "The autonomous‑car example in the context highlights which fundamental challenge that AI must address when modeling real‑world environments?",
+      "options": {
+        "A": "Exact representation of the full state is impractical",
+        "B": "Absence of inference rules for decision making",
+        "C": "Inability to perform optimization under constraints",
+        "D": "Necessity of O(2ⁿ) enumeration for all possible states"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes that in an autonomous‑car case “the exact state is practically not representable” (Page 8), emphasizing the approximation challenge.\n\n---",
+      "source_pages": [
+        "8"
+      ]
+    },
+    {
+      "question": "Which domain listed in the context involves using AI to model sequential human activities such as cooking?",
+      "options": {
+        "A": "Hierarchical reinforcement learning (hierarchical RL)",
+        "B": "Modeling dynamic processes like music or human activities",
+        "C": "Proof by enumeration of propositional models",
+        "D": "Logical proof methods (inference by enumeration)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context cites “modeling dynamic processes like music or human activities (like cooking or so)” as an AI application (Page 126).\n\n---",
+      "source_pages": [
+        "126"
+      ]
+    },
+    {
+      "question": "According to the context, which AI application area relies heavily on defining an objective function to guide robot behavior, illustrating the optimization viewpoint of intelligence?",
+      "options": {
+        "A": "Localization and mapping of mobile robots",
+        "B": "Inference by enumeration of truth assignments",
+        "C": "Text clustering into topics",
+        "D": "Logical proof methods using inference rules"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Optimization principles are described as a means to formalize systems (Page 6), and the context lists “localization and mapping of mobile robots” as an AI application (Page 126) that typically uses objective functions.\n\n---",
+      "source_pages": [
+        "6",
+        "126"
+      ]
+    },
+    {
+      "question": "The context mentions that many core machine‑learning methods can be expressed as graphical models. Which AI application area does this most directly support?",
+      "options": {
+        "A": "Modeling multi‑agent systems",
+        "B": "Enumerating all assignments to propositional symbols",
+        "C": "Feynman’s “unworldliness measure” objective function",
+        "D": "The agent mapping \\(y_t \\rightarrow a_t\\)"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Page 126 states that “many of the core ML methods can be expressed as graphical models” and lists “modeling multi‑agent systems” among the applications, indicating a direct connection.",
+      "source_pages": [
+        "126"
+      ]
+    }
+  ]
+}

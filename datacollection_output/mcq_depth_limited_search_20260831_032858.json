@@ -1,0 +1,88 @@
+{
+  "topic": "depth limited search",
+  "generated_at": "2026-08-31T03:28:58",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements accurately reflects a distinctive feature of depth‑limited search as described in the provided material?",
+      "options": {
+        "A": "It uses a FIFO queue for its fringe, just like breadth‑first search.",
+        "B": "It requires an explicit depth limit as an input parameter.",
+        "C": "It sorts the fringe by the evaluation function f = g + h.",
+        "D": "It always returns a complete fringe list after the search finishes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context states that “Depth‑limited search additionally gets a depth limit as input” and notes that it “does not explicitly have a fringe” unlike BFS or DFS. [Page 228]\n\n---",
+      "source_pages": [
+        "228"
+      ]
+    },
+    {
+      "question": "How does depth‑limited search differ from iterative deepening search in terms of fringe handling, according to the text?",
+      "options": {
+        "A": "Depth‑limited search maintains a FIFO fringe, while iterative deepening uses a LIFO fringe.",
+        "B": "Both algorithms return a full fringe, but depth‑limited search orders it by cost.",
+        "C": "Depth‑limited search does not explicitly have a fringe, whereas iterative deepening repeats depth‑first searches with increasing limits.",
+        "D": "Iterative deepening returns a heuristic‑sorted fringe, while depth‑limited uses a random order."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage notes that “Iterative Deepening and Depth‑limited search are a bit different in that they do not explicitly have a fringe” and that iterative deepening “repeats depth‑first for increasing depth limit.” [Page 228]\n\n---",
+      "source_pages": [
+        "228"
+      ]
+    },
+    {
+      "question": "Suppose the shallowest goal node lies at depth d = 3 and the maximum depth of the state space m is infinite. Which statement about the completeness of depth‑limited search with a depth limit of 2 is supported by the context?",
+      "options": {
+        "A": "It is guaranteed to find the goal because the limit exceeds the shallowest goal depth.",
+        "B": "It may fail to find the goal because the depth limit is smaller than the goal depth.",
+        "C": "It will always be complete as long as m is infinite.",
+        "D": "Completeness does not depend on the depth limit, only on the fringe ordering."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context defines d as “depth of the least‑cost solution” and explains that depth‑limited search stops expanding nodes deeper than the given limit. If the limit (2) is less than the goal depth (3), the algorithm can miss the goal, making it incomplete in that case. [Page 17]\n\n---",
+      "source_pages": [
+        "17"
+      ]
+    },
+    {
+      "question": "Which input is required by depth‑limited search but not explicitly required by uniform‑cost or A* search, as indicated in the material?",
+      "options": {
+        "A": "A heuristic function h(n).",
+        "B": "A cost function g(n).",
+        "C": "A maximum depth limit.",
+        "D": "A priority queue ordering."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly mentions that “Depth‑limited search additionally gets a depth limit as input,” whereas uniform‑cost and A* rely on cost and heuristic values without a depth limit. [Page 228]\n\n---",
+      "source_pages": [
+        "228"
+      ]
+    },
+    {
+      "question": "According to the summary of search strategies, which data structure is used for the fringe in depth‑first search, and how does this relate to the fringe treatment of depth‑limited search?",
+      "options": {
+        "A": "Depth‑first uses a FIFO queue; depth‑limited uses a LIFO stack.",
+        "B": "Depth‑first uses a LIFO stack; depth‑limited does not maintain an explicit fringe.",
+        "C": "Both depth‑first and depth‑limited use a priority queue sorted by g.",
+        "D": "Depth‑first uses no fringe; depth‑limited uses a FIFO queue."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The summary states “Depth‑first: fringe is a LIFO.” The later passage notes that “Depth‑limited search… does not explicitly have a fringe.” Hence depth‑first employs a LIFO stack while depth‑limited lacks an explicit fringe structure. [Page 2:18] and [Page 228]",
+      "source_pages": [
+        "2-18",
+        "228"
+      ]
+    }
+  ]
+}

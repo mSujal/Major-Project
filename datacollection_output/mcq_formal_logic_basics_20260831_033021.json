@@ -1,0 +1,87 @@
+{
+  "topic": "formal logic basics",
+  "generated_at": "2026-08-31T03:30:21",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements correctly describes why a propositional sentence must be in Conjunctive Normal Form (CNF) before applying the resolution rule?",
+      "options": {
+        "A": "Resolution can only combine literals that appear in the same clause, which is guaranteed by CNF.",
+        "B": "CNF ensures that every clause is a Horn clause, making resolution complete.",
+        "C": "In CNF each clause is a disjunction of literals, allowing the resolution rule to eliminate a complementary pair of literals.",
+        "D": "CNF converts all implications into biconditionals, which are required for resolution."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The resolution rule is defined for sentences that are a conjunction of clauses, where each clause is a disjunction of literals; this form enables the elimination of complementary literals (Page 180).  \n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Given a knowledge base consisting only of Horn clauses, which inference rule is guaranteed to be complete for deriving any entailed atomic sentence?",
+      "options": {
+        "A": "Modus Ponens",
+        "B": "General resolution",
+        "C": "Truth‑table enumeration",
+        "D": "Forward chaining using the Horn‑clause rule"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Horn clauses are of the form (α₁∧…∧αₙ)⇒β, and forward‑chaining (the Horn‑clause rule) is complete for Horn KBs (Page 180).  \n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Which of the following pairs of formulas are logically equivalent according to the equivalences listed in the text?",
+      "options": {
+        "A": "(A ∧ B) ∨ C ≡ A ∧ (B ∨ C)",
+        "B": "¬(¬A) ≡ A",
+        "C": "(A ⇒ B) ≡ (¬A ∨ B)",
+        "D": "(A ⇔ B) ≡ (A ∧ B) ∨ (¬A ∧ ¬B)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explicitly mentions double‑negation elimination: ¬(¬α) ≡ α (Page 180). The other options are not among the listed equivalences.  \n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "If the TT‑CHECK‑ALL algorithm is invoked on a propositional KB with n distinct symbols, what is the worst‑case time complexity of the algorithm?",
+      "options": {
+        "A": "O(n)",
+        "B": "O(2ⁿ)",
+        "C": "O(n²)",
+        "D": "O(log n)"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The algorithm explores all possible truth assignments; the text states the cost is O(2ⁿ) for n symbols (Page 184).  \n\n---",
+      "source_pages": [
+        "184"
+      ]
+    },
+    {
+      "question": "According to the definition of logical entailment in the notes, the statement “KB ⊨ α” is true exactly when which of the following conditions holds?",
+      "options": {
+        "A": "The conjunction (KB ∧ α) is a tautology.",
+        "B": "The disjunction (KB ∨ ¬α) is unsatisfiable.",
+        "C": "The conjunction (KB ∧ ¬α) is unsatisfiable.",
+        "D": "The implication (KB ⇒ α) is false in at least one model."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text defines entailment as KB ⊨ α iff (KB ∧ ¬α) is unsatisfiable (Page 180).",
+      "source_pages": [
+        "180"
+      ]
+    }
+  ]
+}

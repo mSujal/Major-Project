@@ -1,0 +1,87 @@
+{
+  "topic": "search strategy comparison",
+  "generated_at": "2026-08-31T03:29:20",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which set of evaluation criteria is most appropriate when comparing two blind search algorithms such as truth‑table enumeration and depth‑first model enumeration?",
+      "options": {
+        "A": "Only time complexity, because space is negligible for propositional problems.",
+        "B": "Completeness, time complexity, and space complexity, because these affect whether the algorithm finds a solution and its resource usage.",
+        "C": "Optimality and heuristic quality, since both algorithms use heuristics to guide the search.",
+        "D": "Number of logical inference rules applied, as this determines soundness."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "The text emphasizes comparing algorithms by “time and space complexity” and mentions completeness (e.g., “depth‑first enumeration of all models is sound and complete”) – standard criteria for evaluating search methods. [Page 184‑185]\n\n---",
+      "source_pages": [
+        "184"
+      ]
+    },
+    {
+      "question": "How do the space requirements of truth‑table enumeration and depth‑first model enumeration compare?",
+      "options": {
+        "A": "Both require exponential space because they must store all possible assignments simultaneously.",
+        "B": "Truth‑table enumeration requires exponential space, while depth‑first model enumeration can be performed with linear space in the number of symbols.",
+        "C": "Truth‑table enumeration uses linear space, whereas depth‑first model enumeration needs exponential space due to recursion depth.",
+        "D": "Both use only constant extra space because they generate assignments on the fly."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "The context states “O(2ⁿ) for n symbols” for truth‑table enumeration, implying exponential space, while depth‑first enumeration can reuse a single path, needing only O(n) space. [Page 184‑185]\n\n---",
+      "source_pages": [
+        "184"
+      ]
+    },
+    {
+      "question": "According to the provided material, which blind search method is guaranteed to find a solution if one exists in a finite propositional search space?",
+      "options": {
+        "A": "Depth‑first enumeration of all models.",
+        "B": "Heuristic hill‑climbing (min‑conflicts) in model space.",
+        "C": "Forward chaining without any goal.",
+        "D": "Uninformed backtracking that stops after the first failure."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Evaluate",
+      "difficulty": "Easy",
+      "explanation": "The passage notes that “depth‑first enumeration of all models is sound and complete,” meaning it will find a solution when one exists in a finite space. [Page 184‑185]\n\n---",
+      "source_pages": [
+        "184"
+      ]
+    },
+    {
+      "question": "When comparing improved backtracking (e.g., DPLL) with heuristic search in model space (e.g., min‑conflicts hill‑climbing), which statement correctly reflects their trade‑offs?",
+      "options": {
+        "A": "Both methods are complete, but backtracking has higher time complexity than heuristic search.",
+        "B": "Backtracking is sound and complete but may explore many branches; heuristic search is sound but incomplete, often faster on large instances.",
+        "C": "Heuristic search always yields optimal solutions, whereas backtracking does not guarantee optimality.",
+        "D": "Backtracking uses a heuristic to prune the search tree, while hill‑climbing enumerates all possible models."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "The context describes “improved backtracking… sound but incomplete” for model‑space heuristics, and notes that “min‑conflicts‑like hill‑climbing algorithms” are heuristic and thus not guaranteed to find a solution, though they can be faster. [Page 185]\n\n---",
+      "source_pages": [
+        "185"
+      ]
+    },
+    {
+      "question": "In the context of logical inference, which of the following best evaluates the difference between forward chaining and backward chaining?",
+      "options": {
+        "A": "Forward chaining is goal‑directed and therefore generates fewer inferences than backward chaining.",
+        "B": "Backward chaining starts from the query and only expands relevant rules, often reducing the number of generated sentences compared with forward chaining.",
+        "C": "Both chaining methods always explore the entire knowledge base, so their efficiency is identical.",
+        "D": "Backward chaining cannot be expressed as a search algorithm, while forward chaining can."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "The text presents backward chaining as a “goal‑directed” search that unifies with goals, implying it expands only necessary parts of the KB, unlike forward chaining which indiscriminately applies all rules. [Page 209]",
+      "source_pages": [
+        "209"
+      ]
+    }
+  ]
+}

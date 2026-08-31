@@ -1,0 +1,87 @@
+{
+  "topic": "rule based deduction system",
+  "generated_at": "2026-08-31T03:31:48",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements most accurately defines rule‑based reasoning and provides an appropriate example of its use?",
+      "options": {
+        "A": "It is a deductive process that generates new sentences by applying inference rules; e.g., using Modus Ponens on the Horn clauses C ∧ (B ⇒ A) to infer A.",
+        "B": "It is a statistical method that estimates probabilities from data; e.g., learning a Markov Decision Process from STRIPS rules.",
+        "C": "It is a neural‑network approach that adjusts weights through back‑propagation; e.g., training a deep model on image data.",
+        "D": "It is a heuristic search that explores state spaces without formal inference; e.g., hill‑climbing on a SAT problem."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Rule‑based reasoning is the sound generation of new sentences from old using inference rules, exemplified by applying Modus Ponens on Horn clauses such as C ∧ (B ⇒ A) to derive A. (Context: forward/backward chaining, Horn clauses – pages 185‑186)\n\n---",
+      "source_pages": [
+        "185"
+      ]
+    },
+    {
+      "question": "Which scenario best illustrates forward chaining in a rule‑based deduction system?",
+      "options": {
+        "A": "Starting from the goal ‘A’, the system searches backward through Horn clauses until it finds premises that are known true.",
+        "B": "Beginning with known facts {C, D}, the system repeatedly applies Horn‑clause rules to infer new facts until no more can be derived.",
+        "C": "The system randomly selects literals to assign truth values and checks the whole knowledge base for consistency.",
+        "D": "The system uses a Prolog query to match a rule head with a goal and then attempts to satisfy the body literals."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Forward chaining starts from known facts and iteratively applies Horn‑clause rules to infer additional facts, as described for Horn KBs on page 185.\n\n---",
+      "source_pages": [
+        "185"
+      ]
+    },
+    {
+      "question": "Given the Horn‑clause knowledge base KB = { P, Q ⇒ R, R ⇒ S }, which of the following conclusions can be derived by forward chaining?",
+      "options": {
+        "A": "S, because P and Q together allow R to be inferred, and then R yields S.",
+        "B": "R, because P alone directly triggers the rule Q ⇒ R.",
+        "C": "Q, because forward chaining can infer missing premises from conclusions.",
+        "D": "None of the above, because forward chaining cannot operate on this KB."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Starting with fact P, forward chaining needs Q to fire Q ⇒ R; assuming Q is also known (or added), R is derived, then R ⇒ S gives S. This follows the forward‑chaining process for Horn clauses (page 185).\n\n---",
+      "source_pages": [
+        "185"
+      ]
+    },
+    {
+      "question": "In a Prolog program that uses the closed‑world assumption with the rule `alive(X) :- not dead(X).`, which of the following queries will succeed?",
+      "options": {
+        "A": "`alive(jane).` when the fact `dead(jane).` is present in the knowledge base.",
+        "B": "`alive(jane).` when no fact about `dead(jane)` exists in the knowledge base.",
+        "C": "`alive(jane).` only if `alive(jane).` is explicitly asserted as a fact.",
+        "D": "`alive(jane).` will never succeed because Prolog cannot handle negation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Under the closed‑world assumption, `not dead(jane)` succeeds when `dead(jane)` cannot be proven; thus `alive(jane)` succeeds if `dead(jane)` is absent. (Context: Prolog, closed‑world assumption – page 213)\n\n---",
+      "source_pages": [
+        "213"
+      ]
+    },
+    {
+      "question": "The truth‑table model‑checking function `TT‑CHECK‑ALL` has a time complexity of O(2ⁿ) for n symbols. What does this imply for the feasibility of exhaustive search as the number of symbols grows?",
+      "options": {
+        "A": "The runtime grows linearly, making exhaustive search practical for large n.",
+        "B": "The runtime grows exponentially, quickly becoming infeasible as n increases.",
+        "C": "The runtime is polynomial, so exhaustive search is efficient for any n.",
+        "D": "The runtime is constant, independent of n."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "O(2ⁿ) denotes exponential growth in the number of symbols, meaning exhaustive truth‑table enumeration becomes rapidly impractical as n grows (page 184).",
+      "source_pages": [
+        "184"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "topic": "approaches to knowledge representation",
+  "generated_at": "2026-08-31T03:32:52",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements best captures why first‑order (relational) representations are considered essential for strong generalization according to the provided material?",
+      "options": {
+        "A": "They encode the identity of each object, allowing exact matching across worlds.",
+        "B": "They represent knowledge solely through object properties and relations, ignoring specific object identities.",
+        "C": "They rely on deterministic logic, making them unsuitable for uncertain environments.",
+        "D": "They focus on propositional symbols, which limits their expressive power."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "First‑order representations formalize the world in terms of objects, their properties, and relations, and generalize across object identities rather than specific objects [Page 222, 199].\n\n---",
+      "source_pages": [
+        "222",
+        "199"
+      ]
+    },
+    {
+      "question": "According to the context, which advantage distinguishes probabilistic relational modelling from classical first‑order knowledge bases?",
+      "options": {
+        "A": "It eliminates the need for any logical inference rules.",
+        "B": "It can make predictions based on object identities rather than their properties.",
+        "C": "It combines relational structure with uncertainty, enabling generalization across different worlds.",
+        "D": "It reduces computational complexity to linear time for all inference tasks."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Probabilistic relational approaches predict using properties/relations and generalize from one set of objects to another, incorporating uncertainty [Page 222].\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "When evaluating knowledge‑representation approaches for a domain with many objects and uncertain relationships, which criterion should be given highest priority based on the discussion?",
+      "options": {
+        "A": "The ability to represent only deterministic facts about object identities.",
+        "B": "The capacity to generalize across object identities while handling uncertainty.",
+        "C": "The simplicity of translating sentences into normal form for proof methods.",
+        "D": "The existence of a closed‑form O(2ⁿ) algorithm for truth‑checking."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Hard",
+      "explanation": "The text emphasizes that current methods need to express and learn uncertain, generalizing knowledge about objects, properties, and relations [Page 222, 199].\n\n---",
+      "source_pages": [
+        "222",
+        "199"
+      ]
+    },
+    {
+      "question": "How does the text suggest statistical relational learning addresses a major deficit of classical AI?",
+      "options": {
+        "A": "By providing a deterministic learning algorithm that runs in polynomial time.",
+        "B": "By using propositional logic to simplify relational structures.",
+        "C": "By efficiently learning deterministic knowledge bases from data.",
+        "D": "By integrating statistical (probabilistic) methods with relational representations to improve learning efficiency."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Statistical relational approaches combine statistical methods with relational representations, solving the inefficiency of learning deterministic knowledge bases in classical AI [Page 222].\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "If you were to choose between a pure first‑order logic knowledge base and a probabilistic relational model for a robotics application that must infer unseen object properties, which reasoning does the context imply is more appropriate?",
+      "options": {
+        "A": "Pure first‑order logic, because it guarantees sound inference without uncertainty.",
+        "B": "Probabilistic relational model, because it can generalize based on properties/relations and handle uncertainty.",
+        "C": "Neither, as both approaches require exact object identities for inference.",
+        "D": "A propositional logic model, since it simplifies the inference process."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Hard",
+      "explanation": "The material highlights that probabilistic relational approaches make predictions based on object properties/relations and handle uncertain knowledge, which is crucial for inference about unseen objects [Page 222, 199].",
+      "source_pages": [
+        "222",
+        "199"
+      ]
+    }
+  ]
+}

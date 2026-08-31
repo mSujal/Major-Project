@@ -1,0 +1,88 @@
+{
+  "topic": "issues in knowledge representation",
+  "generated_at": "2026-08-31T03:33:12",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "According to the context, why does logic reasoning not apply well to learned knowledge?",
+      "options": {
+        "A": "Because learned knowledge is often expressed in first‑order logic already",
+        "B": "Because learned knowledge is hardly deterministic, conflicting with logic reasoning’s requirement for discrete, deterministic KBs",
+        "C": "Because logic reasoning cannot handle any form of inference",
+        "D": "Because learned knowledge always includes visual information"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes that “learned knowledge is hardly deterministic (it cannot be in a Bayesian view), logic reasoning does not really apply well” [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Which issue is identified as a core problem with GOFAI in the provided material?",
+      "options": {
+        "A": "Its inability to represent objects and relations",
+        "B": "Its reliance on probabilistic graphical models",
+        "C": "The fact that logic reasoning does not unify well with learning and learned models",
+        "D": "Its excessive computational efficiency"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage states that “one of the core problems with GOFAI: the fact that logic reasoning does not unify well with learning and learned models” [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Which of the following best explains why first‑order (relational) representations are advocated for strong generalization?",
+      "options": {
+        "A": "They encode the exact identities of objects to avoid ambiguity",
+        "B": "They represent knowledge solely through object properties and relations, allowing generalization across object identities",
+        "C": "They eliminate the need for any inference procedures",
+        "D": "They guarantee deterministic outcomes for all queries"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "The context says that first‑order representations “refer only to object properties and relations, and therefore generalize across object identities” and are needed “for strong generalization” [Page 199, 222].\n\n---",
+      "source_pages": [
+        "199",
+        "222"
+      ]
+    },
+    {
+      "question": "Based on the description of probabilistic relational approaches, what is a direct implication of making predictions only from properties/relations and not object identity?",
+      "options": {
+        "A": "The approach cannot handle uncertainty in the data",
+        "B": "It enables knowledge learned in one world to be applied to a different world with new objects",
+        "C": "It requires the explicit enumeration of all possible object identities",
+        "D": "It restricts the model to deterministic inference only"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "The material notes that such approaches “make predictions based only on the properties/relations of objects, not their identity” and “generalize data seen in one world … to another world” [Page 222].\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "What limitation of classical first‑order knowledge bases (FOL) concerning uncertain knowledge is highlighted in the text?",
+      "options": {
+        "A": "They are inherently probabilistic and thus too vague for precise reasoning",
+        "B": "They are deterministic, making it difficult to represent uncertain or learned knowledge",
+        "C": "They cannot express any object properties or relations",
+        "D": "They automatically integrate Bayesian learning without extra effort"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage points out that “logic reasoning … is only applicable on discrete & deterministic knowledge bases” and that “learned knowledge is hardly deterministic,” indicating a limitation of classical FOL for uncertainty [Page 199].",
+      "source_pages": [
+        "199"
+      ]
+    }
+  ]
+}

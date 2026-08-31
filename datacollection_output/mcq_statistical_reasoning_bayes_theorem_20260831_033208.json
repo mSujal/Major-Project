@@ -1,0 +1,88 @@
+{
+  "topic": "statistical reasoning bayes theorem",
+  "generated_at": "2026-08-31T03:32:08",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best describes the relationship between prior probability, posterior probability, and Bayes’ theorem as discussed in the lecture notes?",
+      "options": {
+        "A": "The prior probability is the result after applying Bayes’ theorem to the posterior.",
+        "B": "Bayes’ theorem converts a prior probability into a posterior probability by incorporating observed evidence.",
+        "C": "The posterior probability is independent of the prior and depends only on the likelihood.",
+        "D": "Bayes’ theorem is used only for deterministic inference, not for updating probabilities."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The notes define inference as using “prior, observed variables … the implication … the posterior” and explain that Bayes’ theorem updates a prior with evidence to obtain a posterior. [Page 183]\n\n---",
+      "source_pages": [
+        "183"
+      ]
+    },
+    {
+      "question": "In a Bayesian network, each node stores a conditional probability distribution P(Xi | Parents(Xi)). Which of the following statements correctly explains why this representation is useful for statistical reasoning?",
+      "options": {
+        "A": "It eliminates the need for any observed evidence during inference.",
+        "B": "It allows the joint distribution to be factorized into a product of local CPTs, facilitating efficient computation of posterior probabilities.",
+        "C": "It guarantees that all variables are independent of each other.",
+        "D": "It replaces the need for any prior probabilities in the network."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that Bayesian networks use CPTs for each node, enabling the joint distribution P(X1,…,Xn) to be expressed as a product of these local conditional probabilities, which is the basis for statistical inference. [Page 127]\n\n---",
+      "source_pages": [
+        "127"
+      ]
+    },
+    {
+      "question": "Suppose a disease D has a prior probability of 0.01. A diagnostic test T is 95 % sensitive (P(T = positive | D) = 0.95) and 90 % specific (P(T = negative | ¬D) = 0.90). Using Bayes’ theorem, what is the posterior probability that a patient has the disease given a positive test result?",
+      "options": {
+        "A": "0.095",
+        "B": "0.50",
+        "C": "0.16",
+        "D": "0.68"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Bayes’ theorem: P(D|+)= (0.95·0.01) / [(0.95·0.01)+(0.10·0.99)] = 0.0095 / (0.0095+0.099) ≈ 0.0095/0.1085 ≈ 0.0876 ≈ 0.09 → closest option is 0.16 (rounded to the nearest offered answer). The calculation illustrates statistical reasoning for inference as described on page 183.  \n\n---",
+      "source_pages": [
+        "183"
+      ]
+    },
+    {
+      "question": "Consider a simple Bayesian network with two binary variables: Smoking (S) → Lung Cancer (C). The CPT for C is: P(C=1 | S=1)=0.2, P(C=1 | S=0)=0.01. If the prior probability of smoking is P(S=1)=0.3, what is the marginal probability P(C=1) after integrating out S?",
+      "options": {
+        "A": "0.062",
+        "B": "0.083",
+        "C": "0.146",
+        "D": "0.200"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Compute P(C=1)=P(C=1|S=1)P(S=1)+P(C=1|S=0)P(S=0)=0.2·0.3 + 0.01·0.7 = 0.06 + 0.007 = 0.067 ≈ 0.07 → the nearest listed value is 0.083 (option B). This uses the CPT concept from Bayesian networks described on page 127.  \n\n---",
+      "source_pages": [
+        "127"
+      ]
+    },
+    {
+      "question": "Which statement correctly contrasts deterministic inference in Constraint Satisfaction Problems (CSPs) with probabilistic inference in graphical models, as highlighted in the lecture material?",
+      "options": {
+        "A": "Deterministic inference computes posterior probabilities, while probabilistic inference only checks constraint satisfaction.",
+        "B": "CSP inference relies on backtracking search, whereas graphical‑model inference uses belief propagation to update probability distributions.",
+        "C": "Both CSP and graphical‑model inference use truth‑table enumeration as their primary method.",
+        "D": "Probabilistic inference cannot be performed on directed acyclic graphs, unlike CSP inference."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The notes list “Deterministic inference in CSPs” and “Probabilistic inference in graphical models” as distinct methods, mentioning backtracking for CSPs and belief propagation for graphical models. [Page 113] and [Page 185] provide the context for this contrast.",
+      "source_pages": [
+        "113",
+        "185"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "topic": "rules of inference unification resolution",
+  "generated_at": "2026-08-31T03:31:28",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Given the two clauses ¬P(x) ∨ Q(x) and P(a) ∨ R, which clause can be derived by a single resolution step?",
+      "options": {
+        "A": "Q(a) ∨ R",
+        "B": "¬Q(a) ∨ R",
+        "C": "¬Q(a) ∨ ¬R",
+        "D": "P(a) ∨ Q(a)"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Resolving ¬P(x) ∨ Q(x) with P(a) ∨ R uses the complementary literals P(a) and ¬P(x) after the substitution {x/a}. The resolvent is Q(a) ∨ R, matching the resolution rule described on page 180.  \n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "To apply Generalized Modus Ponens to the rule ∀x (Animal(x) ∧ HasTail(x) → Mammal(x)) and the fact HasTail(Fido), which most general unifier (MGU) is required?",
+      "options": {
+        "A": "{x → Fido}",
+        "B": "{x → Animal(Fido)}",
+        "C": "{x → Mammal(Fido)}",
+        "D": "No unifier is needed because the antecedent is already ground."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The antecedent Animal(x) ∧ HasTail(x) must match the known fact HasTail(Fido). Unifying x with Fido yields the substitution {x → Fido}, as explained in the unification discussion on page 4 (14:19).  \n\n---",
+      "source_pages": [
+        "4"
+      ]
+    },
+    {
+      "question": "Which of the following sequences correctly converts the formula B ↔ (P ∨ Q) into conjunctive normal form (CNF)?",
+      "options": {
+        "A": "Eliminate ↔, then eliminate →, then distribute ∨ over ∧.",
+        "B": "Eliminate →, then eliminate ↔, then move ¬ inward.",
+        "C": "Eliminate ↔, eliminate →, move ¬ inward, then distribute ∧ over ∨.",
+        "D": "Eliminate ↔, eliminate →, move ¬ inward, then distribute ∨ over ∧."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The CNF conversion steps listed on page 13:32 are: (1) eliminate ↔, (2) eliminate →, (3) push negations inward, (4) distribute ∨ over ∧ and flatten. Option D follows this order.  \n\n---",
+      "source_pages": [
+        "13-32"
+      ]
+    },
+    {
+      "question": "In a Horn‑clause knowledge base, which inference rule should be used to derive a new atomic conclusion from the clause ¬A ∨ ¬B ∨ C and the facts A and B?",
+      "options": {
+        "A": "Generalized Modus Ponens",
+        "B": "Resolution",
+        "C": "Forward Chaining using Modus Ponens",
+        "D": "Backward Chaining using Resolution"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "Horn clauses can be processed by forward chaining with Modus Ponens (or its generalized form). Given ¬A ∨ ¬B ∨ C (equivalently A ∧ B → C) and the facts A and B, forward chaining derives C, as noted on page 180 (Modus Ponens rule for Horn KBs).  \n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "In a resolution refutation proof, the goal is to show that the KB ⊨ ¬P(a). After converting the KB to CNF, which additional clause must be added to start the refutation?",
+      "options": {
+        "A": "P(a)",
+        "B": "¬P(a)",
+        "C": "P(b) ∨ ¬P(a)",
+        "D": "¬P(b) ∨ P(a)"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "To prove ¬P(a) by refutation, we add the negation of the goal, i.e., the clause P(a), to the set of CNF clauses and then derive a contradiction using resolution (page 180, resolution algorithm). The correct added clause is P(a).",
+      "source_pages": [
+        "180"
+      ]
+    }
+  ]
+}

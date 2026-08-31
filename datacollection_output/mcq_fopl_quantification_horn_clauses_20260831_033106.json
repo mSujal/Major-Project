@@ -1,0 +1,87 @@
+{
+  "topic": "fopl quantification horn clauses",
+  "generated_at": "2026-08-31T03:31:06",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Given the English sentences “All detectives are clever.” and “John is a detective.”, convert them into first‑order predicate logic Horn clauses and determine using resolution refutation whether the query “John is clever.” is entailed.",
+      "options": {
+        "A": "Yes, the query is entailed after resolution.",
+        "B": "No, the query is not entailed because the KB is incomplete.",
+        "C": "The query is both entailed and contradicted.",
+        "D": "Resolution cannot be applied to this set of clauses."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "“All detectives are clever” → ∀x (Detective(x) ⇒ Clever(x)) which is a Horn clause (conjunction ⇒ symbol). “John is a detective” → Detective(John). Adding ¬Clever(John) to the KB and converting to CNF yields a resolvable contradiction, showing KB ⊨ Clever(John) (unsatisfiable KB ∧ ¬Clever(John)) [Page 180].\n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Convert the sentences “If someone is a programmer then they are logical.” and “Alice is a programmer.” into Horn clauses, then using resolution refutation decide whether the query “Alice is logical.” holds.",
+      "options": {
+        "A": "The query is entailed.",
+        "B": "The query is not entailed because the rule is not in Horn form.",
+        "C": "The query is false under the KB.",
+        "D": "Resolution yields a non‑Horn clause, so the query cannot be decided."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "“If someone is a programmer then they are logical” → ∀x (Programmer(x) ⇒ Logical(x)), a Horn clause. “Alice is a programmer” → Programmer(Alice). Adding ¬Logical(Alice) leads to a resolvent that contradicts the KB, proving entailment [Page 185].\n\n---",
+      "source_pages": [
+        "185"
+      ]
+    },
+    {
+      "question": "The knowledge base contains the Horn clauses: (1) ∀x (Bird(x) ⇒ CanFly(x)), (2) ∀x (Penguin(x) ⇒ Bird(x)), (3) Penguin(Tweety). Convert to clause form and use resolution refutation to answer the query “CanFly(Tweety)”.",
+      "options": {
+        "A": "The query is entailed.",
+        "B": "The query is not entailed because of an implicit exception.",
+        "C": "The query is both entailed and refuted.",
+        "D": "Resolution cannot derive a conclusion due to missing facts."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "After Skolemization and CNF, the clauses are ¬Bird(x) ∨ CanFly(x), ¬Penguin(x) ∨ Bird(x), Penguin(Tweety). Adding ¬CanFly(Tweety) resolves to a contradiction, showing KB ⊨ CanFly(Tweety) [Page 180].\n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Translate the statements “Every robot that has sensors is autonomous.” and “R2D2 has sensors.” into Horn clauses. Using resolution refutation, determine whether the query “R2D2 is autonomous.” is a logical consequence.",
+      "options": {
+        "A": "Yes, the query follows from the KB.",
+        "B": "No, the KB does not guarantee autonomy.",
+        "C": "The query is undecidable with resolution alone.",
+        "D": "The conversion produces a non‑Horn clause, so resolution is inapplicable."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "“Every robot that has sensors is autonomous” → ∀x (Robot(x) ∧ Sensors(x) ⇒ Autonomous(x)), a Horn clause. “R2D2 has sensors” and “R2D2 is a robot” (assumed) give premises; adding ¬Autonomous(R2D2) leads to a resolvent that empties, proving entailment [Page 185].\n\n---",
+      "source_pages": [
+        "185"
+      ]
+    },
+    {
+      "question": "From the sentences “If a student studies then the student passes.” and “Mia studies.”, form the corresponding Horn clauses and apply resolution refutation to decide the truth of the query “Mia passes.”.",
+      "options": {
+        "A": "The query is entailed by the KB.",
+        "B": "The query is not entailed because the rule is missing a premise.",
+        "C": "The query is both true and false under different models.",
+        "D": "Resolution fails because the KB is not in CNF."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "“If a student studies then the student passes” → ∀x (Studies(x) ⇒ Passes(x)), a Horn clause. “Mia studies” → Studies(Mia). Adding ¬Passes(Mia) yields a resolvent that contradicts the KB, so KB ⊨ Passes(Mia) [Page 180].",
+      "source_pages": [
+        "180"
+      ]
+    }
+  ]
+}

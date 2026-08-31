@@ -1,0 +1,89 @@
+{
+  "topic": "importance of ai",
+  "generated_at": "2026-08-31T03:25:47",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "What is the importance of shifting from first‑order logic (GOFAI) to probabilistic modelling and learning in AI?",
+      "options": {
+        "A": "It eliminates the need for any logical reasoning.",
+        "B": "It allows AI systems to represent and reason about uncertainty.",
+        "C": "It improves the efficiency of learning from data.",
+        "D": "All of the above."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context notes that the AI winter critique of “logic doesn’t work” led to a focus on learning and probabilistic modelling (Page 199) and that using probabilistic modelling on top of first‑order representations addresses learning inefficiencies (Page 226).  \n\n---",
+      "source_pages": [
+        "199",
+        "226"
+      ]
+    },
+    {
+      "question": "If AI systems are designed to formalize decision objectives and take optimal decisions based on all available information, does this guarantee that they will exhibit functionally desirable behavior? State your reasons.",
+      "options": {
+        "A": "Yes, because formalization ensures optimality.",
+        "B": "Yes, provided the inference mechanisms are flawless.",
+        "C": "No, because optimal decisions may conflict with ethical or contextual considerations.",
+        "D": "No, because decision quality depends on the quality and completeness of the information."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Evaluate",
+      "difficulty": "Hard",
+      "explanation": "AI formalizes decision processes and objectives (Page 154) and aims for optimal decisions, but the guarantee of desirable behavior is conditional on the information used; the context does not claim absolute assurance.  \n\n---",
+      "source_pages": [
+        "154"
+      ]
+    },
+    {
+      "question": "What is the importance of reinforcement learning (RL) in the historical development of AI?",
+      "options": {
+        "A": "RL replaced all other AI methods after the 1960s.",
+        "B": "RL introduced the idea of programming computers to learn by trial and error.",
+        "C": "RL eliminated the need for probabilistic reasoning.",
+        "D": "RL is unrelated to early AI research."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage highlights the long history of RL, tracing it back to Turing (1954) and early programs such as SNARCs and Samuel’s checkers player (Page 82).  \n\n---",
+      "source_pages": [
+        "82"
+      ]
+    },
+    {
+      "question": "If a modern AI system uses statistical relational approaches that combine probabilistic modelling with first‑order representations, does this approach address the inefficiency of learning in classical AI? Explain.",
+      "options": {
+        "A": "Yes, because it completely removes the need for deterministic knowledge bases.",
+        "B": "Yes, because it eliminates uncertainty from the model.",
+        "C": "No, because it still relies on deterministic logic.",
+        "D": "Partially, because it improves learning efficiency by handling uncertainty but still faces challenges."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Evaluate",
+      "difficulty": "Medium",
+      "explanation": "Classical AI’s learning inefficiency is noted (Page 222), and the benefit of probabilistic modelling on top of first‑order representations is described as a way to do learning “the right way” (Page 226), implying improvement but not a full solution.  \n\n---",
+      "source_pages": [
+        "222",
+        "226"
+      ]
+    },
+    {
+      "question": "What is the importance of AI formalizing decision processes as interactive or passive?",
+      "options": {
+        "A": "It distinguishes agents from the external world.",
+        "B": "It defines decision variables that can be manipulated.",
+        "C": "It enables the specification of decision objectives for optimal behavior.",
+        "D": "All of the above."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context explains that AI formalizes decision processes (interactive or passive), distinguishes agents from the world, and defines decision variables and objectives (Page 154).",
+      "source_pages": [
+        "154"
+      ]
+    }
+  ]
+}

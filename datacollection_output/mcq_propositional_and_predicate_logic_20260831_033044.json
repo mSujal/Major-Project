@@ -1,0 +1,87 @@
+{
+  "topic": "propositional and predicate logic",
+  "generated_at": "2026-08-31T03:30:44",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following best defines a Horn clause and provides a correct example?",
+      "options": {
+        "A": "A clause that contains at most one positive literal, e.g., ¬P ∨ ¬Q ∨ R",
+        "B": "A clause that contains exactly two positive literals, e.g., P ∨ Q ∨ ¬R",
+        "C": "A clause that contains only negative literals, e.g., ¬P ∨ ¬Q",
+        "D": "A clause that must be a biconditional, e.g., (P ⇒ Q) ∧ (Q ⇒ P)"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A Horn clause is “a disjunction of literals containing at most one positive literal” (page 180). Option A matches this definition and gives a valid example; the other options violate the definition.\n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Convert the propositional formula (A ⇒ (B ∧ C)) ∧ ¬D into an equivalent formula in Conjunctive Normal Form (CNF).",
+      "options": {
+        "A": "(¬A ∨ B) ∧ (¬A ∨ C) ∧ ¬D",
+        "B": "(A ∨ ¬B) ∧ (A ∨ ¬C) ∧ D",
+        "C": "(A ∧ B ∧ C) ∨ ¬D",
+        "D": "(¬A ∧ B ∧ C) ∨ ¬D"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Implication is rewritten: A ⇒ (B ∧ C) ≡ ¬A ∨ (B ∧ C). Distribute ∨ over ∧ to obtain (¬A ∨ B) ∧ (¬A ∨ C). Adding ¬D gives the CNF (¬A ∨ B) ∧ (¬A ∨ C) ∧ ¬D, which is option A (see definitions of literal, clause, CNF on page 180).\n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Which inference rule is complete for propositional logic when the knowledge base is expressed in CNF?",
+      "options": {
+        "A": "Modus Ponens",
+        "B": "Generalized Modus Ponens",
+        "C": "Forward Chaining",
+        "D": "Resolution"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that the “Resolution rule: rule: complete for propositional logic in CNF” (page 180). Hence resolution is the complete rule; the other rules are not guaranteed to be complete for arbitrary CNF KBs.\n\n---",
+      "source_pages": [
+        "180"
+      ]
+    },
+    {
+      "question": "Transform the first‑order logic sentence ∀x (P(x) ⇒ ∃y Q(x,y)) into an equivalent clause set in CNF (after Skolemization). Which of the following is the correct result?",
+      "options": {
+        "A": "{¬P(x) ∨ Q(x, f(x))}",
+        "B": "{P(x) ∨ ¬Q(x, f(x))}",
+        "C": "{¬P(x) ∨ ∀y Q(x,y)}",
+        "D": "{P(x) ⇒ Q(x, y)}"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "Steps: eliminate ⇒ (¬P(x) ∨ ∃y Q(x,y)), move ∃ outward, Skolemize y to f(x), and drop quantifiers → clause ¬P(x) ∨ Q(x, f(x)) (page 203 provides a similar example of converting quantified sentences to CNF). Option A matches this clause.\n\n---",
+      "source_pages": [
+        "203"
+      ]
+    },
+    {
+      "question": "Given the knowledge base KB = {A ∨ B, ¬A}, does KB entail B? (Use the definition KB |= α iff KB ∧ ¬α is unsatisfiable.)",
+      "options": {
+        "A": "Yes, because KB ∧ ¬B is unsatisfiable.",
+        "B": "No, because KB ∧ ¬B is satisfiable.",
+        "C": "It cannot be determined without additional information.",
+        "D": "Both A and B are true in different models."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "To test entailment, add ¬B to KB: {A ∨ B, ¬A, ¬B}. The clauses force A to be true (from A ∨ B together with ¬B) but also require ¬A, which is contradictory; thus the set is unsatisfiable, so KB |= B (page 180). Hence option A is correct.",
+      "source_pages": [
+        "180"
+      ]
+    }
+  ]
+}

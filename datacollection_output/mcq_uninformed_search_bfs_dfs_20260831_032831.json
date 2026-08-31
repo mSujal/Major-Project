@@ -1,0 +1,90 @@
+{
+  "topic": "uninformed search bfs dfs",
+  "generated_at": "2026-08-31T03:28:31",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which of the following statements correctly distinguishes Breadth‑First Search (BFS) from Depth‑First Search (DFS) with respect to completeness, optimality (for unit step cost), time complexity, and space complexity?",
+      "options": {
+        "A": "BFS is complete and optimal (for unit step cost) with time O(b^{d+1}) and space O(b^{d+1}); DFS is also complete and optimal, with the same time and space bounds.",
+        "B": "BFS is complete but not optimal; DFS is complete and optimal, both with exponential time and space.",
+        "C": "BFS is complete and optimal (for unit step cost) with exponential time and space; DFS may fail to be complete and is not optimal, with exponential time but only linear space.",
+        "D": "Both BFS and DFS require only linear space in the worst case."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "BFS is complete (if b finite) and optimal when each step costs 1, and its worst‑case time and space are O(b^{d+1}) as shown on Page 19. DFS is not guaranteed to be complete and is not optimal; its time is exponential while its space is only linear in the depth of the deepest node (see the complexity notes on Page 2:19).  \n\n---",
+      "source_pages": [
+        "19",
+        "2-19"
+      ]
+    },
+    {
+      "question": "Under which condition does Breadth‑First Search guarantee an optimal solution?",
+      "options": {
+        "A": "BFS always returns an optimal solution, regardless of step costs.",
+        "B": "BFS returns an optimal solution only when every action has the same cost.",
+        "C": "DFS returns an optimal solution only when every action has the same cost.",
+        "D": "Neither BFS nor DFS can guarantee optimality when step costs vary."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "BFS is optimal only when the cost‑per‑step is uniform (cost = 1), as stated on Page 19. With varying costs, BFS may expand a cheaper deeper node after a more expensive shallow one, losing optimality.  \n\n---",
+      "source_pages": [
+        "19"
+      ]
+    },
+    {
+      "question": "Consider a problem where the shallowest goal appears at depth d and the maximum tree depth is m ( m > d). Which uninformed search algorithm expands fewer nodes in the worst case?",
+      "options": {
+        "A": "BFS expands fewer nodes because it stops as soon as depth d is reached.",
+        "B": "DFS expands fewer nodes because it goes straight down to depth m before backtracking.",
+        "C": "Both BFS and DFS expand the same number of nodes in the worst case.",
+        "D": "Neither algorithm expands any nodes if the goal is at depth d."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "BFS explores level by level and stops after generating all nodes up to depth d, giving a worst‑case node count of 1 + b + … + b^{d}. DFS may descend to depth m before finding the goal, potentially generating up to 1 + b + … + b^{m} nodes (see the general tree‑search description on Page 2:12 and DFS complexity on Page 2:19).  \n\n---",
+      "source_pages": [
+        "2-12",
+        "2-19"
+      ]
+    },
+    {
+      "question": "Which statement accurately captures the trade‑off between BFS and DFS regarding memory consumption?",
+      "options": {
+        "A": "BFS requires O(b^{d+1}) memory, while DFS needs only O(b · m) memory, where m is the maximum depth explored.",
+        "B": "Both BFS and DFS need O(b^{d+1}) memory because they store all generated nodes.",
+        "C": "BFS needs only linear memory, whereas DFS needs exponential memory.",
+        "D": "Memory usage for both algorithms is independent of the branching factor b."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The space complexity of BFS is O(b^{d+1}) because it keeps every node generated up to the goal depth (Page 19). DFS, by contrast, stores only the current path and its siblings, yielding linear space O(b · m) (Page 2:19).  \n\n---",
+      "source_pages": [
+        "19",
+        "2-19"
+      ]
+    },
+    {
+      "question": "If the branching factor b is infinite (i.e., each node can generate arbitrarily many successors), which uninformed search algorithm is still guaranteed to be complete?",
+      "options": {
+        "A": "Both BFS and DFS remain complete.",
+        "B": "Only DFS remains complete.",
+        "C": "Only BFS remains complete, provided the goal depth is finite.",
+        "D": "Neither algorithm is complete under an infinite branching factor."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "Hard",
+      "explanation": "Completeness for BFS holds as long as b is finite; with an infinite b the guarantee fails. However, the context notes BFS is complete “if b is finite” (Page 19). DFS is not complete even when b is finite, because it can get trapped in an infinite branch. Therefore, with an infinite branching factor, only BFS could be complete if the goal depth is bounded, matching the stated condition.",
+      "source_pages": [
+        "19"
+      ]
+    }
+  ]
+}

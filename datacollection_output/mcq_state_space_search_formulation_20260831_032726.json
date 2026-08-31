@@ -1,0 +1,87 @@
+{
+  "topic": "state space search formulation",
+  "generated_at": "2026-08-31T03:27:26",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Which set of components is required to fully specify a state‑space search problem as described in the material?",
+      "options": {
+        "A": "Initial state, actions, transition model, goal test, path‑cost function",
+        "B": "Initial state and goal test only",
+        "C": "Actions and a heuristic function only",
+        "D": "Transition model and a depth limit only"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The context lists these five elements (initial state, actions, transition model, goal test, path cost) as the essential parts of a search problem formulation [Page 13].\n\n---",
+      "source_pages": [
+        "13"
+      ]
+    },
+    {
+      "question": "In the 8‑puzzle example, each move of the blank tile has a cost of 1. If a solution requires 7 moves, what is the total path‑cost of that solution?",
+      "options": {
+        "A": "0",
+        "B": "7",
+        "C": "14",
+        "D": "1"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "Easy",
+      "explanation": "The path‑cost is defined as “1 per move” for the 8‑puzzle [Page 15]; thus 7 moves yield a cost of 7.\n\n---",
+      "source_pages": [
+        "15"
+      ]
+    },
+    {
+      "question": "According to the discussion of implementation, how does a “state” differ from a “node” in tree search?",
+      "options": {
+        "A": "A state represents a physical configuration, while a node is an occurrence of that state in the search tree together with bookkeeping information (parent, path cost, etc.)",
+        "B": "A state includes the path cost, whereas a node does not",
+        "C": "A node is the abstract representation of a problem, while a state is the concrete solution",
+        "D": "There is no difference; the terms are used interchangeably"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that “A state is a (representation of) a physical configuration” and distinguishes it from nodes used in the search tree [Page 16].\n\n---",
+      "source_pages": [
+        "16"
+      ]
+    },
+    {
+      "question": "When formulating the Romania travel problem, which of the following correctly describes the goal test?",
+      "options": {
+        "A": "The agent has visited every city in Romania",
+        "B": "The agent is currently located in Bucharest",
+        "C": "The total travel cost is below a given threshold",
+        "D": "The agent has returned to the starting city, Arad"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The problem statement defines the goal as “be in Bucharest, Sgoal = {Bucharest}” [Page 13].\n\n---",
+      "source_pages": [
+        "13"
+      ]
+    },
+    {
+      "question": "Which of the following is *not* a requirement for a problem to be considered “well‑defined” in a state‑space search framework?",
+      "options": {
+        "A": "An initial state",
+        "B": "A set of possible actions",
+        "C": "A heuristic function",
+        "D": "A goal test"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A well‑defined problem must specify an initial state, actions, transition model, goal test, and path‑cost function; a heuristic is optional and not part of the formal definition [Page 13].",
+      "source_pages": [
+        "13"
+      ]
+    }
+  ]
+}

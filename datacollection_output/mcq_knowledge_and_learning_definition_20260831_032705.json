@@ -1,0 +1,87 @@
+{
+  "topic": "knowledge and learning definition",
+  "generated_at": "2026-08-31T03:27:05",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "According to the passages, how does a deterministic knowledge base differ from knowledge obtained through learning?",
+      "options": {
+        "A": "A deterministic knowledge base is built from statistical data, whereas learned knowledge is fixed and exact.",
+        "B": "A deterministic knowledge base contains fixed logical facts, while learned knowledge is often uncertain and probabilistic.",
+        "C": "Both deterministic knowledge bases and learned knowledge rely solely on first‑order logic without any uncertainty.",
+        "D": "Learned knowledge is stored in propositional form, whereas deterministic knowledge bases use relational representations."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states that classical AI’s deterministic knowledge bases are discrete and fixed, whereas learned knowledge is “hardly deterministic” and must handle uncertainty (e.g., Bayesian view) [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "Which statement best distinguishes why logic reasoning is said to “not unify well with learning” in the given context?",
+      "options": {
+        "A": "Logic reasoning can only process continuous variables, while learning handles discrete symbols.",
+        "B": "Logic reasoning operates on deterministic knowledge bases, whereas learning produces uncertain models that do not fit purely logical inference.",
+        "C": "Logic reasoning requires relational representations, but learning is limited to propositional forms.",
+        "D": "Logic reasoning automatically incorporates probabilistic inference, making it redundant for learning."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passages note that logic reasoning is applicable only to deterministic knowledge bases and “does not really apply well” to learned (uncertain) knowledge [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "In the context, what is the primary benefit of using first‑order (relational) representations for learning compared to propositional representations?",
+      "options": {
+        "A": "They eliminate the need for any statistical methods.",
+        "B": "They allow knowledge to be expressed only about individual object identities.",
+        "C": "They enable generalization across object identities by focusing on properties and relations.",
+        "D": "They restrict learning to deterministic outcomes only."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "First‑order representations “refer only to object properties and relations, and therefore generalize across object identities” [Page 199].\n\n---",
+      "source_pages": [
+        "199"
+      ]
+    },
+    {
+      "question": "How does the text define the relationship between inference, decision‑making, and learning?",
+      "options": {
+        "A": "Inference is a separate process unrelated to decision‑making or learning.",
+        "B": "Decision‑making precedes inference, which then produces learning outcomes.",
+        "C": "Both decision‑making and learning can be viewed as forms of inference.",
+        "D": "Learning replaces the need for any inference in AI systems."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The passage lists “Decision‑Making and Learning can be viewed as Inference” [Page 113].\n\n---",
+      "source_pages": [
+        "113"
+      ]
+    },
+    {
+      "question": "According to the excerpts, what deficit of classical AI do statistical relational approaches aim to overcome?",
+      "options": {
+        "A": "The inability to represent any object properties.",
+        "B": "The inefficiency of learning deterministic knowledge bases from data.",
+        "C": "The lack of support for first‑order logic reasoning.",
+        "D": "The overreliance on probabilistic models for all tasks."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text mentions “One of the great deficits of classical AI is the inefficiency of learning (constructing deterministic knowledge bases from data) – statistical relational approaches do this the right way” [Page 222].",
+      "source_pages": [
+        "222"
+      ]
+    }
+  ]
+}

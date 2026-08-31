@@ -1,0 +1,87 @@
+{
+  "topic": "representations and mappings",
+  "generated_at": "2026-08-31T03:32:32",
+  "pdf_path": "Datasets/PDFs/Lecture-AI.pdf",
+  "questions": [
+    {
+      "question": "Why are first‑order representations considered essential for achieving strong generalization in knowledge representation?",
+      "options": {
+        "A": "They encode only deterministic facts about the world.",
+        "B": "They structure the world in terms of objects, properties, and relations, allowing learning of uncertain and generalizing knowledge.",
+        "C": "They limit reasoning to propositional variables without relational structure.",
+        "D": "They focus solely on the identities of individual objects."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "First‑order representations formalize the world’s structure of objects, properties, and relations, which is needed for strong generalization and for expressing uncertain knowledge [Page 222].\n\n---",
+      "source_pages": [
+        "222"
+      ]
+    },
+    {
+      "question": "How do probabilistic relational models generalize predictions from one world of objects to another world with different objects?",
+      "options": {
+        "A": "By relying on the specific names (identities) of the objects.",
+        "B": "By ignoring all relational information and using only global statistics.",
+        "C": "By making predictions based only on the properties and relations of objects, not their identities.",
+        "D": "By treating every object as an independent propositional variable."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Probabilistic relational approaches generalize by using only the properties/relations of objects, not their specific identities, enabling transfer to a different set of objects [Page 5].\n\n---",
+      "source_pages": [
+        "5"
+      ]
+    },
+    {
+      "question": "What does an atomic sentence of the form predicate(term₁,…,termₙ) assert in first‑order logic?",
+      "options": {
+        "A": "That a function maps term₁,…,termₙ to a value.",
+        "B": "That the objects referred to by the terms are in the relation denoted by the predicate.",
+        "C": "That all terms denote the same object.",
+        "D": "That the terms belong to the same domain set."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "An atomic sentence is true iff the objects referred to by its terms stand in the relation indicated by the predicate [Page 202].\n\n---",
+      "source_pages": [
+        "202"
+      ]
+    },
+    {
+      "question": "In the discussion of the allDiff constraint, how is generalized arc consistency (GAC) related to message passing (belief propagation) in probabilistic networks?",
+      "options": {
+        "A": "GAC uses belief vectors, whereas message passing uses domain sets.",
+        "B": "The two techniques are unrelated.",
+        "C": "GAC is equivalent to message passing, but the messages are domain sets instead of belief vectors.",
+        "D": "GAC applies only to deterministic constraints and cannot be used in probabilistic settings."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text states that generalized arc consistency is equivalent to message passing, with the difference that GAC’s messages are domain sets rather than belief vectors [Page 239].\n\n---",
+      "source_pages": [
+        "239"
+      ]
+    },
+    {
+      "question": "In the map‑coloring example, what role do the constraints (e.g., “adjacent regions must have different colors”) play in the representation?",
+      "options": {
+        "A": "They map each region to a unique numeric identifier.",
+        "B": "They represent relational mappings that enforce different colors for adjacent regions.",
+        "C": "They encode the color of a region as a function of the region’s name.",
+        "D": "They eliminate the need to specify the domain of possible colors."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The constraints define a relational condition (different‑color mapping) between adjacent regions, exemplifying how relational constraints are represented in a CSP [Page 114].",
+      "source_pages": [
+        "114"
+      ]
+    }
+  ]
+}
