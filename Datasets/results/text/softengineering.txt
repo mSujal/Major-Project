@@ -1,0 +1,780 @@
+Loaded 50 questions from 1 file(s).
+Will show reasoning for 5 randomly selected questions.
+Loaded 50 questions from 1 file(s).
+Will show reasoning for 5 randomly selected questions.
+
+#################[LLM DIFFICULTY ESTIMATION]#################
+[1/50]  Unknown question: Which statement best captures the analyt....
+
+            Question:   {'question': 'Which statement best captures the analytical distinction between verification and validation as described in the context?', 'options': {'A': 'Verification ensures the software meets user expectations, while validation checks conformance to the specification.', 'B': "Verification checks conformance to the specification; validation ensures the software meets the customer's real needs.", 'C': 'Verification and validation are interchangeable terms that both focus on testing the final product.', 'D': 'Verification is performed only after validation is completed.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    1.22s 
+            Completions:0.657320013s
+            Tokens:     625
+            Predicted:  B
+            Correct:    True
+
+
+        
+[2/50]  Unknown question: In the context, which scenario most clea....
+
+================================================================================
+🔍 FULL REASONING FOR QUESTION #2:
+================================================================================
+**1. Restate the question in my own words**  
+We need to pick the scenario that best represents a *validation* activity (checking that the product meets user needs or solves the real problem) rather than a *verification* activity (checking that the product meets its specifications or design).
+
+**2. Analyze each option**
+
+| Option | What it means | Is it verification or validation? | Why |
+|--------|---------------|-----------------------------------|-----|
+| **A** | A code walkthrough to ensure the code follows coding standards. | **Verification** | It checks that the code conforms to predefined standards—an internal, specification‑based check. |
+| **B** | Static analysis on the design model to detect inconsistencies. | **Verification** | It examines the design against its own rules and consistency, ensuring the design is correct per its specifications. |
+| **C** | Executing a user‑acceptance test to see if the system solves the actual business problem. | **Validation** | It tests the finished product against real user needs and business goals, answering “Did we build the right product?” |
+| **D** | Running unit tests to confirm each module returns expected outputs. | **Verification** | It verifies that each module behaves as specified by its interface and design. |
+
+**3. Eliminate the incorrect options**  
+- A, B, and D are all verification activities because they focus on internal correctness against specifications or standards.  
+- Only C addresses the product’s usefulness to the end‑user, which is the hallmark of validation.
+
+**4. Choose the best answer**  
+The scenario that most clearly illustrates a validation activity is **C: Executing a user‑acceptance test to see if the system solves the actual business problem.** It directly evaluates whether the product meets user needs and solves the real problem, which is the definition of validation.
+
+**5. Final answer**  
+C
+================================================================================
+Predicted: C | Correct: True
+
+
+            Question:   {'question': 'In the context, which scenario most clearly illustrates a validation activity rather than a verification activity?', 'options': {'A': 'Conducting a code walkthrough to ensure adherence to coding standards.', 'B': 'Performing static analysis on the design model to detect inconsistencies.', 'C': 'Executing a user‑acceptance test to see if the system solves the actual business problem.', 'D': 'Running unit tests to confirm each module returns expected outputs.'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    1.06s 
+            Completions:0.654931593s
+            Tokens:     598
+            Predicted:  C
+            Correct:    True
+
+
+        
+[3/50]  Unknown question: According to the provided material, why ....
+
+            Question:   {'question': 'According to the provided material, why is validation considered essential beyond verification?', 'options': {'A': 'Because verification cannot be performed without a complete source code.', 'B': 'Because requirements documents always perfectly reflect user needs.', 'C': 'Because statements of requirements may not capture the real wishes or needs of customers.', 'D': 'Because validation eliminates all errors in the software.'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    0.93s 
+            Completions:0.695213796s
+            Tokens:     649
+            Predicted:  C
+            Correct:    True
+
+
+        
+[4/50]  Unknown question: Which of the following best analyzes the....
+
+            Question:   {'question': 'Which of the following best analyzes the relationship between “testing” and the broader V&V process?', 'options': {'A': 'Testing alone can demonstrate the absence of errors in a system.', 'B': 'Testing is the only activity needed for both verification and validation.', 'C': 'Testing can only show the presence of errors; it is one component of verification and validation.', 'D': 'Testing replaces the need for inspections and reviews in static V&V techniques.'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    1.19s 
+            Completions:0.679866389s
+            Tokens:     656
+            Predicted:  C
+            Correct:    True
+
+
+        
+[5/50]  Unknown question: If a software team discovers that a requ....
+
+            Question:   {'question': "If a software team discovers that a requirement no longer matches the user's current needs, which V&V activity should they prioritize?", 'options': {'A': 'Verification of the design against the outdated requirement.', 'B': 'Validation of the requirement against real user needs.', 'C': 'Static code analysis to find implementation defects.', 'D': 'Performance testing to measure response times.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    3.07s 
+            Completions:0.618610143s
+            Tokens:     587
+            Predicted:  B
+            Correct:    True
+
+
+        
+[6/50]  Unknown question: How does the “static” V&V technique diff....
+
+            Question:   {'question': 'How does the “static” V&V technique differ analytically from testing according to the text?', 'options': {'A': 'Static techniques require executing the software, while testing does not.', 'B': 'Static techniques analyze artifacts without execution; testing involves running the software.', 'C': 'Static techniques are only used after all testing is completed.', 'D': 'Static techniques focus solely on performance metrics.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    10.26s 
+            Completions:0.699747344s
+            Tokens:     647
+            Predicted:  B
+            Correct:    True
+
+
+        
+[7/50]  Unknown question: Which pair of questions best reflects th....
+
+            Question:   {'question': 'Which pair of questions best reflects the core purpose of validation and verification respectively?', 'options': {'A': '“Are we building the product right?” and “Are we building the right product?”', 'B': '“Are we building the right product?” and “Are we building the product right?”', 'C': '“Is the code bug‑free?” and “Does the user like the interface?”', 'D': '“Can the system scale?” and “Is the documentation complete?”'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    7.42s 
+            Completions:0.929848626s
+            Tokens:     843
+            Predicted:  A
+            Correct:    False
+
+
+        
+[8/50]  Unknown question: Considering the goal of establishing con....
+
+================================================================================
+🔍 FULL REASONING FOR QUESTION #8:
+================================================================================
+**1. Restate the question in my own words**
+
+We want to know which activity most directly supports *verification*—the process of confirming that a system actually satisfies its specified requirements and is therefore “fit for purpose.”
+
+**2. Analyze each option**
+
+| Option | What it means | Correct/Incorrect? | Why |
+|--------|---------------|--------------------|-----|
+| **A) Conducting a market analysis to gauge user demand.** | A study of the market to see if there is a need for the product. | **Incorrect** | Market analysis informs *validation* (does the product meet user needs?) and business decisions, not verification, which focuses on meeting technical specifications. |
+| **B) Reviewing the software design to ensure it meets specified functional requirements.** | Examining the design documents, architecture, and code to confirm they satisfy the functional requirements that were defined earlier. | **Correct** | Verification is “are we building the product right?” Checking design against requirements is a classic verification activity. |
+| **C) Holding a focus group with end‑users to assess satisfaction.** | Gathering user feedback on the product’s usability and satisfaction. | **Incorrect** | This is a validation activity (does the product meet user expectations?) and does not directly verify that the system meets its technical specs. |
+| **D) Performing a risk assessment of potential future changes.** | Identifying and evaluating risks related to future modifications or extensions. | **Incorrect** | Risk assessment is part of risk management and planning; it does not directly verify current compliance with requirements. |
+
+**3. Eliminate the incorrect options**
+
+- **A** is about market demand → validation, not verification.  
+- **C** is user satisfaction → validation.  
+- **D** is future‑change risk → risk management, not verification.  
+
+Only **B** remains as a verification activity.
+
+**4. Choose the best answer**
+
+The activity that most directly contributes to verification—confirming that the system meets its specified functional requirements—is **B) Reviewing the software design to ensure it meets specified functional requirements.**
+
+**5. FINAL ANSWER**
+
+B
+================================================================================
+Predicted: B | Correct: True
+
+
+            Question:   {'question': 'Considering the goal of establishing confidence that a system is “fit for purpose,” which activity contributes most directly to verification?', 'options': {'A': 'Conducting a market analysis to gauge user demand.', 'B': 'Reviewing the software design to ensure it meets specified functional requirements.', 'C': 'Holding a focus group with end‑users to assess satisfaction.', 'D': 'Performing a risk assessment of potential future changes.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    8.17s 
+            Completions:0.599066224s
+            Tokens:     568
+            Predicted:  B
+            Correct:    True
+
+
+        
+[9/50]  Unknown question: An organization claims that its software....
+
+            Question:   {'question': 'An organization claims that its software testing phase alone guarantees the system is “fit for purpose.” Based on the context, what analytical flaw exists in this claim?', 'options': {'A': 'Testing can demonstrate both the presence and absence of errors.', 'B': 'Testing alone cannot address whether the system meets real user needs.', 'C': 'Testing automatically includes static inspections and reviews.', 'D': 'Testing ensures all non‑functional requirements are satisfied.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    6.48s 
+            Completions:0.78292887s
+            Tokens:     619
+            Predicted:  B
+            Correct:    True
+
+
+        
+[10/50]  Unknown question: When a software project initiates V&V ac....
+
+            Question:   {'question': 'When a software project initiates V&V activities as soon as requirements become available, which analytical advantage does this early start provide?', 'options': {'A': 'It eliminates the need for any later testing phases.', 'B': 'It ensures that both verification and validation can influence design decisions throughout development.', 'C': 'It guarantees that all requirements are immutable after the first review.', 'D': 'It focuses solely on performance testing from the outset.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    4.92s 
+            Completions:0.514159467s
+            Tokens:     500
+            Predicted:  B
+            Correct:    True
+
+
+        
+[11/50]  Unknown question: When preparing a use case diagram for a ....
+
+            Question:   {'question': 'When preparing a use case diagram for a healthcare management system similar to the one described, which of the following groups should be identified as primary actors based on the context text?', 'options': {'A': 'Software developers, testers, and project managers', 'B': 'Nurse, Doctor, and Medical receptionist', 'C': 'Database administrator, network engineer, and security analyst', 'D': 'End‑user customers, shareholders, and regulators'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    9.29s 
+            Completions:0.569115441s
+            Tokens:     536
+            Predicted:  B
+            Correct:    True
+
+
+        
+[12/50]  Unknown question: In constructing a use case diagram, whic....
+
+            Question:   {'question': 'In constructing a use case diagram, which element must be linked to a textual description according to the provided material?', 'options': {'A': 'Each actor’s name only', 'B': 'Every use case name', 'C': 'Only the system boundary box', 'D': 'The diagram’s title block'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    5.82s 
+            Completions:0.298996325s
+            Tokens:     282
+            Predicted:  B
+            Correct:    True
+
+
+        
+[13/50]  Unknown question: Which of the following statements best r....
+
+            Question:   {'question': 'Which of the following statements best reflects the guideline for writing user requirements that will later be represented in a use case diagram?', 'options': {'A': 'Use formal UML notation directly in the requirement text.', 'B': 'Include software jargon to ensure precision.', 'C': 'Write in natural language supplemented by simple tables and intuitive diagrams.', 'D': 'Rely solely on mathematical models for clarity.'}, 'correct_answer': 'C', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    2.31s 
+            Completions:0.736668231s
+            Tokens:     695
+            Predicted:  C
+            Correct:    True
+
+
+        
+[14/50]  Unknown question: When linking a use case diagram to other....
+
+            Question:   {'question': 'When linking a use case diagram to other UML models, which of the following is a correct practice based on the text?', 'options': {'A': 'Attach the diagram directly to source code files.', 'B': 'Connect each use case to its corresponding sequence diagram that models implementation.', 'C': 'Replace the textual description with the diagram entirely.', 'D': 'Omit any relationship to class diagrams to keep the use case diagram independent.'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    9.47s 
+            Completions:0.700771456s
+            Tokens:     652
+            Predicted:  B
+            Correct:    True
+
+
+        
+[15/50]  Unknown question: Which testing approach is directly suppo....
+
+            Question:   {'question': 'Which testing approach is directly supported by a well‑constructed use case diagram, as described in the context?', 'options': {'A': 'Unit testing of individual methods', 'B': 'Use case‑based system testing that forces component interactions', 'C': 'Performance testing of database queries', 'D': 'Static code analysis for style violations'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    8.36s 
+            Completions:0.771094253s
+            Tokens:     735
+            Predicted:  B
+            Correct:    True
+
+
+        
+[16/50]  Unknown question: To comply with the guideline that user r....
+
+            Question:   {'question': 'To comply with the guideline that user requirements avoid formal notations, which element should you exclude from the initial use case diagram draft?', 'options': {'A': 'Actors representing real users', 'B': 'Natural‑language labels on use cases', 'C': 'UML stereotypes such as «extend» or «include»', 'D': 'System boundary box'}, 'correct_answer': 'C', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    12.62s 
+            Completions:0.977366831s
+            Tokens:     892
+            Predicted:  C
+            Correct:    True
+
+
+        
+[17/50]  Unknown question: When designing a use case diagram for a ....
+
+            Question:   {'question': 'When designing a use case diagram for a system that includes “Generate report” and “Edit record” functionalities, which relationship best captures the dependency between these two use cases according to standard UML practice implied in the context?', 'options': {'A': '«include» from “Generate report” to “Edit record”', 'B': '«extend» from “Edit record” to “Generate report”', 'C': 'Association line without any stereotype', 'D': 'Generalization between the two use cases'}, 'correct_answer': 'B', 'bloom_level': 'Create'}
+            ============================================================
+            Latency:    7.61s 
+            Completions:0.999105968s
+            Tokens:     927
+            Predicted:  A
+            Correct:    False
+
+
+        
+[18/50]  Unknown question: According to the context, which of the f....
+
+================================================================================
+🔍 FULL REASONING FOR QUESTION #18:
+================================================================================
+The question asks which step should be taken after creating a use‑case diagram but before writing detailed test cases.
+
+**Analysis of each option**
+
+| Option | What it means | Is it correct? | Why |
+|--------|---------------|----------------|-----|
+| **A** | Apply partition testing to each use‑case’s input domain. | **Incorrect** | Partition testing is a test‑design technique that is applied *after* test cases have been written. It is not a preparatory step before test‑case creation. |
+| **B** | Create a sequence diagram that models how each use case will be implemented. | **Correct** | Sequence diagrams provide a detailed view of the interactions between objects for each use case. They help clarify the flow and identify the elements that will be exercised by test cases, making them a logical step between the high‑level use‑case diagram and the detailed test‑case design. |
+| **C** | Replace natural‑language requirements with formal specifications. | **Incorrect** | Formalizing requirements is part of the requirements‑engineering phase and typically occurs *before* the use‑case diagram is drafted. It is not a step that follows the diagram but precedes it. |
+| **D** | Perform unit testing on every method referenced in the diagram. | **Incorrect** | Unit testing is performed after the code is written, not before test‑case design. |
+
+**Elimination**
+
+- A, C, and D are incorrect for the reasons above.  
+- Only B remains viable.
+
+**Best answer**
+
+The appropriate step after drafting the use‑case diagram and before writing detailed test cases is to develop sequence diagrams for each use case, which provides the necessary detail for test‑case design.
+
+**FINAL ANSWER: B**
+================================================================================
+Predicted: B | Correct: True
+
+
+            Question:   {'question': 'According to the context, which of the following steps should be performed after drafting the use case diagram but before writing detailed test cases?', 'options': {'A': 'Conduct partition testing on each use case input domain.', 'B': 'Develop a sequence diagram to model the implementation of each use case.', 'C': 'Replace natural‑language requirements with formal specifications.', 'D': 'Perform unit testing on every method referenced in the diagram.'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    8.36s 
+            Completions:0.755431352s
+            Tokens:     690
+            Predicted:  B
+            Correct:    True
+
+
+        
+[19/50]  Unknown question: Which of the following best differentiat....
+
+            Question:   {'question': 'Which of the following best differentiates system testing from component testing in terms of their primary testing focus?', 'options': {'A': 'System testing concentrates on component interfaces, while component testing concentrates on component interactions.', 'B': 'System testing concentrates on component interactions, while component testing concentrates on component interfaces.', 'C': 'Both focus equally on interfaces and interactions, but system testing does it later in the life‑cycle.', 'D': 'Component testing validates whole‑system behavior, whereas system testing validates only individual units.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    7.37s 
+            Completions:0.7611983s
+            Tokens:     690
+            Predicted:  B
+            Correct:    True
+
+
+        
+[20/50]  Unknown question: How does system testing differ from unit....
+
+            Question:   {'question': 'How does system testing differ from unit testing regarding the level of integration of code elements?', 'options': {'A': 'System testing exercises isolated methods, while unit testing exercises integrated components.', 'B': 'System testing exercises integrated components, while unit testing exercises isolated methods or classes.', 'C': 'Both test isolated units; the difference lies only in the test data used.', 'D': 'Unit testing integrates reusable off‑the‑shelf components, while system testing does not.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    9.16s 
+            Completions:0.580286826s
+            Tokens:     564
+            Predicted:  B
+            Correct:    True
+
+
+        
+[21/50]  Unknown question: According to the context, what is the ch....
+
+            Question:   {'question': 'According to the context, what is the chief purpose of interaction testing performed during system testing?', 'options': {'A': 'To verify that each unit meets its functional specification in isolation.', 'B': 'To discover component bugs that appear only when components are used together.', 'C': 'To measure performance of individual methods under load.', 'D': 'To ensure that test cases follow the design patterns described in Section 8.1.2.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    5.15s 
+            Completions:0.681116139s
+            Tokens:     617
+            Predicted:  B
+            Correct:    True
+
+
+        
+[22/50]  Unknown question: At which testing stage is the compatibil....
+
+            Question:   {'question': 'At which testing stage is the compatibility of reusable off‑the‑shelf components with newly developed components primarily examined?', 'options': {'A': 'Unit testing', 'B': 'Component testing', 'C': 'System testing', 'D': 'Validation testing'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    7.98s 
+            Completions:0.616390155s
+            Tokens:     572
+            Predicted:  B
+            Correct:    False
+
+
+        
+[23/50]  Unknown question: How does component testing differ from u....
+
+            Question:   {'question': 'How does component testing differ from unit testing in terms of the code elements that are exercised?', 'options': {'A': 'Component testing validates individual methods; unit testing validates composite components.', 'B': 'Component testing integrates several units to form composite components and tests their interfaces; unit testing tests isolated methods or classes.', 'C': 'Both test the same elements; the difference is only in the test team composition.', 'D': 'Unit testing focuses on data‑flow across components, while component testing focuses on performance.'}, 'correct_answer': 'B', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    6.03s 
+            Completions:0.53416924s
+            Tokens:     522
+            Predicted:  B
+            Correct:    True
+
+
+        
+[24/50]  Unknown question: Which statement correctly captures the d....
+
+            Question:   {'question': 'Which statement correctly captures the difference between system testing and component testing regarding verification of data flow?', 'options': {'A': 'System testing verifies that data is transferred correctly across component interfaces at the system level; component testing verifies that interfaces provide access to component functions.', 'B': 'Component testing verifies system‑wide data flow; system testing verifies only local data flow inside a component.', 'C': 'Both testing levels verify data flow in identical ways; the distinction is only in the documentation used.', 'D': 'System testing does not consider data flow, whereas component testing does.'}, 'correct_answer': 'A', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    8.31s 
+            Completions:0.753476233s
+            Tokens:     729
+            Predicted:  A
+            Correct:    True
+
+
+        
+[25/50]  Unknown question: Which testing activity is most likely to....
+
+            Question:   {'question': 'Which testing activity is most likely to involve a separate testing team with no involvement from designers and programmers?', 'options': {'A': 'Unit testing', 'B': 'Component testing', 'C': 'System testing', 'D': 'Validation testing'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    6.06s 
+            Completions:0.704845927s
+            Tokens:     672
+            Predicted:  C
+            Correct:    True
+
+
+        
+[26/50]  Unknown question: When multiple sub‑teams develop componen....
+
+            Question:   {'question': 'When multiple sub‑teams develop components that must work together, which testing phase is intended to uncover misunderstandings between those components?', 'options': {'A': 'Unit testing', 'B': 'Component testing', 'C': 'System testing (interaction testing)', 'D': 'Regression testing'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    7.96s 
+            Completions:0.428786988s
+            Tokens:     399
+            Predicted:  C
+            Correct:    True
+
+
+        
+[27/50]  Unknown question: Which testing level explicitly focuses o....
+
+            Question:   {'question': 'Which testing level explicitly focuses on testing the functionality of objects or methods rather than their interactions?', 'options': {'A': 'System testing', 'B': 'Component testing', 'C': 'Integration testing', 'D': 'Unit testing'}, 'correct_answer': 'D', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    6.04s 
+            Completions:0.529135395s
+            Tokens:     520
+            Predicted:  D
+            Correct:    True
+
+
+        
+[28/50]  Unknown question: Which pair correctly matches the testing....
+
+            Question:   {'question': 'Which pair correctly matches the testing level with its primary focus as described in the context?', 'options': {'A': 'Unit testing – testing component interactions across the whole system.', 'B': 'Component testing – testing the functionality of individual methods in isolation.', 'C': 'System testing – testing component interactions and data transfer across interfaces.', 'D': 'Integration testing – testing reusable off‑the‑shelf components only.'}, 'correct_answer': 'C', 'bloom_level': 'Analyze'}
+            ============================================================
+            Latency:    6.50s 
+            Completions:1.017270774s
+            Tokens:     1000
+            Predicted:  X
+            Correct:    False
+
+
+        
+[29/50]  Unknown question: What is a software inspection and how do....
+
+            Question:   {'question': 'What is a software inspection and how does it differ from testing in terms of execution requirements?', 'options': {'A': 'It is a dynamic technique that requires running the software to find defects.', 'B': 'It is a static technique that does not require executing the software.', 'C': 'It is a form of debugging performed after testing failures are identified.', 'D': 'It is an automated tool that generates test cases from source code.'}, 'correct_answer': 'B', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    9.58s 
+            Completions:0.578615998s
+            Tokens:     549
+            Predicted:  B
+            Correct:    True
+
+
+        
+[30/50]  Unknown question: According to the context, which artifact....
+
+            Question:   {'question': 'According to the context, which artifacts can be examined during a software inspection?', 'options': {'A': 'Only the program source code.', 'B': 'Requirements, design models, source code, and proposed system tests.', 'C': 'Executable binaries and runtime logs.', 'D': 'User manuals and marketing materials.'}, 'correct_answer': 'B', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    7.15s 
+            Completions:0.614370635s
+            Tokens:     597
+            Predicted:  B
+            Correct:    True
+
+
+        
+[31/50]  Unknown question: Why might an organization choose inspect....
+
+            Question:   {'question': 'Why might an organization choose inspections over testing for detecting interface errors?', 'options': {'A': 'Inspections can automatically fix the detected errors.', 'B': 'Inspections can concentrate on component interfaces without needing to run the software.', 'C': 'Inspections are cheaper because they replace all testing activities.', 'D': 'Inspections guarantee that no runtime errors will ever occur.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    6.44s 
+            Completions:0.67003763s
+            Tokens:     627
+            Predicted:  B
+            Correct:    True
+
+
+        
+[32/50]  Unknown question: What advantage of software inspections o....
+
+            Question:   {'question': 'What advantage of software inspections over testing is explicitly mentioned in the material?', 'options': {'A': 'Inspections guarantee 100 % defect removal.', 'B': 'Inspections can be performed earlier in the development lifecycle.', 'C': 'Inspections require less specialized knowledge than testing.', 'D': 'Inspections eliminate the need for any subsequent testing.'}, 'correct_answer': 'B', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    7.27s 
+            Completions:0.705549329s
+            Tokens:     667
+            Predicted:  B
+            Correct:    True
+
+
+        
+[33/50]  Unknown question: In the Cleanroom process, what proportio....
+
+            Question:   {'question': 'In the Cleanroom process, what proportion of defects is claimed to be discoverable through program inspections?', 'options': {'A': 'About 50 %', 'B': 'More than 70 %', 'C': 'More than 90 %', 'D': 'Nearly 100 %'}, 'correct_answer': 'C', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    7.35s 
+            Completions:0.625784739s
+            Tokens:     604
+            Predicted:  C
+            Correct:    True
+
+
+        
+[34/50]  Unknown question: How do inspections contribute to verific....
+
+            Question:   {'question': 'How do inspections contribute to verification according to the provided text?', 'options': {'A': 'By executing the software with a full set of test cases.', 'B': 'By checking that the software meets its stated functional and non‑functional requirements without running it.', 'C': 'By measuring performance metrics during runtime.', 'D': 'By collecting user feedback after deployment.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    7.48s 
+            Completions:0.768640974s
+            Tokens:     727
+            Predicted:  B
+            Correct:    True
+
+
+        
+[35/50]  Unknown question: Which statement best captures the role o....
+
+            Question:   {'question': 'Which statement best captures the role of knowledge about the application domain during an inspection?', 'options': {'A': 'It is unnecessary because inspections only focus on syntax errors.', 'B': 'It helps the inspector discover errors in requirements, design, or code.', 'C': 'It replaces the need for any formal inspection checklist.', 'D': 'It is only relevant when inspecting user interface mock‑ups.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    8.31s 
+            Completions:0.54861004s
+            Tokens:     532
+            Predicted:  B
+            Correct:    True
+
+
+        
+[36/50]  Unknown question: Which of the following is NOT a type of ....
+
+            Question:   {'question': 'Which of the following is NOT a type of fault that testing aims to uncover, as described in the context?', 'options': {'A': 'System crashes.', 'B': 'Unwanted interactions with other systems.', 'C': 'Incorrect computations.', 'D': 'Misaligned documentation formatting.'}, 'correct_answer': 'D', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    4.00s 
+            Completions:0.541814875s
+            Tokens:     521
+            Predicted:  D
+            Correct:    True
+
+
+        
+[37/50]  Unknown question: How does the inspection process relate t....
+
+            Question:   {'question': 'How does the inspection process relate to the overall verification and validation (V&V) activities?', 'options': {'A': 'Inspections are the only V&V activity required before release.', 'B': 'Inspections and testing support V&V at different stages of the software process.', 'C': 'Inspections replace validation because they verify user expectations.', 'D': 'Inspections are performed after all testing is completed.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    7.01s 
+            Completions:0.458978489s
+            Tokens:     445
+            Predicted:  B
+            Correct:    True
+
+
+        
+[38/50]  Unknown question: Which of the following best explains why....
+
+            Question:   {'question': 'Which of the following best explains why inspections are classified as “static” techniques?', 'options': {'A': 'They involve running the software with static input data.', 'B': 'They analyze software artifacts without executing the program.', 'C': 'They use static code analysis tools that automatically modify code.', 'D': 'They focus only on static variables in the source code.'}, 'correct_answer': 'B', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    6.03s 
+            Completions:0.545442221s
+            Tokens:     526
+            Predicted:  B
+            Correct:    True
+
+
+        
+[39/50]  Unknown question: Which of the following statements best e....
+
+            Question:   {'question': 'Which of the following statements best explains the concept of equivalence partitioning as described in the provided material?', 'options': {'A': 'It divides all possible test inputs into groups where each group is expected to produce identical results, so testing one member of a group is sufficient.', 'B': 'It requires testing every possible input value individually to guarantee complete coverage.', 'C': 'It focuses only on invalid inputs and ignores valid input ranges.', 'D': 'It is used solely for performance testing, not functional testing.'}, 'correct_answer': 'A', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    8.00s 
+            Completions:0.613823476s
+            Tokens:     562
+            Predicted:  A
+            Correct:    True
+
+
+        
+[40/50]  Unknown question: According to the context, why might a te....
+
+            Question:   {'question': 'According to the context, why might a tester create a separate input equivalence partition that only shares the characteristic of producing outputs in the same output partition?', 'options': {'A': 'To reduce the number of test cases by merging valid and invalid inputs.', 'B': 'Because some inputs, although different, lead to the same type of output and can be tested together.', 'C': 'To ensure that every possible output is tested with every possible input.', 'D': 'To comply with validation testing guidelines that require unique inputs for each output.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    4.98s 
+            Completions:0.50152802s
+            Tokens:     437
+            Predicted:  B
+            Correct:    True
+
+
+        
+[41/50]  Unknown question: In validation testing, test cases are se....
+
+================================================================================
+🔍 FULL REASONING FOR QUESTION #41:
+================================================================================
+**1. Restate the question in my own words**  
+The question asks how the technique of equivalence partitioning helps create test cases that represent how the system will actually be used during validation testing.
+
+**2. Analyze each option**
+
+- **Option A: “By deliberately selecting obscure inputs that are unlikely to be used in practice.”**  
+  - *What it means*: It suggests choosing rare or unusual inputs that customers probably won’t enter.  
+  - *Correctness*: **Incorrect**. Equivalence partitioning is meant to cover typical, realistic inputs, not obscure ones.  
+  - *Supporting knowledge*: Validation testing focuses on expected use; obscure inputs would be more relevant to stress or robustness testing, not validation.
+
+- **Option B: “By dividing the expected input domain into representative groups and choosing typical values from each.”**  
+  - *What it means*: It describes the core idea of equivalence partitioning: split the input space into partitions (valid and invalid) and pick a representative value from each partition.  
+  - *Correctness*: **Correct**. This is exactly how equivalence partitioning supports validation testing by ensuring test cases reflect typical usage.  
+  - *Supporting knowledge*: Equivalence partitioning reduces the number of test cases while still covering all functional input ranges.
+
+- **Option C: “By focusing exclusively on boundary values without considering middle values.”**  
+  - *What it means*: It implies only testing the edges of input ranges.  
+  - *Correctness*: **Incorrect**. Boundary value analysis is a separate technique; equivalence partitioning also includes interior values.  
+  - *Supporting knowledge*: Validation testing uses both boundary and interior values; ignoring middle values would miss many typical cases.
+
+- **Option D: “By ignoring invalid inputs entirely.”**  
+  - *What it means*: It suggests not testing any invalid inputs.  
+  - *Correctness*: **Incorrect**. Equivalence partitioning includes both valid and invalid partitions; invalid inputs are also tested.  
+  - *Supporting knowledge*: Validation testing must confirm that the system rejects invalid data appropriately.
+
+**3. Eliminate the incorrect options**  
+Options A, C, and D are all incorrect for the reasons above.
+
+**4. Choose the best answer**  
+Option B correctly describes how equivalence partitioning supports validation testing by selecting representative values from each partition of the expected input domain.
+
+**5. FINAL ANSWER**  
+B
+================================================================================
+Predicted: B | Correct: True
+
+
+            Question:   {'question': 'In validation testing, test cases are selected to reflect the system’s expected use. How does equivalence partitioning support this type of testing?', 'options': {'A': 'By deliberately selecting obscure inputs that are unlikely to be used in practice.', 'B': 'By dividing the expected input domain into representative groups and choosing typical values from each.', 'C': 'By focusing exclusively on boundary values without considering middle values.', 'D': 'By ignoring invalid inputs entirely.'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    7.17s 
+            Completions:0.693021322s
+            Tokens:     645
+            Predicted:  B
+            Correct:    True
+
+
+        
+[42/50]  Unknown question: A function under test accepts a numeric ....
+
+            Question:   {'question': 'A function under test accepts a numeric code that can be 0, 1, or any integer greater than 1. Which set of equivalence partitions correctly captures the valid and invalid input domains?', 'options': {'A': 'Valid: {0,1}, Invalid: {>1}', 'B': 'Valid: {0,1,>1}, Invalid: {}', 'C': 'Valid: {0,1}, Valid: {>1}, Invalid: {}', 'D': 'Valid: {0,1,>1}, Invalid: {non‑numeric values}'}, 'correct_answer': 'D', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    6.69s 
+            Completions:1.073931834s
+            Tokens:     1000
+            Predicted:  X
+            Correct:    False
+
+
+        
+[43/50]  Unknown question: Which of the following best describes th....
+
+            Question:   {'question': 'Which of the following best describes the relationship that can exist between input and output equivalence partitions?', 'options': {'A': 'Each input partition must map to multiple unrelated output partitions.', 'B': 'There is always a one‑to‑one mapping between every input and output partition.', 'C': 'Sometimes a single input partition corresponds to a single output partition, but not always.', 'D': 'Input partitions and output partitions are unrelated concepts.'}, 'correct_answer': 'C', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    9.65s 
+            Completions:1.114068724s
+            Tokens:     1000
+            Predicted:  D
+            Correct:    False
+
+
+        
+[44/50]  Unknown question: When performing defect testing, how migh....
+
+            Question:   {'question': 'When performing defect testing, how might a tester use equivalence partitioning differently from validation testing?', 'options': {'A': 'By selecting only the most common inputs from each valid partition.', 'B': 'By creating partitions that include obscure or unlikely inputs to expose hidden defects.', 'C': 'By avoiding any invalid input partitions.', 'D': 'By testing every single value in each partition.'}, 'correct_answer': 'B', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    10.09s 
+            Completions:0.780717135s
+            Tokens:     752
+            Predicted:  B
+            Correct:    True
+
+
+        
+[45/50]  Unknown question: Which of the following is an example of ....
+
+            Question:   {'question': 'Which of the following is an example of an invalid input equivalence partition as described in the context?', 'options': {'A': 'All ages between 0 and 120.', 'B': 'All strings that are longer than 255 characters.', 'C': 'All negative numbers when only non‑negative numbers are allowed.', 'D': 'All dates in the future for a system that only processes past dates.'}, 'correct_answer': 'C', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    9.65s 
+            Completions:1.069332672s
+            Tokens:     1000
+            Predicted:  D
+            Correct:    False
+
+
+        
+[46/50]  Unknown question: How does equivalence partitioning help r....
+
+            Question:   {'question': 'How does equivalence partitioning help reduce the number of test cases needed for a component?', 'options': {'A': 'By requiring that every possible input be tested at least once.', 'B': 'By allowing the tester to select one representative value from each partition, assuming all members behave the same.', 'C': 'By focusing only on boundary values and ignoring interior values.', 'D': 'By eliminating the need for any test cases that target invalid inputs.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    9.32s 
+            Completions:0.709916698s
+            Tokens:     660
+            Predicted:  B
+            Correct:    True
+
+
+        
+[47/50]  Unknown question: A software component processes a string ....
+
+            Question:   {'question': 'A software component processes a string input that must be exactly 5 characters long, consisting only of uppercase letters. Which equivalence partitions should a tester define?', 'options': {'A': 'Valid: {5‑character uppercase strings}; Invalid: {all other strings}.', 'B': 'Valid: {any string}; Invalid: {}.', 'C': 'Valid: {uppercase strings of any length}; Invalid: {non‑uppercase strings}.', 'D': 'Valid: {5‑character strings}; Invalid: {strings of other lengths}.'}, 'correct_answer': 'A', 'bloom_level': 'Apply'}
+            ============================================================
+            Latency:    8.23s 
+            Completions:0.647187384s
+            Tokens:     629
+            Predicted:  A
+            Correct:    True
+
+
+        
+[48/50]  Unknown question: In the context of equivalence partitioni....
+
+================================================================================
+🔍 FULL REASONING FOR QUESTION #48:
+================================================================================
+The statement means that every input that falls into the same equivalence partition should be handled by the program in the same manner—i.e., the same sequence of operations or code path should be executed for all members of that partition.
+
+**Option Analysis**
+
+| Option | What it says | Correct? | Why |
+|--------|--------------|----------|-----|
+| **A** | The program must produce identical output values for every member of the partition. | ❌ | Equivalence partitioning does not require identical outputs; it only requires that the program’s *behavior* (code path, error handling, etc.) be consistent across the partition. Different inputs can yield different outputs while still following the same logic. |
+| **B** | The program must execute the same code path for every member of the partition, leading to equivalent behavior. | ✅ | This is exactly what equivalence partitioning aims for: all inputs in a partition should trigger the same internal processing, ensuring that testing one representative is sufficient. |
+| **C** | The program must reject all members of the partition as invalid. | ❌ | Only the *invalid* partitions are rejected; valid partitions should be processed normally. |
+| **D** | The program must treat the partition as a single input value. | ❌ | A partition is a set of inputs, not a single value; the program still receives individual inputs but should treat them uniformly. |
+
+**Elimination**
+
+- A, C, and D are incorrect for the reasons above.  
+- B remains the only correct choice.
+
+**Conclusion**
+
+The correct interpretation is that the program should execute the same code path for every member of an equivalence partition, ensuring equivalent behavior.
+
+**FINAL ANSWER**  
+B
+================================================================================
+Predicted: B | Correct: True
+
+
+            Question:   {'question': 'In the context of equivalence partitioning, what is meant by the statement “a program being tested should process all of the members of an input equivalence partition in the same way”?', 'options': {'A': 'The program must produce identical output values for every member of the partition.', 'B': 'The program must execute the same code path for every member of the partition, leading to equivalent behavior.', 'C': 'The program must reject all members of the partition as invalid.', 'D': 'The program must treat the partition as a single input value.'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    6.24s 
+            Completions:0.662792316s
+            Tokens:     615
+            Predicted:  B
+            Correct:    True
+
+
+        
+[49/50]  Unknown question: According to the context, what is the pr....
+
+            Question:   {'question': 'According to the context, what is the primary purpose of a software requirements document (SRS)?', 'options': {'A': 'To provide a marketing overview of the product', 'B': 'To serve as an official statement of what system developers should implement', 'C': 'To list the hardware specifications of the deployment environment', 'D': 'To detail the testing procedures for the finished system'}, 'correct_answer': 'B', 'bloom_level': 'Understand'}
+            ============================================================
+            Latency:    7.31s 
+            Completions:0.723340479s
+            Tokens:     651
+            Predicted:  B
+            Correct:    True
+
+
+        
+[50/50]  Unknown question: Which two types of requirements may be i....
+
+            Question:   {'question': 'Which two types of requirements may be included in an SRS according to the given text?', 'options': {'A': 'Financial and legal requirements', 'B': 'User requirements and detailed system requirements', 'C': 'Marketing requirements and branding guidelines', 'D': 'Hardware and network topology requirements'}, 'correct_answer': 'B', 'bloom_level': 'Remember'}
+            ============================================================
+            Latency:    22.43s 
+            Completions:0.852890905s
+            Tokens:     769
+            Predicted:  B
+            Correct:    True
+
+
+        
+
+============================================================
+DIFFICULTY JUSTIFICATION REPORT
+============================================================
+
+EASY: No data.
+
+MEDIUM: No data.
+
+HARD: No data.
+
+============================================================
+🎯 INTERPRETATION:
+============================================================
