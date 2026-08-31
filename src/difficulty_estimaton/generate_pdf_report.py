@@ -50,7 +50,7 @@ def generate_latex(detailed):
 \begin{center}
 {\Large \textbf{Question Difficulty Validation Report}} \\[4pt]
 {\small \# of Questions: """ + str(len(detailed)) + r"""} \\[4pt]
-\hline
+\noindent\rule{\linewidth}{0.4pt}
 \end{center}
 \vspace{0.3cm}
 """
