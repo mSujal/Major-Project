@@ -1,0 +1,16 @@
+{
+  "pdf": "Software-Defined Networking.pdf",
+  "pdf_path": "Datasets/evaluation/large/Software-Defined Networking.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-03T08:25:12.563338",
+  "mode": "fresh",
+  "page_count": 61,
+  "chunk_count": 1857,
+  "time_extraction_s": 43.517,
+  "time_chunking_s": 0.013,
+  "time_embedding_s": 374.428,
+  "time_store_s": 1.663,
+  "time_cache_load_s": null,
+  "time_total_s": 419.904,
+  "error": null
+}

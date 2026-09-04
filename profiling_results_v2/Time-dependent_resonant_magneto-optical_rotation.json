@@ -1,0 +1,19 @@
+{
+  "pdf": "Time-dependent_resonant_magneto-optical_rotation.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/short/Time-dependent_resonant_magneto-optical_rotation.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-02T15:49:32.162882",
+  "mode": "fresh",
+  "page_count": 10,
+  "chunk_count": 66,
+  "token_count": 4039,
+  "window_count": 1,
+  "time_extraction_s": 13.338,
+  "time_chunking_s": 0.001,
+  "time_tokenize_s": 0.03,
+  "time_embedding_s": 13.38,
+  "time_store_s": 0.093,
+  "time_cache_load_s": null,
+  "time_total_s": 26.863,
+  "error": null
+}

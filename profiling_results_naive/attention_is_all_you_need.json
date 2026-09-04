@@ -1,0 +1,16 @@
+{
+  "pdf": "attention_is_all_you_need.pdf",
+  "pdf_path": "Datasets/evaluation/medium/attention_is_all_you_need.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:52:19.539576",
+  "mode": "fresh",
+  "page_count": 15,
+  "chunk_count": 172,
+  "time_extraction_s": 12.972,
+  "time_chunking_s": 0.005,
+  "time_embedding_s": 38.406,
+  "time_store_s": 0.137,
+  "time_cache_load_s": null,
+  "time_total_s": 51.561,
+  "error": null
+}

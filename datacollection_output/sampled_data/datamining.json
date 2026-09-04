@@ -1,0 +1,774 @@
+{
+  "topic": "sampled MCQ questions from chapter 3.12",
+  "generated_at": "2026-09-03",
+  "pdf_path": "/home/sujan/Major-Project/Datasets/PDFs/chapter_3_12.pdf",
+  "questions": [
+    {
+      "question": "Why is it important to include a contrasting measure such as count% when presenting the final class comparison of discovered patterns?",
+      "options": {
+        "A": "It reduces the computational cost of mining by limiting the number of rules.",
+        "B": "It provides a quantitative way to compare the prevalence of a pattern in the target class versus a contrasting class, highlighting its discriminative power.",
+        "C": "It eliminates the need for attribute relevance analysis.",
+        "D": "It ensures that all attributes are treated equally in the final description."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "A contrasting measure like count% directly compares the target and contrasting classes, helping to assess how interesting or discriminative a rule is, as noted in the discussion of visualization on [Page 95]."
+    },
+    {
+      "question": "Which of the following examples best illustrates a **global outlier** as described in the text?",
+      "options": {
+        "A": "A temperature reading of 30 °C recorded in a tropical region where most values are between 28 °C and 32 °C.",
+        "B": "A single transaction of $10,000 in a dataset where the typical transaction amounts are between $5 and $50.",
+        "C": "A day’s sales that are unusually low because the store was closed for a holiday.",
+        "D": "A group of sensor readings that together deviate from the usual pattern, though each individual reading is normal."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Global outliers are data objects that deviate significantly from the rest of the dataset and are often called point anomalies. The $10,000 transaction stands out sharply from the usual $5–$50 range, matching the definition on [Page 101]."
+    },
+    {
+      "question": "Which characteristic best distinguishes OLTP systems from OLAP systems in terms of the primary type of queries they execute?",
+      "options": {
+        "A": "OLTP systems mainly run ad‑hoc analytical queries.",
+        "B": "OLAP systems primarily handle high‑volume transactional inserts.",
+        "C": "OLTP systems are optimized for short, simple, read‑write transactions, whereas OLAP systems focus on complex, read‑only analytical queries.",
+        "D": "OLAP systems use only batch processing, while OLTP systems use real‑time streaming."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "OLTP is designed for transactional, short read‑write operations, while OLAP supports complex analytical queries on large datasets. This distinction is highlighted in the OLTP vs OLAP comparison (Table 4.1) on page 48."
+    },
+    {
+      "question": "According to the context, which statement best describes the OLAP operation “slice”?",
+      "options": {
+        "A": "It removes one dimension by fixing a constant value, equivalent to a selection on a cuboid.",
+        "B": "It creates a new cuboid by grouping lower‑level members into higher‑level hierarchies.",
+        "C": "It rotates the axes of the cube so that rows become columns, similar to a pivot.",
+        "D": "It extracts a sub‑cube by applying both selection and projection on multiple dimensions."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that “slicing and dicing a data cube may correspond to selection and/or projection operations on a materialized cuboid” (Page 81). “Slice” fixes a constant on one dimension, i.e., a selection."
+    },
+    {
+      "question": "Which of the following best explains why materializing cuboids can improve the performance of OLAP queries?",
+      "options": {
+        "A": "It reduces the number of dimensions that must be stored in the warehouse.",
+        "B": "It pre‑computes and stores aggregate values, allowing queries to retrieve results without recomputing them.",
+        "C": "It eliminates the need for any indexing structures on the data cube.",
+        "D": "It converts a MOLAP model into a ROLAP model automatically."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Materializing cuboids means storing pre‑computed aggregates so that OLAP queries can be answered by simple lookups rather than recomputing aggregates each time, as described in the discussion of query processing and materialized views [Page 81]."
+    },
+    {
+      "question": "When a dataset contains many tuples with missing class labels, which handling technique is generally considered least effective according to the text?",
+      "options": {
+        "A": "Ignoring the entire tuple",
+        "B": "Filling missing values manually",
+        "C": "Using statistical imputation methods",
+        "D": "Applying a machine‑learning model that can handle missing attributes"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Ignoring the tuple is described as “not very effective” especially when missing values vary considerably across attributes [Page 6]."
+    },
+    {
+      "question": "What is the primary process of hierarchical clustering as described in the text?",
+      "options": {
+        "A": "Repeatedly grouping neighboring clusters to form higher‑level concepts",
+        "B": "Splitting large clusters into equal‑sized parts",
+        "C": "Assigning each data point to a predefined number of clusters",
+        "D": "Randomly merging unrelated data points"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The passage states that hierarchical clustering “forms clusters by repeatedly grouping neighboring clusters in order to form higher‑level concepts” [Page 34]."
+    },
+    {
+      "question": "Why is normalizing data to a range such as [0.0, 1.0] important when applying a distance‑based anomaly detection algorithm?",
+      "options": {
+        "A": "It reduces the dimensionality of the data, making clustering faster.",
+        "B": "It ensures that all attributes contribute equally to distance calculations, improving accuracy.",
+        "C": "It removes outliers before the algorithm runs, guaranteeing no false alarms.",
+        "D": "It converts categorical attributes into numerical values suitable for distance metrics."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Normalization scales attributes so that no single attribute dominates the distance measure, which improves the accuracy and efficiency of distance‑based mining algorithms. [Page 1, Page 4]"
+    },
+    {
+      "question": "Which of the following statements most accurately defines a data warehouse?",
+      "options": {
+        "A": "A real‑time transactional system that records only current operational data.",
+        "B": "A subject‑oriented, integrated, time‑variant, and nonvolatile collection of data supporting management decision making.",
+        "C": "A temporary cache that stores user session information for web applications.",
+        "D": "A set of loosely related files used for archival purposes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The definition matches the description on page 96 that a data warehouse is “subject‑oriented, integrated, time‑variant, and nonvolatile … organized in support of management decision making.”"
+    },
+    {
+      "question": "Which pieces of information are explicitly listed as part of an attribute’s metadata in the context?",
+      "options": {
+        "A": "Only the attribute’s name and data type",
+        "B": "The attribute’s name, meaning, data type, range of values, and null‑handling rules",
+        "C": "The attribute’s storage size and index type",
+        "D": "The attribute’s data type and foreign‑key relationships"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context states that metadata for each attribute includes the name, meaning, data type, range of values permitted, and null rules for handling blank, zero, or null values [Page 12]."
+    },
+    {
+      "question": "Which statement best captures the combined role of data sampling and dimensionality reduction in data reduction strategies?",
+      "options": {
+        "A": "Both techniques create a completely new dataset that discards the original information.",
+        "B": "Both aim to produce a smaller representation of the data while preserving the analytical usefulness of the original set.",
+        "C": "Sampling reduces attributes, whereas dimensionality reduction reduces the number of tuples.",
+        "D": "Neither technique affects the size of the data; they only improve visualisation."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Both sampling (a form of numerosity reduction) and dimensionality reduction are described as ways to obtain a reduced representation of the data that is much smaller in volume yet yields the same (or almost the same) analytical results. [Page 4, Page 26]"
+    },
+    {
+      "question": "Which of the following best describes the primary reason for performing data preprocessing according to the overview?",
+      "options": {
+        "A": "To increase the volume of raw data stored in databases.",
+        "B": "To improve data quality by addressing issues such as noise, missing values, and inconsistencies.",
+        "C": "To replace the need for data mining algorithms.",
+        "D": "To automatically generate business reports."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The overview states that data quality issues motivate preprocessing, aiming to produce high‑quality, clean data for mining [Page: 2]."
+    },
+    {
+      "question": "Which of the following best explains why data normalization is applied before distance‑based mining algorithms?",
+      "options": {
+        "A": "It reduces the number of attributes in the dataset.",
+        "B": "It scales all attribute values to a common range, preventing attributes with larger scales from dominating distance calculations.",
+        "C": "It converts categorical attributes into numeric ones.",
+        "D": "It guarantees that all values become integers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Normalization scales data to a smaller common range (e.g., 0.0 to 1.0) which improves the accuracy and efficiency of algorithms that use distance measurements [Page 1]."
+    },
+    {
+      "question": "Which statement correctly distinguishes the granularity of data that data mining can handle compared to that stored in a data warehouse?",
+      "options": {
+        "A": "Data mining only works with highly summarized data, while a data warehouse stores detailed transaction records.",
+        "B": "Data mining can analyze both detailed and summarized data, whereas a data warehouse typically stores summarized data for decision support.",
+        "C": "Data mining stores raw data, and a data warehouse performs the mining analysis.",
+        "D": "Both data mining and data warehouses always operate on the same level of data detail."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining may analyze data at more detailed granularities than the summarized data in a warehouse, which often stores aggregated information. [Page 72, 74]"
+    },
+    {
+      "question": "Which of the following most accurately defines data mining as described in the provided context?",
+      "options": {
+        "A": "The process of extracting raw data from operational databases for reporting.",
+        "B": "A set of techniques that find hidden patterns, build analytical models, and present results to support knowledge discovery.",
+        "C": "The execution of aggregate functions on stored data to answer simple queries.",
+        "D": "The transformation of data into a multidimensional cube for OLAP analysis."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that “data mining supports knowledge discovery by finding hidden patterns and associations, constructing analytical models, performing classification and prediction, and presenting the mining results using visualization tools” (Page 72)."
+    },
+    {
+      "question": "Which of the following correctly orders the primary steps of the KDD (Knowledge Discovery in Databases) process as described in the context?",
+      "options": {
+        "A": "Transform → Extract → Load → Clean → Refresh",
+        "B": "Extract → Clean → Transform → Load → Refresh",
+        "C": "Clean → Extract → Load → Transform → Refresh",
+        "D": "Load → Extract → Clean → Transform → Refresh"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists the steps as Extract, Clean, Transform, Load, and Refresh in that order [Page 49]."
+    },
+    {
+      "question": "Which of the following is NOT listed as a back‑end tool or utility used for populating and refreshing a data warehouse?",
+      "options": {
+        "A": "Data extraction",
+        "B": "Data cleaning",
+        "C": "Data transformation",
+        "D": "Data visualization"
+      },
+      "correct_answer": "D",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The context lists extraction, cleaning, transformation, loading, refreshing, and management, but not visualization as back‑end tools [Page 96]."
+    },
+    {
+      "question": "In a clustering‑based distance outlier detection method, what indicates that an object is likely an outlier?",
+      "options": {
+        "A": "The object lies exactly at the centroid of its nearest cluster.",
+        "B": "The distance between the object and the nearest cluster’s centroid is larger than a predefined threshold.",
+        "C": "The object belongs to multiple clusters simultaneously.",
+        "D": "The object has the smallest average distance to all other objects in the dataset."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "An object whose distance to the closest cluster is large is considered an outlier with respect to that cluster. [Page 124]"
+    },
+    {
+      "question": "According to the text, what is the primary purpose of using a correlation‑based analysis method in the context of anomaly detection?",
+      "options": {
+        "A": "To directly identify outlier instances in the dataset",
+        "B": "To filter out statistically irrelevant or weakly relevant attributes before mining",
+        "C": "To generate classification rules for distinguishing normal and anomalous data",
+        "D": "To compute the likelihood of each data point being an outlier"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The correlation‑based analysis method is described as a way to perform attribute relevance analysis and filter out statistically irrelevant or weakly relevant attributes from the descriptive mining process [Page 86]."
+    },
+    {
+      "question": "Why is the information gain measure considered biased when evaluating categorical attributes with many distinct values?",
+      "options": {
+        "A": "It underestimates the predictive power of attributes with few values.",
+        "B": "It favors attributes that split the data into many small groups.",
+        "C": "It assigns equal importance to all attribute values regardless of frequency.",
+        "D": "It ignores the hierarchical relationships among attribute values."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Information gain tends to favor attributes that have many distinct values because they create many small partitions, leading to a bias toward such attributes. This issue is noted on [Page 42]."
+    },
+    {
+      "question": "Why can overall accuracy be misleading as a performance measure for a classifier in the intrusion‑detection scenario described in the context?",
+      "options": {
+        "A": "Because a classifier that always predicts “normal” will still achieve high accuracy due to the large number of normal samples.",
+        "B": "Because the classifier’s speed is more important than its correctness.",
+        "C": "Because normalization of the data automatically corrects any misclassification.",
+        "D": "Because the intrusion‑detection system uses bitmap indexing, which inflates accuracy."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The context explains that normal samples far outnumber outlier samples, so a classifier that simply predicts “normal” can obtain a high accuracy despite being useless for detecting intrusions [Page 127]."
+    },
+    {
+      "question": "Which of the following examples best illustrates a **global outlier** as described in the text?",
+      "options": {
+        "A": "A temperature reading of 30 °C recorded in a tropical region where most values are between 28 °C and 32 °C.",
+        "B": "A single transaction of $10,000 in a dataset where the typical transaction amounts are between $5 and $50.",
+        "C": "A day’s sales that are unusually low because the store was closed for a holiday.",
+        "D": "A group of sensor readings that together deviate from the usual pattern, though each individual reading is normal."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Global outliers are data objects that deviate significantly from the rest of the dataset and are often called point anomalies. The $10,000 transaction stands out sharply from the usual $5–$50 range, matching the definition on [Page 101]."
+    },
+    {
+      "question": "According to Example 12.7, why are the two objects in region R considered outliers?",
+      "options": {
+        "A": "They are located far from the centroid of the larger cluster.",
+        "B": "They belong to a tiny cluster that is much smaller than the main cluster.",
+        "C": "They have higher variance than points in the larger cluster.",
+        "D": "They reside in a region with the highest density of points."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The example describes a tiny cluster C₂ containing only the two points in R, while cluster C₁ is large. The method flags the points in R as outliers because they form a very small cluster compared to the rest of the data. [Page 109]"
+    },
+    {
+      "question": "Which of the following is NOT mentioned in the context as a source of inaccurate data?",
+      "options": {
+        "A": "Incorrect attribute values entered during data collection.",
+        "B": "Missing or incomplete attribute values.",
+        "C": "Inconsistent data across records.",
+        "D": "Scaling data to the range 0.0–1.0 through normalization."
+      },
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text lists reasons for inaccurate data such as incorrect values, incompleteness, and inconsistency, but describes normalization as a technique that can improve accuracy, not cause inaccuracy [Page 2]."
+    },
+    {
+      "question": "How does a low base rate of outlier events affect the interpretation of classifier accuracy, as discussed in the context?",
+      "options": {
+        "A": "It allows a trivial “always‑normal” classifier to achieve high accuracy, masking poor detection performance.",
+        "B": "It forces the classifier to lower its overall accuracy.",
+        "C": "It makes accuracy an ideal sole metric for performance evaluation.",
+        "D": "It eliminates the need for any performance metric beyond accuracy."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The passage explains that because normal events dominate, a classifier that never predicts an outlier can still show high accuracy, illustrating the base‑rate fallacy [Page 127]."
+    },
+    {
+      "question": "What mechanism does the gain ratio use to mitigate the bias of information gain toward attributes with many values?",
+      "options": {
+        "A": "It normalizes information gain by the total number of records.",
+        "B": "It multiplies information gain by the number of distinct attribute values.",
+        "C": "It divides information gain by the intrinsic information of the attribute.",
+        "D": "It replaces information gain with the correlation coefficient."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Gain ratio addresses the bias by dividing the information gain by the intrinsic information (entropy) of the attribute, which reflects the distribution of its values. Discussed on [Page 42]."
+    },
+    {
+      "question": "How does reducing an attribute’s threshold influence the generalization of a categorical attribute in attribute‑oriented induction?",
+      "options": {
+        "A": "It causes the algorithm to roll up the attribute to a higher (more abstract) level in its hierarchy.",
+        "B": "It forces the attribute to be treated as a numeric measure instead of a dimension.",
+        "C": "It eliminates the attribute from the working relation entirely.",
+        "D": "It increases the number of distinct values retained, preventing any generalization."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Lowering the threshold means the algorithm is allowed to generalize more, which corresponds to rolling up the categorical attribute along its concept hierarchy. Discussed on [Page 88]."
+    },
+    {
+      "question": "In attribute‑oriented induction, how does a concept hierarchy help in handling categorical attributes during generalization?",
+      "options": {
+        "A": "It converts categorical values into numeric scores for clustering.",
+        "B": "It provides a predefined ladder of abstract levels to roll up specific categories.",
+        "C": "It merges all categories into a single “unknown” value to simplify analysis.",
+        "D": "It eliminates the need for any threshold settings on categorical attributes."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "A concept hierarchy defines successive abstraction levels for a categorical attribute, allowing the algorithm to roll up detailed categories to more general ones. See [Page 91]."
+    },
+    {
+      "question": "What is the primary benefit of using a correlation‑based analysis before the descriptive mining stage, in terms of pattern interestingness?",
+      "options": {
+        "A": "It guarantees that all discovered patterns will have 100% confidence.",
+        "B": "It reduces the search space to attributes that are more likely to form statistically significant and interesting patterns.",
+        "C": "It automatically creates visualizations for each pattern.",
+        "D": "It replaces the need for any user‑defined thresholds."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Performing correlation‑based analysis filters out weakly relevant attributes, focusing the mining on those likely to yield interesting patterns ([Page 86])."
+    },
+    {
+      "question": "In the context of pattern evaluation, what is the significance of “attribute generalization thresholds” (agenthresh(ai))?",
+      "options": {
+        "A": "They define the maximum number of attributes that can be used in a rule.",
+        "B": "They control the level at which attribute values are generalized, influencing the granularity and thus the perceived interestingness of patterns.",
+        "C": "They determine the statistical model (parametric vs. non‑parametric) to be applied.",
+        "D": "They automatically compute the count% contrasting measure."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Generalization thresholds set how much an attribute is abstracted, affecting the detail and interestingness of the resulting concepts ([Page 91])."
+    },
+    {
+      "question": "Which statement best captures the similarity between **outlier detection** and **novelty detection** as mentioned in the material?",
+      "options": {
+        "A": "Both rely exclusively on supervised learning with labeled outlier examples.",
+        "B": "Both can be modeled using the same detection techniques because novel topics initially appear as outliers.",
+        "C": "Outlier detection focuses on static datasets, whereas novelty detection only works on streaming data.",
+        "D": "Novelty detection requires a predefined set of known anomalies, while outlier detection does not."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text highlights that novel topics may initially appear as outliers, indicating a modeling similarity between outlier detection and novelty detection [Page 101]."
+    },
+    {
+      "question": "In the classification‑based approach to anomaly detection, what prerequisite is explicitly required according to the text?",
+      "options": {
+        "A": "A high‑cardinality domain for bitmap indexing",
+        "B": "A set of pre‑computed correlation coefficients among attributes",
+        "C": "A training data set that includes class labels distinguishing normal and outlier instances",
+        "D": "An unsupervised clustering algorithm to generate pseudo‑labels"
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The classification‑based method treats outlier detection as a classification problem and requires a training data set with class labels to distinguish normal data from outliers [Page 127]."
+    },
+    {
+      "question": "Which statement correctly pairs a proximity‑based outlier detection type with its primary characteristic?",
+      "options": {
+        "A": "Distance‑based detection – flags points that have fewer than *k* neighbors within a predefined radius.",
+        "B": "Density‑based detection – identifies points that lie in regions of lower point concentration compared to their surroundings.",
+        "C": "Distance‑based detection – measures the variance of a point’s attribute values against the global mean.",
+        "D": "Density‑based detection – requires a labeled training set to learn normal density patterns."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Density‑based outlier detection looks for points in low‑density regions relative to their neighborhood, as described on [Page 108]."
+    },
+    {
+      "question": "In the two‑step process for contextual outlier detection when contexts are clearly identified, which of the following correctly describes the steps?",
+      "options": {
+        "A": "First transform the contextual problem into a conventional outlier problem; then apply any standard global outlier detector.",
+        "B": "First cluster the data based on context; then label the smallest cluster as outliers.",
+        "C": "First compute the global density of all points; then remove points with density below a threshold.",
+        "D": "First train a classification model on labeled normal data; then classify remaining points as outliers."
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text explains that when contexts are identifiable, the problem is transformed into a typical outlier detection task, after which a conventional method is applied [Page 129]."
+    },
+    {
+      "question": "Which approach is most suitable for detecting outliers in **multivariate data** by converting the problem to a univariate one?",
+      "options": {
+        "A": "Applying a distance‑based proximity method directly to the multivariate space.",
+        "B": "Using a clustering‑based method to form clusters and flag points outside any cluster.",
+        "C": "Transforming the multivariate data into a single attribute (e.g., via a statistical summary) and then applying a univariate outlier detector.",
+        "D": "Training a classification model with outlier labels on the original multivariate attributes."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text states that many univariate methods can be extended to multivariate data by transforming the multivariate detection task into a univariate problem [Page 112]."
+    },
+    {
+      "question": "How does **clustering‑based outlier detection** identify anomalous objects?",
+      "options": {
+        "A": "By measuring the distance of each point to the overall dataset mean.",
+        "B": "By locating points that do not belong to any formed cluster or that fall far from cluster centroids.",
+        "C": "By computing the variance of each attribute and flagging points with high variance.",
+        "D": "By training a supervised classifier to separate normal points from outliers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text notes that clustering groups similar values; values that fall outside these groups are considered outliers [Page 8]."
+    },
+    {
+      "question": "When a dataset contains many tuples with missing class labels, which handling technique is generally considered least effective according to the text?",
+      "options": {
+        "A": "Ignoring the entire tuple",
+        "B": "Filling missing values manually",
+        "C": "Using statistical imputation methods",
+        "D": "Applying a machine‑learning model that can handle missing attributes"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Ignoring the tuple is described as “not very effective” especially when missing values vary considerably across attributes [Page 6]."
+    },
+    {
+      "question": "Suppose a data collection instrument frequently records the default date “January 1” for unknown birthdays. Which term from the context best describes this phenomenon?",
+      "options": {
+        "A": "Outlier detection",
+        "B": "Disguised missing data",
+        "C": "Data smoothing",
+        "D": "Attribute scaling"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The text explicitly calls such default entries “disguised missing data” [Page 2]."
+    },
+    {
+      "question": "In a scenario where an attribute has a high percentage of missing values, which approach is most likely to be impractical according to the provided material?",
+      "options": {
+        "A": "Deleting all records with missing values for that attribute",
+        "B": "Manually filling each missing entry",
+        "C": "Using a model‑based imputation technique",
+        "D": "Applying a global constant to replace missing entries"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Manually filling missing values is noted as “time consuming and may not be feasible” for large datasets with many missing values [Page 6]."
+    },
+    {
+      "question": "Which statement best captures the impact of noisy data on the data cleaning process as described in the context?",
+      "options": {
+        "A": "Noisy data are always removed before any analysis.",
+        "B": "Noisy data can be smoothed, but outliers must still be identified.",
+        "C": "Noisy data are irrelevant to data quality dimensions.",
+        "D": "Noisy data are automatically corrected by database systems."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "The text mentions that data cleaning “attempts to fill in missing values, smooth out noise while identifying outliers” [Page 6]."
+    },
+    {
+      "question": "If a dataset includes several attributes with missing values that differ greatly in the percentage of missingness, which handling method is likely to introduce the most bias?",
+      "options": {
+        "A": "Ignoring tuples with any missing attribute",
+        "B": "Replacing missing values with the mean of each attribute",
+        "C": "Using a k‑nearest‑neighbour imputation per attribute",
+        "D": "Leaving the missing values as null and using algorithms that tolerate nulls"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Hard",
+      "explanation": "Ignoring tuples is especially poor when the percentage of missing values per attribute varies considerably, leading to biased samples [Page 6]."
+    },
+    {
+      "question": "Which of the following best explains why data normalization is applied before distance‑based mining algorithms?",
+      "options": {
+        "A": "It reduces the number of attributes in the dataset.",
+        "B": "It scales all attribute values to a common range, preventing attributes with larger scales from dominating distance calculations.",
+        "C": "It converts categorical attributes into numeric ones.",
+        "D": "It guarantees that all values become integers."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Normalization scales data to a smaller common range (e.g., 0.0 to 1.0) which improves the accuracy and efficiency of algorithms that use distance measurements [Page 1]."
+    },
+    {
+      "question": "Which statement correctly distinguishes the granularity of data that data mining can handle compared to that stored in a data warehouse?",
+      "options": {
+        "A": "Data mining only works with highly summarized data, while a data warehouse stores detailed transaction records.",
+        "B": "Data mining can analyze both detailed and summarized data, whereas a data warehouse typically stores summarized data for decision support.",
+        "C": "Data mining stores raw data, and a data warehouse performs the mining analysis.",
+        "D": "Both data mining and data warehouses always operate on the same level of data detail."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining may analyze data at more detailed granularities than the summarized data in a warehouse, which often stores aggregated information. [Page 72, 74]"
+    },
+    {
+      "question": "Which characteristic differentiates a data warehouse from a traditional RDBMS/database?",
+      "options": {
+        "A": "Data warehouses are transaction‑oriented and frequently updated.",
+        "B": "Data warehouses are subject‑oriented, integrated, time‑variant, and non‑volatile.",
+        "C": "RDBMS stores only summarized data for decision making.",
+        "D": "Data warehouses do not support any form of querying."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A data warehouse is defined as subject‑oriented, integrated, time‑variant, and non‑volatile, unlike operational databases. [Page 96]"
+    },
+    {
+      "question": "How does the metadata repository of a data warehouse support data‑mining activities?",
+      "options": {
+        "A": "It stores the raw source files used for mining.",
+        "B": "It provides details about warehouse structure, data history, summarization algorithms, and source‑to‑warehouse mappings.",
+        "C": "It only tracks user login information.",
+        "D": "It replaces the need for any data preprocessing before mining."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Metadata includes warehouse objects, algorithms for summarization, and mappings, all of which help mining tools understand and use the data. [Page 96]"
+    },
+    {
+      "question": "Which of the following data types is explicitly mentioned as being outside the typical scope of a data warehouse but within the scope of data mining?",
+      "options": {
+        "A": "Summarized sales totals per country.",
+        "B": "Flat files containing unstructured text.",
+        "C": "Relational tables with foreign keys.",
+        "D": "Time‑variant summary tables."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Data mining research includes flat files, spatial, text, and multimedia data that are difficult to model in multidimensional warehouses. [Page 73, 72]"
+    },
+    {
+      "question": "In what way do ETL (Extraction, Transformation, Loading) processes influence the readiness of data for mining in a data warehouse?",
+      "options": {
+        "A": "ETL processes delay mining by storing only raw data.",
+        "B": "They clean, integrate, and transform data, producing high‑quality, consistent datasets suitable for mining.",
+        "C": "ETL automatically discovers hidden patterns without further analysis.",
+        "D": "They convert mined patterns back into operational databases."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "ETL tools handle data cleaning, integration, and transformation, which are essential preprocessing steps for effective data mining. [Page 96, 73]"
+    },
+    {
+      "question": "Which purpose best differentiates a data warehouse from an operational RDBMS in terms of user focus?",
+      "options": {
+        "A": "Data warehouses support day‑to‑day transaction processing.",
+        "B": "Data warehouses are designed for management decision‑making, while operational databases handle routine transaction processing.",
+        "C": "Operational databases store only historical, non‑volatile data.",
+        "D": "Both serve identical purposes for end‑users."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "A data warehouse is organized to support management decision making, whereas operational databases focus on transaction processing. [Page 96]"
+    },
+    {
+      "question": "Why are OLAP functions not classified as data‑mining techniques according to the provided context?",
+      "options": {
+        "A": "OLAP automatically discovers hidden patterns without user direction.",
+        "B": "OLAP provides user‑directed summarization and comparison, whereas data mining discovers previously unknown patterns.",
+        "C": "OLAP replaces the need for any data summarization.",
+        "D": "Data mining only works on OLAP-generated reports."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "OLAP offers descriptive operations (drill, slice, dice) for user‑directed analysis, while data mining goes beyond description to model and uncover hidden relationships. [Page 72]"
+    },
+    {
+      "question": "Which statement accurately reflects the difference in data granularity that data mining can handle versus that typically stored in a data warehouse?",
+      "options": {
+        "A": "Data mining is limited to the same aggregated level as the warehouse.",
+        "B": "Data mining can operate on more detailed granularities than the summarized data in a warehouse.",
+        "C": "Data warehouses store only raw, unaggregated transaction logs for mining.",
+        "D": "Both data mining and warehouses always use identical granularity levels."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Data mining may analyze data at finer granularities than the summarized data provided by a warehouse. [Page 72]"
+    },
+    {
+      "question": "Which component of a data warehouse directly facilitates the summarization of sales information that aids data‑mining tasks?",
+      "options": {
+        "A": "The raw transaction log table.",
+        "B": "The summary tables that store aggregated sales per item type per branch or country.",
+        "C": "The metadata repository that only tracks system performance.",
+        "D": "The ETL extraction module that leaves data unchanged."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "Medium",
+      "explanation": "Summarized data, such as sales totals per item type per branch/country, simplifies mining by providing aggregated views. [Page 74]"
+    },
+    {
+      "question": "Which of the following best describes the primary motivation for performing data preprocessing as presented in the overview?",
+      "options": {
+        "A": "To increase the size of the dataset for better mining results",
+        "B": "To improve data quality by addressing issues such as noise and inconsistency",
+        "C": "To replace relational databases with data warehouses",
+        "D": "To eliminate the need for any further data analysis steps"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The overview highlights that data quality issues drive the need for preprocessing, aiming to produce high‑quality, clean data [Page 2]."
+    },
+    {
+      "question": "According to the text, which set lists all the major categories of data preprocessing methods?",
+      "options": {
+        "A": "Data cleaning, data mining, data visualization, data reporting",
+        "B": "Data integration, data reduction, data transformation, data cleaning",
+        "C": "Data extraction, data loading, data indexing, data archiving",
+        "D": "Data modeling, data warehousing, data clustering, data classification"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "The chapter organizes preprocessing methods into data cleaning, integration, reduction, and transformation [Page 1]."
+    },
+    {
+      "question": "Which of the following tasks is explicitly mentioned as a form of data transformation?",
+      "options": {
+        "A": "Data integration",
+        "B": "Discretization",
+        "C": "Data cleaning",
+        "D": "Data reduction"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "Easy",
+      "explanation": "Discretization (along with concept hierarchy generation) is cited as a data transformation operation [Page 5]."
+    },
+    {
+      "question": "In the context of decision support, why is data consolidation (e.g., aggregation and summarization) necessary before analysis?",
+      "options": {
+        "A": "It converts raw transactional data into a format that supports high‑quality, clean, integrated analysis",
+        "B": "It removes the need for any further data cleaning steps",
+        "C": "It automatically generates data mining models without human intervention",
+        "D": "It stores data permanently in operational databases"
+      },
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Consolidation creates high‑quality, clean, integrated data from heterogeneous sources, which is required for decision support [Page 48]."
+    },
+    {
+      "question": "Which statement best captures the relationship between operational databases and the data preprocessing steps described?",
+      "options": {
+        "A": "Operational databases already contain aggregated data, so no preprocessing is needed",
+        "B": "Operational databases store detailed raw data that must be consolidated before analysis",
+        "C": "Operational databases are the final destination of transformed data after preprocessing",
+        "D": "Operational databases are synonymous with data warehouses in the preprocessing context"
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Medium",
+      "explanation": "Operational databases hold detailed raw transactions that need consolidation prior to analysis [Page 48]."
+    },
+    {
+      "question": "Which statement best explains why materializing cuboids can improve the performance of OLAP queries?",
+      "options": {
+        "A": "It reduces the number of dimensions that must be stored in the warehouse.",
+        "B": "It pre‑computes and stores aggregate values, allowing queries to retrieve results without recomputing them.",
+        "C": "It eliminates the need for any indexing structures on the data cube.",
+        "D": "It converts a MOLAP model into a ROLAP model automatically."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "Materializing cuboids means storing pre‑computed aggregates so that OLAP queries can be answered by simple lookups rather than recomputing aggregates each time, as described in the discussion of query processing and materialized views [Page 81]."
+    },
+    {
+      "question": "In the three‑tier data warehousing architecture, which tier is primarily responsible for executing OLAP operations such as roll‑up and drill‑down?",
+      "options": {
+        "A": "The presentation tier (client).",
+        "B": "The middle tier (OLAP server).",
+        "C": "The bottom tier (data storage).",
+        "D": "The integration tier (ETL processes)."
+      },
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "Easy",
+      "explanation": "The middle tier is the OLAP server that implements multidimensional operations, as described on page 50."
+    },
+    {
+      "question": "If a warehouse designer wants to minimize the storage cost while still supporting fast OLAP queries, which approach mentioned in the context is most appropriate?",
+      "options": {
+        "A": "Materialize every possible cuboid in the data cube.",
+        "B": "Use bitmap indexing exclusively for all dimensions.",
+        "C": "Create selective materialized views and complement them with appropriate OLAP index structures.",
+        "D": "Replace the OLAP server with a pure relational database without any indexing."
+      },
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "Medium",
+      "explanation": "The purpose of materializing selected cuboids and constructing OLAP index structures is to speed up query processing while controlling storage overhead, as discussed in Section 4.4.3 [Page 81]."
+    }
+  ]
+}

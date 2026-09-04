@@ -1,0 +1,16 @@
+{
+  "pdf": "DBMS_chapter7.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/DBMS_chapter7.pdf",
+  "tier": "PDFs",
+  "profiled_at": "2026-09-04T07:20:03.775350",
+  "mode": "fresh",
+  "page_count": 63,
+  "chunk_count": 117,
+  "time_extraction_s": 18.586,
+  "time_chunking_s": 4.168,
+  "time_embedding_s": 72.223,
+  "time_store_s": 0.575,
+  "time_cache_load_s": null,
+  "time_total_s": 95.594,
+  "error": null
+}

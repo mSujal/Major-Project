@@ -1,0 +1,16 @@
+{
+  "pdf": "word_tokens.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/word_tokens.pdf",
+  "tier": "PDFs",
+  "profiled_at": "2026-09-04T07:29:30.786644",
+  "mode": "fresh",
+  "page_count": 32,
+  "chunk_count": 107,
+  "time_extraction_s": 17.794,
+  "time_chunking_s": 1.93,
+  "time_embedding_s": 64.76,
+  "time_store_s": 0.161,
+  "time_cache_load_s": null,
+  "time_total_s": 84.678,
+  "error": null
+}

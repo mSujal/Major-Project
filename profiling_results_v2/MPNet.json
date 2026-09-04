@@ -1,0 +1,19 @@
+{
+  "pdf": "MPNet.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/MPNet.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:33:21.730688",
+  "mode": "fresh",
+  "page_count": 14,
+  "chunk_count": 203,
+  "token_count": 16588,
+  "window_count": 3,
+  "time_extraction_s": 7.218,
+  "time_chunking_s": 0.002,
+  "time_tokenize_s": 0.085,
+  "time_embedding_s": 119.943,
+  "time_store_s": 0.624,
+  "time_cache_load_s": null,
+  "time_total_s": 127.895,
+  "error": null
+}

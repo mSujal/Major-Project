@@ -1,0 +1,151 @@
+method,id,document,query,correct_page,top_k,similarity_threshold,retrieval_time_s,recall,precision,mrr,rank_of_correct_page,avg_similarity
+windowed,1,CN_ch1.pdf,What is the difference between a host and an end system?,2,5,0.75,0.146,0.0,0.0,0.0,,0.5735
+windowed,2,CN_ch1.pdf,What is the socket interface and what does it do?,6,5,0.75,0.239,0.0,0.0,0.0,,0.5048
+windowed,3,CN_ch1.pdf,What are the two most prominent types of packet switches in today's Internet?,4,5,0.75,0.208,0.0,0.0,0.0,1,0.4987
+windowed,4,CN_ch1.pdf,What does the Internet Engineering Task Force (IETF) do?,5,5,0.75,0.095,0.0,0.0,0.0,1,0.5448
+windowed,5,CN_ch1.pdf,What is the difference between circuit switching and packet switching?,30,5,0.75,0.181,0.0,0.0,0.0,1,0.5191
+windowed,6,CN_ch1.pdf,What is store-and-forward transmission?,23,5,0.75,0.149,0.0,0.0,0.0,,0.4725
+windowed,7,CN_ch1.pdf,What is the transmission delay?,36,5,0.75,0.096,0.0,0.0,0.0,,0.5087
+windowed,8,CN_ch1.pdf,What is the relationship between transmission delay and propagation delay?,37,5,0.75,0.159,0.0,0.0,0.0,4,0.551
+windowed,9,CN_ch1.pdf,What is the purpose of the five-layer Internet protocol stack?,50,5,0.75,0.119,0.0,0.0,0.0,3,0.5806
+windowed,10,CN_ch1.pdf,What is encapsulation?,52,5,0.75,0.089,0.0,0.0,0.0,,0.4722
+windowed,11,CN_ch1.pdf,What is the difference between TCP and UDP?,50,5,0.75,0.135,0.0,0.0,0.0,4,0.5006
+windowed,12,CN_ch1.pdf,What is a denial-of-service (DoS) attack?,55,5,0.75,0.103,0.0,0.0,0.0,1,0.5477
+windowed,13,CN_ch1.pdf,What is the purpose of the routing protocol?,51,5,0.75,0.076,0.0,0.0,0.0,3,0.4784
+windowed,14,CN_ch1.pdf,What is the difference between a router and a link-layer switch?,53,5,0.75,0.133,0.0,0.0,0.0,1,0.4965
+windowed,15,CN_ch1.pdf,What is the difference between OSI model and TCP/IP model?,50,5,0.75,0.08,0.0,0.0,0.0,,0.5549
+windowed,16,2chapter_software.pdf,What is the difference between user requirements and system requirements?,4,5,0.75,0.129,0.0,0.0,0.0,,0.6147
+windowed,17,2chapter_software.pdf,What is the difference between functional and non-functional requirements?,5,5,0.75,0.107,0.0,0.0,0.0,1,0.5602
+windowed,18,2chapter_software.pdf,Why is validation considered essential beyond verification?,37,5,0.75,0.075,0.0,0.0,0.0,1,0.5226
+windowed,19,2chapter_software.pdf,What is the purpose of requirements elicitation?,12,5,0.75,0.072,0.0,0.0,0.0,1,0.4972
+windowed,20,2chapter_software.pdf,What is the difference between verification and validation?,36,5,0.75,0.07,0.0,0.0,0.0,2,0.5588
+windowed,21,2chapter_software.pdf,What is the purpose of requirements validation?,29,5,0.75,0.121,0.0,0.0,0.0,1,0.581
+windowed,22,2chapter_software.pdf,What is a use case and how is it used?,25,5,0.75,0.127,0.0,0.0,0.0,2,0.4904
+windowed,23,2chapter_software.pdf,What is the purpose of a software requirements document (SRS)?,26,5,0.75,0.113,0.0,0.0,0.0,,0.5278
+windowed,24,2chapter_software.pdf,What is the difference between unit testing and component testing?,40,5,0.75,0.069,0.0,0.0,0.0,,0.4851
+windowed,25,2chapter_software.pdf,What is the purpose of system testing?,49,5,0.75,0.07,0.0,0.0,0.0,,0.4822
+windowed,26,2chapter_software.pdf,What is equivalence partitioning?,43,5,0.75,0.115,0.0,0.0,0.0,,0.5353
+windowed,27,2chapter_software.pdf,What is the difference between validation testing and defect testing?,36,5,0.75,0.107,0.0,0.0,0.0,1,0.5689
+windowed,28,2chapter_software.pdf,What is test-driven development?,51,5,0.75,0.067,0.0,0.0,0.0,1,0.5285
+windowed,29,2chapter_software.pdf,What is the difference between write-through and write-back cache policies?,24,5,0.75,0.15,0.0,0.0,0.0,,0.4169
+windowed,30,2chapter_software.pdf,What is regression testing?,53,5,0.75,0.074,0.0,0.0,0.0,,0.4993
+windowed,31,DBMS_chapter7.pdf,What is a weak entity set?,280,5,0.75,0.071,0.0,0.0,0.0,,0.5505
+windowed,32,DBMS_chapter7.pdf,What is the difference between a strong entity set and a weak entity set?,280,5,0.75,0.073,0.0,0.0,0.0,,0.5698
+windowed,33,DBMS_chapter7.pdf,What is the discriminator (partial key) of a weak entity set?,280,5,0.75,0.126,0.0,0.0,0.0,,0.566
+windowed,34,DBMS_chapter7.pdf,What is the difference between specialization and generalization?,295,5,0.75,0.121,0.0,0.0,0.0,,0.5009
+windowed,35,DBMS_chapter7.pdf,What is aggregation in the E-R model?,301,5,0.75,0.153,0.0,0.0,0.0,,0.5258
+windowed,36,DBMS_chapter17.pdf,What is the difference between a logical cache and a physical cache?,6,5,0.75,0.098,0.0,0.0,0.0,,0.4802
+windowed,37,DBMS_chapter17.pdf,What is speedup and scaleup?,10,5,0.75,0.102,0.0,0.0,0.0,3,0.6028
+windowed,38,DBMS_chapter17.pdf,What is the difference between a transaction server and a data server?,5,5,0.75,0.139,0.0,0.0,0.0,4,0.4862
+windowed,39,DBMS_chapter17.pdf,What are the three types of parallel database architectures?,13,5,0.75,0.118,0.0,0.0,0.0,4,0.5653
+windowed,40,DBMS_chapter17.pdf,What is the purpose of the two-phase commit protocol (2PC)?,18,5,0.75,0.11,0.0,0.0,0.0,,0.5437
+windowed,41,DBMS_chapter17.pdf,What is the difference between a local transaction and a global transaction?,16,5,0.75,0.067,0.0,0.0,0.0,,0.5409
+windowed,42,DBMS_chapter17.pdf,What is the difference between LAN and WAN?,20,5,0.75,0.089,0.0,0.0,0.0,,0.5352
+windowed,43,DBMS_chapter17.pdf,What is a storage-area network (SAN)?,21,5,0.75,0.074,0.0,0.0,0.0,2,0.5553
+windowed,44,DBMS_chapter17.pdf,What is the purpose of a distributed database?,17,5,0.75,0.067,0.0,0.0,0.0,,0.5657
+windowed,45,DBMS_chapter7.pdf,What is the difference between a binary and a ternary relationship?,278,5,0.75,0.074,0.0,0.0,0.0,,0.5107
+windowed,46,EDC_chapter1.pdf,What is the difference between an intrinsic and extrinsic semiconductor?,8,5,0.75,0.079,0.0,0.0,0.0,4,0.4649
+windowed,47,EDC_chapter1.pdf,What is the difference between n-type and p-type material?,8,5,0.75,0.072,0.0,0.0,0.0,4,0.4675
+windowed,48,EDC_chapter1.pdf,What is a depletion region?,10,5,0.75,0.113,0.0,0.0,0.0,,0.4531
+windowed,49,EDC_chapter1.pdf,What is the difference between forward bias and reverse bias?,11,5,0.75,0.084,0.0,0.0,0.0,,0.462
+windowed,50,EDC_chapter1.pdf,What is the Zener region?,15,5,0.75,0.07,0.0,0.0,0.0,,0.4456
+naive,1,CN_ch1.pdf,What is the difference between a host and an end system?,2,5,0.75,0.085,1.0,0.2,1.0,,0.7163
+naive,2,CN_ch1.pdf,What is the socket interface and what does it do?,6,5,0.75,0.159,1.0,0.2,1.0,1,0.6874
+naive,3,CN_ch1.pdf,What are the two most prominent types of packet switches in today's Internet?,4,5,0.75,0.126,1.0,0.2,0.2,1,0.7191
+naive,4,CN_ch1.pdf,What does the Internet Engineering Task Force (IETF) do?,5,5,0.75,0.12,1.0,0.2,1.0,1,0.7253
+naive,5,CN_ch1.pdf,What is the difference between circuit switching and packet switching?,30,5,0.75,0.144,1.0,1.0,1.0,1,0.8169
+naive,6,CN_ch1.pdf,What is store-and-forward transmission?,23,5,0.75,0.114,1.0,0.4,1.0,1,0.7239
+naive,7,CN_ch1.pdf,What is the transmission delay?,36,5,0.75,0.143,1.0,0.4,0.5,3,0.7268
+naive,8,CN_ch1.pdf,What is the relationship between transmission delay and propagation delay?,37,5,0.75,0.17,1.0,1.0,1.0,1,0.8309
+naive,9,CN_ch1.pdf,What is the purpose of the five-layer Internet protocol stack?,50,5,0.75,0.14,1.0,0.8,1.0,1,0.7808
+naive,10,CN_ch1.pdf,What is encapsulation?,52,5,0.75,0.108,0.0,0.0,0.0,,0.6245
+naive,11,CN_ch1.pdf,What is the difference between TCP and UDP?,50,5,0.75,0.15,1.0,0.4,1.0,2,0.6955
+naive,12,CN_ch1.pdf,What is a denial-of-service (DoS) attack?,55,5,0.75,0.124,1.0,0.4,1.0,1,0.7324
+naive,13,CN_ch1.pdf,What is the purpose of the routing protocol?,51,5,0.75,0.117,0.0,0.0,0.0,1,0.6329
+naive,14,CN_ch1.pdf,What is the difference between a router and a link-layer switch?,53,5,0.75,0.089,1.0,0.2,1.0,1,0.7178
+naive,15,CN_ch1.pdf,What is the difference between OSI model and TCP/IP model?,50,5,0.75,0.077,1.0,0.2,1.0,2,0.7303
+naive,16,2chapter_software.pdf,What is the difference between user requirements and system requirements?,4,5,0.75,0.192,1.0,1.0,1.0,,0.8464
+naive,17,2chapter_software.pdf,What is the difference between functional and non-functional requirements?,5,5,0.75,0.192,1.0,1.0,1.0,1,0.7918
+naive,18,2chapter_software.pdf,Why is validation considered essential beyond verification?,37,5,0.75,0.132,1.0,0.2,0.2,1,0.6763
+naive,19,2chapter_software.pdf,What is the purpose of requirements elicitation?,12,5,0.75,0.108,0.0,0.0,0.0,1,0.6697
+naive,20,2chapter_software.pdf,What is the difference between verification and validation?,36,5,0.75,0.231,1.0,0.6,0.5,1,0.7693
+naive,21,2chapter_software.pdf,What is the purpose of requirements validation?,29,5,0.75,0.113,1.0,0.8,1.0,2,0.7796
+naive,22,2chapter_software.pdf,What is a use case and how is it used?,25,5,0.75,0.112,0.0,0.0,0.0,1,0.6165
+naive,23,2chapter_software.pdf,What is the purpose of a software requirements document (SRS)?,26,5,0.75,0.116,0.0,0.0,0.0,1,0.6729
+naive,24,2chapter_software.pdf,What is the difference between unit testing and component testing?,40,5,0.75,0.122,1.0,0.4,1.0,,0.7476
+naive,25,2chapter_software.pdf,What is the purpose of system testing?,49,5,0.75,0.144,1.0,0.2,1.0,1,0.6715
+naive,26,2chapter_software.pdf,What is equivalence partitioning?,43,5,0.75,0.064,0.0,0.0,0.0,,0.704
+naive,27,2chapter_software.pdf,What is the difference between validation testing and defect testing?,36,5,0.75,0.072,1.0,1.0,1.0,1,0.7997
+naive,28,2chapter_software.pdf,What is test-driven development?,51,5,0.75,0.067,1.0,0.2,0.25,1,0.7436
+naive,29,2chapter_software.pdf,What is the difference between write-through and write-back cache policies?,24,5,0.75,0.117,0.0,0.0,0.0,,0.5576
+naive,30,2chapter_software.pdf,What is regression testing?,53,5,0.75,0.1,0.0,0.0,0.0,1,0.6729
+naive,31,DBMS_chapter7.pdf,What is a weak entity set?,280,5,0.75,0.075,1.0,0.6,1.0,,0.7532
+naive,32,DBMS_chapter7.pdf,What is the difference between a strong entity set and a weak entity set?,280,5,0.75,0.074,1.0,1.0,1.0,,0.7979
+naive,33,DBMS_chapter7.pdf,What is the discriminator (partial key) of a weak entity set?,280,5,0.75,0.073,1.0,0.8,1.0,,0.765
+naive,34,DBMS_chapter7.pdf,What is the difference between specialization and generalization?,295,5,0.75,0.13,1.0,0.2,1.0,,0.7144
+naive,35,DBMS_chapter7.pdf,What is aggregation in the E-R model?,301,5,0.75,0.112,1.0,0.2,0.3333333333333333,,0.7083
+naive,36,DBMS_chapter17.pdf,What is the difference between a logical cache and a physical cache?,6,5,0.75,0.159,0.0,0.0,0.0,,0.6295
+naive,37,DBMS_chapter17.pdf,What is speedup and scaleup?,10,5,0.75,0.101,1.0,0.8,1.0,1,0.81
+naive,38,DBMS_chapter17.pdf,What is the difference between a transaction server and a data server?,5,5,0.75,0.111,1.0,0.4,1.0,1,0.757
+naive,39,DBMS_chapter17.pdf,What are the three types of parallel database architectures?,13,5,0.75,0.109,1.0,0.2,0.3333333333333333,,0.7063
+naive,40,DBMS_chapter17.pdf,What is the purpose of the two-phase commit protocol (2PC)?,18,5,0.75,0.137,1.0,0.2,0.5,2,0.6942
+naive,41,DBMS_chapter17.pdf,What is the difference between a local transaction and a global transaction?,16,5,0.75,0.143,0.0,0.0,0.0,1,0.6601
+naive,42,DBMS_chapter17.pdf,What is the difference between LAN and WAN?,20,5,0.75,0.069,0.0,0.0,0.0,,0.7028
+naive,43,DBMS_chapter17.pdf,What is a storage-area network (SAN)?,21,5,0.75,0.07,1.0,0.4,1.0,1,0.744
+naive,44,DBMS_chapter17.pdf,What is the purpose of a distributed database?,17,5,0.75,0.068,1.0,0.2,1.0,1,0.6999
+naive,45,DBMS_chapter7.pdf,What is the difference between a binary and a ternary relationship?,278,5,0.75,0.07,1.0,1.0,1.0,,0.7812
+naive,46,EDC_chapter1.pdf,What is the difference between an intrinsic and extrinsic semiconductor?,8,5,0.75,0.073,0.0,0.0,0.0,4,0.6274
+naive,47,EDC_chapter1.pdf,What is the difference between n-type and p-type material?,8,5,0.75,0.091,1.0,0.4,0.5,4,0.7663
+naive,48,EDC_chapter1.pdf,What is a depletion region?,10,5,0.75,0.094,0.0,0.0,0.0,2,0.6508
+naive,49,EDC_chapter1.pdf,What is the difference between forward bias and reverse bias?,11,5,0.75,0.099,0.0,0.0,0.0,,0.6549
+naive,50,EDC_chapter1.pdf,What is the Zener region?,15,5,0.75,0.07,0.0,0.0,0.0,,0.5818
+bm25,1,CN_ch1.pdf,What is the difference between a host and an end system?,2,5,0.75,0.001,0.0,0.0,0.0,,0.6403
+bm25,2,CN_ch1.pdf,What is the socket interface and what does it do?,6,5,0.75,0.001,1.0,0.2,1.0,1,0.6941
+bm25,3,CN_ch1.pdf,What are the two most prominent types of packet switches in today's Internet?,4,5,0.75,0.001,1.0,0.2,1.0,1,0.6543
+bm25,4,CN_ch1.pdf,What does the Internet Engineering Task Force (IETF) do?,5,5,0.75,0.003,1.0,0.2,1.0,1,0.6884
+bm25,5,CN_ch1.pdf,What is the difference between circuit switching and packet switching?,30,5,0.75,0.001,1.0,0.6,1.0,2,0.748
+bm25,6,CN_ch1.pdf,What is store-and-forward transmission?,23,5,0.75,0.001,1.0,0.4,1.0,1,0.7561
+bm25,7,CN_ch1.pdf,What is the transmission delay?,36,5,0.75,0.001,0.0,0.0,0.0,,0.7206
+bm25,8,CN_ch1.pdf,What is the relationship between transmission delay and propagation delay?,37,5,0.75,0.001,1.0,1.0,1.0,1,0.8203
+bm25,9,CN_ch1.pdf,What is the purpose of the five-layer Internet protocol stack?,50,5,0.75,0.001,1.0,0.6,1.0,1,0.7426
+bm25,10,CN_ch1.pdf,What is encapsulation?,52,5,0.75,0.001,0.0,0.0,0.0,3,0.6096
+bm25,11,CN_ch1.pdf,What is the difference between TCP and UDP?,50,5,0.75,0.001,1.0,0.4,0.5,2,0.6799
+bm25,12,CN_ch1.pdf,What is a denial-of-service (DoS) attack?,55,5,0.75,0.001,1.0,0.4,0.5,2,0.7296
+bm25,13,CN_ch1.pdf,What is the purpose of the routing protocol?,51,5,0.75,0.001,0.0,0.0,0.0,2,0.5922
+bm25,14,CN_ch1.pdf,What is the difference between a router and a link-layer switch?,53,5,0.75,0.001,0.0,0.0,0.0,,0.6361
+bm25,15,CN_ch1.pdf,What is the difference between OSI model and TCP/IP model?,50,5,0.75,0.001,1.0,0.2,0.25,,0.7014
+bm25,16,2chapter_software.pdf,What is the difference between user requirements and system requirements?,4,5,0.75,0.001,1.0,0.6,1.0,,0.7645
+bm25,17,2chapter_software.pdf,What is the difference between functional and non-functional requirements?,5,5,0.75,0.001,1.0,0.8,1.0,1,0.7727
+bm25,18,2chapter_software.pdf,Why is validation considered essential beyond verification?,37,5,0.75,0.002,0.0,0.0,0.0,1,0.6298
+bm25,19,2chapter_software.pdf,What is the purpose of requirements elicitation?,12,5,0.75,0.002,0.0,0.0,0.0,2,0.6096
+bm25,20,2chapter_software.pdf,What is the difference between verification and validation?,36,5,0.75,0.002,1.0,0.2,0.5,1,0.6713
+bm25,21,2chapter_software.pdf,What is the purpose of requirements validation?,29,5,0.75,0.002,1.0,0.6,0.5,2,0.7292
+bm25,22,2chapter_software.pdf,What is a use case and how is it used?,25,5,0.75,0.003,0.0,0.0,0.0,,0.5762
+bm25,23,2chapter_software.pdf,What is the purpose of a software requirements document (SRS)?,26,5,0.75,0.003,0.0,0.0,0.0,1,0.6265
+bm25,24,2chapter_software.pdf,What is the difference between unit testing and component testing?,40,5,0.75,0.001,1.0,0.2,0.25,,0.7187
+bm25,25,2chapter_software.pdf,What is the purpose of system testing?,49,5,0.75,0.001,0.0,0.0,0.0,,0.5715
+bm25,26,2chapter_software.pdf,What is equivalence partitioning?,43,5,0.75,0.001,0.0,0.0,0.0,,0.696
+bm25,27,2chapter_software.pdf,What is the difference between validation testing and defect testing?,36,5,0.75,0.001,1.0,0.6,1.0,1,0.7836
+bm25,28,2chapter_software.pdf,What is test-driven development?,51,5,0.75,0.001,1.0,0.6,1.0,2,0.7519
+bm25,29,2chapter_software.pdf,What is the difference between write-through and write-back cache policies?,24,5,0.75,0.001,0.0,0.0,0.0,,0.5697
+bm25,30,2chapter_software.pdf,What is regression testing?,53,5,0.75,0.001,1.0,0.2,1.0,1,0.6915
+bm25,31,DBMS_chapter7.pdf,What is a weak entity set?,280,5,0.75,0.0,1.0,0.6,0.3333333333333333,,0.752
+bm25,32,DBMS_chapter7.pdf,What is the difference between a strong entity set and a weak entity set?,280,5,0.75,0.004,1.0,0.6,0.5,,0.7543
+bm25,33,DBMS_chapter7.pdf,What is the discriminator (partial key) of a weak entity set?,280,5,0.75,0.001,1.0,0.4,1.0,,0.7376
+bm25,34,DBMS_chapter7.pdf,What is the difference between specialization and generalization?,295,5,0.75,0.001,1.0,0.2,0.3333333333333333,,0.6298
+bm25,35,DBMS_chapter7.pdf,What is aggregation in the E-R model?,301,5,0.75,0.001,0.0,0.0,0.0,,0.6567
+bm25,36,DBMS_chapter17.pdf,What is the difference between a logical cache and a physical cache?,6,5,0.75,0.0,0.0,0.0,0.0,,0.6175
+bm25,37,DBMS_chapter17.pdf,What is speedup and scaleup?,10,5,0.75,0.0,1.0,0.8,1.0,1,0.7768
+bm25,38,DBMS_chapter17.pdf,What is the difference between a transaction server and a data server?,5,5,0.75,0.001,0.0,0.0,0.0,,0.6547
+bm25,39,DBMS_chapter17.pdf,What are the three types of parallel database architectures?,13,5,0.75,0.0,1.0,0.2,0.3333333333333333,3,0.6602
+bm25,40,DBMS_chapter17.pdf,What is the purpose of the two-phase commit protocol (2PC)?,18,5,0.75,0.001,1.0,0.2,1.0,1,0.697
+bm25,41,DBMS_chapter17.pdf,What is the difference between a local transaction and a global transaction?,16,5,0.75,0.001,0.0,0.0,0.0,1,0.6632
+bm25,42,DBMS_chapter17.pdf,What is the difference between LAN and WAN?,20,5,0.75,0.0,0.0,0.0,0.0,,0.6074
+bm25,43,DBMS_chapter17.pdf,What is a storage-area network (SAN)?,21,5,0.75,0.001,1.0,0.8,1.0,1,0.7634
+bm25,44,DBMS_chapter17.pdf,What is the purpose of a distributed database?,17,5,0.75,0.001,1.0,0.2,0.5,2,0.685
+bm25,45,DBMS_chapter7.pdf,What is the difference between a binary and a ternary relationship?,278,5,0.75,0.001,1.0,0.2,0.3333333333333333,,0.7019
+bm25,46,EDC_chapter1.pdf,What is the difference between an intrinsic and extrinsic semiconductor?,8,5,0.75,0.0,0.0,0.0,0.0,,0.5749
+bm25,47,EDC_chapter1.pdf,What is the difference between n-type and p-type material?,8,5,0.75,0.001,1.0,0.6,0.5,5,0.765
+bm25,48,EDC_chapter1.pdf,What is a depletion region?,10,5,0.75,0.0,0.0,0.0,0.0,2,0.6112
+bm25,49,EDC_chapter1.pdf,What is the difference between forward bias and reverse bias?,11,5,0.75,0.001,0.0,0.0,0.0,,0.6055
+bm25,50,EDC_chapter1.pdf,What is the Zener region?,15,5,0.75,0.001,0.0,0.0,0.0,,0.6028

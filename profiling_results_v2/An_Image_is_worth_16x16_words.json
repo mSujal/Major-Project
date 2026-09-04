@@ -1,0 +1,19 @@
+{
+  "pdf": "An_Image_is_worth_16x16_words.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/An_Image_is_worth_16x16_words.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:13:42.083258",
+  "mode": "fresh",
+  "page_count": 22,
+  "chunk_count": 317,
+  "token_count": 27005,
+  "window_count": 4,
+  "time_extraction_s": 18.553,
+  "time_chunking_s": 0.002,
+  "time_tokenize_s": 0.125,
+  "time_embedding_s": 161.45,
+  "time_store_s": 0.212,
+  "time_cache_load_s": null,
+  "time_total_s": 180.373,
+  "error": null
+}

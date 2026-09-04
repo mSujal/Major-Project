@@ -1,0 +1,16 @@
+{
+  "pdf": "Deep_residual_learning_for_image_recognition.pdf",
+  "pdf_path": "Datasets/evaluation/medium/Deep_residual_learning_for_image_recognition.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:40:58.931717",
+  "mode": "fresh",
+  "page_count": 12,
+  "chunk_count": 273,
+  "time_extraction_s": 6.819,
+  "time_chunking_s": 0.009,
+  "time_embedding_s": 59.516,
+  "time_store_s": 0.246,
+  "time_cache_load_s": null,
+  "time_total_s": 66.656,
+  "error": null
+}

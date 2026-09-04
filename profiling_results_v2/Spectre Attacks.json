@@ -1,0 +1,19 @@
+{
+  "pdf": "Spectre Attacks.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/Spectre Attacks.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:40:02.228204",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 295,
+  "token_count": 17900,
+  "window_count": 3,
+  "time_extraction_s": 7.542,
+  "time_chunking_s": 0.011,
+  "time_tokenize_s": 0.334,
+  "time_embedding_s": 119.822,
+  "time_store_s": 0.218,
+  "time_cache_load_s": null,
+  "time_total_s": 127.948,
+  "error": null
+}

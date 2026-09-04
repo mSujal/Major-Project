@@ -1,0 +1,19 @@
+{
+  "pdf": "Hurtful_words.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/Hurtful_words.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:24:08.036313",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 356,
+  "token_count": 37556,
+  "window_count": 6,
+  "time_extraction_s": 22.951,
+  "time_chunking_s": 0.01,
+  "time_tokenize_s": 0.617,
+  "time_embedding_s": 240.682,
+  "time_store_s": 0.224,
+  "time_cache_load_s": null,
+  "time_total_s": 264.505,
+  "error": null
+}

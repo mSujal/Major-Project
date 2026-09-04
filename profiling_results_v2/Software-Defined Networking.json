@@ -1,0 +1,19 @@
+{
+  "pdf": "Software-Defined Networking.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/large/Software-Defined Networking.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-02T14:47:16.565793",
+  "mode": "fresh",
+  "page_count": 61,
+  "chunk_count": 1857,
+  "token_count": 134877,
+  "window_count": 19,
+  "time_extraction_s": 46.188,
+  "time_chunking_s": 0.014,
+  "time_tokenize_s": 0.643,
+  "time_embedding_s": 769.428,
+  "time_store_s": 1.087,
+  "time_cache_load_s": null,
+  "time_total_s": 817.433,
+  "error": null
+}

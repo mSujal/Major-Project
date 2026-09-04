@@ -1,0 +1,16 @@
+{
+  "pdf": "Spectre Attacks.pdf",
+  "pdf_path": "Datasets/evaluation/medium/Spectre Attacks.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:50:37.876039",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 286,
+  "time_extraction_s": 8.138,
+  "time_chunking_s": 0.003,
+  "time_embedding_s": 48.686,
+  "time_store_s": 0.208,
+  "time_cache_load_s": null,
+  "time_total_s": 57.055,
+  "error": null
+}

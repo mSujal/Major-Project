@@ -1,0 +1,19 @@
+{
+  "pdf": "Edge Computing.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/short/Edge Computing.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-02T15:47:20.967621",
+  "mode": "fresh",
+  "page_count": 10,
+  "chunk_count": 179,
+  "token_count": 10400,
+  "window_count": 2,
+  "time_extraction_s": 12.228,
+  "time_chunking_s": 0.001,
+  "time_tokenize_s": 0.059,
+  "time_embedding_s": 79.37,
+  "time_store_s": 0.269,
+  "time_cache_load_s": null,
+  "time_total_s": 91.95,
+  "error": null
+}

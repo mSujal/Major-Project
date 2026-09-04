@@ -1,0 +1,16 @@
+{
+  "pdf": "EDC_chapter3.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/EDC_chapter3.pdf",
+  "tier": "PDFs",
+  "profiled_at": "2026-09-04T07:23:57.035963",
+  "mode": "fresh",
+  "page_count": 31,
+  "chunk_count": 46,
+  "time_extraction_s": 54.416,
+  "time_chunking_s": 0.465,
+  "time_embedding_s": 23.276,
+  "time_store_s": 0.093,
+  "time_cache_load_s": null,
+  "time_total_s": 78.348,
+  "error": null
+}

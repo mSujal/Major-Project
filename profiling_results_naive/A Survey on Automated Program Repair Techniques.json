@@ -1,0 +1,16 @@
+{
+  "pdf": "A Survey on Automated Program Repair Techniques.pdf",
+  "pdf_path": "Datasets/evaluation/large/A Survey on Automated Program Repair Techniques.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-03T08:06:03.211991",
+  "mode": "fresh",
+  "page_count": 55,
+  "chunk_count": 1567,
+  "time_extraction_s": 21.982,
+  "time_chunking_s": 0.009,
+  "time_embedding_s": 226.469,
+  "time_store_s": 0.927,
+  "time_cache_load_s": null,
+  "time_total_s": 249.896,
+  "error": null
+}

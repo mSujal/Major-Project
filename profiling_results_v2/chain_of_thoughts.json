@@ -1,0 +1,19 @@
+{
+  "pdf": "chain_of_thoughts.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/large/chain_of_thoughts.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-02T15:03:46.795807",
+  "mode": "fresh",
+  "page_count": 43,
+  "chunk_count": 628,
+  "token_count": 51952,
+  "window_count": 8,
+  "time_extraction_s": 16.32,
+  "time_chunking_s": 0.017,
+  "time_tokenize_s": 0.882,
+  "time_embedding_s": 323.299,
+  "time_store_s": 0.374,
+  "time_cache_load_s": null,
+  "time_total_s": 340.908,
+  "error": null
+}

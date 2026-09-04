@@ -1,0 +1,16 @@
+{
+  "pdf": "Reduction for asynchronous Boolean networks.pdf",
+  "pdf_path": "Datasets/evaluation/medium/Reduction for asynchronous Boolean networks.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:49:53.822924",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 181,
+  "time_extraction_s": 7.241,
+  "time_chunking_s": 0.006,
+  "time_embedding_s": 36.626,
+  "time_store_s": 0.142,
+  "time_cache_load_s": null,
+  "time_total_s": 44.053,
+  "error": null
+}

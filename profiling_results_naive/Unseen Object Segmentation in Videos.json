@@ -1,0 +1,16 @@
+{
+  "pdf": "Unseen Object Segmentation in Videos.pdf",
+  "pdf_path": "Datasets/evaluation/medium/Unseen Object Segmentation in Videos.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:51:34.931173",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 163,
+  "time_extraction_s": 10.438,
+  "time_chunking_s": 0.002,
+  "time_embedding_s": 33.967,
+  "time_store_s": 0.157,
+  "time_cache_load_s": null,
+  "time_total_s": 44.608,
+  "error": null
+}

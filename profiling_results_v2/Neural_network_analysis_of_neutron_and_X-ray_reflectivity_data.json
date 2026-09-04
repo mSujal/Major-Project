@@ -1,0 +1,19 @@
+{
+  "pdf": "Neural_network_analysis_of_neutron_and_X-ray_reflectivity_data.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/large/Neural_network_analysis_of_neutron_and_X-ray_reflectivity_data.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-02T14:39:45.850803",
+  "mode": "fresh",
+  "page_count": 30,
+  "chunk_count": 200,
+  "token_count": 12044,
+  "window_count": 2,
+  "time_extraction_s": 10.753,
+  "time_chunking_s": 0.002,
+  "time_tokenize_s": 0.058,
+  "time_embedding_s": 84.129,
+  "time_store_s": 0.16,
+  "time_cache_load_s": null,
+  "time_total_s": 95.114,
+  "error": null
+}

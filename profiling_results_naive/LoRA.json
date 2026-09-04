@@ -1,0 +1,16 @@
+{
+  "pdf": "LoRA.pdf",
+  "pdf_path": "Datasets/evaluation/medium/LoRA.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:45:07.928035",
+  "mode": "fresh",
+  "page_count": 26,
+  "chunk_count": 412,
+  "time_extraction_s": 50.368,
+  "time_chunking_s": 0.004,
+  "time_embedding_s": 100.464,
+  "time_store_s": 0.257,
+  "time_cache_load_s": null,
+  "time_total_s": 151.122,
+  "error": null
+}

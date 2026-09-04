@@ -1,0 +1,16 @@
+{
+  "pdf": "Representation Dependence in Probabilistic Inference.pdf",
+  "pdf_path": "Datasets/evaluation/large/Representation Dependence in Probabilistic Inference.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-03T08:23:20.984528",
+  "mode": "fresh",
+  "page_count": 38,
+  "chunk_count": 421,
+  "time_extraction_s": 12.143,
+  "time_chunking_s": 0.004,
+  "time_embedding_s": 98.843,
+  "time_store_s": 0.287,
+  "time_cache_load_s": null,
+  "time_total_s": 111.578,
+  "error": null
+}

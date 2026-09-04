@@ -1,0 +1,19 @@
+{
+  "pdf": "Bert.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/Bert.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:16:42.456460",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 284,
+  "token_count": 22012,
+  "window_count": 3,
+  "time_extraction_s": 9.213,
+  "time_chunking_s": 0.002,
+  "time_tokenize_s": 0.108,
+  "time_embedding_s": 121.0,
+  "time_store_s": 0.74,
+  "time_cache_load_s": null,
+  "time_total_s": 131.08,
+  "error": null
+}

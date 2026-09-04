@@ -1,7 +1,3 @@
-"""
-Can a weak LLM with chain of thoughts reflect a cognitive load experienced by a student taking a test?
-"""
-
 import re
 import os
 import time
@@ -95,14 +91,12 @@ def main():
                         help="Show full reasoning. Use --show-reasoning N to show first N questions, or --show-reasoning all for all.")
     args = parser.parse_args()
 
-
     questions = load_questions_from_files(args.files)
     if not questions:
         print("No questions loaded.")
         return
     print(f"Loaded {len(questions)} questions.")
 
-    # Determine how many reasoning outputs to show
     show_limit = None
     if args.show_reasoning is not None:
         if args.show_reasoning.lower() == "all":
@@ -115,7 +109,7 @@ def main():
 
     client = Groq(api_key=api_key)
     results_by_diff = defaultdict(list)
-    all_results = []   # (idx, q, result)
+    all_results = []
 
     for i, q in enumerate(questions, 1):
         diff = q.get("difficulty", "Unknown")
@@ -124,7 +118,6 @@ def main():
         results_by_diff[diff].append(res)
         all_results.append((i-1, q, res))
 
-        # Show reasoning if requested
         if show_limit is not None and i <= show_limit:
             print("\n" + "="*80)
             print(f"REASONING FOR QUESTION #{i}")
@@ -159,22 +152,34 @@ def main():
     f_vals = {name: [f[name] for f in feature_list] for name in f_names}
     norm_f = {name: normalize(vals) for name, vals in f_vals.items()}
 
+    bloom_map = {
+        "Remember": 1,
+        "Understand": 2,
+        "Apply": 3,
+        "Analyze": 4,
+        "Evaluate": 5,
+        "Create": 6
+    }
+    bloom_numeric = [bloom_map.get(q.get("bloom_level", "Unknown"), 3) for q in questions]
+    norm_f["bloom"] = normalize(bloom_numeric)
+
     weights = {
-        "completion_time": 0.25,
-        "tokens": 0.15,
-        "incorrect_penalty": 0.10,
-        "gunning_fog": 0.04,
-        "flesch_kincaid_grade": 0.03,
-        "stem_word_count": 0.03,
-        "avg_distractor_overlap": 0.06,
-        "max_distractor_similarity": 0.06,
+        "completion_time": 0.10,
+        "tokens": 0.05,
+        "incorrect_penalty": 0.05,          
+        "bloom": 0.30,                       
+        "gunning_fog": 0.03,
+        "flesch_kincaid_grade": 0.02,
+        "stem_word_count": 0.02,
+        "avg_distractor_overlap": 0.10,
+        "max_distractor_similarity": 0.10,
+        "avg_distractor_similarity": 0.05,
         "negation_presence": 0.04,
         "clause_count": 0.03,
         "parse_tree_depth": 0.03,
         "quantitative_flag": 0.03,
         "content_word_density": 0.02,
         "distractor_count": 0.02,
-        "avg_distractor_similarity": 0.02,
         "distractor_length_variance": 0.02,
         "modal_presence": 0.02,
         "noun_ratio": 0.01,
@@ -229,7 +234,6 @@ def main():
             f"Top: {', '.join(top3)}"
         )
 
-    # Summary
     print("\n" + "="*60)
     print("SUMMARY BY ORIGINAL DIFFICULTY")
     print("="*60)
@@ -247,8 +251,7 @@ def main():
         print(f"{level}:")
         print(f"  Comp: {avg_comp:.2f}s, Tokens: {avg_tok:.1f}, Latency: {avg_lat:.2f}s, Acc: {acc:.1f}%")
 
-    # Cross-tab with Bloom
-    bloom_map = {
+    bloom_to_expected = {
         "Remember": "Easy",
         "Understand": "Easy",
         "Apply": "Medium",
@@ -259,7 +262,7 @@ def main():
     cross = defaultdict(Counter)
     for i, (idx, q, r) in enumerate(all_results):
         b = q.get("bloom_level", "Unknown")
-        bm = bloom_map.get(b, "Unknown")
+        bm = bloom_to_expected.get(b, "Unknown")
         cross[bm][r["empirical_difficulty"]] += 1
 
     print("\n" + "="*60)
@@ -284,7 +287,7 @@ def main():
                 "bloom_level": q.get("bloom_level", "Unknown"),
                 "empirical_difficulty": r["empirical_difficulty"],
                 "justification": r["justification"],
-                "raw_reasoning": r["raw_output"],   # <-- now saved
+                "raw_reasoning": r["raw_output"],
                 "completion_time": r["completion_time"],
                 "tokens": r["tokens"],
                 "correct": r["correct"],

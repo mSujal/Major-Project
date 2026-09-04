@@ -1,0 +1,19 @@
+{
+  "pdf": "attention_is_all_you_need.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/attention_is_all_you_need.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:43:41.164837",
+  "mode": "fresh",
+  "page_count": 15,
+  "chunk_count": 172,
+  "token_count": 14623,
+  "window_count": 2,
+  "time_extraction_s": 12.396,
+  "time_chunking_s": 0.001,
+  "time_tokenize_s": 0.066,
+  "time_embedding_s": 79.531,
+  "time_store_s": 0.225,
+  "time_cache_load_s": null,
+  "time_total_s": 92.245,
+  "error": null
+}

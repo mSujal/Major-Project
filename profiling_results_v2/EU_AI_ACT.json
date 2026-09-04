@@ -1,0 +1,19 @@
+{
+  "pdf": "EU_AI_ACT.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/short/EU_AI_ACT.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-02T15:45:51.310166",
+  "mode": "fresh",
+  "page_count": 13,
+  "chunk_count": 198,
+  "token_count": 8753,
+  "window_count": 2,
+  "time_extraction_s": 10.469,
+  "time_chunking_s": 0.004,
+  "time_tokenize_s": 0.049,
+  "time_embedding_s": 78.825,
+  "time_store_s": 0.242,
+  "time_cache_load_s": null,
+  "time_total_s": 89.657,
+  "error": null
+}

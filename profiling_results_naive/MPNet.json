@@ -1,0 +1,16 @@
+{
+  "pdf": "MPNet.pdf",
+  "pdf_path": "Datasets/evaluation/medium/MPNet.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:47:39.050943",
+  "mode": "fresh",
+  "page_count": 14,
+  "chunk_count": 203,
+  "time_extraction_s": 7.45,
+  "time_chunking_s": 0.002,
+  "time_embedding_s": 43.828,
+  "time_store_s": 0.144,
+  "time_cache_load_s": null,
+  "time_total_s": 51.45,
+  "error": null
+}

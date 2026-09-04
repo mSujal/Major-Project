@@ -1,0 +1,19 @@
+{
+  "pdf": "LoRA.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/LoRA.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:28:32.541888",
+  "mode": "fresh",
+  "page_count": 26,
+  "chunk_count": 413,
+  "token_count": 39692,
+  "window_count": 6,
+  "time_extraction_s": 49.168,
+  "time_chunking_s": 0.003,
+  "time_tokenize_s": 0.164,
+  "time_embedding_s": 238.975,
+  "time_store_s": 0.857,
+  "time_cache_load_s": null,
+  "time_total_s": 289.188,
+  "error": null
+}

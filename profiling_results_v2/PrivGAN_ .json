@@ -1,0 +1,19 @@
+{
+  "pdf": "PrivGAN_ .pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/medium/PrivGAN_ .pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-02T15:35:29.627206",
+  "mode": "fresh",
+  "page_count": 21,
+  "chunk_count": 240,
+  "token_count": 18906,
+  "window_count": 3,
+  "time_extraction_s": 26.86,
+  "time_chunking_s": 0.002,
+  "time_tokenize_s": 0.088,
+  "time_embedding_s": 119.893,
+  "time_store_s": 0.629,
+  "time_cache_load_s": null,
+  "time_total_s": 147.551,
+  "error": null
+}

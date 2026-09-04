@@ -1,0 +1,19 @@
+{
+  "pdf": "Anomaly Detection in Power Grids via Context-Agnostic Learning.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/short/Anomaly Detection in Power Grids via Context-Agnostic Learning.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-02T15:45:13.409978",
+  "mode": "fresh",
+  "page_count": 8,
+  "chunk_count": 84,
+  "token_count": 5644,
+  "window_count": 1,
+  "time_extraction_s": 14.832,
+  "time_chunking_s": 0.001,
+  "time_tokenize_s": 0.031,
+  "time_embedding_s": 22.448,
+  "time_store_s": 0.566,
+  "time_cache_load_s": null,
+  "time_total_s": 37.899,
+  "error": null
+}

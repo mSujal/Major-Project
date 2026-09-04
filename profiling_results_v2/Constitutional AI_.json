@@ -1,0 +1,19 @@
+{
+  "pdf": "Constitutional AI_.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/large/Constitutional AI_.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-02T14:21:25.478164",
+  "mode": "fresh",
+  "page_count": 34,
+  "chunk_count": 529,
+  "token_count": 35372,
+  "window_count": 5,
+  "time_extraction_s": 13.051,
+  "time_chunking_s": 0.016,
+  "time_tokenize_s": 0.638,
+  "time_embedding_s": 204.263,
+  "time_store_s": 1.309,
+  "time_cache_load_s": null,
+  "time_total_s": 219.297,
+  "error": null
+}

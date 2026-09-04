@@ -1,0 +1,16 @@
+{
+  "pdf": "Time-dependent_resonant_magneto-optical_rotation.pdf",
+  "pdf_path": "Datasets/evaluation/short/Time-dependent_resonant_magneto-optical_rotation.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-03T08:55:25.504736",
+  "mode": "fresh",
+  "page_count": 10,
+  "chunk_count": 66,
+  "time_extraction_s": 12.506,
+  "time_chunking_s": 0.001,
+  "time_embedding_s": 11.997,
+  "time_store_s": 0.084,
+  "time_cache_load_s": null,
+  "time_total_s": 24.609,
+  "error": null
+}

@@ -1,0 +1,16 @@
+{
+  "pdf": "PrivGAN_ .pdf",
+  "pdf_path": "Datasets/evaluation/medium/PrivGAN_ .pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:48:30.501733",
+  "mode": "fresh",
+  "page_count": 21,
+  "chunk_count": 240,
+  "time_extraction_s": 33.654,
+  "time_chunking_s": 0.01,
+  "time_embedding_s": 49.442,
+  "time_store_s": 0.169,
+  "time_cache_load_s": null,
+  "time_total_s": 83.321,
+  "error": null
+}

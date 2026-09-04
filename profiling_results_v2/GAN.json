@@ -1,0 +1,19 @@
+{
+  "pdf": "GAN.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/short/GAN.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-02T15:48:52.918331",
+  "mode": "fresh",
+  "page_count": 9,
+  "chunk_count": 111,
+  "token_count": 7521,
+  "window_count": 1,
+  "time_extraction_s": 4.009,
+  "time_chunking_s": 0.002,
+  "time_tokenize_s": 0.047,
+  "time_embedding_s": 34.999,
+  "time_store_s": 0.117,
+  "time_cache_load_s": null,
+  "time_total_s": 39.244,
+  "error": null
+}

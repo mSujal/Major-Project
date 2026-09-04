@@ -1,0 +1,16 @@
+{
+  "pdf": "Hurtful_words.pdf",
+  "pdf_path": "Datasets/evaluation/medium/Hurtful_words.pdf",
+  "tier": "medium",
+  "profiled_at": "2026-09-03T08:43:13.280938",
+  "mode": "fresh",
+  "page_count": 16,
+  "chunk_count": 356,
+  "time_extraction_s": 21.966,
+  "time_chunking_s": 0.002,
+  "time_embedding_s": 92.435,
+  "time_store_s": 0.216,
+  "time_cache_load_s": null,
+  "time_total_s": 114.647,
+  "error": null
+}

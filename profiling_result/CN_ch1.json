@@ -1,0 +1,16 @@
+{
+  "pdf": "CN_ch1.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/PDFs/CN_ch1.pdf",
+  "tier": "PDFs",
+  "profiled_at": "2026-09-04T07:15:48.944300",
+  "mode": "fresh",
+  "page_count": 77,
+  "chunk_count": 154,
+  "time_extraction_s": 46.449,
+  "time_chunking_s": 4.27,
+  "time_embedding_s": 89.363,
+  "time_store_s": 0.6,
+  "time_cache_load_s": null,
+  "time_total_s": 140.807,
+  "error": null
+}

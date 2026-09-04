@@ -1,0 +1,19 @@
+{
+  "pdf": "Representation Dependence in Probabilistic Inference.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/large/Representation Dependence in Probabilistic Inference.pdf",
+  "tier": "large",
+  "profiled_at": "2026-09-02T14:43:39.440188",
+  "mode": "fresh",
+  "page_count": 38,
+  "chunk_count": 483,
+  "token_count": 32809,
+  "window_count": 5,
+  "time_extraction_s": 13.017,
+  "time_chunking_s": 0.004,
+  "time_tokenize_s": 0.151,
+  "time_embedding_s": 202.682,
+  "time_store_s": 1.257,
+  "time_cache_load_s": null,
+  "time_total_s": 217.124,
+  "error": null
+}

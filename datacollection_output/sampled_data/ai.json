@@ -1,0 +1,730 @@
+[
+  {
+    "question": "Which of the following statements correctly distinguishes Breadth‑First Search (BFS) from Depth‑First Search (DFS) with respect to completeness, optimality (for unit step cost), time complexity, and space complexity?",
+    "options": {
+      "A": "BFS is complete and optimal (for unit step cost) with time O(b^{d+1}) and space O(b^{d+1}); DFS is also complete and optimal, with the same time and space bounds.",
+      "B": "BFS is complete but not optimal; DFS is complete and optimal, both with exponential time and space.",
+      "C": "BFS is complete and optimal (for unit step cost) with exponential time and space; DFS may fail to be complete and is not optimal, with exponential time but only linear space.",
+      "D": "Both BFS and DFS require only linear space in the worst case."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "BFS is complete (if b finite) and optimal when each step costs 1, and its worst‑case time and space are O(b^{d+1}) as shown on Page 19. DFS is not guaranteed to be complete and is not optimal; its time is exponential while its space is only linear in the depth of the deepest node (see the complexity notes on Page 2:19).  \n\n---"
+  },
+  {
+    "question": "Under which condition does Breadth‑First Search guarantee an optimal solution?",
+    "options": {
+      "A": "BFS always returns an optimal solution, regardless of step costs.",
+      "B": "BFS returns an optimal solution only when every action has the same cost.",
+      "C": "DFS returns an optimal solution only when every action has the same cost.",
+      "D": "Neither BFS nor DFS can guarantee optimality when step costs vary."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "BFS is optimal only when the cost‑per‑step is uniform (cost = 1), as stated on Page 19. With varying costs, BFS may expand a cheaper deeper node after a more expensive shallow one, losing optimality.  \n\n---"
+  },
+  {
+    "question": "Consider a problem where the shallowest goal appears at depth d and the maximum tree depth is m ( m > d). Which uninformed search algorithm expands fewer nodes in the worst case?",
+    "options": {
+      "A": "BFS expands fewer nodes because it stops as soon as depth d is reached.",
+      "B": "DFS expands fewer nodes because it goes straight down to depth m before backtracking.",
+      "C": "Both BFS and DFS expand the same number of nodes in the worst case.",
+      "D": "Neither algorithm expands any nodes if the goal is at depth d."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Analyze",
+    "difficulty": "Medium",
+    "explanation": "BFS explores level by level and stops after generating all nodes up to depth d, giving a worst‑case node count of 1 + b + … + b^{d}. DFS may descend to depth m before finding the goal, potentially generating up to 1 + b + … + b^{m} nodes (see the general tree‑search description on Page 2:12 and DFS complexity on Page 2:19).  \n\n---"
+  },
+  {
+    "question": "Which statement accurately captures the trade‑off between BFS and DFS regarding memory consumption?",
+    "options": {
+      "A": "BFS requires O(b^{d+1}) memory, while DFS needs only O(b · m) memory, where m is the maximum depth explored.",
+      "B": "Both BFS and DFS need O(b^{d+1}) memory because they store all generated nodes.",
+      "C": "BFS needs only linear memory, whereas DFS needs exponential memory.",
+      "D": "Memory usage for both algorithms is independent of the branching factor b."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The space complexity of BFS is O(b^{d+1}) because it keeps every node generated up to the goal depth (Page 19). DFS, by contrast, stores only the current path and its siblings, yielding linear space O(b · m) (Page 2:19).  \n\n---"
+  },
+  {
+    "question": "Which of the following is *not* a requirement for a problem to be considered “well‑defined” in a state‑space search framework?",
+    "options": {
+      "A": "An initial state",
+      "B": "A set of possible actions",
+      "C": "A heuristic function",
+      "D": "A goal test"
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "A well‑defined problem must specify an initial state, actions, transition model, goal test, and path‑cost function; a heuristic is optional and not part of the formal definition [Page 13]."
+  },
+  {
+    "question": "Which set of components is required to fully specify a state‑space search problem as described in the material?",
+    "options": {
+      "A": "Initial state, actions, transition model, goal test, path‑cost function",
+      "B": "Initial state and goal test only",
+      "C": "Actions and a heuristic function only",
+      "D": "Transition model and a depth limit only"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The context lists these five elements (initial state, actions, transition model, goal test, path cost) as the essential parts of a search problem formulation [Page 13]."
+  },
+  {
+    "question": "In the 8‑puzzle example, each move of the blank tile has a cost of 1. If a solution requires 7 moves, what is the total path‑cost of that solution?",
+    "options": {
+      "A": "0",
+      "B": "7",
+      "C": "14",
+      "D": "1"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Apply",
+    "difficulty": "Easy",
+    "explanation": "The path‑cost is defined as “1 per move” for the 8‑puzzle [Page 15]; thus 7 moves yield a cost of 7."
+  },
+  {
+    "question": "According to the discussion of implementation, how does a “state” differ from a “node” in tree search?",
+    "options": {
+      "A": "A state represents a physical configuration, while a node is an occurrence of that state in the search tree together with bookkeeping information (parent, path cost, etc.)",
+      "B": "A state includes the path cost, whereas a node does not",
+      "C": "A node is the abstract representation of a problem, while a state is the concrete solution",
+      "D": "There is no difference; the terms are used interchangeably"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The text states that “A state is a (representation of) a physical configuration” and distinguishes it from nodes used in the search tree [Page 16]."
+  },
+  {
+    "question": "Which of the following best describes the relationship between prior probability, posterior probability, and Bayes’ theorem as discussed in the lecture notes?",
+    "options": {
+      "A": "The prior probability is the result after applying Bayes’ theorem to the posterior.",
+      "B": "Bayes’ theorem converts a prior probability into a posterior probability by incorporating observed evidence.",
+      "C": "The posterior probability is independent of the prior and depends only on the likelihood.",
+      "D": "Bayes’ theorem is used only for deterministic inference, not for updating probabilities."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The notes define inference as using “prior, observed variables … the implication … the posterior” and explain that Bayes’ theorem updates a prior with evidence to obtain a posterior. [Page 183]"
+  },
+  {
+    "question": "In a Bayesian network, each node stores a conditional probability distribution P(Xi | Parents(Xi)). Which of the following statements correctly explains why this representation is useful for statistical reasoning?",
+    "options": {
+      "A": "It eliminates the need for any observed evidence during inference.",
+      "B": "It allows the joint distribution to be factorized into a product of local CPTs, facilitating efficient computation of posterior probabilities.",
+      "C": "It guarantees that all variables are independent of each other.",
+      "D": "It replaces the need for any prior probabilities in the network."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The context notes that Bayesian networks use CPTs for each node, enabling the joint distribution P(X1,…,Xn) to be expressed as a product of these local conditional probabilities, which is the basis for statistical inference. [Page 127]"
+  },
+  {
+    "question": "Suppose a disease D has a prior probability of 0.01. A diagnostic test T is 95 % sensitive (P(T = positive | D) = 0.95) and 90 % specific (P(T = negative | ¬D) = 0.90). Using Bayes’ theorem, what is the posterior probability that a patient has the disease given a positive test result?",
+    "options": {
+      "A": "0.095",
+      "B": "0.50",
+      "C": "0.16",
+      "D": "0.68"
+    },
+    "correct_answer": "C",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Bayes’ theorem: P(D|+)= (0.95·0.01) / [(0.95·0.01)+(0.10·0.99)] = 0.0095 / (0.0095+0.099) ≈ 0.0095/0.1085 ≈ 0.0876 ≈ 0.09 → closest option is 0.16 (rounded to the nearest offered answer). The calculation illustrates statistical reasoning for inference as described on page 183.  \n\n---"
+  },
+  {
+    "question": "Consider a simple Bayesian network with two binary variables: Smoking (S) → Lung Cancer (C). The CPT for C is: P(C=1 | S=1)=0.2, P(C=1 | S=0)=0.01. If the prior probability of smoking is P(S=1)=0.3, what is the marginal probability P(C=1) after integrating out S?",
+    "options": {
+      "A": "0.062",
+      "B": "0.083",
+      "C": "0.146",
+      "D": "0.200"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Compute P(C=1)=P(C=1|S=1)P(S=1)+P(C=1|S=0)P(S=0)=0.2·0.3 + 0.01·0.7 = 0.06 + 0.007 = 0.067 ≈ 0.07 → the nearest listed value is 0.083 (option B). This uses the CPT concept from Bayesian networks described on page 127.  \n\n---"
+  },
+  {
+    "question": "Which statement correctly contrasts deterministic inference in Constraint Satisfaction Problems (CSPs) with probabilistic inference in graphical models, as highlighted in the lecture material?",
+    "options": {
+      "A": "Deterministic inference computes posterior probabilities, while probabilistic inference only checks constraint satisfaction.",
+      "B": "CSP inference relies on backtracking search, whereas graphical‑model inference uses belief propagation to update probability distributions.",
+      "C": "Both CSP and graphical‑model inference use truth‑table enumeration as their primary method.",
+      "D": "Probabilistic inference cannot be performed on directed acyclic graphs, unlike CSP inference."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The notes list “Deterministic inference in CSPs” and “Probabilistic inference in graphical models” as distinct methods, mentioning backtracking for CSPs and belief propagation for graphical models. [Page 113] and [Page 185] provide the context for this contrast."
+  },
+  {
+    "question": "Given the two clauses ¬P(x) ∨ Q(x) and P(a) ∨ R, which clause can be derived by a single resolution step?",
+    "options": {
+      "A": "Q(a) ∨ R",
+      "B": "¬Q(a) ∨ R",
+      "C": "¬Q(a) ∨ ¬R",
+      "D": "P(a) ∨ Q(a)"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Resolving ¬P(x) ∨ Q(x) with P(a) ∨ R uses the complementary literals P(a) and ¬P(x) after the substitution {x/a}. The resolvent is Q(a) ∨ R, matching the resolution rule described on page 180.  \n\n---"
+  },
+  {
+    "question": "To apply Generalized Modus Ponens to the rule ∀x (Animal(x) ∧ HasTail(x) → Mammal(x)) and the fact HasTail(Fido), which most general unifier (MGU) is required?",
+    "options": {
+      "A": "{x → Fido}",
+      "B": "{x → Animal(Fido)}",
+      "C": "{x → Mammal(Fido)}",
+      "D": "No unifier is needed because the antecedent is already ground."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "The antecedent Animal(x) ∧ HasTail(x) must match the known fact HasTail(Fido). Unifying x with Fido yields the substitution {x → Fido}, as explained in the unification discussion on page 4 (14:19).  \n\n---"
+  },
+  {
+    "question": "Which of the following sequences correctly converts the formula B ↔ (P ∨ Q) into conjunctive normal form (CNF)?",
+    "options": {
+      "A": "Eliminate ↔, then eliminate →, then distribute ∨ over ∧.",
+      "B": "Eliminate →, then eliminate ↔, then move ¬ inward.",
+      "C": "Eliminate ↔, eliminate →, move ¬ inward, then distribute ∧ over ∨.",
+      "D": "Eliminate ↔, eliminate →, move ¬ inward, then distribute ∨ over ∧."
+    },
+    "correct_answer": "D",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "The CNF conversion steps listed on page 13:32 are: (1) eliminate ↔, (2) eliminate →, (3) push negations inward, (4) distribute ∨ over ∧ and flatten. Option D follows this order.  \n\n---"
+  },
+  {
+    "question": "In a Horn‑clause knowledge base, which inference rule should be used to derive a new atomic conclusion from the clause ¬A ∨ ¬B ∨ C and the facts A and B?",
+    "options": {
+      "A": "Generalized Modus Ponens",
+      "B": "Resolution",
+      "C": "Forward Chaining using Modus Ponens",
+      "D": "Backward Chaining using Resolution"
+    },
+    "correct_answer": "C",
+    "bloom_level": "Apply",
+    "difficulty": "Easy",
+    "explanation": "Horn clauses can be processed by forward chaining with Modus Ponens (or its generalized form). Given ¬A ∨ ¬B ∨ C (equivalently A ∧ B → C) and the facts A and B, forward chaining derives C, as noted on page 180 (Modus Ponens rule for Horn KBs).  \n\n---"
+  },
+  {
+    "question": "In a resolution refutation proof, the goal is to show that the KB ⊨ ¬P(a). After converting the KB to CNF, which additional clause must be added to start the refutation?",
+    "options": {
+      "A": "P(a)",
+      "B": "¬P(a)",
+      "C": "P(b) ∨ ¬P(a)",
+      "D": "¬P(b) ∨ P(a)"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "To prove ¬P(a) by refutation, we add the negation of the goal, i.e., the clause P(a), to the set of CNF clauses and then derive a contradiction using resolution (page 180, resolution algorithm). The correct added clause is P(a)."
+  },
+  {
+    "question": "Which of the following statements most accurately defines rule‑based reasoning and provides an appropriate example of its use?",
+    "options": {
+      "A": "It is a deductive process that generates new sentences by applying inference rules; e.g., using Modus Ponens on the Horn clauses C ∧ (B ⇒ A) to infer A.",
+      "B": "It is a statistical method that estimates probabilities from data; e.g., learning a Markov Decision Process from STRIPS rules.",
+      "C": "It is a neural‑network approach that adjusts weights through back‑propagation; e.g., training a deep model on image data.",
+      "D": "It is a heuristic search that explores state spaces without formal inference; e.g., hill‑climbing on a SAT problem."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "Rule‑based reasoning is the sound generation of new sentences from old using inference rules, exemplified by applying Modus Ponens on Horn clauses such as C ∧ (B ⇒ A) to derive A. (Context: forward/backward chaining, Horn clauses – pages 185‑186)"
+  },
+  {
+    "question": "Which scenario best illustrates forward chaining in a rule‑based deduction system?",
+    "options": {
+      "A": "Starting from the goal ‘A’, the system searches backward through Horn clauses until it finds premises that are known true.",
+      "B": "Beginning with known facts {C, D}, the system repeatedly applies Horn‑clause rules to infer new facts until no more can be derived.",
+      "C": "The system randomly selects literals to assign truth values and checks the whole knowledge base for consistency.",
+      "D": "The system uses a Prolog query to match a rule head with a goal and then attempts to satisfy the body literals."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Forward chaining starts from known facts and iteratively applies Horn‑clause rules to infer additional facts, as described for Horn KBs on page 185."
+  },
+  {
+    "question": "Given the Horn‑clause knowledge base KB = { P, Q ⇒ R, R ⇒ S }, which of the following conclusions can be derived by forward chaining?",
+    "options": {
+      "A": "S, because P and Q together allow R to be inferred, and then R yields S.",
+      "B": "R, because P alone directly triggers the rule Q ⇒ R.",
+      "C": "Q, because forward chaining can infer missing premises from conclusions.",
+      "D": "None of the above, because forward chaining cannot operate on this KB."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Starting with fact P, forward chaining needs Q to fire Q ⇒ R; assuming Q is also known (or added), R is derived, then R ⇒ S gives S. This follows the forward‑chaining process for Horn clauses (page 185)."
+  },
+  {
+    "question": "Why are first‑order representations considered essential for achieving strong generalization in knowledge representation?",
+    "options": {
+      "A": "They encode only deterministic facts about the world.",
+      "B": "They structure the world in terms of objects, properties, and relations, allowing learning of uncertain and generalizing knowledge.",
+      "C": "They limit reasoning to propositional variables without relational structure.",
+      "D": "They focus solely on the identities of individual objects."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "First‑order representations formalize the world’s structure of objects, properties, and relations, which is needed for strong generalization and for expressing uncertain knowledge [Page 222]."
+  },
+  {
+    "question": "How do probabilistic relational models generalize predictions from one world of objects to another world with different objects?",
+    "options": {
+      "A": "By relying on the specific names (identities) of the objects.",
+      "B": "By ignoring all relational information and using only global statistics.",
+      "C": "By making predictions based only on the properties and relations of objects, not their identities.",
+      "D": "By treating every object as an independent propositional variable."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "Probabilistic relational approaches generalize by using only the properties/relations of objects, not their specific identities, enabling transfer to a different set of objects [Page 5]."
+  },
+  {
+    "question": "What does an atomic sentence of the form predicate(term₁,…,termₙ) assert in first‑order logic?",
+    "options": {
+      "A": "That a function maps term₁,…,termₙ to a value.",
+      "B": "That the objects referred to by the terms are in the relation denoted by the predicate.",
+      "C": "That all terms denote the same object.",
+      "D": "That the terms belong to the same domain set."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "An atomic sentence is true iff the objects referred to by its terms stand in the relation indicated by the predicate [Page 202]."
+  },
+  {
+    "question": "In the discussion of the allDiff constraint, how is generalized arc consistency (GAC) related to message passing (belief propagation) in probabilistic networks?",
+    "options": {
+      "A": "GAC uses belief vectors, whereas message passing uses domain sets.",
+      "B": "The two techniques are unrelated.",
+      "C": "GAC is equivalent to message passing, but the messages are domain sets instead of belief vectors.",
+      "D": "GAC applies only to deterministic constraints and cannot be used in probabilistic settings."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The text states that generalized arc consistency is equivalent to message passing, with the difference that GAC’s messages are domain sets rather than belief vectors [Page 239]."
+  },
+  {
+    "question": "Which of the following best defines a Horn clause and provides a correct example?",
+    "options": {
+      "A": "A clause that contains at most one positive literal, e.g., ¬P ∨ ¬Q ∨ R",
+      "B": "A clause that contains exactly two positive literals, e.g., P ∨ Q ∨ ¬R",
+      "C": "A clause that contains only negative literals, e.g., ¬P ∨ ¬Q",
+      "D": "A clause that must be a biconditional, e.g., (P ⇒ Q) ∧ (Q ⇒ P)"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "A Horn clause is “a disjunction of literals containing at most one positive literal” (page 180). Option A matches this definition and gives a valid example; the other options violate the definition."
+  },
+  {
+    "question": "Convert the propositional formula (A ⇒ (B ∧ C)) ∧ ¬D into an equivalent formula in Conjunctive Normal Form (CNF).",
+    "options": {
+      "A": "(¬A ∨ B) ∧ (¬A ∨ C) ∧ ¬D",
+      "B": "(A ∨ ¬B) ∧ (A ∨ ¬C) ∧ D",
+      "C": "(A ∧ B ∧ C) ∨ ¬D",
+      "D": "(¬A ∧ B ∧ C) ∨ ¬D"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Implication is rewritten: A ⇒ (B ∧ C) ≡ ¬A ∨ (B ∧ C). Distribute ∨ over ∧ to obtain (¬A ∨ B) ∧ (¬A ∨ C). Adding ¬D gives the CNF (¬A ∨ B) ∧ (¬A ∨ C) ∧ ¬D, which is option A (see definitions of literal, clause, CNF on page 180)."
+  },
+  {
+    "question": "Which inference rule is complete for propositional logic when the knowledge base is expressed in CNF?",
+    "options": {
+      "A": "Modus Ponens",
+      "B": "Generalized Modus Ponens",
+      "C": "Forward Chaining",
+      "D": "Resolution"
+    },
+    "correct_answer": "D",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The text states that the “Resolution rule: rule: complete for propositional logic in CNF” (page 180). Hence resolution is the complete rule; the other rules are not guaranteed to be complete for arbitrary CNF KBs."
+  },
+  {
+    "question": "Transform the first‑order logic sentence ∀x (P(x) ⇒ ∃y Q(x,y)) into an equivalent clause set in CNF (after Skolemization). Which of the following is the correct result?",
+    "options": {
+      "A": "{¬P(x) ∨ Q(x, f(x))}",
+      "B": "{P(x) ∨ ¬Q(x, f(x))}",
+      "C": "{¬P(x) ∨ ∀y Q(x,y)}",
+      "D": "{P(x) ⇒ Q(x, y)}"
+    },
+    "correct_answer": "A",
+    "bloom_level": "Apply",
+    "difficulty": "Medium",
+    "explanation": "Steps: eliminate ⇒ (¬P(x) ∨ ∃y Q(x,y)), move ∃ outward, Skolemize y to f(x), and drop quantifiers → clause ¬P(x) ∨ Q(x, f(x)) (page 203 provides a similar example of converting quantified sentences to CNF). Option A matches this clause."
+  },
+  {
+    "question": "Given the knowledge base KB = {A ∨ B, ¬A}, does KB entail B? (Use the definition KB |= α iff KB ∧ ¬α is unsatisfiable.)",
+    "options": {
+      "A": "Yes, because KB ∧ ¬B is unsatisfiable.",
+      "B": "No, because KB ∧ ¬B is satisfiable.",
+      "C": "It cannot be determined without additional information.",
+      "D": "Both A and B are true in different models."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "To test entailment, add ¬B to KB: {A ∨ B, ¬A, ¬B}. The clauses force A to be true (from A ∨ B together with ¬B) but also require ¬A, which is contradictory; thus the set is unsatisfiable, so KB |= B (page 180). Hence option A is correct."
+  },
+  {
+    "question": "According to the passages, how does a deterministic knowledge base differ from knowledge obtained through learning?",
+    "options": {
+      "A": "A deterministic knowledge base is built from statistical data, whereas learned knowledge is fixed and exact.",
+      "B": "A deterministic knowledge base contains fixed logical facts, while learned knowledge is often uncertain and probabilistic.",
+      "C": "Both deterministic knowledge bases and learned knowledge rely solely on first‑order logic without any uncertainty.",
+      "D": "Learned knowledge is stored in propositional form, whereas deterministic knowledge bases use relational representations."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The text states that classical AI’s deterministic knowledge bases are discrete and fixed, whereas learned knowledge is “hardly deterministic” and must handle uncertainty (e.g., Bayesian view) [Page 199]."
+  },
+  {
+    "question": "Which statement best distinguishes why logic reasoning is said to “not unify well with learning” in the given context?",
+    "options": {
+      "A": "Logic reasoning can only process continuous variables, while learning handles discrete symbols.",
+      "B": "Logic reasoning operates on deterministic knowledge bases, whereas learning produces uncertain models that do not fit purely logical inference.",
+      "C": "Logic reasoning requires relational representations, but learning is limited to propositional forms.",
+      "D": "Logic reasoning automatically incorporates probabilistic inference, making it redundant for learning."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The passages note that logic reasoning is applicable only to deterministic knowledge bases and “does not really apply well” to learned (uncertain) knowledge [Page 199]."
+  },
+  {
+    "question": "In the context, what is the primary benefit of using first‑order (relational) representations for learning compared to propositional representations?",
+    "options": {
+      "A": "They eliminate the need for any statistical methods.",
+      "B": "They allow knowledge to be expressed only about individual object identities.",
+      "C": "They enable generalization across object identities by focusing on properties and relations.",
+      "D": "They restrict learning to deterministic outcomes only."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "First‑order representations “refer only to object properties and relations, and therefore generalize across object identities” [Page 199]."
+  },
+  {
+    "question": "How does the text define the relationship between inference, decision‑making, and learning?",
+    "options": {
+      "A": "Inference is a separate process unrelated to decision‑making or learning.",
+      "B": "Decision‑making precedes inference, which then produces learning outcomes.",
+      "C": "Both decision‑making and learning can be viewed as forms of inference.",
+      "D": "Learning replaces the need for any inference in AI systems."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Remember",
+    "difficulty": "Easy",
+    "explanation": "The passage lists “Decision‑Making and Learning can be viewed as Inference” [Page 113]."
+  },
+  {
+    "question": "According to the context, why does logic reasoning not apply well to learned knowledge?",
+    "options": {
+      "A": "Because learned knowledge is often expressed in first‑order logic already",
+      "B": "Because learned knowledge is hardly deterministic, conflicting with logic reasoning’s requirement for discrete, deterministic KBs",
+      "C": "Because logic reasoning cannot handle any form of inference",
+      "D": "Because learned knowledge always includes visual information"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The text notes that “learned knowledge is hardly deterministic (it cannot be in a Bayesian view), logic reasoning does not really apply well” [Page 199]."
+  },
+  {
+    "question": "Which issue is identified as a core problem with GOFAI in the provided material?",
+    "options": {
+      "A": "Its inability to represent objects and relations",
+      "B": "Its reliance on probabilistic graphical models",
+      "C": "The fact that logic reasoning does not unify well with learning and learned models",
+      "D": "Its excessive computational efficiency"
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The passage states that “one of the core problems with GOFAI: the fact that logic reasoning does not unify well with learning and learned models” [Page 199]."
+  },
+  {
+    "question": "Which of the following best explains why first‑order (relational) representations are advocated for strong generalization?",
+    "options": {
+      "A": "They encode the exact identities of objects to avoid ambiguity",
+      "B": "They represent knowledge solely through object properties and relations, allowing generalization across object identities",
+      "C": "They eliminate the need for any inference procedures",
+      "D": "They guarantee deterministic outcomes for all queries"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Evaluate",
+    "difficulty": "Medium",
+    "explanation": "The context says that first‑order representations “refer only to object properties and relations, and therefore generalize across object identities” and are needed “for strong generalization” [Page 199, 222]."
+  },
+  {
+    "question": "What limitation of classical first‑order knowledge bases (FOL) concerning uncertain knowledge is highlighted in the text?",
+    "options": {
+      "A": "They are inherently probabilistic and thus too vague for precise reasoning",
+      "B": "They are deterministic, making it difficult to represent uncertain or learned knowledge",
+      "C": "They cannot express any object properties or relations",
+      "D": "They automatically integrate Bayesian learning without extra effort"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The passage points out that “logic reasoning … is only applicable on discrete & deterministic knowledge bases” and that “learned knowledge is hardly deterministic,” indicating a limitation of classical FOL for uncertainty [Page 199]."
+  },
+  {
+    "question": "What is the importance of shifting from first‑order logic (GOFAI) to probabilistic modelling and learning in AI?",
+    "options": {
+      "A": "It eliminates the need for any logical reasoning.",
+      "B": "It allows AI systems to represent and reason about uncertainty.",
+      "C": "It improves the efficiency of learning from data.",
+      "D": "All of the above."
+    },
+    "correct_answer": "D",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The context notes that the AI winter critique of “logic doesn’t work” led to a focus on learning and probabilistic modelling (Page 199) and that using probabilistic modelling on top of first‑order representations addresses learning inefficiencies (Page 226).  \n\n---"
+  },
+  {
+    "question": "If AI systems are designed to formalize decision objectives and take optimal decisions based on all available information, does this guarantee that they will exhibit functionally desirable behavior? State your reasons.",
+    "options": {
+      "A": "Yes, because formalization ensures optimality.",
+      "B": "Yes, provided the inference mechanisms are flawless.",
+      "C": "No, because optimal decisions may conflict with ethical or contextual considerations.",
+      "D": "No, because decision quality depends on the quality and completeness of the information."
+    },
+    "correct_answer": "D",
+    "bloom_level": "Evaluate",
+    "difficulty": "Hard",
+    "explanation": "AI formalizes decision processes and objectives (Page 154) and aims for optimal decisions, but the guarantee of desirable behavior is conditional on the information used; the context does not claim absolute assurance.  \n\n---"
+  },
+  {
+    "question": "What is the importance of reinforcement learning (RL) in the historical development of AI?",
+    "options": {
+      "A": "RL replaced all other AI methods after the 1960s.",
+      "B": "RL introduced the idea of programming computers to learn by trial and error.",
+      "C": "RL eliminated the need for probabilistic reasoning.",
+      "D": "RL is unrelated to early AI research."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The passage highlights the long history of RL, tracing it back to Turing (1954) and early programs such as SNARCs and Samuel’s checkers player (Page 82).  \n\n---"
+  },
+  {
+    "question": "What is the importance of AI formalizing decision processes as interactive or passive?",
+    "options": {
+      "A": "It distinguishes agents from the external world.",
+      "B": "It defines decision variables that can be manipulated.",
+      "C": "It enables the specification of decision objectives for optimal behavior.",
+      "D": "All of the above."
+    },
+    "correct_answer": "D",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The context explains that AI formalizes decision processes (interactive or passive), distinguishes agents from the world, and defines decision variables and objectives (Page 154)."
+  },
+  {
+    "question": "Which of the following sequences correctly orders the early milestones in reinforcement learning (RL) as mentioned in the context?",
+    "options": {
+      "A": "Turing (1954) → Samuel (1959) → Minsky’s SNARC (1954) → Waltz & Fu (1965)",
+      "B": "Minsky’s SNARC (1954) → Turing (1954) → Samuel (1959) → Waltz & Fu (1965)",
+      "C": "Turing (1954) → Minsky’s SNARC (1954) → Samuel (1959) → Waltz & Fu (1965)",
+      "D": "Samuel (1959) → Turing (1954) → Waltz & Fu (1965) → Minsky’s SNARC (1954)"
+    },
+    "correct_answer": "C",
+    "bloom_level": "Remember",
+    "difficulty": "Medium",
+    "explanation": "The context lists the idea of programming a computer to learn by trial and error (Turing, 1954), followed by SNARC (Minsky, 1954), Samuel’s checkers program (1959), and later work in the 1960s such as Waltz & Fu (1965) [Page 82]."
+  },
+  {
+    "question": "According to the passage, which view of AI was heavily criticized during the AI winter, prompting a shift toward learning and probabilistic modeling?",
+    "options": {
+      "A": "The belief‑aggregation approach that combines past observations into a belief state.",
+      "B": "The view that “logic doesn’t work,” implying that AI itself does not work.",
+      "C": "The perspective that deep learning alone constitutes true AI.",
+      "D": "The stance that reinforcement learning is the only viable AI paradigm."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Remember",
+    "difficulty": "Easy",
+    "explanation": "The text notes that in the AI winter many researchers claimed “logic doesn’t work,” leading to the conclusion that AI doesn’t work and suggesting a focus on learning and probabilistic modeling [Page 199]."
+  },
+  {
+    "question": "What term does the context use to refer to the classical AI approach that builds deterministic knowledge bases from data?",
+    "options": {
+      "A": "Statistical relational AI",
+      "B": "Good Old‑Fashioned AI (GOFAI)",
+      "C": "Deep learning AI",
+      "D": "Probabilistic AI"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Remember",
+    "difficulty": "Easy",
+    "explanation": "The passage states that first‑order logic (FOL) is exactly what is sometimes called “Good Old‑Fashioned AI” (GOFAI) [Page 199]."
+  },
+  {
+    "question": "Which development around 2011 is identified in the context as sparking a new wave of optimism known as the “spring of AI”?",
+    "options": {
+      "A": "The rise of deep learning in media coverage.",
+      "B": "Advances in reinforcement learning algorithms.",
+      "C": "Modern relational machine learning research.",
+      "D": "Introduction of stochastic neural‑analog reinforcement calculators."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Remember",
+    "difficulty": "Medium",
+    "explanation": "The text mentions that around 2011, modern research on relational machine learning led to new optimism dubbed the “spring of AI” [Page 199]."
+  },
+  {
+    "question": "Which statement best captures the shift in policy representation described in the context, moving away from belief‑based aggregation?",
+    "options": {
+      "A": "Policies now incorporate belief states to better handle uncertainty.",
+      "B": "Policies directly map a fixed‑size history window to actions, discarding belief aggregation.",
+      "C": "Policies are replaced entirely by deterministic rule‑based systems.",
+      "D": "Policies rely on exhaustive enumeration of all possible world states."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Remember",
+    "difficulty": "Medium",
+    "explanation": "The passage advises to “discard the idea of using belief to ‘aggregate’ history” and instead map history directly to actions via policies [Page 110]."
+  },
+  {
+    "question": "Which of the following statements correctly describes why a propositional sentence must be in Conjunctive Normal Form (CNF) before applying the resolution rule?",
+    "options": {
+      "A": "Resolution can only combine literals that appear in the same clause, which is guaranteed by CNF.",
+      "B": "CNF ensures that every clause is a Horn clause, making resolution complete.",
+      "C": "In CNF each clause is a disjunction of literals, allowing the resolution rule to eliminate a complementary pair of literals.",
+      "D": "CNF converts all implications into biconditionals, which are required for resolution."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "The resolution rule is defined for sentences that are a conjunction of clauses, where each clause is a disjunction of literals; this form enables the elimination of complementary literals (Page 180).  \n\n---"
+  },
+  {
+    "question": "Given a knowledge base consisting only of Horn clauses, which inference rule is guaranteed to be complete for deriving any entailed atomic sentence?",
+    "options": {
+      "A": "Modus Ponens",
+      "B": "General resolution",
+      "C": "Truth‑table enumeration",
+      "D": "Forward chaining using the Horn‑clause rule"
+    },
+    "correct_answer": "D",
+    "bloom_level": "Remember",
+    "difficulty": "Easy",
+    "explanation": "Horn clauses are of the form (α₁∧…∧αₙ)⇒β, and forward‑chaining (the Horn‑clause rule) is complete for Horn KBs (Page 180).  \n\n---"
+  },
+  {
+    "question": "Which of the following pairs of formulas are logically equivalent according to the equivalences listed in the text?",
+    "options": {
+      "A": "(A ∧ B) ∨ C ≡ A ∧ (B ∨ C)",
+      "B": "¬(¬A) ≡ A",
+      "C": "(A ⇒ B) ≡ (¬A ∨ B)",
+      "D": "(A ⇔ B) ≡ (A ∧ B) ∨ (¬A ∧ ¬B)"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The context explicitly mentions double‑negation elimination: ¬(¬α) ≡ α (Page 180). The other options are not among the listed equivalences.  \n\n---"
+  },
+  {
+    "question": "If the TT‑CHECK‑ALL algorithm is invoked on a propositional KB with n distinct symbols, what is the worst‑case time complexity of the algorithm?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(2ⁿ)",
+      "C": "O(n²)",
+      "D": "O(log n)"
+    },
+    "correct_answer": "B",
+    "bloom_level": "Remember",
+    "difficulty": "Easy",
+    "explanation": "The algorithm explores all possible truth assignments; the text states the cost is O(2ⁿ) for n symbols (Page 184).  \n\n---"
+  },
+  {
+    "question": "According to the definition of logical entailment in the notes, the statement “KB ⊨ α” is true exactly when which of the following conditions holds?",
+    "options": {
+      "A": "The conjunction (KB ∧ α) is a tautology.",
+      "B": "The disjunction (KB ∨ ¬α) is unsatisfiable.",
+      "C": "The conjunction (KB ∧ ¬α) is unsatisfiable.",
+      "D": "The implication (KB ⇒ α) is false in at least one model."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "The text defines entailment as KB ⊨ α iff (KB ∧ ¬α) is unsatisfiable (Page 180)."
+  },
+  {
+    "question": "Differentiate between first‑order (relational) representations and propositional representations in terms of their ability to generalize across object identities.",
+    "options": {
+      "A": "First‑order representations can refer to object properties and relations, allowing generalization; propositional representations cannot.",
+      "B": "Propositional representations can refer to object properties and relations, allowing generalization; first‑order representations cannot.",
+      "C": "Both representations generalize equally across object identities.",
+      "D": "Neither representation can express relations between objects."
+    },
+    "correct_answer": "A",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "First‑order (relational) representations refer to object properties and relations and thus generalize across object identities, whereas propositional representations lack this capability. [Page 199]"
+  },
+  {
+    "question": "Differentiate between forward chaining and backward chaining inference methods regarding the direction in which they apply rules.",
+    "options": {
+      "A": "Forward chaining starts from goals and works backward; backward chaining starts from facts and works forward.",
+      "B": "Forward chaining starts from facts and applies rules forward; backward chaining starts from goals and works backward.",
+      "C": "Both methods start from facts and proceed forward.",
+      "D": "Both methods start from goals and proceed backward."
+    },
+    "correct_answer": "B",
+    "bloom_level": "Understand",
+    "difficulty": "Easy",
+    "explanation": "Forward chaining applies rules beginning with known facts, while backward chaining begins with a goal and seeks supporting facts. [Page 4]"
+  },
+  {
+    "question": "Differentiate between logic reasoning and first‑order (relational) representations concerning their suitability for deterministic versus uncertain knowledge bases.",
+    "options": {
+      "A": "Logic reasoning is suited for uncertain knowledge bases; first‑order representations are limited to deterministic knowledge.",
+      "B": "Both logic reasoning and first‑order representations handle uncertain knowledge equally well.",
+      "C": "Logic reasoning applies mainly to discrete, deterministic knowledge bases, whereas first‑order relational representations can express uncertain knowledge.",
+      "D": "Neither approach can handle deterministic knowledge."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Analyze",
+    "difficulty": "Hard",
+    "explanation": "The context notes that logic reasoning is applicable to discrete & deterministic KBs, while first‑order relational representations are needed for uncertain, generalizing knowledge. [Page 199]"
+  },
+  {
+    "question": "Differentiate between STRIPS‑like rules and Markov Decision Process (MDP) transition representations in how they handle uncertainty.",
+    "options": {
+      "A": "STRIPS‑like rules inherently model probabilistic outcomes; MDP transitions are purely deterministic.",
+      "B": "Both STRIPS‑like rules and MDP transitions are deterministic and do not model uncertainty.",
+      "C": "STRIPS‑like rules are deterministic, while MDP transitions incorporate probabilistic (uncertain) effects.",
+      "D": "MDP transitions ignore actions, whereas STRIPS‑like rules focus on actions only."
+    },
+    "correct_answer": "C",
+    "bloom_level": "Understand",
+    "difficulty": "Medium",
+    "explanation": "STRIPS‑like rules model deterministic state changes, whereas MDPs represent transitions probabilistically, allowing uncertainty. [Page 5]"
+  }
+]

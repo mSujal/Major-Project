@@ -1,0 +1,752 @@
+[
+  {
+    "id": 1,
+    "document": "CN_ch1.pdf",
+    "question": "What is the difference between a host and an end system?",
+    "reference_answer": "They are interchangeable terms; both refer to devices connected to the Internet",
+    "correct_page": 2,
+    "correct_page_range": [2, 2],
+    "acceptable_paraphrases": [
+      "Host and end system are synonymous terms used to describe devices connected to the Internet.",
+      "The terms host and end system refer to the same concept - computing devices at the network edge."
+    ],
+    "distractor_check": "A passage describing servers and clients might seem relevant but does not define the equivalence of host and end system.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "single_sentence_fact"
+  },
+  {
+    "id": 2,
+    "document": "CN_ch1.pdf",
+    "question": "What is the socket interface and what does it do?",
+    "reference_answer": "A set of rules a sending program must follow so the Internet can deliver data to the destination program",
+    "correct_page": 6,
+    "correct_page_range": [6, 6],
+    "acceptable_paraphrases": [
+      "The socket interface specifies how a program asks the Internet infrastructure to deliver data to a specific destination program.",
+      "It is the interface that programs use to send data across the network to another program."
+    ],
+    "distractor_check": "A passage describing the postal service analogy might be confused, but the socket interface is specifically about the rules programs follow.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 3,
+    "document": "CN_ch1.pdf",
+    "question": "What are the two most prominent types of packet switches in today's Internet?",
+    "reference_answer": "Routers and link-layer switches",
+    "correct_page": 4,
+    "correct_page_range": [4, 4],
+    "acceptable_paraphrases": [
+      "The two main types of packet switches are routers and link-layer switches.",
+      "Today's Internet uses routers and link-layer switches as its packet switches."
+    ],
+    "distractor_check": "A passage about end systems or communication links might seem related but does not identify the packet switch types.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "single_sentence_fact"
+  },
+  {
+    "id": 4,
+    "document": "CN_ch1.pdf",
+    "question": "What does the Internet Engineering Task Force (IETF) do?",
+    "reference_answer": "Develops Internet standards through documents called RFCs",
+    "correct_page": 5,
+    "correct_page_range": [5, 5],
+    "acceptable_paraphrases": [
+      "The IETF develops Internet standards and publishes them as Requests for Comments (RFCs).",
+      "The IETF is responsible for creating the technical standards that define how Internet protocols work."
+    ],
+    "distractor_check": "A passage about IEEE 802 might be confused, but the IETF specifically develops RFCs for Internet protocols.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "single_sentence_fact"
+  },
+  {
+    "id": 5,
+    "document": "CN_ch1.pdf",
+    "question": "What is the difference between circuit switching and packet switching?",
+    "reference_answer": "Circuit switching reserves resources along a path; packet switching does not reserve resources and shares them on demand",
+    "correct_page": 30,
+    "correct_page_range": [30, 30],
+    "acceptable_paraphrases": [
+      "Circuit switching dedicates a fixed transmission rate for the duration of a connection, while packet switching uses link capacity only when needed.",
+      "The key difference is that circuit switching pre-allocates resources, whereas packet switching allocates resources on demand."
+    ],
+    "distractor_check": "A passage about FDM and TDM might seem related, but the fundamental comparison is between resource reservation vs. on-demand sharing.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 6,
+    "document": "CN_ch1.pdf",
+    "question": "What is store-and-forward transmission?",
+    "reference_answer": "The packet switch must receive the entire packet before it can begin transmitting the first bit onto the outbound link",
+    "correct_page": 23,
+    "correct_page_range": [23, 24],
+    "acceptable_paraphrases": [
+      "Store-and-forward means the switch buffers the entire packet before forwarding it to the next link.",
+      "The switch must receive the complete packet before it can transmit any part of it onward."
+    ],
+    "distractor_check": "A passage about queuing delays might be confused, but store-and-forward specifically refers to the buffering of the whole packet.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 7,
+    "document": "CN_ch1.pdf",
+    "question": "What is the transmission delay?",
+    "reference_answer": "The time required to push all of the packet's bits into the link (L/R)",
+    "correct_page": 36,
+    "correct_page_range": [36, 37],
+    "acceptable_paraphrases": [
+      "Transmission delay is the time taken to transmit the entire packet onto the communication link, calculated as packet length divided by transmission rate (L/R).",
+      "The transmission delay is how long it takes to place the whole packet on the wire."
+    ],
+    "distractor_check": "A passage about propagation delay might be confused, but transmission delay is about pushing bits into the link, not traveling across it.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 8,
+    "document": "CN_ch1.pdf",
+    "question": "What is the relationship between transmission delay and propagation delay?",
+    "reference_answer": "Transmission delay is pushing bits into the link; propagation delay is bits traveling across the link",
+    "correct_page": 37,
+    "correct_page_range": [37, 38],
+    "acceptable_paraphrases": [
+      "Transmission delay is about the time to send the packet, while propagation delay is about the time for a bit to travel the physical distance.",
+      "Transmission depends on packet size and link rate; propagation depends on distance between routers."
+    ],
+    "distractor_check": "A passage about queuing delay might be confused, but the question specifically asks about transmission vs. propagation.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 9,
+    "document": "CN_ch1.pdf",
+    "question": "What is the purpose of the five-layer Internet protocol stack?",
+    "reference_answer": "Provides structure for organizing protocols; layers: physical, link, network, transport, application",
+    "correct_page": 50,
+    "correct_page_range": [50, 50],
+    "acceptable_paraphrases": [
+      "The protocol stack organizes network protocols into five layers, each providing services to the layer above.",
+      "The five-layer stack (physical, link, network, transport, application) provides a structured framework for network communication."
+    ],
+    "distractor_check": "A description of encapsulation might be confused, but the stack itself is the layered architecture.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 10,
+    "document": "CN_ch1.pdf",
+    "question": "What is encapsulation?",
+    "reference_answer": "Adding header information at each layer as data moves down the stack",
+    "correct_page": 52,
+    "correct_page_range": [52, 53],
+    "acceptable_paraphrases": [
+      "Encapsulation is the process where each layer adds its own header to the data as it moves down the protocol stack.",
+      "Each layer wraps the data from the layer above with its own header information."
+    ],
+    "distractor_check": "A passage about de-encapsulation at the receiver might be confused, but encapsulation specifically refers to adding headers on the sending side.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 11,
+    "document": "CN_ch1.pdf",
+    "question": "What is the difference between TCP and UDP?",
+    "reference_answer": "TCP provides connection-oriented guaranteed delivery; UDP provides connectionless unreliable service",
+    "correct_page": 50,
+    "correct_page_range": [50, 51],
+    "acceptable_paraphrases": [
+      "TCP offers reliable, connection-oriented transport, while UDP is a connectionless, unreliable service.",
+      "TCP ensures delivery with flow control and congestion control, while UDP provides a simple no-frills service."
+    ],
+    "distractor_check": "A passage about IP might be confused, but the question specifically asks about the two transport layer protocols.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 12,
+    "document": "CN_ch1.pdf",
+    "question": "What is a denial-of-service (DoS) attack?",
+    "reference_answer": "A type of attack that renders a network, host, or infrastructure unusable by legitimate users",
+    "correct_page": 55,
+    "correct_page_range": [55, 55],
+    "acceptable_paraphrases": [
+      "A DoS attack makes a network or service unavailable to its intended users.",
+      "It is an attack that denies access to a system or resource by overwhelming it."
+    ],
+    "distractor_check": "A passage about malware might be confused, but DoS specifically targets availability.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 13,
+    "document": "CN_ch1.pdf",
+    "question": "What is the purpose of the routing protocol?",
+    "reference_answer": "Determines the routes datagrams take between sources and destinations",
+    "correct_page": 51,
+    "correct_page_range": [51, 51],
+    "acceptable_paraphrases": [
+      "Routing protocols automatically set the forwarding tables that determine the paths datagrams take.",
+      "They determine the path that a packet follows through the network."
+    ],
+    "distractor_check": "A passage about forwarding tables might be confused, but routing protocols are the mechanisms that set them.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 14,
+    "document": "CN_ch1.pdf",
+    "question": "What is the difference between a router and a link-layer switch?",
+    "reference_answer": "Routers implement IP (layer 3); switches recognize layer-2 addresses",
+    "correct_page": 53,
+    "correct_page_range": [53, 53],
+    "acceptable_paraphrases": [
+      "Routers process network-layer (IP) addresses, while link-layer switches work with layer-2 addresses like Ethernet.",
+      "The key difference is that routers operate at layer 3 and switches operate at layer 2."
+    ],
+    "distractor_check": "A passage about hosts implementing all layers might be confused, but the question compares routers and switches specifically.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 15,
+    "document": "CN_ch1.pdf",
+    "question": "What is the difference between OSI model and TCP/IP model?",
+    "reference_answer": "OSI has 7 layers (separates presentation and session); TCP/IP has 5 layers",
+    "correct_page": 50,
+    "correct_page_range": [50, 51],
+    "acceptable_paraphrases": [
+      "The OSI model has seven layers, while the TCP/IP model uses five layers.",
+      "TCP/IP combines the presentation and session layers from OSI into the application layer."
+    ],
+    "distractor_check": "A passage about the airline analogy might be confused, but the question is about the specific layer counts.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 16,
+    "document": "2chapter_software.pdf",
+    "question": "What is the difference between user requirements and system requirements?",
+    "reference_answer": "User requirements are high-level abstract statements; system requirements are detailed descriptions of what the system should do",
+    "correct_page": 4,
+    "correct_page_range": [4, 4],
+    "acceptable_paraphrases": [
+      "User requirements are stated in natural language with diagrams, while system requirements provide detailed specifications.",
+      "The user requirements describe the services expected, while system requirements are the detailed functional specification."
+    ],
+    "distractor_check": "A passage about stakeholder types might be confused, but the distinction is between user and system requirements.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 17,
+    "document": "2chapter_software.pdf",
+    "question": "What is the difference between functional and non-functional requirements?",
+    "reference_answer": "Functional describe what the system should do; non-functional constrain how it should do it",
+    "correct_page": 5,
+    "correct_page_range": [5, 5],
+    "acceptable_paraphrases": [
+      "Functional requirements specify services and behavior, while non-functional requirements specify constraints like performance or security.",
+      "Functional requirements define the system's functions; non-functional requirements impose constraints on those functions."
+    ],
+    "distractor_check": "A passage about product requirements might be confused, but functional vs. non-functional is the primary categorization.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 18,
+    "document": "2chapter_software.pdf",
+    "question": "Why is validation considered essential beyond verification?",
+    "reference_answer": "Because requirements may not capture the real wishes or needs of customers",
+    "correct_page": 37,
+    "correct_page_range": [37, 37],
+    "acceptable_paraphrases": [
+      "Validation ensures the software meets the customer's actual needs, which verification alone cannot guarantee.",
+      "Verification checks against the specification, but validation checks that the specification itself reflects what the customer wants."
+    ],
+    "distractor_check": "A passage about static V&V techniques might be confused, but the question is about why validation is essential.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "single_sentence_fact"
+  },
+  {
+    "id": 19,
+    "document": "2chapter_software.pdf",
+    "question": "What is the purpose of requirements elicitation?",
+    "reference_answer": "To understand the work stakeholders do and how they might use the new system",
+    "correct_page": 12,
+    "correct_page_range": [12, 13],
+    "acceptable_paraphrases": [
+      "Requirements elicitation involves discovering and understanding the needs of stakeholders and the application domain.",
+      "It is the process of working with stakeholders to find out what they want from the system."
+    ],
+    "distractor_check": "A passage about ethnography might be confused, but elicitation is a broader process that includes interviews and observation.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 20,
+    "document": "2chapter_software.pdf",
+    "question": "What is the difference between verification and validation?",
+    "reference_answer": "Verification checks conformance to specification; validation ensures the software meets customer's real needs",
+    "correct_page": 36,
+    "correct_page_range": [36, 37],
+    "acceptable_paraphrases": [
+      "Verification asks 'Are we building the product right?' while validation asks 'Are we building the right product?'",
+      "Verification is about checking specifications; validation is about checking the customer's true requirements."
+    ],
+    "distractor_check": "A passage about testing might be confused, but the question is about the V&V distinction.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 21,
+    "document": "2chapter_software.pdf",
+    "question": "What is the purpose of requirements validation?",
+    "reference_answer": "To check that requirements define the system the customer really wants",
+    "correct_page": 29,
+    "correct_page_range": [29, 30],
+    "acceptable_paraphrases": [
+      "Requirements validation checks that the requirements are correct, complete, and consistent with the customer's needs.",
+      "It ensures that the documented requirements truly reflect what the customer needs."
+    ],
+    "distractor_check": "A passage about requirement management might be confused, but validation is specifically about checking correctness.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 22,
+    "document": "2chapter_software.pdf",
+    "question": "What is a use case and how is it used?",
+    "reference_answer": "A way to describe interactions between users and a system using a graphical model and structured text",
+    "correct_page": 25,
+    "correct_page_range": [25, 25],
+    "acceptable_paraphrases": [
+      "Use cases describe interactions between actors and the system using diagrams and textual descriptions.",
+      "It identifies the actors involved in an interaction and describes the interaction with the system."
+    ],
+    "distractor_check": "A passage about sequence diagrams might be confused, but use cases are the high-level interaction descriptions.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 23,
+    "document": "2chapter_software.pdf",
+    "question": "What is the purpose of a software requirements document (SRS)?",
+    "reference_answer": "An official statement of what the system developers should implement",
+    "correct_page": 26,
+    "correct_page_range": [26, 26],
+    "acceptable_paraphrases": [
+      "The SRS is a formal document that specifies what the system should do.",
+      "It is an official statement of the requirements that developers must implement."
+    ],
+    "distractor_check": "A passage about the IEEE standard might be confused, but the SRS's purpose is to define the system's requirements.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 24,
+    "document": "2chapter_software.pdf",
+    "question": "What is the difference between unit testing and component testing?",
+    "reference_answer": "Unit testing tests individual methods/classes; component testing tests composite component interfaces",
+    "correct_page": 40,
+    "correct_page_range": [40, 41],
+    "acceptable_paraphrases": [
+      "Unit testing focuses on individual program units, while component testing tests the interfaces of composite components.",
+      "Unit testing checks the functionality of objects or methods, whereas component testing verifies how integrated units interact."
+    ],
+    "distractor_check": "A passage about system testing might be confused, but the question asks about unit vs. component testing.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 25,
+    "document": "2chapter_software.pdf",
+    "question": "What is the purpose of system testing?",
+    "reference_answer": "Tests interactions between components; checks they are compatible and transfer data correctly",
+    "correct_page": 49,
+    "correct_page_range": [49, 49],
+    "acceptable_paraphrases": [
+      "System testing focuses on testing component interactions and integration within the complete system.",
+      "It checks that components work together correctly and transfer data properly."
+    ],
+    "distractor_check": "A passage about component testing might be confused, but system testing is specifically about the integrated whole.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 26,
+    "document": "2chapter_software.pdf",
+    "question": "What is equivalence partitioning?",
+    "reference_answer": "A test-case design technique that identifies groups of inputs that should be processed the same way",
+    "correct_page": 43,
+    "correct_page_range": [43, 44],
+    "acceptable_paraphrases": [
+      "Equivalence partitioning divides inputs into classes where each class should be processed identically.",
+      "It is a method of selecting test cases by identifying input groups with common characteristics."
+    ],
+    "distractor_check": "A passage about boundary value analysis might be confused, but equivalence partitioning is the grouping concept.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 27,
+    "document": "2chapter_software.pdf",
+    "question": "What is the difference between validation testing and defect testing?",
+    "reference_answer": "Validation tests correct inputs to show the system works; defect testing uses obscure inputs to expose defects",
+    "correct_page": 36,
+    "correct_page_range": [36, 36],
+    "acceptable_paraphrases": [
+      "Validation testing demonstrates the system meets requirements; defect testing tries to find errors by using unusual inputs.",
+      "Validation uses realistic inputs, while defect testing deliberately uses obscure inputs to uncover bugs."
+    ],
+    "distractor_check": "A passage about release testing might be confused, but validation vs. defect is the core distinction.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 28,
+    "document": "2chapter_software.pdf",
+    "question": "What is test-driven development?",
+    "reference_answer": "An approach where you write tests before code and run them automatically as you develop",
+    "correct_page": 51,
+    "correct_page_range": [51, 52],
+    "acceptable_paraphrases": [
+      "TDD interleaves testing and code development, writing tests first and then implementing the code.",
+      "In TDD, the test is written before the code is implemented, and the code is developed to pass the test."
+    ],
+    "distractor_check": "A passage about regression testing might be confused, but TDD is specifically about writing tests before code.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 29,
+    "document": "2chapter_software.pdf",
+    "question": "What is the difference between write-through and write-back cache policies?",
+    "reference_answer": "Write-through updates main memory immediately; write-back only writes when block is replaced",
+    "correct_page": 24,
+    "correct_page_range": [24, 25],
+    "acceptable_paraphrases": [
+      "Write-through updates memory for every write, while write-back only writes when the cache line is evicted.",
+      "Write-through ensures memory is always valid; write-back minimizes memory writes by using a dirty bit."
+    ],
+    "distractor_check": "A passage about cache coherency might be confused, but the question asks about the write policies themselves.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 30,
+    "document": "2chapter_software.pdf",
+    "question": "What is regression testing?",
+    "reference_answer": "Re-running previous tests to check that changes to the program have not introduced new bugs",
+    "correct_page": 53,
+    "correct_page_range": [53, 53],
+    "acceptable_paraphrases": [
+      "Regression testing re-runs existing test suites to ensure that modifications have not caused new failures.",
+      "It checks that changes to the system do not break previously working functionality."
+    ],
+    "distractor_check": "A passage about test-driven development might be confused, but regression testing is specifically about re-running old tests.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 31,
+    "document": "DBMS_chapter7.pdf",
+    "question": "What is a weak entity set?",
+    "reference_answer": "An entity set that does not have sufficient attributes to form a primary key",
+    "correct_page": 280,
+    "correct_page_range": [280, 281],
+    "acceptable_paraphrases": [
+      "A weak entity set is one that cannot be uniquely identified by its own attributes alone.",
+      "It is an entity set that depends on an identifying entity set for its primary key."
+    ],
+    "distractor_check": "A passage about strong entity sets might be confused, but the question specifically asks about weak entity sets.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 32,
+    "document": "DBMS_chapter7.pdf",
+    "question": "What is the difference between a strong entity set and a weak entity set?",
+    "reference_answer": "Strong has a primary key; weak depends on identifying entity set",
+    "correct_page": 280,
+    "correct_page_range": [280, 280],
+    "acceptable_paraphrases": [
+      "Strong entity sets have their own primary key, while weak entity sets depend on a strong entity set for identification.",
+      "A strong entity set is self-sufficient; a weak entity set requires an owner entity set."
+    ],
+    "distractor_check": "A passage about discriminators might be confused, but the core distinction is the dependence on an owner entity set.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 33,
+    "document": "DBMS_chapter7.pdf",
+    "question": "What is the discriminator (partial key) of a weak entity set?",
+    "reference_answer": "A set of attributes that allows distinction among entities that depend on one strong entity",
+    "correct_page": 280,
+    "correct_page_range": [280, 280],
+    "acceptable_paraphrases": [
+      "The discriminator is a set of attributes used to distinguish different entities within the same weak entity set that are associated with the same strong entity.",
+      "It is the partial key that, combined with the identifying entity set's key, uniquely identifies a weak entity."
+    ],
+    "distractor_check": "A passage about the primary key of strong entity sets might be confused, but the discriminator is specific to weak entities.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 34,
+    "document": "DBMS_chapter7.pdf",
+    "question": "What is the difference between specialization and generalization?",
+    "reference_answer": "Specialization goes top-down; generalization goes bottom-up",
+    "correct_page": 295,
+    "correct_page_range": [295, 296],
+    "acceptable_paraphrases": [
+      "Specialization starts with a higher-level entity set and creates lower-level subgroups; generalization combines lower-level entity sets into a higher-level one.",
+      "Specialization is a top-down process, while generalization is bottom-up."
+    ],
+    "distractor_check": "A passage about attribute inheritance might be confused, but the question is about the direction of the process.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 35,
+    "document": "DBMS_chapter7.pdf",
+    "question": "What is aggregation in the E-R model?",
+    "reference_answer": "Treating relationships as higher-level entities so they can participate in other relationships",
+    "correct_page": 301,
+    "correct_page_range": [301, 302],
+    "acceptable_paraphrases": [
+      "Aggregation abstracts a relationship set into an entity so it can be related to other entity sets.",
+      "It allows a relationship to be treated as a higher-level entity for participating in other relationships."
+    ],
+    "distractor_check": "A passage about generalization might be confused, but aggregation is specifically about relationships as entities.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 36,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is the difference between a logical cache and a physical cache?",
+    "reference_answer": "Logical cache uses virtual addresses; physical cache uses physical addresses",
+    "correct_page": 6,
+    "correct_page_range": [6, 7],
+    "acceptable_paraphrases": [
+      "A logical cache stores data using virtual addresses, while a physical cache uses physical addresses.",
+      "Logical caches are accessed before the MMU; physical caches are accessed after address translation."
+    ],
+    "distractor_check": "A passage about cache sizes might be confused, but the question is about address usage.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 37,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is speedup and scaleup?",
+    "reference_answer": "Speedup: running a task faster with more resources; scaleup: handling larger tasks with proportionally more resources",
+    "correct_page": 10,
+    "correct_page_range": [10, 11],
+    "acceptable_paraphrases": [
+      "Speedup measures how much faster a task runs with more resources; scaleup measures how well larger tasks are handled with more resources.",
+      "Speedup is about reducing execution time; scaleup is about handling larger problem sizes."
+    ],
+    "distractor_check": "A passage about throughput might be confused, but speedup and scaleup are specific parallel performance metrics.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 38,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is the difference between a transaction server and a data server?",
+    "reference_answer": "Transaction server executes queries; data server ships raw data to clients",
+    "correct_page": 5,
+    "correct_page_range": [5, 7],
+    "acceptable_paraphrases": [
+      "Transaction servers process queries and return results; data servers ship data to clients for processing.",
+      "The transaction server is where computations happen; the data server supplies raw data to clients."
+    ],
+    "distractor_check": "A passage about client-server architecture might be confused, but the question is about the two server types.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 39,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What are the three types of parallel database architectures?",
+    "reference_answer": "Shared-memory, shared-disk, shared-nothing",
+    "correct_page": 13,
+    "correct_page_range": [13, 15],
+    "acceptable_paraphrases": [
+      "The three architectures are shared-memory, shared-disk, and shared-nothing.",
+      "Parallel database architectures include shared-memory, shared-disk, and shared-nothing models."
+    ],
+    "distractor_check": "A passage about hierarchical architecture might be confused, but the three main types are the listed ones.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 40,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is the purpose of the two-phase commit protocol (2PC)?",
+    "reference_answer": "To ensure atomicity of transactions that run across multiple sites",
+    "correct_page": 18,
+    "correct_page_range": [18, 18],
+    "acceptable_paraphrases": [
+      "2PC ensures that transactions spanning multiple sites commit or abort atomically.",
+      "The protocol coordinates commit decisions across distributed sites to maintain consistency."
+    ],
+    "distractor_check": "A passage about concurrency control might be confused, but 2PC is specifically about commit coordination.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 41,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is the difference between a local transaction and a global transaction?",
+    "reference_answer": "Local accesses only the site where initiated; global accesses other sites",
+    "correct_page": 16,
+    "correct_page_range": [16, 16],
+    "acceptable_paraphrases": [
+      "A local transaction stays at one site; a global transaction accesses data at multiple sites.",
+      "Local transactions only use local data; global transactions require coordination across sites."
+    ],
+    "distractor_check": "A passage about distributed databases might be confused, but the question is about transaction types.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 42,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is the difference between LAN and WAN?",
+    "reference_answer": "LAN covers small geographic area; WAN covers large area",
+    "correct_page": 20,
+    "correct_page_range": [20, 22],
+    "acceptable_paraphrases": [
+      "LANs are over small areas like buildings; WANs span large geographic regions.",
+      "The main difference is the geographic scope and the data rates."
+    ],
+    "distractor_check": "A passage about storage-area networks might be confused, but LAN vs. WAN is about geographical coverage.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 43,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is a storage-area network (SAN)?",
+    "reference_answer": "A high-speed local-area network designed to connect storage devices to computers",
+    "correct_page": 21,
+    "correct_page_range": [21, 21],
+    "acceptable_paraphrases": [
+      "A SAN is a high-speed network connecting storage arrays to servers.",
+      "It is a specialized LAN for connecting storage devices to computing resources."
+    ],
+    "distractor_check": "A passage about RAID might be confused, but a SAN is the network infrastructure, not the storage itself.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 44,
+    "document": "DBMS_chapter17.pdf",
+    "question": "What is the purpose of a distributed database?",
+    "reference_answer": "To share data across sites, maintain autonomy, and provide availability",
+    "correct_page": 17,
+    "correct_page_range": [17, 17],
+    "acceptable_paraphrases": [
+      "A distributed database allows data sharing across sites, provides local autonomy, and ensures availability.",
+      "It is designed to share data while maintaining control and being resilient to failures."
+    ],
+    "distractor_check": "A passage about parallel databases might be confused, but distributed databases are about geographical or administrative separation.",
+    "difficulty": "requires_synthesis",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 45,
+    "document": "DBMS_chapter7.pdf",
+    "question": "What is the difference between a binary and a ternary relationship?",
+    "reference_answer": "Binary involves 2 entity sets; ternary involves 3",
+    "correct_page": 278,
+    "correct_page_range": [278, 279],
+    "acceptable_paraphrases": [
+      "A binary relationship connects two entity sets; a ternary relationship connects three entity sets.",
+      "The difference is the number of entity sets involved in the relationship."
+    ],
+    "distractor_check": "A passage about role indicators might be confused, but the question is about the count of entity sets.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 46,
+    "document": "EDC_chapter1.pdf",
+    "question": "What is the difference between an intrinsic and extrinsic semiconductor?",
+    "reference_answer": "Intrinsic is pure; extrinsic has been doped with impurities",
+    "correct_page": 8,
+    "correct_page_range": [8, 8],
+    "acceptable_paraphrases": [
+      "Intrinsic semiconductors are pure materials, while extrinsic semiconductors have been intentionally doped.",
+      "Extrinsic means impurities were added; intrinsic means it's the pure material."
+    ],
+    "distractor_check": "A passage about carrier types might be confused, but the question is about doping.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 47,
+    "document": "EDC_chapter1.pdf",
+    "question": "What is the difference between n-type and p-type material?",
+    "reference_answer": "n-type has electrons as majority carriers; p-type has holes as majority carriers",
+    "correct_page": 8,
+    "correct_page_range": [8, 9],
+    "acceptable_paraphrases": [
+      "In n-type material, electrons are the majority carriers; in p-type, holes are the majority carriers.",
+      "The majority carrier determines the type: electrons for n-type, holes for p-type."
+    ],
+    "distractor_check": "A passage about donor/acceptor atoms might be confused, but the question is about the resulting carrier types.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 48,
+    "document": "EDC_chapter1.pdf",
+    "question": "What is a depletion region?",
+    "reference_answer": "The region of uncovered positive and negative ions at the junction",
+    "correct_page": 10,
+    "correct_page_range": [10, 11],
+    "acceptable_paraphrases": [
+      "The depletion region is the area near the p-n junction where carriers have combined and left behind ions.",
+      "It is the region devoid of free carriers at the junction of p and n materials."
+    ],
+    "distractor_check": "A passage about majority carrier flow might be confused, but depletion region is about the absence of carriers.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  },
+  {
+    "id": 49,
+    "document": "EDC_chapter1.pdf",
+    "question": "What is the difference between forward bias and reverse bias?",
+    "reference_answer": "Forward: positive to p, negative to n; Reverse: negative to p, positive to n",
+    "correct_page": 11,
+    "correct_page_range": [11, 13],
+    "acceptable_paraphrases": [
+      "Forward bias applies positive to p-type and negative to n-type; reverse bias does the opposite.",
+      "Forward bias narrows the depletion region; reverse bias widens it."
+    ],
+    "distractor_check": "A passage about the p-n junction might be confused, but the question is specifically about bias conditions.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "comparison"
+  },
+  {
+    "id": 50,
+    "document": "EDC_chapter1.pdf",
+    "question": "What is the Zener region?",
+    "reference_answer": "The sharp change in characteristics at a specific reverse-bias potential",
+    "correct_page": 15,
+    "correct_page_range": [15, 15],
+    "acceptable_paraphrases": [
+      "The Zener region is the abrupt increase in reverse current at a specific breakdown voltage.",
+      "It is the part of the characteristic curve where the diode conducts heavily in reverse."
+    ],
+    "distractor_check": "A passage about avalanche breakdown might be confused, but the Zener region specifically refers to this sharp change.",
+    "difficulty": "factual_lookup",
+    "reasoning_type": "definition"
+  }
+]

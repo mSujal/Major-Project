@@ -1,0 +1,19 @@
+{
+  "pdf": "Yolo.pdf",
+  "pdf_path": "/home/sujal/Programming/MajorProject/Datasets/evaluation/short/Yolo.pdf",
+  "tier": "short",
+  "profiled_at": "2026-09-02T15:49:59.026452",
+  "mode": "fresh",
+  "page_count": 10,
+  "chunk_count": 166,
+  "token_count": 15694,
+  "window_count": 3,
+  "time_extraction_s": 7.259,
+  "time_chunking_s": 0.001,
+  "time_tokenize_s": 0.073,
+  "time_embedding_s": 120.134,
+  "time_store_s": 0.519,
+  "time_cache_load_s": null,
+  "time_total_s": 128.024,
+  "error": null
+}

@@ -1,0 +1,4 @@
+method,n_queries,top_k,similarity_threshold,recall_pct,precision_pct,mrr,avg_retrieval_time_s,correct_page_found_pct
+windowed,50,5,0.75,0.0,0.0,0.0,0.107,46.0
+naive,50,5,0.75,70.0,34.8,0.586,0.114,66.0
+bm25,50,5,0.75,58.0,25.6,0.427,0.001,56.0
